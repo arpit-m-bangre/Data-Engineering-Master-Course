@@ -61,4 +61,15 @@ $$\text{Revision Notes} \longrightarrow \text{Index-Wise Practice Questions} \lo
 ## 👤 Author & Journey
 - **Role**: Data Engineering Trainee / Aspirant
 - **Interviews Completed**: HCL Tech Technical Interview (10 August 2026) 🎯
-- **Tracking Log**: [`LEARNING_DIARY.txt`](./LEARNING_DIARY/LEARNING_DIARY.txt)
+- **Central Course Blueprint**: [`COURSE_CONTEXT.md`](./COURSE_CONTEXT.md)
+- **Global Agent Protocols**: [`AGENTS.md`](./.agents/AGENTS.md)
+- **Central Tracking Monitor**: [`MASTER_LEARNING_TRACKER.txt`](./LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt)
+- **Concept Mastery Heatmap**: [`CONCEPT_MASTERY_HEATMAP.md`](./LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md)
+- **Spaced Repetition Recommender**: [`REVISION_RECOMMENDER_ENGINE.md`](./LEARNING_DIARY/REVISION_RECOMMENDER_ENGINE.md)
+- **Machine Analytics Brain**: [`METRICS_AND_STATISTICS.json`](./LEARNING_DIARY/METRICS_AND_STATISTICS.json)
+- **Git Commit & Portfolio Log**: [`GIT_COMMIT_AND_PORTFOLIO_LOG.md`](./LEARNING_DIARY/GIT_COMMIT_AND_PORTFOLIO_LOG.md)
+- **Daily AI Mentor Protocol**: [`DAILY_MENTOR_GUIDE.md`](./LEARNING_DIARY/DAILY_MENTOR_GUIDE.md)
+- **Daily Progress Log Archive**: [`LEARNING_DIARY.txt`](./LEARNING_DIARY/LEARNING_DIARY.txt)
+
+
+

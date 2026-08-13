@@ -18,8 +18,10 @@ Root Folder: d:\DE COURSE\01_SQL\
 6. 06_PROJECTS/             -> Production-grade Data Engineering SQL project pipelines (`PROJECT<N>.SQL`).
 
 Tracking Files:
-- `d:\DE COURSE\LEARNING_DIARY\LEARNING_DIARY.txt` -> Plain text progress tracker log.
-- `d:\DE COURSE\README.md`                          -> Master GitHub Portfolio homepage.
+- `d:\DE COURSE\LEARNING_DIARY\MASTER_LEARNING_TRACKER.txt` -> Central SSOT Progress Monitor Matrix & Master Plan.
+- `d:\DE COURSE\LEARNING_DIARY\DAILY_MENTOR_GUIDE.md`       -> Daily Mentor Operational Protocol & System Guide.
+- `d:\DE COURSE\LEARNING_DIARY\LEARNING_DIARY.txt`          -> Plain text progress tracker log archive.
+- `d:\DE COURSE\README.md`                                  -> Master GitHub Portfolio homepage.
 
 ==================================================
 AUTOMATED PIPELINE EXECUTION STEPS
@@ -76,9 +78,10 @@ STEP 6: PROJECT CHECK & CREATION (06_PROJECTS/)
 - If a new milestone or module is introduced, create a new enterprise Data Engineering project file named `PROJECT<N>.SQL` (or upgrade existing project pipelines) incorporating the new concepts into a multi-tier relational database architecture.
 
 --------------------------------------------------
-STEP 7: UPDATE LEARNING DIARY & GITHUB README
+STEP 7: UPDATE LEARNING DIARY, MASTER TRACKER & GITHUB README
 --------------------------------------------------
 - Append today's class date and completed tasks to `d:\DE COURSE\LEARNING_DIARY\LEARNING_DIARY.txt`.
+- Update `d:\DE COURSE\LEARNING_DIARY\MASTER_LEARNING_TRACKER.txt` (Add new row to Section 2 SQL Daily Item Matrix, update Section 1 Module Progress, Section 4 Backlog Queue & Section 5 Daily Interaction Log).
 - Update `d:\DE COURSE\README.md` with the new topics and project additions.
 
 ==================================================

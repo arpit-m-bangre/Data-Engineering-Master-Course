@@ -1,0 +1,25 @@
+# 🛡️ Data Engineering Master Course Repository - Git Ignore & Security Rules
+
+# OS Junk & Temp Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+*$*
+*.tmp
+*.bak
+
+# IDE & Editor Directory Cache (Keep .agents/ directory tracked!)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Data / Scratch Files (Keep artifacts safe)
+*.tmp.sql
+scratch_*.sql
+
+# System & Environment Files
+*.env
+*.pem
+*.key
+credentials.json

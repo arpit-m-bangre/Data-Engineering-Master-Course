@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 11 Class Note Files (2026-08-01 to 2026-08-12)
+Total Modules / Files: 12 Class Note Files (2026-08-01 to 2026-08-13)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -95,6 +95,14 @@ SECTION 1: DAILY CLASS BREAKDOWN
     11.3 Practical Tests on TRUNCATE (Referenced Parent Table Failure)
     11.4 Practical Tests on DROP (Referenced Parent Table Failure)
 
+12. DAY 12 (AUGUST 13) - RETROFITTING CONSTRAINTS & COLUMN PROPERTIES
+    12.1 Parent/Child Destruction Rules Recap & Why TRUNCATE is DDL
+    12.2 System Metadata Auditing (INFORMATION_SCHEMA.TABLES & TABLE_CONSTRAINTS)
+    12.3 Data Pre-Cleaning Strategies for Existing Live Tables
+    12.4 Retrofitting Constraints via ALTER TABLE ADD CONSTRAINT (UNIQUE, CHECK, FOREIGN KEY, DEFAULT)
+    12.5 Column Property vs Table Constraint Distinction (NOT NULL & IDENTITY via ALTER COLUMN)
+    12.6 Offline SQL Test 1 Analysis (18 MCQs: Execution Flow, Scoping, TRUNCATE Rollback inside Transactions)
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -104,17 +112,21 @@ A. DATABASE CONCEPTS & ENVIRONMENT
    • SQL Server Architecture & SSMS Navigation
    • Database Objects (Tables, Views, Stored Procedures, Functions, Triggers, Indexes)
    • Data Validation & DBA Security Permissions
+   • Information Schema Auditing (INFORMATION_SCHEMA.TABLES, TABLE_CONSTRAINTS)
 
 B. DATA DEFINITION LANGUAGE (DDL)
    • CREATE TABLE & Column Data Types (INT, FLOAT, DECIMAL, VARCHAR, CHAR, TEXT)
    • ALTER TABLE (ADD Column, DROP Column, ALTER COLUMN Data Type & Size)
+   • Retrofitting Constraints on Existing Live Tables (ADD CONSTRAINT)
+   • Column Properties Modification (ALTER COLUMN NOT NULL)
    • Object Renaming (sp_rename for Tables and Columns)
-   • TRUNCATE TABLE vs DROP TABLE
+   • TRUNCATE TABLE vs DROP TABLE (DDL Storage Deallocation Mechanics)
 
 C. DATA MANIPULATION LANGUAGE (DML)
    • INSERT INTO (10 Insertion Patterns, Multi-row, Column-specified, SELECT INTO)
    • UPDATE (Single/Multiple Columns, Arithmetic Calculations, Handling NULLs)
    • DELETE (Row-level deletion with WHERE clause)
+   • Pre-cleaning Data Strategy before retrofitting constraints
 
 D. DATA QUERY LANGUAGE (DQL) & CLAUSES
    • SELECT (Projections, Computed Output Columns, Aliases)
@@ -139,11 +151,11 @@ F. AGGREGATE FUNCTIONS & UNICITY
 
 G. CONSTRAINTS & KEYS
    • PRIMARY KEY (Unique + NOT NULL, 1 per table)
-   • UNIQUE (Unique + 1 NULL allowed)
-   • NOT NULL (Mandatory value)
-   • CHECK (Custom validation expressions)
-   • DEFAULT (Automatic fallback values)
-   • IDENTITY (Auto-incrementing seed & step)
-   • FOREIGN KEY (Referential Integrity, Parent/Child Table Protection Rules)
+   • UNIQUE (Unique + 1 NULL allowed, retrofitting via ADD CONSTRAINT)
+   • NOT NULL (Mandatory column property, retrofitting via ALTER COLUMN)
+   • CHECK (Custom validation expressions, retrofitting via ADD CONSTRAINT)
+   • DEFAULT (Automatic fallback values, retrofitting via ADD CONSTRAINT ... DEFAULT ... FOR)
+   • IDENTITY (Auto-incrementing seed & step, column property rules on live tables)
+   • FOREIGN KEY (Referential Integrity, Parent/Child Table Protection Rules, Retrofitting via ADD CONSTRAINT)
 
 ================================================================================

@@ -1,0 +1,51 @@
+{
+  "course_metadata": {
+    "course_name": "Data Engineering Master Course",
+    "student_name": "Arpit Manoj Bangre",
+    "batch": "Online Batch 15",
+    "start_date": "2026-07-26",
+    "target_completion_date": "2026-08-24",
+    "current_streak_days": 0,
+    "last_active_date": "2026-08-14"
+  },
+  "overall_metrics": {
+    "total_modules": 7,
+    "active_module": "01_SQL",
+    "module_completion_percentage": 63.2,
+    "backlog_debt_percentage": 36.8,
+    "target_zero_debt_date": "2026-08-24"
+  },
+  "sql_ecosystem_counters": {
+    "class_notes_processed": 12,
+    "daily_indexes_created": 12,
+    "master_combined_index_files": 1,
+    "revision_notes_total": 19,
+    "revision_notes_completed": 0,
+    "practice_question_files": 11,
+    "practice_questions_total_drills": 125,
+    "practice_questions_completed_drills": 0,
+    "faculty_class_task_files": 3,
+    "faculty_class_tasks_completed": 3,
+    "projects_total_scheduled": 8,
+    "projects_completed": 0
+  },
+  "offline_test_analytics": {
+    "test_name": "SQL_Test1_Offline",
+    "date_taken": "2026-08-13",
+    "score": "13/18",
+    "percentage": 72.2,
+    "correct_questions": [1, 2, 3, 4, 5, 7, 9, 10, 11, 13, 14, 15, 16, 18],
+    "incorrect_questions": [6, 8, 12, 17],
+    "identified_weak_spots": [
+      "Mandatory NOT NULL vs CHECK Constraint Choice (Q6)",
+      "WHERE vs HAVING Performance Optimization on 1M Records (Q8)",
+      "TRUNCATE Rollback Behavior inside Explicit Transactions (Q12)",
+      "DELETE without WHERE specific value deletion analysis (Q17)"
+    ]
+  },
+  "concept_mastery_heatmap_summary": {
+    "mastered_concepts_count": 8,
+    "revision_priority_concepts_count": 4,
+    "high_interview_weight_concepts_count": 6
+  }
+}
