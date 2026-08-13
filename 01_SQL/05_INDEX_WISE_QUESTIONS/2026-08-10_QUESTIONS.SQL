@@ -3,14 +3,14 @@
                TOPICS: SQL CONSTRAINTS (PRIMARY KEY, UNIQUE,
                        NOT NULL, CHECK), DATA VALIDATION & ERRORS
                REVISION: DAYS 1 - 8 (GROUP BY, HAVING, UPDATE, ALTER)
-               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 10 QUESTIONS
+               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
    ============================================================ */
 
 -- ============================================================
 -- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
 -- ============================================================
 
--- QUESTION 1 [Basic Syntax - Constraint Definitions]:
+-- QUESTION 1 [Syntax Drill - Constraint Declarations]:
 /*
 Task: Write simple DDL statements for table creation with constraints:
 1. Create table 'Test_PK' with: ID INT PRIMARY KEY, Name VARCHAR(20).
@@ -24,7 +24,7 @@ Task: Write simple DDL statements for table creation with constraints:
 
 
 
--- QUESTION 2 [Basic Syntax - Adding Constraints via ALTER TABLE]:
+-- QUESTION 2 [Syntax Drill - Adding Constraints via ALTER TABLE]:
 /*
 Task:
 1. Create table 'Student_Validation' (StudentID INT, StudentName VARCHAR 30, Score INT).
@@ -37,11 +37,34 @@ Task:
 
 
 
+-- QUESTION 3 [Syntax Drill - CHECK Constraints with IN & NOT BETWEEN]:
+/*
+Task: Write DDL for table 'EmployeeRules' with:
+- EmpID INT PRIMARY KEY
+- Department VARCHAR(20) CHECK (Department IN ('IT', 'HR', 'Finance'))
+- BaseSalary INT CHECK (BaseSalary > 0 AND BaseSalary NOT BETWEEN 1000000 AND 2000000)
+*/
+
+-- Write your SQL Query below:
+
+
+
+
+-- QUESTION 4 [Syntax Drill - Combining UNIQUE & NOT NULL]:
+/*
+Task: Write DDL for table 'UserCredentials' with UserID INT PRIMARY KEY, Email VARCHAR(40) NOT NULL UNIQUE.
+*/
+
+-- Write your SQL Query below:
+
+
+
+
 -- ============================================================
 -- SECTION 2: DAYS 1 - 8 CUMULATIVE REVISION DRILLS
 -- ============================================================
 
--- QUESTION 3 [Days 1-8 Revision - Aggregations & ALTER TABLE]:
+-- QUESTION 5 [Days 1-8 Revision - Aggregations & ALTER TABLE]:
 /*
 Task:
 1. Create table 'BankCustomers' with: CustomerID (INT), CustomerName (VARCHAR 30), City (VARCHAR 20), AccountBalance (INT), AccountType (VARCHAR 15).
@@ -54,7 +77,7 @@ Task:
 
 
 
--- QUESTION 4 [Days 1-8 Revision - GROUP BY & HAVING Filter]:
+-- QUESTION 6 [Days 1-8 Revision - GROUP BY & HAVING Filter]:
 /*
 Task: Write a GROUP BY query on 'BankCustomers' returning City-wise average AccountBalance for cities where average balance > 30000.
 */
@@ -68,7 +91,7 @@ Task: Write a GROUP BY query on 'BankCustomers' returning City-wise average Acco
 -- SECTION 3: REAL-WORLD SCENARIO-BASED CHALLENGES
 -- ============================================================
 
--- QUESTION 5 [Scenario - PRIMARY KEY Uniqueness & NULL Prevention]:
+-- QUESTION 7 [Scenario - PRIMARY KEY Uniqueness & NULL Prevention]:
 /*
 Scenario: User Registration system requiring unique identification.
 Task:
@@ -83,7 +106,7 @@ Task:
 
 
 
--- QUESTION 6 [Scenario - UNIQUE Constraint & Single NULL Exception]:
+-- QUESTION 8 [Scenario - UNIQUE Constraint & Single NULL Exception]:
 /*
 Scenario: Email uniqueness validation.
 Task:
@@ -97,7 +120,7 @@ Task:
 
 
 
--- QUESTION 7 [Scenario - NOT NULL & Composite Candidate Keys]:
+-- QUESTION 9 [Scenario - NOT NULL & Composite Candidate Keys]:
 /*
 Scenario: Building secondary unique keys without using PRIMARY KEY.
 Task:
@@ -113,7 +136,7 @@ Task:
 
 
 
--- QUESTION 8 [Scenario - CHECK Constraints & Business Rule Rules]:
+-- QUESTION 10 [Scenario - CHECK Constraints & Business Rule Rules]:
 /*
 Scenario: HR onboarding system enforcing policy checks.
 Task:
@@ -132,7 +155,7 @@ Task:
 -- SECTION 4: LOGIC BUILDER & DEBUGGING DRILLS
 -- ============================================================
 
--- QUESTION 9 [Logic Builder - Constraint Enforcement Rules]:
+-- QUESTION 11 [Logic Builder - Constraint Enforcement Rules]:
 /*
 Task:
 1. How many Primary Keys can exist in a single SQL table?
@@ -144,7 +167,17 @@ Task:
 
 
 
--- QUESTION 10 [Debugging - Constraint Violation Tracing]:
+-- QUESTION 12 [Logic Builder - SSMS Object Explorer Inspection]:
+/*
+Task: Where in SSMS Object Explorer can you visually inspect a table's Primary Key, Unique, and Check constraints?
+*/
+
+-- Write your answer in comments below:
+
+
+
+
+-- QUESTION 13 [Debugging - Constraint Violation Tracing]:
 /*
 Task: Identify which constraint is violated by each of the following queries:
 1. INSERT INTO Users_PK VALUES (1, 'Duplicate'); -> Violation of ?
@@ -153,6 +186,16 @@ Task: Identify which constraint is violated by each of the following queries:
 */
 
 -- Write your answers in comments below:
+
+
+
+
+-- QUESTION 14 [Debugging - Multi-Constraint Conflict Errors]:
+/*
+Task: Identify why 'CREATE TABLE Test (ID INT PRIMARY KEY, ID2 INT PRIMARY KEY);' fails in SQL Server.
+*/
+
+-- Write your explanation in comments below:
 
 
 

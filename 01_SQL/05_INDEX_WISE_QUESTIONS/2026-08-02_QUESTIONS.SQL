@@ -1,88 +1,98 @@
 /* ============================================================
-               DAY 2 PRACTICE QUESTIONS & SOLUTIONS (2 AUGUST 2026)
+               DAY 2 PRACTICE QUESTIONS (2 AUGUST 2026)
                TOPICS: SQL FILTERS, WHERE CLAUSE, COMPARISON OPERATORS,
                        IN, BETWEEN, NULLS, LOGICAL OPERATORS, LIKE WILDCARDS
-               STATUS: COMPLETED IN LEARNING DIARY
+               REVISION: DAY 1 (TABLE CREATION, DATA TYPES, DML)
+               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
    ============================================================ */
 
 -- ============================================================
 -- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
 -- ============================================================
 
--- QUESTION 1 [Basic Syntax - Relational & Equality Filters]:
+-- QUESTION 1 [Syntax Drill - Relational & Equality Operators]:
 /*
 Task: Write queries on table 'EmpData(EmpID INT, EmpName VARCHAR 30, Dept VARCHAR 20, Salary INT)':
 1. Select employees where Salary = 30000.
 2. Select employees where Salary > 40000.
-3. Select employees where Dept <> 'HR'.
+3. Select employees where Salary <= 25000.
+4. Select employees where Dept <> 'HR'.
 */
 
--- Solution:
-SELECT * FROM EmpData WHERE Salary = 30000;
-SELECT * FROM EmpData WHERE Salary > 40000;
-SELECT * FROM EmpData WHERE Dept <> 'HR';
+-- Write your SQL Queries below:
 
 
--- QUESTION 2 [Basic Syntax - IN, BETWEEN & NULL Filters]:
+
+
+-- QUESTION 2 [Syntax Drill - IN & NOT IN List Filtering]:
 /*
-Task: Write queries on table 'EmpData':
+Task: Write queries on 'EmpData':
 1. Select employees where Dept IN ('HR', 'IT').
-2. Select employees where Salary BETWEEN 20000 AND 50000.
-3. Select employees where Dept IS NULL.
+2. Select employees where Dept NOT IN ('Admin', 'Sales').
 */
 
--- Solution:
-SELECT * FROM EmpData WHERE Dept IN ('HR', 'IT');
-SELECT * FROM EmpData WHERE Salary BETWEEN 20000 AND 50000;
-SELECT * FROM EmpData WHERE Dept IS NULL;
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 3 [Syntax Drill - BETWEEN & Range Bounds]:
+/*
+Task: Write queries on 'EmpData':
+1. Select employees where Salary BETWEEN 20000 AND 50000.
+2. Select employees where Salary NOT BETWEEN 30000 AND 70000.
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 4 [Syntax Drill - IS NULL & IS NOT NULL]:
+/*
+Task: Write queries on 'EmpData':
+1. Select employees where Dept IS NULL.
+2. Select employees where Dept IS NOT NULL.
+*/
+
+-- Write your SQL Queries below:
+
+
 
 
 -- ============================================================
 -- SECTION 2: DAY 1 CUMULATIVE REVISION DRILLS
 -- ============================================================
 
--- QUESTION 3 [Day 1 Revision - Table Setup & Ingestion]:
+-- QUESTION 5 [Day 1 Revision - Table Setup & Ingestion]:
 /*
 Task:
 1. Create table 'CorporateClients' with: ClientID (INT), CompanyName (VARCHAR 40), IndustrySector (VARCHAR 25), AnnualRevenue (INT), CreditScore (INT), ContactEmail (VARCHAR 50).
 2. Insert 5 sample records including 1 row with NULL IndustrySector and 1 row with NULL ContactEmail.
 */
 
--- Solution:
-CREATE TABLE CorporateClients
-(
-    ClientID       INT,
-    CompanyName    VARCHAR(40),
-    IndustrySector VARCHAR(25),
-    AnnualRevenue  INT,
-    CreditScore    INT,
-    ContactEmail   VARCHAR(50)
-);
-
-INSERT INTO CorporateClients VALUES (1, 'TechNova Solutions', 'Technology', 1200000, 780, 'contact@technova.com');
-INSERT INTO CorporateClients VALUES (2, 'Apex Healthcare', 'Healthcare', 850000, 720, 'info@apexhealth.org');
-INSERT INTO CorporateClients VALUES (3, 'Global Logistics', NULL, 450000, 640, 'support@globallogistics.com');
-INSERT INTO CorporateClients VALUES (4, 'BlueSky Retail', 'Retail', 300000, 590, NULL);
-INSERT INTO CorporateClients VALUES (5, 'Omega Finance', 'Finance', 950000, 810, 'admin@omegafinance.com');
+-- Write your SQL Queries below:
 
 
--- QUESTION 4 [Day 1 Revision - Selective Ingestion & Retrieval]:
+
+
+-- QUESTION 6 [Day 1 Revision - Selective Ingestion & Retrieval]:
 /*
 Task:
 1. Insert a client providing only ClientID, CompanyName, and AnnualRevenue.
 2. Retrieve all clients where CreditScore IS NULL.
 */
 
--- Solution:
-INSERT INTO CorporateClients (ClientID, CompanyName, AnnualRevenue) VALUES (6, 'Alpha Corp', 500000);
-SELECT * FROM CorporateClients WHERE CreditScore IS NULL;
+-- Write your SQL Queries below:
+
+
 
 
 -- ============================================================
 -- SECTION 3: REAL-WORLD SCENARIO-BASED CHALLENGES
 -- ============================================================
 
--- QUESTION 5 [Scenario - Financial Risk Account Screening]:
+-- QUESTION 7 [Scenario - Financial Risk Account Screening]:
 /*
 Scenario: Bank compliance audit flagging corporate accounts.
 Task:
@@ -91,13 +101,12 @@ Task:
 3. Select clients with AnnualRevenue BETWEEN 200,000 AND 800,000 AND CreditScore >= 650.
 */
 
--- Solution:
-SELECT * FROM CorporateClients WHERE AnnualRevenue >= 500000;
-SELECT * FROM CorporateClients WHERE IndustrySector <> 'Technology';
-SELECT * FROM CorporateClients WHERE AnnualRevenue BETWEEN 200000 AND 800000 AND CreditScore >= 650;
+-- Write your SQL Queries below:
 
 
--- QUESTION 6 [Scenario - Security Pattern Matching with LIKE Wildcards]:
+
+
+-- QUESTION 8 [Scenario - Security Pattern Matching with LIKE Wildcards]:
 /*
 Scenario: Searching client email domains and company prefixes.
 Task:
@@ -106,13 +115,12 @@ Task:
 3. Find clients whose CompanyName contains 'Global'.
 */
 
--- Solution:
-SELECT * FROM CorporateClients WHERE CompanyName LIKE 'Tech%';
-SELECT * FROM CorporateClients WHERE ContactEmail LIKE '%.org';
-SELECT * FROM CorporateClients WHERE CompanyName LIKE '%Global%';
+-- Write your SQL Queries below:
 
 
--- QUESTION 7 [Scenario - Single-Character & Range Wildcards]:
+
+
+-- QUESTION 9 [Scenario - Single-Character & Range Wildcards]:
 /*
 Task:
 1. Find clients whose CompanyName has 'o' as the second character ('_o%').
@@ -120,13 +128,12 @@ Task:
 3. Find clients whose CompanyName does NOT start with letters A, B, or C ('[^A-C]%').
 */
 
--- Solution:
-SELECT * FROM CorporateClients WHERE CompanyName LIKE '_o%';
-SELECT * FROM CorporateClients WHERE CompanyName LIKE '[A-F]%';
-SELECT * FROM CorporateClients WHERE CompanyName LIKE '[^A-C]%';
+-- Write your SQL Queries below:
 
 
--- QUESTION 8 [Scenario - Multi-Condition Logical Filters (AND / OR)]:
+
+
+-- QUESTION 10 [Scenario - Multi-Condition Logical Filters (AND / OR)]:
 /*
 Task:
 1. Select clients where IndustrySector = 'Finance' AND CreditScore > 750.
@@ -134,44 +141,61 @@ Task:
 3. Select clients where (IndustrySector = 'IT' OR IndustrySector = 'Finance') AND CreditScore BETWEEN 600 AND 800.
 */
 
--- Solution:
-SELECT * FROM CorporateClients WHERE IndustrySector = 'Finance' AND CreditScore > 750;
-SELECT * FROM CorporateClients WHERE IndustrySector = 'Healthcare' OR AnnualRevenue > 1000000;
-SELECT * FROM CorporateClients WHERE (IndustrySector = 'IT' OR IndustrySector = 'Finance') AND CreditScore BETWEEN 600 AND 800;
+-- Write your SQL Queries below:
+
+
 
 
 -- ============================================================
 -- SECTION 4: LOGIC BUILDER & METADATA DRILLS
 -- ============================================================
 
--- QUESTION 9 [Logic Builder - NULL Behavior in Relational Operators]:
+-- QUESTION 11 [Logic Builder - Relational Operator Behavior on NULLs]:
 /*
 Task:
 1. Why does 'WHERE Dept <> 'HR'' fail to return rows where Dept is NULL?
 2. Write a corrected query that returns both non-HR departments AND NULL departments.
 */
 
--- Solution:
+-- Write your explanation and SQL Query below:
+
+
+
+
+-- QUESTION 12 [Logic Builder - Operator Precedence (AND over OR)]:
 /*
-1. EXPLANATION: Relational comparison operators (=, <>) evaluate NULL comparisons as UNKNOWN, so NULL rows are excluded automatically.
+Task: Explain why 'WHERE IndustrySector = 'IT' OR IndustrySector = 'Finance' AND CreditScore > 700' produces different results than 'WHERE (IndustrySector = 'IT' OR IndustrySector = 'Finance') AND CreditScore > 700'.
 */
 
--- 2. Corrected Query:
-SELECT * FROM CorporateClients WHERE IndustrySector <> 'Technology' OR IndustrySector IS NULL;
+-- Write your explanation in comments below:
 
 
--- QUESTION 10 [Metadata - System Catalog Queries]:
+
+
+-- QUESTION 13 [Metadata - System Catalog Queries]:
 /*
 Task:
 1. Write a query to retrieve all table names from INFORMATION_SCHEMA.TABLES.
 2. Write a query to retrieve all column names for 'CorporateClients' from INFORMATION_SCHEMA.COLUMNS.
 */
 
--- Solution:
-SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES;
-SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'CorporateClients';
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 14 [Debugging - Fix Incorrect WHERE Operator Syntax]:
+/*
+Task: Identify and fix errors in the following 2 queries:
+1. SELECT * FROM CorporateClients WHERE CreditScore = NULL;
+2. SELECT * FROM CorporateClients WHERE AnnualRevenue BETWEEN 200000, 500000;
+*/
+
+-- Write your corrected SQL Queries below:
+
+
 
 
 /* ============================================================
-                   END OF DAY 2 PRACTICE & SOLUTIONS
+                   END OF DAY 2 PRACTICE
    ============================================================ */

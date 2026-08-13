@@ -3,20 +3,19 @@
                TOPICS: GROUP BY EXECUTION SEQUENCE, HAVING CLAUSE,
                        ORDER BY, ALIAS SCOPING, SCENARIO TASKS
                REVISION: DAYS 1 - 6 (WHERE, ALTER TABLE, AGGREGATES, TOP N)
-               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 10 QUESTIONS
+               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
    ============================================================ */
 
 -- ============================================================
 -- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
 -- ============================================================
 
--- QUESTION 1 [Basic Syntax - HAVING & ORDER BY Drills]:
+-- QUESTION 1 [Syntax Drill - Basic HAVING Clause Syntax]:
 /*
-Task: Write simple queries on a table 'Sales(Salesperson VARCHAR 20, Region VARCHAR 15, Amount INT)':
+Task: Write queries on table 'Sales(Salesperson VARCHAR 20, Region VARCHAR 15, Amount INT)':
 1. Group by Region and show SUM(Amount).
 2. Group by Region and show SUM(Amount) HAVING SUM(Amount) > 10000.
-3. Select * from Sales ORDER BY Amount DESC.
-4. Select Region, SUM(Amount) AS TotalSales from Sales GROUP BY Region ORDER BY TotalSales DESC.
+3. Group by Region and show AVG(Amount) HAVING COUNT(Salesperson) >= 3.
 */
 
 -- Write your SQL Queries below:
@@ -24,9 +23,31 @@ Task: Write simple queries on a table 'Sales(Salesperson VARCHAR 20, Region VARC
 
 
 
--- QUESTION 2 [Basic Syntax - Multi-Column Sorting]:
+-- QUESTION 2 [Syntax Drill - ORDER BY Sorting Options]:
 /*
-Task: Write a query selecting Region, SUM(Amount) AS TotalSales from 'Sales' grouped by Region, sorted by TotalSales DESCENDING, and then Region ASCENDING.
+Task: Write queries on 'Sales':
+1. Select * from Sales ORDER BY Amount DESC.
+2. Select * from Sales ORDER BY Region ASC, Amount DESC.
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 3 [Syntax Drill - GROUP BY + HAVING + ORDER BY]:
+/*
+Task: Write a query selecting Region, SUM(Amount) AS TotalSales from 'Sales' grouped by Region, returning only regions with TotalSales > 15000, sorted by TotalSales DESCENDING.
+*/
+
+-- Write your SQL Query below:
+
+
+
+
+-- QUESTION 4 [Syntax Drill - Combining WHERE with GROUP BY & HAVING]:
+/*
+Task: Write a query selecting Region, AVG(Amount) AS AvgAmount from 'Sales' WHERE Amount > 500, grouped by Region, HAVING AVG(Amount) > 2000.
 */
 
 -- Write your SQL Query below:
@@ -38,7 +59,7 @@ Task: Write a query selecting Region, SUM(Amount) AS TotalSales from 'Sales' gro
 -- SECTION 2: DAYS 1 - 6 CUMULATIVE REVISION DRILLS
 -- ============================================================
 
--- QUESTION 3 [Days 1-6 Revision - Table Setup & Aggregations]:
+-- QUESTION 5 [Days 1-6 Revision - Table Setup & Aggregations]:
 /*
 Task:
 1. Create table 'OrdersMaster' with: OrderID (INT), CustomerName (VARCHAR 30), Category (VARCHAR 20), OrderAmount (INT), PaymentMethod (VARCHAR 15), DeliveryCity (VARCHAR 20).
@@ -50,7 +71,7 @@ Task:
 
 
 
--- QUESTION 4 [Days 1-6 Revision - TOP N & Relational Filtering]:
+-- QUESTION 6 [Days 1-6 Revision - TOP N & Relational Filtering]:
 /*
 Task: Select TOP 5 orders from 'OrdersMaster' WHERE OrderAmount > 1000 AND PaymentMethod IN ('UPI', 'Credit Card') ORDER BY OrderAmount DESC.
 */
@@ -64,7 +85,7 @@ Task: Select TOP 5 orders from 'OrdersMaster' WHERE OrderAmount > 1000 AND Payme
 -- SECTION 3: CLAUSE EXECUTION SEQUENCE & HAVING CLAUSE
 -- ============================================================
 
--- QUESTION 5 [Execution Sequence & WHERE vs HAVING]:
+-- QUESTION 7 [Execution Sequence & WHERE vs HAVING]:
 /*
 Task:
 1. List the 6 SQL clause execution steps in order (FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY).
@@ -77,7 +98,7 @@ Task:
 
 
 
--- QUESTION 6 [Scenario Task 1 - Department Payroll Audit]:
+-- QUESTION 8 [Scenario Task 1 - Department Payroll Audit]:
 /*
 Scenario: Auditing department payroll for recent hires.
 Task: Write a query returning Department and SUM(Salary) AS TotalSalary for employees hired after 2020 (JoinYear > 2020), returning only departments where TotalSalary > 300,000, sorted by TotalSalary DESCENDING.
@@ -88,7 +109,7 @@ Task: Write a query returning Department and SUM(Salary) AS TotalSalary for empl
 
 
 
--- QUESTION 7 [Scenario Task 2 - High-Value Salesperson Performance]:
+-- QUESTION 9 [Scenario Task 2 - High-Value Salesperson Performance]:
 /*
 Scenario: Identifying top performers selling high-value items.
 Task: Write a query returning Salesperson and SUM(Amount) AS TotalSales for orders where UnitPrice > 500, returning only salespersons with TotalSales > 50,000, sorted by Salesperson ASCENDING.
@@ -99,7 +120,7 @@ Task: Write a query returning Salesperson and SUM(Amount) AS TotalSales for orde
 
 
 
--- QUESTION 8 [Scenario Task 3 - Customer Order Frequency Audit]:
+-- QUESTION 10 [Scenario Task 3 - Customer Order Frequency Audit]:
 /*
 Scenario: Customer loyalty audit.
 Task: Write a query returning CustomerID and COUNT(OrderID) AS OrderCount for orders placed in 2023 with OrderAmount > 1000, returning only customers with at least 5 orders (COUNT(OrderID) >= 5), sorted by OrderCount DESCENDING.
@@ -114,7 +135,7 @@ Task: Write a query returning CustomerID and COUNT(OrderID) AS OrderCount for or
 -- SECTION 4: LOGIC BUILDER & ALIAS SCOPING DRILLS
 -- ============================================================
 
--- QUESTION 9 [Logic Builder - Alias Scoping Rules]:
+-- QUESTION 11 [Logic Builder - Alias Scoping Rules]:
 /*
 Task:
 1. Why does 'HAVING TotalSales > 10000' fail when TotalSales is aliased in SELECT?
@@ -126,7 +147,17 @@ Task:
 
 
 
--- QUESTION 10 [Debugging - Correct HAVING Alias & Execution Order Errors]:
+-- QUESTION 12 [Logic Builder - WHERE vs HAVING Memory Rule]:
+/*
+Task: State the memory rule: What does WHERE filter vs what does HAVING filter, and which step during execution evaluates aggregate values?
+*/
+
+-- Write your answer in comments below:
+
+
+
+
+-- QUESTION 13 [Debugging - Correct HAVING Alias & Execution Order Errors]:
 /*
 Task: Identify and fix errors in the following query:
 SELECT Dept, SUM(Salary) AS TotalDeptSalary
@@ -137,6 +168,16 @@ ORDER BY TotalDeptSalary DESC;
 */
 
 -- Write your corrected SQL Query below:
+
+
+
+
+-- QUESTION 14 [Debugging - Invalid ORDER BY Alias with Space]:
+/*
+Task: Identify why 'ORDER BY Total Dept Salary DESC;' fails and write the corrected version.
+*/
+
+-- Write your explanation & corrected query below:
 
 
 

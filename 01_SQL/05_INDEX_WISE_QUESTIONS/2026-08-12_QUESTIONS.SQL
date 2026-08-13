@@ -1,21 +1,20 @@
 /* ============================================================
                DAY 11 PRACTICE QUESTIONS (12 AUGUST 2026)
-               TOPICS: PARENT VS CHILD TABLE RELATIONSHIPS,
-                       FOREIGN KEY ENFORCEMENT & DESTRUCTION TESTS
-               REVISION: DAYS 1 - 10 (FULL CUMULATIVE MASTER REVIEW)
-               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 10 QUESTIONS
+               TOPICS: RELATIONAL DATABASE DESIGN, FOREIGN KEYS,
+                       PARENT VS CHILD TABLES, DESTRUCTION RULES
+               REVISION: DAYS 1 - 10 (PRIMARY KEY, IDENTITY, DEFAULT, CHECK)
+               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
    ============================================================ */
 
 -- ============================================================
 -- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
 -- ============================================================
 
--- QUESTION 1 [Basic Syntax - FK Reference Syntax & Rules]:
+-- QUESTION 1 [Syntax Drill - Basic Parent-Child Foreign Key Syntax]:
 /*
-Task: Write simple DDL statements:
-1. Write the inline syntax to define a Foreign Key constraint during CREATE TABLE.
-2. Write the syntax to DROP a child table.
-3. Write the syntax to DELETE a specific row using WHERE.
+Task: Write DDL queries:
+1. Create Parent table 'Depts' (DeptID INT PRIMARY KEY, DeptName VARCHAR 20).
+2. Create Child table 'Staff' (StaffID INT PRIMARY KEY, StaffName VARCHAR 20, DeptID INT FOREIGN KEY REFERENCES Depts(DeptID)).
 */
 
 -- Write your SQL Queries below:
@@ -23,9 +22,60 @@ Task: Write simple DDL statements:
 
 
 
--- QUESTION 2 [Basic Syntax - Teardown Order Principles]:
+-- QUESTION 2 [Syntax Drill - 3-Tier Foreign Key Syntax]:
 /*
-Task: Write out the correct 2-step sequence to drop a parent table 'Dept' and child table 'Emp'.
+Task: Write DDL queries:
+1. Create Tier 1 Parent 'Companies' (CompID INT PRIMARY KEY, CompName VARCHAR 30).
+2. Create Tier 2 Relational 'Branches' (BranchID INT PRIMARY KEY, BranchName VARCHAR 30, CompID INT FOREIGN KEY REFERENCES Companies(CompID)).
+3. Create Tier 3 Child 'Employees_Tier3' (EmpID INT PRIMARY KEY, EmpName VARCHAR 30, BranchID INT FOREIGN KEY REFERENCES Branches(BranchID)).
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 3 [Syntax Drill - Valid Foreign Key Row Insertions]:
+/*
+Task:
+1. Insert 2 rows into Parent table 'Depts' (10, 'IT') and (20, 'HR').
+2. Insert 2 valid rows into Child table 'Staff' referencing DeptID = 10 and DeptID = 20.
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 4 [Syntax Drill - Invalid Orphan Foreign Key Insertion]:
+/*
+Task: Write an INSERT statement into Child table 'Staff' attempting to reference DeptID = 99 (non-existent in Depts) and explain the resulting error message.
+*/
+
+-- Write your SQL Query & explanation below:
+
+
+
+
+-- ============================================================
+-- SECTION 2: DAYS 1 - 10 CUMULATIVE REVISION DRILLS
+-- ============================================================
+
+-- QUESTION 5 [Days 1-10 Revision - Parent Schema with Constraints]:
+/*
+Task:
+1. Create Parent table 'DepartmentMaster' with: DeptID INT PRIMARY KEY IDENTITY(10, 10), DeptName VARCHAR(20) NOT NULL UNIQUE, Location VARCHAR(20) DEFAULT 'Pune'.
+2. Create Child table 'EmployeeRegistry' with: EmpID INT PRIMARY KEY IDENTITY(100, 1), EmpName VARCHAR(30) NOT NULL, Salary INT CHECK (Salary > 0), DeptID INT FOREIGN KEY REFERENCES DepartmentMaster(DeptID).
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 6 [Days 1-10 Revision - Data Population & Join Preview]:
+/*
+Task: Insert 3 departments into 'DepartmentMaster' and 5 employees into 'EmployeeRegistry' verifying identity auto-generation and foreign key validation.
 */
 
 -- Write your SQL Queries below:
@@ -34,77 +84,16 @@ Task: Write out the correct 2-step sequence to drop a parent table 'Dept' and ch
 
 
 -- ============================================================
--- SECTION 2: DAYS 1 - 10 MASTER CUMULATIVE REVISION DRILLS
+-- SECTION 3: PARENT VS CHILD INTEGRITY & DESTRUCTION RULES
 -- ============================================================
 
--- QUESTION 3 [Days 1-10 Master Revision - Schema Setup]:
+-- QUESTION 7 [Scenario - Parent Row Deletion & Reference Protection]:
 /*
+Scenario: Auditing parent row deletion behavior.
 Task:
-1. Create Parent table 'SupplierMaster' with: SupplierID (INT PRIMARY KEY IDENTITY(100, 1)), SupplierName (VARCHAR 30 NOT NULL), Rating (INT DEFAULT 3 CHECK (Rating BETWEEN 1 AND 5)), City (VARCHAR 20 DEFAULT 'Mumbai').
-2. Insert 5 supplier records.
-3. Alter 'SupplierMaster' to ADD column 'ContactEmail' (VARCHAR 40 UNIQUE).
-*/
-
--- Write your SQL Queries below:
-
-
-
-
--- QUESTION 4 [Days 1-10 Master Revision - Aggregations & Sorting]:
-/*
-Task: Write a query on 'SupplierMaster' returning City-wise average Supplier Rating for cities having COUNT(SupplierID) >= 1, sorted by average rating DESCENDING.
-*/
-
--- Write your SQL Query below:
-
-
-
-
--- ============================================================
--- SECTION 3: PARENT & CHILD DESTRUCTION TESTS
--- ============================================================
-
--- QUESTION 5 [Scenario - Referential Integrity Rule Matrix]:
-/*
-Scenario: Security audit establishing database table maintenance policies.
-Task: Complete the rule matrix in comments:
-
-   Operation         | Child Table (Referencing) | Parent Table (Referenced - Has FK References)
-   ------------------|---------------------------|---------------------------------------------
-   DELETE Row        |                           |
-   TRUNCATE Table    |                           |
-   DROP Table        |                           |
-*/
-
--- Write your answers in comments below:
-
-
-
-
--- QUESTION 6 [Scenario - Testing DELETE on Unreferenced vs Referenced Rows]:
-/*
-Scenario: Database maintenance testing.
-Task:
-1. Create Parent table 'DeptParent' (DeptID INT PRIMARY KEY, DeptName VARCHAR 20).
-2. Create Child table 'EmpChild' (EmpID INT PRIMARY KEY, EmpName VARCHAR 20, DeptID INT FOREIGN KEY REFERENCES DeptParent(DeptID)).
-3. Insert Parent rows (10, 'HR'), (20, 'IT'), (30, 'Finance').
-4. Insert Child rows referencing DeptID 10 and 20 only (DeptID 30 has NO child references).
-5. Execute 'DELETE FROM DeptParent WHERE DeptID = 30' (Record result: Success).
-6. Execute 'DELETE FROM DeptParent WHERE DeptID = 10' (Record error: Constraint Conflict).
-*/
-
--- Write your SQL Queries & results below:
-
-
-
-
--- QUESTION 7 [Scenario - Testing TRUNCATE on Parent & Child Tables]:
-/*
-Scenario: Testing table wiping behavior on relational tables.
-Task:
-1. Execute 'TRUNCATE TABLE EmpChild' on the child table (Record result: Success).
-2. Execute 'TRUNCATE TABLE DeptParent' on the parent table (Record error: FK reference error).
-3. Explain why TRUNCATE fails on parent tables even when child table row count is 0.
+1. Write a DELETE statement attempting to remove a parent department from 'DepartmentMaster' that has active child employees in 'EmployeeRegistry'.
+2. Record and explain the resulting Foreign Key reference error message.
+3. Write the correct 2-step procedure to safely delete that department (Child deletion first, then Parent deletion).
 */
 
 -- Write your SQL Queries & explanation below:
@@ -112,14 +101,41 @@ Task:
 
 
 
--- QUESTION 8 [Scenario - Multi-Tier Cascading Schema Teardown]:
+-- QUESTION 8 [Scenario - Truncation Protection on Parent Tables]:
 /*
-Scenario: Designing a 3-Tier E-commerce schema (Customers -> Orders -> OrderItems).
+Scenario: Administrative table wiping attempt.
 Task:
-1. Create Customer table 'Cust_Tier1' (CustID INT PRIMARY KEY).
-2. Create Orders table 'Ord_Tier2' (OrderID INT PRIMARY KEY, CustID INT FOREIGN KEY REFERENCES Cust_Tier1(CustID)).
-3. Create OrderItems table 'Items_Tier3' (ItemID INT PRIMARY KEY, OrderID INT FOREIGN KEY REFERENCES Ord_Tier2(OrderID), Price INT CHECK (Price > 0)).
-4. Write out the exact 3-step sequence required to DROP all 3 tables without disabling constraints.
+1. Write a TRUNCATE statement attempting to wipe Parent table 'DepartmentMaster'.
+2. Record and explain why TRUNCATE fails on Parent tables referenced by a Foreign Key, even if the Child table is empty.
+*/
+
+-- Write your SQL Query & explanation below:
+
+
+
+
+-- QUESTION 9 [Scenario - Drop Protection & Bottom-Up Teardown Script]:
+/*
+Scenario: Database schema teardown automation.
+Task:
+1. Write a DROP statement attempting to drop Parent table 'DepartmentMaster' while Child table 'EmployeeRegistry' exists, and record the error message.
+2. Write the correct Bottom-Up Schema Teardown Script (Drop Child table first, then Drop Parent table).
+*/
+
+-- Write your SQL Queries & explanation below:
+
+
+
+
+-- QUESTION 10 [Scenario - Multi-Tier Supply Chain Referential Integrity]:
+/*
+Scenario: Auditing a 3-Tier Enterprise Supply Chain (Suppliers -> Products -> LineItems).
+Task:
+1. Create Tier 1 Parent 'SuppliersMaster' (SupplierID INT PRIMARY KEY IDENTITY(100,1), SupplierName VARCHAR 40).
+2. Create Tier 2 Relational 'ProductsMaster' (ProductID INT PRIMARY KEY IDENTITY(500,1), ProductName VARCHAR 40, SupplierID INT FOREIGN KEY REFERENCES SuppliersMaster(SupplierID)).
+3. Create Tier 3 Child 'LineItemsLog' (ItemID INT PRIMARY KEY IDENTITY(1,1), ProductID INT FOREIGN KEY REFERENCES ProductsMaster(ProductID), Quantity INT).
+4. Populate 2 rows per table.
+5. Write out the exact safe deletion/teardown order for removing Tier 1 Supplier 100.
 */
 
 -- Write your SQL Queries below:
@@ -128,14 +144,39 @@ Task:
 
 
 -- ============================================================
--- SECTION 4: LOGIC BUILDER & DEBUGGING DRILLS
+-- SECTION 4: LOGIC BUILDER & ARCHITECTURE DRILLS
 -- ============================================================
 
--- QUESTION 9 [Logic Builder - Orphan Record Prevention]:
+-- QUESTION 11 [Logic Builder - NULL Foreign Key Behavior]:
 /*
 Task:
-1. What is an 'Orphan Record' in database terminology?
-2. How do Foreign Key constraints prevent orphan records from being created?
+1. Does a Foreign Key column allow NULL values by default if NOT NULL is omitted?
+2. What is an orphan row, and how does a Foreign Key constraint prevent orphans?
+*/
+
+-- Write your answers in comments below:
+
+
+
+
+-- QUESTION 12 [Logic Builder - Parent vs Child Destruction Rules Table]:
+/*
+Task: Complete the destruction rules summary table in comments:
+Command   | Can execute on Parent with Child FK? | Reason
+-----------------------------------------------------------
+DELETE    | ?                                    | ?
+TRUNCATE  | ?                                    | ?
+DROP      | ?                                    | ?
+*/
+
+-- Write your answer in comments below:
+
+
+
+
+-- QUESTION 13 [Debugging - Foreign Key References Non-PK Column]:
+/*
+Task: Explain why 'CREATE TABLE Child (ID INT, ParentCode VARCHAR(20) REFERENCES ParentTable(NonKeyCol));' fails if NonKeyCol is not a PRIMARY KEY or UNIQUE constraint in ParentTable.
 */
 
 -- Write your explanation in comments below:
@@ -143,16 +184,12 @@ Task:
 
 
 
--- QUESTION 10 [Debugging - Teardown Order Violation Errors]:
+-- QUESTION 14 [Debugging - Circular Dependency Foreign Keys]:
 /*
-Task: Explain why executing the teardown script below fails and rewrite it in the correct order:
--- Buggy Teardown:
-DROP TABLE Cust_Tier1;
-DROP TABLE Ord_Tier2;
-DROP TABLE Items_Tier3;
+Task: Explain how circular foreign keys (Table A referencing Table B, and Table B referencing Table A) create drop/teardown issues, and how to resolve them.
 */
 
--- Write your explanation & corrected script below:
+-- Write your explanation in comments below:
 
 
 

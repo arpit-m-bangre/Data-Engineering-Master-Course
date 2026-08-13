@@ -1,21 +1,25 @@
-# ULTIMATE SQL LEARNING ECOSYSTEM SYSTEM PROMPT
+# ULTIMATE DATA ENGINEERING SQL ECOSYSTEM SYSTEM PROMPT
 
-I have added a new SQL Class Note file to my workspace folder: `d:\DE COURSE\01_SQL\01_CLASS_NOTES\`.
+I have added a new raw SQL Class Note file to my workspace folder: `d:\DE COURSE\01_SQL\01_CLASS_NOTES\`.
 Target File: [INSERT DATE HERE, e.g., 2026-08-13.sql]
 
-You are my Lead Data Engineering Mentor and SQL Architect. Your task is to process this new class note and automatically update my entire 6-folder SQL Learning Ecosystem while ensuring 100% DATA PRESERVATION and ZERO CONTENT LOSS.
+You are my Lead Data Engineering Mentor and Senior Database Architect. Your objective is to process this new class note and automatically update my entire 6-folder SQL Learning Ecosystem, Learning Diary, and Master GitHub README while ensuring 100% DATA PRESERVATION, ZERO CONTENT LOSS, and HIGHEST ENGINEERING QUALITY.
 
 ==================================================
-WORKSPACE DIRECTORY STRUCTURE & RULES
+WORKSPACE DIRECTORY STRUCTURE & ECOSYSTEM LAYOUT
 ==================================================
 Root Folder: d:\DE COURSE\01_SQL\
 
-1. 01_CLASS_NOTES/          -> Clean & re-structure raw class notes.
-2. 02_DAILY_INDEX/          -> Daily topic index files + Master Combined Index.
-3. 03_REVISION_NOTES/       -> Interactive 7-Step Markdown (.md) revision notes.
+1. 01_CLASS_NOTES/          -> Clean & re-structure raw class notes with strict SQL standards.
+2. 02_DAILY_INDEX/          -> Daily topic index files + Master Combined Topic Index (`01_COMBINED_INDEX_ALL_TOPICS.SQL`).
+3. 03_REVISION_NOTES/       -> Interactive 7-Step Markdown (`.md`) revision notes.
 4. 04_CLASS_TASKS/          -> In-class tasks and exercise files.
-5. 05_INDEX_WISE_QUESTIONS/ -> Practice questions (.SQL) with comments & space to answer.
-6. 06_PROJECTS/             -> Multi-topic Data Engineering SQL project pipelines.
+5. 05_INDEX_WISE_QUESTIONS/ -> Practice question sets (`.SQL`) with blank spaces for hands-on SSMS practice.
+6. 06_PROJECTS/             -> Production-grade Data Engineering SQL project pipelines (`PROJECT<N>.SQL`).
+
+Tracking Files:
+- `d:\DE COURSE\LEARNING_DIARY\LEARNING_DIARY.txt` -> Plain text progress tracker log.
+- `d:\DE COURSE\README.md`                          -> Master GitHub Portfolio homepage.
 
 ==================================================
 AUTOMATED PIPELINE EXECUTION STEPS
@@ -25,58 +29,64 @@ AUTOMATED PIPELINE EXECUTION STEPS
 STEP 1: RESTRUCTURE CLASS NOTE (01_CLASS_NOTES/)
 --------------------------------------------------
 - Re-format the raw SQL file in `01_CLASS_NOTES/`.
-- Apply strict SQL standards: UPPERCASE SQL keywords (SELECT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, CREATE TABLE, ALTER TABLE, UPDATE, DELETE, TRUNCATE, DROP, etc.).
-- Standardize multi-line clause indentations, section header banners, and code readability.
-- CRITICAL: Preserve 100% of original queries, logic, comments, and interview points. Do NOT delete or modify any technical concept.
+- Apply strict SQL formatting: UPPERCASE all SQL keywords (`SELECT`, `FROM`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`, `CREATE TABLE`, `ALTER TABLE`, `UPDATE`, `DELETE`, `TRUNCATE`, `DROP`, `JOIN`, `ON`, `WITH`, etc.).
+- Standardize multi-line clause indentations, section banners, and code readability.
+- CRITICAL: Preserve 100% of original queries, logic, comments, and interview points. Do NOT delete or alter any technical concept.
 
 --------------------------------------------------
 STEP 2: UPDATE DAILY INDEX (02_DAILY_INDEX/)
 --------------------------------------------------
 - Create an individual daily index file named `YYYY-MM-DD_INDEX.SQL`.
-- Update the master index file `01_COMBINED_INDEX_ALL_TOPICS.SQL` at the top of the directory with today's topics and subtopics.
-- Update `DATE_INDEX.TEXT` / `DATE_INDEX.txt` summary file.
+- Update the master index file `01_COMBINED_INDEX_ALL_TOPICS.SQL` at the top of the directory with today's new topics and subtopics.
+- Update `DATE_INDEX.TEXT` summary index.
 
 --------------------------------------------------
 STEP 3: GENERATE REVISION NOTES (03_REVISION_NOTES/)
 --------------------------------------------------
-- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the 7-Step Framework:
+- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the 7-Step Interactive Framework:
   1. TODAY'S TOPICS
-  2. STEP 1 — QUICK RECALL (Questions + Key Takeaways)
+  2. STEP 1 — QUICK RECALL (Self-check questions + key takeaways)
   3. STEP 2 — CONCEPT UNDERSTANDING (What it means, Why/When used, Plain English rules)
-  4. STEP 3 — SQL SYNTAX & CODE EXAMPLES (Formated SQL code blocks)
-  5. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative connections)
+  4. STEP 3 — SQL SYNTAX & CODE EXAMPLES (Formated executable SQL code blocks)
+  5. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative Connections)
   6. STEP 5 — COMMON MISTAKES & DEBUGGING (Buggy query, Root cause, Correction)
-  7. STEP 6 — REAL-WORLD DATA ENGINEERING APPLICATION (Industry scenario)
+  7. STEP 6 — REAL-WORLD DATA ENGINEERING APPLICATION (Industry business scenarios)
   8. STEP 7 — MINI ASSESSMENT & SOLUTION KEY (Self-check evaluation)
   9. REVISION SUMMARY & ACTION PLAN
 
 --------------------------------------------------
 STEP 4: EXTRACT CLASS TASKS (04_CLASS_TASKS/)
 --------------------------------------------------
-- If today's class notes contain specific tasks given during class, extract and format them into `04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL`. If no specific tasks exist, note it in the summary.
+- Extract any specific tasks or exercises given by faculty during class into `04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL`. If no specific task was given, record it in the summary.
 
 --------------------------------------------------
 STEP 5: GENERATE PRACTICE QUESTIONS (05_INDEX_WISE_QUESTIONS/)
 --------------------------------------------------
-- Create `YYYY-MM-DD_QUESTIONS.SQL` divided into 4 mandatory sections:
-  - SECTION 1: Basic Syntax Practice & Quick Drills (Warm-up queries)
-  - SECTION 2: Spaced Cumulative Revision Drills (Questions bringing back topics from previous days)
-  - SECTION 3: Real-World Scenario-Based Challenges (Moderate to High difficulty DE scenarios, ~1.5–2 hours target completion time)
-  - SECTION 4: Logic Builder & Debugging (Edge cases, metadata, constraint errors)
-- FORMATTING: All questions MUST be enclosed inside SQL comments (`--` or `/* ... */`) with blank lines provided below each question so I can write my own SQL queries.
+- Create `YYYY-MM-DD_QUESTIONS.SQL` containing **14 targeted questions** divided into 4 mandatory sections:
+  * SECTION 1: Basic Syntax Practice & Quick Drills (4 fast-paced syntax muscle-memory drills)
+  * SECTION 2: Spaced Cumulative Revision Drills (2 questions connecting today's lesson with previous days)
+  * SECTION 3: Real-World Scenario-Based Challenges (4 moderate-to-high difficulty Data Engineering business scenarios)
+  * SECTION 4: Logic Builder & DebugGING Drills (4 edge case, metadata, and syntax error debugging drills)
+- CRITICAL FORMATTING: All questions MUST be enclosed inside SQL comment blocks (`--` or `/* ... */`) with blank space lines below `-- Write your SQL Query below:` so I can write my own SQL queries from scratch in SSMS. Do NOT write answers inside the practice file!
 
 --------------------------------------------------
-STEP 6: PROJECT CHECK & UPDATE (06_PROJECTS/)
+STEP 6: PROJECT CHECK & CREATION (06_PROJECTS/)
 --------------------------------------------------
-- Check if today's class note completes a major milestone or introduces a new core SQL module (e.g., Joins, Subqueries, CTEs, Window Functions).
-- If a new milestone is reached, create or update a project file named `PROJECT<N>.SQL` grouping the relevant topics into an enterprise Data Engineering pipeline.
+- Evaluate if today's class note completes a core concept milestone or introduces a new advanced SQL module (e.g., Joins, Subqueries, CTEs, Window Functions, Indexing, Stored Procedures).
+- If a new milestone or module is introduced, create a new enterprise Data Engineering project file named `PROJECT<N>.SQL` (or upgrade existing project pipelines) incorporating the new concepts into a multi-tier relational database architecture.
+
+--------------------------------------------------
+STEP 7: UPDATE LEARNING DIARY & GITHUB README
+--------------------------------------------------
+- Append today's class date and completed tasks to `d:\DE COURSE\LEARNING_DIARY\LEARNING_DIARY.txt`.
+- Update `d:\DE COURSE\README.md` with the new topics and project additions.
 
 ==================================================
-FINAL CONFIRMATION
+FINAL CONFIRMATION & OUTPUT
 ==================================================
-After creating/updating all files:
-1. Verify directory integrity.
+After executing all steps:
+1. Verify workspace directory integrity.
 2. Confirm 100% data preservation.
-3. Provide a concise summary of the generated files with clickable file links.
+3. Provide a clear, concise summary with clickable file links.
 
 PLEASE BEGIN EXECUTION NOW FOR: [INSERT DATE HERE]

@@ -1,22 +1,20 @@
 /* ============================================================
                DAY 10 PRACTICE QUESTIONS (11 AUGUST 2026)
-               TOPICS: DEFAULT CONSTRAINT, 10 INSERTION PATTERNS,
-                       IDENTITY (AUTO INCREMENT), FOREIGN KEY ARCHITECTURE
-               REVISION: DAYS 1 - 9 (PK, UNIQUE, CHECK, GROUP BY, DML)
-               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 10 QUESTIONS
+               TOPICS: DEFAULT CONSTRAINT, IDENTITY AUTO-INCREMENT,
+                       10 DATA INSERTION PATTERNS, SET IDENTITY_INSERT
+               REVISION: DAYS 1 - 9 (CONSTRAINTS, PRIMARY KEY, CHECK, UPDATE)
+               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
    ============================================================ */
 
 -- ============================================================
 -- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
 -- ============================================================
 
--- QUESTION 1 [Basic Syntax - DEFAULT, IDENTITY & FOREIGN KEY]:
+-- QUESTION 1 [Syntax Drill - DEFAULT & IDENTITY Declaration]:
 /*
-Task: Write simple DDL statements for:
-1. Create table 'Demo_Default' with: City VARCHAR(20) DEFAULT 'Pune'.
-2. Create table 'Demo_Identity' with: LogID INT IDENTITY(100, 1).
-3. Create parent table 'Demo_Parent' (PKID INT PRIMARY KEY).
-4. Create child table 'Demo_Child' (FKID INT FOREIGN KEY REFERENCES Demo_Parent(PKID)).
+Task: Write DDL queries:
+1. Create table 'Demo_Default' with: ItemID INT PRIMARY KEY, Country VARCHAR(20) DEFAULT 'India', LogDate DATETIME DEFAULT GETDATE().
+2. Create table 'Demo_Identity' with: AutoID INT PRIMARY KEY IDENTITY(1, 1), ItemName VARCHAR(20).
 */
 
 -- Write your SQL Queries below:
@@ -24,11 +22,33 @@ Task: Write simple DDL statements for:
 
 
 
--- QUESTION 2 [Basic Syntax - Explicit DEFAULT Keyword & Identity Values]:
+-- QUESTION 2 [Syntax Drill - IDENTITY Seed & Increment Variants]:
 /*
-Task:
-1. Insert a row into 'Demo_Default' using the explicit DEFAULT keyword.
-2. Insert 3 rows into 'Demo_Identity' providing values for un-identity columns and observe auto-generated sequence.
+Task: Write DDL queries:
+1. Create table 'Seq_100' with: CustomID INT PRIMARY KEY IDENTITY(100, 10), BatchName VARCHAR(20).
+2. Create table 'Seq_500' with: RegID INT PRIMARY KEY IDENTITY(500, 1), CustomerName VARCHAR(30).
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 3 [Syntax Drill - DEFAULT Keyword in INSERT]:
+/*
+Task: Write INSERT statements into 'Demo_Default':
+1. Explicitly passing DEFAULT keyword for Country column.
+2. Omitting Country column in INSERT column list.
+*/
+
+-- Write your SQL Queries below:
+
+
+
+
+-- QUESTION 4 [Syntax Drill - SET IDENTITY_INSERT Commands]:
+/*
+Task: Write the syntax to turn IDENTITY_INSERT ON for table 'Demo_Identity', insert an explicit ID = 999, and turn IDENTITY_INSERT OFF.
 */
 
 -- Write your SQL Queries below:
@@ -40,11 +60,11 @@ Task:
 -- SECTION 2: DAYS 1 - 9 CUMULATIVE REVISION DRILLS
 -- ============================================================
 
--- QUESTION 3 [Days 1-9 Revision - Schema & Constraints]:
+-- QUESTION 5 [Days 1-9 Revision - Schema Creation & Constraints]:
 /*
 Task:
-1. Create table 'PatientMaster' with: PatientID (INT PRIMARY KEY), PatientName (VARCHAR 30 NOT NULL), Age (INT CHECK (Age BETWEEN 0 AND 120)), WardType (VARCHAR 15 CHECK (WardType IN ('General', 'ICU', 'Private'))), TotalBill (INT CHECK (TotalBill >= 0)).
-2. Insert 5 records.
+1. Create table 'EmployeeMaster' with: EmpID INT PRIMARY KEY IDENTITY(1, 1), EmpName VARCHAR(30) NOT NULL, Dept VARCHAR(20) CHECK (Dept IN ('HR', 'IT', 'Finance')), Salary INT CHECK (Salary > 0), City VARCHAR(20) DEFAULT 'Nagpur'.
+2. Insert 4 records demonstrating IDENTITY auto-generation and DEFAULT city.
 */
 
 -- Write your SQL Queries below:
@@ -52,9 +72,9 @@ Task:
 
 
 
--- QUESTION 4 [Days 1-9 Revision - Aggregations & HAVING Filter]:
+-- QUESTION 6 [Days 1-9 Revision - Selective Queries & Aggregates]:
 /*
-Task: Write a GROUP BY query on 'PatientMaster' returning WardType, COUNT(PatientID), and AVG(TotalBill) for WardTypes with AVG(TotalBill) > 15000.
+Task: Select Dept, COUNT(EmpID) AS EmpCount, AVG(Salary) AS AvgSal from 'EmployeeMaster' grouped by Dept HAVING AVG(Salary) > 30000.
 */
 
 -- Write your SQL Query below:
@@ -66,12 +86,15 @@ Task: Write a GROUP BY query on 'PatientMaster' returning WardType, COUNT(Patien
 -- SECTION 3: REAL-WORLD SCENARIO-BASED CHALLENGES
 -- ============================================================
 
--- QUESTION 5 [Scenario - DEFAULT Fallbacks & Account Initialization]:
+-- QUESTION 7 [Scenario - DEFAULT System Functions & Values]:
 /*
-Scenario: E-commerce user account initialization.
+Scenario: Auditing automatic default column population.
 Task:
-1. Create table 'CustomerAccounts' (AccountID INT PRIMARY KEY, AccountType VARCHAR 15 DEFAULT 'Standard', CreditLimit INT DEFAULT 5000 CHECK (CreditLimit >= 1000)).
-2. Insert a record providing ONLY AccountID and verify default fallback values.
+1. Create table 'OrderTracking' (OrderID INT PRIMARY KEY IDENTITY(1001, 1), OrderItem VARCHAR 30, Status VARCHAR 15 DEFAULT 'Pending', OrderDate DATETIME DEFAULT GETDATE()).
+2. Insert a row supplying values for ALL columns explicitly.
+3. Insert a row passing DEFAULT keyword for Status.
+4. Insert a row omitting Status and OrderDate.
+5. Select all records and verify default values.
 */
 
 -- Write your SQL Queries below:
@@ -79,35 +102,14 @@ Task:
 
 
 
--- QUESTION 6 [Scenario - 10 Data Insertion Patterns Drill]:
+-- QUESTION 8 [Scenario - Auto-Increment Gaps & Manual Identity Insertion]:
 /*
-Scenario: Demonstrating all data insertion variations in production SQL.
-Task: Write queries demonstrating the 10 data insertion patterns:
-1. Pattern 1: All columns matching sequence.
-2. Pattern 2: Explicit column list.
-3. Pattern 3: Multiple specific columns.
-4. Pattern 4: Multi-row INSERT.
-5. Pattern 5: Multi-row specific columns.
-6. Pattern 6: Omitted column DEFAULT fallback.
-7. Pattern 7: Explicit DEFAULT keyword.
-8. Pattern 8: Explicit NULL insertion.
-9. Pattern 9: INSERT INTO ... SELECT.
-10. Pattern 10: INSERT INTO ... SELECT with WHERE.
-*/
-
--- Write your SQL Queries below:
-
-
-
-
--- QUESTION 7 [Scenario - AUTO INCREMENT (IDENTITY) Sequence Generation]:
-/*
-Scenario: Transaction log sequence generation.
+Scenario: E-commerce order log identity auto-increment behavior.
 Task:
-1. Create table 'AuditLog' (LogID INT IDENTITY(1000, 5), EventDescription VARCHAR 50).
-2. Insert 4 records providing ONLY EventDescription values.
-3. Query all rows and observe LogID sequence (1000, 1005, 1010, 1015).
-4. Explain why IDENTITY can only be applied to numeric data types.
+1. Create table 'AutoInvoice' (InvoiceNo INT PRIMARY KEY IDENTITY(500, 5), CustomerName VARCHAR 30).
+2. Insert 3 rows without passing InvoiceNo.
+3. Attempt to manually insert InvoiceNo = 999 and explain the resulting error message.
+4. Enable SET IDENTITY_INSERT ON, insert InvoiceNo = 999, and turn SET IDENTITY_INSERT OFF.
 */
 
 -- Write your SQL Queries & explanation below:
@@ -115,46 +117,84 @@ Task:
 
 
 
--- QUESTION 8 [Scenario - FOREIGN KEY Architecture & Violation Checks]:
+-- QUESTION 9 [Scenario - 10 Data Insertion Patterns Drill]:
 /*
-Scenario: Parent-Child relationship between Customers (Parent) and Orders (Child).
-Task:
-1. Create Parent table 'CustomerParent' (CustPKID INT PRIMARY KEY, CustomerName VARCHAR 30).
-2. Create Child table 'OrdersChild' (OrderID INT PRIMARY KEY, CustFKID INT FOREIGN KEY REFERENCES CustomerParent(CustPKID), OrderAmount INT).
-3. Insert 3 parent rows (1, 2, 3) and child rows referencing 1 and 2.
-4. Test inserting a child row with CustFKID = 99 and record the error.
-5. Test deleting parent row CustPKID = 1 and record the error.
+Scenario: Data Engineering pipeline insertion flexibility testing.
+Task: Using table 'EmployeeMaster' from Question 5, write INSERT queries demonstrating:
+1. Full column insertion in exact matching order.
+2. Full column insertion using explicit column list.
+3. Column list in non-matching table order.
+4. Omitted optional column (relying on DEFAULT).
+5. Omitted multiple optional columns.
+6. Explicit DEFAULT keyword usage.
+7. Multi-row bulk insertion in a single statement.
+8. Insertion with expressions/functions in value list.
+9. Insertion with NULL in an optional column.
+10. Explicit IDENTITY override (with IDENTITY_INSERT ON).
 */
 
--- Write your SQL Queries & explanations below:
+-- Write your 10 SQL INSERT Queries below:
+
+
+
+
+-- QUESTION 10 [Scenario - Customer Onboarding System Validation]:
+/*
+Scenario: Customer management database setup.
+Task:
+1. Create table 'CustomerDirectory' with CustomerID INT PRIMARY KEY IDENTITY(1, 1), FullName VARCHAR 40 NOT NULL, Email VARCHAR 50 UNIQUE, Country VARCHAR 20 DEFAULT 'India', JoinedDate DATETIME DEFAULT GETDATE().
+2. Insert 3 customers testing IDENTITY auto-generation and DEFAULT Country.
+*/
+
+-- Write your SQL Queries below:
 
 
 
 
 -- ============================================================
--- SECTION 4: LOGIC BUILDER & DESTRUCTION RULES
+-- SECTION 4: LOGIC BUILDER & DEBUGGING DRILLS
 -- ============================================================
 
--- QUESTION 9 [Logic Builder - Parent vs Child Protection Rules]:
+-- QUESTION 11 [Logic Builder - Auto-Increment Gap Analysis]:
 /*
 Task:
-1. Explain why you cannot delete a parent row while active child records point to it.
-2. Explain why TRUNCATE TABLE CustomerParent fails even if the child table OrdersChild contains 0 rows.
+1. What happens to the IDENTITY sequence if an INSERT transaction fails due to a constraint check (e.g. CHECK constraint failure)?
+2. Does SQL Server reuse or rollback the failed identity integer?
+*/
+
+-- Write your answers in comments below:
+
+
+
+
+-- QUESTION 12 [Logic Builder - IDENTITY_INSERT Scoping Rules]:
+/*
+Task:
+1. How many tables can have SET IDENTITY_INSERT ON simultaneously in a single session?
+2. What happens if you forget to turn SET IDENTITY_INSERT OFF after manual insertion?
+*/
+
+-- Write your answers in comments below:
+
+
+
+
+-- QUESTION 13 [Debugging - SET IDENTITY_INSERT Errors]:
+/*
+Task: Identify why the query 'INSERT INTO AutoInvoice (InvoiceNo, CustomerName) VALUES (700, 'Arpit');' fails when IDENTITY_INSERT is OFF, and write the fix.
+*/
+
+-- Write your explanation & corrected query below:
+
+
+
+
+-- QUESTION 14 [Debugging - Column List Mismatch in IDENTITY_INSERT]:
+/*
+Task: Explain why 'SET IDENTITY_INSERT AutoInvoice ON; INSERT INTO AutoInvoice VALUES (705, 'Aditya');' fails when explicit column list is omitted.
 */
 
 -- Write your explanation in comments below:
-
-
-
-
--- QUESTION 10 [Debugging - Fix FK Insertion & Teardown Errors]:
-/*
-Task: Identify and fix errors in the following 2 queries:
-1. INSERT INTO OrdersChild VALUES (101, 999, 5000); (PK 999 does not exist in parent)
-2. DROP TABLE CustomerParent; (while child table OrdersChild still exists)
-*/
-
--- Write your explanations & corrected sequence below:
 
 
 
