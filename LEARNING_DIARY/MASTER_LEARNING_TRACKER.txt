@@ -48,9 +48,6 @@ PROJECT 2  | PROJECT2.SQL   | Healthcare Admissions & Billing Pipeline        | 
 PROJECT 3  | PROJECT3.SQL   | Banking Transaction Audit & Fraud Engine        | Solo SQL | Aug 19 (Wed)   | PENDING
 PROJECT 4  | PROJECT4.SQL   | HR Payroll & Data Validation Engine             | Solo SQL | Aug 20 (Thu)   | PENDING
 PROJECT 5  | PROJECT5.SQL   | Retail Supply Chain & FK Architecture           | Solo SQL | Aug 21 (Fri)   | PENDING
-PROJECT 6  | PROJECT6.SQL   | Relational Joins & Multi-Table Engine           | Solo SQL | Aug 22 (Sat)   | PENDING
-PROJECT 7  | PROJECT7.SQL   | Analytical CTEs & Window Function Pipeline     | Solo SQL | Aug 23 (Sun)   | PENDING
-PROJECT 8  | PROJECT8.SQL   | Master Data Engineering Warehouse Capstone      | Solo SQL | Aug 24 (Mon)   | PENDING
 
 ====================================================================================================
 SECTION 4: MASTER BACKLOG CLEARANCE PLAN (AUG 14 TO AUG 24)
@@ -146,30 +143,25 @@ DAY 8: FRIDAY (AUG 21) -- TARGET: DAYS 9 & 10 BACKLOG & PROJECT 5
 - [ ] 09:00 PM - 10:15 PM : LIVE CLASS (Aug 21 Class)
 
 ----------------------------------------------------------------------------------------------------
-DAY 9: SATURDAY (AUG 22) -- TARGET: DAY 11 BACKLOG & PROJECT 6 [BACKLOG 100% CLEARED!]
+DAY 9: SATURDAY (AUG 22) -- TARGET: DAY 11 & 12 BACKLOG 
 ----------------------------------------------------------------------------------------------------
 - [ ] 11:00 AM - 11:30 AM : Read Day 11 Revision Note (2026-08-12_REVISION.md)
 - [ ] 11:30 AM - 01:00 PM : Solve Day 11 Questions (2026-08-12_QUESTIONS.SQL)
 - [ ] 01:00 PM - 02:00 PM : Lunch & Rest Break
-- [ ] 02:00 PM - 04:00 PM : Solve PROJECT6.SQL
+- [ ] 02:00 PM - 02:30 PM : Read Day 12 Revision Note (2026-08-13_REVISION.md)
+- [ ] 02:30 PM - 04:00 PM : Solve Day 12 Questions (2026-08-13_QUESTIONS.SQL)
 - [ ] 04:00 PM - 05:00 PM : Read Aug 21 Class Revision Note
 - [ ] 07:30 PM - 09:00 PM : Dinner Break
 - [ ] 09:00 PM - 10:15 PM : LIVE CLASS (Aug 22 Class)
 
 ----------------------------------------------------------------------------------------------------
-DAY 10: SUNDAY (AUG 23) -- BUFFER & NEW PROJECT DAY (NO LIVE CLASS)
+DAY 10: SUNDAY (AUG 23) -- BUFFER DAY & 100% MASTER COMPLETION MILESTONE
 ----------------------------------------------------------------------------------------------------
-- [ ] 11:00 AM - 01:00 PM : Solve PROJECT7.SQL
-- [ ] Rest of Day OFF to relax and recharge!
-
-----------------------------------------------------------------------------------------------------
-DAY 11: MONDAY (AUG 24) -- 100% MASTER COMPLETION MILESTONE
-----------------------------------------------------------------------------------------------------
-- [ ] 11:00 AM - 01:00 PM : Solve PROJECT8.SQL
-- [ ] ALL 11 BACKLOG REVISIONS (DAYS 1-11) : 100% COMPLETE!
-- [ ] ALL 11 BACKLOG QUESTIONS (DAYS 1-11) : 100% COMPLETE!
-- [ ] ALL 8 PROJECTS (PROJECT1 TO 8)       : 100% COMPLETE!
+- [ ] ALL 12 BACKLOG REVISIONS (DAYS 1-12) : 100% COMPLETE!
+- [ ] ALL 12 BACKLOG QUESTIONS (DAYS 1-12) : 100% COMPLETE!
+- [ ] ALL 5 PROJECTS (PROJECT1 TO 5)       : 100% COMPLETE!
 - [ ] ALL NEW ONGOING LIVE CLASSES         : 100% UP TO DATE!
+- [ ] Rest of Day OFF to relax and recharge!
 
 ====================================================================================================
 SECTION 5: DAILY MENTOR INTERACTION LOG & STREAK TRACKER

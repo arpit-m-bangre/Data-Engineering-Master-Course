@@ -79,6 +79,11 @@ d:\DE COURSE\
 - Always provide TWICE the amount of practical SQL code examples than normal to ensure deep practical understanding.
 - CRITICAL EXCEPTION: This simplification applies ONLY to plain-text explanations. You MUST strictly preserve 100% of the underlying SQL queries, technical constraints, metadata logic, and code structures without any loss of depth.
 
+### 8. Pre-Flight Audit Law (1000% Sync Guarantee)
+- NEVER guess or project future uncreated files.
+- Before generating a daily plan, updating the `MASTER_LEARNING_TRACKER.txt`, or generating any backlog clearance schedule, the agent MUST explicitly check the physical file count in the directory. 
+- Example: If only 5 projects exist physically in `06_PROJECTS/`, the tracker must strictly state 5. You are mathematically forbidden from hallucinating Projects 6, 7, and 8. The system MUST be in 100% perfect sync with the physical disk at all times.
+
 ---
 
 ## 🤖 DAILY AI MENTOR PROTOCOL
