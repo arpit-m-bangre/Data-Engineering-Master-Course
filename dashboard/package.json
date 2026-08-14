@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node copy_tasks.cjs",
     "dev": "vite",
+    "prebuild": "node copy_tasks.cjs",
     "build": "vite build",
     "preview": "vite preview"
   },
