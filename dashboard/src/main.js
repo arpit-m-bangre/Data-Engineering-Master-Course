@@ -18,8 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       let response;
       try {
-        // Try fetching the live URL first
-        response = await fetch(TASKS_URL, { cache: "no-store" });
+        // Try fetching the live URL first (bypass cache with timestamp)
+        const cacheBuster = `?t=${new Date().getTime()}`;
+        response = await fetch(TASKS_URL + cacheBuster, { cache: "no-store" });
         if (!response.ok) throw new Error("Live URL fail");
       } catch (e) {
         // Fallback for local testing if the live URL fails

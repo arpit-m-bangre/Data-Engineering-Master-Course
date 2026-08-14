@@ -112,10 +112,13 @@ header h1 {
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+header h1 .gradient-text {
   background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.5px;
 }
 
 header p {
