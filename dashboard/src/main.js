@@ -16,35 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchTasks() {
     try {
-      let response;
-      try {
-        // Try fetching the live URL first (bypass cache with timestamp)
-        const cacheBuster = `?t=${new Date().getTime()}`;
-        response = await fetch(TASKS_URL + cacheBuster, { cache: "no-store" });
-        if (!response.ok) throw new Error("Live URL fail");
-      } catch (e) {
-        // Fallback for local testing if the live URL fails
-        console.log("Live URL failed. Trying local file...", e);
-        try {
-          response = await fetch('/TODAYS_TASKS.txt'); 
-          if (!response.ok) throw new Error("Local fail");
-        } catch(e2) {
-          console.log("Using fallback data for demonstration.");
-          const mockData = `====================================================================
-                  DAILY MISSION: 14 AUG 2026
-====================================================================
-
-[x] 11:15 AM - 11:45 AM : Core Revision (Day 1 Note)
-    -> 01_SQL/03_REVISION_NOTES/2026-08-01_REVISION.md
-[ ] 11:45 AM - 12:45 PM : Practice Drills (14 Qs)
-    -> 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-01_QUESTIONS.SQL
-[ ] 12:45 PM - 02:00 PM : LUNCH & REST
-[ ] 02:00 PM - 03:00 PM : Critical Weak Spot Revision 
-    -> 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md (Focus: Constraints & TRUNCATE)
-====================================================================`;
-          renderTasks(mockData);
-          return;
-        }
+      // Vercel build process now copies the file into the public directory
+      const cacheBuster = `?t=${new Date().getTime()}`;
+      const response = await fetch('/TODAYS_TASKS.txt' + cacheBuster, { cache: "no-store" });
+      
+      if (!response.ok) {
+        throw new Error("Failed to fetch task file. Ensure it is copied to the public directory.");
       }
       
       const text = await response.text();
