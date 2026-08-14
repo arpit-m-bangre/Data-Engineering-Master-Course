@@ -72,9 +72,11 @@ d:\DE COURSE\
 - STRICT IMMUTABILITY FOR DIRECTORY STRUCTURES: Neither the AI agent nor any background script is EVER permitted to execute recursive directory deletion commands (such as `rm -rf`, `Remove-Item -Recurse`, `git clean -fdx`, `rd /s /q`) on `d:\DE COURSE\` or any of its top-level module folders (`00_SYLLABUS`, `01_SQL`, `02_PYTHON`, `03_ETL_DATA_PIPELINES`, `04_PYSPARK_BIG_DATA`, `05_DATA_WAREHOUSING`, `06_CLOUD_ENGINEERING`, `07_ORCHESTRATION`, `LEARNING_DIARY`, `.agents`).
 - Internal files inside subdirectories CAN be created, updated, edited, and modified as required for course progress, but directory trees MUST remain 100% protected and safe from accidental deletion.
 
-### 7. Simple Language & Real-World Analogy Law (New)
+### 7. Simple Language, Analogies & Vocabulary Law (New)
 - When generating, refactoring, or explaining any concept in Class Notes (`.sql`) or Revision Notes (`.md`), the language MUST be extremely simple, conversational, and easy to understand.
 - Always incorporate nice, vivid real-life examples and analogies (e.g., comparing Foreign Keys to a bouncer at a club, or IDENTITY properties to ticket dispensers) to explain technical concepts.
+- Provide a dedicated "Vocabulary & Definitions" section that explicitly gives the simple meaning of difficult English or technical words (e.g., "retrofitting", "truncate", "referential").
+- Always provide TWICE the amount of practical SQL code examples than normal to ensure deep practical understanding.
 - CRITICAL EXCEPTION: This simplification applies ONLY to plain-text explanations. You MUST strictly preserve 100% of the underlying SQL queries, technical constraints, metadata logic, and code structures without any loss of depth.
 
 ---

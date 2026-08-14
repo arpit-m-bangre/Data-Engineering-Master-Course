@@ -46,16 +46,17 @@ STEP 2: UPDATE DAILY INDEX (02_DAILY_INDEX/)
 --------------------------------------------------
 STEP 3: GENERATE REVISION NOTES (03_REVISION_NOTES/)
 --------------------------------------------------
-- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the 7-Step Interactive Framework, ensuring all plain-text content uses extremely simple, easy-to-understand conversational language with vivid real-world analogies:
+- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the expanded Interactive Framework, ensuring all plain-text content uses extremely simple, conversational language with vivid real-world analogies:
   1. TODAY'S TOPICS
   2. STEP 1 — QUICK RECALL (Self-check questions + key takeaways)
   3. STEP 2 — CONCEPT UNDERSTANDING (What it means, Why/When used, Plain English rules + A nice real-life example/analogy)
-  4. STEP 3 — SQL SYNTAX & CODE EXAMPLES (Formated executable SQL code blocks)
-  5. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative Connections)
-  6. STEP 5 — COMMON MISTAKES & DEBUGGING (Buggy query, Root cause, Correction)
-  7. STEP 6 — REAL-WORLD DATA ENGINEERING APPLICATION (Industry business scenarios)
-  8. STEP 7 — MINI ASSESSMENT & SOLUTION KEY (Self-check evaluation)
-  9. REVISION SUMMARY & ACTION PLAN
+  4. STEP 2.5 — VOCABULARY & DEFINITIONS (Simple meanings for difficult technical or English words like "retrofitting")
+  5. STEP 3 — SQL SYNTAX & CODE EXAMPLES (Provide DOUBLE the amount of practical SQL code examples for better understanding)
+  6. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative Connections)
+  7. STEP 5 — COMMON MISTAKES & DEBUGGING (Buggy query, Root cause, Correction)
+  8. STEP 6 — REAL-WORLD DATA ENGINEERING APPLICATION (Industry business scenarios)
+  9. STEP 7 — MINI ASSESSMENT & SOLUTION KEY (Self-check evaluation)
+  10. REVISION SUMMARY & ACTION PLAN
 
 --------------------------------------------------
 STEP 4: EXTRACT CLASS TASKS (04_CLASS_TASKS/)
