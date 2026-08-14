@@ -33,7 +33,8 @@ STEP 1: RESTRUCTURE CLASS NOTE (01_CLASS_NOTES/)
 - Re-format the raw SQL file in `01_CLASS_NOTES/`.
 - Apply strict SQL formatting: UPPERCASE all SQL keywords (`SELECT`, `FROM`, `WHERE`, `GROUP BY`, `HAVING`, `ORDER BY`, `CREATE TABLE`, `ALTER TABLE`, `UPDATE`, `DELETE`, `TRUNCATE`, `DROP`, `JOIN`, `ON`, `WITH`, etc.).
 - Standardize multi-line clause indentations, section banners, and code readability.
-- CRITICAL: Preserve 100% of original queries, logic, comments, and interview points. Do NOT delete or alter any technical concept.
+- LANGUAGE RULE: Rewrite any plain-text explanations to be extremely easy, simple, and conversational to understand. Incorporate nice real-life analogies (e.g., comparing database concepts to everyday objects or situations) for better understanding.
+- CRITICAL: Preserve 100% of original queries, logic, comments, and interview points without compromising any technical depth. Do NOT delete or alter any technical concept, just explain it simply.
 
 --------------------------------------------------
 STEP 2: UPDATE DAILY INDEX (02_DAILY_INDEX/)
@@ -45,10 +46,10 @@ STEP 2: UPDATE DAILY INDEX (02_DAILY_INDEX/)
 --------------------------------------------------
 STEP 3: GENERATE REVISION NOTES (03_REVISION_NOTES/)
 --------------------------------------------------
-- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the 7-Step Interactive Framework:
+- Create `YYYY-MM-DD_REVISION.md` adhering strictly to the 7-Step Interactive Framework, ensuring all plain-text content uses extremely simple, easy-to-understand conversational language with vivid real-world analogies:
   1. TODAY'S TOPICS
   2. STEP 1 — QUICK RECALL (Self-check questions + key takeaways)
-  3. STEP 2 — CONCEPT UNDERSTANDING (What it means, Why/When used, Plain English rules)
+  3. STEP 2 — CONCEPT UNDERSTANDING (What it means, Why/When used, Plain English rules + A nice real-life example/analogy)
   4. STEP 3 — SQL SYNTAX & CODE EXAMPLES (Formated executable SQL code blocks)
   5. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative Connections)
   6. STEP 5 — COMMON MISTAKES & DEBUGGING (Buggy query, Root cause, Correction)

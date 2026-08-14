@@ -18,8 +18,11 @@ Task: Write a DDL query to create a table 'EmployeeBasic' with columns:
 */
 
 -- Write your SQL Query below:
-
-
+CREATE TABLE EmployeeBasic (
+    EmpID INTEGER,
+    EmpName VARCHAR(20),
+    Salary INTEGER
+);
 
 
 -- QUESTION 2 [Syntax Drill - SELECT Projection Variants]:
@@ -31,8 +34,11 @@ Task:
 */
 
 -- Write your SQL Queries below:
+SELECT * FROM EmployeeBasic;
 
+SELECT EmpName, Salary FROM EmployeeBasic;
 
+SELECT EmpName AS Employee_Name FROM EmployeeBasic;
 
 
 -- QUESTION 3 [Syntax Drill - INSERT INTO Full vs Column List]:
@@ -44,8 +50,13 @@ Task:
 */
 
 -- Write your SQL Queries below:
+INSERT INTO EmployeeBasic VALUES (101, 'Rahul', 25000);
 
+INSERT INTO EmployeeBasic (EmpID, EmpName) VALUES (102, 'Priya');
 
+INSERT INTO EmployeeBasic (EmpID, EmpName, Salary) 
+VALUES (103, 'Amit', 30000), 
+       (104, 'Sneha', 32000);
 
 
 -- QUESTION 4 [Theory Drill - SQL Command Categories]:
@@ -59,8 +70,11 @@ Task: Classify each of the following SQL statements into their correct category 
 */
 
 -- Write your answers in comments below:
-
-
+-- 1. CREATE TABLE : DDL (Data Definition Language)
+-- 2. INSERT INTO  : DML (Data Manipulation Language)
+-- 3. SELECT       : DQL (Data Query Language)
+-- 4. ALTER TABLE  : DDL (Data Definition Language)
+-- 5. DROP TABLE   : DDL (Data Definition Language)
 
 
 -- ============================================================
@@ -73,8 +87,8 @@ Task: Write an INSERT statement inserting data into 'EmployeeBasic' specifying c
 */
 
 -- Write your SQL Query below:
-
-
+INSERT INTO EmployeeBasic (Salary, EmpName, EmpID) 
+VALUES (40000, 'Karan', 105);
 
 
 -- QUESTION 6 [Insertion Pattern - Selective Omitted Columns]:
@@ -83,8 +97,9 @@ Task: Write an INSERT statement providing only Salary and EmpID for a new employ
 */
 
 -- Write your SQL Query below:
-
-
+INSERT INTO EmployeeBasic (Salary, EmpID) 
+VALUES (45000, 106);
+-- Observation: Since EmpName is omitted, it will be assigned a NULL value automatically.
 
 
 -- ============================================================
@@ -101,8 +116,21 @@ Task:
 */
 
 -- Write your SQL Queries below:
+CREATE TABLE PatientRecords (
+    PatientID INT,
+    FullName VARCHAR(50),
+    Age INT,
+    MedicalHistory VARCHAR(200),
+    ContactNumber VARCHAR(15),
+    AdmissionDate VARCHAR(20)
+);
 
+INSERT INTO PatientRecords (PatientID, FullName, Age, MedicalHistory, ContactNumber, AdmissionDate)
+VALUES (1, 'Ramesh Kumar', 45, 'Hypertension', '9876543210', '2026-08-01'),
+       (2, 'Sunita Sharma', 32, 'None', '9876543211', '2026-08-01'),
+       (3, 'Vikram Singh', 58, 'Diabetes Type 2', '9876543212', '2026-08-01');
 
+SELECT * FROM PatientRecords;
 
 
 -- QUESTION 8 [Scenario - E-Commerce Product Catalog]:
@@ -115,8 +143,20 @@ Task:
 */
 
 -- Write your SQL Queries below:
+CREATE TABLE ProductCatalog (
+    ProductID INT,
+    ProductName VARCHAR(30),
+    Category VARCHAR(20),
+    Price INT,
+    StockQuantity INT
+);
 
+INSERT INTO ProductCatalog (ProductID, ProductName, Category, Price, StockQuantity)
+VALUES (1001, 'Wireless Mouse', 'Electronics', 1500, 50),
+       (1002, 'Mechanical Keyboard', 'Electronics', 4500, 30);
 
+INSERT INTO ProductCatalog (ProductID, ProductName, Category, Price)
+VALUES (1003, 'Mousepad', 'Accessories', 500);
 
 
 -- QUESTION 9 [Scenario - String Truncation Error Demonstration]:
@@ -128,8 +168,15 @@ Task:
 */
 
 -- Write your SQL Query and explanation below:
+CREATE TABLE CourseEnrollment (
+    EnrollmentID INT,
+    StudentName VARCHAR(15)
+);
 
+-- INSERT INTO CourseEnrollment (EnrollmentID, StudentName) VALUES (1, 'Alexander Bartholomew');
 
+-- Explanation: The above INSERT query will fail with a "String or binary data would be truncated" error.
+-- This occurs because 'Alexander Bartholomew' is 21 characters long, which exceeds the maximum length of 15 defined for the StudentName column.
 
 
 -- QUESTION 10 [Scenario - NULL vs Empty String Handling]:
@@ -143,8 +190,17 @@ Task:
 */
 
 -- Write your SQL Queries below:
+CREATE TABLE UserData (
+    UserID INT,
+    UserName VARCHAR(20),
+    UserBio VARCHAR(50)
+);
 
+INSERT INTO UserData (UserID, UserName, UserBio) VALUES (1, 'UserOne', '');
 
+INSERT INTO UserData (UserID, UserName, UserBio) VALUES (2, 'UserTwo', NULL);
+
+SELECT * FROM UserData;
 
 
 -- ============================================================
@@ -159,8 +215,10 @@ Task:
 */
 
 -- Write your SQL Query & answer below:
+-- Answer 1: If single quotes are omitted, SQL treats the string as a column name or keyword, resulting in an "Invalid column name" or syntax error.
 
-
+-- Answer 2: 
+INSERT INTO UserData (UserID, UserName, UserBio) VALUES (3, 'ValidString', 'Proper Quotes');
 
 
 -- QUESTION 12 [Logic Builder - Case Insensitivity in SQL Server]:
@@ -169,8 +227,8 @@ Task: Test whether 'select * from userdata' produces the exact same result as 'S
 */
 
 -- Write your answer in comments below:
-
-
+-- Explanation: Yes, both queries produce the exact same result. SQL Server keywords (like SELECT, FROM) are completely case-insensitive.
+-- Furthermore, object names (like tables and columns) are also case-insensitive by default in SQL Server, meaning 'userdata' and 'UserData' are treated identically.
 
 
 -- QUESTION 13 [Debugging - Fix Broken DDL & DML Queries]:
@@ -181,8 +239,14 @@ Task: Identify and fix errors in the following 2 queries:
 */
 
 -- Write your corrected SQL Queries below:
+-- Fix 1: Missing TABLE keyword in CREATE statement.
+CREATE TABLE StudentInfo (
+    RollNo INT,
+    Name VARCHAR(20)
+);
 
-
+-- Fix 2: The number of columns specified (1) does not match the number of values provided (2).
+INSERT INTO StudentInfo (RollNo, Name) VALUES (101, 'Arpit');
 
 
 -- QUESTION 14 [Debugging - Column Count Mismatch Error]:
@@ -191,8 +255,14 @@ Task: Identify why the query 'INSERT INTO EmployeeBasic VALUES (105, 'Anjali');'
 */
 
 -- Write your explanation & corrected query below:
+-- Explanation: The EmployeeBasic table has 3 columns (EmpID, EmpName, Salary), but the query provides only 2 values without specifying a column list. 
+-- When using INSERT INTO without a column list, values must be provided for ALL columns in the exact order they were defined.
 
+-- Corrected Query (specifying columns):
+INSERT INTO EmployeeBasic (EmpID, EmpName) VALUES (105, 'Anjali');
 
+-- Alternatively, passing NULL for the missing column:
+-- INSERT INTO EmployeeBasic VALUES (105, 'Anjali', NULL);
 
 
 /* ============================================================
