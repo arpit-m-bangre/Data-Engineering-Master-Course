@@ -1,0 +1,24 @@
+====================================================================
+                  DAILY MISSION: 14 AUG 2026
+====================================================================
+
+[ ] 11:15 AM - 11:45 AM : Core Revision (Day 1 Note)
+    -> 01_SQL/03_REVISION_NOTES/2026-08-01_REVISION.md
+
+[ ] 11:45 AM - 12:45 PM : Practice Drills (14 Qs)
+    -> 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-01_QUESTIONS.SQL
+
+[ ] 12:45 PM - 02:00 PM : LUNCH & REST
+
+[ ] 02:00 PM - 03:00 PM : Critical Weak Spot Revision 
+    -> 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md (Focus: Constraints & TRUNCATE)
+
+[ ] 03:00 PM - 07:30 PM : FREE BUFFER
+
+[ ] 07:30 PM - 09:00 PM : DINNER
+
+[ ] 09:00 PM - 10:15 PM : LIVE CLASS (Aug 14 Class)
+
+[ ] 10:15 PM : 🛑 STRICT CUTOFF!
+
+====================================================================

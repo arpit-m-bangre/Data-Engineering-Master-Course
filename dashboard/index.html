@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Daily Data Engineering Mission Dashboard" />
+    <title>DE Mission Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="background-elements">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    
+    <div id="app" class="glass-container">
+      <header>
+        <h1>🚀 DE Mission Control</h1>
+        <p id="date-display">Fetching tasks...</p>
+      </header>
+      
+      <main>
+        <div id="tasks-container" class="tasks-list">
+          <div class="loading-pulse">Loading mission parameters...</div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
