@@ -91,3 +91,17 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 1. Replicate the same 6-tier directory structure inside each module folder (`02_PYTHON/`, `03_ETL/`, etc.).
 2. Integrate Python scripts, PySpark jobs, and DAGs into `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` and `METRICS_AND_STATISTICS.json`.
 3. Create multi-module combined projects (e.g. Python ingestion script $\rightarrow$ SQL Warehouse $\rightarrow$ Spark aggregation).
+
+---
+
+## 🏆 7 CORE DAILY HABITS & SCHEDULING RULES (NEW)
+
+The Agent MUST ensure the user's daily plans automatically incorporate these 7 principles:
+
+1. **Daily Class Timing (9:00 PM - 10:15 PM):** The final block of the day (Mon-Sat) MUST be dedicated to the live class. This is a modular rule; be ready to update or add future class timings when the user informs you.
+2. **GitHub Streak:** Every single daily plan MUST include a step to commit and push work to GitHub to maintain the 200-day commit streak.
+3. **Project & Practical Exposure:** While not daily, project implementation and practical application MUST be treated as high-priority milestones in the weekly flow.
+4. **Perpetual SQL Practice:** Even after the SQL module finishes, daily SQL practice (LeetCode / Drills) MUST continue until the end of the course to maintain query sharpness.
+5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python practice MUST be enforced permanently alongside SQL. (Do not schedule this until Python officially starts).
+6. **English Practice Book:** The user is working through a 125-task English book. The daily plan MUST include 1 English task. Once all 125 are completed, schedule continuous 'N-time' revisions of the book.
+7. **Social Presence (SEO/Branding):** Schedule a weekly recurring task to filter, update, and post content on LinkedIn/GitHub to build the user's Google search presence and personal brand.
