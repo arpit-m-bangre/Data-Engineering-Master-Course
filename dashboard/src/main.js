@@ -44,7 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const line = lines[i].trim();
       
       // Match task line: [ ] or [x] Time : Title
-      const taskMatch = line.match(/^\[([xX ]?)\]\s*(.*?)\s*:\s*(.*)$/);
+      // Added (?:AM|PM) to ensure it doesn't split on the colon inside the time (e.g. 11:15)
+      const taskMatch = line.match(/^\[([xX ]?)\]\s*(.*?(?:AM|PM|am|pm))\s*:\s*(.*)$/);
       if (taskMatch) {
         if (currentTask) tasks.push(currentTask);
         currentTask = {
