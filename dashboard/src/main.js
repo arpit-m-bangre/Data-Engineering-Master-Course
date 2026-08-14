@@ -3,7 +3,7 @@ import './style.css'
 // Configuration
 // Replace this with your actual GitHub Raw URL once pushed.
 // Example: "https://raw.githubusercontent.com/username/repo/main/TODAYS_TASKS.txt"
-const TASKS_URL = "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/TODAYS_TASKS.txt";
+const TASKS_URL = "https://raw.githubusercontent.com/arpit-m-bangre/Data-Engineering-Master-Course/main/TODAYS_TASKS.txt";
 
 document.addEventListener('DOMContentLoaded', () => {
   const dateDisplay = document.getElementById('date-display');
@@ -16,16 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchTasks() {
     try {
-      // For local development, try fetching from a local path if we put it in public
-      // In production, it will use the TASKS_URL
       let response;
       try {
-        response = await fetch('/TODAYS_TASKS.txt'); // Needs to be copied to public folder for local test
-        if (!response.ok) throw new Error("Local fail");
+        // Try fetching the live URL first
+        response = await fetch(TASKS_URL, { cache: "no-store" });
+        if (!response.ok) throw new Error("Live URL fail");
       } catch (e) {
-        // Fallback to mock data or real URL
-        console.log("Using fallback data for demonstration.");
-        const mockData = `====================================================================
+        // Fallback for local testing if the live URL fails
+        console.log("Live URL failed. Trying local file...", e);
+        try {
+          response = await fetch('/TODAYS_TASKS.txt'); 
+          if (!response.ok) throw new Error("Local fail");
+        } catch(e2) {
+          console.log("Using fallback data for demonstration.");
+          const mockData = `====================================================================
                   DAILY MISSION: 14 AUG 2026
 ====================================================================
 
@@ -37,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 [ ] 02:00 PM - 03:00 PM : Critical Weak Spot Revision 
     -> 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md (Focus: Constraints & TRUNCATE)
 ====================================================================`;
-        renderTasks(mockData);
-        return;
+          renderTasks(mockData);
+          return;
+        }
       }
       
       const text = await response.text();
