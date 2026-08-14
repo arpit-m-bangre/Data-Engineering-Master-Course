@@ -31,7 +31,7 @@ The SQL module is structured into a 6-tier learning ecosystem:
 | **2** | [`02_DAILY_INDEX`](./01_SQL/02_DAILY_INDEX/) | Daily topic index files + Master Combined Topic Index (`01_COMBINED_INDEX_ALL_TOPICS.SQL`). |
 | **3** | [`03_REVISION_NOTES`](./01_SQL/03_REVISION_NOTES/) | 7-step interactive markdown revision notes (`YYYY-MM-DD_REVISION.md`). |
 | **4** | [`04_CLASS_TASKS`](./01_SQL/04_CLASS_TASKS/) | Faculty-assigned in-class tasks and exercises. |
-| **5** | [`05_INDEX_WISE_QUESTIONS`](./01_SQL/05_INDEX_WISE_QUESTIONS/) | 10-question practice sets (Basic Syntax, Cumulative Revision, Business Scenarios, Debugging). |
+| **5** | [`05_INDEX_WISE_QUESTIONS`](./01_SQL/05_INDEX_WISE_QUESTIONS/) | 14-question practice sets (Basic Syntax, Cumulative Revision, Business Scenarios, Debugging). |
 | **6** | [`06_PROJECTS`](./01_SQL/06_PROJECTS/) | End-to-end Data Engineering SQL projects. |
 
 ---

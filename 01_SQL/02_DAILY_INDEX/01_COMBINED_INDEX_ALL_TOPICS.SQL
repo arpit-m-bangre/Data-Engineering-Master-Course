@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 12 Class Note Files (2026-08-01 to 2026-08-13)
+Total Modules / Files: 13 Class Note Files (2026-08-01 to 2026-08-14)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -103,6 +103,14 @@ SECTION 1: DAILY CLASS BREAKDOWN
     12.5 Column Property vs Table Constraint Distinction (NOT NULL & IDENTITY via ALTER COLUMN)
     12.6 Offline SQL Test 1 Analysis (18 MCQs: Execution Flow, Scoping, TRUNCATE Rollback inside Transactions)
 
+13. DAY 13 (AUGUST 14) - SET OPERATORS & QUERY COMBINATION
+    13.1 UNION Operator (Combining Result Sets without Duplicates)
+    13.2 UNION ALL Operator (Combining Result Sets with Duplicates)
+    13.3 INTERSECT Operator (Extracting Common Rows)
+    13.4 EXCEPT Operator (Mathematical MINUS, Extracting Differences)
+    13.5 Structural Validation Rules for Set Operations (Same Columns & Data Types)
+    13.6 Applying Set Operators to Individual Columns vs Entire Tables
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -143,6 +151,7 @@ E. OPERATORS & PATTERN MATCHING
    • Logical: AND, OR
    • String Patterns: LIKE with %, _, [A-Z], [^A-Z]
    • Arithmetic: +, -, *, /
+   • Set Operators: UNION, UNION ALL, INTERSECT, EXCEPT
 
 F. AGGREGATE FUNCTIONS & UNICITY
    • MIN(), MAX(), SUM(), AVG(), COUNT(), COUNT(*)
