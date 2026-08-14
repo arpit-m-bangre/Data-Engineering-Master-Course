@@ -101,9 +101,9 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 
 ---
 
-## 🏆 7 CORE DAILY HABITS & SCHEDULING RULES (NEW)
+## 🏆 8 CORE DAILY HABITS & SCHEDULING RULES (NEW)
 
-The Agent MUST ensure the user's daily plans automatically incorporate these 7 principles:
+The Agent MUST ensure the user's daily plans automatically incorporate these 8 principles:
 
 1. **Daily Class Timing (9:00 PM - 10:15 PM):** The final block of the day (Mon-Sat) MUST be dedicated to the live class. This is a modular rule; be ready to update or add future class timings when the user informs you.
 2. **GitHub Streak:** Every single daily plan MUST include a step to commit and push work to GitHub to maintain the 200-day commit streak.
@@ -112,3 +112,4 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 7 p
 5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python practice MUST be enforced permanently alongside SQL. (Do not schedule this until Python officially starts).
 6. **English Practice Book:** The user is working through a 125-task English book. The daily plan MUST include 1 English task. Once all 125 are completed, schedule continuous 'N-time' revisions of the book.
 7. **Social Presence (SEO/Branding):** Schedule a weekly recurring task to filter, update, and post content on LinkedIn/GitHub to build the user's Google search presence and personal brand.
+8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually re-writing that day's original class SQL notes to understand the syntax and class flow. When generating the schedule, ALWAYS label this step as: `Class Note Re-write and Read Revision Note [Date]`.
