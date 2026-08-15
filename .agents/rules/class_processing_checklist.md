@@ -105,7 +105,28 @@ No step may be skipped. No step may be reordered.
   * Add today's concepts to the matrix with mastery level.
   * Flag high-interview-weight concepts.
 
-### STEP 11 — COMMIT & PUSH TO GITHUB
+### STEP 11 — APPEND TO LEARNING DIARY
+- File: `LEARNING_DIARY/LEARNING_DIARY.txt`
+- Rules:
+  * Append a new dated entry summarizing today's progress.
+  * Include: topics covered, files created, and any notes.
+  * NEVER delete or overwrite existing diary entries.
+
+### STEP 12 — UPDATE GIT COMMIT & PORTFOLIO LOG
+- File: `LEARNING_DIARY/GIT_COMMIT_AND_PORTFOLIO_LOG.md`
+- Rules:
+  * Add a new row with today's commit hash, date,
+    files changed, and a short description.
+  * Keep the running total file count accurate.
+
+### STEP 13 — UPDATE README (PORTFOLIO HOMEPAGE)
+- File: `README.md`
+- Rules:
+  * Update the "Latest Progress" or "Days Completed"
+    section to reflect today's new files.
+  * Keep the portfolio summary accurate and up to date.
+
+### STEP 14 — COMMIT & PUSH TO GITHUB
 - Command: `git add . && git commit -m "..." && git push origin main`
 - Rules:
   * Commit message must clearly list ALL files changed.
