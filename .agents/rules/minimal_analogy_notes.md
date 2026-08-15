@@ -23,3 +23,18 @@
    - Include a **Challenge Questions** section for complex edge cases.
    - Include a **Bonus Theory (Interview)** section for conceptual verification.
    - All questions must have blank lines below `-- Write your SQL Query below:` so they can be solved from scratch.
+7. **Class Notes Dividers & Spacing Style**:
+   - Use double equal-sign blocks for major sections:
+     ```sql
+     /*================================================================
+     1. SECTION NAME
+     ==================================================================*/
+     ```
+   - Use single hyphen-sign blocks for query execution flow, tips, or notes:
+     ```sql
+     /*----------------------------------------------------------------
+     Sequence of Execution
+     ------------------------------------------------------------------*/
+     ```
+   - Keep generous vertical spacing (empty lines) between queries, comments, and blocks.
+   - Keep explanations minimal, straight-to-the-point, and placed directly below the relevant SQL code.
