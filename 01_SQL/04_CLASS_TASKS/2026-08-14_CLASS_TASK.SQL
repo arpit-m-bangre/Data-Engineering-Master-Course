@@ -1,32 +1,23 @@
 -- ==============================================================================
--- IN-CLASS TASK SUMMARY: 2026-08-14
--- TOPIC: SET OPERATORS & CLAUSES TEST
+-- IN-CLASS TASK SOLUTIONS - 14 AUGUST 2026 (DAY 13)
+-- TOPIC: COMPLEX SQL CLAUSES & ANALYTICAL SCENARIOS
 -- ==============================================================================
 
--- NOTE: No specific SQL coding tasks were assigned in today's class.
--- The faculty instructed students to complete a Google Form MCQ Test 
--- focusing specifically on SQL Clauses (WHERE, GROUP BY, HAVING, ORDER BY).
 
--- ACTION REQUIRED: 
--- 1. Complete the Google Form Test.
--- 2. Proceed to the 14-Question Practice Drills file for today.
-
-
--- 14 aug in class task google form "SQL_test_clauses"
+/*================================================================
+1. HIGH-VALUE CUSTOMERS BY REGION
+==================================================================*/
 
 /*
-1.High-Value Customers by Region
-Management wants to identify regions where the total sales amount from 
-completed transactions is greater than ₹10,00,000.
-
-However:
-
-Only Completed transactions should be considered. Transactions with 
-amount <= 500 should be ignored. Group the result by region only. Display 
-only regions satisfying the required total. Sort regions by total sales 
-amount from highest to lowest.
+Scenario: Region-wide sales budget check.
+  
+Subquestions:
+• Q1.1: Filter the table to include only 'Completed' transactions with 
+       an amount strictly greater than 500.
+• Q1.2: Group the records by region and compute the total sales amount.
+• Q1.3: Apply a filter to show only regions where total sales exceed 1,00,0000.
+• Q1.4: Sort the final output by total sales descending.
 */
-
 
 SELECT 
     region,
@@ -36,20 +27,24 @@ WHERE transaction = 'Completed'
   AND amount > 500
 GROUP BY region
 HAVING SUM(amount) > 1000000
-ORDER BY SUM(amount) DESC;
+ORDER BY total_sales_amount DESC;
+
+
+/*================================================================
+2. SALESPERSON PERFORMANCE CHALLENGE
+==================================================================*/
 
 /*
-2. Salesperson Performance Challenge
+Scenario: Top sales agent evaluations.
 
-The company wants to identify salespeople who have:
-More than 20 completed transactions Total quantity sold greater than 500 
-Average transaction amount greater than ₹2,000
-
-Additional conditions:
-
-Ignore cancelled transactions. Ignore transactions where discount is 
-greater than 30%. Group by salesperson only. Sort by total quantity sold in
-descending order.
+Subquestions:
+• Q2.1: Ignore cancelled transactions and transactions with a discount 
+       greater than 30%.
+• Q2.2: Group by salesperson and calculate total quantity sold, average 
+       amount, and transaction count.
+• Q2.3: Restrict to salespeople with > 20 transactions, total quantity > 500, 
+       and average amount > 2,000.
+• Q2.4: Sort the results by total quantity sold descending.
 */
 
 SELECT 
@@ -64,23 +59,23 @@ GROUP BY salesperson
 HAVING COUNT(transaction) > 20
    AND SUM(quantity) > 500
    AND AVG(amount) > 2000
-ORDER BY SUM(quantity) DESC;
+ORDER BY total_quantity DESC;
+
+
+/*================================================================
+3. PRODUCT CATEGORY QUALITY CHECK
+==================================================================*/
 
 /*
-3. Product Category Quality Check
+Scenario: Product sales quality audit.
 
-The company wants to find product categories where:
-
-- At least 15 transactions exist.
-- Total sales amount is greater than ₹5,00,000.
-- Average discount is less than 15%.
-
-But:
-
-- Only completed sales should be included.
-- Sales with quantity less than 2 should not participate.
-- Group by category only.
-- Sort categories by average discount from lowest to highest.
+Subquestions:
+• Q3.1: Exclude non-completed sales and sales with quantity less than 2.
+• Q3.2: Group by category and compute transaction count, total sales, 
+       and average discount.
+• Q3.3: Filter for categories with >= 15 transactions, total sales > 5,00,000, 
+       and average discount < 15%.
+• Q3.4: Sort by average discount ascending.
 */
 
 SELECT 
@@ -95,250 +90,198 @@ GROUP BY category
 HAVING COUNT(transaction) >= 15
    AND SUM(sales_amount) > 500000
    AND AVG(discount) < 15
-ORDER BY AVG(discount) ASC;
+ORDER BY avg_discount ASC;
+
+
+/*================================================================
+4. ACTIVE CUSTOMERS WITH LARGE ORDERS
+==================================================================*/
 
 /*
-4. Region With Strong Quantity but Weak Revenue
+Scenario: VIP customer identifying.
 
-Management wants to find regions where:
-
-- Total quantity sold is greater than 1,000.
-- Total sales amount is less than ₹10,00,000.
-- There must be at least 50 transactions.
-
-Conditions:
-
-- Only completed transactions.
-- Ignore sales where amount < ₹500.
-- Group only by region.
-- Sort by total quantity sold descending.
+Subquestions:
+• Q4.1: Include only transactions from the year 2023 with amount > 1,000.
+• Q4.2: Group by customer_id and calculate order count and average amount.
+• Q4.3: Retain customers who placed at least 10 orders with an average 
+       amount > 1,500.
+• Q4.4: Sort by customer ID in ascending order.
 */
 
+SELECT 
+    customer_id,
+    COUNT(order_id) AS total_orders,
+    AVG(amount) AS avg_order_amount
+FROM table_name
+WHERE order_date BETWEEN '2023-01-01' AND '2023-12-31'
+  AND amount > 1000
+GROUP BY customer_id
+HAVING COUNT(order_id) >= 10
+   AND AVG(amount) > 1500
+ORDER BY customer_id ASC;
+
+
+/*================================================================
+5. SEASONAL SALES AUDIT
+==================================================================*/
+
+/*
+Scenario: Festive period transaction check.
+
+Subquestions:
+• Q5.1: Select transactions in Q4 (Oct-Dec) with amount > 2,000.
+• Q5.2: Group by product_id and count total quantity and transaction count.
+• Q5.3: Filter for products with total quantity > 200 and transaction count > 25.
+• Q5.4: Sort by total quantity descending.
+*/
 
 SELECT 
-    region,
+    product_id,
     SUM(quantity) AS total_quantity,
-    SUM(amount) AS total_sales_amount,
-    COUNT(transaction) AS total_transaction
+    COUNT(transaction_id) AS transaction_count
 FROM table_name
-WHERE transaction = 'completed'
-  AND amount > 500
-GROUP BY region
-HAVING SUM(amount) < 1000000
-   AND COUNT(transaction) >= 50
-   AND SUM(quantity) > 1000
-ORDER BY SUM(quantity) DESC;
+WHERE order_date BETWEEN '2023-10-01' AND '2023-12-31'
+  AND amount > 2000
+GROUP BY product_id
+HAVING SUM(quantity) > 200
+   AND COUNT(transaction_id) > 25
+ORDER BY total_quantity DESC;
+
+
+/*================================================================
+6. TOP PERFORMING BRANCHES
+==================================================================*/
 
 /*
-5. Payment Mode Analysis
+Scenario: Branch performance audit.
 
-The finance team wants to identify payment modes where:
-
-- Number of transactions is greater than 100.
-- Total transaction amount is greater than ₹20,00,000.
-- Average transaction amount is greater than ₹3,000.
-
-Conditions:
-
-- Only completed transactions.
-- Ignore transactions with quantity = 1.
-- Group by payment_mode only.
-- Sort by total transaction amount descending.
+Subquestions:
+• Q6.1: Focus on branches in the West or North regions and exclude cash payments.
+• Q6.2: Group by branch and calculate total revenue and transaction count.
+• Q6.3: Filter for branches generating revenue > 15,00,000.
+• Q6.4: Sort branches alphabetically.
 */
 
 SELECT 
-    payment_mode,
-    COUNT(transaction) AS number_of_transaction,
-    SUM(amount) AS total_transaction_amount,
-    AVG(amount) AS avg_transaction_amount
+    branch,
+    SUM(revenue) AS total_revenue,
+    COUNT(transaction_id) AS transaction_count
 FROM table_name
-WHERE transaction = 'completed'
-  AND quantity <> 1
-GROUP BY payment_mode
-HAVING COUNT(transaction) > 100
-   AND SUM(amount) > 2000000
-   AND AVG(amount) > 3000
-ORDER BY SUM(amount) DESC;
+WHERE region IN ('West', 'North')
+  AND payment_method <> 'Cash'
+GROUP BY branch
+HAVING SUM(revenue) > 1500000
+ORDER BY branch ASC;
+
+
+/*================================================================
+7. CUSTOMER LIFETIME VALUE (CLV)
+==================================================================*/
 
 /*
-6. Discount Abuse Detection
+Scenario: Customer value segmenting.
 
-The company suspects that some salespeople are giving excessive discounts.
-
-Find salespeople where:
-
-- Average discount is greater than 20%.
-- Total sales amount is greater than ₹3,00,000.
-- Number of transactions is at least 30.
-
-Conditions:
-
-- Only completed transactions.
-- Ignore transactions with discount = 0.
-- Ignore transactions where amount is less than ₹1,000.
-- Group by salesperson only.
-- Sort by average discount from highest to lowest.
+Subquestions:
+• Q7.1: Exclude pending status rows and orders with amount <= 100.
+• Q7.2: Group by customer_id and get total spent, average spent, and order count.
+• Q7.3: Retain customers with total spent > 50,000, average spent > 1,000, 
+       and at least 5 orders.
+• Q7.4: Sort by total spent descending.
 */
 
+SELECT 
+    customer_id,
+    SUM(amount) AS total_spent,
+    AVG(amount) AS avg_spent,
+    COUNT(order_id) AS order_count
+FROM table_name
+WHERE status <> 'pending'
+  AND amount > 100
+GROUP BY customer_id
+HAVING SUM(amount) > 50000
+   AND AVG(amount) > 1000
+   AND COUNT(order_id) >= 5
+ORDER BY total_spent DESC;
+
+
+/*================================================================
+8. HIGH QUANTITY ORDERS IN KEY REGIONS
+==================================================================*/
+
+/*
+Scenario: Shipping volume check.
+
+Subquestions:
+• Q8.1: Select orders shipped to South or East regions with quantity > 5.
+• Q8.2: Group by product_category and count total quantity and order count.
+• Q8.3: Filter categories where total quantity > 1,000 and order count > 50.
+• Q8.4: Sort by total quantity descending.
+*/
+
+SELECT 
+    product_category,
+    SUM(quantity) AS total_quantity,
+    COUNT(order_id) AS order_count
+FROM table_name
+WHERE region IN ('South', 'East')
+  AND quantity > 5
+GROUP BY product_category
+HAVING SUM(quantity) > 1000
+   AND COUNT(order_id) > 50
+ORDER BY total_quantity DESC;
+
+
+/*================================================================
+9. DISCOUNT AND VOLUME AUDIT
+==================================================================*/
+
+/*
+Scenario: Discount policy compliance checking.
+
+Subquestions:
+• Q9.1: Ignore transactions with discount <= 5% or quantity <= 2.
+• Q9.2: Group by manufacturer and calculate avg discount and sum of quantity.
+• Q9.3: Filter for manufacturers with avg discount > 15% and sum of quantity > 300.
+• Q9.4: Sort by average discount descending.
+*/
+
+SELECT 
+    manufacturer,
+    AVG(discount) AS avg_discount,
+    SUM(quantity) AS total_quantity
+FROM table_name
+WHERE discount > 5
+  AND quantity > 2
+GROUP BY manufacturer
+HAVING AVG(discount) > 15
+   AND SUM(quantity) > 300
+ORDER BY avg_discount DESC;
+
+
+/*================================================================
+10. HIGH REVENUE, LOW TRANSACTION VOLUME
+==================================================================*/
+
+/*
+Scenario: High-value sales agent auditing.
+
+Subquestions:
+• Q10.1: Only completed transactions, amount > 5000, quantity > 1, 
+        and discount <= 25%.
+• Q10.2: Group by salesperson and compute total sales, transaction count, 
+        avg amount, total quantity, and avg discount.
+• Q10.3: Filter for count 20-50, sum > 20,00,000, avg > 40,000, 
+        quantity > 100, and avg discount < 10%.
+• Q10.4: Sort by average transaction amount descending.
+*/
 
 SELECT 
     salesperson,
-    SUM(amount) AS total_sales_amount,
-    COUNT(transaction) AS number_of_transaction,
-    AVG(discount) AS avg_discount
-FROM table_name
-WHERE transaction = 'completed'
-  AND discount <> 0
-  AND amount >= 1000
-GROUP BY salesperson
-HAVING SUM(amount) > 300000
-   AND COUNT(transaction) >= 30
-   AND AVG(discount) > 20
-ORDER BY AVG(discount) DESC;
-
-/*
-7. Product Sales Consistency Analysis
-
-The company wants to identify products that have:
-
-- More than 25 transactions.
-- Total quantity sold greater than 300.
-- Average quantity per transaction greater than 8.
-- Total sales amount greater than ₹8,00,000.
-
-Conditions:
-
-- Only completed transactions.
-- Ignore transactions with discount greater than 40%.
-- Group by product only.
-- Sort by total sales amount descending.
-*/
-
-SELECT 
-    product,
-    COUNT(transaction) AS number_of_transaction,
+    COUNT(transaction) AS transaction_count,
+    SUM(amount) AS total_sales,
+    AVG(amount) AS avg_transaction_amount,
     SUM(quantity) AS total_quantity,
-    AVG(quantity) AS avg_quantity_per_transaction,
-    SUM(amount) AS total_sales_amount
-FROM table_name
-WHERE transaction = 'completed'
-  AND discount <= 40
-GROUP BY product
-HAVING COUNT(transaction) > 25
-   AND SUM(quantity) > 300
-   AND AVG(quantity) > 8
-   AND SUM(amount) > 800000
-ORDER BY total_sales_amount DESC;
-
-/*
-8. Regional Return Investigation
-
-Management wants to investigate regions with potentially problematic sales.
-
-Find regions where:
-
-- Total returned transaction amount is greater than ₹1,00,000.
-- Number of returned transactions is greater than 20.
-
-But there is a twist:
-
-The analysis should consider only transactions where:
-
-- amount > ₹2,000.
-- quantity >= 2.
-
-Group by region only.
-
-Sort the result by total returned amount from highest to lowest.
-*/
-
-SELECT 
-    region,
-    SUM(amount) AS total_returned_amount,
-    COUNT(transaction) AS number_of_transaction
-FROM table_name
-WHERE transaction = 'returned'
-  AND quantity >= 2
-  AND amount > 2000
-GROUP BY region
-HAVING SUM(amount) > 100000
-   AND COUNT(transaction) > 20
-ORDER BY SUM(amount) DESC;
-
-/*
-9. Difficult Revenue Threshold Analysis
-
-Find product categories satisfying all of the following:
-
-- At least 40 completed transactions.
-- Total quantity sold greater than 1,000.
-- Total sales amount between ₹15,00,000 and ₹50,00,000.
-- Average transaction amount greater than ₹4,000.
-- Average discount less than 25%.
-
-Additional condition:
-
-Only transactions having:
-
-- quantity >= 3
-- amount >= 1000
-- status = 'Completed'
-
-should be considered.
-
-Group by category only.
-
-Sort by total quantity sold in descending order.
-*/
-
-
-SELECT 
-    category,
-    COUNT(transaction) AS number_of_transaction,
-    SUM(quantity) AS total_quantity,
-    SUM(amount) AS total_amount,
-    AVG(amount) AS avg_amount,
     AVG(discount) AS avg_discount
-FROM table_name
-WHERE quantity >= 3
-  AND amount >= 1000
-  AND status = 'completed'
-GROUP BY category
-HAVING COUNT(transaction) >= 40
-   AND SUM(quantity) > 1000
-   AND SUM(amount) BETWEEN 1500000 AND 5000000
-   AND AVG(amount) > 4000
-   AND AVG(discount) < 25
-ORDER BY SUM(quantity) DESC;
-
-/*
-10. High Revenue, Low Transaction Volume
-
-A company wants to identify salespersons who generate high revenue
-but operate with low transaction volume.
-
-Find salespeople satisfying:
-
-- Number of transactions is between 20 and 50.
-- Total sales amount is greater than ₹20,00,000.
-- Average transaction amount is greater than ₹40,000.
-- Total quantity sold is greater than 100.
-- Average discount is less than 10%.
-
-Additional rules:
-
-- Only Completed transactions.
-- Amount must be greater than ₹5,000.
-- Quantity must be greater than 1.
-- Ignore transactions with discount greater than 25%.
-- Group by salesperson only.
-- Sort by average transaction amount descending.
-- Display only salespeople satisfying all conditions.
-*/
-
-
-SELECT 
-    salesperson
 FROM table_name
 WHERE status = 'completed'
   AND amount > 5000
@@ -350,4 +293,4 @@ HAVING COUNT(transaction) BETWEEN 20 AND 50
    AND AVG(amount) > 40000
    AND SUM(quantity) > 100
    AND AVG(discount) < 10
-ORDER BY AVG(amount) DESC;
+ORDER BY avg_transaction_amount DESC;
