@@ -43,6 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       
+      // Match notice line: [!] Notice Text
+      const noticeMatch = line.match(/^\[!\]\s*(.*)$/);
+      if (noticeMatch) {
+        if (currentTask) {
+          tasks.push(currentTask);
+          currentTask = null;
+        }
+        tasks.push({
+          isNotice: true,
+          title: noticeMatch[1].trim()
+        });
+        continue;
+      }
+      
       // Match task line: [ ] or [x] Time : Title
       // Added (?:AM|PM) to ensure it doesn't split on the colon inside the time (e.g. 11:15)
       const taskMatch = line.match(/^\[([xX ]?)\]\s*(.*?(?:AM|PM|am|pm))\s*:\s*(.*)$/);
@@ -66,23 +80,33 @@ document.addEventListener('DOMContentLoaded', () => {
     
     tasks.forEach((task, index) => {
       const card = document.createElement('div');
-      card.className = `task-card ${task.completed ? 'completed' : ''}`;
       
-      card.innerHTML = `
-        <div class="checkbox-wrapper">
-          <div class="checkbox"></div>
-        </div>
-        <div class="task-content">
-          <span class="task-time">${task.time}</span>
-          <h3 class="task-title">${task.title}</h3>
-          ${task.link ? `<span class="task-link">${task.link}</span>` : ''}
-        </div>
-      `;
-      
-      // Interactive toggle for UI only (won't save back to Github automatically)
-      card.querySelector('.checkbox').addEventListener('click', () => {
-        card.classList.toggle('completed');
-      });
+      if (task.isNotice) {
+        card.className = 'notice-card';
+        card.innerHTML = `
+          <div class="notice-icon">⚠️</div>
+          <div class="notice-content">
+            <h3 class="notice-title">${task.title}</h3>
+          </div>
+        `;
+      } else {
+        card.className = `task-card ${task.completed ? 'completed' : ''}`;
+        card.innerHTML = `
+          <div class="checkbox-wrapper">
+            <div class="checkbox"></div>
+          </div>
+          <div class="task-content">
+            <span class="task-time">${task.time}</span>
+            <h3 class="task-title">${task.title}</h3>
+            ${task.link ? `<span class="task-link">${task.link}</span>` : ''}
+          </div>
+        `;
+        
+        // Interactive toggle for UI only (won't save back to Github automatically)
+        card.querySelector('.checkbox').addEventListener('click', () => {
+          card.classList.toggle('completed');
+        });
+      }
       
       tasksContainer.appendChild(card);
     });
