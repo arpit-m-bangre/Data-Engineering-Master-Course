@@ -16,17 +16,17 @@
     "target_zero_debt_date": "2026-08-24"
   },
   "sql_ecosystem_counters": {
-    "class_notes_processed": 12,
-    "daily_indexes_created": 12,
+    "class_notes_processed": 13,
+    "daily_indexes_created": 13,
     "master_combined_index_files": 1,
-    "revision_notes_total": 19,
+    "revision_notes_total": 13,
     "revision_notes_completed": 0,
-    "practice_question_files": 11,
-    "practice_questions_total_drills": 125,
+    "practice_question_files": 13,
+    "practice_questions_total_drills": 182,
     "practice_questions_completed_drills": 0,
-    "faculty_class_task_files": 3,
-    "faculty_class_tasks_completed": 3,
-    "projects_total_scheduled": 8,
+    "faculty_class_task_files": 4,
+    "faculty_class_tasks_completed": 4,
+    "projects_total_scheduled": 5,
     "projects_completed": 0
   },
   "offline_test_analytics": {
