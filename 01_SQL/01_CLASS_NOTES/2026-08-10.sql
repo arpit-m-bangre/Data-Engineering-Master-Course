@@ -4,10 +4,9 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- SQL CONSTRAINTS (The Bouncers)
+-- 📖 THEORY: SQL CONSTRAINTS (The Bouncers)
 -- ------------------------------------------------------------
--- Constraints are rules/restrictions put on columns to ensure data cleanliness.
--- Think of them like forms checking your age/email formats before letting you submit.
+-- Constraints are input rules put on columns to keep data clean.
 
 -- 1. PRIMARY KEY (PK) (The ultimate ID card)
 -- Rules: Unique values only + Cannot be NULL + Maximum 1 Primary Key per table.
@@ -19,11 +18,11 @@ CREATE TABLE Q1
 
 INSERT INTO Q1 VALUES (1, 'a');
 
--- ❌ Test duplicate insert (Fails PK validation!)
--- INSERT INTO Q1 VALUES (1, 'a');
+INSERT INTO Q1 VALUES (1, 'a');
+-- ❌ Fails: Violation of PRIMARY KEY constraint (Duplicate ID value 1).
 
--- ❌ Test NULL insert (Fails PK validation!)
--- INSERT INTO Q1 VALUES (NULL, 'a');
+INSERT INTO Q1 VALUES (NULL, 'a');
+-- ❌ Fails: Cannot insert the value NULL into PK column 'id'.
 
 INSERT INTO Q1 VALUES (2, 'a'); -- (Valid: Name can duplicate because it has no constraint)
 
@@ -38,12 +37,14 @@ CREATE TABLE Q2
 );
 
 INSERT INTO Q2 VALUES (1, 'pune');
--- ❌ Test duplicate insert (Fails UNIQUE validation!)
--- INSERT INTO Q2 VALUES (1, 'pune');
+
+INSERT INTO Q2 VALUES (1, 'pune');
+-- ❌ Fails: Violation of UNIQUE KEY constraint (Duplicate ID value 1).
 
 INSERT INTO Q2 VALUES (NULL, 'mumbai');
--- ❌ Test second NULL insert (Fails UNIQUE validation because only 1 NULL is allowed!)
--- INSERT INTO Q2 VALUES (NULL, 'mumbai');
+
+INSERT INTO Q2 VALUES (NULL, 'mumbai');
+-- ❌ Fails: Violation of UNIQUE KEY constraint (Duplicate key value NULL is not allowed twice!).
 
 SELECT * FROM Q2;
 
@@ -58,17 +59,17 @@ CREATE TABLE Q3
 );
 
 INSERT INTO Q3 VALUES (1, 'a', 101);
--- ❌ Test duplicate custid (Fails UNIQUE constraint!)
--- INSERT INTO Q3 VALUES (2, 'a', 101);
 
--- ❌ Test duplicate id (Fails PK constraint!)
--- INSERT INTO Q3 VALUES (1, 'a', 102);
+INSERT INTO Q3 VALUES (2, 'a', 101);
+-- ❌ Fails: Violation of UNIQUE KEY constraint (Duplicate custid 101).
 
--- ❌ Test NULL insert on f_name (Fails NOT NULL constraint!)
--- INSERT INTO Q3 VALUES (3, NULL, 103);
+INSERT INTO Q3 VALUES (1, 'a', 102);
+-- ❌ Fails: Violation of PRIMARY KEY constraint (Duplicate id 1).
 
--- 4. CHECK CONSTRAINT (Custom bouncer checking rules)
--- Rule: The row is only inserted if the CHECK expression evaluates to TRUE (or NULL).
+INSERT INTO Q3 VALUES (3, NULL, 103);
+-- ❌ Fails: Cannot insert the value NULL into column 'f_name'.
+
+-- 4. CHECK CONSTRAINT (Custom validation bouncer)
 CREATE TABLE Q4
 (
     id  INT,
@@ -76,30 +77,32 @@ CREATE TABLE Q4
 );
 
 INSERT INTO Q4 VALUES (1, 23);
--- ❌ Test age constraint (Fails because 18 is not > 18!)
--- INSERT INTO Q4 VALUES (1, 18);
+
+INSERT INTO Q4 VALUES (1, 18);
+-- ❌ Fails: Conflicted with the CHECK constraint (age must be > 18!).
 
 SELECT * FROM Q4;
 
 -- Adding column with custom CHECK constraints
 ALTER TABLE Q4 ADD city VARCHAR(10);
-ALTER TABLE Q4 ADD name VARCHAR(10) CHECK (name NOT LIKE 'a%'); -- Fails if name starts with 'a'
+ALTER TABLE Q4 ADD name VARCHAR(10) CHECK (name NOT LIKE 'a%');
 
--- ❌ Test starts-with-a CHECK constraint
--- INSERT INTO Q4 VALUES (2, 19, 'nag', 'arpit');
+INSERT INTO Q4 VALUES (2, 19, 'nag', 'arpit');
+-- ❌ Fails: name starts with 'a' which violates CHECK constraint!
 
 -- Adding CHECK constraint with multiple conditions
 ALTER TABLE Q4 ADD marks INT CHECK (marks NOT LIKE '9%' AND marks <> 99234235);
 
--- ❌ Test marks CHECK constraint
--- INSERT INTO Q4 VALUES (2, 19, 'pune', 'rman', 99234235);
+INSERT INTO Q4 VALUES (2, 19, 'pune', 'rman', 99234235);
+-- ❌ Fails: marks value 99234235 is explicitly blocked by CHECK constraint!
 
 -- Adding CHECK constraint with IN list
 ALTER TABLE Q4 ADD grade VARCHAR(10) CHECK (grade IN ('A', 'B', 'C'));
 
 INSERT INTO Q4 VALUES (3, 45, 'hyd', 'hrushi', 85, 'c'); -- (Valid: 'c' matches 'C' case-insensitively)
--- ❌ Test invalid grade
--- INSERT INTO Q4 VALUES (3, 45, 'hyd', 'hrushi', 85, 'y');
 
--- ⚠️ CRITICAL: CHECK constraints allow NULL unless NOT NULL is also specified!
-INSERT INTO Q4 VALUES (3, 45, 'hyd', 'hrushi', 85, NULL); -- (Valid: NULL bypasses CHECK!)
+INSERT INTO Q4 VALUES (3, 45, 'hyd', 'hrushi', 85, 'y');
+-- ❌ Fails: Grade Y is not in the allowed CHECK list ('A', 'B', 'C').
+
+INSERT INTO Q4 VALUES (3, 45, 'hyd', 'hrushi', 85, NULL);
+-- Note: CHECK constraints allow NULL unless NOT NULL is also specified!\n

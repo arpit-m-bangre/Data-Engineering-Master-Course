@@ -1,34 +1,35 @@
 /* ================================================================================
    SQL CLASS NOTES - 01 AUGUST 2026 (DAY 1)
-   TOPICS: DATABASE FUNDAMENTALS, COMMAND CATEGORIES, CREATE TABLE, INSERT & SELECT
+   TOPICS: DATABASE FUNDAMENTALS, DDL & DML, CREATE TABLE, INSERT & SELECT
    ================================================================================ */
 
+-- ------------------------------------------------------------
+-- 📖 THEORY: DATABASE BASICS
+-- ------------------------------------------------------------
 -- 1. DATA: Raw facts (e.g. 'Manoj', 20, 25000).
--- 2. DATABASE: An organized collection of related data (e.g. College DB).
--- 3. DBMS: Software to manage databases. (Analogy: A digital file cabinet).
--- 4. RDBMS: DB software storing data in connected tables. (Analogy: Excel workbook with linked tabs).
--- 5. SQL: Language used to talk to the RDBMS.
--- 6. SSMS: GUI tool to work with SQL Server. (Analogy: SQL Server = Engine; SSMS = Steering Wheel).
+-- 2. DATABASE: Organized digital file cabinet.
+-- 3. DBMS: Software that runs the file cabinet (e.g. SQL Server).
+-- 4. RDBMS: DBMS that links tables together (like connected Excel sheets).
+-- 5. SQL: Language we use to talk to the database.
+-- 6. SSMS: Steering wheel to control the database engine.
 
 -- ------------------------------------------------------------
--- THE 5 SQL TOOLBOXES
+-- 🛠️ THE 5 SQL TOOLBOXES
 -- ------------------------------------------------------------
--- 1. DDL (Data Definition): The Architect (CREATE, ALTER, DROP, TRUNCATE). Alters structure.
--- 2. DML (Data Manipulation): The Mover (INSERT, UPDATE, DELETE). Alters data rows.
--- 3. DQL (Data Query): The Detective (SELECT). Reads data.
--- 4. DCL (Data Control): The Guard (GRANT, REVOKE). Controls permissions.
--- 5. TCL (Transaction Control): Video Game Save (COMMIT, ROLLBACK). Manages transactions.
+-- 1. DDL (Definition): The Architect (CREATE, ALTER, DROP, TRUNCATE).
+--    * Alters structure. Always uses the "TABLE" keyword.
+-- 2. DML (Manipulation): The Mover (INSERT, UPDATE, DELETE).
+--    * Alters data rows. Never uses the "TABLE" keyword.
+-- 3. DQL (Query): The Detective (SELECT). Reads data.
+-- 4. DCL (Control): The Guard (GRANT, REVOKE). Controls permissions.
+-- 5. TCL (Transaction): Video Game Save (COMMIT, ROLLBACK). Manages undo/saves.
+
+-- Note: SQL is case-insensitive, but we write keywords in UPPERCASE.
 
 -- ------------------------------------------------------------
--- CRITICAL RULES FOR DDL & DML
+-- 💻 PRACTICE: TABLE CREATION
 -- ------------------------------------------------------------
--- DDL commands always require the keyword "TABLE" (e.g., CREATE TABLE).
--- DML commands never use the "TABLE" keyword, only the table name (e.g., INSERT INTO employee).
--- SQL Server is case-insensitive, but we keep SQL keywords in UPPERCASE.
 
--------------------------------------------------------------------------------
-
--- ❌ BAD TABLE CREATION: VARCHAR without size defaults to 1 character (fails on inserts!).
 CREATE TABLE employee
 (
     empid   INT,
@@ -36,17 +37,17 @@ CREATE TABLE employee
     dept    VARCHAR,
     salary  INT
 );
+-- ⚠️ WARNING: VARCHAR without size defaults to 1 character!
+-- This causes insert statements to fail with truncation errors.
 
--- SELECT: Extracts data from the table (* means all columns)
 SELECT * FROM employee;
 SELECT dept, salary FROM employee;
 
--- Test insert (fails due to VARCHAR size truncation error)
 INSERT INTO employee VALUES (101, 'Amit', 'HR', 2000);
+-- ❌ Fails: Truncation error because VARCHAR size is not set.
 
 -------------------------------------------------------------------------------
 
--- ✔️ GOOD TABLE CREATION: Explicit sizes set for VARCHAR
 CREATE TABLE employee1
 (
     empid   INT,
@@ -54,15 +55,16 @@ CREATE TABLE employee1
     dept    VARCHAR(20),
     salary  INT
 );
+-- ✔️ Correct: Explicit sizes are set for VARCHAR columns.
 
 SELECT * FROM employee1;
 SELECT dept, salary FROM employee1;
 
 -- ------------------------------------------------------------
--- DATA INSERTION PATTERNS
+-- 💻 PRACTICE: DATA INSERTION PATTERNS
 -- ------------------------------------------------------------
 
--- Pattern A: Full row insert (Must match columns sequence exactly)
+-- Pattern A: Full row insert (Values must match columns sequence)
 INSERT INTO employee1 VALUES (101, 'Amit', 'HR', 2000);
 INSERT INTO employee1 VALUES (102, 'Puja', 'Entc', 3000);
 INSERT INTO employee1 VALUES (103, 'Arpit', 'Stat', 4000);
@@ -71,22 +73,22 @@ INSERT INTO employee1 VALUES (105, 'Mohit', 'MS', 6000);
 INSERT INTO employee1 VALUES (106, 'Shreyash', 'BCA', 7000);
 
 -- Pattern B: Empty value vs NULL
--- Note: Empty string ('') or 0 is an actual value. Always use NULL for missing data!
+-- Note: Empty string ('') or 0 are actual values.
+-- Always use NULL for unknown/missing data!
 INSERT INTO employee1 VALUES (111, 'Arjun', '', ''); 
 INSERT INTO employee1 VALUES (107, NULL, NULL, NULL);
 
--- Pattern C: Selective column insertion (Automation approach)
--- Unspecified columns are automatically filled with NULL.
+-- Pattern C: Selective column insertion (Missing columns default to NULL)
 INSERT INTO employee1 (empid, empname) VALUES (108, 'Pushpak');
 INSERT INTO employee1 (empid, empname) VALUES (109, 'Yash');
 INSERT INTO employee1 (empid, empname) VALUES (110, 'Rahul');
 INSERT INTO employee1 (dept, salary) VALUES ('Mech', 8000);
 
--- Test truncation (Fails because name length exceeds VARCHAR(20))
-INSERT INTO employee1 VALUES (NULL, 'arpitmanojbangrearpitmanojbangrearpitmanojbangre', NULL, NULL);
+INSERT INTO employee1 VALUES (NULL, 'arpitmanojbangrearpitmanojbangre', NULL, NULL);
+-- ❌ Fails: name exceeds the VARCHAR(20) limit of employee1.
 
 -------------------------------------------------------------------------------
--- TASK: STUDENT INFO TABLE
+-- 💻 IN-CLASS TASK: STUDENT INFO TABLE
 -------------------------------------------------------------------------------
 CREATE TABLE StudentInfo
 (
@@ -100,4 +102,4 @@ CREATE TABLE StudentInfo
     mobile_no INT
 );
 
-SELECT * FROM StudentInfo;
+SELECT * FROM StudentInfo;\n

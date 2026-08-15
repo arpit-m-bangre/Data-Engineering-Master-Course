@@ -4,9 +4,10 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- THE BOUNCER: WHERE CLAUSE
+-- 📖 THEORY: THE BOUNCER (WHERE CLAUSE)
 -- ------------------------------------------------------------
--- The WHERE clause acts like a club bouncer. It checks each row one-by-one.
+-- The WHERE clause acts like a club bouncer.
+-- It checks each row one-by-one.
 -- If the row meets the criteria, it is let in; otherwise, it is kicked out.
 
 SELECT * FROM employee1;
@@ -15,10 +16,11 @@ SELECT * FROM employee1;
 -- Operators: = , <> , < , <= , > , >=
 SELECT * FROM employee1 WHERE dept = 'HR';
 
--- Note: The <> (not equal) operator ignores NULLs. To find NULLs, you must use IS NULL.
 SELECT * FROM employee1 WHERE dept <> 'HR';
+-- Note: The <> (not equal) operator ignores NULLs.
+-- To find NULLs, you must use IS NULL.
 
--- Text comparison follows alphabetical (ASCII) order
+-- Text comparison follows alphabetical (ASCII) order:
 SELECT * FROM employee1 WHERE dept < 'HR';
 SELECT * FROM employee1 WHERE dept > 'HR';
 SELECT * FROM employee1 WHERE dept <= 'HR';
@@ -33,11 +35,13 @@ SELECT * FROM employee1 WHERE dept IS NULL;       -- Show only NULLs
 SELECT * FROM employee1 WHERE dept IS NOT NULL;   -- Show non-NULLs
 
 -- 4. LOGICAL OPERATORS (AND / OR) (Filters multiple columns)
--- AND: Strict parent (Both rules must be true)
+-- AND: Both rules must be true:
 SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 2000;
-SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 3000; -- Fails (salary is 2000)
 
--- OR: Chill parent (At least one rule must be true)
+SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 3000;
+-- ❌ Fails to return rows: Salary for HR is 2000, not 3000.
+
+-- OR: At least one rule must be true:
 SELECT * FROM employee1 WHERE dept = 'HR' OR salary = 3000;
 
 -- 5. BETWEEN / NOT BETWEEN (Filters ranges, boundaries are inclusive)
@@ -45,7 +49,7 @@ SELECT * FROM employee1 WHERE salary BETWEEN 2000 AND 6000;
 SELECT * FROM employee1 WHERE empname BETWEEN 'A' AND 'M';    
 SELECT * FROM employee1 WHERE empname NOT BETWEEN 'A' AND 'M';
 
--- 6. LIKE PATTERN MATCHING (Wildcards: % means 0 or more chars, _ means exactly 1 char)
+-- 6. LIKE PATTERN MATCHING (Wildcards: % = 0+ chars, _ = exactly 1 char)
 SELECT * FROM employee1 WHERE empname LIKE 'A%';     -- Starts with A
 SELECT * FROM employee1 WHERE empname LIKE '%h';     -- Ends with h
 SELECT * FROM employee1 WHERE empname LIKE '%A%';    -- Contains A anywhere
@@ -55,17 +59,15 @@ SELECT * FROM employee1 WHERE empname LIKE '%m_';    -- Second-to-last character
 SELECT * FROM employee1 WHERE empname NOT LIKE '_m%';-- Second character is NOT m
 SELECT * FROM employee1 WHERE empname LIKE '[A,M]%'; -- Starts with A or M
 SELECT * FROM employee1 WHERE empname LIKE '[A-Z]%'; -- Starts with A to Z range
-SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';-- Does NOT start with A to Z range
+SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';-- Does NOT start with A-Z
 
 -- ------------------------------------------------------------
--- SYSTEM INFORMATION
+-- 💻 SYSTEM INFORMATION
 -- ------------------------------------------------------------
--- Query table metadata in active database
-SELECT TABLE_NAME 
-FROM INFORMATION_SCHEMA.TABLES;
+SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES;
 
 -- ------------------------------------------------------------
--- SEED DATA: STUDENTINFO
+-- 💻 SEED DATA: StudentInfo
 -- ------------------------------------------------------------
 SELECT * FROM StudentInfo;
 
@@ -89,4 +91,4 @@ INSERT INTO StudentInfo VALUES (117, 'Riya', 'Amravati', 'Maharashtra', 86, 19, 
 INSERT INTO StudentInfo VALUES (118, 'Nikhil', 'Goa', 'Goa', 71, 22, 'nikhil.naik@gmail.com', 210890123);
 INSERT INTO StudentInfo VALUES (119, 'Sakshi', 'Noida', 'Uttar Pradesh', 93, 21, 'sakshi.gupta@gmail.com', 109901234);
 INSERT INTO StudentInfo VALUES (120, 'Harsh', 'Bengaluru', 'Karnataka', 64, 23, 'harsh.jain@gmail.com', 998877665);
-INSERT INTO StudentInfo VALUES (121, 'Tanvi', 'Ahmedabad', 'Gujarat', 89, NULL, 'tanvi.shah@gmail.com', 887766554);
+INSERT INTO StudentInfo VALUES (121, 'Tanvi', 'Ahmedabad', 'Gujarat', 89, NULL, 'tanvi.shah@gmail.com', 887766554);\n

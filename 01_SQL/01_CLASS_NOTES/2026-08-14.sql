@@ -4,7 +4,7 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- SET OPERATORS (Row-based merging)
+-- 📖 THEORY: SET OPERATORS (Row-based merging)
 -- ------------------------------------------------------------
 -- Unlike JOINs (which connect tables side-by-side/column-wise), 
 -- Set Operators merge tables top-to-bottom/row-wise.
@@ -22,7 +22,7 @@
 -- Math: A = {1, 2, 3}, B = {3, 4} -> A EXCEPT B = {1, 2}
 
 -- ------------------------------------------------------------
--- SET OPERATOR VALIDATION RULES
+-- 📖 Set Operator Validation Rules
 -- ------------------------------------------------------------
 -- Rule 1: The SELECT statements must have the EXACT same number of columns.
 -- Rule 2: Corresponding columns must have compatible data types in the exact same order.
@@ -30,10 +30,9 @@
 -- Real-World Scenario: Merging customer databases from different bank branches (identical schema).
 
 -- ------------------------------------------------------------
--- PRACTICAL IMPLEMENTATION
+-- 💻 PRACTICE: SET OPERATIONS
 -- ------------------------------------------------------------
 
--- Create Sample Tables
 CREATE TABLE Newset1 (
     id INT,
     name VARCHAR(10)
@@ -50,22 +49,22 @@ INSERT INTO Newset2 VALUES (2, 'HR'), (3, 'Entc'), (4, NULL), (5, NULL);
 SELECT * FROM Newset1;
 SELECT * FROM Newset2;
 
--- UNION: Row-wide evaluation (includes duplicates because names and depts differ)
+-- UNION on all columns (Row-wide evaluation includes duplicates due to name/dept differences)
 SELECT * FROM Newset1 
 UNION 
 SELECT * FROM Newset2; 
 
--- UNION: Column-wide evaluation (removes duplicate IDs)
+-- UNION on single column (removes duplicate IDs)
 SELECT id FROM Newset1 
 UNION 
 SELECT custid FROM Newset2;
 
--- UNION ALL: Combines all rows directly without checking for duplicates (Faster!)
+-- UNION ALL (Combines all rows directly without checking for duplicates. Faster!)
 SELECT * FROM Newset1 
 UNION ALL 
 SELECT * FROM Newset2; 
 
--- INTERSECT: Finds common elements
+-- INTERSECT: Finds common IDs
 SELECT id FROM Newset1 
 INTERSECT 
 SELECT custid FROM Newset2; 
@@ -73,4 +72,4 @@ SELECT custid FROM Newset2;
 -- EXCEPT: Elements in table 1 not in table 2
 SELECT id FROM Newset1 
 EXCEPT 
-SELECT custid FROM Newset2;
+SELECT custid FROM Newset2;\n

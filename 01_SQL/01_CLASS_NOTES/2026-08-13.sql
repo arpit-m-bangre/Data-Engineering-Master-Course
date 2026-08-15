@@ -4,7 +4,7 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- DDL VS DML DEEP DIVE (TRUNCATE)
+-- 📖 THEORY: DDL VS DML DEEP DIVE (TRUNCATE)
 -- ------------------------------------------------------------
 -- 📖 THE NOTEBOOK ANALOGY:
 -- Imagine your table is a spiral notebook. 
@@ -23,35 +23,32 @@
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 
 -- ------------------------------------------------------------
--- RETROFITTING CONSTRAINTS (Hiring bouncers on existing tables)
+-- 🛠️ DDL: RETROFITTING CONSTRAINTS (Hiring bouncers on existing tables)
 -- ------------------------------------------------------------
 -- Pre-condition: Existing data in the column must comply with the constraint BEFORE you add it!
--- If you have dirty data, clean it up (using DELETE or UPDATE) before applying the constraint.
 
 SELECT * FROM emp;
 
 -- 1. Adding UNIQUE constraint
-DELETE FROM emp WHERE empid IS NULL; -- Clean dirty data first
+DELETE FROM emp WHERE empid IS NULL;
 ALTER TABLE emp ADD CONSTRAINT u01 UNIQUE (empid);
 
--- Attempting UNIQUE constraint on duplicate column (Fails because age has duplicate 30s!)
 -- ALTER TABLE emp ADD CONSTRAINT u02 UNIQUE (age);
+-- ❌ Fails: Duplicate key age 30 found in existing table (UNIQUE requires distinct values).
 
 -- 2. Adding CHECK constraint
--- Attempting CHECK on non-compliant data (Fails if salary has values <= 4000)
 -- ALTER TABLE emp ADD CONSTRAINT ch01 CHECK (salary > 4000);
+-- ❌ Fails: conflicted with the CHECK constraint because existing salary has values <= 4000.
 
-DELETE FROM emp WHERE salary IS NULL; -- Clean NULLs first
-ALTER TABLE emp ADD CONSTRAINT ch01 CHECK (salary <= 40000); -- (Succeeds)
+DELETE FROM emp WHERE salary IS NULL;
+ALTER TABLE emp ADD CONSTRAINT ch01 CHECK (salary <= 40000);
 
 -- Test CHECK enforcement
-INSERT INTO emp (salary) VALUES (39000); -- Valid
--- INSERT INTO emp (salary) VALUES (41000); -- Invalid (Salary must be <= 40000)
+INSERT INTO emp (salary) VALUES (39000);
 
--- Dropping Constraints
--- ALTER TABLE table_name DROP CONSTRAINT constraint_name;
+-- INSERT INTO emp (salary) VALUES (41000);
+-- ❌ Fails: violates CHECK constraint ch01 (salary must be <= 40000).
 
--- Metadata check for active constraints
 SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS;
 
 -- 3. Adding FOREIGN KEY & DEFAULT constraints
@@ -59,35 +56,32 @@ SELECT * FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS;
 -- ALTER TABLE emp ADD CONSTRAINT df01 DEFAULT 'pune' FOR city;
 
 -- ------------------------------------------------------------
--- COLUMN PROPERTIES VS TABLE CONSTRAINTS
+-- 📖 THEORY: COLUMN PROPERTIES VS TABLE CONSTRAINTS
 -- ------------------------------------------------------------
--- * Column Properties (NOT NULL, IDENTITY): Structural properties of a column.
---   Rule: Modify them using 'ALTER COLUMN'. You cannot use 'ADD CONSTRAINT'.
--- * Table Constraints (PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, UNIQUE): Validation rules.
---   Rule: Add them using 'ADD CONSTRAINT'.
+-- * Column Properties (NOT NULL, IDENTITY): Structural attributes of a column (ALTER COLUMN).
+-- * Table Constraints (PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT, UNIQUE): Validation rules (ADD CONSTRAINT).
 
 CREATE TABLE q10 (
     id INT,
     name VARCHAR(10)
 );
 
--- ❌ Fails: Can't make a nullable column the Primary Key!
 -- ALTER TABLE q10 ADD CONSTRAINT pk011 PRIMARY KEY (id);
+-- ❌ Fails: Cannot define PRIMARY KEY constraint on nullable column 'id'.
 
--- ✔️ Step 1: Change column property to NOT NULL
 ALTER TABLE q10 ALTER COLUMN id INT NOT NULL;
-
--- ✔️ Step 2: Add Primary Key table constraint
 ALTER TABLE q10 ADD CONSTRAINT pk011 PRIMARY KEY (id);
 
--- IDENTITY limits on existing tables:
--- You cannot change an existing column to IDENTITY. You must add a brand new column!
--- SQL Server will automatically populate IDENTITY values for existing rows.
-ALTER TABLE emp ADD sr_no INT; -- Adding normal column
-ALTER TABLE emp ADD adharno INT IDENTITY(1,1); -- Adding IDENTITY column (Succeeds)
+-- Adding IDENTITY to existing table:
+-- IDENTITY cannot be applied to an existing column. You must add a brand new column!
+ALTER TABLE emp ADD sr_no INT;
+ALTER TABLE emp ADD adharno INT IDENTITY(1,1);
+
+-- ALTER TABLE emp ALTER COLUMN age INT NOT NULL;
+-- ❌ Fails: Cannot insert NULL into column 'age' because existing rows have NULLs.
 
 -- ------------------------------------------------------------
--- 18 MCQ TEST REVIEW & ANALYSIS (Score: 13/18)
+-- 📊 18 MCQ TEST REVIEW & ANALYSIS (Score: 13/18)
 -- ------------------------------------------------------------
 -- Q1: Parent table referenced by active FK cannot be TRUNCATED (even if child is empty).
 -- Q2: Dropping a FK constraint removes the check rule, but leaves actual data untouched.
@@ -106,4 +100,4 @@ ALTER TABLE emp ADD adharno INT IDENTITY(1,1); -- Adding IDENTITY column (Succee
 -- Q15: Referenced Primary Key constraint cannot be dropped while active Foreign Key points to it.
 -- Q16: Retrofitting a constraint fails if existing data violates it.
 -- Q17: DELETE without WHERE deletes all rows; deleting a specific value requires a WHERE clause (Incorrect selection: cannot delete multiple).
--- Q18: Parent PK table cannot be deleted/dropped if child FK table references it.
+-- Q18: Parent PK table cannot be deleted/dropped if child FK table references it.\n

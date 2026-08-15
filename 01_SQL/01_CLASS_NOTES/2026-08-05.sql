@@ -4,7 +4,7 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- DML VS DDL COMPARISON (DELETE, TRUNCATE, DROP)
+-- 📖 THEORY: DML VS DDL COMPARISON
 -- ------------------------------------------------------------
 -- 📖 THE NOTEBOOK ANALOGY:
 -- Imagine your table is a spiral notebook.
@@ -15,11 +15,10 @@
 SELECT * FROM INFORMATION_SCHEMA.TABLES;
 SELECT * FROM employee1;
 
--- Clean out table
 TRUNCATE TABLE employee1;
 
 -- ------------------------------------------------------------
--- ALTER TABLE (DDL: Modifying active table structures)
+-- 🛠️ DDL: ALTER TABLE (Modifying table structures)
 -- ------------------------------------------------------------
 
 -- 1. ADD COLUMN (New fields default to NULL)
@@ -47,11 +46,9 @@ SELECT * FROM employee1;
 ALTER TABLE employee1 DROP COLUMN gender;
 
 -- 3. ALTER COLUMN (Changing data types and length)
--- Change INT to VARCHAR
 ALTER TABLE employee ALTER COLUMN empid VARCHAR(10);
 SELECT * FROM INFORMATION_SCHEMA.COLUMNS;
 
--- Flip column data type back and forth
 ALTER TABLE employee1 ALTER COLUMN age VARCHAR(10);   -- INT -> VARCHAR (Valid)
 ALTER TABLE employee1 ALTER COLUMN age INT;           -- VARCHAR -> INT (Valid)
 
@@ -59,9 +56,10 @@ ALTER TABLE employee1 ALTER COLUMN age INT;           -- VARCHAR -> INT (Valid)
 ALTER TABLE employee1 ALTER COLUMN empname VARCHAR(60);
 
 -- Decrease column length
--- Note: Fails if active data in the table is longer than target length!
 ALTER TABLE employee1 ALTER COLUMN empname VARCHAR(10);
--- ALTER TABLE employee1 ALTER COLUMN empname VARCHAR(3); -- (Produces truncation error!)
+
+-- ALTER TABLE employee1 ALTER COLUMN empname VARCHAR(3);
+-- ❌ Fails: Truncation error because active data exceeds 3 characters.
 
 -- 4. RENAME TABLE (Using system stored procedure)
 SELECT * FROM employee1;
@@ -70,5 +68,4 @@ SELECT * FROM emp;
 EXECUTE sp_rename 'emp', 'employee1';
 
 -- 5. RENAME COLUMN (Syntax: 'table.old_col', 'new_col')
--- Note: Run on active table/column names.
--- EXECUTE sp_rename 'employee1.dept', 'org_id';
+-- EXECUTE sp_rename 'employee1.dept', 'org_id';\n

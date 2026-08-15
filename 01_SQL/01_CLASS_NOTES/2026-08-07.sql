@@ -4,7 +4,7 @@
    ================================================================================ */
 
 -- ------------------------------------------------------------
--- SEQUENCE OF EXECUTION (How SQL Server actually runs queries)
+-- 📖 THEORY: SEQUENCE OF EXECUTION
 -- ------------------------------------------------------------
 -- Real Execution Order:
 -- FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
@@ -52,15 +52,14 @@ FROM student_dumy
 WHERE city IS NOT NULL AND age BETWEEN 18 AND 30
 GROUP BY city;
 
--- GROUP BY with multiple aggregates
 SELECT city, COUNT(id) AS student_count, AVG(age) AS age_avg
 FROM student_dumy
 WHERE city IS NOT NULL AND age BETWEEN 18 AND 30
 GROUP BY city;
 
 -- 4. HAVING CLAUSE (The Group Filter)
--- Analogy: WHERE is the bouncer filtering individual guests. HAVING is the manager filtering entire tables.
--- Rule: Use HAVING to filter on aggregated columns (like SUM, AVG, COUNT). Use WHERE to filter normal columns.
+-- Analogy: WHERE is the bouncer filtering individual guests. HAVING is the manager filtering tables.
+-- Rule: Use HAVING to filter on aggregated columns (SUM, AVG, COUNT). Use WHERE to filter normal columns.
 
 SELECT dept, SUM(salary) AS total_salary
 FROM emp
@@ -68,9 +67,8 @@ WHERE dept IS NOT NULL AND empname LIKE '%a%'
 GROUP BY dept
 HAVING SUM(salary) > 2000;
 
--- ⚠️ ALIAS LIMITATION:
--- The query below fails because HAVING runs BEFORE SELECT defines 'total_salary'!
 -- SELECT dept, SUM(salary) AS total_salary FROM emp GROUP BY dept HAVING total_salary > 2000;
+-- ❌ Fails: Invalid column name 'total_salary' (alias cannot be used in HAVING).
 
 -- 5. IN-CLASS DRILL (Subject-wise analysis)
 CREATE TABLE student_dumy2
@@ -136,7 +134,6 @@ INSERT INTO student_dumy2 (id, name, sub, marks, age) VALUES
     (51, 'rahul',       'Science',  98, 21),
     (52, 'ravi',        'English',  96, 23);
 
--- Subject-wise average marks and count where marks > 35 and name contains 'r'
 SELECT sub, AVG(marks) AS avg_marks, COUNT(id) AS No_of_student_sub
 FROM student_dumy2
 WHERE marks > 35 AND name LIKE '%r%'
@@ -144,7 +141,6 @@ GROUP BY sub
 HAVING AVG(marks) < 50 AND COUNT(id) > 5;
 
 -- 6. ORDER BY (Sorting results)
--- Sort values in Ascending (ASC - default) or Descending (DESC) order.
 SELECT * FROM emp ORDER BY salary ASC;
 SELECT * FROM emp ORDER BY salary DESC;
 SELECT empname FROM emp ORDER BY salary DESC;
@@ -152,10 +148,7 @@ SELECT empname FROM emp ORDER BY salary DESC;
 -- 7. INDEPENDENT CLAUSE RULE (WHERE & ORDER BY can sort columns not displayed in SELECT)
 SELECT dept FROM emp WHERE salary > 5000 ORDER BY salary DESC;
 
--- Tricky Question: How many clauses can be added to: SELECT MAX(salary) FROM emp;
--- Answer: Zero! It already returns 1 row for the whole table. No grouping, filtering, or sorting is needed.
-
--- ORDER BY with GROUP BY & HAVING (ORDER BY runs LAST, so it can use the 'avg_marks' alias!)
+-- ORDER BY with GROUP BY & HAVING (ORDER BY runs LAST, so it can use 'avg_marks' alias)
 SELECT sub, AVG(marks) AS avg_marks, COUNT(id) AS No_of_student_sub
 FROM student_dumy2
 WHERE marks > 35 AND name LIKE '%r%'
@@ -164,7 +157,7 @@ HAVING AVG(marks) < 50 AND COUNT(id) > 5
 ORDER BY avg_marks;
 
 -- ------------------------------------------------------------
--- ENTERPRISE PRACTICE QUESTIONS (Sumedha Ma'am's Task)
+-- 💻 ENTERPRISE PRACTICE QUESTIONS (Sumedha Ma'am's Task)
 -- ------------------------------------------------------------
 -- 1. Total salary per department for employees who joined after 2020 (total salary > 3,00,000, desc order).
 -- 2. Total sales by salesperson for products priced > 500 (total sales > 50,000, alphabetically sorted).
@@ -174,4 +167,4 @@ ORDER BY avg_marks;
 -- 6. Minimum room price per hotel for bookings > 2 nights (minimum price < 1500, min price asc).
 -- 7. Count plan subscribers in India/Nepal (at least 200 subscribers, sorted by subscriber count).
 -- 8. Total stock per supplier for non-expired items (stock sum > 1000, supplier name desc).
--- 9. Group expenses by type where expense is between 500 and 5000 (average expense > 1000, average desc).
+-- 9. Group expenses by type where expense is between 500 and 5000 (average expense > 1000, average desc).\n
