@@ -107,38 +107,53 @@ INSERT INTO practice_day5 (empid, emp_name, age, salary, city) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Add columns 'doj' (DATE)
---      and 'status' to profiles.
--- Write your SQL Query below:
+-- Q11. Candidate Profile Setup:
+--      Q11.1. Add columns 'doj' (DATE)
+--             and 'status' to profiles.
+--      Q11.2. Add column 'salary_exp'
+--             (INT) to profiles.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Rename column 'status' to
---      'candidate_status' in table.
--- Write your SQL Query below:
+-- Q12. Structural Column Renames:
+--      Q12.1. Rename column 'status' to
+--             'candidate_status' in table.
+--      Q12.2. Rename column 'doj' to
+--             'joining_date' in table.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Try changing size of 'name'
---      to VARCHAR(5) when long
---      values exist. What happens?
--- Write your explanation below:
+-- Q13. Column Value Truncation Checks:
+--      Q13.1. Try changing size of 'name'
+--             to VARCHAR(5) when long
+--             values exist. What happens?
+--      Q13.2. Change size of 'name' to
+--             VARCHAR(60) (Succeeds).
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q14. Drop columns 'age' and
---      'marks' from student backup.
--- Write your SQL Query below:
+-- Q14. Backup Cleanup Operations:
+--      Q14.1. Drop columns 'age' and
+--             'marks' from student backup.
+--      Q14.2. Drop column 'city' from
+--             the backup table.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Add column 'rating' (INT)
---      with default value NULL.
--- Write your SQL Query below:
+-- Q15. Initial Value Configuration:
+--      Q15.1. Add column 'rating' (INT)
+--             with default value NULL.
+--      Q15.2. Update rating to 5 for
+--             active employees.
+-- Write your SQL Queries below:
 
 
 

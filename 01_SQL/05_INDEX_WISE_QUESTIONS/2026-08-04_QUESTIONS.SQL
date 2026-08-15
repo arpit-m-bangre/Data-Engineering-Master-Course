@@ -111,39 +111,53 @@ INSERT INTO practice_day4 (roll_no, name, subject, marks, age, mobile_no) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Project candidate name,
---      salary, and a new salary
---      showing a 15% increment.
--- Write your SQL Query below:
+-- Q11. Payroll Projections:
+--      Q11.1. Project candidate name,
+--             salary, and salary+15%.
+--      Q11.2. Project candidate name
+--             and salary-10%.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Update salary to salary+15%
---      for all 'HR' employees.
--- Write your SQL Query below:
+-- Q12. Target Bulk Updates:
+--      Q12.1. Update salary to salary+15%
+--             for all 'HR' employees.
+--      Q12.2. Update salary to 50000
+--             for employees earning < 30000.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Update subject to 'Pune' and
---      age to 23 for RollNo = 104.
--- Write your SQL Query below:
+-- Q13. Selective Student Editing:
+--      Q13.1. Update subject to 'Maths' and
+--             age to 23 for RollNo = 104.
+--      Q13.2. Update name to 'Aarav'
+--             where roll_no = 101.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Delete all students who
---      have no mobile number
---      and marks are NULL.
--- Write your SQL Query below:
+-- Q14. Missing Data Purging:
+--      Q14.1. Delete all students who
+--             have no mobile number
+--             and marks are NULL.
+--      Q14.2. Delete students who
+--             have marks < 50.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Delete employees whose
---      salary is < 2000.
--- Write your SQL Query below:
+-- Q15. Minimum Threshold Filtering:
+--      Q15.1. Delete employees whose
+--             salary is < 2000.
+--      Q15.2. Delete employees in 'Sales'
+--             who earn < 3000.
+-- Write your SQL Queries below:
 
 
 

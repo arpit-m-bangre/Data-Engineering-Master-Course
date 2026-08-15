@@ -103,39 +103,48 @@ CREATE TABLE practice_day10 (
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Create 'Departments_PK'
---      (DeptID INT PRIMARY KEY) and
---      'Staff_FK' (StaffID INT PK,
---      DeptID INT REFERENCES parent).
--- Write your SQL Query below:
-
-
-
-
--- Q12. Insert 3 departments and
---      3 staff records.
+-- Q11. Department Registrations:
+--      Q11.1. Create parent 'Departments_PK' with
+--             DeptID (INT PRIMARY KEY).
+--      Q11.2. Create child 'Staff_FK' referencing
+--             parent DeptID.
 -- Write your SQL Queries below:
 
 
 
 
--- Q13. Try dropping parent table
---      Departments_PK. Show error.
+-- Q12. Parent-Child Seed Insertion:
+--      Q12.1. Insert 3 departments into parent table.
+--      Q12.2. Insert 3 staff records referencing
+--             valid department IDs.
+-- Write your SQL Queries below:
+
+
+
+
+-- Q13. Referential Integrity Block:
+--      Q13.1. Try dropping Departments_PK.
+--             Show error trace.
+--      Q13.2. Try truncating Departments_PK.
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q14. Delete a department having
---      active staff references.
--- Write your SQL Query and explanation:
+-- Q14. Record Deletion Constraints:
+--      Q14.1. Delete a department that has active
+--             employees in the child table.
+--      Q14.2. Delete child rows first and then
+--             delete the department.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Create parent table 'Store'
---      with StoreID INT PRIMARY KEY.
--- Write your SQL Query below:
+-- Q15. Multi-Table Setup Checks:
+--      Q15.1. Create parent 'Store' with StoreID.
+--      Q15.2. Create child 'Sales' referencing 'Store'.
+-- Write your SQL Queries below:
 
 
 

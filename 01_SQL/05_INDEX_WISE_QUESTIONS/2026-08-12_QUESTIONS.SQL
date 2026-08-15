@@ -97,22 +97,26 @@ CREATE TABLE practice_day11 (
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR Cleanup: Clear 'Member'
---      rows and then delete a branch.
+-- Q11. Database Auditing & Resets:
+--      Q11.1. Delete all rows from child 'BranchStaff'.
+--      Q11.2. Delete branch ID 10 from parent 'CompanyBranch'.
 -- Write your SQL Queries below:
 
 
 
 
--- Q12. Select all remaining rows
---      from member and branch tables.
+-- Q12. Record Validation Audits:
+--      Q12.1. Select remaining rows from child.
+--      Q12.2. Select remaining rows from parent.
 -- Write your SQL Queries below:
 
 
 
 
--- Q13. Empty child table. Try to
---      TRUNCATE the parent 'Branch'.
+-- Q13. Empty Table Truncations:
+--      Q13.1. Try to TRUNCATE parent when child has 0 rows.
+--             Does it fail or succeed?
+--      Q13.2. Drop foreign key constraint first and truncate.
 -- Write your SQL Query and explanation:
 
 

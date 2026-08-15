@@ -102,41 +102,49 @@ CREATE TABLE practice_day9 (
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Create 'StaffRegister':
---      RollID (INT PRIMARY KEY),
---      Email (VARCHAR(40) NOT NULL UNIQUE),
---      Age (INT CHECK (Age >= 18)),
---      Department (VARCHAR(15) DEFAULT 'Bench').
--- Write your SQL Query below:
-
-
-
-
--- Q12. Insert staff register with
---      email blank ('') vs NULL.
+-- Q11. Staff Schema Design:
+--      Q11.1. Create table 'StaffRegister' with
+--             RollID (INT PRIMARY KEY).
+--      Q11.2. Add Email (VARCHAR(40) NOT NULL UNIQUE)
+--             and Age (INT CHECK (Age >= 18)).
 -- Write your SQL Queries below:
 
 
 
 
--- Q13. Add CHECK constraint on
---      Department ensuring it is
---      in ('IT', 'HR', 'Admin').
--- Write your SQL Query below:
-
-
-
-
--- Q14. Try inserting Department = 'Sales'.
---      Explain constraint validation.
+-- Q12. Email Input Audits:
+--      Q12.1. Insert staff record with
+--             email set to empty string ('').
+--      Q12.2. Try inserting staff record with
+--             email set to NULL (Show error).
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q15. Create 'Accounts' table with
---      acc_no INT CHECK (acc_no > 1000).
--- Write your SQL Query below:
+-- Q13. Department Domain Constraints:
+--      Q13.1. Add CHECK constraint on Department
+--             ensuring it is in ('IT', 'HR', 'Admin').
+--      Q13.2. Try inserting Department = 'Sales'.
+-- Write your SQL Query and explanation:
+
+
+
+
+-- Q14. Accounts Creation Verification:
+--      Q14.1. Create 'Accounts' table with
+--             acc_no INT CHECK (acc_no > 1000).
+--      Q14.2. Insert account number 1001.
+-- Write your SQL Queries below:
+
+
+
+
+-- Q15. Metadata Verification Checks:
+--      Q15.1. Find all active CHECK constraints
+--             applied to the 'StaffRegister' table.
+--      Q15.2. Find all UNIQUE constraints.
+-- Write your SQL Queries below:
 
 
 

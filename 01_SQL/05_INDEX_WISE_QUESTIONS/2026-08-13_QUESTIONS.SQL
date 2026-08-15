@@ -100,37 +100,42 @@ CREATE TABLE practice_day12 (
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR Cleanup: Delete duplicate
---      emails and add UNIQUE.
+-- Q11. Database Data Sanitization:
+--      Q11.1. Delete duplicate emails from table 'emp'.
+--      Q11.2. Retrofit UNIQUE constraint after cleanup.
 -- Write your SQL Queries below:
 
 
 
 
--- Q12. Convert 'status' to NOT NULL.
---      What pre-cleaning is needed?
--- Write your SQL Query and explanation:
+-- Q12. Structural Property Retrofitting:
+--      Q12.1. Clean NULLs from 'status' column.
+--      Q12.2. Alter status column to NOT NULL.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Add DEFAULT constraint named
---      'df_status' for status column.
--- Write your SQL Query below:
+-- Q13. Default Value Configuration:
+--      Q13.1. Add DEFAULT constraint named df_status FOR status.
+--      Q13.2. Insert a row omitting status to test df.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Show all check constraints
---      applied to the 'emp' table.
--- Write your SQL Query below:
+-- Q14. Target Constraint Inspection:
+--      Q14.1. Show check constraints applied to table 'emp'.
+--      Q14.2. Show check constraints applied to table 'q10'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Create table 'q11' with a
---      nullable integer column.
--- Write your SQL Query below:
+-- Q15. Multi-Step PK Retrofitting:
+--      Q15.1. Create table 'q11' with a nullable integer column.
+--      Q15.2. Convert column property to NOT NULL and add PK.
+-- Write your SQL Queries below:
 
 
 

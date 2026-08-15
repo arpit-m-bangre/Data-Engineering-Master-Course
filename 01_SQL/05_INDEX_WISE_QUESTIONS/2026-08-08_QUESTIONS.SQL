@@ -109,42 +109,52 @@ INSERT INTO practice_day8 (empid, dept, salary, exp, city, age) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR Finance: Earnings > 40000.
---      Depts with count >= 6, avg > 75000,
---      max experience > 10, sorted avg desc.
--- Write your SQL Query below:
+-- Q11. HR Finance Budgeting:
+--      Q11.1. Select dept-wise count, average
+--             salary, and maximum experience.
+--      Q11.2. Filter where count >= 6, avg > 75000,
+--             and max exp > 10, sorted by avg descending.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. HR City: Ignore age < 25.
---      Cities with count >= 8, min > 30000,
---      avg experience > 5, sorted count desc.
--- Write your SQL Query below:
+-- Q12. Regional Employee Audits:
+--      Q12.1. Group by city and show count,
+--             minimum salary, and avg experience.
+--      Q12.2. Filter where age >= 25, count >= 8,
+--             and min > 30000, sorted count desc.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Sales: Find salespersons with
---      total > 1,00,000 in 'Q3' sales,
---      sorted descending.
--- Write your SQL Query below:
+-- Q13. Sales Channel Performance:
+--      Q13.1. Calculate total sales amount
+--             grouped by salesperson for Q3.
+--      Q13.2. Retain salespersons where total
+--             exceeds 1,00,000, sorted descending.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Bookings: Hotel group bookings
---      for > 2 nights (minimum price < 1500),
---      sorted price ascending.
--- Write your SQL Query below:
+-- Q14. Booking Volume Audit:
+--      Q14.1. Group bookings by hotel where
+--             nights stayed is > 2.
+--      Q14.2. Show hotels where minimum room
+--             price booked is < 1500, sorted desc.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Transactions: Total UPI/Card
---      transactions > 10,000 per cust,
---      sorted customer ID ascending.
--- Write your SQL Query below:
+-- Q15. Transaction Channel Audit:
+--      Q15.1. Calculate total transaction amount
+--             per customer for UPI/Card methods.
+--      Q15.2. Show customers where total exceeds
+--             10,000, sorted by customer ID.
+-- Write your SQL Queries below:
 
 
 

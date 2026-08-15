@@ -111,38 +111,57 @@ INSERT INTO practice_day1 (id, name, dept, salary) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR needs 'CandidateProfile'
---      with ID, Name, Email, Age.
---      Emails must support 50 chars.
+-- Q11. Candidate Profiling Setup:
+--      Create 'CandidateProfile' with:
+--      - ID (INT)
+--      - Name (VARCHAR(50))
+--      - Email (VARCHAR(50))
+--      - Age (INT)
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Insert a candidate without
---      providing an email ID.
+-- Q12. Selective Candidate Insertion:
+--      Q12.1. Insert candidate 'Amit'
+--             with age 25 and NULL email.
+--      Q12.2. Insert candidate 'Puja'
+--             omitting Email in column list.
+-- Write your SQL Queries below:
+
+
+
+
+-- Q13. Candidate Data Projection:
+--      Q13.1. Project Name and Age.
+--      Q13.2. Project Name and Email.
+-- Write your SQL Queries below:
+
+
+
+
+-- Q13.3. Project Name and Age of
+--        candidates older than 22.
 -- Write your SQL Query below:
 
 
 
 
--- Q13. Project name and age of
---      all candidate profiles.
--- Write your SQL Query below:
+-- Q14. HR Database Expansion:
+--      Q14.1. Create table 'Dept' with
+--             DeptID (INT) and Name.
+--      Q14.2. Insert 2 departments.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Insert candidate 'Amit'
---      with age 25 and NULL email.
--- Write your SQL Query below:
-
-
-
-
--- Q15. Create 'Dept' table with
---      DeptID and DeptName.
--- Write your SQL Query below:
+-- Q15. High-Value Staff Screening:
+--      Q15.1. Create table 'HighStaff'
+--             with ID and Salary.
+--      Q15.2. Insert 2 rows with salary
+--             exceeding 50,000.
+-- Write your SQL Queries below:
 
 
 

@@ -108,39 +108,52 @@ INSERT INTO Newset2 VALUES (2, 'HR'), (3, 'Entc'), (4, NULL), (5, NULL);
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Branch Merger: Combine
---      BranchA (id, name) and
---      BranchB (custid, name)
---      using UNION.
--- Write your SQL Query below:
+-- Q11. Database Merging Operations:
+--      Q11.1. Select all customer IDs from BranchA.
+--      Q11.2. Select all customer IDs from BranchB.
+--      Q11.3. Combine them using UNION.
+--      Q11.4. Combine them using UNION ALL.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Logs audit: Combine UPI & Card
---      payments keeping all duplicates.
--- Write your SQL Query below:
+-- Q12. Financial Transaction Auditing:
+--      Q12.1. Select transaction amounts from UPI payments.
+--      Q12.2. Select transaction amounts from Card payments.
+--      Q12.3. Combine UPI & Card transaction amounts.
+--      Q12.4. Return only common transaction amounts (INTERSECT).
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Churn: Customer IDs from
---      Customers EXCEPT those in Orders.
--- Write your SQL Query below:
+-- Q13. Customer Churn Analysis:
+--      Q13.1. Select customer IDs from Customers table.
+--      Q13.2. Select customer IDs who placed orders in Orders.
+--      Q13.3. Retrieve customer IDs who have never ordered (EXCEPT).
+--      Q13.4. Retrieve common customer IDs who ordered (INTERSECT).
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Common clients: Find names
---      in prospects & active tables.
--- Write your SQL Query below:
+-- Q14. Client Database Consolidation:
+--      Q14.1. Select all prospective client names.
+--      Q14.2. Select all active client names.
+--      Q14.3. Find prospective clients who became active.
+--      Q14.4. Find prospective clients who are NOT active.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Combine distinct city logs
---      from two branch offices.
--- Write your SQL Query below:
+-- Q15. Regional Office Synchronization:
+--      Q15.1. Select unique cities from BranchA logs.
+--      Q15.2. Select unique cities from BranchB logs.
+--      Q15.3. Find cities common to both branches (INTERSECT).
+--      Q15.4. Find cities unique to BranchA only (EXCEPT).
+-- Write your SQL Queries below:
 
 
 

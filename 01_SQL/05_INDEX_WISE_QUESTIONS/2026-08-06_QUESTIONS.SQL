@@ -106,38 +106,51 @@ INSERT INTO practice_day6 (empid, empname, org_id, salary) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR Payroll: Calculate total
---      budget and average salary
---      for 'IT' department.
--- Write your SQL Query below:
+-- Q11. HR Payroll Summaries:
+--      Q11.1. Calculate total budget (SUM)
+--             for 'IT' department.
+--      Q11.2. Calculate average salary (AVG)
+--             for 'HR' department.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Find alphabetical minimum
---      and maximum employee names.
--- Write your SQL Query below:
+-- Q12. Alphabetical Extreme Limits:
+--      Q12.1. Find alphabetical minimum
+--             employee name in database.
+--      Q12.2. Find alphabetical maximum
+--             employee name in database.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Select unique statuses
---      using DISTINCT.
--- Write your SQL Query below:
+-- Q13. Unicity Verification Checks:
+--      Q13.1. Select unique statuses
+--             using DISTINCT.
+--      Q13.2. Count unique statuses.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Explain why SUM(empname)
---      returns a syntax error.
--- Write your explanation below:
+-- Q14. Null Data Analysis:
+--      Q14.1. Count unique departments
+--             that are NOT NULL.
+--      Q14.2. Count unique departments
+--             including NULLs (via COUNT(*)).
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Count unique departments
---      that are NOT NULL.
--- Write your SQL Query below:
+-- Q15. High-Value Boundary Audits:
+--      Q15.1. Find total students who
+--             scored > 80 in subject 'Stat'.
+--      Q15.2. Find average age of
+--             students in 'Nagpur'.
+-- Write your SQL Queries below:
 
 
 

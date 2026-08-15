@@ -107,43 +107,54 @@ INSERT INTO practice_day7 (id, name, dept, salary) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Sumedha Ma'am Q1: Total salary
---      per dept for employees joining
---      after 2020 (sum > 3,00,000),
---      sorted descending.
--- Write your SQL Query below:
+-- Q11. HR Payroll Auditing:
+--      Q11.1. Sumedha Ma'am Q1: Total salary
+--             per dept for employees joining
+--             after 2020 (sum > 3,00,000).
+--      Q11.2. Sort the final output by
+--             total salary descending.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Salesperson sales > 50,000
---      for products priced > 500,
---      sorted alphabetically.
--- Write your SQL Query below:
+-- Q12. Sales Agent Performance:
+--      Q12.1. Calculate total sales per
+--             salesperson for products > 500.
+--      Q12.2. Show salesperson only if
+--             total sales exceed 50,000,
+--             sorted alphabetically.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. 2023 orders per customer where
---      amount > 1000 (at least 5 orders),
---      sorted descending by count.
--- Write your SQL Query below:
+-- Q13. Customer Order Frequency:
+--      Q13.1. Count 2023 orders per customer
+--             where order amount is > 1000.
+--      Q13.2. Retain customers with >= 5 orders,
+--             sorted by count descending.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Group expenses by type where
---      amount is 500-5000 (average > 1000),
---      sorted average descending.
--- Write your SQL Query below:
+-- Q14. Expense Category Check:
+--      Q14.1. Group expenses by type where
+--             amount is between 500 and 5000.
+--      Q14.2. Show categories with average > 1000,
+--             sorted by average descending.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Average product category price
---      with stock > 50 (avg > 2000),
---      category name sorted.
--- Write your SQL Query below:
+-- Q15. Product Category Pricing:
+--      Q15.1. Average category price for
+--             products with stock > 50.
+--      Q15.2. Retain categories with average
+--             price > 2000, sorted by category.
+-- Write your SQL Queries below:
 
 
 

@@ -112,39 +112,54 @@ INSERT INTO practice_day3 (roll_no, name, city, subject, marks, age, email_id) V
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. Find student emails ending
---      with '.com' but missing '@'.
--- Write your SQL Query below:
+-- Q11. Student Email Verification:
+--      Q11.1. Find student emails ending
+--             with '.com' but missing '@'.
+--      Q11.2. Find student emails where
+--             email starts with name.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Find students with marks
---      50-80, and city starts
---      with 'N' or 'A'.
--- Write your SQL Query below:
+-- Q12. Grade Boundaries Auditing:
+--      Q12.1. Find students with marks
+--             50-80, and city starts
+--             with 'N' or 'A'.
+--      Q12.2. Find students with marks
+--             > 80 in subject 'Maths'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Retrieve students whose
---      names start with 'A' to 'M'.
--- Write your SQL Query below:
+-- Q13. Alphabetical Name Indexing:
+--      Q13.1. Retrieve students whose
+--             names start with 'A' to 'M'.
+--      Q13.2. Retrieve students whose
+--             names do not start with 'A-M'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Find students where city is
---      not 'Nagpur' and subject
---      is not 'Maths'.
--- Write your SQL Query below:
+-- Q14. Location & Subject Audit:
+--      Q14.1. Find students where city is
+--             not 'Nagpur' and subject
+--             is not 'Maths'.
+--      Q14.2. Find students in 'Mumbai'
+--             whose subject is 'Maths'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Retrieve students whose
---      marks are NULL or 0.
--- Write your SQL Query below:
+-- Q15. Missing Dataset Checks:
+--      Q15.1. Retrieve students whose
+--             marks are NULL or 0.
+--      Q15.2. Retrieve students whose
+--             age is NULL and email is NULL.
+-- Write your SQL Queries below:
 
 
 

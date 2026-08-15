@@ -109,37 +109,52 @@ INSERT INTO practice_day2 (empid, empname, dept, salary) VALUES
 -- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q11. HR needs students whose
---      name starts with 'A'.
--- Write your SQL Query below:
+-- Q11. Name Match Audits:
+--      Q11.1. Find employees whose name
+--             starts with 'A'.
+--      Q11.2. Find employees whose name
+--             ends with 't'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q12. Find all students whose
---      email contains 'gmail.com'.
--- Write your SQL Query below:
+-- Q12. Email Address Audits:
+--      Q12.1. Find employees whose email
+--             contains 'gmail.com'.
+--      Q12.2. Find employees whose email
+--             starts with 'arpit'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q13. Find students whose second
---      character of name is 'a'.
--- Write your SQL Query below:
+-- Q13. Specific Character Matches:
+--      Q13.1. Find employees whose second
+--             character of name is 'a'.
+--      Q13.2. Find employees whose third
+--             character of name is 'p'.
+-- Write your SQL Queries below:
 
 
 
 
--- Q14. Find students living in
---      'Nagpur' and aged >= 22.
--- Write your SQL Query below:
+-- Q14. High-Value Location Filter:
+--      Q14.1. Find employees living in
+--             'Nagpur' and aged >= 22.
+--      Q14.2. Find employees in 'Pune'
+--             earning > 3000.
+-- Write your SQL Queries below:
 
 
 
 
--- Q15. Find students whose marks
---      are NOT between 60 and 80.
--- Write your SQL Query below:
+-- Q15. Salary Range Screening:
+--      Q15.1. Find employees whose salary
+--             is NOT between 2000 and 4000.
+--      Q15.2. Find employees whose salary
+--             is exactly 2000 or 5000.
+-- Write your SQL Queries below:
 
 
 
