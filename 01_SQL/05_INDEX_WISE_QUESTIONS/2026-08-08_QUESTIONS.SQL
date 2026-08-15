@@ -1,182 +1,108 @@
-/* ============================================================
-               DAY 8 PRACTICE QUESTIONS (8 AUGUST 2026)
-               TOPICS: COMPLEX SCENARIO-BASED SQL CHALLENGES,
-                       QUERY MISTAKE ANALYSIS & LOGIC DEBUGGING
-               REVISION: DAYS 1 - 7 (CLAUSE EXECUTION ORDER, GROUP BY, HAVING)
-               ESTIMATED TIME: 1.5 - 2 HOURS | TARGET: 14 QUESTIONS
-   ============================================================ */
+/*============================================================
+       DAY 8 PRACTICE QUESTIONS - 8 AUGUST 2026
+       TOPICS: COMPLEX SCENARIO-BASED SQL CHALLENGES, QUERY MISTAKE ANALYSIS & DEBUGGING
+============================================================*/
 
--- ============================================================
--- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
--- ============================================================
+-- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
+-- ------------------------------------------------------------
 
--- QUESTION 1 [Syntax Drill - Multi-Clause Query Construction]:
-/*
-Task: Write queries on table 'Emp(EmpID INT, Dept VARCHAR 15, Salary INT, Exp INT)':
-1. Group by Dept and show COUNT(EmpID) AS EmpCount, AVG(Salary) AS AvgSalary.
-2. Group by Dept and show COUNT(EmpID) WHERE Salary > 20000 HAVING AVG(Salary) > 50000.
-*/
-
--- Write your SQL Queries below:
-
-
-
-
--- QUESTION 2 [Syntax Drill - Multi-Column Sorting Options]:
-/*
-Task: Write a query selecting Dept, AVG(Salary) AS AvgSalary from 'Emp' grouped by Dept, sorted by AvgSalary DESCENDING, and then Dept ASCENDING.
-*/
-
+-- Q1. Write a query to find the department and count of employees where the department has at least 3 employees.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 3 [Syntax Drill - Multiple Conditions in HAVING]:
-/*
-Task: Write a query selecting Dept, AVG(Salary) AS AvgSal, COUNT(EmpID) AS EmpCnt from 'Emp' grouped by Dept, HAVING AVG(Salary) > 60000 AND COUNT(EmpID) >= 5 AND MAX(Exp) > 8.
-*/
-
+-- Q2. Write a query to show department-wise average experience (Exp) sorted by average experience descending.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 4 [Syntax Drill - Multiple Conditions in WHERE]:
-/*
-Task: Write a query selecting Dept, SUM(Salary) AS TotalSal from 'Emp' WHERE Salary >= 30000 AND Exp >= 2 AND Dept IN ('HR', 'IT', 'Finance') GROUP BY Dept.
-*/
-
+-- Q3. Write a query to show city-wise maximum salary, excluding cities that are NULL.
 -- Write your SQL Query below:
 
 
 
 
--- ============================================================
--- SECTION 2: DAYS 1 - 7 CUMULATIVE REVISION DRILLS
--- ============================================================
-
--- QUESTION 5 [Days 1-7 Revision - Full 6-Clause Integration]:
-/*
-Task: Write a query selecting Dept, COUNT(EmpID) AS EmpCount, AVG(Salary) AS AvgSalary from 'Emp' for employees with Salary > 30000, grouped by Dept, returning only departments with AVG(Salary) > 50000 AND COUNT(EmpID) >= 3, sorted by AvgSalary DESCENDING.
-*/
-
+-- Q4. Group 'emp' by department and show the count of employees, sorted by count ascending.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 6 [Days 1-7 Revision - Execution Order Check]:
-/*
-Task:
-1. State the memory rule: What does WHERE filter vs what does HAVING filter?
-2. At what step during execution are aggregate functions evaluated?
-*/
 
--- Write your answers in comments below:
+-- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
+-- ------------------------------------------------------------
 
-
-
-
--- ============================================================
--- SECTION 3: COMPLEX SCENARIO-BASED CHALLENGES
--- ============================================================
-
--- QUESTION 7 [Scenario Challenge 1 - Finance Bonus Eligibility]:
-/*
-Scenario: Finance bonus qualification audit.
-Task: Write a query on 'Emp' returning Dept, COUNT(EmpID) AS EmployeeCount, AVG(Salary) AS AvgSalary, MAX(Exp) AS MaxExperience for employees with Salary > 40000, grouped by Dept, returning departments where EmployeeCount >= 6 AND AvgSalary > 75000 AND MaxExperience > 10, sorted by AvgSalary DESCENDING.
-*/
-
+-- Q5. Select all employees who earn more than 5000 and group by department, showing average salary.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 8 [Scenario Challenge 2 - City Performance Screening]:
-/*
-Scenario: City branch audit ignoring junior staff.
-Task: Write a query on 'Emp' returning City, COUNT(EmpID) AS EmployeeCount, MIN(Salary) AS MinSalary, AVG(Exp) AS AvgExperience for employees aged 25 and above (Age >= 25), grouped by City, returning cities where EmployeeCount >= 8 AND MinSalary > 30000 AND AvgExperience > 5, sorted by EmployeeCount DESCENDING.
-*/
-
+-- Q6. Write a query to show the minimum salary per city for employees aged 25 or older.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 9 [Scenario Challenge 3 - Department Gender Screening]:
-/*
-Scenario: Diversity audit screening female staff compensation.
-Task: Write a query on 'Emp' returning Dept, COUNT(EmpID) AS EmployeeCount, SUM(Salary) AS TotalSalary, MAX(Salary) AS MaxSalary for female employees (Gender = 'female'), grouped by Dept, returning departments where EmployeeCount >= 4 AND TotalSalary > 500000 AND MaxSalary > 120000, sorted by TotalSalary DESCENDING.
-*/
-
+-- Q7. Find departments whose maximum salary is greater than 80000 and count of employees is at least 5.
 -- Write your SQL Query below:
 
 
 
 
--- QUESTION 10 [Scenario Challenge 4 - Tricky Multi-Column Department Query]:
-/*
-Scenario: Comprehensive executive department analysis.
-Task: Write a query on 'Emp' returning Dept, COUNT(EmpID) AS EmployeeCount, AVG(Salary) AS AvgSalary, MAX(Salary) AS MaxSalary, MIN(Exp) AS MinExperience for employees with Salary >= 45000, grouped by Dept, returning departments where EmployeeCount BETWEEN 5 AND 10 AND AvgSalary > 70000 AND MaxSalary > 120000 AND MinExperience >= 2, sorted by AvgSalary DESCENDING, Dept ASCENDING.
-*/
+-- Q8. Explain what is wrong with: 'SELECT city, AVG(salary) FROM emp WHERE AVG(salary) > 30000 GROUP BY city;'
+-- Write your explanation below:
 
+
+
+
+
+-- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
+-- ------------------------------------------------------------
+
+-- Q9. HR Finance: Consider employees earning > 40000. Find departments having: employee count >= 6,
+--     average salary > 75000, and maximum experience > 10 years, sorted by avg salary descending.
 -- Write your SQL Query below:
 
 
 
 
--- ============================================================
--- SECTION 4: LOGIC BUILDER & DEBUGGING DRILLS
--- ============================================================
-
--- QUESTION 11 [Logic Builder - Word Problem Translation Rules]:
-/*
-Task: Translate the following business requirements into SQL clause fragments:
-1. "Ignore staff aged below 25" -> ?
-2. "Minimum experience is at least 2 years" -> ?
-3. "Total department salary exceeds 5,00,000" -> ?
-*/
-
--- Write your answers in comments below:
+-- Q10. HR City Audit: Ignore employees aged below 25. Find cities where: employee count >= 8,
+--      minimum salary > 30000, and average experience > 5 years, sorted by employee count descending.
+-- Write your SQL Query below:
 
 
 
 
--- QUESTION 12 [Logic Builder - Common Threshold Pitfalls]:
-/*
-Task: Explain why writing 'WHERE Age < 25' when the business rule requires 'Ignore employees aged below 25' is a critical logic bug.
-*/
-
--- Write your explanation in comments below:
+-- Q11. Sales Performance: In the Sales table, find salespersons with total sales > 1,00,000 for sales
+--      made in 'Q3' only, sorted by total sales descending.
+-- Write your SQL Query below:
 
 
 
 
--- QUESTION 13 [Debugging - Identify Multi-Error Buggy Queries]:
-/*
-Task: Identify all 3 errors in the following query and write the corrected version:
-SELECT Dept, AVG(Salary)
-FROM Emp
-WHERE AVG(Salary) > 70000
-ORDER BY Average Salary DESC;
-*/
-
--- Write your explanation & corrected SQL Query below:
+-- Q12. Room Bookings: Group bookings by hotel where bookings were made for > 2 nights, displaying
+--      hotels where the minimum room price booked is < 1500, sorted by price ascending.
+-- Write your SQL Query below:
 
 
 
 
--- QUESTION 14 [Debugging - Multi-Column Sorting Syntax Errors]:
-/*
-Task: Identify why 'ORDER BY AvgSalary DESC Dept ASC' fails and write the corrected comma-separated syntax.
-*/
 
--- Write your explanation & corrected query below:
+-- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
+-- ------------------------------------------------------------
+
+-- Q13. Identify and fix the logic errors in this query written for Q10 (HR City Audit):
+--      SELECT city, COUNT(empid), MIN(salary), AVG(exp) FROM emp
+--      WHERE age < 25 HAVING COUNT(empid) >= 8 AND MIN(salary) > 30000 AND AVG(exp) > 5
+--      ORDER BY COUNT(empid) DESC;
+-- Write your corrected SQL Query below:
 
 
 
 
-/* ============================================================
-                   END OF DAY 8 PRACTICE
-   ============================================================ */
+-- Q14. Explain why you cannot use 'GROUP BY city' without specifying 'city' in the SELECT list,
+--      and vice-versa (selecting 'city' without grouping by it).
+-- Write your explanation below:\n

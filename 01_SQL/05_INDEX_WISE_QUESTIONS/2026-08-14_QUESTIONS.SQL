@@ -1,115 +1,107 @@
--- ==============================================================================
--- 14-QUESTION PRACTICE DRILLS: DAY 13 (SET OPERATORS)
--- ==============================================================================
--- INSTRUCTIONS:
--- Write your answers in the blank space below each question.
--- Do NOT look at the answers. Test your logic!
--- ==============================================================================
+/*============================================================
+       DAY 13 PRACTICE QUESTIONS - 14 AUGUST 2026
+       TOPICS: SET OPERATORS (UNION, UNION ALL, INTERSECT, EXCEPT), VALIDATION RULES
+============================================================*/
 
--- ==============================================================================
--- SECTION 1: BASIC SYNTAX PRACTICE & QUICK DRILLS
--- ==============================================================================
+-- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
+-- ------------------------------------------------------------
 
--- Q1: You have two tables: `Managers` (ManagerID, Name) and `Employees` (EmpID, Name).
--- Write a query to get a single combined list of ALL names, without any duplicates.
+-- Q1. Write a query using UNION to combine 'id' from 'Newset1' and 'custid' from 'Newset2'.
 -- Write your SQL Query below:
 
 
 
--- Q2: Modify the query from Q1 so that it runs faster and keeps every single 
--- duplicate name in the final output.
+
+-- Q2. Write a query using UNION ALL to combine 'id' from 'Newset1' and 'custid' from 'Newset2'.
 -- Write your SQL Query below:
 
 
 
--- Q3: Write a query to find only the names of people who are BOTH a Manager 
--- and an Employee (i.e., their name appears in both tables).
+
+-- Q3. Write a query using INTERSECT to find common values between 'id' in 'Newset1' and 'custid' in 'Newset2'.
 -- Write your SQL Query below:
 
 
 
--- Q4: Write a query to find the names of Managers who are NOT in the Employees table.
+
+-- Q4. Write a query using EXCEPT to find IDs in 'Newset1' that are not present in 'Newset2'.
 -- Write your SQL Query below:
 
 
 
--- ==============================================================================
--- SECTION 2: SPACED CUMULATIVE REVISION DRILLS
--- ==============================================================================
 
--- Q5: Write a query to find the top 5 highest-paid employees from `Employees` 
--- UNIONed with the top 5 highest-paid contractors from `Contractors`.
+
+-- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
+-- ------------------------------------------------------------
+
+-- Q5. Select RollNo from 'StudentInfo' INTERSECT select empid from 'emp'.
 -- Write your SQL Query below:
 
 
 
--- Q6: Find the names of employees in `TableA` that start with the letter 'S' 
--- INTERSECT with the names of employees in `TableB` that end with the letter 'A'.
+
+-- Q6. Write a query to combine names from two tables, removing duplicate rows.
 -- Write your SQL Query below:
 
 
 
--- ==============================================================================
--- SECTION 3: REAL-WORLD SCENARIO-BASED CHALLENGES
--- ==============================================================================
 
--- Q7: SCENARIO: Two hospitals (CityCare and MetroHealth) have merged.
--- Write a query to merge the `PatientID` and `BloodGroup` columns from both 
--- hospital tables into one massive, deduped Master Patient List.
+-- Q7. Explain the validation rules regarding the number of columns and data types in Set Operators.
+-- Write your explanation below:
+
+
+
+
+-- Q8. Explain the difference in execution speed between UNION and UNION ALL.
+-- Write your explanation below:
+
+
+
+
+
+-- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
+-- ------------------------------------------------------------
+
+-- Q9. Bank Branch Merger: You have customer tables from BranchA (id, name, city) and BranchB (custid, name, city).
+--     Write a query to combine them into a single unique customer database using UNION.
 -- Write your SQL Query below:
 
 
 
--- Q8: SCENARIO: You are auditing e-commerce sales. 
--- Find all `ProductID`s that were in the `Catalog` table but are completely missing 
--- (EXCEPT) from the `Orders` table this year.
+
+-- Q10. Transaction logs audit: Combine transaction logs from UPI payments and Card payments tables
+--      retaining all duplicate logs (keep all records).
 -- Write your SQL Query below:
 
 
 
--- Q9: SCENARIO: A retail company wants a master transaction log.
--- Write a query to combine `TxnID`, `Amount`, and `Date` from both the `OnlineSales` 
--- and `InStoreSales` tables. Keep all duplicates because every transaction matters.
+
+-- Q11. Customer Churn analysis: Select all customer IDs from the 'Customers' table EXCEPT customer IDs
+--      who placed orders in the 'Orders' table.
 -- Write your SQL Query below:
 
 
 
--- Q10: SCENARIO: The Marketing team wants to reward loyal customers.
--- Write a query to find the `Email` of customers who bought something during the 
--- Black Friday Sale (Table: BlackFriday) AND also bought something during the 
--- Christmas Sale (Table: ChristmasSale).
+
+-- Q12. Retain common clients: Find the names of clients who are present in both the 'Prospects' and 'ActiveClients' tables.
 -- Write your SQL Query below:
 
 
 
--- ==============================================================================
--- SECTION 4: LOGIC BUILDER & DEBUGGING DRILLS
--- ==============================================================================
-
--- Q11: DEBUGGING: Why will this query fail? Fix it.
--- SELECT EmpName, Salary FROM Branch1
--- UNION
--- SELECT EmpName FROM Branch2;
--- Write your SQL Query below:
 
 
+-- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
+-- ------------------------------------------------------------
 
--- Q12: DEBUGGING: Will this query fail? If yes, why? If no, what happens?
--- SELECT EmpID FROM IT_Dept (Data type: INT)
--- UNION
--- SELECT EmpName FROM HR_Dept (Data type: VARCHAR)
--- Write your SQL Query below:
+-- Q13. Identify and fix the syntax error: The developer wants to union two tables but wrote:
+--      SELECT id, name FROM Newset1
+--      UNION
+--      SELECT custid FROM Newset2;
+--      Why does this fail, and how do you fix it?
+-- Write your corrected SQL Query and explanation below:
 
 
 
--- Q13: LOGIC: If Table A has 50 unique rows, and Table B has 50 completely different 
--- unique rows, how many rows will `A INTERSECT B` return?
--- Write your SQL Query below:
 
-
-
--- Q14: LOGIC: You run `SELECT * FROM T1 EXCEPT SELECT * FROM T2` and it returns 
--- 0 rows. What does this mathematically tell you about the data in T1 compared to T2?
--- Write your SQL Query below:
-
-
+-- Q14. Explain why Set Operators evaluate columns by their sequence order rather than their column names.
+-- Write your explanation below:\n
