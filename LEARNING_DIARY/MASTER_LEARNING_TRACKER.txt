@@ -56,11 +56,14 @@ P5  | Retail Supply Chain & FK Architecture              | PROJECT5.SQL   | [ ] 
 ====================================================================================================
 *Your workflow for every day must be: Re-write -> Read Revision -> Solve 14 Questions.*
 
-DAY 1 (SATURDAY, AUG 15) - TARGET: DAYS 1 & 2
-- [ ] 11:00 AM - 12:30 PM: Day 1 (Re-Write -> Read Revision -> Solve 14 Questions)
-- [ ] 02:00 PM - 03:30 PM: Day 2 (Re-Write -> Read Revision -> Solve 14 Questions)
+DAY 1 (SATURDAY, AUG 15) - TARGET: DAYS 1 & 2 (Revised for 2:00 PM start)
+- [ ] 02:00 PM - 03:30 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 14 Questions
 - [ ] 03:30 PM - 04:00 PM: English Practice (Task 1)
+- [ ] 04:00 PM - 04:30 PM: Short Break / Free Time
+- [ ] 04:30 PM - 06:00 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 14 Questions
+- [ ] 06:00 PM - 09:00 PM: Nidhi's Python Role Exploration & Dinner
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
+- [ ] 10:15 PM: Commit & Push to GitHub (Maintain Streak) & 10:15 PM Strict Cutoff
 
 DAY 2 (SUNDAY, AUG 16) - TARGET: DAYS 3 & 4
 - [ ] 11:00 AM - 12:30 PM: Day 3 (Re-Write -> Read Revision -> Solve 14 Questions)
@@ -89,14 +92,14 @@ DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAYS 9/10
 - [ ] 03:00 PM - 04:00 PM: Day 10 (Re-Write -> Read Revision -> Solve 14 Questions)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 
-DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/12
+DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/01
 - [ ] 11:00 AM - 01:00 PM: PROJECT 5 (Retail Supply Chain Architecture)
-- [ ] 02:00 PM - 03:00 PM: Day 11 (Re-Write -> Read Revision -> Solve 14 Questions)
-- [ ] 03:00 PM - 04:00 PM: Day 12 (Re-Write -> Read Revision -> Solve 14 Questions)
+- [ ] 02:00 PM - 03:00 PM: Class Note Re-write and Read Revision Note [2026-08-12] & Solve 14 Questions (Day 11)
+- [ ] 03:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 14 Questions (Day 1)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 
-DAY 8 (SATURDAY, AUG 22) - TARGET: DAY 13
-- [ ] 11:00 AM - 01:00 PM: Day 13 (Re-Write -> Read Revision -> Solve 14 Questions)
+DAY 8 (SATURDAY, AUG 22) - TARGET: DAY 2
+- [ ] 11:00 AM - 01:00 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 14 Questions
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 
 ====================================================================================================
