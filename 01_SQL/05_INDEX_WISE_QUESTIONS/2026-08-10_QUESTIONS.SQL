@@ -1,72 +1,57 @@
 /*============================================================
         DAY 9 PRACTICE QUESTIONS
-        STRUCTURE: 6 QUESTIONS / 24 SUBQUESTIONS
+        STRUCTURE: 20 QUESTIONS / HYBRID LAYOUT
         TOPICS: CONSTRAINTS, PRIMARY KEY, UNIQUE, CHECK, NOT NULL
 ============================================================*/
 
 -- ============================================================
--- QUESTION 1: BASIC SYNTAX DRILLS
+-- 0. ENVIRONMENT SETUP (RUN THIS IN SSMS FIRST)
 -- ============================================================
 
--- Q1.1. Create table 'Vendor' with:
---      VendorID (INT PRIMARY KEY),
---      VendorName (VARCHAR(20)).
--- Write your SQL Query below:
-
-
-
-
--- Q1.2. Create table 'ProductCatalog' with:
---      ProductID (INT UNIQUE),
---      Price (INT CHECK (Price > 0)).
--- Write your SQL Query below:
-
-
-
-
--- Q1.3. Create table 'AccountLog' with:
---      LogID (INT PRIMARY KEY),
---      Username (VARCHAR(20) NOT NULL).
--- Write your SQL Query below:
-
-
-
-
--- Q1.4. Create 'TestCheck' table with
---      status VARCHAR(10) NOT NULL.
--- Write your SQL Query below:
-
-
-
+IF OBJECT_ID('practice_day9', 'U') IS NOT NULL DROP TABLE practice_day9;
+CREATE TABLE practice_day9 (
+    id INT,
+    name VARCHAR(20)
+);
 
 
 -- ============================================================
--- QUESTION 2: OPERATOR & FILTERING CHECKS
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
 -- ============================================================
 
--- Q2.1. Insert a duplicate VendorID
---      into 'Vendor'. Show error.
+-- Q1. Create table 'Vendor' with:
+--     VendorID (INT PRIMARY KEY),
+--     VendorName (VARCHAR(20)).
+-- Write your SQL Query below:
+
+
+
+
+-- Q2. Create table 'ProductCatalog' with:
+--     ProductID (INT UNIQUE),
+--     Price (INT CHECK (Price > 0)).
+-- Write your SQL Query below:
+
+
+
+
+-- Q3. Create table 'AccountLog' with:
+--     LogID (INT PRIMARY KEY),
+--     Username (VARCHAR(20) NOT NULL).
+-- Write your SQL Query below:
+
+
+
+
+-- Q4. Insert a row into 'Vendor'
+--     with a duplicate VendorID.
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q2.2. Insert a negative Price into
---      'ProductCatalog'. Show error.
--- Write your SQL Query and explanation:
-
-
-
-
--- Q2.3. Try inserting a second NULL
---      into a UNIQUE column. Show error.
--- Write your SQL Query and explanation:
-
-
-
-
--- Q2.4. Add UNIQUE constraint to
---      username column in 'AccountLog'.
+-- Q5. Create 'TestCheck' table with
+--     status VARCHAR(10) NOT NULL.
 -- Write your SQL Query below:
 
 
@@ -74,31 +59,38 @@
 
 
 -- ============================================================
--- QUESTION 3: CUMULATIVE REVISION
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
 -- ============================================================
 
--- Q3.1. Add CHECK constraint to 'Vendor'
---      ensuring name doesn't start with 'X'.
+-- Q6. Insert a negative Price into
+--     'ProductCatalog'. Show error.
+-- Write your SQL Query and explanation:
+
+
+
+
+-- Q7. Add CHECK constraint to 'Vendor'
+--     ensuring name doesn't start with 'X'.
 -- Write your SQL Query below:
 
 
 
 
--- Q3.2. Group by status and show count
---      from 'TestCheck'.
+-- Q8. Try inserting a second NULL
+--     into a UNIQUE column. Show error.
+-- Write your SQL Query and explanation:
+
+
+
+
+-- Q9. Add UNIQUE constraint to
+--     username column in 'AccountLog'.
 -- Write your SQL Query below:
 
 
 
 
--- Q3.3. Update status to 'Active' where
---      status is NULL.
--- Write your SQL Query below:
-
-
-
-
--- Q3.4. Explain NOT NULL + UNIQUE
+-- Q10. Explain NOT NULL + UNIQUE
 --      vs PRIMARY KEY constraints.
 -- Write your explanation below:
 
@@ -107,10 +99,10 @@
 
 
 -- ============================================================
--- QUESTION 4: ENTERPRISE SCENARIO CHALLENGE A
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q4.1. Create 'StaffRegister':
+-- Q11. Create 'StaffRegister':
 --      RollID (INT PRIMARY KEY),
 --      Email (VARCHAR(40) NOT NULL UNIQUE),
 --      Age (INT CHECK (Age >= 18)),
@@ -120,14 +112,14 @@
 
 
 
--- Q4.2. Insert staff register with
+-- Q12. Insert staff register with
 --      email blank ('') vs NULL.
 -- Write your SQL Queries below:
 
 
 
 
--- Q4.3. Add CHECK constraint on
+-- Q13. Add CHECK constraint on
 --      Department ensuring it is
 --      in ('IT', 'HR', 'Admin').
 -- Write your SQL Query below:
@@ -135,52 +127,26 @@
 
 
 
--- Q4.4. Try inserting Department = 'Sales'.
+-- Q14. Try inserting Department = 'Sales'.
 --      Explain constraint validation.
 -- Write your SQL Query and explanation:
 
 
 
 
-
--- ============================================================
--- QUESTION 5: ENTERPRISE SCENARIO CHALLENGE B
--- ============================================================
-
--- Q5.1. Create 'Accounts' table with
+-- Q15. Create 'Accounts' table with
 --      acc_no INT CHECK (acc_no > 1000).
 -- Write your SQL Query below:
 
 
 
 
--- Q5.2. Insert valid acc_no and
---      verify CHECK constraint.
--- Write your SQL Query below:
-
-
-
-
--- Q5.3. Drop the CHECK constraint
---      applied to 'Accounts' table.
--- Write your SQL Query below:
-
-
-
-
--- Q5.4. Rename column 'acc_no' to
---      'account_number' in table.
--- Write your SQL Query below:
-
-
-
-
 
 -- ============================================================
--- QUESTION 6: LOGIC BUILDER & DEBUGGING
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
 -- ============================================================
 
--- Q6.1. Debug the query check:
+-- Q16. Debug the query check:
 --      ALTER TABLE Student ADD CHECK
 --      (Grade IN ('A', 'B') AND Grade IS NOT NULL);
 --      Make it allow NULL values.
@@ -189,14 +155,14 @@
 
 
 
--- Q6.2. Explain whether a CHECK
+-- Q17. Explain whether a CHECK
 --      constraint blocks NULL values.
 -- Write your explanation below:
 
 
 
 
--- Q6.3. Correct the syntax error:
+-- Q18. Correct the syntax error:
 --      CREATE TABLE Q4_Test (
 --      id INT PRIMARY KEY NULL
 --      );
@@ -205,6 +171,14 @@
 
 
 
--- Q6.4. Why does SQL Server restrict
+-- Q19. Why does SQL Server restrict
 --      a table to one PRIMARY KEY?
--- Write your explanation below:\n
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query check:
+--      ALTER TABLE Vendor ADD CHECK
+--      (VendorName = NULL);
+-- Write your corrected Query below:\n

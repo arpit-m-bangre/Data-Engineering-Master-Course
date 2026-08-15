@@ -1,69 +1,62 @@
 /*============================================================
         DAY 5 PRACTICE QUESTIONS
-        STRUCTURE: 6 QUESTIONS / 24 SUBQUESTIONS
+        STRUCTURE: 20 QUESTIONS / HYBRID LAYOUT
         TOPICS: TRUNCATE, ALTER TABLE, SP_RENAME
 ============================================================*/
 
 -- ============================================================
--- QUESTION 1: BASIC SYNTAX DRILLS
+-- 0. ENVIRONMENT SETUP (RUN THIS IN SSMS FIRST)
 -- ============================================================
 
--- Q1.1. Write a query to
---      TRUNCATE table 'employee'.
--- Write your SQL Query below:
+IF OBJECT_ID('practice_day5', 'U') IS NOT NULL DROP TABLE practice_day5;
+CREATE TABLE practice_day5 (
+    empid INT,
+    emp_name VARCHAR(30),
+    age INT,
+    salary INT,
+    city VARCHAR(30)
+);
 
-
-
-
--- Q1.2. Add column 'country'
---      (VARCHAR(20)) to 'employee'.
--- Write your SQL Query below:
-
-
-
-
--- Q1.3. Drop column 'country'
---      from 'employee' table.
--- Write your SQL Query below:
-
-
-
-
--- Q1.4. Rename 'employee' table
---      to 'emp_backup' using sp.
--- Write your SQL Query below:
-
-
-
+INSERT INTO practice_day5 (empid, emp_name, age, salary, city) VALUES 
+(101, 'Arpit', 28, 35000, 'Nagpur'),
+(102, 'Rohan', 30, 38000, NULL),
+(103, 'Priya', 25, 39000, 'Mumbai');
 
 
 -- ============================================================
--- QUESTION 2: OPERATOR & FILTERING CHECKS
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
 -- ============================================================
 
--- Q2.1. Add column 'status'
---      (VARCHAR(10)) to 'employee'.
+-- Q1. Write a query to
+--     TRUNCATE table 'employee'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2.2. Change data type of 'salary'
---      in 'employee' to VARCHAR(15).
+-- Q2. Add column 'country'
+--     (VARCHAR(20)) to 'employee'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2.3. Change data type of
---      'salary' back to INT.
+-- Q3. Drop column 'country'
+--     from 'employee' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q2.4. Update all rows in table
---      to set country = 'India'.
+-- Q4. Rename 'employee' table
+--     to 'emp_backup' using sp.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Add column 'status'
+--     (VARCHAR(10)) to 'employee'.
 -- Write your SQL Query below:
 
 
@@ -71,57 +64,64 @@
 
 
 -- ============================================================
--- QUESTION 3: CUMULATIVE REVISION
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
 -- ============================================================
 
--- Q3.1. Drop column 'status'
---      from the table.
+-- Q6. Change data type of 'salary'
+--     in 'employee' to VARCHAR(15).
 -- Write your SQL Query below:
 
 
 
 
--- Q3.2. Rename column 'dept' to
---      'department' using sp.
+-- Q7. Change data type of
+--     'salary' back to INT.
 -- Write your SQL Query below:
 
 
 
 
--- Q3.3. Alter column 'empname'
---      to increase size to 60.
+-- Q8. Update all rows in table
+--     to set country = 'India'.
 -- Write your SQL Query below:
 
 
 
 
--- Q3.4. Select table metadata from
---      INFORMATION_SCHEMA.COLUMNS.
+-- Q9. Drop column 'status'
+--     from the table.
 -- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain why TRUNCATE
+--      is DDL and not DML.
+-- Write your explanation below:
 
 
 
 
 
 -- ============================================================
--- QUESTION 4: ENTERPRISE SCENARIO CHALLENGE A
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
 -- ============================================================
 
--- Q4.1. Add columns 'doj' (DATE)
+-- Q11. Add columns 'doj' (DATE)
 --      and 'status' to profiles.
 -- Write your SQL Query below:
 
 
 
 
--- Q4.2. Rename column 'status' to
+-- Q12. Rename column 'status' to
 --      'candidate_status' in table.
 -- Write your SQL Query below:
 
 
 
 
--- Q4.3. Try changing size of 'name'
+-- Q13. Try changing size of 'name'
 --      to VARCHAR(5) when long
 --      values exist. What happens?
 -- Write your explanation below:
@@ -129,52 +129,26 @@
 
 
 
--- Q4.4. Drop columns 'age' and
+-- Q14. Drop columns 'age' and
 --      'marks' from student backup.
 -- Write your SQL Query below:
 
 
 
 
-
--- ============================================================
--- QUESTION 5: ENTERPRISE SCENARIO CHALLENGE B
--- ============================================================
-
--- Q5.1. Add column 'rating' (INT)
+-- Q15. Add column 'rating' (INT)
 --      with default value NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q5.2. Change column 'rating' to
---      VARCHAR(5) nullable.
--- Write your SQL Query below:
-
-
-
-
--- Q5.3. Rename the table 'emp_backup'
---      back to 'employee'.
--- Write your SQL Query below:
-
-
-
-
--- Q5.4. Select all active columns
---      from the 'employee' table.
--- Write your SQL Query below:
-
-
-
-
 
 -- ============================================================
--- QUESTION 6: LOGIC BUILDER & DEBUGGING
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
 -- ============================================================
 
--- Q6.1. Correct the syntax error:
+-- Q16. Correct the syntax error:
 --      ALTER TABLE employee
 --      RENAME COLUMN dept TO department;
 -- Write your corrected Query below:
@@ -182,14 +156,14 @@
 
 
 
--- Q6.2. Explain why TRUNCATE
+-- Q17. Explain why TRUNCATE
 --      does not accept WHERE.
 -- Write your explanation below:
 
 
 
 
--- Q6.3. Correct the syntax error:
+-- Q18. Correct the syntax error:
 --      ALTER TABLE employee
 --      DROP city, marks;
 -- Write your corrected Query below:
@@ -197,7 +171,14 @@
 
 
 
--- Q6.4. Why does reducing VARCHAR
+-- Q19. Why does reducing VARCHAR
 --      size fail if active data
 --      is longer than target?
--- Write your explanation below:\n
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the syntax error:
+--      sp_rename 'employee', 'emp';
+-- Write your corrected Query below:\n
