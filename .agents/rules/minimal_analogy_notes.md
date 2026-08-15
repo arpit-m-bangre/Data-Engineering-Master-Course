@@ -17,3 +17,9 @@
 3. **Screen Fitting & Spacing**: Wrap all comments vertically (keep lines under 80 characters) so they fit comfortably on standard screens without horizontal scrolling. Use clean, open vertical spacing between blocks.
 4. **Keyword Uppercase**: Keep all SQL query keywords in UPPERCASE syntax.
 5. **Zero Data Loss**: Never delete, mask, or alter actual SQL query code blocks, sample insert statements, or data values.
+6. **Index-Wise Questions Format**: All practice question files in `05_INDEX_WISE_QUESTIONS/` must follow a structured, multi-level layout:
+   - Divided into progressive levels (e.g. Level 1 - Basic, Level 2 - Intermediate, etc.) focusing on syntax and specific operations.
+   - Include real-world scenario-based questions (keep actual practical contexts like sales, products, etc.).
+   - Include a **Challenge Questions** section for complex edge cases.
+   - Include a **Bonus Theory (Interview)** section for conceptual verification.
+   - All questions must have blank lines below `-- Write your SQL Query below:` so they can be solved from scratch.
