@@ -1,309 +1,137 @@
--- ============================================================
--- SQL NOTES - DAY 2 (4 August 2026)
--- ARITHMETIC OPERATIONS & DML/DDL (UPDATE, DELETE, DROP)
--- ============================================================
+/* ================================================================================
+   SQL CLASS NOTES - 04 AUGUST 2026 (DAY 4)
+   TOPICS: ARITHMETIC OPERATORS, UPDATE & DELETE (DML), DROP TABLE (DDL), SECURITY
+   ================================================================================ */
 
--- ============================================================
--- DISPLAY DATA
--- ============================================================
-
+-- 1. DISPLAY DATA
 SELECT * FROM employee1;
 SELECT * FROM StudentInfo;
 
-
--- ============================================================
--- ARITHMETIC OPERATIONS
--- Used with numeric data types such as:
--- INT, FLOAT, DOUBLE, DECIMAL
---
--- Operators:
--- +  Addition
--- -  Subtraction
--- *  Multiplication
--- /  Division
--- ============================================================
-
-SELECT * FROM StudentInfo;
-
-
 -- ------------------------------------------------------------
--- Creating Temporary Columns (Only in Output)
--- These columns are NOT stored in the table.
+-- ARITHMETIC OPERATIONS (Output-Only / Temporary Columns)
 -- ------------------------------------------------------------
+-- Used with numeric types (INT, FLOAT, DECIMAL).
+-- These calculations do NOT alter the actual table data! They only show in the output.
 
--- Add 10 marks and Double the marks
+-- Add 10 marks and Double the marks (creating temporary aliases)
 SELECT *,
        New_marks = marks + 10,
        Marks1 = marks * 2
 FROM StudentInfo;
 
--- Same query for a specific student
+-- Apply arithmetic to a single filtered row
 SELECT *,
        New_marks = marks + 10,
        Marks1 = marks * 2
 FROM StudentInfo
 WHERE roll_no = 110;
 
--- Subtract 10 marks
-SELECT *,
-       Less_marks = marks - 10
-FROM StudentInfo;
+-- Subtraction, multiplication, and division
+SELECT *, Less_marks = marks - 10 FROM StudentInfo;
+SELECT *, Square_marks = marks * marks FROM StudentInfo;
+SELECT *, Half_marks = marks / 2 FROM StudentInfo;
 
--- Square of marks
-SELECT *,
-       Square_marks = marks * marks
-FROM StudentInfo;
+-- PRACTICE DRILLS (Read-only projections)
+SELECT *, Inc_salary = salary * 1.1 FROM employee1;   -- Salary + 10%
+SELECT *, Dec_salary = salary * 0.7 FROM employee1;   -- Salary - 30%
+SELECT *, Inc_Marks = marks * 1.1 FROM StudentInfo;    -- Marks + 10%
+SELECT *, Dec_Marks = marks * 0.6 FROM StudentInfo;    -- Marks - 40%
 
--- Half of marks
-SELECT *,
-       Half_marks = marks / 2
-FROM StudentInfo;
+-- ------------------------------------------------------------
+-- DML: DELETE (Clearing rows, keeping the table structure)
+-- ------------------------------------------------------------
+-- Analogy: Emptying folders in a filing cabinet. The cabinet remains.
+-- DELETE can be rolled back inside transactions.
 
-
--- ============================================================
--- PRACTICE QUESTIONS
--- ============================================================
-
--- Question 1 : Increase employee salary by 10%
-SELECT *,
-       Inc_salary = salary * 1.1
-FROM employee1;
-
-
--- Question 2 : Decrease employee salary by 30%
-SELECT *,
-       Dec_salary = salary * 0.7
-FROM employee1;
-
-
--- Question 3 : Increase student marks by 10%
-SELECT *,
-       Inc_Marks = marks * 1.1
-FROM StudentInfo;
-
-
--- Question 4 : Decrease student marks by 40%
-SELECT *,
-       Dec_Marks = marks * 0.6
-FROM StudentInfo;
-
-
--- ============================================================
--- DML (DATA MANIPULATION LANGUAGE)
---
--- Statements:
--- 1. INSERT
--- 2. UPDATE
--- 3. DELETE
--- ============================================================
-
-
--- ============================================================
--- DELETE STATEMENT
--- ============================================================
-
--- Syntax:
--- DELETE FROM table_name;
-
--- Purpose:
--- • Deletes data from a table.
--- • Can delete all rows or selected rows.
--- • WHERE clause is used for specific records.
--- • DELETE can be rolled back (depending on transactions).
--- • Only data is removed.
--- • Table structure remains unchanged.
-
-
--- View all tables
-SELECT * FROM INFORMATION_SCHEMA.TABLES;
-
--- View employee data
 SELECT * FROM employee1;
 
--- Delete all rows
-DELETE FROM employee1;
+-- ❌ DANGEROUS: Deletes ALL rows from the table!
+-- DELETE FROM employee1;
 
--- Delete a specific employee using Employee ID
-DELETE FROM employee1
-WHERE empid = 101;
-
--- Delete a specific employee using Name
-DELETE FROM employee1
-WHERE empname = 'Pushpak';
-
-
--- ============================================================
--- UPDATE STATEMENT
--- ============================================================
-
--- Syntax:
--- UPDATE table_name
--- SET column_name = value;
-
+-- ✔️ SAFE: Delete specific rows using WHERE filters
+DELETE FROM employee1 WHERE empid = 101;
+DELETE FROM employee1 WHERE empname = 'Pushpak';
 
 -- ------------------------------------------------------------
--- Update Single Column
+-- DML: UPDATE (Modifying specific cells in place)
 -- ------------------------------------------------------------
+-- UPDATE changes actual values inside the database!
 
--- Update the entire Subject column
+-- Example A: Update entire column (All rows modified!)
 UPDATE StudentInfo
 SET subject = 'Physics';
 
-
--- Update subject only where name contains 'i'
+-- Example B: Update with WHERE filter
 UPDATE StudentInfo
 SET subject = 'Maths'
 WHERE name LIKE '%i%';
 
-
--- Using the same column in SET and WHERE
+-- Example C: Self-update (using target column to filter and set)
 UPDATE StudentInfo
 SET subject = 'Computer'
 WHERE subject = 'Maths';
 
-
--- ------------------------------------------------------------
--- Update Multiple Columns
--- ------------------------------------------------------------
-
+-- Example D: Update multiple columns in one statement
 UPDATE StudentInfo
 SET subject = 'Art',
     marks   = 90,
     age     = 23
 WHERE mobile_no = 992342352;
 
-
 UPDATE StudentInfo
 SET name = 'Nehal',
     age  = 22
 WHERE name = 'Neha';
 
-
 -- ------------------------------------------------------------
--- DEALING WITH NULL VALUES
+-- WORKING WITH NULLS & EMPTY VALUES IN UPDATE
 -- ------------------------------------------------------------
 
--- Replace NULL with a value
+-- Replace NULL with a default value
 UPDATE StudentInfo
 SET city = 'Nashik'
 WHERE city IS NULL;
-
 
 -- Replace a value with NULL
 UPDATE StudentInfo
 SET city = NULL
 WHERE city = 'Nashik';
 
-
--- ------------------------------------------------------------
--- Removing Specific Value
--- ------------------------------------------------------------
-
+-- Note: Character columns accept empty strings (''), but numeric columns cannot!
 UPDATE StudentInfo
 SET name = ''
 WHERE name = 'Rahul';
 
--- Note:
--- Empty string ('') can be used for character columns.
--- Numeric columns cannot be emptied like this.
+SELECT * FROM StudentInfo;
 
+-- ------------------------------------------------------------
+-- MATH MODIFICATIONS (Writing updates back to disk)
+-- ------------------------------------------------------------
+UPDATE StudentInfo SET marks = marks + 2;
+UPDATE StudentInfo SET marks = marks - 2;
+UPDATE StudentInfo SET marks = marks * 2 WHERE name = 'arpit';
+UPDATE StudentInfo SET marks = marks * 1.1 WHERE name = 'nehal';
 
 SELECT * FROM StudentInfo;
 
-
 -- ------------------------------------------------------------
--- Practice Questions Using UPDATE + Arithmetic Operators
+-- DDL: DROP TABLE (Complete Destruction)
 -- ------------------------------------------------------------
+-- Analogy: Demolishing the entire filing cabinet. Structure and data are both gone!
+-- In SQL Server, DROP can be rolled back ONLY under active transactions.
 
--- Increase marks by 2
-UPDATE StudentInfo
-SET marks = marks + 2;
+-- Set up test data
+INSERT INTO employee1 VALUES (1, 'a', NULL, NULL), (2, 'b', 'tech', 2000);
 
-
--- Decrease marks by 2
-UPDATE StudentInfo
-SET marks = marks - 2;
-
-
--- Double marks of Arpit
-UPDATE StudentInfo
-SET marks = marks * 2
-WHERE name = 'arpit';
-
-
--- Increase Nehal's marks by 10%
-UPDATE StudentInfo
-SET marks = marks * 1.1
-WHERE name = 'nehal';
-
-
--- View updated data
-SELECT * FROM StudentInfo;
-
-
--- ============================================================
--- INSERT STATEMENT
--- ============================================================
-
--- Already covered previously.
-
-
--- ============================================================
--- DDL (DATA DEFINITION LANGUAGE) - DROP STATEMENT
--- ============================================================
-
--- Syntax:
--- DROP TABLE table_name;
-
--- Purpose:
--- • Deletes the entire table.
--- • Removes data and structure.
--- • Table no longer exists after execution.
--- • WHERE clause is not required.
--- • Rollback depends on the database.
---     SQL Server : Possible under some conditions.
---     Oracle     : Generally not possible after COMMIT.
-
-
--- View existing table
-SELECT * FROM employee1;
-
-
--- Insert sample data
-INSERT INTO employee1
-VALUES
-(1, 'a', NULL, NULL),
-(2, 'b', 'tech', 2000);
-
-
--- Drop the table
+-- Destroy table
 DROP TABLE employee1;
 
-
--- After DROP
--- Running the following query will produce:
--- "Invalid object name 'employee1'."
-
+-- Running the query below now fails with: "Invalid object name 'employee1'."
 -- SELECT * FROM employee1;
 
-
--- ============================================================
--- COMPANY LEVEL NOTE
--- ============================================================
-
--- In real companies:
---
--- • Database Administrators (DBAs) manage permissions.
--- • Every employee does not get permission to DELETE or DROP tables.
--- • Permissions are controlled at different levels:
---      - Database
---      - Table
---      - Column
---      - Row
--- • Learn both:
---      1. SQL syntax
---      2. Real-world database security and permissions
-
--- ============================================================
--- END OF DAY 2
--- ============================================================
+-- ------------------------------------------------------------
+-- DE ENTERPRISE SECURITY NOTE
+-- ------------------------------------------------------------
+-- In real companies, permissions are restricted by DBAs. 
+-- Normal engineers rarely get DELETE or DROP permissions in production.
+-- Security applies at: Database -> Table -> Column -> Row level.

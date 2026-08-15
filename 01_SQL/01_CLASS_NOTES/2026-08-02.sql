@@ -1,132 +1,72 @@
+/* ================================================================================
+   SQL CLASS NOTES - 02 AUGUST 2026 (DAY 2)
+   TOPICS: SQL FILTERS, WHERE CLAUSE, COMPARISON & LOGICAL OPERATORS, LIKE WILDCARDS
+   ================================================================================ */
+
+-- ------------------------------------------------------------
+-- THE BOUNCER: WHERE CLAUSE
+-- ------------------------------------------------------------
+-- The WHERE clause acts like a club bouncer. It checks each row one-by-one.
+-- If the row meets the criteria, it is let in; otherwise, it is kicked out.
+
 SELECT * FROM employee1;
 
--- To delete or update a specific value or row, we have to know filters first.
-
--- ============================================================
--- FILTERS IN SQL (used daily in company)
--- ============================================================
-
--- SQL CLAUSES
-/*
-1. WHERE
-2. GROUP BY
-3. HAVING
-4. ORDER BY
-
--- In interviews they will ask how to use all clauses together.
-*/
-
-
--- ------------------------------------------------------------
--- 1) WHERE CLAUSE (used to filter data)
--- ------------------------------------------------------------
-
--- 1.1) Comparison operators
---      Used to filter: Single column, Single value
---      = , <> , < , <= , > , >=   -> six operators available for comparison
-
--- Syntax: SELECT * FROM table_name WHERE COL_NAME = value;
-
+-- 1. COMPARISON OPERATORS (Filters single column/single value)
+-- Operators: = , <> , < , <= , > , >=
 SELECT * FROM employee1 WHERE dept = 'HR';
+
+-- Note: The <> (not equal) operator ignores NULLs. To find NULLs, you must use IS NULL.
 SELECT * FROM employee1 WHERE dept <> 'HR';
-/*
-102	Puja	    Entc	     3000
-103	Arpit	    Stat	     4000
-104	Sidhant	    Electronics  5000
-105	Mohit	    MS	         6000
-106	Shreyash    BCA	         7000
-111	Arjun		             0
-NULL	NULL	Mech	     8000
 
-Note: the <> operator does not consider NULL;
-      for that we have to use a different operator (IS NULL / IS NOT NULL)
-*/
-
+-- Text comparison follows alphabetical (ASCII) order
 SELECT * FROM employee1 WHERE dept < 'HR';
 SELECT * FROM employee1 WHERE dept > 'HR';
 SELECT * FROM employee1 WHERE dept <= 'HR';
 SELECT * FROM employee1 WHERE dept >= 'HR';
 
--- For characters, comparison follows ASCII code / alphabetical order.
+-- 2. IN / NOT IN (Filters single column/multiple values)
+SELECT * FROM employee1 WHERE dept IN ('HR', 'Entc');        -- Include only these
+SELECT * FROM employee1 WHERE dept NOT IN ('HR', 'Entc');    -- Exclude these
 
+-- 3. IS NULL / IS NOT NULL (Filters for missing data)
+SELECT * FROM employee1 WHERE dept IS NULL;       -- Show only NULLs
+SELECT * FROM employee1 WHERE dept IS NOT NULL;   -- Show non-NULLs
 
--- 1.2) IN operator
---      Single column, Multiple values
+-- 4. LOGICAL OPERATORS (AND / OR) (Filters multiple columns)
+-- AND: Strict parent (Both rules must be true)
+SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 2000;
+SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 3000; -- Fails (salary is 2000)
 
-SELECT * FROM employee1 WHERE dept IN ('HR', 'Entc');        -- include
-SELECT * FROM employee1 WHERE dept NOT IN ('HR', 'Entc');    -- exclude
+-- OR: Chill parent (At least one rule must be true)
+SELECT * FROM employee1 WHERE dept = 'HR' OR salary = 3000;
 
-
--- 1.3) IS NULL operator
-
-SELECT * FROM employee1 WHERE dept IS NULL;       -- show all NULLs
-SELECT * FROM employee1 WHERE dept IS NOT NULL;   -- show all non-NULLs
-
-
--- 1.4) Logical operators
---      AND / OR
---      Used to filter multiple columns
-
-SELECT * FROM employee1 WHERE dept = 'hr' AND salary = 2000;  -- both conditions true: ANDing
-SELECT * FROM employee1 WHERE dept = 'hr' AND salary = 3000;  -- both conditions not true: ANDing
-SELECT * FROM employee1 WHERE dept = 'hr' OR salary = 3000;   -- one condition true: ORing
-
-
--- 1.5) BETWEEN operator
---      Used to filter a range
-
-SELECT * FROM employee1 WHERE salary BETWEEN 2000 AND 6000;   -- 'AND' here is part of BETWEEN syntax
-SELECT * FROM employee1 WHERE empname BETWEEN 'A' AND 'M';    -- A to M
+-- 5. BETWEEN / NOT BETWEEN (Filters ranges, boundaries are inclusive)
+SELECT * FROM employee1 WHERE salary BETWEEN 2000 AND 6000;   
+SELECT * FROM employee1 WHERE empname BETWEEN 'A' AND 'M';    
 SELECT * FROM employee1 WHERE empname NOT BETWEEN 'A' AND 'M';
 
+-- 6. LIKE PATTERN MATCHING (Wildcards: % means 0 or more chars, _ means exactly 1 char)
+SELECT * FROM employee1 WHERE empname LIKE 'A%';     -- Starts with A
+SELECT * FROM employee1 WHERE empname LIKE '%h';     -- Ends with h
+SELECT * FROM employee1 WHERE empname LIKE '%A%';    -- Contains A anywhere
+SELECT * FROM employee1 WHERE empname LIKE 'R%A';    -- Starts with R, ends with A
+SELECT * FROM employee1 WHERE empname LIKE '_m%';    -- Second character is m
+SELECT * FROM employee1 WHERE empname LIKE '%m_';    -- Second-to-last character is m
+SELECT * FROM employee1 WHERE empname NOT LIKE '_m%';-- Second character is NOT m
+SELECT * FROM employee1 WHERE empname LIKE '[A,M]%'; -- Starts with A or M
+SELECT * FROM employee1 WHERE empname LIKE '[A-Z]%'; -- Starts with A to Z range
+SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';-- Does NOT start with A to Z range
 
--- 1.6) LIKE operator
---      Not an exact value — only a description/pattern is known
---      Used frequently in company work
-
--- Scenario: when you know the first character
-SELECT * FROM employee1 WHERE empname LIKE 'A%';
-
--- last character
-SELECT * FROM employee1 WHERE empname LIKE '%h';
-
--- somewhere in between
-SELECT * FROM employee1 WHERE empname LIKE '%A%';
-
--- first and last character
-SELECT * FROM employee1 WHERE empname LIKE 'R%A';
-
--- NOTE: the above patterns are the ones mostly used in companies;
---       the ones below are less important, just for practice
-
--- second character
-SELECT * FROM employee1 WHERE empname LIKE '_m%';
-
--- second-last character
-SELECT * FROM employee1 WHERE empname LIKE '%m_';
-
--- second character NOT matching
-SELECT * FROM employee1 WHERE empname NOT LIKE '_m%';
-
--- multiple starting characters
-SELECT * FROM employee1 WHERE empname LIKE '[A,M]%';
-
--- multiple starting characters, in a range
-SELECT * FROM employee1 WHERE empname LIKE '[A-Z]%';
-
--- multiple starting characters, NOT in a range (using ^)
-SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';
-
--- NOTE: % and _ are known as wildcards
-
-
--- ============================================================
--- TO KNOW THE TABLE NAMES IN DB
--- ============================================================
-
+-- ------------------------------------------------------------
+-- SYSTEM INFORMATION
+-- ------------------------------------------------------------
+-- Query table metadata in active database
 SELECT TABLE_NAME 
 FROM INFORMATION_SCHEMA.TABLES;
 
+-- ------------------------------------------------------------
+-- SEED DATA: STUDENTINFO
+-- ------------------------------------------------------------
 SELECT * FROM StudentInfo;
 
 INSERT INTO StudentInfo VALUES (101, 'Arpit', 'Nagpur', 'Stat', 65, 22, 'arpit.m.bangre@gmail.com', 992342352);
