@@ -68,6 +68,7 @@ $$\text{Revision Notes} \longrightarrow \text{Index-Wise Practice Questions} \lo
 - **Spaced Repetition Recommender**: [`REVISION_RECOMMENDER_ENGINE.md`](./LEARNING_DIARY/REVISION_RECOMMENDER_ENGINE.md)
 - **Machine Analytics Brain**: [`METRICS_AND_STATISTICS.json`](./LEARNING_DIARY/METRICS_AND_STATISTICS.json)
 - **Git Commit & Portfolio Log**: [`GIT_COMMIT_AND_PORTFOLIO_LOG.md`](./LEARNING_DIARY/GIT_COMMIT_AND_PORTFOLIO_LOG.md)
+- **Career Roadmap & Execution Blueprint**: [`2026-08-15_COMPLETE_CAREER_ROADMAP_AND_MENTOR_CHAT.md`](./LEARNING_DIARY/2026-08-15_COMPLETE_CAREER_ROADMAP_AND_MENTOR_CHAT.md)
 - **Daily AI Mentor Protocol**: [`DAILY_MENTOR_GUIDE.md`](./LEARNING_DIARY/DAILY_MENTOR_GUIDE.md)
 - **Daily Progress Log Archive**: [`LEARNING_DIARY.txt`](./LEARNING_DIARY/LEARNING_DIARY.txt)
 

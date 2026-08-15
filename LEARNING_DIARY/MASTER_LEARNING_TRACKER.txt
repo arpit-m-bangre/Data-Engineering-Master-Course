@@ -35,7 +35,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 09   | Constraints (PK, UNIQUE, CHECK)           | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 10   | DEFAULT, IDENTITY & FK Rules              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 11   | Parent/Child Destruction Tests            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-12   | Retrofitting Constraints                  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
+12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
 13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 
 ====================================================================================================
@@ -56,21 +56,22 @@ P5  | Retail Supply Chain & FK Architecture              | PROJECT5.SQL   | [ ] 
 ====================================================================================================
 *Your workflow for every day must be: Re-write -> Read Revision -> Solve 20 Questions.*
 
-DAY 1 (SATURDAY, AUG 15) - TARGET: DAYS 1 & 2 (Revised for 2:00 PM start)
-- [ ] 02:00 PM - 03:30 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 20 Questions
-- [ ] 03:30 PM - 04:00 PM: English Practice (Task 1)
-- [ ] 04:00 PM - 04:30 PM: Short Break / Free Time
-- [ ] 04:30 PM - 06:00 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 20 Questions
-- [ ] 06:00 PM - 09:00 PM: Nidhi's Python Role Exploration & Dinner
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
-- [ ] 10:15 PM: Commit & Push to GitHub (Maintain Streak) & 10:15 PM Strict Cutoff
+DAY 1 (SATURDAY, AUG 15) - STATUS: SYSTEM LOCK & CAREER ROADMAP ALIGNMENT COMPLETED
+- [x] 02:00 PM - 03:30 PM: Complete Google Form MCQ Test & 2026-08-14_CLASS_TASK.SQL (10 Queries) - DONE!
+- [x] 03:30 PM - 04:00 PM: Python Developer Resume Formatting in LaTeX - DONE!
+- [x] 04:30 PM - 05:30 PM: Class Note Re-write [2026-08-13] (Day 12: Retrofitting Constraints) - DONE!
+- [x] 05:30 PM - 08:30 PM: Master Career Blueprint & System Lock Session - DONE!
+- [-] 09:00 PM - 10:15 PM: LIVE CLASS (Cancelled - Faculty Holiday)
+- [x] 08:45 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
-DAY 2 (SUNDAY, AUG 16) - TARGET: DAYS 3 & 4 + AUG 15 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-15] & Solve 20 Questions (Day 14 / Aug 15 Live Class)
-- [ ] 12:00 PM - 02:30 PM: Class Note Re-write and Read Revision Note [2026-08-03] & Solve 20 Questions (Day 3: Filtering & Substrings)
-- [ ] 03:00 PM - 05:30 PM: Class Note Re-write and Read Revision Note [2026-08-04] & Solve 20 Questions (Day 4: Arithmetic, UPDATE & DELETE)
-- [ ] 05:30 PM - 06:00 PM: English Practice (Task 2)
-- [ ] 06:00 PM - 07:00 PM: SQL Spaced Repetition (Day 12 & 13 Weak Spot review and error analysis in SSMS)
+DAY 2 (SUNDAY, AUG 16) - TARGET: DAYS 12 & 13 COMPLETION + DAYS 1 & 2 DRILLS (NO CLASS - FULL DEEP WORK)
+- [ ] 10:30 AM - 12:00 PM: Read Revision Note & Solve 14 Questions [2026-08-13] (Day 12: Retrofitting)
+- [ ] 12:00 PM - 02:00 PM: Class Note Re-write, Read Revision & Solve 14 Questions [2026-08-14] (Day 13: Set Operators)
+- [ ] 02:00 PM - 02:30 PM: English Practice (Task 1)
+- [ ] 03:00 PM - 05:30 PM: Class Note Re-write, Revision & Solve 14 Questions [2026-08-01] (Day 1: DB Architecture)
+- [ ] 05:30 PM - 07:00 PM: Class Note Re-write, Revision & Solve 14 Questions [2026-08-02] (Day 2: Clauses & LIKE)
+- [ ] 07:00 PM - 08:00 PM: Weekly Social Presence (LinkedIn/GitHub post compilation)
+- [ ] 10:15 PM            : Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 3 (MONDAY, AUG 17) - TARGET: PROJECT 1 & DAY 5
 - [ ] 10:30 AM - 01:00 PM: PROJECT 1 (E-Commerce Pipeline implementation)

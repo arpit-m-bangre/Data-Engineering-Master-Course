@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
+      if (!line) continue;
       
       // Match notice line: [!] Notice Text
       const noticeMatch = line.match(/^\[!\]\s*(.*)$/);
@@ -57,13 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
         continue;
       }
       
-      // Match task line: [ ] or [x] Time : Title
-      // Added (?:AM|PM) to ensure it doesn't split on the colon inside the time (e.g. 11:15)
-      const taskMatch = line.match(/^\[([xX ]?)\]\s*(.*?(?:AM|PM|am|pm))\s*:\s*(.*)$/);
+      // Match task line: [ ], [x], [-] Time : Title
+      const taskMatch = line.match(/^\[([xX \-]?)\]\s*(.*?(?:AM|PM|am|pm))\s*:\s*(.*)$/);
       if (taskMatch) {
         if (currentTask) tasks.push(currentTask);
+        const marker = taskMatch[1].trim().toLowerCase();
         currentTask = {
-          completed: taskMatch[1].toLowerCase() === 'x',
+          completed: marker === 'x',
+          cancelled: marker === '-',
           time: taskMatch[2].trim(),
           title: taskMatch[3].trim(),
           link: ''
@@ -84,9 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (task.isNotice) {
         card.className = 'notice-card';
         card.innerHTML = `
-          <div class="notice-icon">⚠️</div>
+          <div class="notice-icon">📢</div>
           <div class="notice-content">
             <h3 class="notice-title">${task.title}</h3>
+          </div>
+        `;
+      } else if (task.cancelled) {
+        card.className = 'task-card cancelled';
+        card.innerHTML = `
+          <div class="checkbox-wrapper">
+            <div class="checkbox cancelled-box">✕</div>
+          </div>
+          <div class="task-content">
+            <span class="task-time">${task.time}</span>
+            <h3 class="task-title">${task.title}</h3>
+            ${task.link ? `<span class="task-link">${task.link}</span>` : ''}
           </div>
         `;
       } else {

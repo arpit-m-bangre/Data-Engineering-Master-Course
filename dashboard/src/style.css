@@ -269,6 +269,26 @@ header p {
   opacity: 0.6;
 }
 
+.task-card.cancelled {
+  opacity: 0.75;
+  border-color: rgba(245, 158, 11, 0.25);
+  background: rgba(245, 158, 11, 0.04);
+}
+
+.task-card.cancelled .task-title {
+  color: #fbbf24;
+}
+
+.task-card.cancelled .checkbox {
+  border-color: #f59e0b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f59e0b;
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .task-link {
   font-size: 0.8rem;
   color: #71717a;
