@@ -1,43 +1,37 @@
 /*============================================================
-       DAY 2 PRACTICE QUESTIONS
-       TOPICS: WHERE, OPERATORS, LIKE PATTERNS
+        DAY 2 PRACTICE QUESTIONS
+        STRUCTURE: 6 QUESTIONS / 24 SUBQUESTIONS
+        TOPICS: WHERE, OPERATORS, LIKE PATTERNS
 ============================================================*/
 
 -- ============================================================
--- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- QUESTION 1: BASIC SYNTAX DRILLS
 -- ============================================================
 
--- Q1. Select all employees
---     with department 'HR'.
+-- Q1.1. Select all employees
+--      with department 'HR'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Select employees with
---     salary > 4000.
+-- Q1.2. Select employees with
+--      salary > 4000.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Select employees in 'HR'
---     or 'Entc' using IN.
+-- Q1.3. Select employees in 'HR'
+--      or 'Entc' using IN.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Select employees with
---     salary between 3000
---     and 6000 inclusive.
--- Write your SQL Query below:
-
-
-
-
--- Q5. Select employees whose
---     department is NULL.
+-- Q1.4. Select employees with
+--      salary between 3000
+--      and 6000 inclusive.
 -- Write your SQL Query below:
 
 
@@ -45,79 +39,130 @@
 
 
 -- ============================================================
--- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- QUESTION 2: OPERATOR & FILTERING CHECKS
 -- ============================================================
 
--- Q6. Create table 'Log' with
---     ID (INT) and LogText (VARCHAR(20)).
+-- Q2.1. Select employees whose
+--      department is NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Insert a row with a log
---     message into 'Log' table.
+-- Q2.2. Select employees whose
+--      department is NOT NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Select all logs where
---     LogText is NOT NULL.
+-- Q2.3. Select employees with
+--      salary <> 5000.
 -- Write your SQL Query below:
 
 
 
 
--- Q9. Select all logs where
---     ID is strictly less than 5.
+-- Q2.4. Select employees whose
+--      salary is <= 3000.
 -- Write your SQL Query below:
-
-
-
-
--- Q10. Explain what the NOT IN
---      operator does with NULL.
--- Write your explanation below:
 
 
 
 
 
 -- ============================================================
--- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- QUESTION 3: CUMULATIVE REVISION
 -- ============================================================
 
--- Q11. HR needs students whose
---      name starts with 'A'.
+-- Q3.1. Create table 'Log' with
+--      ID (INT) only.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Find all students whose
---      email contains 'gmail.com'.
+-- Q3.2. Add column 'LogText'
+--      (VARCHAR(20)) to table.
 -- Write your SQL Query below:
 
 
 
 
--- Q13. Find students whose second
+-- Q3.3. Insert a log row with
+--      ID = 1 and non-NULL text.
+-- Write your SQL Query below:
+
+
+
+
+-- Q3.4. Select all log rows.
+-- Write your SQL Query below:
+
+
+
+
+
+-- ============================================================
+-- QUESTION 4: ENTERPRISE SCENARIO CHALLENGE A
+-- ============================================================
+
+-- Q4.1. Find students whose name
+--      starts with 'A'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q4.2. Find students whose email
+--      contains 'gmail.com'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q4.3. Find students whose second
 --      character of name is 'a'.
 -- Write your SQL Query below:
 
 
 
 
--- Q14. Find students living in
+-- Q4.4. Find students living in
 --      'Nagpur' and aged >= 22.
 -- Write your SQL Query below:
 
 
 
 
--- Q15. Find students whose marks
+
+-- ============================================================
+-- QUESTION 5: ENTERPRISE SCENARIO CHALLENGE B
+-- ============================================================
+
+-- Q5.1. Find students whose marks
 --      are NOT between 60 and 80.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.2. Find students whose age
+--      is between 20 and 22.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.3. Find students whose subject
+--      starts with 'M'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.4. Find students whose email
+--      is missing (NULL).
 -- Write your SQL Query below:
 
 
@@ -125,10 +170,10 @@
 
 
 -- ============================================================
--- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- QUESTION 6: LOGIC BUILDER & DEBUGGING
 -- ============================================================
 
--- Q16. Debug the query:
+-- Q6.1. Debug the query:
 --      SELECT * FROM emp
 --      WHERE dept <> 'HR';
 --      Why are NULL departments
@@ -138,14 +183,14 @@
 
 
 
--- Q17. Explain why email = NULL
+-- Q6.2. Explain why email = NULL
 --      returns zero rows.
 -- Write your explanation below:
 
 
 
 
--- Q18. Correct the syntax error:
+-- Q6.3. Correct the syntax error:
 --      SELECT * FROM employee1
 --      WHERE dept = 'HR' OR 'Sales';
 -- Write your corrected Query below:
@@ -153,13 +198,6 @@
 
 
 
--- Q19. Explain what '[^A-Z]%'
+-- Q6.4. Explain what '[^A-Z]%'
 --      wildcard matches.
--- Write your explanation below:
-
-
-
-
--- Q20. Correct the syntax error:
---      SELECT FROM employee1 WHERE ID = 1;
--- Write your corrected Query below:\n
+-- Write your explanation below:\n

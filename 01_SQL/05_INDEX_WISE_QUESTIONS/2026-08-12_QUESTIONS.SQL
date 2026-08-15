@@ -1,42 +1,36 @@
 /*============================================================
-       DAY 11 PRACTICE QUESTIONS
-       TOPICS: PARENT-CHILD DESTRUCTION RULES
+        DAY 11 PRACTICE QUESTIONS
+        STRUCTURE: 6 QUESTIONS / 24 SUBQUESTIONS
+        TOPICS: PARENT-CHILD DESTRUCTION RULES
 ============================================================*/
 
 -- ============================================================
--- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- QUESTION 1: BASIC SYNTAX DRILLS
 -- ============================================================
 
--- Q1. Drop child table 'Staff_FK'.
+-- Q1.1. Drop child table 'Staff_FK'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Drop parent table
---     'Departments_PK' afterwards.
+-- Q1.2. Drop parent table
+--      'Departments_PK' afterwards.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Create parent table 'Branch'
---     with BranchID (INT PRIMARY KEY).
+-- Q1.3. Create parent table 'Branch'
+--      with BranchID (INT PRIMARY KEY).
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Create child table 'Member'
---     with MemberID (INT PRIMARY KEY),
---     BranchID (INT FK REFERENCES Branch).
--- Write your SQL Query below:
-
-
-
-
--- Q5. Display metadata for all
---     active foreign key constraints.
+-- Q1.4. Create child table 'Member'
+--      with MemberID (INT PRIMARY KEY),
+--      BranchID (INT FK REFERENCES Branch).
 -- Write your SQL Query below:
 
 
@@ -44,78 +38,130 @@
 
 
 -- ============================================================
--- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- QUESTION 2: OPERATOR & FILTERING CHECKS
 -- ============================================================
 
--- Q6. Insert 3 branches and 3
---     members into database tables.
+-- Q2.1. Insert 3 branches and 3
+--      members into database tables.
 -- Write your SQL Queries below:
 
 
 
 
--- Q7. Delete member from child table.
---     Does this succeed?
+-- Q2.2. Delete member from child table.
+--      Does this succeed?
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q8. Try to TRUNCATE parent 'Branch'.
---     Does it fail or succeed?
+-- Q2.3. Try to TRUNCATE parent 'Branch'.
+--      Does it fail or succeed?
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q9. Drop the 'Member' child table.
+-- Q2.4. Drop the 'Member' child table.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. Explain why dropping child
+
+-- ============================================================
+-- QUESTION 3: CUMULATIVE REVISION
+-- ============================================================
+
+-- Q3.1. Display metadata for all
+--      active foreign key constraints.
+-- Write your SQL Query below:
+
+
+
+
+-- Q3.2. Explain why dropping child
 --      unlocks parent drop block.
 -- Write your explanation below:
 
 
 
 
+-- Q3.3. Verify if a primary key
+--      can be dropped while referenced.
+-- Write your explanation below:
+
+
+
+
+-- Q3.4. Show the count of active tables
+--      in the user database schema.
+-- Write your SQL Query below:
+
+
+
+
 
 -- ============================================================
--- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- QUESTION 4: ENTERPRISE SCENARIO CHALLENGE A
 -- ============================================================
 
--- Q11. HR Cleanup: Clear 'Member'
+-- Q4.1. HR Cleanup: Clear 'Member'
 --      rows and then delete a branch.
 -- Write your SQL Queries below:
 
 
 
 
--- Q12. Select all remaining rows
+-- Q4.2. Select all remaining rows
 --      from member and branch tables.
 -- Write your SQL Queries below:
 
 
 
 
--- Q13. Empty child table. Try to
+-- Q4.3. Empty child table. Try to
 --      TRUNCATE the parent 'Branch'.
 -- Write your SQL Query and explanation:
 
 
 
 
--- Q14. Show all tables in the current
+-- Q4.4. Show all tables in the current
 --      database catalog.
 -- Write your SQL Query below:
 
 
 
 
--- Q15. Create child table 'SalesLog'
+
+-- ============================================================
+-- QUESTION 5: ENTERPRISE SCENARIO CHALLENGE B
+-- ============================================================
+
+-- Q5.1. Create child table 'SalesLog'
 --      referencing branch table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.2. Insert branch records and
+--      matching sales log rows.
+-- Write your SQL Queries below:
+
+
+
+
+-- Q5.3. Drop the foreign key constraint
+--      between branch and sales log.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.4. Truncate parent branch table
+--      after constraint is dropped.
 -- Write your SQL Query below:
 
 
@@ -123,10 +169,10 @@
 
 
 -- ============================================================
--- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- QUESTION 6: LOGIC BUILDER & DEBUGGING
 -- ============================================================
 
--- Q16. Debug parent truncation block:
+-- Q6.1. Debug parent truncation block:
 --      DELETE FROM Member;
 --      TRUNCATE TABLE Branch;
 --      Why does truncate fail?
@@ -135,7 +181,7 @@
 
 
 
--- Q17. Explain why DELETE is allowed
+-- Q6.2. Explain why DELETE is allowed
 --      on parent (if no child links)
 --      but TRUNCATE is blocked.
 -- Write your explanation below:
@@ -143,21 +189,14 @@
 
 
 
--- Q18. Correct the syntax error:
+-- Q6.3. Correct the syntax error:
 --      DROP parent_table CASCADE;
 -- Write your corrected Query below:
 
 
 
 
--- Q19. Why does SQL Server check
+-- Q6.4. Why does SQL Server check
 --      for constraint existence
 --      rather than row counts?
--- Write your explanation below:
-
-
-
-
--- Q20. Correct the query:
---      TRUNCATE child_table REFERENCES parent;
--- Write your corrected Query below:\n
+-- Write your explanation below:\n

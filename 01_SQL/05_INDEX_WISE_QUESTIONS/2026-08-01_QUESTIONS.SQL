@@ -1,46 +1,36 @@
 /*============================================================
-       DAY 1 PRACTICE QUESTIONS
-       TOPICS: CREATE, INSERT, SELECT
+        DAY 1 PRACTICE QUESTIONS
+        STRUCTURE: 6 QUESTIONS / 24 SUBQUESTIONS
+        TOPICS: CREATE, INSERT, SELECT
 ============================================================*/
 
 -- ============================================================
--- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- QUESTION 1: BASIC SYNTAX DRILLS
 -- ============================================================
 
--- Q1. Create table 'ITStaff' with:
---     StaffID (INT),
---     StaffName (VARCHAR(30)),
---     MonthlySalary (INT).
+-- Q1.1. Create table 'ITStaff'
+--      with: StaffID (INT).
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Select 'StaffName' and
---     'MonthlySalary' from
---     the 'ITStaff' table.
+-- Q1.2. Add StaffName (VARCHAR(30))
+--      to the 'ITStaff' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Insert a single staff row
---     using explicit columns.
+-- Q1.3. Add MonthlySalary (INT)
+--      to the 'ITStaff' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Insert a row with NULL
---     MonthlySalary using the
---     full column pattern.
--- Write your SQL Query below:
-
-
-
-
--- Q5. Write a query to display
---     all rows from 'ITStaff'.
+-- Q1.4. Project all columns from
+--      the newly created table.
 -- Write your SQL Query below:
 
 
@@ -48,81 +38,131 @@
 
 
 -- ============================================================
--- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- QUESTION 2: OPERATOR & FILTERING CHECKS
 -- ============================================================
 
--- Q6. Create table 'StudentLog'
---     with RollNo (INT),
---     FirstName (VARCHAR(20)).
+-- Q2.1. Project 'StaffName' and
+--      'MonthlySalary' columns.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Insert 3 rows into
---     'StudentLog' in one query.
+-- Q2.2. Project only the
+--      'MonthlySalary' column.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Select all rows from
---     the 'StudentLog' table.
+-- Q2.3. Project 'StaffID' from
+--      the 'ITStaff' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q9. Create table 'Dummy'
---     with ID (INT).
+-- Q2.4. Project 'StaffName' from
+--      the 'ITStaff' table.
 -- Write your SQL Query below:
-
-
-
-
--- Q10. Insert 2 rows into
---      'Dummy' and select them.
--- Write your SQL Queries below:
 
 
 
 
 
 -- ============================================================
--- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- QUESTION 3: CUMULATIVE REVISION
 -- ============================================================
 
--- Q11. HR needs 'CandidateProfile'
---      with ID, Name, Email, Age.
---      Emails must support 50 chars.
+-- Q3.1. Create table 'StudentLog'
+--      with RollNo (INT).
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Insert a candidate without
---      providing an email ID.
+-- Q3.2. Add column 'FirstName'
+--      (VARCHAR(20)) to table.
 -- Write your SQL Query below:
 
 
 
 
--- Q13. Project name and age of
+-- Q3.3. Insert 3 rows into
+--      'StudentLog' table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q3.4. Select all rows from
+--      the 'StudentLog' table.
+-- Write your SQL Query below:
+
+
+
+
+
+-- ============================================================
+-- QUESTION 4: ENTERPRISE SCENARIO CHALLENGE A
+-- ============================================================
+
+-- Q4.1. HR needs 'CandidateProfile'
+--      with ID (INT) only.
+-- Write your SQL Query below:
+
+
+
+
+-- Q4.2. Add column 'Name'
+--      (VARCHAR(50)) to table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q4.3. Add column 'Email'
+--      (VARCHAR(50)) to table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q4.4. Add column 'Age'
+--      (INT) to the table.
+-- Write your SQL Query below:
+
+
+
+
+
+-- ============================================================
+-- QUESTION 5: ENTERPRISE SCENARIO CHALLENGE B
+-- ============================================================
+
+-- Q5.1. Insert a candidate profile
+--      without providing email.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.2. Insert a candidate profile
+--      with age set to 25.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5.3. Project name and age of
 --      all candidate profiles.
 -- Write your SQL Query below:
 
 
 
 
--- Q14. Insert candidate 'Amit'
---      with age 25 and NULL email.
--- Write your SQL Query below:
-
-
-
-
--- Q15. Create 'Dept' table with
---      DeptID and DeptName.
+-- Q5.4. Project all candidate profiles
+--      whose email is missing.
 -- Write your SQL Query below:
 
 
@@ -130,10 +170,10 @@
 
 
 -- ============================================================
--- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- QUESTION 6: LOGIC BUILDER & DEBUGGING
 -- ============================================================
 
--- Q16. Correct the syntax error:
+-- Q6.1. Correct the syntax error:
 --      INSERT INTO ITStaff
 --      (StaffID, StaffName)
 --      VALUES ('Arpit', 101);
@@ -142,14 +182,14 @@
 
 
 
--- Q17. Explain what happens if
+-- Q6.2. Explain what happens if
 --      you omit VARCHAR size.
 -- Write your explanation below:
 
 
 
 
--- Q18. Explain why full column
+-- Q6.3. Explain why full column
 --      insert throws error if
 --      value list is too short.
 -- Write your explanation below:
@@ -157,14 +197,6 @@
 
 
 
--- Q19. Why does 'SELECT * FROM'
---      fail if no table name
---      is provided in the query?
--- Write your explanation below:
-
-
-
-
--- Q20. Correct the syntax error:
+-- Q6.4. Correct the syntax error:
 --      CREATE TABLE (ID INT);
 -- Write your corrected Query below:\n
