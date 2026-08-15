@@ -1,103 +1,165 @@
 /*============================================================
-       DAY 2 PRACTICE QUESTIONS - 2 AUGUST 2026
-       TOPICS: WHERE FILTERS, COMPARISON & LOGICAL OPERATORS, LIKE WILDCARDS
+       DAY 2 PRACTICE QUESTIONS
+       TOPICS: WHERE, OPERATORS, LIKE PATTERNS
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query to select all employees from 'employee1' whose department is 'HR'.
+-- Q1. Select all employees
+--     with department 'HR'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Select employees from 'employee1' whose salary is strictly greater than 4000.
+-- Q2. Select employees with
+--     salary > 4000.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write a query using IN to select employees from 'employee1' in 'HR' or 'Entc' departments.
+-- Q3. Select employees in 'HR'
+--     or 'Entc' using IN.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Select all employees from 'employee1' whose salary is between 3000 and 6000 (inclusive).
+-- Q4. Select employees with
+--     salary between 3000
+--     and 6000 inclusive.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Select employees whose
+--     department is NULL.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select all students from 'StudentInfo' whose city is NULL.
+-- Q6. Create table 'Log' with
+--     ID (INT) and LogText (VARCHAR(20)).
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Select all students from 'StudentInfo' whose city is NOT NULL.
+-- Q7. Insert a row with a log
+--     message into 'Log' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Write a SELECT query to pull the RollNo, Name, and Marks of students who scored between 70 and 90.
+-- Q8. Select all logs where
+--     LogText is NOT NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain the difference between the '=' operator and the 'IS NULL' operator in SQL filters.
+-- Q9. Select all logs where
+--     ID is strictly less than 5.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain what the NOT IN
+--      operator does with NULL.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR wants to find all students in 'StudentInfo' whose name starts with the letter 'A'.
+-- Q11. HR needs students whose
+--      name starts with 'A'.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. Find all students in 'StudentInfo' whose email ID contains 'gmail.com'.
+-- Q12. Find all students whose
+--      email contains 'gmail.com'.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. Find all students in 'StudentInfo' whose second character in their name is 'a'.
+-- Q13. Find students whose second
+--      character of name is 'a'.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Find all students in 'StudentInfo' who live in 'Nagpur' and are aged 22 or older.
+-- Q14. Find students living in
+--      'Nagpur' and aged >= 22.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Find students whose marks
+--      are NOT between 60 and 80.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the logic error: The user wants to exclude 'HR' dept, so they ran:
---      SELECT * FROM employee1 WHERE dept <> 'HR';
---      Why are employees with NULL departments missing, and how do you fix it?
--- Write your corrected SQL Query below:
+-- Q16. Debug the query:
+--      SELECT * FROM emp
+--      WHERE dept <> 'HR';
+--      Why are NULL departments
+--      excluded, and how to fix?
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why the query 'SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';' returns no rows
---      when all names start with uppercase English letters.
--- Write your explanation below:\n
+-- Q17. Explain why email = NULL
+--      returns zero rows.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      SELECT * FROM employee1
+--      WHERE dept = 'HR' OR 'Sales';
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Explain what '[^A-Z]%'
+--      wildcard matches.
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the syntax error:
+--      SELECT FROM employee1 WHERE ID = 1;
+-- Write your corrected Query below:\n

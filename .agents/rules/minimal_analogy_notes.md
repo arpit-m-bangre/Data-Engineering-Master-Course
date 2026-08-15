@@ -17,14 +17,15 @@
 3. **Screen Fitting & Spacing**: Wrap all comments vertically (keep lines under 80 characters) so they fit comfortably on standard screens without horizontal scrolling. Use clean, open vertical spacing between blocks.
 4. **Keyword Uppercase**: Keep all SQL query keywords in UPPERCASE syntax.
 5. **Zero Data Loss**: Never delete, mask, or alter actual SQL query code blocks, sample insert statements, or data values.
-6. **Index-Wise Questions Format**: All practice question files in `05_INDEX_WISE_QUESTIONS/` must follow a high-yield, 14-question Hybrid structure:
-   - Target exactly **14 questions** per file (to balance deep logic building and time management).
+6. **Index-Wise Questions Format**: All practice question files in `05_INDEX_WISE_QUESTIONS/` must follow a high-yield, 20-question vertical stack layout:
+   - Target exactly **20 questions** per file (5 questions per section).
+   - Keep comments and descriptions extremely narrow (wrap to a tight vertical stack, e.g., max 45-50 characters wide) to fit side-by-side edit layouts in SSMS.
    - Enclose questions in clean comment blocks with blank lines below `-- Write your SQL Query below:`.
    - Divide each file into 4 distinct phases:
-     * **Phase 1: Basic Syntax Drills (Q1 - Q4)**: Quick syntax validation on new topics.
-     * **Phase 2: Cumulative Revision (Q5 - Q8)**: Re-enforcing key concepts from previous classes.
-     * **Phase 3: Enterprise Scenario Challenges (Q9 - Q12)**: Complex real-world data engineering scenarios.
-     * **Phase 4: Logic Builder & Debugging (Q13 - Q14)**: SQL optimization and fixing broken queries.
+     * **Phase 1: Basic Syntax Drills (Q1 - Q5)**: Quick syntax validation on new topics.
+     * **Phase 2: Cumulative Revision (Q6 - Q10)**: Re-enforcing key concepts from previous classes.
+     * **Phase 3: Enterprise Scenario Challenges (Q11 - Q15)**: Complex real-world data engineering scenarios.
+     * **Phase 4: Logic Builder & Debugging (Q16 - Q20)**: SQL optimization and fixing broken queries.
 7. **Class Notes Dividers & Spacing Style**:
    - Use double equal-sign blocks for major sections:
      ```sql

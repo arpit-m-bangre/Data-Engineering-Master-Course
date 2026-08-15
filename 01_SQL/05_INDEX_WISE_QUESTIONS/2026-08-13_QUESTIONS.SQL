@@ -1,104 +1,162 @@
 /*============================================================
-       DAY 12 PRACTICE QUESTIONS - 13 AUGUST 2026
-       TOPICS: RETROFITTING CONSTRAINTS, COLUMN PROPERTIES VS TABLE CONSTRAINTS
+       DAY 12 PRACTICE QUESTIONS
+       TOPICS: RETROFITTING CONSTRAINTS, PROPERTY VS CONSTRAINT
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write an ALTER TABLE query to add a UNIQUE constraint named 'u_emp_email' to an existing column 'email'.
+-- Q1. Add UNIQUE constraint 'u_email'
+--     to existing column 'email'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write an ALTER TABLE query to change the data type of an existing column 'age' to INT NOT NULL.
+-- Q2. Change column 'age' data type
+--     to INT NOT NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write an ALTER TABLE query to add a CHECK constraint named 'ck_emp_salary' to ensure salary <= 50000.
+-- Q3. Add CHECK constraint 'ck_salary'
+--     to ensure salary <= 50000.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Write a query to drop the UNIQUE constraint 'u_emp_email' from your table.
+-- Q4. Drop UNIQUE constraint 'u_email'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Add DEFAULT 'Active' for status.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Add a new column 'serial_no' (INT IDENTITY(1,1)) to an existing populated table.
+-- Q6. Add column 'sr_no'
+--     (INT IDENTITY(1,1)) to table.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Query system metadata to view all active constraints in the current database.
+-- Q7. Query system metadata for all
+--     active constraints.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Try adding a CHECK constraint 'ck_age' (age > 18) when the table contains rows with age = 15.
--- Write your SQL Query and explanation below:
+-- Q8. Try adding CHECK 'ck_age' (>18)
+--     when rows contain age = 15.
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q8. Explain the difference between column properties (NOT NULL, IDENTITY) and table constraints (PRIMARY KEY, CHECK).
+-- Q9. Change column property of 'name'
+--     to VARCHAR(30) NOT NULL.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain column properties vs
+--      table constraints.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR Cleanup: You have duplicate emails in 'emp'. Write a query to delete duplicate rows,
---     and then retrofit a UNIQUE constraint on the email column.
+-- Q11. HR Cleanup: Delete duplicate
+--      emails and add UNIQUE.
 -- Write your SQL Queries below:
 
 
 
 
--- Q10. HR Onboarding: Convert the column 'status' in table 'emp' to NOT NULL. Explain what data pre-cleaning
---      is required before you can execute the ALTER COLUMN statement.
--- Write your SQL Query and explanation below:
+-- Q12. Convert 'status' to NOT NULL.
+--      What pre-cleaning is needed?
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q11. Add a DEFAULT constraint named 'df_emp_status' to set status = 'Active' on the 'status' column.
+-- Q13. Add DEFAULT constraint named
+--      'df_status' for status column.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Perform metadata audit: Find the status of all UNIQUE constraints applied to the 'emp' table.
+-- Q14. Show all check constraints
+--      applied to the 'emp' table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Create table 'q11' with a
+--      nullable integer column.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the syntax error: The developer wants to retrofit a PRIMARY KEY on a column, so they wrote:
---      ALTER TABLE q10 ADD CONSTRAINT pk_id PRIMARY KEY (id);
---      Why does this fail if the column was created as NULLABLE, and how do you fix it?
--- Write your corrected SQL Queries below:
+-- Q16. Debug the primary key retrofit:
+--      ALTER TABLE q10 ADD CONSTRAINT
+--      pk_id PRIMARY KEY (id);
+--      Why does it fail on NULL column?
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why you cannot apply the IDENTITY property to an existing column using ALTER COLUMN.
--- Write your explanation below:\n
+-- Q17. Explain why IDENTITY property
+--      cannot be added via ALTER COLUMN.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      ALTER TABLE emp ALTER COLUMN
+--      ADD CONSTRAINT NOT NULL;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does constraint retrofit
+--      fail if dirty data exists?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query check:
+--      ALTER TABLE emp ADD CONSTRAINT
+--      df_val DEFAULT FOR salary;
+-- Write your corrected Query below:\n

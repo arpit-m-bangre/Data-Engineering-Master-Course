@@ -1,108 +1,171 @@
 /*============================================================
-       DAY 8 PRACTICE QUESTIONS - 8 AUGUST 2026
-       TOPICS: COMPLEX SCENARIO-BASED SQL CHALLENGES, QUERY MISTAKE ANALYSIS & DEBUGGING
+       DAY 8 PRACTICE QUESTIONS
+       TOPICS: COMPLEX GROUP BY, SCENARIO DRILLS & DEBUGGING
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query to find the department and count of employees where the department has at least 3 employees.
+-- Q1. Find dept and employee count
+--     where dept has >= 3 employees.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write a query to show department-wise average experience (Exp) sorted by average experience descending.
+-- Q2. Show dept average experience
+--     sorted by experience descending.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write a query to show city-wise maximum salary, excluding cities that are NULL.
+-- Q3. Show city maximum salary
+--     excluding NULL cities.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Group 'emp' by department and show the count of employees, sorted by count ascending.
+-- Q4. Group by dept and show
+--     employee count, sorted ascending.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Find department-wise
+--     minimum salary.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select all employees who earn more than 5000 and group by department, showing average salary.
+-- Q6. Select employees earning > 5000,
+--     group by dept, show average.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Write a query to show the minimum salary per city for employees aged 25 or older.
+-- Q7. Show minimum salary per city
+--     for employees aged >= 25.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Find departments whose maximum salary is greater than 80000 and count of employees is at least 5.
+-- Q8. Find depts where max salary
+--     > 80000 and count >= 5.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain what is wrong with: 'SELECT city, AVG(salary) FROM emp WHERE AVG(salary) > 30000 GROUP BY city;'
+-- Q9. Show average salary of
+--     employees earning > 3000.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain what is wrong with
+--      filtering aggregate in WHERE.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR Finance: Consider employees earning > 40000. Find departments having: employee count >= 6,
---     average salary > 75000, and maximum experience > 10 years, sorted by avg salary descending.
+-- Q11. HR Finance: Earnings > 40000.
+--      Depts with count >= 6, avg > 75000,
+--      max experience > 10, sorted avg desc.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. HR City Audit: Ignore employees aged below 25. Find cities where: employee count >= 8,
---      minimum salary > 30000, and average experience > 5 years, sorted by employee count descending.
+-- Q12. HR City: Ignore age < 25.
+--      Cities with count >= 8, min > 30000,
+--      avg experience > 5, sorted count desc.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. Sales Performance: In the Sales table, find salespersons with total sales > 1,00,000 for sales
---      made in 'Q3' only, sorted by total sales descending.
+-- Q13. Sales: Find salespersons with
+--      total > 1,00,000 in 'Q3' sales,
+--      sorted descending.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Room Bookings: Group bookings by hotel where bookings were made for > 2 nights, displaying
---      hotels where the minimum room price booked is < 1500, sorted by price ascending.
+-- Q14. Bookings: Hotel group bookings
+--      for > 2 nights (minimum price < 1500),
+--      sorted price ascending.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Transactions: Total UPI/Card
+--      transactions > 10,000 per cust,
+--      sorted customer ID ascending.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the logic errors in this query written for Q10 (HR City Audit):
+-- Q16. Debug query for HR City:
 --      SELECT city, COUNT(empid), MIN(salary), AVG(exp) FROM emp
---      WHERE age < 25 HAVING COUNT(empid) >= 8 AND MIN(salary) > 30000 AND AVG(exp) > 5
+--      WHERE age < 25 HAVING COUNT(empid) >= 8 AND MIN(salary) > 30000
 --      ORDER BY COUNT(empid) DESC;
--- Write your corrected SQL Query below:
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why you cannot use 'GROUP BY city' without specifying 'city' in the SELECT list,
---      and vice-versa (selecting 'city' without grouping by it).
--- Write your explanation below:\n
+-- Q17. Explain why GROUP BY list
+--      must match un-aggregated SELECT.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      SELECT dept, AVG(salary) FROM emp
+--      WHERE salary > 3000
+--      ORDER BY AVG(salary)
+--      GROUP BY dept;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does grouping by a unique
+--      ID defeat the purpose of GROUP BY?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query:
+--      SELECT dept, COUNT(*) FROM emp
+--      HAVING COUNT(*) > 5;
+-- Write your corrected Query below:\n

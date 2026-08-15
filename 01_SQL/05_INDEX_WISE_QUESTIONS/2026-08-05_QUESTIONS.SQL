@@ -1,102 +1,164 @@
 /*============================================================
-       DAY 5 PRACTICE QUESTIONS - 5 AUGUST 2026
-       TOPICS: TRUNCATE VS DELETE VS DROP (DDL VS DML), ALTER TABLE (ADD, DROP, ALTER), SP_RENAME
+       DAY 5 PRACTICE QUESTIONS
+       TOPICS: TRUNCATE, ALTER TABLE, SP_RENAME
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query to TRUNCATE the table 'employee'.
+-- Q1. Write a query to
+--     TRUNCATE table 'employee'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write an ALTER TABLE query to add a column 'country' (VARCHAR(20)) to the 'employee' table.
+-- Q2. Add column 'country'
+--     (VARCHAR(20)) to 'employee'.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write an ALTER TABLE query to drop the column 'country' from 'employee'.
+-- Q3. Drop column 'country'
+--     from 'employee' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Rename the table 'employee' to 'emp_backup' using the system stored procedure.
+-- Q4. Rename 'employee' table
+--     to 'emp_backup' using sp.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Add column 'status'
+--     (VARCHAR(10)) to 'employee'.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Change the data type of the column 'salary' in 'employee' from INT to VARCHAR(15).
+-- Q6. Change data type of 'salary'
+--     in 'employee' to VARCHAR(15).
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Change the data type of column 'salary' back to INT.
+-- Q7. Change data type of
+--     'salary' back to INT.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Update all rows in 'employee' to set country = 'India' (if column exists).
+-- Q8. Update all rows in table
+--     to set country = 'India'.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain why TRUNCATE TABLE is classified as DDL, while DELETE FROM is DML.
+-- Q9. Drop column 'status'
+--     from the table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain why TRUNCATE
+--      is DDL and not DML.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. Schema modification: Add columns 'doj' (DATE) and 'status' (VARCHAR(10)) to the candidate profiles table.
+-- Q11. Add columns 'doj' (DATE)
+--      and 'status' to profiles.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. You want to rename the column 'status' to 'candidate_status' in candidate profiles table.
+-- Q12. Rename column 'status' to
+--      'candidate_status' in table.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. Decrease the size of column 'empname' in 'employee1' to VARCHAR(5). What warning/error does SQL Server raise
---      if existing records contain names longer than 5 characters?
--- Write your SQL Query and explanation below:
+-- Q13. Try changing size of 'name'
+--      to VARCHAR(5) when long
+--      values exist. What happens?
+-- Write your explanation below:
 
 
 
 
--- Q12. Perform database cleanup: Drop columns 'age' and 'marks' from 'student_dumy' table.
+-- Q14. Drop columns 'age' and
+--      'marks' from student backup.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Add column 'rating' (INT)
+--      with default value NULL.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the syntax error in the following column rename operation:
---      ALTER TABLE employee RENAME COLUMN dept TO department;
--- Write your corrected SQL Query below:
+-- Q16. Correct the syntax error:
+--      ALTER TABLE employee
+--      RENAME COLUMN dept TO department;
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why 'TRUNCATE TABLE' fails if you try to add a WHERE clause filter to delete specific rows.
--- Write your explanation below:\n
+-- Q17. Explain why TRUNCATE
+--      does not accept WHERE.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      ALTER TABLE employee
+--      DROP city, marks;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does reducing VARCHAR
+--      size fail if active data
+--      is longer than target?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the syntax error:
+--      sp_rename 'employee', 'emp';
+-- Write your corrected Query below:\n

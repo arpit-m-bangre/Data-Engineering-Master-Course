@@ -1,107 +1,169 @@
 /*============================================================
-       DAY 13 PRACTICE QUESTIONS - 14 AUGUST 2026
-       TOPICS: SET OPERATORS (UNION, UNION ALL, INTERSECT, EXCEPT), VALIDATION RULES
+       DAY 13 PRACTICE QUESTIONS
+       TOPICS: SET OPERATORS (UNION, ALL, INTERSECT, EXCEPT)
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query using UNION to combine 'id' from 'Newset1' and 'custid' from 'Newset2'.
+-- Q1. Write UNION to combine 'id'
+--     from Newset1 & Newset2.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write a query using UNION ALL to combine 'id' from 'Newset1' and 'custid' from 'Newset2'.
+-- Q2. Write UNION ALL to combine
+--     'id' from Newset1 & Newset2.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write a query using INTERSECT to find common values between 'id' in 'Newset1' and 'custid' in 'Newset2'.
+-- Q3. Write INTERSECT to find
+--     common IDs between tables.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Write a query using EXCEPT to find IDs in 'Newset1' that are not present in 'Newset2'.
+-- Q4. Write EXCEPT to find IDs in
+--     Newset1 not in Newset2.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Select RollNo from StudentInfo
+--     UNION select empid from emp.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select RollNo from 'StudentInfo' INTERSECT select empid from 'emp'.
+-- Q6. Combine student & emp names,
+--     removing duplicate rows.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Write a query to combine names from two tables, removing duplicate rows.
--- Write your SQL Query below:
-
-
-
-
--- Q7. Explain the validation rules regarding the number of columns and data types in Set Operators.
+-- Q7. Explain rules for columns
+--     and types in Set Operators.
 -- Write your explanation below:
 
 
 
 
--- Q8. Explain the difference in execution speed between UNION and UNION ALL.
+-- Q8. Explain speed difference
+--     between UNION and UNION ALL.
 -- Write your explanation below:
 
 
 
 
-
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
-
--- Q9. Bank Branch Merger: You have customer tables from BranchA (id, name, city) and BranchB (custid, name, city).
---     Write a query to combine them into a single unique customer database using UNION.
+-- Q9. Show INTERSECT output when
+--     one table has NULL values.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. Transaction logs audit: Combine transaction logs from UPI payments and Card payments tables
---      retaining all duplicate logs (keep all records).
--- Write your SQL Query below:
-
-
-
-
--- Q11. Customer Churn analysis: Select all customer IDs from the 'Customers' table EXCEPT customer IDs
---      who placed orders in the 'Orders' table.
--- Write your SQL Query below:
-
-
-
-
--- Q12. Retain common clients: Find the names of clients who are present in both the 'Prospects' and 'ActiveClients' tables.
+-- Q10. Combine names keeping all
+--      duplicate records.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q13. Identify and fix the syntax error: The developer wants to union two tables but wrote:
+-- Q11. Branch Merger: Combine
+--      BranchA (id, name) and
+--      BranchB (custid, name)
+--      using UNION.
+-- Write your SQL Query below:
+
+
+
+
+-- Q12. Logs audit: Combine UPI & Card
+--      payments keeping all duplicates.
+-- Write your SQL Query below:
+
+
+
+
+-- Q13. Churn: Customer IDs from
+--      Customers EXCEPT those in Orders.
+-- Write your SQL Query below:
+
+
+
+
+-- Q14. Common clients: Find names
+--      in prospects & active tables.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Combine distinct city logs
+--      from two branch offices.
+-- Write your SQL Query below:
+
+
+
+
+
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
+
+-- Q16. Debug the UNION query error:
 --      SELECT id, name FROM Newset1
 --      UNION
 --      SELECT custid FROM Newset2;
---      Why does this fail, and how do you fix it?
--- Write your corrected SQL Query and explanation below:
+--      Make schemas match.
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why Set Operators evaluate columns by their sequence order rather than their column names.
--- Write your explanation below:\n
+-- Q17. Explain why Set Operators
+--      evaluate column order sequence
+--      rather than column names.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      SELECT name FROM Newset1
+--      INTERSECT SELECT dept
+--      ORDER BY Newset1.name;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does EXCEPT ignore duplicate
+--      records in the output?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query:
+--      SELECT * FROM Newset1 UNION
+--      ALL * FROM Newset2;
+-- Write your corrected Query below:\n

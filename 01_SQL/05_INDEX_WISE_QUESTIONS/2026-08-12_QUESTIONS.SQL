@@ -1,108 +1,163 @@
 /*============================================================
-       DAY 11 PRACTICE QUESTIONS - 12 AUGUST 2026
-       TOPICS: PARENT/CHILD DESTRUCTION RULES, PK/FK RECAP
+       DAY 11 PRACTICE QUESTIONS
+       TOPICS: PARENT-CHILD DESTRUCTION RULES
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Drop the child table 'Staff_FK' from your database.
+-- Q1. Drop child table 'Staff_FK'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Drop the parent table 'Departments_PK' after the child table has been dropped.
+-- Q2. Drop parent table
+--     'Departments_PK' afterwards.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Create a parent table 'CompanyBranch' with BranchID (INT PRIMARY KEY) and Location (VARCHAR(20)).
+-- Q3. Create parent table 'Branch'
+--     with BranchID (INT PRIMARY KEY).
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Create a child table 'BranchStaff' with StaffID (INT PRIMARY KEY), Name (VARCHAR(20)),
---     and BranchID (INT FOREIGN KEY REFERENCES CompanyBranch(BranchID)).
+-- Q4. Create child table 'Member'
+--     with MemberID (INT PRIMARY KEY),
+--     BranchID (INT FK REFERENCES Branch).
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Display metadata for all
+--     active foreign key constraints.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Insert 3 branches into 'CompanyBranch' and 3 staff members into 'BranchStaff'.
+-- Q6. Insert 3 branches and 3
+--     members into database tables.
 -- Write your SQL Queries below:
 
 
 
 
--- Q6. Delete a staff member from 'BranchStaff'. Does this operation fail or succeed?
--- Write your SQL Query and explanation below:
+-- Q7. Delete member from child table.
+--     Does this succeed?
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q7. Try to TRUNCATE the parent table 'CompanyBranch'. Does it fail or succeed?
--- Write your SQL Query and explanation below:
+-- Q8. Try to TRUNCATE parent 'Branch'.
+--     Does it fail or succeed?
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q8. Explain why dropping the child table 'BranchStaff' allows the parent table to be dropped afterwards.
+-- Q9. Drop the 'Member' child table.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain why dropping child
+--      unlocks parent drop block.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR Cleanup Audit: You need to clean up data in 'CompanyBranch'. Write a query to delete all rows
---     from 'BranchStaff' child table first, and then delete a row from 'CompanyBranch' parent table.
+-- Q11. HR Cleanup: Clear 'Member'
+--      rows and then delete a branch.
 -- Write your SQL Queries below:
 
 
 
 
--- Q10. Verify child deletion: Write a query to show all remaining rows in 'BranchStaff' and 'CompanyBranch'.
+-- Q12. Select all remaining rows
+--      from member and branch tables.
 -- Write your SQL Queries below:
 
 
 
 
--- Q11. Test TRUNCATE: If the child table 'BranchStaff' has been completely cleared of rows (empty table),
---      can you TRUNCATE the parent table 'CompanyBranch'? Why or why not?
--- Write your SQL Query and explanation below:
+-- Q13. Empty child table. Try to
+--      TRUNCATE the parent 'Branch'.
+-- Write your SQL Query and explanation:
 
 
 
 
--- Q12. Perform database audit: Show all tables in the current database schema.
+-- Q14. Show all tables in the current
+--      database catalog.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Create child table 'SalesLog'
+--      referencing branch table.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the logic error: The developer wants to truncate the parent table 'CompanyBranch'
---      while a foreign key constraint is active. They ran:
---      DELETE FROM BranchStaff;
---      TRUNCATE TABLE CompanyBranch;
---      Why does the TRUNCATE fail, and what is the correct way to clear the parent table's data?
--- Write your corrected SQL Queries and explanation below:
-
-
+-- Q16. Debug parent truncation block:
+--      DELETE FROM Member;
+--      TRUNCATE TABLE Branch;
+--      Why does truncate fail?
+-- Write your explanation and fix below:
 
 
--- Q14. Explain why the parent table can be DELETED FROM (if no child rows exist) but cannot be TRUNCATED
---      even if the child table is empty.
--- Write your explanation below:\n
+
+
+-- Q17. Explain why DELETE is allowed
+--      on parent (if no child links)
+--      but TRUNCATE is blocked.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      DROP parent_table CASCADE;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does SQL Server check
+--      for constraint existence
+--      rather than row counts?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query:
+--      TRUNCATE child_table REFERENCES parent;
+-- Write your corrected Query below:\n

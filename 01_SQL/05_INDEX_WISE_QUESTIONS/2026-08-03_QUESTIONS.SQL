@@ -1,103 +1,169 @@
 /*============================================================
-       DAY 3 PRACTICE QUESTIONS - 3 AUGUST 2026
-       TOPICS: COMPLEX WHERE FILTERS, MULTIPLE CONDITIONS, WILDCARD PATTERNS
+       DAY 3 PRACTICE QUESTIONS
+       TOPICS: COMPLEX WHERE FILTERS, MULTIPLE CONDITIONS
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Select all students from 'StudentInfo' who do not live in 'Pune' or 'Mumbai'.
+-- Q1. Select students not
+--     living in 'Pune' or 'Mumbai'.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write a query to find all students whose marks are less than 60 or are NULL.
+-- Q2. Select students whose
+--     marks are < 60 or NULL.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write a query to find all students whose names end with the letter 'a' or 'i'.
+-- Q3. Select students whose
+--     names end with 'a' or 'i'.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Select all students whose mobile number ends with the digit 5.
+-- Q4. Select students whose
+--     mobile ends with 5.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Select students whose
+--     age is strictly > 21.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select RollNo and Name from 'StudentInfo' where the subject is 'Stat' and age is 22.
+-- Q6. Select RollNo and Name
+--     where subject is 'Stat'.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Write a query to find all students whose subject starts with 'M' and marks are greater than 70.
+-- Q7. Select students whose
+--     subject starts with 'M'
+--     and marks are > 70.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Find all students whose age is not NULL and city is either 'Nagpur' or 'Indore'.
+-- Q8. Find students whose age
+--     is NOT NULL and city is
+--     'Nagpur' or 'Indore'.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain what the wildcard pattern '_m%' matches when used in a LIKE clause.
+-- Q9. Select all students whose
+--     email is not NULL.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain what '_m%'
+--      wildcard pattern matches.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR needs to audit student emails. Select all students whose email ends with '.com'
---     but does not contain the '@' symbol.
+-- Q11. Find student emails ending
+--      with '.com' but missing '@'.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. Sales audit: Find students whose marks are between 50 and 80, and their city starts with 'N' or 'A'.
+-- Q12. Find students with marks
+--      50-80, and city starts
+--      with 'N' or 'A'.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. Retrieve students whose names start with letters from 'A' to 'M' (inclusive).
+-- Q13. Retrieve students whose
+--      names start with 'A' to 'M'.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Find all students whose city is NOT 'Nagpur' and their subject is not 'Maharashtra'.
+-- Q14. Find students where city is
+--      not 'Nagpur' and subject
+--      is not 'Maharashtra'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Retrieve students whose
+--      marks are NULL or 0.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Debug the following query which conflicts logical operators:
---      SELECT * FROM StudentInfo WHERE city = 'Nagpur' OR city = 'Pune' AND marks > 80;
---      Ensure that the city filter is evaluated as a combined group before checking marks.
--- Write your corrected SQL Query below:
+-- Q16. Debug the query:
+--      SELECT * FROM StudentInfo
+--      WHERE city = 'Nagpur' OR
+--      city = 'Pune' AND marks > 80;
+--      Force city filter first.
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why 'WHERE email_id = NULL' returns 0 rows even if there are rows with NULL emails.
--- Write your explanation below:\n
+-- Q17. Explain why 'IS NULL' is
+--      used instead of '= NULL'.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      SELECT * FROM StudentInfo
+--      WHERE Name LIKE 'A%' AND 'B%';
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does 'LIKE '%'' not
+--      return rows with NULL values?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query:
+--      SELECT Name FROM StudentInfo
+--      WHERE Marks BETWEEN 80, 90;
+-- Write your corrected Query below:\n

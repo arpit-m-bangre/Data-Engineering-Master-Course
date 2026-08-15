@@ -1,106 +1,169 @@
 /*============================================================
-       DAY 4 PRACTICE QUESTIONS - 4 AUGUST 2026
-       TOPICS: ARITHMETIC OPERATORS, UPDATE & DELETE (DML), DROP TABLE (DDL)
+       DAY 4 PRACTICE QUESTIONS
+       TOPICS: ARITHMETIC, UPDATE, DELETE, DROP
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query to project 'marks' and a calculated column 'IncMarks' showing marks increased by 5.
+-- Q1. Project marks and a new
+--     column 'IncMarks' (marks+5).
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write an UPDATE query to change the subject of all students with RollNo = 101 to 'Data Engineering'.
+-- Q2. Update the subject of all
+--     students with RollNo = 101
+--     to 'Data Engineering'.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Write a DELETE query to remove a student whose RollNo is 105.
+-- Q3. Delete student with
+--     RollNo = 105.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Write a query to drop the table 'student_dumy'.
+-- Q4. Write query to drop
+--     table 'student_dumy'.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Project salary decreased
+--     by 20% from 'employee1'.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select all students whose marks are strictly greater than 80 after adding a 10-mark grace.
+-- Q6. Select students with marks
+--     > 80 after a 10 grace marks.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Write a query to set the marks to NULL for all students who scored below 40.
+-- Q7. Set marks to NULL for
+--     students who scored < 40.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Select all students whose name contains 'a' and subject is 'Data Engineering'.
+-- Q8. Select students whose name
+--     has 'a' and subject is
+--     'Data Engineering'.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain the difference between DELETE and DROP TABLE in SQL.
+-- Q9. Update student marks to
+--      marks * 2 where roll is 102.
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Explain the difference
+--      between DELETE and DROP.
 -- Write your explanation below:
 
 
 
 
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
 
--- Q9. HR needs to adjust employee salaries. Write a query projecting employee name, current salary,
---     and a new salary column showing a 15% increment.
+-- Q11. Project candidate name,
+--      salary, and a new salary
+--      showing a 15% increment.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. HR wants to write these changes to disk. Update 'employee1' table setting salary to salary + 15%
---      for employees whose department is 'HR'.
+-- Q12. Update salary to salary+15%
+--      for all 'HR' employees.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. A student changed their city. Update 'StudentInfo' setting city to 'Pune' and age to 23
---      for RollNo = 104.
+-- Q13. Update city to 'Pune' and
+--      age to 23 for RollNo = 104.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Perform data cleaning: Delete all students from 'StudentInfo' who do not have a mobile number
---      and whose marks are NULL.
+-- Q14. Delete all students who
+--      have no mobile number
+--      and marks are NULL.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Delete employees whose
+--      salary is < 2000.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the logic error in this update query:
---      UPDATE StudentInfo SET city = 'Nagpur' WHERE city = NULL;
--- Write your corrected SQL Query below:
+-- Q16. Debug the query:
+--      UPDATE StudentInfo
+--      SET city = 'Nagpur'
+--      WHERE city = NULL;
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why running 'SELECT RollNo, marks / 2 AS HalfMarks FROM StudentInfo' does not alter
---      the actual marks on disk.
--- Write your explanation below:\n
+-- Q17. Explain why projecting
+--      marks/2 does not change
+--      actual marks on disk.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      UPDATE emp SET (salary = 5000)
+--      WHERE id = 101;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why is transaction rollback
+--      possible with DELETE but
+--      typically restricted?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the syntax error:
+--      DELETE * FROM emp;
+-- Write your corrected Query below:\n

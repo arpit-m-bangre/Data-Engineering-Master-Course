@@ -1,102 +1,170 @@
 /*============================================================
-       DAY 1 PRACTICE QUESTIONS - 1 AUGUST 2026
-       TOPICS: CREATE TABLE, INSERT PATTERNS, SELECT STATEMENTS
+       DAY 1 PRACTICE QUESTIONS
+       TOPICS: CREATE, INSERT, SELECT
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Create a table named 'ITStaff' with: StaffID (INT), StaffName (VARCHAR(30)), and MonthlySalary (INT).
+-- Q1. Create table 'ITStaff' with:
+--     StaffID (INT),
+--     StaffName (VARCHAR(30)),
+--     MonthlySalary (INT).
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write a query to select only 'StaffName' and 'MonthlySalary' from the 'ITStaff' table.
+-- Q2. Select 'StaffName' and
+--     'MonthlySalary' from
+--     the 'ITStaff' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Insert a single employee row into 'ITStaff' using the explicit column list method.
+-- Q3. Insert a single staff row
+--     using explicit columns.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Insert a row into 'ITStaff' with NULL for MonthlySalary using the full row values insert pattern.
+-- Q4. Insert a row with NULL
+--     MonthlySalary using the
+--     full column pattern.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Write a query to display
+--     all rows from 'ITStaff'.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Create a table 'StudentLog' with RollNo (INT), FirstName (VARCHAR(20)), and City (VARCHAR(25)).
+-- Q6. Create table 'StudentLog'
+--     with RollNo (INT),
+--     FirstName (VARCHAR(20)).
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Insert 3 rows into 'StudentLog' in a single INSERT statement.
+-- Q7. Insert 3 rows into
+--     'StudentLog' in one query.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Write a SELECT query to display all fields and all rows from 'StudentLog'.
+-- Q8. Select all rows from
+--     the 'StudentLog' table.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Explain what happens if you define a column as 'VARCHAR' without specifying a size limit.
+-- Q9. Create table 'Dummy'
+--     with ID (INT).
+-- Write your SQL Query below:
+
+
+
+
+-- Q10. Insert 2 rows into
+--      'Dummy' and select them.
+-- Write your SQL Queries below:
+
+
+
+
+
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
+
+-- Q11. HR needs 'CandidateProfile'
+--      with ID, Name, Email, Age.
+--      Emails must support 50 chars.
+-- Write your SQL Query below:
+
+
+
+
+-- Q12. Insert a candidate without
+--      providing an email ID.
+-- Write your SQL Query below:
+
+
+
+
+-- Q13. Project name and age of
+--      all candidate profiles.
+-- Write your SQL Query below:
+
+
+
+
+-- Q14. Insert candidate 'Amit'
+--      with age 25 and NULL email.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Create 'Dept' table with
+--      DeptID and DeptName.
+-- Write your SQL Query below:
+
+
+
+
+
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
+
+-- Q16. Correct the syntax error:
+--      INSERT INTO ITStaff
+--      (StaffID, StaffName)
+--      VALUES ('Arpit', 101);
+-- Write your corrected Query below:
+
+
+
+
+-- Q17. Explain what happens if
+--      you omit VARCHAR size.
 -- Write your explanation below:
 
 
 
 
-
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
-
--- Q9. HR requests a new table called 'CandidateProfile' with fields for ID, Name, Email, and Age.
---     Ensure Name and Email can hold up to 50 characters.
--- Write your SQL Query below:
+-- Q18. Explain why full column
+--      insert throws error if
+--      value list is too short.
+-- Write your explanation below:
 
 
 
 
--- Q10. Insert a candidate profile into 'CandidateProfile' where the candidate does not have an Email ID.
--- Write your SQL Query below:
+-- Q19. Why does 'SELECT * FROM'
+--      fail if no table name
+--      is provided in the query?
+-- Write your explanation below:
 
 
 
 
--- Q11. Write a query to display all candidate names and their age in the candidate profiles table.
--- Write your SQL Query below:
-
-
-
-
--- Q12. Insert a candidate name 'Mahima' with a length exceeding the limit. What error is produced?
--- Write your SQL Query and explanation below:
-
-
-
-
-
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
-
--- Q13. Identify and fix the error in the following insert statement:
---      INSERT INTO ITStaff (StaffID, StaffName) VALUES ('Arpit', 101);
--- Write your corrected SQL Query below:
-
-
-
-
--- Q14. Explain why the database throws an error when you omit columns in a full row values insert pattern.
--- Write your explanation below:\n
+-- Q20. Correct the syntax error:
+--      CREATE TABLE (ID INT);
+-- Write your corrected Query below:\n

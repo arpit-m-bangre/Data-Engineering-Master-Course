@@ -1,105 +1,170 @@
 /*============================================================
-       DAY 7 PRACTICE QUESTIONS - 7 AUGUST 2026
-       TOPICS: GROUP BY WITH WHERE/HAVING, CLAUSE EXECUTION SEQUENCE, ORDER BY, ALIASING
+       DAY 7 PRACTICE QUESTIONS
+       TOPICS: GROUP BY, HAVING, ORDER BY, EXECUTION SEQUENCE
 ============================================================*/
 
--- SECTION 1: BASIC SYNTAX DRILLS (Q1 - Q4)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 1: BASIC SYNTAX DRILLS (Q1 - Q5)
+-- ============================================================
 
--- Q1. Write a query to group 'emp' by department and show the total salary of each department.
+-- Q1. Group 'emp' by department
+--     and show total salary.
 -- Write your SQL Query below:
 
 
 
 
--- Q2. Write a query to show department-wise average salary where the average salary is greater than 3000.
+-- Q2. Show dept average salary
+--     where avg salary is > 3000.
 -- Write your SQL Query below:
 
 
 
 
--- Q3. Display all employees sorted by salary in DESCENDING order.
+-- Q3. Sort all employees by
+--     salary descending.
 -- Write your SQL Query below:
 
 
 
 
--- Q4. Group 'emp' by department and show average salary, sorted by average salary in ASCENDING order.
+-- Q4. Group by dept and show avg
+--     salary, sorted by avg ascending.
+-- Write your SQL Query below:
+
+
+
+
+-- Q5. Group by dept and show
+--     employee count.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 2: CUMULATIVE REVISION (Q5 - Q8)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 2: CUMULATIVE REVISION (Q6 - Q10)
+-- ============================================================
 
--- Q5. Select the department and count of employees in each department, excluding NULL departments.
+-- Q6. Show dept and employee count
+--     excluding NULL depts.
 -- Write your SQL Query below:
 
 
 
 
--- Q6. Find the maximum salary for each department, sorting the result alphabetically by department name.
+-- Q7. Find max salary per dept,
+--     sorted by dept name.
 -- Write your SQL Query below:
 
 
 
 
--- Q7. Write a query to find the count of students in each city where the student count is at least 2.
+-- Q8. Find count of students per
+--     city where count is >= 2.
 -- Write your SQL Query below:
 
 
 
 
--- Q8. Write down the logical execution sequence of SQL clauses (FROM, SELECT, WHERE, HAVING, GROUP BY, ORDER BY).
+-- Q9. Show logical execution
+--     order of SQL clauses.
 -- Write your answer below:
 
 
 
 
+-- Q10. Explain why HAVING requires
+--      GROUP BY to function.
+-- Write your explanation below:
 
--- SECTION 3: ENTERPRISE SCENARIO CHALLENGES (Q9 - Q12)
--- ------------------------------------------------------------
 
--- Q9. Sumedha Ma'am's Task: From the Employees table, find the total salary per department for employees
---     who joined after 2020, showing departments where the total salary is > 3,00,000, ordered descending.
+
+
+
+-- ============================================================
+-- PHASE 3: ENTERPRISE SCENARIOS (Q11 - Q15)
+-- ============================================================
+
+-- Q11. Sumedha Ma'am Q1: Total salary
+--      per dept for employees joining
+--      after 2020 (sum > 3,00,000),
+--      sorted descending.
 -- Write your SQL Query below:
 
 
 
 
--- Q10. From the Sales table, calculate total sales done by each salesperson for products priced > 500,
---      displaying salespersons whose total sales exceed 50,000, sorted alphabetically.
+-- Q12. Salesperson sales > 50,000
+--      for products priced > 500,
+--      sorted alphabetically.
 -- Write your SQL Query below:
 
 
 
 
--- Q11. From the Orders table, count 2023 orders per customer where amount > 1000, showing customers
---      who placed at least 5 orders, sorted by count descending.
+-- Q13. 2023 orders per customer where
+--      amount > 1000 (at least 5 orders),
+--      sorted descending by count.
 -- Write your SQL Query below:
 
 
 
 
--- Q12. Group expenses by type where expense is between 500 and 5000, displaying expense types
---      whose average expense is above 1000, ordered by average value descending.
+-- Q14. Group expenses by type where
+--      amount is 500-5000 (average > 1000),
+--      sorted average descending.
+-- Write your SQL Query below:
+
+
+
+
+-- Q15. Average product category price
+--      with stock > 50 (avg > 2000),
+--      category name sorted.
 -- Write your SQL Query below:
 
 
 
 
 
--- SECTION 4: LOGIC BUILDER & DEBUGGING (Q13 - Q14)
--- ------------------------------------------------------------
+-- ============================================================
+-- PHASE 4: LOGIC & DEBUGGING (Q16 - Q20)
+-- ============================================================
 
--- Q13. Identify and fix the error in the following aggregate filter query:
---      SELECT dept, SUM(salary) AS total_salary FROM emp GROUP BY dept HAVING total_salary > 5000;
--- Write your corrected SQL Query below:
+-- Q16. Correct the syntax error:
+--      SELECT dept, SUM(salary) AS total
+--      FROM emp GROUP BY dept
+--      HAVING total > 5000;
+-- Write your corrected Query below:
 
 
 
 
--- Q14. Explain why you cannot use a column alias in the WHERE clause, but you CAN use it in the ORDER BY clause.
--- Write your explanation below:\n
+-- Q17. Explain why you cannot use
+--      aliases in WHERE/HAVING.
+-- Write your explanation below:
+
+
+
+
+-- Q18. Correct the syntax error:
+--      SELECT dept, salary FROM emp
+--      GROUP BY dept;
+-- Write your corrected Query below:
+
+
+
+
+-- Q19. Why does ORDER BY allow
+--      column aliases?
+-- Write your explanation below:
+
+
+
+
+-- Q20. Correct the query:
+--      SELECT dept FROM emp
+--      HAVING AVG(salary) > 3000;
+-- Write your corrected Query below:\n
