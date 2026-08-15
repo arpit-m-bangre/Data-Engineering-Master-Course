@@ -1,24 +1,39 @@
-/* ================================================================================
+/*================================================================
    SQL CLASS NOTES - 02 AUGUST 2026 (DAY 2)
    TOPICS: SQL FILTERS, WHERE CLAUSE, COMPARISON & LOGICAL OPERATORS, LIKE WILDCARDS
-   ================================================================================ */
+==================================================================*/
 
--- ------------------------------------------------------------
--- 📖 THEORY: THE BOUNCER (WHERE CLAUSE)
--- ------------------------------------------------------------
--- The WHERE clause acts like a club bouncer.
--- It checks each row one-by-one.
--- If the row meets the criteria, it is let in; otherwise, it is kicked out.
+
+/*================================================================
+1. WHERE CLAUSE (THE BOUNCER)
+==================================================================*/
+
+/*----------------------------------------------------------------
+Theory:
+The WHERE clause acts like a club bouncer.
+It checks each row one-by-one.
+If the row meets the criteria, it is let in; otherwise, it is kicked out.
+------------------------------------------------------------------*/
 
 SELECT * FROM employee1;
 
--- 1. COMPARISON OPERATORS (Filters single column/single value)
--- Operators: = , <> , < , <= , > , >=
+
+/*================================================================
+2. COMPARISON OPERATORS
+==================================================================*/
+
+-- Filters single column / single value: = , <> , < , <= , > , >=
 SELECT * FROM employee1 WHERE dept = 'HR';
 
+
 SELECT * FROM employee1 WHERE dept <> 'HR';
--- Note: The <> (not equal) operator ignores NULLs.
--- To find NULLs, you must use IS NULL.
+
+/*----------------------------------------------------------------
+Note:
+The <> (not equal) operator ignores NULLs.
+To find NULLs, you must use IS NULL.
+------------------------------------------------------------------*/
+
 
 -- Text comparison follows alphabetical (ASCII) order:
 SELECT * FROM employee1 WHERE dept < 'HR';
@@ -26,30 +41,60 @@ SELECT * FROM employee1 WHERE dept > 'HR';
 SELECT * FROM employee1 WHERE dept <= 'HR';
 SELECT * FROM employee1 WHERE dept >= 'HR';
 
--- 2. IN / NOT IN (Filters single column/multiple values)
+
+/*================================================================
+3. IN / NOT IN OPERATORS
+==================================================================*/
+
+-- Filters single column / multiple values
 SELECT * FROM employee1 WHERE dept IN ('HR', 'Entc');        -- Include only these
 SELECT * FROM employee1 WHERE dept NOT IN ('HR', 'Entc');    -- Exclude these
 
--- 3. IS NULL / IS NOT NULL (Filters for missing data)
+
+/*================================================================
+4. IS NULL / IS NOT NULL
+==================================================================*/
+
+-- Filters for missing/blank data
 SELECT * FROM employee1 WHERE dept IS NULL;       -- Show only NULLs
 SELECT * FROM employee1 WHERE dept IS NOT NULL;   -- Show non-NULLs
 
--- 4. LOGICAL OPERATORS (AND / OR) (Filters multiple columns)
+
+/*================================================================
+5. LOGICAL OPERATORS (AND / OR)
+==================================================================*/
+
 -- AND: Both rules must be true:
 SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 2000;
 
+
 SELECT * FROM employee1 WHERE dept = 'HR' AND salary = 3000;
--- ❌ Fails to return rows: Salary for HR is 2000, not 3000.
+
+/*----------------------------------------------------------------
+Note:
+❌ Fails to return rows because Salary for HR is 2000, not 3000.
+------------------------------------------------------------------*/
+
 
 -- OR: At least one rule must be true:
 SELECT * FROM employee1 WHERE dept = 'HR' OR salary = 3000;
 
--- 5. BETWEEN / NOT BETWEEN (Filters ranges, boundaries are inclusive)
+
+/*================================================================
+6. BETWEEN / NOT BETWEEN
+==================================================================*/
+
+-- Filters ranges (boundaries are inclusive)
 SELECT * FROM employee1 WHERE salary BETWEEN 2000 AND 6000;   
 SELECT * FROM employee1 WHERE empname BETWEEN 'A' AND 'M';    
 SELECT * FROM employee1 WHERE empname NOT BETWEEN 'A' AND 'M';
 
--- 6. LIKE PATTERN MATCHING (Wildcards: % = 0+ chars, _ = exactly 1 char)
+
+/*================================================================
+7. LIKE PATTERN MATCHING (WILDCARDS)
+==================================================================*/
+
+-- Wildcards: % = 0 or more characters, _ = exactly 1 character
 SELECT * FROM employee1 WHERE empname LIKE 'A%';     -- Starts with A
 SELECT * FROM employee1 WHERE empname LIKE '%h';     -- Ends with h
 SELECT * FROM employee1 WHERE empname LIKE '%A%';    -- Contains A anywhere
@@ -61,14 +106,18 @@ SELECT * FROM employee1 WHERE empname LIKE '[A,M]%'; -- Starts with A or M
 SELECT * FROM employee1 WHERE empname LIKE '[A-Z]%'; -- Starts with A to Z range
 SELECT * FROM employee1 WHERE empname LIKE '[^A-Z]%';-- Does NOT start with A-Z
 
--- ------------------------------------------------------------
--- 💻 SYSTEM INFORMATION
--- ------------------------------------------------------------
+
+/*================================================================
+8. SYSTEM METADATA AUDIT
+==================================================================*/
+
 SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES;
 
--- ------------------------------------------------------------
--- 💻 SEED DATA: StudentInfo
--- ------------------------------------------------------------
+
+/*================================================================
+9. SEED DATA: StudentInfo
+==================================================================*/
+
 SELECT * FROM StudentInfo;
 
 INSERT INTO StudentInfo VALUES (101, 'Arpit', 'Nagpur', 'Stat', 65, 22, 'arpit.m.bangre@gmail.com', 992342352);
