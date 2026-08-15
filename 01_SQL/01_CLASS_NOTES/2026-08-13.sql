@@ -37,10 +37,20 @@ DROP TABLE q9;     -- SUCCEEDS (Removes child table structure)
 */
 
 -- CONCEPTUAL DEEP DIVE: Why is TRUNCATE classified as DDL even though it does not remove table structure?
--- Explanation: TRUNCATE TABLE is Data Definition Language (DDL) because it operates on table metadata 
--- and data pages directly rather than logging individual row deletions. It deallocates data pages, 
--- resets IDENTITY seeds to initial seed values, and requires ALTER TABLE permissions. However, it 
--- preserves the table schema definition (columns, types, constraints).
+--
+-- 📖 THE NOTEBOOK ANALOGY:
+-- Imagine your table is a spiral notebook. 
+-- The cardboard cover and empty lines represent the Structure (Schema).
+-- The handwritten text you write on the lines represents the Data (Rows).
+--
+-- 1. DELETE (DML): Eraser method. You erase text line-by-line. You are modifying data.
+-- 2. TRUNCATE (DDL): Page-ripping method. You rip out all pages and throw them in the trash.
+--    You leave only the empty cardboard cover (structure is kept). You are modifying the physical storage pages.
+--
+-- WHY IS IT DDL?
+-- * It deallocates entire storage data pages on disk rather than deleting individual rows.
+-- * It resets the IDENTITY seed (auto-increment) back to 1 (modifying a column definition property).
+-- * It requires ALTER TABLE permissions (a DDL permission) rather than simple DELETE permissions.
 
 
 -- ================================================================================
