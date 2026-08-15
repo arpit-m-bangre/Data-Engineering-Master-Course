@@ -22,7 +22,7 @@ Last Updated: 14 AUG 2026   | Overall SQL Completion: [░░░░░░░░�
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
-DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE | 14-Q PRACTICE | STATUS
+DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE | 20-Q PRACTICE | STATUS
 -------------------------------------------------------------------------------------------------------------
 01   | DB Architecture & DDL/DML                 | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 02   | Clauses & Pattern Matching                | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
@@ -54,74 +54,74 @@ P5  | Retail Supply Chain & FK Architecture              | PROJECT5.SQL   | [ ] 
 ====================================================================================================
                         [ ⚔️ THE MASTER RECOVERY BATTLE PLAN ]
 ====================================================================================================
-*Your workflow for every day must be: Re-write -> Read Revision -> Solve 14 Questions.*
+*Your workflow for every day must be: Re-write -> Read Revision -> Solve 20 Questions.*
 
 DAY 1 (SATURDAY, AUG 15) - TARGET: DAYS 1 & 2 (Revised for 2:00 PM start)
-- [ ] 02:00 PM - 03:30 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 14 Questions
+- [ ] 02:00 PM - 03:30 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 20 Questions
 - [ ] 03:30 PM - 04:00 PM: English Practice (Task 1)
 - [ ] 04:00 PM - 04:30 PM: Short Break / Free Time
-- [ ] 04:30 PM - 06:00 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 14 Questions
+- [ ] 04:30 PM - 06:00 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 20 Questions
 - [ ] 06:00 PM - 09:00 PM: Nidhi's Python Role Exploration & Dinner
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Maintain Streak) & 10:15 PM Strict Cutoff
 
 DAY 2 (SUNDAY, AUG 16) - TARGET: DAYS 3 & 4 + AUG 15 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-15] & Solve 14 Questions (Day 14 / Aug 15 Live Class)
-- [ ] 12:00 PM - 02:30 PM: Class Note Re-write and Read Revision Note [2026-08-03] & Solve 14 Questions (Day 3: Filtering & Substrings)
-- [ ] 03:00 PM - 05:30 PM: Class Note Re-write and Read Revision Note [2026-08-04] & Solve 14 Questions (Day 4: Arithmetic, UPDATE & DELETE)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-15] & Solve 20 Questions (Day 14 / Aug 15 Live Class)
+- [ ] 12:00 PM - 02:30 PM: Class Note Re-write and Read Revision Note [2026-08-03] & Solve 20 Questions (Day 3: Filtering & Substrings)
+- [ ] 03:00 PM - 05:30 PM: Class Note Re-write and Read Revision Note [2026-08-04] & Solve 20 Questions (Day 4: Arithmetic, UPDATE & DELETE)
 - [ ] 05:30 PM - 06:00 PM: English Practice (Task 2)
 - [ ] 06:00 PM - 07:00 PM: SQL Spaced Repetition (Day 12 & 13 Weak Spot review and error analysis in SSMS)
 
 DAY 3 (MONDAY, AUG 17) - TARGET: PROJECT 1 & DAY 5
 - [ ] 10:30 AM - 01:00 PM: PROJECT 1 (E-Commerce Pipeline implementation)
-- [ ] 02:00 PM - 04:30 PM: Class Note Re-write and Read Revision Note [2026-08-05] & Solve 14 Questions (Day 5: TRUNCATE vs DROP & ALTER)
+- [ ] 02:00 PM - 04:30 PM: Class Note Re-write and Read Revision Note [2026-08-05] & Solve 20 Questions (Day 5: TRUNCATE vs DROP & ALTER)
 - [ ] 04:30 PM - 05:00 PM: English Practice (Task 3)
 - [ ] 05:00 PM - 06:00 PM: Spaced Repetition Revision: Test 1 Error Analysis (WHERE vs HAVING optimization)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 4 (TUESDAY, AUG 18) - TARGET: PROJECT 2 & DAY 6 + AUG 17 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-17] & Solve 14 Questions (Day 15 / Aug 17 Live Class)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-17] & Solve 20 Questions (Day 15 / Aug 17 Live Class)
 - [ ] 12:00 PM - 01:30 PM: PROJECT 2 (Healthcare Hospital Admissions & Billing Pipeline) - Part 1
-- [ ] 02:00 PM - 04:30 PM: Class Note Re-write and Read Revision Note [2026-08-06] & Solve 14 Questions (Day 6: Aggregates & GROUP BY)
+- [ ] 02:00 PM - 04:30 PM: Class Note Re-write and Read Revision Note [2026-08-06] & Solve 20 Questions (Day 6: Aggregates & GROUP BY)
 - [ ] 04:30 PM - 05:00 PM: English Practice (Task 4)
 - [ ] 05:00 PM - 06:00 PM: PROJECT 2 - Part 2 (Completion & Code Validation)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 5 (WEDNESDAY, AUG 19) - TARGET: PROJECT 3 & DAYS 7/8 + AUG 18 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-18] & Solve 14 Questions (Day 16 / Aug 18 Live Class)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-18] & Solve 20 Questions (Day 16 / Aug 18 Live Class)
 - [ ] 12:00 PM - 01:30 PM: PROJECT 3 (Banking Transaction Audit & Fraud Engine) - Part 1
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-07] & Solve 14 Questions (Day 7: Execution Order & HAVING Rules)
-- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-08] & Solve 14 Questions (Day 8: Complex Scenarios & Error Analysis)
+- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-07] & Solve 20 Questions (Day 7: Execution Order & HAVING Rules)
+- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-08] & Solve 20 Questions (Day 8: Complex Scenarios & Error Analysis)
 - [ ] 05:00 PM - 06:00 PM: PROJECT 3 - Part 2 (Completion & Code Validation)
 - [ ] 06:00 PM - 06:30 PM: English Practice (Task 5)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAYS 9/10 + AUG 19 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-19] & Solve 14 Questions (Day 17 / Aug 19 Live Class)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-19] & Solve 20 Questions (Day 17 / Aug 19 Live Class)
 - [ ] 12:00 PM - 01:30 PM: PROJECT 4 (HR Payroll & Data Validation Engine) - Part 1
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-10] & Solve 14 Questions (Day 9: Constraints - PK, UNIQUE, CHECK)
-- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-11] & Solve 14 Questions (Day 10: DEFAULT, IDENTITY & FK Rules)
+- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-10] & Solve 20 Questions (Day 9: Constraints - PK, UNIQUE, CHECK)
+- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-11] & Solve 20 Questions (Day 10: DEFAULT, IDENTITY & FK Rules)
 - [ ] 05:00 PM - 06:00 PM: PROJECT 4 - Part 2 (Completion & Code Validation)
 - [ ] 06:00 PM - 06:30 PM: English Practice (Task 6)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/01 + AUG 20 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve 14 Questions (Day 18 / Aug 20 Live Class)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve 20 Questions (Day 18 / Aug 20 Live Class)
 - [ ] 12:00 PM - 01:30 PM: PROJECT 5 (Retail Supply Chain & FK Architecture) - Part 1
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-12] & Solve 14 Questions (Day 11: Parent/Child Destruction Tests)
-- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 14 Questions (Day 1: DB Architecture & DDL/DML)
+- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-12] & Solve 20 Questions (Day 11: Parent/Child Destruction Tests)
+- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 20 Questions (Day 1: DB Architecture & DDL/DML)
 - [ ] 05:00 PM - 06:00 PM: PROJECT 5 - Part 2 (Completion & Code Validation)
 - [ ] 06:00 PM - 06:30 PM: English Practice (Task 7)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 8 (SATURDAY, AUG 22) - TARGET: DAY 2 + AUG 21 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-21] & Solve 14 Questions (Day 19 / Aug 21 Live Class)
-- [ ] 12:00 PM - 01:30 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 14 Questions (Day 2: Clauses & Pattern Matching)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-21] & Solve 20 Questions (Day 19 / Aug 21 Live Class)
+- [ ] 12:00 PM - 01:30 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 20 Questions (Day 2: Clauses & Pattern Matching)
 - [ ] 02:00 PM - 04:00 PM: Weekly Social Presence (Filter, compile, and publish SQL Optimization insights on LinkedIn/GitHub)
 - [ ] 04:00 PM - 04:30 PM: English Practice (Task 8)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
