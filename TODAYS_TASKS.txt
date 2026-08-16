@@ -4,8 +4,8 @@
 
 [!] SPECIAL NOTICE: Morning Mock Interview Class + Afternoon Admission Duty. Evening dedicated to English drill, SQL revision & GitHub streak lock.
 
-[ ] 10:30 AM - 12:30 PM : Mock Interview Live Class Session
-    -> In-depth behavioral & technical interview simulation
+[x] 10:30 AM - 12:30 PM : Mock Interview Live Class Session - DONE!
+    -> Notes documented in 01_SQL/01_CLASS_NOTES/Mock_interview/SQL Mock Interview Class — 16 August 2026.md
 [-] 12:30 PM - 07:30 PM : Friend's Admission Duty & Travel (Personal Outing)
     -> Offline / Away from desk
 [ ] 07:30 PM - 07:50 PM : English Practice Book (Task 1 / 125)

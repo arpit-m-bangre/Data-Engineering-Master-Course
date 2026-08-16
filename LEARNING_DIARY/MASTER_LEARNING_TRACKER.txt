@@ -65,7 +65,7 @@ DAY 1 (SATURDAY, AUG 15) - STATUS: SYSTEM LOCK & CAREER ROADMAP ALIGNMENT COMPLE
 - [x] 08:45 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
 DAY 2 (SUNDAY, AUG 16) - TARGET: MOCK INTERVIEW + ENGLISH TASK 1 + DAY 12/13 REVISION
-- [ ] 10:30 AM - 12:30 PM: Mock Interview Live Class Session
+- [x] 10:30 AM - 12:30 PM: Mock Interview Live Class Session - DONE!
 - [-] 12:30 PM - 07:30 PM: Friend's Admission Duty & Travel (Personal Outing)
 - [ ] 07:30 PM - 07:50 PM: English Practice Book (Task 1 / 125)
 - [ ] 07:50 PM - 09:20 PM: Class Note Re-write and Read Revision Note [2026-08-13] & 14 Practice Questions (Day 12: Retrofitting Constraints)
