@@ -64,14 +64,13 @@ DAY 1 (SATURDAY, AUG 15) - STATUS: SYSTEM LOCK & CAREER ROADMAP ALIGNMENT COMPLE
 - [-] 09:00 PM - 10:15 PM: LIVE CLASS (Cancelled - Faculty Holiday)
 - [x] 08:45 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
-DAY 2 (SUNDAY, AUG 16) - TARGET: DAYS 12 & 13 COMPLETION + DAYS 1 & 2 DRILLS (NO CLASS - FULL DEEP WORK)
-- [ ] 10:30 AM - 12:00 PM: Read Revision Note & Solve 14 Questions [2026-08-13] (Day 12: Retrofitting)
-- [ ] 12:00 PM - 02:00 PM: Class Note Re-write, Read Revision & Solve 14 Questions [2026-08-14] (Day 13: Set Operators)
-- [ ] 02:00 PM - 02:30 PM: English Practice (Task 1)
-- [ ] 03:00 PM - 05:30 PM: Class Note Re-write, Revision & Solve 14 Questions [2026-08-01] (Day 1: DB Architecture)
-- [ ] 05:30 PM - 07:00 PM: Class Note Re-write, Revision & Solve 14 Questions [2026-08-02] (Day 2: Clauses & LIKE)
-- [ ] 07:00 PM - 08:00 PM: Weekly Social Presence (LinkedIn/GitHub post compilation)
-- [ ] 10:15 PM            : Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
+DAY 2 (SUNDAY, AUG 16) - TARGET: MOCK INTERVIEW + ENGLISH TASK 1 + DAY 12/13 REVISION
+- [ ] 10:30 AM - 12:30 PM: Mock Interview Live Class Session
+- [-] 12:30 PM - 07:30 PM: Friend's Admission Duty & Travel (Personal Outing)
+- [ ] 07:30 PM - 07:50 PM: English Practice Book (Task 1 / 125)
+- [ ] 07:50 PM - 09:20 PM: Class Note Re-write and Read Revision Note [2026-08-13] & 14 Practice Questions (Day 12: Retrofitting Constraints)
+- [ ] 09:20 PM - 10:00 PM: Class Note Re-write and Read Revision Note [2026-08-14] (Day 13: Set Operators)
+- [ ] 10:00 PM - 10:15 PM: Commit & Push to GitHub (Maintain Streak 🔥) & 10:15 PM Strict Cutoff
 
 DAY 3 (MONDAY, AUG 17) - TARGET: PROJECT 1 & DAY 5
 - [ ] 10:30 AM - 01:00 PM: PROJECT 1 (E-Commerce Pipeline implementation)
