@@ -1,23 +1,25 @@
 ====================================================================
-                  DAILY MISSION: 16 AUG 2026 (SUNDAY)
+                  DAILY MISSION: 17 AUG 2026 (MONDAY)
 ====================================================================
 
-[!] SPECIAL NOTICE: Morning Mock Interview Class + Afternoon Admission Duty. Evening dedicated to English drill, SQL revision & GitHub streak lock.
+[!] SPECIAL NOTICE: Morning Pooja + College Admission duty (09:00 AM - 05:00 PM). Evening high-intensity study block (6:00 PM - 10:15 PM).
 
-[x] 10:30 AM - 12:30 PM : Mock Interview Live Class Session - DONE!
-    -> Notes documented in 01_SQL/01_CLASS_NOTES/Mock_interview/SQL Mock Interview Class — 16 August 2026.md
-[-] 12:30 PM - 07:30 PM : Friend's Admission Duty & Travel (Personal Outing)
-    -> Offline / Away from desk
-[ ] 07:30 PM - 07:50 PM : English Practice Book (Task 1 / 125)
+[-] 09:00 AM - 05:00 PM : Morning Pooja & College Admission Duty with Friend
+    -> Offline / Out of desk
+[-] 05:00 PM - 06:00 PM : Travel Return, Freshen Up & Desk Transition
+    -> Mental reset for study block
+[ ] 06:00 PM - 06:30 PM : English Practice Book (Task 1 / 125)
     -> Vocabulary, sentence formation & communication drills
-[ ] 07:50 PM - 09:20 PM : Class Note Re-write and Read Revision Note [2026-08-13] & 14 Practice Questions
+[ ] 06:30 PM - 08:45 PM : Class Note Re-write and Read Revision Note [2026-08-13] & 20 Practice Questions
     -> Day 12: Retrofitting Constraints (03_REVISION_NOTES/2026-08-13_REVISION.md & 05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL)
-[ ] 09:20 PM - 10:00 PM : Class Note Re-write and Read Revision Note [2026-08-14] (Day 13: Set Operators)
-    -> 03_REVISION_NOTES/2026-08-14_REVISION.md & Theory/Syntax Mastery
-[ ] 10:00 PM - 10:15 PM : GitHub Streak Push & Daily Portfolio Sync
-    -> Commit and push workspace changes to GitHub
-[!] 10:15 PM            : STRICT SLEEP & REST CUTOFF
+[-] 08:45 PM - 09:00 PM : Dinner Break & Live Class Prep
+    -> Get ready for evening lecture
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15)
+    -> Live lecture participation & active notes capture
+[ ] 10:15 PM - 10:20 PM : GitHub Streak Push & Daily Log Sync
+    -> Commit and push workspace changes to maintain streak 🔥
+[!] 10:20 PM            : STRICT SLEEP & REST CUTOFF
 
 ====================================================================
-*Note: Sunday has no evening live class. Strict 10:15 PM health cutoff enforced.*
+*Note: Next study session (Day 13 Set Operators & Project 1) shifts to Tuesday morning block.*
 ====================================================================

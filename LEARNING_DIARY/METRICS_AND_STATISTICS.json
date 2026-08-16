@@ -4,16 +4,16 @@
     "student_name": "Arpit Manoj Bangre",
     "batch": "Online Batch 15",
     "start_date": "2026-07-26",
-    "target_completion_date": "2026-08-24",
-    "current_streak_days": 1,
-    "last_active_date": "2026-08-15"
+    "target_completion_date": "2026-09-02",
+    "current_streak_days": 2,
+    "last_active_date": "2026-08-16"
   },
   "overall_metrics": {
     "total_modules": 7,
     "active_module": "01_SQL",
     "module_completion_percentage": 63.2,
     "backlog_debt_percentage": 36.8,
-    "target_zero_debt_date": "2026-08-24"
+    "target_zero_debt_date": "2026-09-02"
   },
   "sql_ecosystem_counters": {
     "class_notes_processed": 13,

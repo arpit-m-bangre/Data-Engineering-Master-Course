@@ -64,21 +64,20 @@ DAY 1 (SATURDAY, AUG 15) - STATUS: SYSTEM LOCK & CAREER ROADMAP ALIGNMENT COMPLE
 - [-] 09:00 PM - 10:15 PM: LIVE CLASS (Cancelled - Faculty Holiday)
 - [x] 08:45 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
-DAY 2 (SUNDAY, AUG 16) - TARGET: MOCK INTERVIEW + ENGLISH TASK 1 + DAY 12/13 REVISION
+DAY 2 (SUNDAY, AUG 16) - STATUS: MOCK INTERVIEW & GITHUB STREAK COMPLETED
 - [x] 10:30 AM - 12:30 PM: Mock Interview Live Class Session - DONE!
 - [-] 12:30 PM - 07:30 PM: Friend's Admission Duty & Travel (Personal Outing)
-- [ ] 07:30 PM - 07:50 PM: English Practice Book (Task 1 / 125)
-- [ ] 07:50 PM - 09:20 PM: Class Note Re-write and Read Revision Note [2026-08-13] & 14 Practice Questions (Day 12: Retrofitting Constraints)
-- [ ] 09:20 PM - 10:00 PM: Class Note Re-write and Read Revision Note [2026-08-14] (Day 13: Set Operators)
-- [ ] 10:00 PM - 10:15 PM: Commit & Push to GitHub (Maintain Streak 🔥) & 10:15 PM Strict Cutoff
+- [-] 07:30 PM - 10:00 PM: Rest & Personal Time (English Task 1 & Day 12/13 Revision rolled over to Day 3)
+- [x] 10:15 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
-DAY 3 (MONDAY, AUG 17) - TARGET: PROJECT 1 & DAY 5
-- [ ] 10:30 AM - 01:00 PM: PROJECT 1 (E-Commerce Pipeline implementation)
-- [ ] 02:00 PM - 04:30 PM: Class Note Re-write and Read Revision Note [2026-08-05] & Solve 20 Questions (Day 5: TRUNCATE vs DROP & ALTER)
-- [ ] 04:30 PM - 05:00 PM: English Practice (Task 3)
-- [ ] 05:00 PM - 06:00 PM: Spaced Repetition Revision: Test 1 Error Analysis (WHERE vs HAVING optimization)
+DAY 3 (MONDAY, AUG 17) - TARGET: POOJA/ADMISSION + ENGLISH TASK 1 + DAY 12 REVISION + LIVE CLASS
+- [-] 09:00 AM - 05:00 PM: Morning Pooja & College Admission Duty with Friend
+- [-] 05:00 PM - 06:00 PM: Travel Return, Freshen Up & Transition
+- [ ] 06:00 PM - 06:30 PM: English Practice Book (Task 1 / 125)
+- [ ] 06:30 PM - 08:45 PM: Class Note Re-write and Read Revision Note [2026-08-13] & 20 Practice Questions (Day 12: Retrofitting Constraints)
+- [-] 08:45 PM - 09:00 PM: Dinner Break & Setup
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
-- [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
+- [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & Strict Cutoff
 
 DAY 4 (TUESDAY, AUG 18) - TARGET: PROJECT 2 & DAY 6 + AUG 17 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-17] & Solve 20 Questions (Day 15 / Aug 17 Live Class)
