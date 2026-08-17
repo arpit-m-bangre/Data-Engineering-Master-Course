@@ -1,4 +1,5 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "node copy_tasks.cjs && vite build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
