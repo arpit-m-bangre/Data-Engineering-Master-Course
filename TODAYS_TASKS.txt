@@ -2,17 +2,13 @@
                   DAILY MISSION: 17 AUG 2026 (MONDAY)
 ====================================================================
 
-[!] SPECIAL NOTICE: Morning Pooja + College Admission duty (09:00 AM - 05:00 PM). Evening high-intensity study block (6:00 PM - 10:15 PM).
+[!] SPECIAL NOTICE: Morning Pooja + College Admission duty (09:00 AM - 06:00 PM). Rest & Recovery before Live Class (09:00 PM - 10:15 PM).
 
-[-] 09:00 AM - 05:00 PM : Morning Pooja & College Admission Duty with Friend
-    -> Offline / Out of desk
-[-] 05:00 PM - 06:00 PM : Travel Return, Freshen Up & Desk Transition
-    -> Mental reset for study block
-[ ] 06:00 PM - 06:30 PM : English Practice Book (Task 1 / 125)
-    -> Vocabulary, sentence formation & communication drills
-[ ] 06:30 PM - 08:45 PM : Class Note Re-write and Read Revision Note [2026-08-13] & 20 Practice Questions
-    -> Day 12: Retrofitting Constraints (03_REVISION_NOTES/2026-08-13_REVISION.md & 05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL)
-[-] 08:45 PM - 09:00 PM : Dinner Break & Live Class Prep
+[-] 09:00 AM - 06:00 PM : Morning Pooja & College Admission Duty with Friend
+    -> Offline / Out of desk & Travel Return
+[-] 06:00 PM - 08:45 PM : Rest, Physical Recovery & Recharge (Fatigue Reset)
+    -> Resting after long admission duty; prepping energy for live class
+[-] 08:45 PM - 09:00 PM : Dinner Break & Live Class Setup
     -> Get ready for evening lecture
 [ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15)
     -> Live lecture participation & active notes capture
@@ -21,5 +17,5 @@
 [!] 10:20 PM            : STRICT SLEEP & REST CUTOFF
 
 ====================================================================
-*Note: Next study session (Day 13 Set Operators & Project 1) shifts to Tuesday morning block.*
+*Note: English Task 1, Day 12 & Day 13 Revisions/Practice carry forward to Tuesday morning.*
 ====================================================================
