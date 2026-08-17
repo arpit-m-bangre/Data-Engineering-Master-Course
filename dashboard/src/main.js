@@ -15,21 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
   dateDisplay.textContent = today.toLocaleDateString('en-US', options);
 
   async function fetchTasks() {
+    const cacheBuster = `?t=${new Date().getTime()}`;
+    let text = null;
+
+    // 1. Fetch real-time live data directly from GitHub Raw
     try {
-      // Vercel build process now copies the file into the public directory
-      const cacheBuster = `?t=${new Date().getTime()}`;
-      const response = await fetch('/TODAYS_TASKS.txt' + cacheBuster, { cache: "no-store" });
-      
-      if (!response.ok) {
-        throw new Error("Failed to fetch task file. Ensure it is copied to the public directory.");
+      const ghResponse = await fetch(TASKS_URL + cacheBuster, { cache: "no-store" });
+      if (ghResponse.ok) {
+        text = await ghResponse.text();
       }
-      
-      const text = await response.text();
+    } catch (e) {
+      console.warn("GitHub Raw fetch failed, falling back to local file...", e);
+    }
+
+    // 2. Fallback to local /TODAYS_TASKS.txt if GitHub Raw is unreachable
+    if (!text) {
+      try {
+        const localResponse = await fetch('/TODAYS_TASKS.txt' + cacheBuster, { cache: "no-store" });
+        if (localResponse.ok) {
+          text = await localResponse.text();
+        }
+      } catch (err) {
+        console.error("Local fallback also failed:", err);
+      }
+    }
+
+    if (text) {
       renderTasks(text);
-      
-    } catch (error) {
-      tasksContainer.innerHTML = `<div class="error">Failed to load tasks. Check console.</div>`;
-      console.error(error);
+    } else {
+      tasksContainer.innerHTML = `<div class="error">Failed to load tasks. Please refresh the page.</div>`;
     }
   }
 
