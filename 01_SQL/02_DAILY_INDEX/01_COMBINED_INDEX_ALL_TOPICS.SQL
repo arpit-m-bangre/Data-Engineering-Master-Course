@@ -111,6 +111,18 @@ SECTION 1: DAILY CLASS BREAKDOWN
     13.5 Structural Validation Rules for Set Operations (Same Columns & Data Types)
     13.6 Applying Set Operators to Individual Columns vs Entire Tables
 
+14. DAY 14 (AUGUST 17) - TEMPORAL DATA TYPES & DATE FUNCTIONS
+    14.1 DATE & DATETIME Data Types in Enterprise Databases
+    14.2 Datepart Interval Codes (YY, QQ, MM, DY, DD, WK, WEEKDAY, HH, N, S, MS)
+    14.3 Valid Date Literal Formats (MM/DD/YYYY, YYYY-MM-DD ISO Standard)
+    14.4 GETDATE() Function (Capturing Live System Clock Timestamps)
+    14.5 DATEDIFF() Function (Calculating Time Differences Across Intervals)
+    14.6 Boundary Counting Mechanics & Overflow Traps in DATEDIFF
+    14.7 DATEPART() Function (Extracting Calendar & Clock Components)
+    14.8 DATEADD() Function (Adding/Subtracting Time Horizons)
+    14.9 EOMONTH() Function (Finding Month-End Dates & Leap Year Handling)
+    14.10 Practical Table Scenarios (Churn Analysis, Weekend Onboarding, Aging)
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -123,7 +135,7 @@ A. DATABASE CONCEPTS & ENVIRONMENT
    • Information Schema Auditing (INFORMATION_SCHEMA.TABLES, TABLE_CONSTRAINTS)
 
 B. DATA DEFINITION LANGUAGE (DDL)
-   • CREATE TABLE & Column Data Types (INT, FLOAT, DECIMAL, VARCHAR, CHAR, TEXT)
+   • CREATE TABLE & Column Data Types (INT, FLOAT, DECIMAL, VARCHAR, CHAR, TEXT, DATE, DATETIME)
    • ALTER TABLE (ADD Column, DROP Column, ALTER COLUMN Data Type & Size)
    • Retrofitting Constraints on Existing Live Tables (ADD CONSTRAINT)
    • Column Properties Modification (ALTER COLUMN NOT NULL)
@@ -166,5 +178,13 @@ G. CONSTRAINTS & KEYS
    • DEFAULT (Automatic fallback values, retrofitting via ADD CONSTRAINT ... DEFAULT ... FOR)
    • IDENTITY (Auto-incrementing seed & step, column property rules on live tables)
    • FOREIGN KEY (Referential Integrity, Parent/Child Table Protection Rules, Retrofitting via ADD CONSTRAINT)
+
+H. TEMPORAL & DATE FUNCTIONS
+   • GETDATE() (Server timestamp retrieval)
+   • DATEDIFF() (Interval difference, boundary crossing logic, integer overflow traps)
+   • DATEPART() (Component extraction: Year, Quarter, Month, Weekday, Hour, Minute)
+   • DATEADD() (Future/past date shift calculations, recurring cycles)
+   • EOMONTH() (Month-end date generation, leap year auto-detection)
+   • Real-world scenarios (Customer churn, SLAs, aging, anniversary alerts)
 
 ================================================================================

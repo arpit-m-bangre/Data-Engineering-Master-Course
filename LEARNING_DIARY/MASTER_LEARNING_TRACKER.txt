@@ -18,7 +18,7 @@ Last Updated: 14 AUG 2026   | Overall SQL Completion: [░░░░░░░░�
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 12) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 14) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -37,6 +37,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 11   | Parent/Child Destruction Tests            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
 13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
+14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [ ] PENDING | [ ] PENDING   | [ ] PENDING   | BACKLOG
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
@@ -70,14 +71,12 @@ DAY 2 (SUNDAY, AUG 16) - STATUS: MOCK INTERVIEW & GITHUB STREAK COMPLETED
 - [-] 07:30 PM - 10:00 PM: Rest & Personal Time (English Task 1 & Day 12/13 Revision rolled over to Day 3)
 - [x] 10:15 PM            : Commit & Push to GitHub (Streak Maintained 🔥)
 
-DAY 3 (MONDAY, AUG 17) - TARGET: POOJA/ADMISSION + ENGLISH TASK 1 + DAY 12 REVISION + LIVE CLASS
-- [-] 09:00 AM - 05:00 PM: Morning Pooja & College Admission Duty with Friend
-- [-] 05:00 PM - 06:00 PM: Travel Return, Freshen Up & Transition
-- [ ] 06:00 PM - 06:30 PM: English Practice Book (Task 1 / 125)
-- [ ] 06:30 PM - 08:45 PM: Class Note Re-write and Read Revision Note [2026-08-13] & 20 Practice Questions (Day 12: Retrofitting Constraints)
-- [-] 08:45 PM - 09:00 PM: Dinner Break & Setup
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
-- [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & Strict Cutoff
+DAY 3 (MONDAY, AUG 17) - STATUS: POOJA/ADMISSION + REST + LIVE CLASS (DAY 14) DONE
+- [x] 09:00 AM - 06:00 PM: Morning Pooja & College Admission Duty with Friend - DONE!
+- [x] 06:00 PM - 08:45 PM: Rest & Physical Recovery (Fatigue Reset) - DONE!
+- [x] 08:45 PM - 09:00 PM: Dinner Break & Setup - DONE!
+- [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 14: Date & DateTime Functions) - DONE!
+- [x] 10:15 PM            : Commit & Push to GitHub (Streak Day 4 Maintained 🔥) - DONE!
 
 DAY 4 (TUESDAY, AUG 18) - TARGET: PROJECT 2 & DAY 6 + AUG 17 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-17] & Solve 20 Questions (Day 15 / Aug 17 Live Class)

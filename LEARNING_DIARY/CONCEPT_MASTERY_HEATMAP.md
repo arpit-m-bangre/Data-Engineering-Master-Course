@@ -14,6 +14,7 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **4. Constraints & Data Governance** | 7 | 5 | 2 | 🔴 High |
 | **5. Relational Architecture & Foreign Keys** | 5 | 5 | 0 | 🔴 High |
 | **6. Dynamic Schema Retrofitting & Metadata** | 4 | 3 | 1 | 🔴 High |
+| **7. Temporal Data Types & Date Functions** | 5 | 5 | 0 | 🔴 High |
 
 ---
 
@@ -78,6 +79,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C5.3** | Destruction Rules: `DELETE` on Referenced Parent | MASTERED | Foreign Key reference violation error | 1 | 🔴 High |
 | **C5.4** | Destruction Rules: `TRUNCATE` on Referenced Parent | MASTERED | `TRUNCATE` failing even if child table has 0 rows | 1 | 🔴 High |
 | **C5.5** | Destruction Rules: `DROP` & Bottom-Up Teardown | MASTERED | Incorrect teardown order (Parent before Child) | 1 | 🔴 High |
+
+---
+
+### SECTION 7: TEMPORAL DATA TYPES & DATE FUNCTIONS
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C7.1** | `GETDATE()` Live Timestamp Retrieval | MASTERED | Time zone differences vs UTC | 1 | 🟢 Low |
+| **C7.2** | `DATEDIFF()` Interval Differences & Boundary Crossing | MASTERED | Counting boundary crossing vs continuous elapsed time | 1 | 🔴 High |
+| **C7.3** | `DATEDIFF()` Integer Overflow with High Precision (`MS`) | MASTERED | Msg 535 overflow when interval exceeds ~24.8 days | 1 | 🔴 High |
+| **C7.4** | `DATEPART()` Component Extraction (`WEEKDAY`, `QQ`, etc.) | MASTERED | Misinterpreting 1-based Sunday weekday index | 1 | 🟡 Medium |
+| **C7.5** | `DATEADD()` & `EOMONTH()` Horizon & Cycle Calculations | MASTERED | Invalid date string conversions (Msg 241) | 1 | 🔴 High |
 
 ---
 
