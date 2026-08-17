@@ -74,3 +74,17 @@ DAY-WISE LEARNING TRACKER (FROM 13 AUG ONWARDS)
   * Re-aligned Zero-Debt completion target to 02 September 2026 factoring in 4 zero-day emergency buffer.
 
 ============================================================
+
+17 AUG (MONDAY)
+- MORNING POOJA + COLLEGE ADMISSION DUTY + LIVE CLASS:
+  * Morning Pooja & College Admission Duty with Friend (09:00 AM - 06:00 PM). Offline all day.
+  * Returned tired — Rest & Recovery block (06:00 PM - 08:45 PM).
+  * Dinner & Class Prep (08:45 PM - 09:00 PM).
+  * Attended Live Data Engineering Class, Batch 15 (09:00 PM - 10:15 PM). Active notes capture.
+  * Dashboard v3.0 deployed — 3-layer data strategy (bundle ?raw + Vercel static + GitHub Raw fallback).
+  * GitHub Actions + Vercel auto-deploy pipeline configured permanently (one-time setup done).
+  * GitHub streak maintained (Day 3 🔥). Commit: fd19818.
+  * English Task 1 & Day 12/13 Revisions rolled over to Tuesday morning.
+
+============================================================
+
