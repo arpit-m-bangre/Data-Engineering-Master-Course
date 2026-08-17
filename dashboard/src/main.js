@@ -1,8 +1,7 @@
 import './style.css'
+import embeddedTasks from '../public/TODAYS_TASKS.txt?raw'
 
 // Configuration
-// Replace this with your actual GitHub Raw URL once pushed.
-// Example: "https://raw.githubusercontent.com/username/repo/main/TODAYS_TASKS.txt"
 const TASKS_URL = "https://raw.githubusercontent.com/arpit-m-bangre/Data-Engineering-Master-Course/main/TODAYS_TASKS.txt";
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,36 +13,39 @@ document.addEventListener('DOMContentLoaded', () => {
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
   dateDisplay.textContent = today.toLocaleDateString('en-US', options);
 
+  // 1. Instantly render embedded tasks from the bundle
+  if (embeddedTasks) {
+    renderTasks(embeddedTasks);
+  }
+
   async function fetchTasks() {
     const cacheBuster = `?t=${new Date().getTime()}`;
     let text = null;
 
-    // 1. Fetch real-time live data directly from GitHub Raw
+    // Try local /TODAYS_TASKS.txt first to avoid GitHub 429 rate limit
     try {
-      const ghResponse = await fetch(TASKS_URL + cacheBuster, { cache: "no-store" });
-      if (ghResponse.ok) {
-        text = await ghResponse.text();
+      const localResponse = await fetch('/TODAYS_TASKS.txt' + cacheBuster, { cache: "no-store" });
+      if (localResponse.ok) {
+        text = await localResponse.text();
       }
-    } catch (e) {
-      console.warn("GitHub Raw fetch failed, falling back to local file...", e);
+    } catch (err) {
+      console.warn("Local fetch failed, falling back to GitHub Raw...", err);
     }
 
-    // 2. Fallback to local /TODAYS_TASKS.txt if GitHub Raw is unreachable
+    // Try GitHub Raw if local was not found
     if (!text) {
       try {
-        const localResponse = await fetch('/TODAYS_TASKS.txt' + cacheBuster, { cache: "no-store" });
-        if (localResponse.ok) {
-          text = await localResponse.text();
+        const ghResponse = await fetch(TASKS_URL + cacheBuster, { cache: "no-store" });
+        if (ghResponse.ok) {
+          text = await ghResponse.text();
         }
-      } catch (err) {
-        console.error("Local fallback also failed:", err);
+      } catch (e) {
+        console.warn("GitHub Raw fetch failed:", e);
       }
     }
 
-    if (text) {
+    if (text && text !== embeddedTasks) {
       renderTasks(text);
-    } else {
-      tasksContainer.innerHTML = `<div class="error">Failed to load tasks. Please refresh the page.</div>`;
     }
   }
 
