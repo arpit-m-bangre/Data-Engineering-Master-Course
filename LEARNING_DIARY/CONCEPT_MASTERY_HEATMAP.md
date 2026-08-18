@@ -15,6 +15,7 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **5. Relational Architecture & Foreign Keys** | 5 | 5 | 0 | 🔴 High |
 | **6. Dynamic Schema Retrofitting & Metadata** | 4 | 3 | 1 | 🔴 High |
 | **7. Temporal Data Types & Date Functions** | 5 | 5 | 0 | 🔴 High |
+| **8. Relational Joins & Cartesian Math** | 5 | 5 | 0 | 🔴 High |
 
 ---
 
@@ -91,9 +92,18 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C7.4** | `DATEPART()` Component Extraction (`WEEKDAY`, `QQ`, etc.) | MASTERED | Misinterpreting 1-based Sunday weekday index | 1 | 🟡 Medium |
 | **C7.5** | `DATEADD()` & `EOMONTH()` Horizon & Cycle Calculations | MASTERED | Invalid date string conversions (Msg 241) | 1 | 🔴 High |
 
+### SECTION 8: RELATIONAL JOINS, CARTESIAN PRODUCTS & NULL LOGIC
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C8.1** | Cartesian Cross-Product ($N \times M$) & Join Engine Model | MASTERED | Unbounded join runaway explosion on unindexed tables | 1 | 🔴 High |
+| **C8.2** | Three-Valued Logic in Equi-Joins (`NULL = NULL` is UNKNOWN) | MASTERED | Assuming `NULL` matches `NULL` in `INNER JOIN` | 1 | 🔴 High |
+| **C8.3** | `INTERSECT` vs `INNER JOIN` Architectural Divergence | MASTERED | Confusing deduplicated Set intersection with Cartesian multiplication | 1 | 🔴 High |
+| **C8.4** | String Literal `'NULL'` vs SQL Keyword `NULL` | MASTERED | Quoted string `'NULL'` matching other strings vs keyword NULL | 1 | 🔴 High |
+| **C8.5** | Master Mathematical Row-Count Formulas for Joins | MASTERED | Incorrectly double-counting unmatched rows in `FULL OUTER JOIN` | 1 | 🔴 High |
+
 ---
 
-## 🎯 TOP 4 WEAK SPOTS & REVISION TARGETS
+## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:
    - *Key Rule*: In SQL Server, `TRUNCATE TABLE` is a log-header DDL operation. Although metadata-based, page deallocations ARE logged and CAN be rolled back inside `BEGIN TRANSACTION ... ROLLBACK`!
@@ -103,3 +113,5 @@ This document tracks every core SQL & Data Engineering technical concept covered
    - *Key Rule*: Pre-filtering rows via `WHERE` before grouping reduces rows processed by `GROUP BY` and accelerates queries. `HAVING` should be reserved strictly for aggregate group thresholds.
 4. **Data Sanitization Before Retrofitting Constraints**:
    - *Key Rule*: Always execute pre-cleaning queries (`DELETE ... WHERE col IS NULL`) prior to running `ALTER TABLE ADD CONSTRAINT` to avoid Error Msg 1750.
+5. **The Cartesian Duplicate Explosion in Production ETL Pipelines**:
+   - *Key Rule*: Always verify join key cardinality and deduplicate staging tables before joining to avoid accidental $N \times M$ Cartesian runaway row explosions.

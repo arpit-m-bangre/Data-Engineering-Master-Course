@@ -123,6 +123,18 @@ SECTION 1: DAILY CLASS BREAKDOWN
     14.9 EOMONTH() Function (Finding Month-End Dates & Leap Year Handling)
     14.10 Practical Table Scenarios (Churn Analysis, Weekend Onboarding, Aging)
 
+15. DAY 15 (AUGUST 18) - FOUNDATIONS OF RELATIONAL JOINS & CARTESIAN PRODUCTS
+    15.1 Relational Joins Architectural Overview & 4-Class Roadmap
+    15.2 Primary Taxonomy: INNER JOIN vs OUTER JOINS (LEFT, RIGHT, FULL OUTER)
+    15.3 Venn Diagram Model vs Cartesian Cross-Product Model (N x M)
+    15.4 Set Operators (UNION/INTERSECT) vs Relational Joins (Vertical vs Horizontal)
+    15.5 The Fundamental Join Equation: JOIN = (Cartesian Cross Product) + (Filter Condition)
+    15.6 Three-Valued Logic (3VL) & Why NULL = NULL is UNKNOWN in Relational Joins
+    15.7 INTERSECT vs INNER JOIN Behavior on NULL Values
+    15.8 Step-by-Step Cartesian Matching Matrix with Duplicate Keys (N x M combinations)
+    15.9 Tier-1 Interview Trap: String Literal 'NULL' vs SQL Keyword NULL
+    15.10 Master Data Engineer Row-Count Formulas for INNER, LEFT, RIGHT & FULL OUTER JOINS
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -187,4 +199,14 @@ H. TEMPORAL & DATE FUNCTIONS
    • EOMONTH() (Month-end date generation, leap year auto-detection)
    • Real-world scenarios (Customer churn, SLAs, aging, anniversary alerts)
 
+I. RELATIONAL JOINS & CARTESIAN PRODUCTS
+   • Cartesian Cross-Product Mechanics (N x M Unconditional Combination)
+   • INNER JOIN Logic (Equality Predicate Matching)
+   • OUTER JOINS (LEFT, RIGHT, FULL OUTER - Unmatched Row Preservation with NULLs)
+   • Set Operators vs Relational Joins (Vertical Stacking vs Horizontal Merging)
+   • NULL Equality & Three-Valued Logic in Join Conditions
+   • String Literal 'NULL' vs SQL Keyword NULL Distinctions
+   • Master Mathematical Row-Count Formulas for Tier-1 Data Engineering Interviews
+
 ================================================================================
+

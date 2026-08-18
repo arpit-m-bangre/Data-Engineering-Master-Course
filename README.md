@@ -62,7 +62,7 @@ $$\text{Revision Notes} \longrightarrow \text{Index-Wise Practice Questions} \lo
 ## 👤 Author & Journey
 - **Role**: Data Engineering Trainee / Aspirant
 - **Interviews Completed**: HCL Tech Technical Interview (10 August 2026) 🎯
-- **Central Course Blueprint**: [`COURSE_CONTEXT.md`](./COURSE_CONTEXT.md)
+- **Central Course Blueprint**: [`COURSE_CONTEXT.md`](./EXTRA_MAGICAL_FILES/COURSE_CONTEXT.md)
 - **Global Agent Protocols**: [`AGENTS.md`](./.agents/AGENTS.md)
 - **Central Tracking Monitor**: [`MASTER_LEARNING_TRACKER.txt`](./LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt)
 - **Concept Mastery Heatmap**: [`CONCEPT_MASTERY_HEATMAP.md`](./LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md)
