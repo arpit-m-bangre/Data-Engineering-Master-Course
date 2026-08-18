@@ -2,35 +2,35 @@
                   DAILY MISSION: 18 AUG 2026 (TUESDAY)
 ====================================================================
 
-[!] MISSION OBJECTIVE: Master Temporal Functions (Aug 17 Class), Execute Project 2 (Healthcare Pipeline), Clear Day 6 Backlog & Maintain Streak Day 5!
+[!] MISSION OBJECTIVE: Finish Temporal 20-Q Drill, Execute Project 1 (E-Commerce Pipeline), Clear Day 6 Backlog (Aggregates & GROUP BY), Live Class & Streak Day 5!
 
-[ ] 10:00 AM - 11:30 AM : Class Note Re-write and Read Revision Note [2026-08-17] & Solve 20 Questions
-    -> Temporal & DateTime Functions (GETDATE, DATEDIFF, DATEADD, EOMONTH) + 20-Q Drill
-[ ] 11:30 AM - 01:00 PM : PROJECT 2 — Healthcare Hospital Admissions & Billing Pipeline (Part 1)
-    -> Patient Master, Admission Flow, Bed Allocation & Billing Schema in 06_PROJECTS/PROJECT2.SQL
-[ ] 01:00 PM - 02:00 PM : Lunch Break & Mind Recharge 🥗
-    -> Healthy meal and rest
-[ ] 02:00 PM - 04:00 PM : Class Note Re-write and Read Revision Note [2026-08-06] & Solve 20 Questions
-    -> Backlog Day 6: Aggregates (SUM, AVG, COUNT), GROUP BY, HAVING Rules & NULL Traps
-[ ] 04:00 PM - 05:00 PM : PROJECT 2 — Part 2 (Analytical Queries & Verification)
-    -> Execute Hospital Revenue KPIs, LOS (Length of Stay) analytics & query testing
-[ ] 05:00 PM - 05:30 PM : English Practice (Task 1 / 125) 📖
-    -> Sentence Structuring & Technical Communication Drill
-[ ] 05:30 PM - 06:00 PM : Evening Tea & Refreshment Break ☕
-    -> Short walk, tea, and physical recharge
-[ ] 06:00 PM - 07:30 PM : High-Priority Bug Traps & Heatmap Review
-    -> TRUNCATE inside Transactions, NOT NULL Alter rules & Logical Execution Order
-[ ] 07:30 PM - 08:45 PM : Dinner & Personal Recharge Break 🍽️
-    -> Dinner and wind down before class
+[x] 10:00 AM - 01:00 PM : Morning Sprint — Class Note Re-write [2026-08-17], Revision Note Read & All 4 In-Class Tasks ✅
+    -> Re-write done, Revision done, Faculty in-class tasks 100% completed & 9/20 drills solved!
+[x] 01:00 PM - 02:00 PM : Lunch Break & Rest 🥗
+    -> Meal and rest completed ✅
+[x] 02:00 PM - 03:00 PM : Power Nap & Physical Recharge Window 💤
+    -> Energy reset & brain recharge for afternoon sprint ✅
+[ ] 03:00 PM - 03:45 PM : Complete Remaining 11 Temporal Questions (Q10 to Q20)
+    -> Finish last 11 drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-17_QUESTIONS.SQL
+[ ] 03:45 PM - 05:30 PM : PROJECT 1 — E-Commerce Sales & Customer Analytics Pipeline
+    -> Build customer schema, transaction engine & analytical queries in 06_PROJECTS/PROJECT1.SQL
+[ ] 05:30 PM - 06:00 PM : English Practice (Task 1 / 125) & Evening Tea Break ☕📖
+    -> Sentence structuring drill, technical vocabulary & short physical recharge
+[ ] 06:00 PM - 07:30 PM : Class Note Re-write and Read Revision Note [2026-08-06] & Solve Practice Questions
+    -> Backlog Day 6: Aggregates (SUM, AVG, COUNT), GROUP BY, HAVING Rules & Practice Drills
+[ ] 07:30 PM - 08:45 PM : Dinner & Personal Relaxation Break 🍽️
+    -> Dinner and wind down before live class
 [ ] 08:45 PM - 09:00 PM : Live Class Setup & Environment Warmup
-    -> SSMS query environment ready, notes open
+    -> SSMS query environment prepped, notes open
 [ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 15)
     -> Live lecture, concept absorption & hands-on tracking
 [ ] 10:15 PM - 10:20 PM : GitHub Streak Push & Daily Log Sync
     -> Commit and push workspace changes to maintain Streak Day 5 🔥
-[!] 10:20 PM            : STRICT SLEEP & REST CUTOFF
+[ ] 10:20 PM - 11:30 PM : Late-Night Backlog Turbo Block (Deep Query Practice & Bug Traps)
+    -> Complete pending Day 6 drills, review Heatmap bug traps & finalize zero-debt
+[!] 11:30 PM            : STRICT SLEEP & REST CUTOFF
 
 ====================================================================
-*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | 10:20 PM Hard Cutoff*
+*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | 11:30 PM Hard Cutoff*
 *Daily Quote: "Consistency is the DNA of Mastery. Every query written is a step closer to Data Engineer."*
 ====================================================================

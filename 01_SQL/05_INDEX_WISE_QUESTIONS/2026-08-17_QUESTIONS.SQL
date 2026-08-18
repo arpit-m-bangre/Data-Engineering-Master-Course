@@ -15,6 +15,7 @@ IF OBJECT_ID('CustomerSales', 'U') IS NOT NULL DROP TABLE CustomerSales;
 IF OBJECT_ID('InsurancePolicies', 'U') IS NOT NULL DROP TABLE InsurancePolicies;
 IF OBJECT_ID('UserSubscriptions', 'U') IS NOT NULL DROP TABLE UserSubscriptions;
 
+
 -- Table 1: Employee Onboarding Records
 CREATE TABLE EmpOnboarding
 (
@@ -90,6 +91,11 @@ VALUES
 (4, 'Alice Brown',  'Enterprise', '2026-08-10', 1);
 
 
+select * from EmpOnboarding
+select * from CustomerSales
+select * from InsurancePolicies
+select * from UserSubscriptions
+
 -- ===================================================
 -- 🔰 PHASE 1: BASIC SYNTAX DRILLS (Q1 TO Q5)
 -- ===================================================
@@ -98,6 +104,7 @@ VALUES
 --     date and timestamp, labeled as CurrentTime.
 -- Write your SQL Query below:
 
+select getdate() as CurrentTime 
 
 
 
@@ -106,13 +113,21 @@ VALUES
 --     Display EmpName, JoiningDate, and MonthsServed.
 -- Write your SQL Query below:
 
+select * from EmpOnboarding
 
+select EmpName,JoiningDate,datediff(mm,JoiningDate,getdate()) as MonthsServed 
+from EmpOnboarding 
 
 
 -- Q3. Extract the numeric Quarter and Month from
 --     each OrderDate in CustomerSales.
 -- Write your SQL Query below:
 
+
+select * from CustomerSales
+
+select *,datepart(qq,orderdate) as quarter_ , datepart(month,orderdate) as month_
+from CustomerSales
 
 
 
@@ -121,7 +136,7 @@ VALUES
 --     months to StartDate using DATEADD.
 -- Write your SQL Query below:
 
-
+select *,dateadd(mm,6,StartDate) as NextSemiAnnualPremiumDate from InsurancePolicies
 
 
 -- Q5. Use the EOMONTH function to display each
@@ -129,8 +144,7 @@ VALUES
 --     last date of that joining month.
 -- Write your SQL Query below:
 
-
-
+select *,EOMONTH(JoiningDate) as last_date from EmpOnboarding 
 
 
 -- ===================================================
@@ -142,7 +156,8 @@ VALUES
 --     (Saturday or Sunday). Display EmpName and JoiningDate.
 -- Write your SQL Query below:
 
-
+select * from EmpOnboarding
+where datepart(weekday,joiningdate) in (1,7) 
 
 
 -- Q7. Calculate the total OrderAmount and average
@@ -151,6 +166,11 @@ VALUES
 -- Write your SQL Query below:
 
 
+select * from CustomerSales
+
+select datepart(mm,orderdate) as order_month,sum(orderamount) as total_orderamount ,avg(orderamount) as avg_orderamount
+from CustomerSales
+group by datepart(mm,orderdate)
 
 
 -- Q8. Retrieve all CustomerSales orders that were
@@ -158,7 +178,8 @@ VALUES
 --     Use DATEPART(QQ, ...) in the WHERE clause.
 -- Write your SQL Query below:
 
-
+select * from CustomerSales
+where datepart(qq,orderdate) in (1,2) 
 
 
 -- Q9. Calculate each employee's approximate age in
@@ -166,8 +187,9 @@ VALUES
 --     between BirthDate and GETDATE().
 -- Write your SQL Query below:
 
+select * from EmpOnboarding
 
-
+select *,datediff(year,BirthDate,getdate()) as approximate_age from EmpOnboarding
 
 -- Q10. Find all InsurancePolicies where the policy
 --      is scheduled to mature within the current year
