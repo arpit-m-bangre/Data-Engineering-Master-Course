@@ -42,29 +42,37 @@ VALUES
 (104, 3, 'Customer Gamma', '2026-05-02', 12000.00),
 (105, 4, 'Customer Delta', '2026-08-10', 4500.00);
 
+select * from Newdate
+select * from CustomerSales
+
 
 -- ============================================================================
 -- 📝 IN-CLASS FACULTY TASKS
 -- ============================================================================
 
 -- TASK 1:
--- practice all above functions using table create table for that as well
+-- practice all above functions using table create table for that as well --> 20 questions are enough for the practice thing 
 -- (Filter records joined more than 5 months ago)
 -- Write your SQL Query below:
 
-
+select * from Newdate 
+where datediff(mm,joiningdate,getdate()) > 5 
 
 
 -- TASK 2:
 -- display emp -- joining on weekends only that is work on weekends only
 -- Write your SQL Query below:
 
-
+select * from Newdate
+where datepart(weekday,joiningdate) in (1,7)
 
 
 -- TASK 3:
 -- month wise avg sale
 -- Write your SQL Query below:
+
+select datepart(MONTH,orderdate) as sales_month, avg(saleamount) as avg_sales_amount from CustomerSales
+group by datepart(MONTH,orderdate)
 
 
 
@@ -74,4 +82,19 @@ VALUES
 -- Write your SQL Query below:
 
 
+/* 
+my attempt 
+select * from CustomerSales
+where datediff(dd,OrderDate,getdate())>90
+*/
 
+
+-- gpt helped me 
+
+SELECT 
+    CustomerID,
+    CustomerName,
+    MAX(OrderDate) AS last_purchase_date
+FROM CustomerSales
+GROUP BY CustomerID, CustomerName
+HAVING DATEDIFF(DAY, MAX(OrderDate), GETDATE()) > 90;
