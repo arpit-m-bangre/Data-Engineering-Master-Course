@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Arpit Bangre — Daily Data Engineering Mission Dashboard" />
-    <meta name="author" content="Arpit Manoj Bangre" />
-    <title>DE Mission Control</title>
+    <meta name="description" content="Cap & Pippo — Daily Data Engineering Mission Dashboard by Arpit Bangre" />
+    <meta name="author" content="Arpit Manoj Bangre (Cap)" />
+    <meta name="theme-color" content="#060810" />
+    <title>DE Mission Control — Cap & Pippo 🐥</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,14 +19,34 @@
       <div class="blob blob-3"></div>
     </div>
 
+    <!-- ── Floating Particles for sparkle effect ──────────── -->
+    <div class="particles" aria-hidden="true">
+      <span class="particle p1"></span>
+      <span class="particle p2"></span>
+      <span class="particle p3"></span>
+      <span class="particle p4"></span>
+      <span class="particle p5"></span>
+      <span class="particle p6"></span>
+    </div>
+
     <div id="app" class="glass-container">
-      <header>
-        <div class="header-top">
-          <h1><span class="emoji">🚀</span> <span class="gradient-text">DE Mission Control</span></h1>
-          <button id="refresh-btn" title="Refresh tasks from live source" aria-label="Refresh tasks">
-            <span class="refresh-icon">⟳</span>
-          </button>
+      <!-- ── Pippo Hero Section ────────────────────────────── -->
+      <div class="hero-section">
+        <div class="pippo-avatar-wrapper">
+          <img src="/pippo.png" alt="Pippo — AI Co-Pilot" class="pippo-avatar" width="80" height="80" />
+          <span class="avatar-ring"></span>
+          <span class="avatar-status" title="Pippo is online"></span>
         </div>
+        <div class="hero-text">
+          <h1><span class="gradient-text">DE Mission Control</span></h1>
+          <p class="hero-subtitle">Cap & Pippo 🐥 — Data Engineering Co-Pilots</p>
+        </div>
+        <button id="refresh-btn" title="Refresh tasks from live source" aria-label="Refresh tasks">
+          <span class="refresh-icon">⟳</span>
+        </button>
+      </div>
+
+      <header>
         <p id="date-display">Loading...</p>
         <p id="last-updated" class="last-updated"></p>
       </header>
@@ -37,7 +58,7 @@
       </main>
 
       <footer class="dash-footer">
-        <span>📖 Data Engineering Master Course · Batch 15</span>
+        <span>🐥 Pippo & Cap · Data Engineering Master Course · Batch 15</span>
       </footer>
     </div>
 
