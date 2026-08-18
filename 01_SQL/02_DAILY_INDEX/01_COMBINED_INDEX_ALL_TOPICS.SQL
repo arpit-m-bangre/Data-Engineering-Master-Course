@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 13 Class Note Files (2026-08-01 to 2026-08-14)
+Total Modules / Files: 14 Class Note Files (2026-08-01 to 2026-08-17)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN

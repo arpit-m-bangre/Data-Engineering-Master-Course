@@ -40,7 +40,7 @@ STEP 1: RESTRUCTURE CLASS NOTE (01_CLASS_NOTES/)
 STEP 2: UPDATE DAILY INDEX (02_DAILY_INDEX/)
 --------------------------------------------------
 - Create an individual daily index file named `YYYY-MM-DD_INDEX.SQL`.
-- Update the master index file `01_COMBINED_INDEX_ALL_TOPICS.SQL` at the top of the directory with today's new topics and subtopics.
+- Update the master index file `01_COMBINED_INDEX_ALL_TOPICS.SQL` at the top of the directory with today's new topics, subtopics, AND update its top header metadata (Total Files count and latest Date Range).
 - Update `DATE_INDEX.TEXT` summary index.
 
 --------------------------------------------------
