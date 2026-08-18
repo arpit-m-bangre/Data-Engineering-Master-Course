@@ -69,9 +69,16 @@ SELECT GETDATE() AS CurrentServerDateTime;
    - Returns an INT data type.
 */
 
--- 3.1 Difference in Months:
-SELECT DATEDIFF(MM, '10/02/2008', GETDATE()) AS diff_in_month;
--- Valid format: MM/DD/YYYY
+-- 3.1 difference in months 
+
+select datediff (mm,'2016-08-18',getdate()) as diff_in_month
+-- valid yyyy-mm-dd 
+
+select datediff (mm,'2016/08/18',getdate()) as diff_in_month
+-- valid yyyy/mm/dd
+
+select datediff (mm,'08-18-2016',getdate()) as diff_in_month
+-- valid mm/dd/yyyy
 
 -- 3.2 Difference in Weeks:
 SELECT DATEDIFF(WK, '10/02/2008', GETDATE()) AS diff_in_week;
@@ -90,6 +97,27 @@ SELECT DATEDIFF(DY, GETDATE(), '10/02/2008') AS diff_in_days_negative;
 -- SELECT DATEDIFF(MM, '24/02/2008', '24/02/20081');
 -- Msg 241, Level 16, State 1:
 -- Conversion failed when converting date and/or time from character string.
+-- Reason for the error:
+-- SQL Server may interpret the date string as MM/DD/YYYY.
+-- So '24/02/2008' can be interpreted as:
+--     Month = 24
+--     Day   = 02
+--     Year  = 2008
+--
+-- But there is no month 24 because months can only be 1 to 12.
+-- Therefore, SQL Server cannot convert '24/02/2008' into a valid date.
+-- This causes the error:
+--     Msg 241: Conversion failed when converting date and/or time
+--              from character string.
+--
+-- The problem is NOT that the year 2008 or 2081 is invalid.
+-- The problem is the ambiguous date format DD/MM/YYYY.
+--
+-- To avoid this, use an unambiguous date format such as YYYY-MM-DD:
+-- SELECT DATEDIFF(MM, '2008-02-24', '2081-02-24');
+
+-- This will work 
+select datediff(mm,'02/02/2008','02/02/2081')
 
 -- 3.6 Difference in Minutes:
 SELECT DATEDIFF(N, '08/16/2026', GETDATE()) AS diff_in_minutes;

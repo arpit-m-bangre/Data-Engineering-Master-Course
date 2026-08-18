@@ -55,7 +55,7 @@ STEP 3: GENERATE REVISION NOTES (03_REVISION_NOTES/)
   6. STEP 4 — CONNECTION WITH PREVIOUS TOPICS (Cumulative Connections)
   7. STEP 5 — COMMON MISTAKES & DEBUGGING (Buggy query, Root cause, Correction)
   8. STEP 6 — REAL-WORLD DATA ENGINEERING APPLICATION (Industry business scenarios)
-  9. STEP 7 — MINI ASSESSMENT & SOLUTION KEY (Self-check evaluation)
+  9. STEP 7 — MINI ASSESSMENT & SOLUTION KEY (Self-check evaluation using 100% PURE Markdown — NEVER use raw HTML tags like <details>, <summary>, <b>, etc.)
   10. REVISION SUMMARY & ACTION PLAN
 
 --------------------------------------------------

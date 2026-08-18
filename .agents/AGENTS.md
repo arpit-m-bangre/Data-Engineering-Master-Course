@@ -84,6 +84,10 @@ d:\DE COURSE\
 - Before generating a daily plan, updating the `MASTER_LEARNING_TRACKER.txt`, or generating any backlog clearance schedule, the agent MUST explicitly check the physical file count in the directory. 
 - Example: If only 5 projects exist physically in `06_PROJECTS/`, the tracker must strictly state 5. You are mathematically forbidden from hallucinating Projects 6, 7, and 8. The system MUST be in 100% perfect sync with the physical disk at all times.
 
+### 9. Pure Markdown Formatting Law (Zero Raw HTML Tags)
+- NEVER use raw HTML tags such as `<details>`, `<summary>`, `<b>`, `<i>`, `<br>`, or `<div>` in any revision notes (`.md`), class notes, or documentation files.
+- All headings, questions, answers, and solution keys MUST be written using 100% pure GitHub Flavored Markdown (e.g. `### Heading`, `> Blockquotes`, `**bold text**`, `*italic*`, fenced code blocks ` ``` `) to ensure universal, crystal-clear readability across all markdown viewers, IDE previews, and mobile apps without raw tag visibility issues.
+
 ---
 
 ## 🤖 DAILY AI MENTOR PROTOCOL
