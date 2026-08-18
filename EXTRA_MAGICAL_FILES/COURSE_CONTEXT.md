@@ -24,6 +24,15 @@ d:\DE COURSE\
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake, Redshift & Dimensional Modeling (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- AWS / Azure Data Services & Infrastructure (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow & Production DAG Scheduling (Upcoming)
+├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Tier-1 Guides, Focus Rulebook & Identity
+│   ├── FOCUS_RULE_BOOK.md        <-- Calm, Bio-Paced Focus, Phone & Friend Boundary Protocols
+│   ├── TOP_TIER_DATA_ENGINEERING_COMPANIES_HIRING_GUIDE.md <-- Tier-1 Companies (Pune/BLR/HYD) & CTCs
+│   ├── GOAL.md                   <-- North Star 25+ LPA Target & 200-Day Streak Manifesto
+│   ├── PIPPO_AND_CAPTAIN_IDENTITY.md <-- Pippo & Cap Identity Blueprint
+│   ├── COURSE_CONTEXT.md         <-- Central Course Blueprint & Matrix
+│   ├── ANTIGRAVITY_MODEL_USAGE_STRATEGY.md <-- AI Model Optimization Guide
+│   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
+│   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
 └── LEARNING_DIARY/               <-- Central Course Brain & Daily Mentor Intelligence System
     ├── MASTER_LEARNING_TRACKER.txt   <-- Live Single Source of Truth (SSOT) Progress Matrix & 11-Day Plan
     ├── DAILY_MENTOR_GUIDE.md        <-- Daily AI Mentor Protocol & System Guide

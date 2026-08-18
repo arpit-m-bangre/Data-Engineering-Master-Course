@@ -16,6 +16,7 @@ DE COURSE
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake, Redshift, Dimensional Modeling (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- Cloud Platforms (AWS / Azure Data Services) (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow & Pipeline Scheduling (Upcoming)
+├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Tier-1 Guides, Focus Rulebook & Identity
 └── LEARNING_DIARY/               <-- Daily Progress Logs & Discipline Tracking
 ```
 

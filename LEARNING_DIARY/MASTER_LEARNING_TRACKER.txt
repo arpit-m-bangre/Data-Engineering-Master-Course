@@ -37,7 +37,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 11   | Parent/Child Destruction Tests            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
 13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [ ] PENDING | [ ] PENDING   | [ ] PENDING   | BACKLOG
+14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [x] DONE      | [x] DONE      | [x] DONE      | COMPLETED
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
@@ -78,19 +78,16 @@ DAY 3 (MONDAY, AUG 17) - STATUS: POOJA/ADMISSION + REST + LIVE CLASS (DAY 14) DO
 - [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 14: Date & DateTime Functions) - DONE!
 - [x] 10:15 PM            : Commit & Push to GitHub (Streak Day 4 Maintained 🔥) - DONE!
 
-DAY 4 (TUESDAY, AUG 18) - TARGET: PROJECT 2 & DAY 6 + AUG 17 CLASS REVISION
-- [ ] 10:00 AM - 11:30 AM: Class Note Re-write and Read Revision Note [2026-08-17] & Solve 20 Questions (Temporal Functions)
-- [ ] 11:30 AM - 01:00 PM: PROJECT 2 (Healthcare Hospital Admissions & Billing Pipeline) - Part 1
-- [ ] 01:00 PM - 02:00 PM: Lunch Break & Mind Recharge 🥗
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-06] & Solve 20 Questions (Day 6: Aggregates & GROUP BY)
-- [ ] 04:00 PM - 05:00 PM: PROJECT 2 - Part 2 (Analytical KPIs & Execution Verification)
-- [ ] 05:00 PM - 05:30 PM: English Practice (Task 1 / 125) 📖
-- [ ] 05:30 PM - 06:00 PM: Evening Tea & Refreshment Break ☕
-- [ ] 06:00 PM - 07:30 PM: High-Priority Bug Traps & Heatmap Review (TRUNCATE rollback, Execution order)
-- [ ] 07:30 PM - 08:45 PM: Dinner & Personal Recharge Break 🍽️
-- [ ] 08:45 PM - 09:00 PM: Live Class Setup & Environment Warmup
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 15)
-- [ ] 10:15 PM - 10:20 PM: Commit & Push to GitHub (Streak Day 5 🔥) & 10:20 PM Strict Cutoff
+DAY 4 (TUESDAY, AUG 18) - STATUS: TEMPORAL DRILLS & LIVE CLASS (DAY 15: JOINS) COMPLETED
+- [x] 10:00 AM - 01:00 PM: Class Note Re-write [2026-08-17], Revision Note Read & All 4 In-Class Tasks - DONE!
+- [x] 01:00 PM - 02:00 PM: Lunch Break & Meal Recharge 🥗 - DONE!
+- [x] 02:00 PM - 03:00 PM: Power Nap & Physical Recharge Window 💤 - DONE!
+- [x] 03:00 PM - 03:45 PM: Complete Remaining 11 Temporal Questions (Q10 to Q20) & Line-by-Line Audit - DONE!
+- [-] 03:45 PM - 07:30 PM: Friend's Birthday Celebration & Social Outing (Project 1, English & Day 6 rolled over)
+- [x] 07:30 PM - 08:45 PM: Dinner Break & Personal Relaxation - DONE!
+- [x] 08:45 PM - 09:00 PM: Live Class Setup & SSMS Environment Warmup - DONE!
+- [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 15: JOINS Foundations, Set vs Join, Cross Product & NULL Behavior) - DONE!
+- [x] 10:15 PM            : Commit & Push to GitHub (Streak Day 5 Maintained 🔥) - DONE!
 
 DAY 5 (WEDNESDAY, AUG 19) - TARGET: PROJECT 3 & DAYS 7/8 + AUG 18 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-18] & Solve 20 Questions (Day 16 / Aug 18 Live Class)
