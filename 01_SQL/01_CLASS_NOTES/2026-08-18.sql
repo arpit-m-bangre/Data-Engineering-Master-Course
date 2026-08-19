@@ -97,7 +97,7 @@
     +-------------------------+------------------------------------+------------------------------------+
 
     CORE JOIN EQUATION:
-    $$\text{JOIN} = (\text{Cartesian Cross-Product } N \times M) + (\text{ON Filter Predicate})$$
+    JOIN = (Cartesian Cross-Product N x M) + (ON Filter Predicate)
 */
 
 -- ====================================================================================================
@@ -259,24 +259,24 @@
 /*
     MASTER FORMULAS TO MEMORIZE FOR TIER-1 INTERVIEWS:
     --------------------------------------------------
-    1. For every distinct value $k$ present in both tables:
-       $$\text{InnerMatch}(k) = \text{Count}_{T1}(k) \times \text{Count}_{T2}(k)$$
-       *(Note: Exclude SQL NULL keyword from InnerMatch)*
+    1. For every distinct value 'k' present in both tables:
+       InnerMatch(k) = Count_T1(k) * Count_T2(k)
+       (Note: Exclude SQL NULL keyword from InnerMatch)
 
     2. Total Inner Join Count:
-       $$\text{Count}(\text{INNER JOIN}) = \sum_{k} \text{InnerMatch}(k)$$
+       Count(INNER JOIN) = Sum of InnerMatch(k) for all matching keys 'k'
 
     3. Total Left Join Count:
-       $$\text{Count}(\text{LEFT JOIN}) = \text{Count}(\text{INNER JOIN}) + \text{Count}(\text{Unmatched Rows in } T1)$$
+       Count(LEFT JOIN) = Count(INNER JOIN) + Count(Unmatched Rows in T1)
 
     4. Total Right Join Count:
-       $$\text{Count}(\text{RIGHT JOIN}) = \text{Count}(\text{INNER JOIN}) + \text{Count}(\text{Unmatched Rows in } T2)$$
+       Count(RIGHT JOIN) = Count(INNER JOIN) + Count(Unmatched Rows in T2)
 
     5. Total Full Outer Join Count:
-       $$\text{Count}(\text{FULL OUTER JOIN}) = \text{Count}(\text{INNER JOIN}) + \text{Unmatched}_{T1} + \text{Unmatched}_{T2}$$
+       Count(FULL OUTER JOIN) = Count(INNER JOIN) + Unmatched_T1 + Unmatched_T2
 
     6. Total Cross Join Count:
-       $$\text{Count}(\text{CROSS JOIN}) = \text{TotalRows}(T1) \times \text{TotalRows}(T2)$$
+       Count(CROSS JOIN) = TotalRows(T1) * TotalRows(T2)
 */
 
 -- ====================================================================================================

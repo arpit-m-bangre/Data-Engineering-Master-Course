@@ -100,6 +100,10 @@ d:\DE COURSE\
 - NEVER use raw HTML tags such as `<details>`, `<summary>`, `<b>`, `<i>`, `<br>`, or `<div>` in any revision notes (`.md`), class notes, or documentation files.
 - All headings, questions, answers, and solution keys MUST be written using 100% pure GitHub Flavored Markdown (e.g. `### Heading`, `> Blockquotes`, `**bold text**`, `*italic*`, fenced code blocks ` ``` `) to ensure universal, crystal-clear readability across all markdown viewers, IDE previews, and mobile apps without raw tag visibility issues.
 
+### 10. Clean ASCII Math & Zero LaTeX Law
+- NEVER use raw LaTeX math delimiters (`$$...$$`, `$...$`, `\text{...}`, `\sum`, `\times`) in SQL (`.sql`) files, practice drill files, daily indexes, or plain text notes.
+- All mathematical equations, formulas, row-count rules, and logic proofs MUST be written in 100% clean, human-readable plain ASCII text (e.g. `Count(INNER JOIN) = Sum of (Count_T1(k) * Count_T2(k))`, `N x M`) so they render perfectly and cleanly inside SSMS, text editors, IDEs, and mobile viewers without raw LaTeX syntax clutter.
+
 ---
 
 ## 🤖 DAILY AI MENTOR PROTOCOL
@@ -108,7 +112,7 @@ d:\DE COURSE\
   1. Inspect `MASTER_LEARNING_TRACKER.txt` and `METRICS_AND_STATISTICS.json`.
   2. Check `REVISION_RECOMMENDER_ENGINE.md` for high-priority weak spots.
   3. Issue a clear, hour-by-hour action plan following the 3-stage mastery rule:
-     $$\text{Revision Note (.md)} \longrightarrow \text{Practice Questions (.SQL)} \longrightarrow \text{Project Pipeline (.SQL)}$$
+     Revision Note (.md) -> Practice Questions (.SQL) -> Project Pipeline (.SQL)
 - Enforce the **10:15 PM strict study cutoff** to protect health and consistency.
 
 ---

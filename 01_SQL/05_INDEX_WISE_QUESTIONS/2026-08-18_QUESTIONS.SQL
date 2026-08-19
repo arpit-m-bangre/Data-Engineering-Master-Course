@@ -145,7 +145,7 @@ b) In an `INNER JOIN` between `Employees` and `Departments`, how are identically
 QUESTION 10: Mathematical Proof of The Full Outer Join Identity
 -------------------------------------------------------------------------------------------------------
 Prove mathematically and logically why the row count of a `FULL OUTER JOIN` can always be computed as:
-$$\text{Count}(\text{FULL OUTER}) = \text{Count}(\text{INNER JOIN}) + \text{Unmatched}_{T1} + \text{Unmatched}_{T2}$$
+Count(FULL OUTER JOIN) = Count(INNER JOIN) + Unmatched_T1 + Unmatched_T2
 Explain what each term represents and why no rows are double-counted.
 
 -- Write your Theoretical Explanation & Mental Breakdown below:
