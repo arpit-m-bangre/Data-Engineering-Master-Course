@@ -1,5 +1,5 @@
 -- ====================================================================================================
--- 🎓 FACULTY IN-CLASS & HOMEWORK TASK SOLUTIONS
+-- 🎓 FACULTY IN-CLASS & HOMEWORK TASKS
 -- 🏢 MODULE 01: SQL Relational Architecture & Query Engine
 -- 📆 CLASS DATE: 19 AUGUST 2026 (Day 16)
 -- 🎯 TOPIC: Practical Relational Joins, Anti-Joins, Table Aliases & Month-wise Sales Aggregations
@@ -122,89 +122,63 @@ VALUES
 (9, 70000.00, 31),
 (10, 65000.00, 30);
 
+-- Verify Seed Tables
+SELECT * FROM Customers;
+SELECT * FROM Orders;
+SELECT * FROM p_info;
+SELECT * FROM D_info;
+SELECT * FROM set1;
+SELECT * FROM set2;
+
 
 -- ====================================================================================================
--- 📝 PART 1: FACULTY HOMEWORK SOLUTIONS
+-- 📝 PART 1: FACULTY HOMEWORK TASKS (WRITE QUERIES BELOW)
 -- ====================================================================================================
 
 -- TASK 1: Calculate Month-Wise Average Sales across all customer orders.
--- Explanation: Extract month component from customer transaction date (t_date) and compute AVG(amount).
-SELECT 
-    DATENAME(MONTH, c.t_date) AS order_month,
-    MONTH(c.t_date) AS month_number,
-    AVG(o.amount) AS avg_sales_amount,
-    SUM(o.amount) AS total_sales_amount,
-    COUNT(o.o_id) AS total_orders
-FROM Customers AS c
-JOIN Orders AS o
-    ON c.custid = o.custid
-GROUP BY 
-    DATENAME(MONTH, c.t_date),
-    MONTH(c.t_date)
-ORDER BY 
-    month_number ASC;
+-- Requirements: Extract month name/number from t_date and calculate average amount per month.
+-- Write your SQL Query below:
+
+
 
 
 -- TASK 2: Display Customers who did NOT order anything till date.
--- Explanation: Anti-Join technique using LEFT JOIN + WHERE o.o_id IS NULL.
-SELECT 
-    c.custid,
-    c.custname,
-    c.city,
-    c.t_date AS registration_date
-FROM Customers AS c
-LEFT JOIN Orders AS o
-    ON c.custid = o.custid
-WHERE o.o_id IS NULL;
+-- Requirements: Identify customers with zero matching orders in Orders table (Anti-Join).
+-- Write your SQL Query below:
+
+
 
 
 -- TASK 3: Display Customer Name (custname), Month Name, Product ID (p_id), and Order Amount.
--- Explanation: Join Customers and Orders, project specific columns, resolving all potential ambiguities.
-SELECT 
-    c.custname,
-    DATENAME(MONTH, c.t_date) AS month_name,
-    o.p_id AS product_id,
-    o.amount AS order_amount
-FROM Customers AS c
-JOIN Orders AS o
-    ON c.custid = o.custid
-ORDER BY 
-    c.custname ASC;
+-- Requirements: Join Customers with Orders and project specific columns avoiding any ambiguity.
+-- Write your SQL Query below:
+
+
 
 
 -- ====================================================================================================
--- 📝 PART 2: IN-CLASS MEDICAL & DEPARTMENT TASKS
+-- 📝 PART 2: IN-CLASS MEDICAL & DEPARTMENT TASKS (WRITE QUERIES BELOW)
 -- ====================================================================================================
 
 -- TASK 4: Display Patients with their Assigned Doctor Name.
-SELECT 
-    p.pname AS patient_name,
-    d.Dname AS doctor_name
-FROM p_info AS p
-JOIN D_info AS d
-    ON p.p_id = d.p_id;
+-- Requirements: Display pname and Dname for patients who have an assigned doctor.
+-- Write your SQL Query below:
+
+
 
 
 -- TASK 5: Display Patients who have NOT been assigned any Doctor till date.
-SELECT 
-    p.p_id AS patient_id,
-    p.pname AS patient_name
-FROM p_info AS p
-LEFT JOIN D_info AS d
-    ON p.p_id = d.p_id
-WHERE d.d_id IS NULL;
+-- Requirements: Anti-join on p_info and D_info.
+-- Write your SQL Query below:
+
+
 
 
 -- TASK 6: Department-wise Average Salary (Preserving All Departments).
-SELECT 
-    s1.dept AS department,
-    AVG(s2.salary) AS avg_salary,
-    COUNT(s1.id) AS total_employees,
-    COUNT(s2.salary) AS employees_with_salary
-FROM set1 AS s1
-LEFT JOIN set2 AS s2
-    ON s1.id = s2.id
-GROUP BY 
-    s1.dept
-ORDER BY 
-    avg_salary DESC;
+-- Requirements: Group by dept from set1 and calculate AVG(salary) from set2 using appropriate join.
+-- Write your SQL Query below:
+
+
+
+
+-- ====================================================================================================
