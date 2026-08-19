@@ -22,23 +22,24 @@ Last Updated: 19 AUG 2026   | Overall SQL Completion: [░░░░░░░░�
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
-DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE | 20-Q PRACTICE | STATUS
+DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE | PRACTICE DRILLS | STATUS
 -------------------------------------------------------------------------------------------------------------
-01   | DB Architecture & DDL/DML                 | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-02   | Clauses & Pattern Matching                | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-03   | Filtering & Substring Search              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-04   | Arithmetic, UPDATE & DELETE               | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-05   | TRUNCATE vs DROP & ALTER                  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-06   | Aggregates & GROUP BY                     | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-07   | Execution Order & HAVING Rules            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-08   | Complex Scenarios & Error Analysis        | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-09   | Constraints (PK, UNIQUE, CHECK)           | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-10   | DEFAULT, IDENTITY & FK Rules              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-11   | Parent/Child Destruction Tests            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
-13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
-14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [x] DONE      | [x] DONE      | [x] DONE      | COMPLETED
-15   | Foundations of Joins & Cartesian Math     | [x] DONE      | [x] DONE      | [x] DONE      | COMPLETED
+01   | DB Architecture & DDL/DML                 | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+02   | Clauses & Pattern Matching                | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+03   | Filtering & Substring Search              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+04   | Arithmetic, UPDATE & DELETE               | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+05   | TRUNCATE vs DROP & ALTER                  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+06   | Aggregates & GROUP BY                     | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+07   | Execution Order & HAVING Rules            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+08   | Complex Scenarios & Error Analysis        | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+09   | Constraints (PK, UNIQUE, CHECK)           | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+10   | DEFAULT, IDENTITY & FK Rules              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+11   | Parent/Child Destruction Tests            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
+15   | Foundations of Joins & Cartesian Math     | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
+16   | ANSI Joins Syntax, Ambiguity & Group By   | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
@@ -91,16 +92,17 @@ DAY 4 (TUESDAY, AUG 18) - STATUS: TEMPORAL DRILLS & LIVE CLASS (DAY 15: JOINS) C
 - [x] 10:15 PM            : Commit & Push to GitHub (Streak Day 5 Maintained 🔥) - DONE!
 
 DAY 5 (WEDNESDAY, AUG 19) - TARGET: JOINS REVISION, PROJECT 1, ENGLISH TASK 1, BACKLOG & LIVE CLASS
-- [ ] 12:30 PM - 01:45 PM: Class Note Re-write and Read Revision Note [2026-08-18] (Day 15: JOINS Foundations, Cartesian Cross Product & NULL Behavior)
-- [ ] 01:45 PM - 02:45 PM: Solve 14 Targeted Practice Questions [2026-08-18] in SSMS
-- [ ] 02:45 PM - 03:45 PM: Lunch Break & Power Recharge Window 🥗💤
-- [ ] 03:45 PM - 05:15 PM: PROJECT 1 (E-Commerce Sales & Customer Analytics Pipeline)
-- [ ] 05:15 PM - 06:15 PM: English Practice Book (Task 1) & Technical Vocabulary Review
-- [ ] 06:15 PM - 07:15 PM: Class Note Re-write and Read Revision Note [2026-08-06] (Day 6: Aggregates & GROUP BY)
-- [ ] 07:15 PM - 08:45 PM: Dinner Break, Evening Walk & Physical Rest 🍽️🚶‍♂️
-- [ ] 08:45 PM - 09:00 PM: Live Class Setup & SSMS Environment Warmup 💻
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Online Batch 15) 🎓
-- [ ] 10:15 PM            : Commit & Push to GitHub (Streak Day 6 Maintained 🔥) & 10:15 PM Strict Cutoff
+- [x] 12:30 PM - 01:45 PM: Class Note Re-write and Read Revision Note [2026-08-18] (Day 15: JOINS Foundations) - DONE!
+- [x] 01:45 PM - 02:45 PM: Solve 14 Targeted Practice Questions [2026-08-18] in SSMS - DONE!
+- [x] 02:45 PM - 03:45 PM: Lunch Break & Power Recharge Window 🥗💤 - DONE!
+- [x] 07:15 PM - 08:45 PM: Dinner Break, Evening Walk & Physical Rest 🍽️🚶‍♂️ - DONE!
+- [x] 08:45 PM - 09:00 PM: Live Class Setup & SSMS Environment Warmup 💻 - DONE!
+- [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 16: ANSI Joins, Ambiguity & Aggregations) 🎓 - DONE!
+- [x] 10:15 PM - 10:30 PM: Post-Class Quick Break & Ecosystem Sync (2026-08-19 Notes/Index/Revision/Tasks/Questions) 🐥 - DONE!
+- [ ] 10:30 PM - 12:00 AM: PROJECT 1 (E-Commerce Sales & Customer Analytics Pipeline)
+- [ ] 12:00 AM - 01:00 AM: Class Note Re-write and Read Revision Note [2026-08-06] (Day 6: Aggregates & GROUP BY)
+- [ ] 01:00 AM - 02:00 AM: English Practice Book (Task 1) & Technical Vocabulary Review
+- [ ] 02:00 AM - 02:15 AM: Final Commit & Push to GitHub (Streak Day 6 Maintained 🔥)
 
 DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAYS 9/10 + AUG 19 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-19] & Solve 20 Questions (Day 17 / Aug 19 Live Class)

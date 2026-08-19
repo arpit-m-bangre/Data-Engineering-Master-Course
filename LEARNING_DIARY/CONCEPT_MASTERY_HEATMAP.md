@@ -92,14 +92,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C7.4** | `DATEPART()` Component Extraction (`WEEKDAY`, `QQ`, etc.) | MASTERED | Misinterpreting 1-based Sunday weekday index | 1 | 🟡 Medium |
 | **C7.5** | `DATEADD()` & `EOMONTH()` Horizon & Cycle Calculations | MASTERED | Invalid date string conversions (Msg 241) | 1 | 🔴 High |
 
-### SECTION 8: RELATIONAL JOINS, CARTESIAN PRODUCTS & NULL LOGIC
+### SECTION 8: RELATIONAL JOINS, CARTESIAN PRODUCTS & ADVANCED PATTERNS
 | ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
 | :---: | :--- | :---: | :--- | :---: | :---: |
-| **C8.1** | Cartesian Cross-Product ($N \times M$) & Join Engine Model | MASTERED | Unbounded join runaway explosion on unindexed tables | 1 | 🔴 High |
+| **C8.1** | Cartesian Cross-Product (N x M) & Join Engine Model | MASTERED | Unbounded join runaway explosion on unindexed tables | 1 | 🔴 High |
 | **C8.2** | Three-Valued Logic in Equi-Joins (`NULL = NULL` is UNKNOWN) | MASTERED | Assuming `NULL` matches `NULL` in `INNER JOIN` | 1 | 🔴 High |
 | **C8.3** | `INTERSECT` vs `INNER JOIN` Architectural Divergence | MASTERED | Confusing deduplicated Set intersection with Cartesian multiplication | 1 | 🔴 High |
 | **C8.4** | String Literal `'NULL'` vs SQL Keyword `NULL` | MASTERED | Quoted string `'NULL'` matching other strings vs keyword NULL | 1 | 🔴 High |
 | **C8.5** | Master Mathematical Row-Count Formulas for Joins | MASTERED | Incorrectly double-counting unmatched rows in `FULL OUTER JOIN` | 1 | 🔴 High |
+| **C8.6** | ANSI Join Syntax & Column Ambiguity Resolution | MASTERED | Msg 209 Ambiguous column name error | 1 | 🔴 High |
+| **C8.7** | Anti-Join Pattern (`LEFT JOIN ... WHERE key IS NULL`) | MASTERED | Accidentally filtering on LEFT table key instead of RIGHT | 1 | 🔴 High |
+| **C8.8** | Relational Joins with `GROUP BY` Aggregations | MASTERED | Using `INNER JOIN` and dropping empty entities from reports | 1 | 🔴 High |
 
 ---
 
