@@ -11,8 +11,8 @@
   "overall_metrics": {
     "total_modules": 7,
     "active_module": "01_SQL",
-    "module_completion_percentage": 65.5,
-    "backlog_debt_percentage": 34.5,
+    "module_completion_percentage": 67.8,
+    "backlog_debt_percentage": 32.2,
     "target_zero_debt_date": "2026-09-02"
   },
   "sql_ecosystem_counters": {
@@ -20,7 +20,7 @@
     "daily_indexes_created": 16,
     "master_combined_index_files": 1,
     "revision_notes_total": 16,
-    "revision_notes_completed": 3,
+    "revision_notes_completed": 4,
     "practice_question_files": 16,
     "practice_questions_total_drills": 314,
     "practice_questions_completed_drills": 41,
