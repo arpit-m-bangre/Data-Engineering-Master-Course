@@ -1,8 +1,14 @@
 -- ====================================================================================================
+-- 🎥 RECOMMENDED VIDEO RESOURCE:
+-- URL: https://www.youtube.com/watch?v=aY7z4HcHm5M
+-- Note: Watch at 1.25x speed for visual clarity on SQL Joins foundations & Cartesian matching logic.
+-- ====================================================================================================
+
+-- ====================================================================================================
 -- 🎓 DATA ENGINEERING MASTER COURSE — CLASS NOTES
 -- 📅 DATE: 18 AUGUST 2026 (TUESDAY) | BATCH: ONLINE BATCH 15 (DAY 15)
 -- 👨‍🏫 MODULE 1: ENTERPRISE SQL ARCHITECTURE & QUERY ENGINE
--- 🎯 TOPIC: FOUNDATIONS OF RELATIONAL JOINS, CARTESIAN CROSS-PRODUCTS ($N \times M$), 
+-- 🎯 TOPIC: FOUNDATIONS OF RELATIONAL JOINS, CARTESIAN CROSS-PRODUCTS (N x M), 
 --          SET vs JOIN MECHANICS & THE NULL MATCHING LOGIC
 -- ====================================================================================================
 
