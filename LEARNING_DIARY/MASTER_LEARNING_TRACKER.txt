@@ -38,7 +38,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 12   | Retrofitting Constraints                  | [x] DONE      | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
 13   | Set Operators (UNION, INTERSECT, EXCEPT)  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | BACKLOG
 14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [x] DONE      | [x] DONE      | [x] DONE      | COMPLETED
-15   | Foundations of Joins & Cartesian Math     | [ ] PENDING   | [ ] PENDING   | [ ] PENDING   | IN PROGRESS
+15   | Foundations of Joins & Cartesian Math     | [x] DONE      | [x] DONE      | [x] DONE      | COMPLETED
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
