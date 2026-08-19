@@ -1,32 +1,32 @@
 ====================================================================
-                  DAILY MISSION: 18 AUG 2026 (TUESDAY)
+                  DAILY MISSION: 19 AUG 2026 (WEDNESDAY)
 ====================================================================
 
-[!] MISSION OBJECTIVE: Finish Temporal 20-Q Drill, Execute Project 1 (E-Commerce Pipeline), Clear Day 6 Backlog (Aggregates & GROUP BY), Live Class & Streak Day 5!
+[!] MISSION OBJECTIVE: Master Aug 18 JOINS Class Notes & Drills, Advance Project 1 (E-Commerce Pipeline), Clear Backlog, English Practice Task 1, Live Class & Maintain Streak Day 6!
 
-[x] 10:00 AM - 01:00 PM : Morning Sprint — Class Note Re-write [2026-08-17], Revision Note Read & All 4 In-Class Tasks ✅
-    -> Re-write done, Revision done, Faculty in-class tasks 100% completed & 9/20 drills solved!
-[x] 01:00 PM - 02:00 PM : Lunch Break & Rest 🥗
-    -> Meal and rest completed ✅
-[x] 02:00 PM - 03:00 PM : Power Nap & Physical Recharge Window 💤
-    -> Energy reset & brain recharge for afternoon sprint ✅
-[x] 03:00 PM - 03:45 PM : Complete Remaining 11 Temporal Questions (Q10 to Q20) ✅
-    -> Finished all 21 drills & audited line-by-line!
-[-] 03:45 PM - 07:30 PM : Friend's Birthday Celebration & Social Outing 🎂🎉
-    -> Personal time with friend (Project 1, English Task 1 & Day 6 rolled over to Aug 19)
-[x] 07:30 PM - 08:45 PM : Dinner & Personal Relaxation Break 🍽️
-    -> Dinner and wind down completed ✅
-[x] 08:45 PM - 09:00 PM : Live Class Setup & Environment Warmup 💻
-    -> SSMS query environment prepped, notes open ✅
-[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 15) ✅
-    -> Live lecture attended! Mastered JOINS foundation, Set vs Join, Cross Product & NULL behavior!
-[x] 10:15 PM - 10:20 PM : GitHub Streak Push & Daily Log Sync 🔥
-    -> Workspace synchronized to maintain Streak Day 5! ✅
-[-] 10:20 PM - 11:30 PM : Rest, Recovery & Sleep Cutoff 💤
-    -> Recharging for Wednesday high-output sprint!
-[!] 11:30 PM            : STRICT SLEEP & REST CUTOFF
+[ ] 12:30 PM - 01:45 PM : Sprint 1 — Class Note Re-write and Read Revision Note [2026-08-18]
+    -> Re-write 2026-08-18 notes, study 7-step revision note on JOINS foundations, Cartesian cross product & NULL behavior
+[ ] 01:45 PM - 02:45 PM : Sprint 2 — Practice Questions [2026-08-18] & SSMS Verification
+    -> Solve targeted practice drills in 2026-08-18_QUESTIONS.SQL from scratch in SSMS
+[ ] 02:45 PM - 03:45 PM : Lunch Break & Power Recharge Window 🥗💤
+    -> Bio-paced nutritious lunch and quick recharge reset
+[ ] 03:45 PM - 05:15 PM : Sprint 3 — Enterprise Project 1 (E-Commerce Sales & Customer Pipeline)
+    -> Hands-on project pipeline architecture in PROJECT1.SQL
+[ ] 05:15 PM - 06:15 PM : Sprint 4 — English Practice Book (Task 1) & Vocabulary Drills 📖
+    -> Complete 1 English task from 125-task book + technical vocabulary review
+[ ] 06:15 PM - 07:15 PM : Sprint 5 — Backlog Clearance (Day 6: Aggregates & GROUP BY)
+    -> Class Note Re-write and Read Revision Note [2026-08-06]
+[ ] 07:15 PM - 08:45 PM : Dinner Break, Evening Walk & Mental Reset 🍽️🚶‍♂️
+    -> Relax, refuel, and disconnect before live class
+[ ] 08:45 PM - 09:00 PM : Live Class Setup & SSMS Environment Warmup 💻
+    -> Open SSMS, check connection, open class notes
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15) 🎓
+    -> Live lecture attendance & real-time note taking
+[ ] 10:15 PM - 10:20 PM : GitHub Streak Commit & Push (Streak Day 6 🔥)
+    -> Push daily achievements to GitHub & trigger Vercel deployment
+[!] 10:15 PM            : STRICT STUDY CUTOFF & REST PROTOCOL
 
 ====================================================================
-*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | 11:30 PM Hard Cutoff*
-*Daily Quote: "Consistency is the DNA of Mastery. Every query written is a step closer to Data Engineer."*
+*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | 10:15 PM Hard Cutoff*
+*Daily Quote: "Mastery is built query by query. Stay disciplined, trust the pipeline, execute the plan."*
 ====================================================================

@@ -3,7 +3,7 @@
                                 SINGLE SOURCE OF TRUTH (SSOT)
 ====================================================================================================
 Student: ARPIT MANOJ BANGRE | Batch: ONLINE BATCH 15 | Role: Data Engineer Trainee
-Last Updated: 18 AUG 2026   | Overall SQL Completion: [░░░░░░░░░░] 0%
+Last Updated: 19 AUG 2026   | Overall SQL Completion: [░░░░░░░░░░] 0%
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -90,15 +90,17 @@ DAY 4 (TUESDAY, AUG 18) - STATUS: TEMPORAL DRILLS & LIVE CLASS (DAY 15: JOINS) C
 - [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 15: JOINS Foundations, Set vs Join, Cross Product & NULL Behavior) - DONE!
 - [x] 10:15 PM            : Commit & Push to GitHub (Streak Day 5 Maintained 🔥) - DONE!
 
-DAY 5 (WEDNESDAY, AUG 19) - TARGET: PROJECT 3 & DAYS 7/8 + AUG 18 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-18] & Solve 20 Questions (Day 16 / Aug 18 Live Class)
-- [ ] 12:00 PM - 01:30 PM: PROJECT 3 (Banking Transaction Audit & Fraud Engine) - Part 1
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-07] & Solve 20 Questions (Day 7: Execution Order & HAVING Rules)
-- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-08] & Solve 20 Questions (Day 8: Complex Scenarios & Error Analysis)
-- [ ] 05:00 PM - 06:00 PM: PROJECT 3 - Part 2 (Completion & Code Validation)
-- [ ] 06:00 PM - 06:30 PM: English Practice (Task 5)
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
-- [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
+DAY 5 (WEDNESDAY, AUG 19) - TARGET: JOINS REVISION, PROJECT 1, ENGLISH TASK 1, BACKLOG & LIVE CLASS
+- [ ] 12:30 PM - 01:45 PM: Class Note Re-write and Read Revision Note [2026-08-18] (Day 15: JOINS Foundations, Cartesian Cross Product & NULL Behavior)
+- [ ] 01:45 PM - 02:45 PM: Solve 14 Targeted Practice Questions [2026-08-18] in SSMS
+- [ ] 02:45 PM - 03:45 PM: Lunch Break & Power Recharge Window 🥗💤
+- [ ] 03:45 PM - 05:15 PM: PROJECT 1 (E-Commerce Sales & Customer Analytics Pipeline)
+- [ ] 05:15 PM - 06:15 PM: English Practice Book (Task 1) & Technical Vocabulary Review
+- [ ] 06:15 PM - 07:15 PM: Class Note Re-write and Read Revision Note [2026-08-06] (Day 6: Aggregates & GROUP BY)
+- [ ] 07:15 PM - 08:45 PM: Dinner Break, Evening Walk & Physical Rest 🍽️🚶‍♂️
+- [ ] 08:45 PM - 09:00 PM: Live Class Setup & SSMS Environment Warmup 💻
+- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Online Batch 15) 🎓
+- [ ] 10:15 PM            : Commit & Push to GitHub (Streak Day 6 Maintained 🔥) & 10:15 PM Strict Cutoff
 
 DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAYS 9/10 + AUG 19 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-19] & Solve 20 Questions (Day 17 / Aug 19 Live Class)
