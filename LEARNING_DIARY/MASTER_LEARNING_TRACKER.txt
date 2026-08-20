@@ -3,7 +3,7 @@
                                 SINGLE SOURCE OF TRUTH (SSOT)
 ====================================================================================================
 Student: ARPIT MANOJ BANGRE | Batch: ONLINE BATCH 15 | Role: Data Engineer Trainee
-Last Updated: 19 AUG 2026   | Overall SQL Completion: [░░░░░░░░░░] 0%
+Last Updated: 20 AUG 2026   | Overall SQL Completion: [░░░░░░░░░░] 0%
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ Last Updated: 19 AUG 2026   | Overall SQL Completion: [░░░░░░░░�
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 15) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 17) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -40,6 +40,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 14   | Date & DateTime Functions (DATEDIFF/DATEADD) | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 15   | Foundations of Joins & Cartesian Math     | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 16   | ANSI Joins Syntax, Ambiguity & Group By   | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
+17   | Multi-Table Joins, Cross & Equi Joins     | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
@@ -104,17 +105,16 @@ DAY 5 (WEDNESDAY, AUG 19) - STATUS: 🏆 100% MISSION ACCOMPLISHED (DAY 6 BACKLO
 - [x] 01:00 AM - 02:00 AM: English Practice Book (Task 1) & Technical Vocabulary Review - DONE! ✅
 - [x] 02:00 AM - 02:15 AM: Final Commit & Push to GitHub (Streak Day 6 Maintained 🔥) - DONE! ✅
 
-DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAY 6 QUESTIONS + DAY 9 + AUG 19 CLASS REVISION & TASKS
+DAY 6 (THURSDAY, AUG 20) - STATUS: 🏆 DAY 16 & DAY 6 100% ZERO-DEBT + LIVE CLASS (DAY 17) + LINKEDIN STRATEGY SPRINT
 - [x] 11:30 AM - 01:15 PM: Class Note Re-write and Read Revision Note [2026-08-19] + In-Class Tasks (6 Tasks in 2026-08-19_CLASS_TASK.SQL) + 14 Practice Drills - 100% DONE & AUDITED! ✅
 - [x] 01:15 PM - 04:00 PM: Extended Lunch Break & Bio-Paced Mental Recharge 🥗💤 - DONE!
 - [x] 04:00 PM - 05:00 PM: Backlog Clearance: Solve 20 Practice Drills in 2026-08-06_QUESTIONS.SQL (Day 6: Aggregates & GROUP BY -> 100% COMPLETE!) 📊 - DONE & AUDITED (17.8/20)! ✅
-- [ ] 05:00 PM - 06:15 PM: PROJECT 4 (HR Payroll & Data Validation Engine) - Part 1 (Schema & Constraints) 🛠️
-- [ ] 06:15 PM - 07:15 PM: PROJECT 4 - Part 2 (Complex Validation Queries & Audit) 💻
-- [ ] 07:15 PM - 08:30 PM: Dinner Break & Evening Walk 🍽️🚶‍♂️
-- [ ] 08:30 PM - 09:00 PM: English Practice (Task 2) & Class Setup 📖💻
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 17) 🎓
-- [ ] 10:30 PM - 12:00 AM: Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-10] & Solve Drills (Day 9: Constraints) 🛡️
-- [ ] 12:00 AM - 12:15 AM: Final Commit & Push to GitHub (Streak Day 7 Maintain 🔥) & Vercel Sync 🚀
+- [x] 07:15 PM - 08:30 PM: Dinner Break, YouTube SQL Roadmap Video & GitHub Profile Polish 🍽️🎥 - DONE! ✅
+- [x] 08:30 PM - 09:00 PM: English Practice (Task 2) & Class Setup 📖💻 - DONE! ✅
+- [x] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (Day 17: Multi-Table Joins, Cross Join & Equi Joins) 🎓 - DONE! ✅
+- [x] 10:15 PM - 10:30 PM: Post-Class Quick Break & Ecosystem Sync (2026-08-20 Notes/Index/Revision/Tasks/Questions) 🐥 - DONE! ✅
+- [x] 10:30 PM - 02:30 AM: LinkedIn & Social Presence Strategy Architecture Sprint 🚀 (ACTIVE - Projects 4 & Day 9 moved to dedicated sprints)
+- [x] 02:30 AM - 02:45 AM: Final Commit & Push to GitHub (Streak Day 7 Maintained 🔥) & Vercel Sync 🚀 - DONE! ✅
 
 DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/01 + AUG 20 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve Drills (Day 18 / Aug 20 Live Class)

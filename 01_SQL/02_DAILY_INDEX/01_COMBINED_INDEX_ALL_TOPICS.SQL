@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 16 Class Note Files (2026-08-01 to 2026-08-19)
+Total Modules / Files: 17 Class Note Files (2026-08-01 to 2026-08-20)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -147,6 +147,18 @@ SECTION 1: DAILY CLASS BREAKDOWN
     16.9 Data Type Independence & Implicit Coercion on Join ON Predicates
     16.10 Combining Relational Joins with Aggregate Functions (GROUP BY, AVG, COUNT)
     16.11 Faculty Homework Problems: Month-wise Average Sales & Order Anti-Joins
+
+17. DAY 17 (AUGUST 20) - MULTI-TABLE JOINS, CROSS JOIN CARTESIAN MATRICES & EQUI JOINS
+    17.1 Multi-Table Relational Join Architecture (Chaining 3+ Tables via ON Clauses)
+    17.2 Entity Modeling: Customer Master -> Orders Transactions -> Product Catalog
+    17.3 Enterprise Table Aliasing Best Practices (c, o, p) & Computed Columns
+    17.4 Multi-Table Aggregations: LEFT JOIN vs INNER JOIN Nullability & Total Spend
+    17.5 Combining Multi-Table Joins with LIKE, GROUP BY, HAVING and ORDER BY
+    17.6 Temporal Relational Filtering using DATEPART(qq, date) Quarter Slicing (Q1/Q3)
+    17.7 ANSI CROSS JOIN Syntax & Cartesian Multiplication Rules (N x M x P)
+    17.8 Practical Use Cases for CROSS JOIN: Matrix Pairing & Tournament Match Generation
+    17.9 Non-ANSI Legacy Equi Join (Comma-separated FROM with WHERE Predicate)
+    17.10 Architectural Comparison: ANSI SQL-92 Standard vs Legacy Comma Joins
 
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY

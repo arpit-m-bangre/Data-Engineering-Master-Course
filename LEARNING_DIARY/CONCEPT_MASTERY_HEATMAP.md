@@ -103,6 +103,9 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C8.6** | ANSI Join Syntax & Column Ambiguity Resolution | MASTERED | Msg 209 Ambiguous column name error | 1 | 🔴 High |
 | **C8.7** | Anti-Join Pattern (`LEFT JOIN ... WHERE key IS NULL`) | MASTERED | Accidentally filtering on LEFT table key instead of RIGHT | 1 | 🔴 High |
 | **C8.8** | Relational Joins with `GROUP BY` Aggregations | MASTERED | Using `INNER JOIN` and dropping empty entities from reports | 1 | 🔴 High |
+| **C8.9** | Multi-Table Chained Joins (3+ Tables) & Granularity | MASTERED | Joining on wrong table key in 3-way chain | 1 | 🔴 High |
+| **C8.10** | ANSI `CROSS JOIN` Combinations & Round-Robin Matrix | MASTERED | Accidental Cartesian explosion on large datasets | 1 | 🟡 Medium |
+| **C8.11** | Non-ANSI Legacy Comma Joins vs ANSI SQL-92 | MASTERED | Missing WHERE clause causing unintended Cartesian product | 1 | 🔴 High |
 
 ---
 
