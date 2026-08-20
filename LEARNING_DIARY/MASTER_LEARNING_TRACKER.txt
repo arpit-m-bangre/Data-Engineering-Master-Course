@@ -29,7 +29,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 03   | Filtering & Substring Search              | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 04   | Arithmetic, UPDATE & DELETE               | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 05   | TRUNCATE vs DROP & ALTER                  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
-06   | Aggregates & GROUP BY                     | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
+06   | Aggregates & GROUP BY                     | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 07   | Execution Order & HAVING Rules            | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 08   | Complex Scenarios & Error Analysis        | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 09   | Constraints (PK, UNIQUE, CHECK)           | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
@@ -107,7 +107,7 @@ DAY 5 (WEDNESDAY, AUG 19) - STATUS: 🏆 100% MISSION ACCOMPLISHED (DAY 6 BACKLO
 DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAY 6 QUESTIONS + DAY 9 + AUG 19 CLASS REVISION & TASKS
 - [x] 11:30 AM - 01:15 PM: Class Note Re-write and Read Revision Note [2026-08-19] + In-Class Tasks (6 Tasks in 2026-08-19_CLASS_TASK.SQL) + 14 Practice Drills - 100% DONE & AUDITED! ✅
 - [x] 01:15 PM - 04:00 PM: Extended Lunch Break & Bio-Paced Mental Recharge 🥗💤 - DONE!
-- [ ] 04:00 PM - 05:00 PM: Backlog Clearance: Solve 20 Practice Drills in 2026-08-06_QUESTIONS.SQL (Day 6: Aggregates & GROUP BY -> 100% COMPLETE!) 📊
+- [x] 04:00 PM - 05:00 PM: Backlog Clearance: Solve 20 Practice Drills in 2026-08-06_QUESTIONS.SQL (Day 6: Aggregates & GROUP BY -> 100% COMPLETE!) 📊 - DONE & AUDITED (17.8/20)! ✅
 - [ ] 05:00 PM - 06:15 PM: PROJECT 4 (HR Payroll & Data Validation Engine) - Part 1 (Schema & Constraints) 🛠️
 - [ ] 06:15 PM - 07:15 PM: PROJECT 4 - Part 2 (Complex Validation Queries & Audit) 💻
 - [ ] 07:15 PM - 08:30 PM: Dinner Break & Evening Walk 🍽️🚶‍♂️

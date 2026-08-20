@@ -116,10 +116,10 @@ DAY-WISE LEARNING TRACKER (FROM 13 AUG ONWARDS)
 ============================================================
 
 20 AUG (THURSDAY)
-- SPRINT 1 COMPLETION & DAY 16 EVALUATION AUDIT:
-  * Re-wrote Day 16 Class Notes in SSMS & reviewed 7-Step Revision Note.
-  * Completed & Audited all 6 In-Class & Homework Tasks in `01_SQL/04_CLASS_TASKS/2026-08-19_CLASS_TASK.SQL` (Score: 8.5/10).
-  * Completed & Line-by-Line Evaluated 14 Practice Drills in `01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-19_QUESTIONS.SQL` (Score: 10/14 - Solid Grade B).
-  * Day 16 (ANSI Joins Syntax, Ambiguity & Group By) is now officially marked 100% COMPLETED in Master Learning Tracker.
+- SPRINT 1 & 2 COMPLETION (DAY 16 + DAY 6 BACKLOG ZERO-DEBT):
+  * Sprint 1: Re-wrote Day 16 Class Notes in SSMS, reviewed 7-Step Revision Note, audited 6 In-Class Tasks (8.5/10), and completed 14 practice drills in `2026-08-19_QUESTIONS.SQL` (10/14 - Solid Grade B).
+  * Sprint 2: Solved all 20 targeted drills in `01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-06_QUESTIONS.SQL` (Aggregates, GROUP BY, DISTINCT, NULL handling). Evaluated line-by-line with 17.8/20.0 (89.0% - Grade A-).
+  * Day 6 (Aggregates & GROUP BY) is officially 100% COMPLETED and Zero-Debt!
+  * Day 16 (ANSI Joins Syntax, Ambiguity & Group By) is 100% COMPLETED and Zero-Debt!
 
 ============================================================

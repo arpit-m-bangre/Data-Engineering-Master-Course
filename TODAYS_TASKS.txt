@@ -19,9 +19,9 @@ TOTAL STUDY TIME TODAY: 8.25 Hours (7.75h Core SQL & Class + 0.5h English)
 [x] 01:15 PM - 04:00 PM : Extended Lunch Break & Bio-Paced Mental Recharge 🥗💤 (COMPLETED)
     -> Nutritious meal, hydration & mental reset power recharge!
 
-[ ] 04:00 PM - 05:00 PM : Sprint 2 — Backlog Clearance: Day 6 Practice Drills (20 Questions) 📊 (ACTIVE NOW!)
-    -> Solve all 20 targeted drills in 2026-08-06_QUESTIONS.SQL (Aggregates, GROUP BY, COUNT(*) vs COUNT(col), NULL handling)
-    -> Mark Day 6 (2026-08-06) as 100% COMPLETE (Re-write [x], Revision [x], Questions [x])!
+[x] 04:00 PM - 05:00 PM : Sprint 2 — Backlog Clearance: Day 6 Practice Drills (20 Questions) 📊 (100% COMPLETED)
+    -> [x] Solved all 20 targeted drills in 2026-08-06_QUESTIONS.SQL (DONE - Evaluated: 17.8/20 - Solid A-)
+    -> [x] Day 6 (2026-08-06) is now 100% COMPLETE & ZERO-DEBT (Re-write [x], Revision [x], Questions [x])!
 
 [ ] 05:00 PM - 06:15 PM : Sprint 3 — Enterprise Project 4 (HR Payroll Engine) — Part 1 🛠️
     -> Build schema DDL, enforce relational constraints (PK, FK, CHECK, DEFAULT, IDENTITY) in PROJECT4.SQL
