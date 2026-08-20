@@ -3,25 +3,30 @@
              [11:30 AM HIGH-PRECISION SPRINT & ZERO-DEBT PLAN]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Master ANSI Joins Practice, Execute Enterprise Project 4 (HR Payroll), Clear Backlog Days 9 & 10 (Constraints & FKs), English Task 2, Live Class & Maintain Streak Day 7!
+[!] MISSION OBJECTIVE: Execute Day 16 Tasks & Drills, Complete Day 6 Backlog (20 Drills), Execute Enterprise Project 4 (HR Payroll), Clear Day 9 (Constraints), English Task 2, Live Class & Maintain Streak Day 7!
+
+TOTAL STUDY TIME TODAY: 8.0 Hours (7.5h Core SQL & Class + 0.5h English)
 
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[ ] 11:30 AM - 01:00 PM : Sprint 1 — Class Note Re-write and Read Revision Note [2026-08-19] ✍️
-    -> Re-write 2026-08-19 notes in SSMS, review 7-step revision note on ANSI Joins & Aggregations, solve drills in 2026-08-19_QUESTIONS.SQL
+[ ] 11:30 AM - 01:15 PM : Sprint 1 — Class Note Re-write, Class Tasks & Practice Drills [2026-08-19] ✍️
+    -> Re-write 2026-08-19 notes in SSMS
+    -> Solve all 6 In-Class & Homework Tasks in 2026-08-19_CLASS_TASK.SQL (Month-wise sales, Anti-Joins, Doctor/Patient mappings)
+    -> Solve 14 Practice Drills in 2026-08-19_QUESTIONS.SQL
 
-[ ] 01:00 PM - 02:00 PM : Sprint 2 — Enterprise Project 4 (HR Payroll Engine) — Part 1 🛠️
-    -> Build schema DDL, enforce relational constraints (PK, FK, CHECK, DEFAULT) in PROJECT4.SQL
+[ ] 01:15 PM - 02:15 PM : Sprint 2 — Backlog Clearance: Day 6 Practice Drills (20 Questions) 📊
+    -> Solve all 20 targeted drills in 2026-08-06_QUESTIONS.SQL (Aggregates, GROUP BY, COUNT(*) vs COUNT(col), NULL handling)
+    -> Mark Day 6 (2026-08-06) as 100% COMPLETE (Re-write [x], Revision [x], Questions [x])!
 
-[ ] 02:00 PM - 03:00 PM : Lunch Break & Bio-Paced Power Recharge Window 🥗💤
-    -> Nutritious meal, hydration & mental reset nap!
+[ ] 02:15 PM - 03:15 PM : Lunch Break & Bio-Paced Power Recharge Window 🥗💤
+    -> Nutritious meal, hydration & mental reset power nap!
 
-[ ] 03:00 PM - 04:30 PM : Sprint 3 — Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-10] 📊
+[ ] 03:15 PM - 04:30 PM : Sprint 3 — Enterprise Project 4 (HR Payroll Engine) — Part 1 🛠️
+    -> Build schema DDL, enforce relational constraints (PK, FK, CHECK, DEFAULT, IDENTITY) in PROJECT4.SQL
+
+[ ] 04:30 PM - 05:45 PM : Sprint 4 — Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-10] 🛡️
     -> Re-write 2026-08-10 notes, study Day 9 Constraints (PK, UNIQUE, CHECK) & solve drills in 2026-08-10_QUESTIONS.SQL
-
-[ ] 04:30 PM - 05:45 PM : Sprint 4 — Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-11] 🛡️
-    -> Re-write 2026-08-11 notes, master Day 10 DEFAULT, IDENTITY & FK Rules + solve drills in 2026-08-11_QUESTIONS.SQL
 
 [ ] 05:45 PM - 06:45 PM : Sprint 5 — Enterprise Project 4 — Part 2: Execution & Validation 💻
     -> Execute business audit queries, data validation test cases & audit completion in PROJECT4.SQL
