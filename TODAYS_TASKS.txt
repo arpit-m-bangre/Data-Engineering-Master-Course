@@ -29,8 +29,10 @@ TOTAL STUDY TIME TODAY: 8.25 Hours (7.75h Core SQL & Class + 0.5h English)
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 07:15 PM - 08:30 PM : Dinner Break, Evening Walk & Mental Reset 🍽️🚶‍♂️
-    -> Relax, refuel, and disconnect before live class
+[x] 07:15 PM - 08:30 PM : Dinner Break, YouTube SQL Roadmap Video & GitHub Profile Polish 🍽️🎥 (COMPLETED)
+    -> [x] Nutritious dinner & walk
+    -> [x] Watched informative YouTube SQL Roadmap video (Data With Baraa)
+    -> [x] Polished GitHub repository & profile presence
 
 [ ] 08:30 PM - 09:00 PM : Sprint 3 — English Practice Book (Task 2) & Class Setup 📖💻
     -> Complete Task 2 from 125-task book + technical vocabulary & SSMS warmup
