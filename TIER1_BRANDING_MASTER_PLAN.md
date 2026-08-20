@@ -102,6 +102,75 @@ flowchart TD
 
 ---
 
+### 3. 📍 City-by-City Engineering Breakdown: Where to Target First
+
+#### 🏙️ 1. PUNE (Top Engineering Hub for Enterprise FinTech & Automotive R&D)
+- **FinTech & Banks:** Barclays Pune (Yerwada/Hinjawadi), Deutsche Bank (Yerwada), BNY Mellon (Kalyani Nagar), Mastercard (Yerwada), UBS/Credit Suisse (Kharadi), Citi Pune, FinIQ.
+- **Global GCCs & Automotive:** John Deere (Magarpatta), Mercedes-Benz R&D, BP Digital Hub, Eaton (Kharadi), Siemens (Balewadi), Amdocs (Magarpatta).
+- **Product & Cloud Giants:** NVIDIA (Yerwada), Veritas Technologies (Baner), Snowflake, Microsoft, Salesforce (Senapati Bapat Rd), Persistent Systems Labs.
+- **Analytics & Modern Consulting:** Tiger Analytics Pune, Fractal Analytics, Tredence, Searce, Thoughtworks.
+
+#### 🏙️ 2. BENGALURU (Silicon Valley of India — Highest Volume of High-CTC Openings)
+- **Big Tech:** Google, Microsoft IDC, Amazon, Apple, Meta, Uber, Snowflake, Databricks, Atlassian, Salesforce, Adobe, Intuit, Cisco.
+- **FinTech & Quant:** Goldman Sachs, Morgan Stanley, JPMorgan, PayPal, Stripe, Visa, Fidelity, Standard Chartered.
+- **Retail & GCC Titans:** Walmart Global Tech, Target Technology, Lowe's, Nike, Shell, Home Depot, Boeing.
+- **Top Unicorns:** Flipkart, Swiggy, Zepto, Razorpay, PhonePe, Cred, Groww, Zerodha, Meesho, InMobi.
+
+#### 🏙️ 3. HYDERABAD (Cyberabad — Massive Tech Campuses & Semiconductor Hub)
+- **Mega Campuses:** Microsoft IDC (Gachibowli), Amazon Development Center (Financial District), Google, Salesforce, ServiceNow, Apple, Oracle.
+- **FinTech & HFTs:** D.E. Shaw & Co., Goldman Sachs Hyderabad, FactSet, Arcesium, Synchrony Financial, State Street.
+- **Semiconductor & Infra:** Qualcomm, AMD, Micron Technology, Teradata.
+- **Pharma & Healthcare Data Lakes:** Novartis, Eli Lilly, Providence Healthcare Tech.
+
+#### 🏙️ 4. DELHI-NCR (Gurugram & Noida)
+- **FinTech & Banking:** Tower Research Capital, American Express, BlackRock Aladdin, NatWest Group, Standard Chartered.
+- **Product & Unicorns:** Zomato/Blinkit, Delhivery, Urban Company, MakeMyTrip, Paytm.
+- **Big Tech & GCCs:** Google Gurugram, Microsoft Noida, Adobe Noida, Optum UnitedHealth Group.
+
+---
+
+### 4. 🛠️ The Exact Skill Matrix Expected by Tier-1 Interviewers
+
+```
+┌───────────────────────────────────────────────────────────────────────────────────┐
+│                    TIER-1 DATA ENGINEERING SKILL RADAR MATRIX                     │
+├──────────────────────┬────────────────────────────────────────────────────────────┤
+│ 1. Core SQL Engine   │ - Advanced Aggregations (GROUPING SETS, ROLLUP, CUBE)      │
+│    (40% of Rounds)   │ - Analytical Window Functions (RANK, DENSE_RANK, LEAD/LAG) │
+│                      │ - Execution Order & Query Cost Optimization                │
+│                      │ - Retrofitting Constraints (PK, FK, CHECK, DEFAULT, UQ)    │
+│                      │ - Transaction Isolation & ACID Locks                       │
+├──────────────────────┼────────────────────────────────────────────────────────────┤
+│ 2. Python & OOP      │ - Data Structures (Dict, Set, Trees, Queues)               │
+│    (20% of Rounds)   │ - Memory Efficient Processing (Generators, Iterators)      │
+│                      │ - Pandas / Polars Vectorized Operations & Data Cleansing   │
+│                      │ - API Data Extraction & Custom Connectors                  │
+├──────────────────────┼────────────────────────────────────────────────────────────┤
+│ 3. Big Data Engine   │ - Apache Spark Core & PySpark DataFrame API                │
+│    (20% of Rounds)   │ - Spark Partitioning, Shuffling, Broadcast Joins & Tuning  │
+│                      │ - Delta Lake ACID Architecture (Time Travel, Schema Merge) │
+│                      │ - Streaming Ingestion (Kafka / EventHubs)                  │
+├──────────────────────┼────────────────────────────────────────────────────────────┤
+│ 4. Cloud & DWH       │ - Snowflake / Google BigQuery / AWS Redshift               │
+│    (10% of Rounds)   │ - Dimensional Modeling (Kimball Star/Snowflake Schema, SCD)│
+│                      │ - ELT vs ETL Pipeline Design                               │
+├──────────────────────┼────────────────────────────────────────────────────────────┤
+│ 5. Orchestration &   │ - Apache Airflow DAG Authoring, Sensors & Retries          │
+│    Engineering       │ - Git Version Control & 200-Day Commit Portfolio           │
+│    (10% of Rounds)   │ - Data Quality Testing (Great Expectations / dbt-test)     │
+└──────────────────────┴────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### 5. 🚀 4-Step Strategy to Land 15 LPA – 35+ LPA Interviews
+1. **GitHub Portfolio as Proof-of-Work:** 200-day commit streak, modular directories (`01_SQL`, `02_PYTHON`, `03_ETL`, `04_PYSPARK`, `05_DWH`), Mermaid architecture diagrams.
+2. **Employee Referral Inbound:** Connect with Lead/Principal DEs across the target 60+ firms using personalized technical notes.
+3. **Master the 3-Layer Live Coding Round:** Round 1 (Live SQL & Window functions), Round 2 (Python & Data Cleansing), Round 3 (Batch/Streaming System Design).
+4. **Salary Negotiation Leverage:** Anchor to benchmark ranges (12–26 LPA for Trainee/Associate, 24–48 LPA for Mid-Level) based on demonstrated production portfolio.
+
+---
+
 ## 🛡️ PART 2: THE 90-DAY LINKEDIN PREMIUM ACTION WINDOW (20 AUG – 20 NOV 2026)
 
 ### 1. 🛡️ The Steel-Wall Anti-Ban & Safety Protocol
