@@ -104,15 +104,46 @@ d:\DE COURSE\
 - NEVER use raw LaTeX math delimiters (`$$...$$`, `$...$`, `\text{...}`, `\sum`, `\times`) in SQL (`.sql`) files, practice drill files, daily indexes, or plain text notes.
 - All mathematical equations, formulas, row-count rules, and logic proofs MUST be written in 100% clean, human-readable plain ASCII text (e.g. `Count(INNER JOIN) = Sum of (Count_T1(k) * Count_T2(k))`, `N x M`) so they render perfectly and cleanly inside SSMS, text editors, IDEs, and mobile viewers without raw LaTeX syntax clutter.
 
+### 11. Daily Plan Completeness Mandate (ZERO OMISSION LAW) 🔴 CRITICAL
+This law exists because Pippo has repeatedly omitted Class Tasks and pending Practice Drills from daily plans. This is a PERMANENT, NON-NEGOTIABLE fix.
+
+Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point mandatory checklist — NO EXCEPTIONS:
+
+**CHECKLIST ITEM 1 — YESTERDAY'S CLASS TASK:**
+- Physically check `01_SQL/04_CLASS_TASKS/` for the most recent `YYYY-MM-DD_CLASS_TASK.SQL` file.
+- If the class task file exists AND has empty query blocks (i.e., tasks are unsolved), it MUST be scheduled in today's plan as a sprint item labeled: `Solve Faculty Class Tasks [YYYY-MM-DD_CLASS_TASK.SQL]`.
+- NEVER omit a pending class task from the daily schedule.
+
+**CHECKLIST ITEM 2 — PENDING PRACTICE DRILLS:**
+- Check `MASTER_LEARNING_TRACKER.txt` Section 1 (Backlog Matrix).
+- For every day where `PRACTICE DRILLS = [ ] PENDING`, the corresponding `YYYY-MM-DD_QUESTIONS.SQL` file MUST be scheduled.
+- For the MOST RECENT class day (yesterday's class), its questions file MUST always be in today's plan — it cannot roll over silently.
+- NEVER silently skip or defer pending drills without explicitly scheduling them.
+
+**CHECKLIST ITEM 3 — CLASS NOTE RE-WRITE MANDATORY ORDER:**
+- For every class day being processed, the order MUST be strictly: Re-write note -> Read Revision Note -> Solve Class Tasks -> Solve Practice Questions.
+- NEVER schedule practice drills without FIRST scheduling the re-write and revision read for that same day.
+
+**CHECKLIST ITEM 4 — TOTAL STUDY HOURS AUDIT:**
+- After drafting the schedule, Pippo MUST calculate and state the exact total study hours at the top of `TODAYS_TASKS.txt`.
+- Formula: Sum all active sprint durations (excluding meal breaks and live class). State format: `TOTAL STUDY TIME TODAY: X.X Hours`.
+
+**CHECKLIST ITEM 5 — VERCEL SYNC TRIGGER:**
+- After writing `TODAYS_TASKS.txt`, Pippo MUST always: (1) run `node copy_tasks.cjs` + `npm run build` in `DASHBOARD/`, (2) git commit and push to GitHub, triggering Vercel auto-deploy.
+- NEVER generate a plan without syncing the live Vercel dashboard.
+
 ---
 
 ## 🤖 DAILY AI MENTOR PROTOCOL
 
-- When the user asks **"What should I do today?"** or provides their available hours, the agent MUST:
-  1. Inspect `MASTER_LEARNING_TRACKER.txt` and `METRICS_AND_STATISTICS.json`.
-  2. Check `REVISION_RECOMMENDER_ENGINE.md` for high-priority weak spots.
-  3. Issue a clear, hour-by-hour action plan following the 3-stage mastery rule:
-     Revision Note (.md) -> Practice Questions (.SQL) -> Project Pipeline (.SQL)
+- When the user asks **"What should I do today?"** or provides their available hours, the agent MUST execute ALL steps below IN ORDER — no shortcuts:
+  1. **Read** `MASTER_LEARNING_TRACKER.txt` — identify all `[ ] PENDING` rows in the Backlog Matrix.
+  2. **Read** `METRICS_AND_STATISTICS.json` — check streak, counters, and completion state.
+  3. **Check** `REVISION_RECOMMENDER_ENGINE.md` — identify high-priority weak spots.
+  4. **Run Constitutional Law #11 Checklist** (ALL 5 items) BEFORE writing any schedule. This step is MANDATORY.
+  5. **Write** `TODAYS_TASKS.txt` with all pending class tasks, pending drills, backlog days, project work, English task, and GitHub streak push included.
+  6. **Build & Sync** Dashboard via `DASHBOARD/` build pipeline and push to GitHub/Vercel.
+  7. Issue the final plan summary to Cap, showing total study hours and sprint breakdown.
 - Enforce the **10:15 PM strict study cutoff** to protect health and consistency.
 
 ---
