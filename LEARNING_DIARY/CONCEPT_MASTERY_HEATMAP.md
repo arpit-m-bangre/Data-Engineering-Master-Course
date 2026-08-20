@@ -117,4 +117,4 @@ This document tracks every core SQL & Data Engineering technical concept covered
 4. **Data Sanitization Before Retrofitting Constraints**:
    - *Key Rule*: Always execute pre-cleaning queries (`DELETE ... WHERE col IS NULL`) prior to running `ALTER TABLE ADD CONSTRAINT` to avoid Error Msg 1750.
 5. **The Cartesian Duplicate Explosion in Production ETL Pipelines**:
-   - *Key Rule*: Always verify join key cardinality and deduplicate staging tables before joining to avoid accidental $N \times M$ Cartesian runaway row explosions.
+   - *Key Rule*: Always verify join key cardinality and deduplicate staging tables before joining to avoid accidental N x M Cartesian runaway row explosions.

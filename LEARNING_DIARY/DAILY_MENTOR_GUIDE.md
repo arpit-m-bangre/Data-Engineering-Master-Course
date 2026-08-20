@@ -36,7 +36,7 @@ Whenever you open your workspace, simply send a message to your AI Mentor:
 
 ### 2. Execution & Study (3-Stage Mastery Rule)
 Follow your strict 3-stage learning flow:
-$$\text{Read Revision Note (.md)} \longrightarrow \text{Solve Practice Questions (.SQL)} \longrightarrow \text{Execute Project Pipeline (.SQL)}$$
+`Read Revision Note (.md)` ---> `Solve Practice Questions (.SQL)` ---> `Execute Project Pipeline (.SQL)`
 
 ---
 
