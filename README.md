@@ -29,27 +29,27 @@ Welcome to my **Data Engineering Master Portfolio**. This repository serves as a
 
 ---
 
-## 📚 Curriculum Roadmap
+## 🏛️ Repository Architecture & Workspace Structure
 
-The portfolio is structured into progressive engineering modules:
-
-* **01. Enterprise SQL & Database Architecture** — Complex Joins, Window Functions, Indexing & Query Execution Engine.
-* **02. Python for Data Engineering** — Object-Oriented Programming, Data Cleansing, APIs & Automation.
-* **03. ETL & Data Pipelines** — Batch & Streaming Ingestion Architecture, Data Lake Staging.
-* **04. Distributed Big Data (PySpark)** — Distributed Compute, Delta Lake & Large-Scale Processing.
-* **05. Cloud Data Warehousing (Snowflake & dbt)** — Modern Data Stack, Dimensional Modeling, Medallion Architecture (`stg_`/`int_`/`fct_`).
-* **06. Cloud Engineering (AWS / Azure)** — IAM, S3 Storage Integrations, Serverless Compute.
-* **07. Orchestration (Apache Airflow)** — DAG Scheduling, Dependency Management & Pipeline Monitoring.
-
----
-
-## 🚀 Featured SQL Engineering Projects
-
-1. **[E-Commerce Sales & Customer Analytics Pipeline](./01_SQL/06_PROJECTS/PROJECT1.SQL)** — Selective DML, Computed Projection Aliases, and Wildcard Filters.
-2. **[Healthcare Hospital Admissions & Billing Engine](./01_SQL/06_PROJECTS/PROJECT2.SQL)** — Dynamic Schema Evolution, Aggregate Analytics, and NULL Scoping.
-3. **[Banking Transaction Audit & Fraud Detection System](./01_SQL/06_PROJECTS/PROJECT3.SQL)** — SQL Clause Logical Execution Pipeline (`FROM` ➔ `WHERE` ➔ `GROUP BY` ➔ `HAVING` ➔ `SELECT` ➔ `ORDER BY`).
-4. **[HR Enterprise Payroll & Data Validation Engine](./01_SQL/06_PROJECTS/PROJECT4.SQL)** — Multi-Tier Relational Constraints (`PK`, `UNIQUE`, `CHECK`, `DEFAULT`, `IDENTITY`) & Error Tracing.
-5. **[Retail Supply Chain & Referential Integrity Architecture](./01_SQL/06_PROJECTS/PROJECT5.SQL)** — Relational Integrity, Cascading Foreign Key Rules, and Controlled Teardowns.
+```
+DE COURSE/
+├── 00_SYLLABUS/                  <-- Master Curriculum, Roadmaps & Snowflake-dbt Syllabus
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture
+│   ├── 01_CLASS_NOTES/           <-- Standardized, executable production SQL notes
+│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes & master combined topic index
+│   ├── 03_REVISION_NOTES/        <-- 7-Step interactive deep-dives & interview traps
+│   ├── 04_CLASS_TASKS/           <-- In-class faculty exercises & solutions
+│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question cumulative practice sets
+│   └── 06_PROJECTS/              <-- Production-grade enterprise SQL pipelines (PROJECT1 - 5)
+├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
+├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging & Delta Transformations (Upcoming)
+├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (Upcoming)
+├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (Upcoming)
+├── 06_CLOUD_ENGINEERING/         <-- AWS S3, IAM & Azure Data Services (Upcoming)
+├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (Upcoming)
+├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Tier-1 Guides & Focus Protocols
+└── LEARNING_DIARY/               <-- Single Source of Truth Progress Brain & Metrics
+```
 
 ---
 
@@ -59,7 +59,9 @@ The portfolio is structured into progressive engineering modules:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arpitmbangre/)
 &nbsp;
 [![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arpitbangre.vercel.app/)
+
 <br/>
 <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0b0f19,40:0d1b2a,70:1b263b,100:00f2fe&height=70&section=footer" width="100%" />
 
 </div>
+
