@@ -118,19 +118,19 @@ DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAY 6 QUESTIONS + DAY 9 + AUG 19 
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Day 7 Maintain 🔥) & 10:15 PM Strict Cutoff
 
 DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/01 + AUG 20 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve 20 Questions (Day 18 / Aug 20 Live Class)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve Drills (Day 18 / Aug 20 Live Class)
 - [ ] 12:00 PM - 01:30 PM: PROJECT 5 (Retail Supply Chain & FK Architecture) - Part 1
-- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-12] & Solve 20 Questions (Day 11: Parent/Child Destruction Tests)
-- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve 20 Questions (Day 1: DB Architecture & DDL/DML)
+- [ ] 02:00 PM - 04:00 PM: Class Note Re-write and Read Revision Note [2026-08-12] & Solve Drills (Day 11: Parent/Child Destruction Tests)
+- [ ] 04:00 PM - 05:00 PM: Class Note Re-write and Read Revision Note [2026-08-01] & Solve Drills (Day 1: DB Architecture & DDL/DML)
 - [ ] 05:00 PM - 06:00 PM: PROJECT 5 - Part 2 (Completion & Code Validation)
 - [ ] 06:00 PM - 06:30 PM: English Practice (Task 7)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
 
 DAY 8 (SATURDAY, AUG 22) - TARGET: DAY 2 + AUG 21 CLASS REVISION
-- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-21] & Solve 20 Questions (Day 19 / Aug 21 Live Class)
-- [ ] 12:00 PM - 01:30 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve 20 Questions (Day 2: Clauses & Pattern Matching)
-- [ ] 02:00 PM - 04:00 PM: Weekly Social Presence (Filter, compile, and publish SQL Optimization insights on LinkedIn/GitHub)
+- [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-21] & Solve Drills (Day 19 / Aug 21 Live Class)
+- [ ] 12:00 PM - 01:30 PM: Class Note Re-write and Read Revision Note [2026-08-02] & Solve Drills (Day 2: Clauses & Pattern Matching)
+- [ ] 02:00 PM - 02:30 PM: Social Presence Session 3 of 3 (SATURDAY) — Post SQL insights, project updates, personal brand content on LinkedIn/GitHub 📣
 - [ ] 04:00 PM - 04:30 PM: English Practice (Task 8)
 - [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS
 - [ ] 10:15 PM: Commit & Push to GitHub (Streak Maintain) & 10:15 PM Strict Cutoff
@@ -138,6 +138,17 @@ DAY 8 (SATURDAY, AUG 22) - TARGET: DAY 2 + AUG 21 CLASS REVISION
 ====================================================================================================
                                [ 🏆 THE FINISH LINE ]
 ====================================================================================================
-If you stick perfectly to this new recovery plan, you will officially hit 100% Zero-Debt on the entire SQL module by Sunday, August 23, 2026. 
+If you stick perfectly to this new recovery plan, you will officially hit 100% Zero-Debt on the entire SQL module by Sunday, August 23, 2026.
 
 No more system tweaking. Execution only.
+
+====================================================================================================
+                    [ 📣 SOCIAL PRESENCE SCHEDULE — 3x PER WEEK ]
+====================================================================================================
+Fixed weekly social slots — MANDATORY across all future weeks:
+  - MONDAY    : Social Presence Session 1 of 3 (20-30 min) — SQL tips, learning updates
+  - WEDNESDAY : Social Presence Session 2 of 3 (20-30 min) — Interview insights, project progress
+  - SATURDAY  : Social Presence Session 3 of 3 (20-30 min) — Weekly summary, brand content
+
+Platforms: LinkedIn & GitHub README / Pinned Repos.
+Goal: Build recruiter visibility and Google search presence for 25+ LPA target.
