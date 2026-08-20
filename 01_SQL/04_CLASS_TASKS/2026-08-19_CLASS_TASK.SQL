@@ -139,21 +139,29 @@ SELECT * FROM set2;
 -- Requirements: Extract month name/number from t_date and calculate average amount per month.
 -- Write your SQL Query below:
 
-
+select month(t_date) as month,avg(amount) as avg_amount_per_month 
+from Customers as c left join Orders o 
+on c.custid = o.custid 
+group by month(t_date) 
 
 
 -- TASK 2: Display Customers who did NOT order anything till date.
 -- Requirements: Identify customers with zero matching orders in Orders table (Anti-Join).
 -- Write your SQL Query below:
 
-
+select * 
+from Customers as c  full join Orders as o 
+on c.custid = o.custid
+where o_id is null 
 
 
 -- TASK 3: Display Customer Name (custname), Month Name, Product ID (p_id), and Order Amount.
 -- Requirements: Join Customers with Orders and project specific columns avoiding any ambiguity.
 -- Write your SQL Query below:
 
-
+select custname,month(t_date) as month,p_id as porduct_id,amount as order_amount
+from Customers as c  full join orders as o 
+on c.custid = o.custid
 
 
 -- ====================================================================================================
@@ -164,13 +172,19 @@ SELECT * FROM set2;
 -- Requirements: Display pname and Dname for patients who have an assigned doctor.
 -- Write your SQL Query below:
 
-
-
+select p.pname , d.Dname 
+from p_info as p left join D_info as d 
+on p.p_id = d.p_id
+where d.Dname is not null 
 
 -- TASK 5: Display Patients who have NOT been assigned any Doctor till date.
 -- Requirements: Anti-join on p_info and D_info.
 -- Write your SQL Query below:
 
+select p.pname  
+from p_info as p left join D_info as d 
+on p.p_id = d.p_id
+where d.Dname is null 
 
 
 
@@ -178,7 +192,10 @@ SELECT * FROM set2;
 -- Requirements: Group by dept from set1 and calculate AVG(salary) from set2 using appropriate join.
 -- Write your SQL Query below:
 
-
+select dept , avg(salary) as avg_salary 
+from set1 as s1 left join set2 as s2 
+on s1.id = s2.id
+group by dept 
 
 
 -- ====================================================================================================
