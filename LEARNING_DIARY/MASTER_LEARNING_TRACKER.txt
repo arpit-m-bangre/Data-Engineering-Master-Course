@@ -106,16 +106,15 @@ DAY 5 (WEDNESDAY, AUG 19) - STATUS: 🏆 100% MISSION ACCOMPLISHED (DAY 6 BACKLO
 
 DAY 6 (THURSDAY, AUG 20) - TARGET: PROJECT 4 & DAY 6 QUESTIONS + DAY 9 + AUG 19 CLASS REVISION & TASKS
 - [x] 11:30 AM - 01:15 PM: Class Note Re-write and Read Revision Note [2026-08-19] + In-Class Tasks (6 Tasks in 2026-08-19_CLASS_TASK.SQL) + 14 Practice Drills - 100% DONE & AUDITED! ✅
-- [ ] 01:15 PM - 02:15 PM: Backlog Clearance: Solve 20 Practice Drills in 2026-08-06_QUESTIONS.SQL (Day 6: Aggregates & GROUP BY -> 100% COMPLETE!)
-- [ ] 02:15 PM - 03:15 PM: Lunch Break & Bio-Paced Recharge Window 🥗💤
-- [ ] 03:15 PM - 04:30 PM: PROJECT 4 (HR Payroll & Data Validation Engine) - Part 1 (Schema & Constraints)
-- [ ] 04:30 PM - 05:45 PM: Class Note Re-write and Read Revision Note [2026-08-10] & Solve Drills (Day 9: Constraints - PK, UNIQUE, CHECK)
-- [ ] 05:45 PM - 06:45 PM: PROJECT 4 - Part 2 (Complex Validation Queries & Audit)
-- [ ] 06:45 PM - 07:15 PM: English Practice (Task 2)
-- [ ] 07:15 PM - 08:45 PM: Dinner Break & Evening Mental Reset 🍽️🚶‍♂️
-- [ ] 08:45 PM - 09:00 PM: Live Class Setup & SSMS Environment Warmup
-- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15)
-- [ ] 10:15 PM: Commit & Push to GitHub (Streak Day 7 Maintain 🔥) & 10:15 PM Strict Cutoff
+- [x] 01:15 PM - 04:00 PM: Extended Lunch Break & Bio-Paced Mental Recharge 🥗💤 - DONE!
+- [ ] 04:00 PM - 05:00 PM: Backlog Clearance: Solve 20 Practice Drills in 2026-08-06_QUESTIONS.SQL (Day 6: Aggregates & GROUP BY -> 100% COMPLETE!) 📊
+- [ ] 05:00 PM - 06:15 PM: PROJECT 4 (HR Payroll & Data Validation Engine) - Part 1 (Schema & Constraints) 🛠️
+- [ ] 06:15 PM - 07:15 PM: PROJECT 4 - Part 2 (Complex Validation Queries & Audit) 💻
+- [ ] 07:15 PM - 08:30 PM: Dinner Break & Evening Walk 🍽️🚶‍♂️
+- [ ] 08:30 PM - 09:00 PM: English Practice (Task 2) & Class Setup 📖💻
+- [ ] 09:00 PM - 10:15 PM: LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 17) 🎓
+- [ ] 10:30 PM - 12:00 AM: Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-10] & Solve Drills (Day 9: Constraints) 🛡️
+- [ ] 12:00 AM - 12:15 AM: Final Commit & Push to GitHub (Streak Day 7 Maintain 🔥) & Vercel Sync 🚀
 
 DAY 7 (FRIDAY, AUG 21) - TARGET: PROJECT 5 & DAYS 11/01 + AUG 20 CLASS REVISION
 - [ ] 10:30 AM - 12:00 PM: Class Note Re-write and Read Revision Note [2026-08-20] & Solve Drills (Day 18 / Aug 20 Live Class)
