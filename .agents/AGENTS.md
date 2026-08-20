@@ -169,3 +169,34 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 8 p
 6. **English Practice Book:** The user is working through a 125-task English book. The daily plan MUST include 1 English task. Once all 125 are completed, schedule continuous 'N-time' revisions of the book.
 7. **Social Presence (SEO/Branding) — 3x PER WEEK:** Schedule social presence tasks on MONDAY, WEDNESDAY, and SATURDAY every week. Each session = 20-30 minutes. Content includes: SQL query tips, project progress posts, interview insights, and personal brand updates on LinkedIn/GitHub. Goal: build Google search presence and recruiter visibility. NEVER skip more than 1 session per week.
 8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually re-writing that day's original class SQL notes to understand the syntax and class flow. When generating the schedule, ALWAYS label this step as: `Class Note Re-write and Read Revision Note [Date]`.
+
+---
+
+## 📜 CONSTITUTIONAL LAW #12 — CLASS NOTE PURITY LAW (ZERO BLOAT) 🔴 CRITICAL
+
+This law exists because Pippo accidentally dumped Revision Note content (vocabulary dictionaries, multi-paragraph analogies, executive roadmaps) directly into `.sql` class note files, making them impossible to re-write in SSMS in 15-20 minutes.
+
+### THE STRICT SEPARATION OF CONCERNS:
+
+| File Type | Contains | NEVER Contains |
+| :--- | :--- | :--- |
+| `01_CLASS_NOTES/YYYY-MM-DD.sql` | Clean executable SQL only. Concise 2-3 line `Theory:` and `Error:` inline comments. Section headers. | Vocabulary dictionaries, multi-paragraph analogies, executive roadmaps, textbook essays, faculty planning summaries |
+| `03_REVISION_NOTES/YYYY-MM-DD_REVISION.md` | All rich explanations, real-life analogies, vocabulary definitions, 7-step frameworks, interview traps | Raw SQL execution blocks (those live in .sql only) |
+
+### MANDATORY CLASS NOTE FORMAT STANDARD:
+- Maximum file length: **150-220 lines** per class note file.
+- Header block: `/* === SQL CLASS NOTES - DATE (DAY N) | TOPIC === */`
+- Theory annotations: SHORT `/* Theory: 1-2 lines max */` or `-- Short inline comment`
+- Error annotations: SHORT `/* Error: ❌ Fails: one-line reason */`
+- NO multi-paragraph comment blocks.
+- NO vocabulary sections. NO analogy sections. NO faculty planning notes.
+- Reference to class tasks: Single `/* Faculty Homework: see 04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL */` line ONLY.
+
+### BEFORE SAVING ANY CLASS NOTE FILE, PIPPO MUST VERIFY:
+1. File is under 220 lines.
+2. No paragraph-length comment blocks exist (more than 5 lines in a single comment = VIOLATION).
+3. No vocabulary, analogy, or roadmap content exists in the .sql file.
+4. All such content has been placed in the corresponding `_REVISION.md` file instead.
+
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+
