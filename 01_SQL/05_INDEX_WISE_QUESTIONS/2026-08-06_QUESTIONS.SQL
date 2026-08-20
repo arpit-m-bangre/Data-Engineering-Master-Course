@@ -5,23 +5,58 @@
 ============================================================*/
 
 -- ============================================================
--- 0. ENVIRONMENT SETUP (RUN THIS IN SSMS FIRST)
+-- ⚙️ PHASE 0: ENVIRONMENT SETUP & SEED DATA (RUN IN SSMS FIRST)
 -- ============================================================
 
+-- Table 1: practice_day6 (Employees Master)
 IF OBJECT_ID('practice_day6', 'U') IS NOT NULL DROP TABLE practice_day6;
 CREATE TABLE practice_day6 (
-    empid INT,
-    empname VARCHAR(20),
-    org_id VARCHAR(10),
-    salary INT
+    empid INT PRIMARY KEY,
+    empname VARCHAR(50) NOT NULL,
+    org_id VARCHAR(20),  -- 'HR', 'IT', 'Entc', 'Stat', NULL
+    salary INT NOT NULL,
+    status VARCHAR(20)   -- 'Active', 'On Leave', 'Contract'
 );
 
-INSERT INTO practice_day6 (empid, empname, org_id, salary) VALUES 
-(101, 'Amit', 'HR', 2000),
-(102, 'Puja', 'Entc', 3000),
-(103, 'Arpit', 'Stat', 4000),
-(104, 'Sidhant', 'HR', 5000),
-(105, 'Mohit', NULL, 6000);
+INSERT INTO practice_day6 (empid, empname, org_id, salary, status) VALUES 
+(101, 'Amit Sharma',      'HR',   2000, 'Active'),
+(102, 'Puja Patel',       'Entc', 3000, 'Active'),
+(103, 'Arpit Bangre',     'Stat', 4000, 'On Leave'),
+(104, 'Sidhant Deshmukh', 'HR',   5000, 'Active'),
+(105, 'Mohit Verma',      NULL,   6000, 'Contract'),
+(106, 'Sneha Rao',        'IT',   7500, 'Active'),
+(107, 'Rahul Mehra',      'IT',   8200, 'Active'),
+(108, 'Ananya Sen',       'Stat', 4500, 'Contract'),
+(109, 'Vikas Roy',        'Entc', 3200, 'On Leave'),
+(110, 'Pooja Nair',       'HR',   5500, 'Active');
+
+-- Table 2: students (Academic Records Master)
+IF OBJECT_ID('students', 'U') IS NOT NULL DROP TABLE students;
+CREATE TABLE students (
+    RollNo INT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    marks INT NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    email VARCHAR(100),
+    subject VARCHAR(50) NOT NULL,
+    age INT NOT NULL
+);
+
+INSERT INTO students (RollNo, name, marks, city, email, subject, age) VALUES 
+(1, 'Aarav Gupta',    92, 'Nagpur',    'aarav@gmail.com',  'Stat', 21),
+(2, 'Diya Sen',       85, 'Pune',      'diya@yahoo.com',   'Maths', 22),
+(3, 'Kabir Mehta',    78, 'Nagpur',    NULL,               'Stat', 20),
+(4, 'Ishita Sharma',  95, 'Mumbai',    'ishita@gmail.com', 'Stat', 23),
+(5, 'Rohan Joshi',    64, 'Nagpur',    NULL,               'Physics', 21),
+(6, 'Tanvi Kulkarni', 88, 'Pune',      'tanvi@gmail.com',  'Stat', 22),
+(7, 'Yash Patil',     72, 'Bengaluru', 'yash@live.com',    'Maths', 20),
+(8, 'Ananya Roy',     81, 'Nagpur',    'ananya@gmail.com', 'Stat', 21),
+(9, 'Karan Malhotra', 59, 'Hyderabad', NULL,               'Physics', 24),
+(10,'Simran Kaur',    90, 'Delhi',     'simran@gmail.com', 'Stat', 22);
+
+-- Verify Seed Tables
+SELECT * FROM practice_day6;
+SELECT * FROM students;
 
 
 -- ============================================================
@@ -32,35 +67,37 @@ INSERT INTO practice_day6 (empid, empname, org_id, salary) VALUES
 --     and average salary together.
 -- Write your SQL Query below:
 
-
+select 
+    min(salary) as minimum_salary ,
+    max(salary) as maximum_salary,
+    avg(salary) as avg_salary
+from practice_day6
 
 
 -- Q2. Find the total number of
 --     rows using COUNT(*).
 -- Write your SQL Query below:
 
-
-
+select count(*) from practice_day6
 
 -- Q3. Find unique departments
 --     using DISTINCT.
 -- Write your SQL Query below:
 
-
-
+select distinct org_id from practice_day6
 
 -- Q4. Select the TOP 3 highest
 --     salaries from 'emp'.
 -- Write your SQL Query below:
 
-
+select top 3 salary from practice_day6
 
 
 -- Q5. Find sum of all salaries.
 -- Write your SQL Query below:
 
 
-
+select sum(salary) as sum_of_all_salaries from practice_day6
 
 
 -- ============================================================
@@ -71,7 +108,7 @@ INSERT INTO practice_day6 (empid, empname, org_id, salary) VALUES
 --     for TOP 5 students.
 -- Write your SQL Query below:
 
-
+select * from practice_day6
 
 
 -- Q7. Find average marks of
