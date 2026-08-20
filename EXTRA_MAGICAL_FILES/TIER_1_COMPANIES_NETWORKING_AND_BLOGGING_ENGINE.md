@@ -3,7 +3,7 @@
 
 **Architect:** Arpit Manoj Bangre (Cap)  
 **Co-Pilot:** Pippo 🐥  
-**Companion Directory:** [TOP_TIER_DATA_ENGINEERING_COMPANIES_HIRING_GUIDE.md](./TOP_TIER_DATA_ENGINEERING_COMPANIES_HIRING_GUIDE.md) | [GOAL.md](./GOAL.md)  
+**Companion Directory:** [DATA_ENGINEERING_TIER_1_HIRING_AND_SOCIAL_BRANDING_MASTER_PLAN.md](../DATA_ENGINEERING_TIER_1_HIRING_AND_SOCIAL_BRANDING_MASTER_PLAN.md) | [GOAL.md](./GOAL.md)  
 **Target Hubs:** Pune | Bengaluru | Hyderabad | Mumbai | Remote  
 
 ---
