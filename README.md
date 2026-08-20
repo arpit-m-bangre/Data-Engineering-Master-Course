@@ -1,7 +1,7 @@
 # 🚀 Data Engineering Master Course Portfolio
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=arpit-m-bangre&theme=radical&background=0b0f19&ring=00f2fe&fire=00f2fe&currStreakNum=00f2fe&currStreakLabel=38ef7d&sideNums=00f2fe&sideLabels=8b949e&dates=8b949e&border=1f293d&timezone=Asia%2FKolkata&hide_border=false&border_radius=12" alt="Pippo & Cap GitHub Streak" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app?user=arpit-m-bangre&theme=radical&timezone=Asia/Kolkata" alt="Pippo & Cap GitHub Streak" />
 </p>
 
 Welcome to my comprehensive **Data Engineering Master Portfolio**. This repository contains all my class notes, daily topic indexes, 7-step revision frameworks, practice problem sets, and production-grade projects built throughout my Data Engineering learning journey.
