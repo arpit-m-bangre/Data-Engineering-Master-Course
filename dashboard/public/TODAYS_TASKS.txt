@@ -1,43 +1,51 @@
 ====================================================================
-                  DAILY MISSION: 19 AUG 2026 (WEDNESDAY)
-               [NIGHT OWL RECOVERY & SPRINT EXECUTION PLAN]
+                  DAILY MISSION: 20 AUG 2026 (THURSDAY)
+             [11:30 AM HIGH-PRECISION SPRINT & ZERO-DEBT PLAN]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Complete All Daily Targets — Master Joins, Enterprise Project 1, English Task 1, Day 6 Backlog Clearance, Live Class & Maintain Streak Day 6!
-
-[x] 12:30 PM - 01:45 PM : Sprint 1 — Class Note Re-write and Read Revision Note [2026-08-18] ✅
-    -> Re-wrote 2026-08-18 notes, studied 7-step revision note on JOINS foundations, Cartesian cross product & NULL behavior
-[x] 01:45 PM - 02:45 PM : Sprint 2 — Practice Questions [2026-08-18] & SSMS Verification ✅
-    -> Solved & reviewed all 20 targeted drills in 2026-08-18_QUESTIONS.SQL with master explanations!
-[x] 02:45 PM - 03:45 PM : Lunch Break & Power Recharge Window 🥗💤 ✅
-    -> Nutritious meal + afternoon power nap reset completed!
+[!] MISSION OBJECTIVE: Master ANSI Joins Practice, Execute Enterprise Project 4 (HR Payroll), Clear Backlog Days 9 & 10 (Constraints & FKs), English Task 2, Live Class & Maintain Streak Day 7!
 
 --------------------------------------------------------------------
-                       EVENING & LIVE CLASS BLOCK
+                       DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[x] 07:15 PM - 08:45 PM : Dinner Break, Evening Walk & Mental Reset 🍽️🚶‍♂️ ✅
+[ ] 11:30 AM - 01:00 PM : Sprint 1 — Class Note Re-write and Read Revision Note [2026-08-19] ✍️
+    -> Re-write 2026-08-19 notes in SSMS, review 7-step revision note on ANSI Joins & Aggregations, solve drills in 2026-08-19_QUESTIONS.SQL
+
+[ ] 01:00 PM - 02:00 PM : Sprint 2 — Enterprise Project 4 (HR Payroll Engine) — Part 1 🛠️
+    -> Build schema DDL, enforce relational constraints (PK, FK, CHECK, DEFAULT) in PROJECT4.SQL
+
+[ ] 02:00 PM - 03:00 PM : Lunch Break & Bio-Paced Power Recharge Window 🥗💤
+    -> Nutritious meal, hydration & mental reset nap!
+
+[ ] 03:00 PM - 04:30 PM : Sprint 3 — Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-10] 📊
+    -> Re-write 2026-08-10 notes, study Day 9 Constraints (PK, UNIQUE, CHECK) & solve drills in 2026-08-10_QUESTIONS.SQL
+
+[ ] 04:30 PM - 05:45 PM : Sprint 4 — Backlog Clearance: Class Note Re-write and Read Revision Note [2026-08-11] 🛡️
+    -> Re-write 2026-08-11 notes, master Day 10 DEFAULT, IDENTITY & FK Rules + solve drills in 2026-08-11_QUESTIONS.SQL
+
+[ ] 05:45 PM - 06:45 PM : Sprint 5 — Enterprise Project 4 — Part 2: Execution & Validation 💻
+    -> Execute business audit queries, data validation test cases & audit completion in PROJECT4.SQL
+
+[ ] 06:45 PM - 07:15 PM : Sprint 6 — English Practice Book (Task 2) & Vocab Review 📖
+    -> Complete Task 2 from 125-task book + technical vocabulary and spoken drills
+
+--------------------------------------------------------------------
+                   EVENING & LIVE CLASS BLOCK
+--------------------------------------------------------------------
+[ ] 07:15 PM - 08:45 PM : Dinner Break, Evening Walk & Mental Reset 🍽️🚶‍♂️
     -> Relax, refuel, and disconnect before live class
-[x] 08:45 PM - 09:00 PM : Live Class Setup & SSMS Environment Warmup 💻 ✅
-    -> Open SSMS, check database connection, prepare live note sheet
-[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15) 🎓 ✅
-    -> Attended live Day 16 lecture on ANSI Joins Syntax, Column Ambiguity, sp_rename & Aggregations!
-[x] 10:15 PM - 10:30 PM : Post-Class Quick Break, Stretch & Ecosystem Sync 💧🐥 ✅
-    -> Processed raw notes into 2026-08-19.sql, 2026-08-19_INDEX.SQL, 2026-08-19_REVISION.md, 2026-08-19_CLASS_TASK.SQL & 2026-08-19_QUESTIONS.SQL!
 
---------------------------------------------------------------------
-                  NIGHT RECOVERY SPRINTS (100% CLEARANCE)
---------------------------------------------------------------------
-[x] 10:30 PM - 12:00 AM : Night Sprint 1 — Enterprise Project 1 (E-Commerce Sales Pipeline) 🛠️ ✅
-    -> Completed & audited all 10 tasks in PROJECT1.SQL (Filtering, Projections, UPDATE, DELETE & LIKE)!
-[x] 12:00 AM - 01:00 AM : Night Sprint 2 — Backlog Clearance (Day 6: Aggregates & GROUP BY) 📊 ✅
-    -> Class Note Re-write and Read Revision Note [2026-08-06] completed!
-[x] 01:00 AM - 02:00 AM : Night Sprint 3 — English Practice Book (Task 1) & Vocab Drills 📖 ✅
-    -> Completed Task 1 from 125-task book + technical vocabulary review!
-[x] 02:00 AM - 02:15 AM : System Sync, GitHub Streak Push & Vercel Trigger (Streak Day 6 🔥) ✅
-    -> Final commit & push to GitHub repository -> triggers auto-deployment to Vercel
-[!] 02:15 AM            : 🏆 100% MISSION ACCOMPLISHED & RECOVERY SLEEP 🌙
+[ ] 08:45 PM - 09:00 PM : Live Class Setup & SSMS Environment Warmup 💻
+    -> Open SSMS, verify database connection, prepare live note sheet
+
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15) 🎓
+    -> Attend live Day 17 lecture on Advanced Joins & Relational Algebra
+
+[ ] 10:15 PM            : System Sync, GitHub Push & Vercel Trigger (Streak Day 7 🔥) 🚀
+    -> Commit & push changes to GitHub repository -> auto-deploy to Vercel dashboard!
+    -> Strict 10:15 PM Study Cutoff & Sleep Protocol 🌙
 
 ====================================================================
-*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | Zero Backlog Protocol*
-*Daily Quote: "No excuses. We adjusted the sail, conquered the night, and finished 100% of the mission."*
+*Rules: 3-Stage Mastery Rule (Re-write -> Revision -> Practice -> Project) | 10:15 PM Strict Cutoff*
+*Daily Quote: "Consistency builds empires. Focus on execution, one clean query at a time."*
 ====================================================================
