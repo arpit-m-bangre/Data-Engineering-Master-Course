@@ -10,11 +10,11 @@ TOTAL STUDY TIME TODAY: 8.0 Hours (7.5h Core SQL & Class + 0.5h English)
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[x] 11:30 AM - 01:15 PM : Sprint 1 — Class Note Re-write & Class Tasks [2026-08-19] ✍️ (COMPLETED)
+[x] 11:30 AM - 01:15 PM : Sprint 1 — Class Note Re-write, Class Tasks & Practice Drills [2026-08-19] ✍️ (100% COMPLETED)
     -> [x] Re-write 2026-08-19 notes in SSMS (DONE)
     -> [x] Read 2026-08-19 Revision Note (DONE)
     -> [x] Solve all 6 In-Class & Homework Tasks in 2026-08-19_CLASS_TASK.SQL (DONE - Evaluated: 8.5/10)
-    -> [ ] 14 Practice Drills in 2026-08-19_QUESTIONS.SQL (NEXT UP!)
+    -> [x] 14 Practice Drills in 2026-08-19_QUESTIONS.SQL (DONE - Evaluated: 10/14 - Solid B)
 
 [ ] 01:15 PM - 02:15 PM : Sprint 2 — Backlog Clearance: Day 6 Practice Drills (20 Questions) 📊
     -> Solve all 20 targeted drills in 2026-08-06_QUESTIONS.SQL (Aggregates, GROUP BY, COUNT(*) vs COUNT(col), NULL handling)
