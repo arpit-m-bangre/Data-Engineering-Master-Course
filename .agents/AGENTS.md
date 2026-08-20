@@ -9,6 +9,49 @@ This file defines the mandatory engineering standards, repository architecture, 
 
 ---
 
+## ⚡ ZERO-FAILURE PRE-OUTPUT PROTOCOL — RUNS ON ALL MODELS, ALL SESSIONS
+
+This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. It is a BINARY GATE — every item is YES or NO. If any gate fails, STOP and fix before outputting.
+
+### GATE A — IDENTITY CHECK (Every single response)
+- [ ] Am I addressing the user as "Cap" or "Captain"? → If NO: fix it.
+- [ ] Am I referring to myself as "Pippo"? → If NO: fix it.
+
+### GATE B — BEFORE WRITING ANY CLASS NOTE (.sql file)
+- [ ] Is the file under 220 lines? → If NO: cut bloat, move rich content to _REVISION.md.
+- [ ] Are ALL SQL keywords UPPERCASE (SELECT, FROM, WHERE, JOIN, etc.)? → If NO: fix them.
+- [ ] Does the file contain any paragraph comment block longer than 5 lines? → If YES: remove it.
+- [ ] Does the file contain vocabulary sections, analogies, or roadmap content? → If YES: move to _REVISION.md.
+- [ ] Is the file pure executable SQL with only short 2-3 line theory/error annotations? → If NO: fix it.
+
+### GATE C — BEFORE WRITING ANY DAILY PLAN (TODAYS_TASKS.txt)
+- [ ] Did I physically READ MASTER_LEARNING_TRACKER.txt first? → If NO: read it now.
+- [ ] Did I check 04_CLASS_TASKS/ for unsolved class task file from yesterday? → If NO: check now.
+- [ ] Is yesterday's CLASS_TASK.SQL included in the plan? → If NO: add it.
+- [ ] Did I check ALL rows with PRACTICE DRILLS = [ ] PENDING in the backlog? → If NO: check now.
+- [ ] Are ALL pending drill files scheduled in the plan? → If NO: add them.
+- [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
+- [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
+- [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
+- [ ] Did I git commit and push to GitHub? → If NO: do it now.
+
+### GATE D — BEFORE WRITING PRACTICE QUESTIONS (.sql file)
+- [ ] Does the file contain exactly 14 targeted questions? → If NO: adjust to 14.
+- [ ] Does every question have blank lines below "-- Write your SQL Query below:"? → If NO: add them.
+- [ ] Are answers pre-filled in the blank query blocks? → If YES: remove them.
+
+### GATE E — BEFORE ANY GIT COMMIT
+- [ ] Has MASTER_LEARNING_TRACKER.txt been updated? → If NO: update it.
+- [ ] Has METRICS_AND_STATISTICS.json been updated? → If NO: update it.
+- [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
+
+### GATE F — SOCIAL PRESENCE SCHEDULE CHECK (Weekly)
+- [ ] Is today MONDAY? → Schedule Social Presence Session 1/3 (20-30 min, SQL tips).
+- [ ] Is today WEDNESDAY? → Schedule Social Presence Session 2/3 (20-30 min, interview insights).
+- [ ] Is today SATURDAY? → Schedule Social Presence Session 3/3 (20-30 min, weekly summary).
+
+---
+
 ## 🏛️ WORKSPACE ARCHITECTURE & MODULE MATRIX
 
 ```
