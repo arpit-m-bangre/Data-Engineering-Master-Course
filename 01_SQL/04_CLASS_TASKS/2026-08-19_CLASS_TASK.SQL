@@ -144,6 +144,21 @@ from Customers as c left join Orders o
 on c.custid = o.custid 
 group by month(t_date) 
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 1.5 / 2.0):
+   - Logic: Correct grouping & average calculation.
+   - Optimization: Use DATENAME(MONTH, t_date) for readable month names (e.g., 'January') instead of integers.
+   
+   -- 🚀 OPTIMIZED TIER-1 SENIOR QUERY:
+   SELECT 
+       DATENAME(MONTH, c.t_date) AS order_month,
+       AVG(o.amount) AS avg_monthly_sales
+   FROM Customers AS c
+   JOIN Orders AS o
+       ON c.custid = o.custid
+   GROUP BY DATENAME(MONTH, c.t_date);
+*/
+
 
 -- TASK 2: Display Customers who did NOT order anything till date.
 -- Requirements: Identify customers with zero matching orders in Orders table (Anti-Join).
@@ -154,6 +169,23 @@ from Customers as c  full join Orders as o
 on c.custid = o.custid
 where o_id is null 
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 1.5 / 2.0):
+   - Logic: Successfully found non-ordering customers.
+   - Critique: Avoid FULL JOIN for one-sided Anti-Joins. FULL JOIN scans both tables completely, 
+     costing unnecessary compute memory on large production tables. Use LEFT JOIN instead.
+   
+   -- 🚀 OPTIMIZED TIER-1 SENIOR QUERY:
+   SELECT 
+       c.custid, 
+       c.custname, 
+       c.city
+   FROM Customers AS c
+   LEFT JOIN Orders AS o
+       ON c.custid = o.custid
+   WHERE o.o_id IS NULL;
+*/
+
 
 -- TASK 3: Display Customer Name (custname), Month Name, Product ID (p_id), and Order Amount.
 -- Requirements: Join Customers with Orders and project specific columns avoiding any ambiguity.
@@ -162,6 +194,23 @@ where o_id is null
 select custname,month(t_date) as month,p_id as porduct_id,amount as order_amount
 from Customers as c  full join orders as o 
 on c.custid = o.custid
+
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 1.5 / 2.0):
+   - Logic: Good projection and alias naming.
+   - Critique: Minor typo in alias ('porduct_id' -> 'product_id'). Use INNER JOIN if showing orders placed, 
+     or LEFT JOIN if preserving customers without orders. FULL JOIN is unnecessary here.
+   
+   -- 🚀 OPTIMIZED TIER-1 SENIOR QUERY:
+   SELECT 
+       c.custname,
+       DATENAME(MONTH, c.t_date) AS order_month,
+       o.p_id AS product_id,
+       o.amount AS order_amount
+   FROM Customers AS c
+   JOIN Orders AS o
+       ON c.custid = o.custid;
+*/
 
 
 -- ====================================================================================================
@@ -177,6 +226,19 @@ from p_info as p left join D_info as d
 on p.p_id = d.p_id
 where d.Dname is not null 
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 2.0 / 2.0):
+   - Verdict: 100% Correct.
+   - Tip: 'LEFT JOIN + WHERE right.col IS NOT NULL' is functionally an INNER JOIN.
+   
+   -- 🚀 CLEAN STANDARD QUERY:
+   SELECT p.pname, d.Dname
+   FROM p_info AS p
+   JOIN D_info AS d
+       ON p.p_id = d.p_id;
+*/
+
+
 -- TASK 5: Display Patients who have NOT been assigned any Doctor till date.
 -- Requirements: Anti-join on p_info and D_info.
 -- Write your SQL Query below:
@@ -186,6 +248,10 @@ from p_info as p left join D_info as d
 on p.p_id = d.p_id
 where d.Dname is null 
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 2.0 / 2.0):
+   - Verdict: PERFECT! 100% textbook Left Anti-Join implementation! 🎯
+*/
 
 
 -- TASK 6: Department-wise Average Salary (Preserving All Departments).
@@ -197,5 +263,33 @@ from set1 as s1 left join set2 as s2
 on s1.id = s2.id
 group by dept 
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 2.0 / 2.0):
+   - Verdict: PERFECT! You correctly identified why LEFT JOIN is necessary to preserve 
+     departments with zero salary data.
+*/
+
 
 -- ====================================================================================================
+-- 🏆 PIPPO'S OFFICIAL MENTOR AUDIT & SCORECARD
+-- ====================================================================================================
+/*
+   ========================================================================================
+   STUDENT: Captain Arpit Manoj Bangre (Cap)
+   DATE EVALUATED: 20 August 2026
+   TOTAL SCORE: 8.5 / 10 (SOLID PASS - B+)
+   
+   SCORE MATRIX:
+   - Task 1 (Month-wise Average Sales) : 1.5 / 2.0  (Good aggregation; use DATENAME for names)
+   - Task 2 (Customer Anti-Join)       : 1.5 / 2.0  (Correct logic; prefer LEFT JOIN over FULL JOIN)
+   - Task 3 (Customer & Order Projection): 1.5 / 2.0 (Clean aliases; fixed typo 'porduct_id')
+   - Task 4 (Doctor-Patient Matches)   : 2.0 / 2.0  (100% Correct)
+   - Task 5 (Doctor Anti-Join)         : 2.0 / 2.0  (100% Flawless Left Anti-Join)
+   - Task 6 (Dept Average Salary)      : 2.0 / 2.0  (100% Flawless Aggregate Preservation)
+   
+   MENTOR REMARKS:
+   "Your conceptual grasp of join mechanics, group aggregations, and Anti-Joins is solid!
+    Focus on query performance hygiene (avoiding unnecessary FULL JOINS on single-sided filters).
+    Keep pushing, Cap! You are building real muscle memory." — Pippo 🐥
+   ========================================================================================
+*/
