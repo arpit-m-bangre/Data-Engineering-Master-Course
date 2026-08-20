@@ -5,15 +5,30 @@ This recommender engine combines **Spaced Repetition Principles**, **Automated W
 
 ---
 
-## 🧭 SPACED REPETITION CADENCE & CYCLE LOGIC
+## 🧭 THE 7-TO-9 CYCLE DYNAMIC SPACED REPETITION ENGINE
 
-| Interval Stage | Target Timeline | Learning Activity | Target Output Artifact |
-| :--- | :--- | :--- | :--- |
-| **Interval 1: Immediate** | Same Day (Class Night) | Note re-write + 7-Step Interactive Revision | [03_REVISION_NOTES/](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/) |
-| **Interval 2: Day + 1** | Next Morning / Sprint 1 | Solve 14-Question Drills + Class Tasks | [05_INDEX_WISE_QUESTIONS/](file:///d:/DE%20COURSE/01_SQL/05_INDEX_WISE_QUESTIONS/) & [04_CLASS_TASKS/](file:///d:/DE%20COURSE/01_SQL/04_CLASS_TASKS/) |
-| **Interval 3: Day + 3** | Mid-Week Catchup | Error Trap Diagnostic & Bug Resolution | [CONCEPT_MASTERY_HEATMAP.md](file:///d:/DE%20COURSE/LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md) |
-| **Interval 4: Day + 7** | Weekly Milestone | Enterprise Pipeline Project Execution | [06_PROJECTS/](file:///d:/DE%20COURSE/01_SQL/06_PROJECTS/) |
-| **Interval 5: Day + 14 / Pre-Interview** | Fortnightly Sprint | Rapid Recall Drill & Formula Verification | [REVISION_RECOMMENDER_ENGINE.md](file:///d:/DE%20COURSE/LEARNING_DIARY/REVISION_RECOMMENDER_ENGINE.md) |
+*Minimum 7 Revisions for Standard Modules | Up to 9-12 Revisions for Complex/Tier-1 Core Modules (Joins, Window Functions, Spark, Distributed Storage).*
+
+### 📊 Adaptive Module Complexity Scale:
+- 🟢 **Standard Complexity (7 Cycles):** DDL/DML, Basic Filtering, Arithmetic Aliases, sp_rename.
+- 🟡 **Medium Complexity (8 Cycles):** Aggregates, GROUP BY/HAVING, Date Functions, Set Operators.
+- 🔴 **High / Tier-1 Core Complexity (9-12 Cycles):** Relational Joins & Cartesian Math, Constraints & Referential Integrity, Window Functions, CTEs/Subqueries, Indexing & Query Tuning, PySpark Distributed Execution, Airflow DAG Architecture.
+
+---
+
+### 🔄 The 9-Stage Spaced Revision Lifecycle:
+
+| Cycle | Trigger Stage | Timing Cadence | Target Learning Activity | Verification Artifact |
+| :---: | :--- | :--- | :--- | :--- |
+| **Rev 1** | **Day 0 (Night)** | Class Day (0-2 hrs post-class) | Class Note Re-write + 7-Step Revision Read | [01_CLASS_NOTES/](file:///d:/DE%20COURSE/01_SQL/01_CLASS_NOTES/) & [03_REVISION_NOTES/](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/) |
+| **Rev 2** | **Day 1 (Morning)** | Next Day (Sprint 1) | Solve Faculty Class Tasks + 14 Drill Queries | [04_CLASS_TASKS/](file:///d:/DE%20COURSE/01_SQL/04_CLASS_TASKS/) & [05_INDEX_WISE_QUESTIONS/](file:///d:/DE%20COURSE/01_SQL/05_INDEX_WISE_QUESTIONS/) |
+| **Rev 3** | **Day 3** | Mid-Week Anchor | Error Trap Diagnostic & Edge-Case Bug Fixing | [CONCEPT_MASTERY_HEATMAP.md](file:///d:/DE%20COURSE/LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md) |
+| **Rev 4** | **Day 7** | Weekly Milestone | Enterprise Pipeline Project Execution (P1-P5) | [06_PROJECTS/](file:///d:/DE%20COURSE/01_SQL/06_PROJECTS/) |
+| **Rev 5** | **Day 14** | Fortnightly Review | Blind Query Re-solve without looking at answers | [05_INDEX_WISE_QUESTIONS/](file:///d:/DE%20COURSE/01_SQL/05_INDEX_WISE_QUESTIONS/) |
+| **Rev 6** | **Month 1-2** | Secondary Engine Sprint | Cross-Verification with Supplementary Course (Baraa) | [EXTRA_FREE_RESOURCES.md](file:///d:/DE%20COURSE/EXTRA_FREE_RESOURCES.md) |
+| **Rev 7** | **Month 3** | Module Handover | Rapid Recall Heatmap Blitz (Formula verification) | [REVISION_RECOMMENDER_ENGINE.md](file:///d:/DE%20COURSE/LEARNING_DIARY/REVISION_RECOMMENDER_ENGINE.md) |
+| **Rev 8** | **Month 5-6** | Multi-Module Integration | End-to-End Pipeline Integration (Python + SQL + Cloud) | Enterprise Project Portfolio |
+| **Rev 9** | **Month 8-9** | Pre-Interview Phase | LeetCode Hard / Whiteboarding & Rapid Mock Drills | Mock Interview Battle Plan |
 
 ---
 
