@@ -5,7 +5,7 @@
 
 [!] MISSION OBJECTIVE: Day 17 Note Re-write, Faculty Tasks (7), Practice Drills (14), English Task 3, Day 12 Backlog, Live Class & Special Tier-1 LinkedIn Branding Sprint!
 
-TOTAL STUDY TIME TODAY: 9.75 Hours (8.5h Core SQL, Class & Backlog + 0.5h English + 3.0h Social Sprint)
+TOTAL STUDY TIME TODAY: 8.75 Hours (6.75h Core SQL, Class & Backlog + 0.5h English + 1.5h Social Sprint)
 
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
@@ -32,10 +32,8 @@ TOTAL STUDY TIME TODAY: 9.75 Hours (8.5h Core SQL, Class & Backlog + 0.5h Englis
 [-] 06:30 PM - 07:00 PM : Tea Break & Evening Refreshment ☕🚶
     -> Evening tea, mental reset & physical stretch
 
-[ ] 07:00 PM - 08:30 PM : Sprint 4 — Backlog Recovery: Day 12 Retrofitting Constraints 🛠️
-    -> Read Revision Note: 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md
-    -> Solve Practice Drills: 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL
-    -> Mark Day 12 100% Zero-Debt in Backlog Matrix
+[-] 07:00 PM - 08:30 PM : Relax & Friends Catchup Call Window ☕📱
+    -> Relax, casual conversation with friends & mental recharge!
 
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
@@ -48,14 +46,19 @@ TOTAL STUDY TIME TODAY: 9.75 Hours (8.5h Core SQL, Class & Backlog + 0.5h Englis
     -> Take raw notes of teacher's real-world join architectures & homework questions
 
 --------------------------------------------------------------------
-                 POST-CLASS NIGHT SPRINT BLOCK (SOCIAL STRATEGY)
+                 POST-CLASS NIGHT SPRINT BLOCK (BACKLOG & BRANDING)
 --------------------------------------------------------------------
 [-] 10:15 PM - 10:30 PM : Post-Class Quick Break & Hydration Window ☕
-    -> Quick stretch, water reset & mental preparation for branding sprint
+    -> Quick stretch, water reset & mental preparation for night sprints
 
-[ ] 10:30 PM - 01:30 AM : Sprint 5 — Special Tier-1 LinkedIn & 34-Platform Social Presence Sprint 🚀
+[ ] 10:30 PM - 12:00 AM : Sprint 4 — Backlog Recovery: Day 12 Retrofitting Constraints 🛠️
+    -> Read Revision Note: 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md
+    -> Solve Practice Drills: 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL
+    -> Mark Day 12 100% Zero-Debt in Backlog Matrix
+
+[ ] 12:00 AM - 01:30 AM : Sprint 5 — Tier-1 LinkedIn & Social Presence Sprint 🚀
     -> Update LinkedIn Profile with new Data Engineer headline & About text (TIER1_BRANDING_MASTER_PLAN.md)
-    -> Publish Day 1 #90DaysOfDataEngineering Post on LinkedIn & Medium (medium.com/@arpitmbangre)
+    -> Draft & schedule Day 1 #90DaysOfDataEngineering Post on LinkedIn & Medium
     -> Send 10-12 tailored connection requests to Tier-1 DEs (Barclays, Snowflake, Microsoft)
     -> Review digital_presence_ecosystem.html interactive showcase
 
