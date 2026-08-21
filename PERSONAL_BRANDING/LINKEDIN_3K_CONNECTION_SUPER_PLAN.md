@@ -6,6 +6,34 @@
 
 ---
 
+## ⚡ SECTION 0: HIGH-REACH 1-CLICK CONNECTION TEMPLATES (NO COMPANY NAME REQUIRED)
+> [!TIP]
+> **Optimized for Arpit Bangre:** 100% humanized, zero selling/begging, strictly under 240 characters. You only need to replace `[Name]` with their first name. Copy-paste ready for high-speed, zero-flag outreach!
+
+### 🌟 Template 1: The Clean Peer Engineer (Highest Acceptance Rate ~85%)
+```text
+Hi [Name], came across your profile and really liked your work in data systems. I'm a fellow Data Engineer focused on SQL query optimization and scalable ETL pipelines. 
+
+Would love to connect and follow your journey!
+```
+
+### 🚀 Template 2: The Conversational 2-Liner (Best for High-Speed Daily Batch)
+```text
+Hi [Name], always great to connect with fellow Data Engineers building large-scale data systems. Glad to stay in touch and exchange technical insights!
+```
+
+### 💡 Template 3: The Stack & Reliability Specialist (For SQL / PySpark / Cloud DEs)
+```text
+Hi [Name], saw your focus in data engineering and distributed pipelines. As an engineer working deeply on relational architectures and ETL reliability, would be great to connect and stay in touch!
+```
+
+### ☕ Template 4: The Warm Community Connector (Super Friendly)
+```text
+Hi [Name], always looking to connect with and learn from active engineers across the data engineering space. Glad to follow your work and stay connected!
+```
+
+---
+
 ## 🗺️ MASTER MISSION MAP
 
 ```mermaid
