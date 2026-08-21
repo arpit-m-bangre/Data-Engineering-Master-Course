@@ -44,7 +44,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are answers pre-filled in the blank query blocks? → If YES: remove them.
 
 ### GATE E — BEFORE ANY GIT COMMIT
-- [ ] Has MASTER_LEARNING_TRACKER.txt been updated? → If NO: update it.
+- [ ] Have BOTH MASTER_LEARNING_TRACKER.txt and MASTER_LEARNING_TRACKER.md been updated? → If NO: update them.
 - [ ] Has METRICS_AND_STATISTICS.json been updated? → If NO: update it.
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
@@ -85,7 +85,8 @@ d:\DE COURSE\
 │   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
 │   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
 └── LEARNING_DIARY/               <-- Central Course Brain & Daily Mentor Intelligence Engine
-    ├── MASTER_LEARNING_TRACKER.txt   <-- Live Single Source of Truth (SSOT) Progress Matrix & 11-Day Plan
+    ├── MASTER_LEARNING_TRACKER.txt   <-- Live Single Source of Truth (SSOT) Plain-Text Progress Matrix
+    ├── MASTER_LEARNING_TRACKER.md    <-- Live Single Source of Truth (SSOT) Rich Markdown Progress Matrix
     ├── DAILY_MENTOR_GUIDE.md        <-- Daily AI Mentor Protocol & System Guide
     ├── CONCEPT_MASTERY_HEATMAP.md   <-- Concept Intelligence Matrix, Bug Traps & Mastery Levels
     ├── REVISION_RECOMMENDER_ENGINE.md<-- Spaced Repetition Priority Recommender System
@@ -121,7 +122,7 @@ d:\DE COURSE\
   4. `04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL` (Faculty tasks)
   5. `05_INDEX_WISE_QUESTIONS/YYYY-MM-DD_QUESTIONS.SQL` (14 drills)
   6. `06_PROJECTS/` (Evaluated for project milestones)
-  7. `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` (Adds row to Section 2, updates dashboard & backlog)
+  7. `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` & `LEARNING_DIARY/MASTER_LEARNING_TRACKER.md` (Dual plain-text & Markdown sync)
   8. `LEARNING_DIARY/METRICS_AND_STATISTICS.json` (Updates counters & metrics)
   9. `LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md` (Updates concept matrix)
   10. `LEARNING_DIARY/LEARNING_DIARY.txt` (Appends progress entry)

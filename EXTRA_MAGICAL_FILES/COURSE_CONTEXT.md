@@ -34,7 +34,8 @@ d:\DE COURSE\
 │   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
 │   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
 └── LEARNING_DIARY/               <-- Central Course Brain & Daily Mentor Intelligence System
-    ├── MASTER_LEARNING_TRACKER.txt   <-- Live Single Source of Truth (SSOT) Progress Matrix & 11-Day Plan
+    ├── MASTER_LEARNING_TRACKER.txt   <-- Live Single Source of Truth (SSOT) Plain-Text Progress Matrix
+    ├── MASTER_LEARNING_TRACKER.md    <-- Live Single Source of Truth (SSOT) Rich Markdown Progress Matrix
     ├── DAILY_MENTOR_GUIDE.md        <-- Daily AI Mentor Protocol & System Guide
     ├── CONCEPT_MASTERY_HEATMAP.md   <-- Concept Intelligence Matrix, Bug Traps & Mastery Levels
     ├── REVISION_RECOMMENDER_ENGINE.md<-- Spaced Repetition Priority Recommender System
