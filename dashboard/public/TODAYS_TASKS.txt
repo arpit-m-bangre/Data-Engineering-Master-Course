@@ -54,7 +54,7 @@ TOTAL STUDY TIME TODAY: 5.75 Hours (Day 17 Mastery + Live Class + 3.0h Night Lin
     -> Deferred to weekend sprint to prioritize 100% focus on LinkedIn branding
 
 [ ] 11:00 PM - 02:00 AM : Sprint 5 — Dedicated Tier-1 LinkedIn & Social Presence Sprint 🚀
-    -> Profile Architecture: Update LinkedIn Headline, About Section & Featured Skills from TIER1_BRANDING_MASTER_PLAN.md
+    -> Profile Architecture: Update LinkedIn Headline, About Section & Featured Skills from PERSONAL_BRANDING/TIER1_BRANDING_MASTER_PLAN.md
     -> Content Engine: Draft & schedule Post 1 for #90DaysOfDataEngineering on LinkedIn & Medium
     -> Recruiter & Tier-1 Networking: Send 10-15 targeted connection requests to Data Engineers (Barclays, Microsoft, Snowflake)
     -> Portfolio Showcase: Review and explore digital_presence_ecosystem.html interactive platform map
