@@ -99,7 +99,7 @@ INNER JOIN Product AS p ON o.pid = p.pid;
 4. MULTI-TABLE AGGREGATIONS: LEFT JOIN VS INNER JOIN
 ==================================================================*/
 
--- Q2: Display Customer Name with Total Amount Spent (LEFT JOIN - Includes non-purchasing customers)
+-- Q2: 1 Display Customer Name with Total Amount Spent (LEFT JOIN - Includes non-purchasing customers)
 SELECT 
     c.Custname,
     SUM(o.quantity * p.price) AS TotalSpent
@@ -108,7 +108,9 @@ LEFT JOIN Orders AS o ON c.custid = o.custid
 LEFT JOIN Product AS p ON o.pid = p.pid
 GROUP BY c.Custname;
 
--- Q2 (INNER JOIN - Only customers with valid orders and products)
+-- Q2: 2 
+(INNER JOIN - Only customers with valid orders and products)
+
 SELECT 
     c.Custname,
     SUM(o.quantity * p.price) AS TotalSpent

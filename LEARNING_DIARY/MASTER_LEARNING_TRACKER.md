@@ -42,7 +42,7 @@
 | **14** | Date & DateTime Functions | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **15** | Foundations of Joins & Cartesian Math | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **16** | ANSI Joins Syntax, Ambiguity & Group By | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
-| **17** | Multi-Table Joins, Cross & Equi Joins | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
+| **17** | Multi-Table Joins, Cross & Equi Joins | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 
