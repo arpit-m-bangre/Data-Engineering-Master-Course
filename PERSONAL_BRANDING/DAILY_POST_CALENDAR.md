@@ -144,6 +144,33 @@ Think of it like a newspaper: same font, same layout language, different stories
 
 ---
 
+## 🛡️ SECTION 0D: THE "ZERO CR BADGE" METADATA STRIPPING PROTOCOL
+
+**Issue Identified (22 Aug 2026):** Uploading raw AI-generated images triggers LinkedIn's **`CR` (Content Credentials)** pop-up badge stating *"App or device used: OpenAI Media Service API"*.
+
+To ensure your hand-drawn visual diagrams are 100% clean with **ZERO badges, zero AI flags, and 100% human-crafted authority**, use one of these 3 methods before uploading:
+
+### ⚡ Method 1: The 5-Second Screenshot Snip (Fastest & 100% Foolproof)
+1. Open the generated visual diagram in full view on your PC screen.
+2. Press **`Win + Shift + S`** (Windows Snipping Tool).
+3. Select the exact frame/border of your diagram.
+4. Save as a new file: `post_N_clean.png`.
+5. **Why it works:** Snipping tools create a raw framebuffer bitmap with 0% EXIF/C2PA metadata. LinkedIn sees it as a 100% fresh, authentic graphic created on your local PC!
+
+### 🎨 Method 2: Wash & Watermark in Canva / Excalidraw
+1. Import the visual into **Canva** or **Excalidraw**.
+2. Add your personal watermark in the corner: `Arpit Bangre | #180DaysOfDataEngineering`.
+3. Export / Download as `PNG`.
+4. Canva/Excalidraw rewrites the entire image metadata table from scratch, stripping all external service origin headers.
+
+### 📐 Pre-Upload Sanity Checklist:
+- [ ] Image has been screen-snipped (`Win + Shift + S`) or exported via Canva
+- [ ] Personal watermark added in bottom-right corner
+- [ ] Series badge `Post #N / 180` visible
+- [ ] Clean aspect ratio (1:1 Square or 4:5 Portrait)
+
+---
+
 ## PHASE 1 — SQL ENGINE INTERNALS (Posts 1–45)
 **22 Aug 2026 → 05 Oct 2026**
 
