@@ -32,6 +32,9 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are ALL pending drill files scheduled in the plan? → If NO: add them.
 - [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
 - [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
+- [ ] Is EVERY task line strictly in single-card format: `[ ] HH:MM AM/PM - HH:MM AM/PM : Sprint N — Title`? → If NO: fix format.
+- [ ] Are ALL task details strictly formatted as indented bullets (`    -> Description`)? → If NO: fix format.
+- [ ] Are break/rest blocks formatted as `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title`? → If NO: fix format.
 - [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
 - [ ] Did I git commit and push to GitHub? → If NO: do it now.
 
@@ -241,6 +244,68 @@ This law exists because Pippo accidentally dumped Revision Note content (vocabul
 2. No paragraph-length comment blocks exist (more than 5 lines in a single comment = VIOLATION).
 3. No vocabulary, analogy, or roadmap content exists in the .sql file.
 4. All such content has been placed in the corresponding `_REVISION.md` file instead.
+
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+
+---
+
+## 📜 CONSTITUTIONAL LAW #13 — DAILY MISSION FORMAT IMMUTABILITY (ZERO "NO TASKS FOUND" LAW) 🔴 CRITICAL
+
+This law exists because format drift in `TODAYS_TASKS.txt` breaks the Vercel web dashboard parser, causing the dreaded *"No tasks found for today."* empty state or duplicating time slots across cards.
+
+### MANDATORY FORMAT TEMPLATE (100% IMMUTABLE):
+
+```text
+====================================================================
+                  DAILY MISSION: DD MMM YYYY (DAY_OF_WEEK)
+      [TAGLINE / REAL-TIME STATUS / SUB-HEADER]
+====================================================================
+
+[!] MISSION OBJECTIVE: High-impact one-line objective for the day!
+
+TOTAL STUDY TIME TODAY: X.X Hours (Breakdown summary)
+
+--------------------------------------------------------------------
+                       DAY SPRINT EXECUTION
+--------------------------------------------------------------------
+[ ] HH:MM AM - HH:MM PM : Sprint N — Sprint Title ✍️
+    -> Specific actionable sub-bullet 1 (Target File / Command)
+    -> Specific actionable sub-bullet 2
+    -> Specific actionable sub-bullet 3
+
+[-] HH:MM AM - HH:MM PM : Meal / Break / Family Recharge Window 🥗💤
+    -> Break details and mental reset notes
+
+--------------------------------------------------------------------
+                    EVENING & LIVE CLASS BLOCK
+--------------------------------------------------------------------
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY N) 🎓
+    -> Live lecture focus areas and topics
+
+--------------------------------------------------------------------
+                 POST-CLASS NIGHT SPRINT BLOCK
+--------------------------------------------------------------------
+[ ] HH:MM PM - HH:MM AM : Sprint N — Night Sprint Focus / Social Strategy 🚀
+    -> Task details
+
+[ ] HH:MM AM - HH:MM AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
+    -> System sync and auto-deploy confirmation
+
+====================================================================
+*Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
+*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+====================================================================
+```
+
+### STRICT SYNTAX RULES:
+1. **Single Time-Slot Header per Card:** Every executable sprint MUST begin with `[ ] HH:MM AM - HH:MM PM : Sprint Title`.
+2. **Indented Sub-Bullets (`    -> `):** Every sub-action, target file, or note beneath a task MUST begin with 4 spaces followed by `-> `.
+3. **Breaks & Meals:** Non-study periods MUST begin with `[-] HH:MM AM - HH:MM PM : Break Title`.
+4. **Completed Tasks:** Completed sprints MUST begin with `[x] HH:MM AM - HH:MM PM : Sprint Title`.
+5. **FORBIDDEN PATTERNS:** 
+   - NEVER use bare checklist bullets (`- [ ]`) without the parent `[ ] HH:MM - HH:MM : ...` time header line.
+   - NEVER omit the `    -> ` prefix for details.
+   - NEVER change the header / footer divider formats.
 
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 
