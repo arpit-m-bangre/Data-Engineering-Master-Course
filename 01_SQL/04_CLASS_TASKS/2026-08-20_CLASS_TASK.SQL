@@ -103,6 +103,7 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
+-- [Your Attempt]:
 select 
     custname,
     pname,
@@ -112,8 +113,19 @@ select
     (quantity*price) as total_line_amount
 from customer c 
 left join orders o on c.custid = o.custid 
-full join  product p on o.pid = p.pid 
+full join  product p on o.pid = p.pid;
 
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
+SELECT 
+    c.Custname,
+    p.Pname,
+    p.category,
+    o.quantity,
+    p.price,
+    (o.quantity * p.price) AS total_line_amount
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid;
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -125,25 +137,44 @@ full join  product p on o.pid = p.pid
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below (Part a - INNER JOIN):
 
+-- [Your Attempt]:
 select Custname,sum(price) as total_spend 
 from customer c 
 inner join orders o on c.custid = o.custid 
 inner join  product p on o.pid = p.pid 
-group by Custname
- 
+group by Custname;
 
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a]:
+SELECT 
+    c.custid,
+    c.Custname,
+    SUM(o.quantity * p.price) AS total_spend
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+GROUP BY c.custid, c.Custname;
 
 
 -- Write your SQL Query below (Part b - LEFT JOIN with ISNULL):
 
-
+-- [Your Attempt]:
 select Custname,sum(price) as total_spend 
 from customer c 
 left join orders o on c.custid = o.custid 
 left join  product p on o.pid = p.pid 
-group by Custname
- 
+group by Custname;
 -- don't know how to use isnull
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b]:
+SELECT 
+    c.custid,
+    c.Custname,
+    ISNULL(SUM(o.quantity * p.price), 0.00) AS total_spend
+FROM Customer c
+LEFT JOIN Orders o ON c.custid = o.custid
+LEFT JOIN Product p ON o.pid = p.pid
+GROUP BY c.custid, c.Custname;
+
 
 -- ----------------------------------------------------------------------------------------------------
 -- 📌 TASK 3: FILTERED MULTI-TABLE AGGREGATION WITH HAVING & SORTING
@@ -152,6 +183,7 @@ group by Custname
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
+-- [Your Attempt]:
 select custname,sum(price) as total_spend 
 from customer c 
 left join orders o on c.custid = o.custid 
@@ -159,7 +191,20 @@ left join  product p on o.pid = p.pid
 where custname like '%a%' 
 group by Custname
 having sum(price) > 200000
-order by total_spend asc 
+order by total_spend asc;
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
+SELECT 
+    c.custid,
+    c.Custname,
+    SUM(o.quantity * p.price) AS total_spend
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+WHERE c.Custname LIKE '%a%'
+GROUP BY c.custid, c.Custname
+HAVING SUM(o.quantity * p.price) > 200000
+ORDER BY total_spend ASC;
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -169,11 +214,23 @@ order by total_spend asc
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
+-- [Your Attempt]:
 select custname ,pname ,t_date,datepart(qq,t_date) 
 from customer c 
 left join orders o on c.custid = o.custid 
 left join  product p on o.pid = p.pid 
-where datepart(qq,t_date) in (1,3)
+where datepart(qq,t_date) in (1,3);
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
+SELECT 
+    c.Custname,
+    p.Pname,
+    o.T_date,
+    DATEPART(qq, o.T_date) AS order_quarter
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+WHERE DATEPART(qq, o.T_date) IN (1, 3);
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -184,18 +241,31 @@ where datepart(qq,t_date) in (1,3)
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below (Part a):
 
-select * from Customer,Product
+-- [Your Attempt]:
+select * from Customer,Product;
 
 select * 
-from Customer cross join Product 
+from Customer cross join Product;
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a]:
+SELECT * 
+FROM Customer 
+CROSS JOIN Product;
 
 
 -- Write your SQL Query below (Part b):
 
-select * from Customer,Product,Orders
+-- [Your Attempt]:
+select * from Customer,Product,Orders;
 
 select * 
-from Customer cross join Product cross join orders 
+from Customer cross join Product cross join orders;
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b]:
+SELECT * 
+FROM Customer 
+CROSS JOIN Product 
+CROSS JOIN Orders;
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -206,12 +276,22 @@ from Customer cross join Product cross join orders
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
-
+-- [Your Attempt]:
 SELECT TeamName as hometeam , city as homecity  
 FROM TeamName cross join TeamName 
-where teamid <> teamid 
-
+where teamid <> teamid;
 -- no idea how to solve 
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
+SELECT 
+    t1.TeamName AS HomeTeam,
+    t1.City     AS HomeCity,
+    t2.TeamName AS AwayTeam,
+    t2.City     AS AwayCity
+FROM MatchTeams t1
+CROSS JOIN MatchTeams t2
+WHERE t1.TeamID <> t2.TeamID
+ORDER BY t1.TeamID, t2.TeamID;
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -224,18 +304,43 @@ where teamid <> teamid
 
 -- Write your SQL Query below (Part a - Legacy Equi Join):
 
+-- [Your Attempt]:
 select * 
 from Customer c 
-inner join orders o on c.custid = o.custid 
+inner join orders o on c.custid = o.custid;
+
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a (Legacy Equi Join)]:
+SELECT 
+    c.custid,
+    c.Custname,
+    c.city,
+    o.oid,
+    o.pid,
+    o.quantity,
+    o.T_date
+FROM Customer c, Orders o
+WHERE c.custid = o.custid;
 
 
 -- Write your SQL Query below (Part b - ANSI Inner Join):
 
+-- [Your Attempt]:
 select * 
 from Customer as c,orders as o
 where 
-c.custid = o.custid 
+c.custid = o.custid;
 
+-- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b (ANSI Inner Join)]:
+SELECT 
+    c.custid,
+    c.Custname,
+    c.city,
+    o.oid,
+    o.pid,
+    o.quantity,
+    o.T_date
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid;
 
 -- ====================================================================================================
 -- 🐥 PIPPO'S STRICT MENTOR EVALUATION & ARCHITECTURAL REVIEW
