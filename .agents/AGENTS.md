@@ -32,9 +32,11 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are ALL pending drill files scheduled in the plan? → If NO: add them.
 - [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
 - [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
+- [ ] Did I start from the GOLDEN TEMPLATE at `.agents/TODAYS_TASKS_GOLDEN_TEMPLATE.txt`? → If NO: use it.
 - [ ] Is EVERY task line strictly in single-card format: `[ ] HH:MM AM/PM - HH:MM AM/PM : Sprint N — Title`? → If NO: fix format.
 - [ ] Are ALL task details strictly formatted as indented bullets (`    -> Description`)? → If NO: fix format.
 - [ ] Are break/rest blocks formatted as `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title`? → If NO: fix format.
+- [ ] Did I verify format against `.agents/rules/todays_tasks_format_lock.md` parser contract? → If NO: verify now.
 - [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
 - [ ] Did I git commit and push to GitHub? → If NO: do it now.
 
