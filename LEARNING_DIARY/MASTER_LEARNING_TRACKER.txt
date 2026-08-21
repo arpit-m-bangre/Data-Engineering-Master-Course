@@ -18,7 +18,7 @@ Last Updated: 21 AUG 2026   | Overall SQL Completion: [██░░░░░░�
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 17) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 18) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -41,6 +41,8 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 15   | Foundations of Joins & Cartesian Math     | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 16   | ANSI Joins Syntax, Ambiguity & Group By   | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 17   | Multi-Table Joins, Cross & Equi Joins     | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
+18   | Self Joins, Hierarchies & Fraud Engines   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]

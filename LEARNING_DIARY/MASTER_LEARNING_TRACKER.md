@@ -22,7 +22,7 @@
 
 ---
 
-## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 17)
+## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 18)
 
 | Day | Topic Focus Area | Re-Write Note | Revision Note | Practice Drills | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -43,6 +43,7 @@
 | **15** | Foundations of Joins & Cartesian Math | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **16** | ANSI Joins Syntax, Ambiguity & Group By | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **17** | Multi-Table Joins, Cross & Equi Joins | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
+| **18** | Self Joins, Hierarchies & Fraud Engines | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 

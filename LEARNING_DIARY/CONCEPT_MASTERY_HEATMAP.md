@@ -15,7 +15,8 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **5. Relational Architecture & Foreign Keys** | 5 | 5 | 0 | 🔴 High |
 | **6. Dynamic Schema Retrofitting & Metadata** | 4 | 3 | 1 | 🔴 High |
 | **7. Temporal Data Types & Date Functions** | 5 | 5 | 0 | 🔴 High |
-| **8. Relational Joins & Cartesian Math** | 5 | 5 | 0 | 🔴 High |
+| **8. Relational Joins & Cartesian Math** | 11 | 11 | 0 | 🔴 High |
+| **9. Self Joins & Hierarchical Modeling** | 5 | 5 | 0 | 🔴 High |
 
 ---
 
@@ -106,6 +107,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C8.9** | Multi-Table Chained Joins (3+ Tables) & Granularity | MASTERED | Joining on wrong table key in 3-way chain | 1 | 🔴 High |
 | **C8.10** | ANSI `CROSS JOIN` Combinations & Round-Robin Matrix | MASTERED | Accidental Cartesian explosion on large datasets | 1 | 🟡 Medium |
 | **C8.11** | Non-ANSI Legacy Comma Joins vs ANSI SQL-92 | MASTERED | Missing WHERE clause causing unintended Cartesian product | 1 | 🔴 High |
+
+---
+
+### SECTION 9: SELF JOINS, HIERARCHICAL TREES & FRAUD ANOMALY DETECTION
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C9.1** | Self Join Virtual Table Aliasing Architecture | MASTERED | Msg 209 Ambiguous column name without explicit prefix | 1 | 🔴 High |
+| **C9.2** | Employee-Manager Hierarchical Join (`e.MID = m.EmpID`) | MASTERED | Inverted join logic (`e.EmpID = m.MID`) | 1 | 🔴 High |
+| **C9.3** | Root Manager Nullability & `LEFT JOIN` Handling | MASTERED | CEO disappearing from `INNER JOIN` report due to NULL MID | 1 | 🔴 High |
+| **C9.4** | Same-Table Pairing & Symmetric Deduplication (`<` vs `<>`) | MASTERED | Using `<>` and generating 2x mirror duplicate pairs | 1 | 🔴 High |
+| **C9.5** | Geo-Temporal Window Anomaly & Banking Fraud Detection | MASTERED | Incorrect timestamp interval window in `DATEDIFF()` | 1 | 🔴 High |
 
 ---
 

@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 17 Class Note Files (2026-08-01 to 2026-08-20)
+Total Modules / Files: 18 Class Note Files (2026-08-01 to 2026-08-21)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -160,6 +160,17 @@ SECTION 1: DAILY CLASS BREAKDOWN
     17.9 Non-ANSI Legacy Equi Join (Comma-separated FROM with WHERE Predicate)
     17.10 Architectural Comparison: ANSI SQL-92 Standard vs Legacy Comma Joins
 
+18. DAY 18 (AUGUST 21) - SELF JOIN MECHANICS, HIERARCHIES & FRAUD DETECTION
+    18.1 Self Join Architecture & Mandatory Memory Aliasing (A1 vs A2 Virtual Tables)
+    18.2 Backend Operation in Self Joins (Cartesian Cross Product on Same Table)
+    18.3 Hierarchical Relational Mapping: Employee-to-Manager Relationships (e.MID = m.EmpID)
+    18.4 Handling Root Nodes & NULL Managers (INNER JOIN vs LEFT JOIN on Root Managers)
+    18.5 Hierarchical Salary Audits: Employees Earning Higher Salaries than Direct Managers
+    18.6 Same-Table Pairing & Symmetric De-duplication Mechanics (< vs <> vs >)
+    18.7 Multi-Attribute Same-Table Matching (Same Department, Same Subject, Same Marks)
+    18.8 Enterprise Fraud Engineering: Geo-Temporal Transaction Anomalies within 5-Minute Windows
+    18.9 10 Faculty Scenario Problem Sets (Consecutive Orders, Seniority Audits, Duplicate Emails)
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -236,6 +247,13 @@ I. RELATIONAL JOINS & CARTESIAN PRODUCTS
    • NULL Equality & Three-Valued Logic in Join Conditions
    • String Literal 'NULL' vs SQL Keyword NULL Distinctions
    • Master Mathematical Row-Count Formulas for Tier-1 Data Engineering Interviews
+
+J. SELF JOINS & HIERARCHICAL MODELING
+   • Mandatory Dual-Aliasing Architecture (A1 vs A2 virtual scopes in memory)
+   • Employee-Manager Unary Hierarchical Mapping (e.MID = m.EmpID)
+   • Hierarchical Relative Comparisons (Employees earning > Manager salary)
+   • Symmetric Mirror De-duplication Mechanics (s1.ID < s2.ID vs <>)
+   • Geo-Temporal Window Anomaly & Banking Fraud Detection Engines
 
 ================================================================================
 
