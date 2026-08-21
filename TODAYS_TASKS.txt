@@ -18,7 +18,7 @@ TOTAL STUDY TIME TODAY: 9.75 Hours (8.5h Core SQL, Class & Backlog + 0.5h Englis
 [-] 01:00 PM - 02:00 PM : Lunch Break & Bio-Paced Mid-Day Recharge 🥗💤
     -> Nutritious meal, hydration & mental reset power recharge!
 
-[ ] 02:00 PM - 03:00 PM : Sprint 2 — Solve Day 17 Faculty Class Tasks [2026-08-20_CLASS_TASK.SQL] 📊
+[x] 02:00 PM - 03:00 PM : Sprint 2 — Solve Day 17 Faculty Class Tasks [2026-08-20_CLASS_TASK.SQL] 📊
     -> Solve all 7 Faculty & In-Class Task queries from scratch in SSMS
     -> Perform self-audit against edge cases (Quarter date filters, IPL team cross pairings)
 

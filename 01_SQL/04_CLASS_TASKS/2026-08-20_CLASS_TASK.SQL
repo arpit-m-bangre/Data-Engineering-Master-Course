@@ -103,6 +103,16 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
+select 
+    custname,
+    pname,
+    category,
+    quantity,
+    price,
+    (quantity*price) as total_line_amount
+from customer c 
+left join orders o on c.custid = o.custid 
+full join  product p on o.pid = p.pid 
 
 
 
@@ -115,13 +125,25 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below (Part a - INNER JOIN):
 
+select Custname,sum(price) as total_spend 
+from customer c 
+inner join orders o on c.custid = o.custid 
+inner join  product p on o.pid = p.pid 
+group by Custname
+ 
 
 
 
 -- Write your SQL Query below (Part b - LEFT JOIN with ISNULL):
 
 
-
+select Custname,sum(price) as total_spend 
+from customer c 
+left join orders o on c.custid = o.custid 
+left join  product p on o.pid = p.pid 
+group by Custname
+ 
+-- don't know how to use isnull
 
 -- ----------------------------------------------------------------------------------------------------
 -- 📌 TASK 3: FILTERED MULTI-TABLE AGGREGATION WITH HAVING & SORTING
@@ -130,7 +152,14 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
-
+select custname,sum(price) as total_spend 
+from customer c 
+left join orders o on c.custid = o.custid 
+left join  product p on o.pid = p.pid
+where custname like '%a%' 
+group by Custname
+having sum(price) > 200000
+order by total_spend asc 
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -140,7 +169,11 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below:
 
-
+select custname ,pname ,t_date,datepart(qq,t_date) 
+from customer c 
+left join orders o on c.custid = o.custid 
+left join  product p on o.pid = p.pid 
+where datepart(qq,t_date) in (1,3)
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -151,12 +184,18 @@ SELECT * FROM MatchTeams;
 -- ----------------------------------------------------------------------------------------------------
 -- Write your SQL Query below (Part a):
 
+select * from Customer,Product
 
+select * 
+from Customer cross join Product 
 
 
 -- Write your SQL Query below (Part b):
 
+select * from Customer,Product,Orders
 
+select * 
+from Customer cross join Product cross join orders 
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -168,6 +207,11 @@ SELECT * FROM MatchTeams;
 -- Write your SQL Query below:
 
 
+SELECT TeamName as hometeam , city as homecity  
+FROM TeamName cross join TeamName 
+where teamid <> teamid 
+
+-- no idea how to solve 
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -177,12 +221,128 @@ SELECT * FROM MatchTeams;
 -- (b) Using ANSI SQL-92 `INNER JOIN ... ON` standard syntax.
 -- Verify that both queries return identical result sets and explain why ANSI syntax is preferred in enterprise code.
 -- ----------------------------------------------------------------------------------------------------
+
 -- Write your SQL Query below (Part a - Legacy Equi Join):
 
-
+select * 
+from Customer c 
+inner join orders o on c.custid = o.custid 
 
 
 -- Write your SQL Query below (Part b - ANSI Inner Join):
 
+select * 
+from Customer as c,orders as o
+where 
+c.custid = o.custid 
 
 
+-- ====================================================================================================
+-- 🐥 PIPPO'S STRICT MENTOR EVALUATION & ARCHITECTURAL REVIEW
+-- ====================================================================================================
+/*
+====================================================================================================
+                       📋 MENTOR SCORECARD: 44.5 / 70.0 (GRADE: B-)
+====================================================================================================
+Cap, good effort sitting down and grinding through these 7 tasks! But as your senior database architect,
+I must be 100% strict and honest with you so you develop Tier-1 production instincts:
+
+🔴 THE 4 CRITICAL MISTAKES TO FIX PERMANENTLY:
+
+1. ❌ THE FATAL TOTAL SPEND BUG: `SUM(price)` vs `SUM(quantity * price)` (Tasks 2 & 3)
+   - If Customer buys 5 Laptops ($50,000 each), your query calculated total spend as $50,000 instead of $250,000!
+   - In any e-commerce/financial pipeline, Total Line Spend is ALWAYS: `quantity * price`.
+   - Formula: `SUM(o.quantity * p.price) AS total_spend`
+
+2. ❌ LOWERCASE SQL KEYWORDS (Constitutional Law #2 Violation across ALL 7 tasks)
+   - In SSMS and enterprise code reviews, writing `select`, `from`, `left join`, `group by` in lowercase
+     will get your pull request immediately rejected. 
+   - ALWAYS write `SELECT`, `FROM`, `INNER JOIN`, `GROUP BY`, `HAVING`, `ORDER BY` in UPPERCASE!
+
+3. ❌ SELF-JOIN / CARTESIAN MATRIX ALIASING (Task 6)
+   - You wrote `FROM TeamName cross join TeamName where teamid <> teamid`.
+   - Rule: You CANNOT join a table to itself without giving each instance a UNIQUE table alias!
+   - Correct: `FROM MatchTeams AS t1 CROSS JOIN MatchTeams AS t2 WHERE t1.TeamID <> t2.TeamID`
+
+4. ❌ HOW TO USE `ISNULL()` (Task 2b)
+   - When using `LEFT JOIN`, customers with 0 orders produce `NULL` for sum of spending.
+   - Syntax: `ISNULL(SUM(o.quantity * p.price), 0.00) AS total_spend`
+   - How it works: If the first parameter is NULL, SQL Server replaces it with the second parameter (0.00).
+
+====================================================================================================
+                        🏆 GOLDEN PRODUCTION REFERENCE SOLUTIONS
+====================================================================================================
+
+-- [TASK 1: GOLDEN SOLUTION]
+SELECT 
+    c.Custname,
+    p.Pname,
+    p.category,
+    o.quantity,
+    p.price,
+    (o.quantity * p.price) AS total_line_amount
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid;
+
+-- [TASK 2a: INNER JOIN GOLDEN SOLUTION]
+SELECT 
+    c.custid,
+    c.Custname,
+    SUM(o.quantity * p.price) AS total_spend
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+GROUP BY c.custid, c.Custname;
+
+-- [TASK 2b: LEFT JOIN WITH ISNULL GOLDEN SOLUTION]
+SELECT 
+    c.custid,
+    c.Custname,
+    ISNULL(SUM(o.quantity * p.price), 0.00) AS total_spend
+FROM Customer c
+LEFT JOIN Orders o ON c.custid = o.custid
+LEFT JOIN Product p ON o.pid = p.pid
+GROUP BY c.custid, c.Custname;
+
+-- [TASK 3: GOLDEN SOLUTION]
+SELECT 
+    c.custid,
+    c.Custname,
+    SUM(o.quantity * p.price) AS total_spend
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+WHERE c.Custname LIKE '%a%'
+GROUP BY c.custid, c.Custname
+HAVING SUM(o.quantity * p.price) > 200000
+ORDER BY total_spend ASC;
+
+-- [TASK 4: GOLDEN SOLUTION]
+SELECT 
+    c.Custname,
+    p.Pname,
+    o.T_date,
+    DATEPART(qq, o.T_date) AS order_quarter
+FROM Customer c
+INNER JOIN Orders o ON c.custid = o.custid
+INNER JOIN Product p ON o.pid = p.pid
+WHERE DATEPART(qq, o.T_date) IN (1, 3);
+
+-- [TASK 6: GOLDEN TOURNAMENT FIXTURE SOLUTION]
+SELECT 
+    t1.TeamName AS HomeTeam,
+    t1.City     AS HomeCity,
+    t2.TeamName AS AwayTeam,
+    t2.City     AS AwayCity
+FROM MatchTeams t1
+CROSS JOIN MatchTeams t2
+WHERE t1.TeamID <> t2.TeamID
+ORDER BY t1.TeamID, t2.TeamID;
+
+-- [TASK 7: WHY ANSI SQL-92 IS MANDATORY IN ENTERPRISE]
+-- 1. Separation of Concerns: ANSI isolates JOIN logic in `ON` and row filtering in `WHERE`.
+-- 2. Anti-Bug Guarantee: In legacy syntax, forgetting a WHERE condition causes accidental Cartesian products.
+-- 3. Outer Join Support: ANSI allows LEFT/RIGHT/FULL joins cleanly without proprietary legacy operators (*=).
+*/
+====================================================================================================

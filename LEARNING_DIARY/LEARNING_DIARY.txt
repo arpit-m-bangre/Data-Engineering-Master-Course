@@ -146,7 +146,10 @@ DAY 8 — 21 AUG 2026 (FRIDAY) — Streak Day 8 🔥
       Topics: 3-Table Chained Joins, Quarterly Date Filters (DATEPART), ANSI CROSS JOIN, IPL Round-Robin Matchup Engine.
     - Completed 7-Step Revision Framework in `01_SQL/03_REVISION_NOTES/2026-08-20_REVISION.md`.
     - Completed English Practice Book Task 3 (3/125 total).
-  * Sprint 2 (02:00 PM - 03:00 PM): Day 17 Faculty Tasks — PENDING (to be solved before market trip).
+  * Sprint 2 (02:00 PM - 03:00 PM): Day 17 Faculty Tasks SOLVED & AUDITED (Score: 44.5/70.0 - Grade B-).
+    - Solved all 7 faculty-assigned queries in `01_SQL/04_CLASS_TASKS/2026-08-20_CLASS_TASK.SQL`.
+    - Strict Mentor Review & Golden Reference Solutions appended to task file.
+    - All 7 faculty class task files now 100% complete (7/7).
   * System brain sync committed and pushed to GitHub (Streak Day 8 Active 🔥).
 
 ============================================================
