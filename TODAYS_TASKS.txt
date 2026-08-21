@@ -1,74 +1,70 @@
-====================================================================================================
-               🎯 DAILY DATA ENGINEERING MISSION CONTROL | BATCH 15
-====================================================================================================
-Date: 21 AUG 2026 (FRIDAY) | Day 8 Streak Focus
-TOTAL STUDY TIME TODAY: 9.75 Hours (Active Study + Live Class + Social Presence Sprint)
-Target Cutoff: 01:30 AM - 02:00 AM Sleep Window
-====================================================================================================
+====================================================================
+                  DAILY MISSION: 21 AUG 2026 (FRIDAY)
+      [REAL-TIME RESCHEDULE: DAY 17 MASTERY, BACKLOG & SOCIAL PRESENCE]
+====================================================================
 
-[ 📋 TODAY'S SPRINT BREAKDOWN ]
+[!] MISSION OBJECTIVE: Day 17 Note Re-write, Faculty Tasks (7), Practice Drills (14), English Task 3, Day 12 Backlog, Live Class & Special Tier-1 LinkedIn Branding Sprint!
 
-▶ SPRINT 1 (11:30 AM - 01:00 PM) | Duration: 1.5 Hours
-  Goal: Day 17 Class Note Re-write, Revision Review & English Task 3
-  - [ ] 1. Manually re-write Day 17 Class Notes in SSMS (Multi-Table Joins & Cross Joins)
-        Target File: 01_SQL/01_CLASS_NOTES/2026-08-20.sql
-  - [ ] 2. Read and master 7-Step Revision Framework
-        Target File: 01_SQL/03_REVISION_NOTES/2026-08-20_REVISION.md
-  - [ ] 3. Complete English Practice Book: Task 3 (3/125 tasks)
+TOTAL STUDY TIME TODAY: 9.75 Hours (8.5h Core SQL, Class & Backlog + 0.5h English + 3.0h Social Sprint)
 
-----------------------------------------------------------------------------------------------------
-☕ LUNCH & MID-DAY BREAK (01:00 PM - 02:00 PM)
-----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------
+                       DAY SPRINT EXECUTION
+--------------------------------------------------------------------
+[ ] 11:30 AM - 01:00 PM : Sprint 1 — Day 17 Note Re-write, Revision Review & English Task 3 ✍️
+    -> Re-write 2026-08-20 notes in SSMS (Multi-Table Joins & Cross Joins)
+    -> Read 2026-08-20 Revision Note (7-Step Framework)
+    -> Complete English Practice Book: Task 3 (3/125 tasks)
 
-▶ SPRINT 2 (02:00 PM - 03:00 PM) | Duration: 1.0 Hour
-  Goal: Solve Faculty Class Tasks [2026-08-20_CLASS_TASK.SQL]
-  - [ ] 1. Solve all 7 Faculty & In-Class Task queries from scratch in SSMS
-        Target File: 01_SQL/04_CLASS_TASKS/2026-08-20_CLASS_TASK.SQL
-  - [ ] 2. Perform self-audit against edge cases (Quarter date filters, IPL team cross pairings)
+[-] 01:00 PM - 02:00 PM : Lunch Break & Bio-Paced Mid-Day Recharge 🥗💤
+    -> Nutritious meal, hydration & mental reset power recharge!
 
-----------------------------------------------------------------------------------------------------
-🛒 MARKET WITH MUMMY & FAMILY TIME (03:00 PM - 05:00 PM)
-----------------------------------------------------------------------------------------------------
+[ ] 02:00 PM - 03:00 PM : Sprint 2 — Solve Day 17 Faculty Class Tasks [2026-08-20_CLASS_TASK.SQL] 📊
+    -> Solve all 7 Faculty & In-Class Task queries from scratch in SSMS
+    -> Perform self-audit against edge cases (Quarter date filters, IPL team cross pairings)
 
-▶ SPRINT 3 (05:00 PM - 06:30 PM) | Duration: 1.5 Hours
-  Goal: Solve Day 17 Practice Drills [2026-08-20_QUESTIONS.SQL]
-  - [ ] 1. Solve all 14 targeted practice drills across 4 sections
-        Target File: 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-20_QUESTIONS.SQL
-  - [ ] 2. Validate query outputs against sample schemas and ensure clean UPPERCASE SQL
+[-] 03:00 PM - 05:00 PM : Market with Mummy & Family Time 🛒❤️
+    -> Market errands, quality family time & fresh air recharge!
 
-----------------------------------------------------------------------------------------------------
-☕ TEA BREAK & EVENING REFRESHMENT (06:30 PM - 07:00 PM)
-----------------------------------------------------------------------------------------------------
+[ ] 05:00 PM - 06:30 PM : Sprint 3 — Solve Day 17 Practice Drills [2026-08-20_QUESTIONS.SQL] 🎯
+    -> Solve all 14 targeted practice drills across 4 sections
+    -> Validate query outputs against sample schemas and ensure clean UPPERCASE SQL
 
-▶ SPRINT 4 (07:00 PM - 08:30 PM) | Duration: 1.5 Hours
-  Goal: Backlog Recovery Sprint (Day 12 Retrofitting Constraints)
-  - [ ] 1. Read Revision Note: 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md
-  - [ ] 2. Solve Practice Drills: 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL
-  - [ ] 3. Mark Day 12 100% Zero-Debt in Backlog Matrix
+[-] 06:30 PM - 07:00 PM : Tea Break & Evening Refreshment ☕🚶
+    -> Evening tea, mental reset & physical stretch
 
-----------------------------------------------------------------------------------------------------
-🍲 DINNER & PRE-CLASS HYDRATION (08:30 PM - 09:00 PM)
-----------------------------------------------------------------------------------------------------
+[ ] 07:00 PM - 08:30 PM : Sprint 4 — Backlog Recovery: Day 12 Retrofitting Constraints 🛠️
+    -> Read Revision Note: 01_SQL/03_REVISION_NOTES/2026-08-13_REVISION.md
+    -> Solve Practice Drills: 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-13_QUESTIONS.SQL
+    -> Mark Day 12 100% Zero-Debt in Backlog Matrix
 
-▶ LIVE CLASS (09:00 PM - 10:15 PM) | Duration: 1.25 Hours
-  - [ ] 1. Attend Day 18 Live SQL Session (Batch 15) with 100% focus and zero distractions
-  - [ ] 2. Take raw notes of teacher's real-world join architectures & homework questions
+--------------------------------------------------------------------
+                    EVENING & LIVE CLASS BLOCK
+--------------------------------------------------------------------
+[-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class Setup 🍽️💻
+    -> Light nutritious dinner & SSMS warmup for live class
 
-----------------------------------------------------------------------------------------------------
-💧 POST-CLASS HYDRATION & TRANSITION (10:15 PM - 10:30 PM)
-----------------------------------------------------------------------------------------------------
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 18) 🎓
+    -> Attend Day 18 Live SQL Session (Batch 15) with 100% focus and zero distractions
+    -> Take raw notes of teacher's real-world join architectures & homework questions
 
-▶ SPRINT 5: SPECIAL SOCIAL PRESENCE & LINKEDIN SPRINT (10:30 PM - 01:30 AM) | Duration: 3.0 Hours
-  Goal: Kickstart 90-Day LinkedIn Authority & Multi-Platform Syndication Engine
-  - [ ] 1. Update LinkedIn Profile with new Data Engineer headline & About text
-        Reference: TIER1_BRANDING_MASTER_PLAN.md
-  - [ ] 2. Publish Day 1 #90DaysOfDataEngineering Post (Cartesian Join Trap / Join Fundamentals)
-        Target Platforms: LinkedIn & Medium (medium.com/@arpitmbangre)
-  - [ ] 3. Send 10-12 tailored connection requests to Tier-1 DEs (Barclays, Snowflake, Microsoft)
-  - [ ] 4. Check out interactive web ecosystem: digital_presence_ecosystem.html
-  - [ ] 5. Run end-of-day system sync, GitHub commit streak push (Day 8), and dashboard rebuild
+--------------------------------------------------------------------
+                 POST-CLASS NIGHT SPRINT BLOCK (SOCIAL STRATEGY)
+--------------------------------------------------------------------
+[-] 10:15 PM - 10:30 PM : Post-Class Quick Break & Hydration Window ☕
+    -> Quick stretch, water reset & mental preparation for branding sprint
 
-----------------------------------------------------------------------------------------------------
-💤 SLEEP & RECOVERY (01:30 AM / 02:00 AM)
-----------------------------------------------------------------------------------------------------
-====================================================================================================
+[ ] 10:30 PM - 01:30 AM : Sprint 5 — Special Tier-1 LinkedIn & 34-Platform Social Presence Sprint 🚀
+    -> Update LinkedIn Profile with new Data Engineer headline & About text (TIER1_BRANDING_MASTER_PLAN.md)
+    -> Publish Day 1 #90DaysOfDataEngineering Post on LinkedIn & Medium (medium.com/@arpitmbangre)
+    -> Send 10-12 tailored connection requests to Tier-1 DEs (Barclays, Snowflake, Microsoft)
+    -> Review digital_presence_ecosystem.html interactive showcase
+
+[ ] 01:30 AM - 02:00 AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day 8 🔥) 🚀
+    -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
+    -> Commit & push changes to GitHub repository -> auto-deploy to live Vercel dashboard!
+    -> Mission Accomplished & Rest Window 🌙
+
+====================================================================
+*Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
+*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+====================================================================

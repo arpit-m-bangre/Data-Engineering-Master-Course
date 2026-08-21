@@ -51,14 +51,12 @@ function normalise(text) {
 
 /**
  * Parse the TODAYS_TASKS.txt format into a structured array.
- * Supports: [!] notices, [ ] pending, [x] done, [-] cancelled tasks,
- * and sprint-based / checklist formats.
+ * Supports: [!] notices, [ ] pending, [x] done, [-] cancelled tasks.
  */
 function parseTasks(raw) {
   const lines = raw.split('\n')
   const tasks = []
   let currentTask = null
-  let currentSprintTime = ''
 
   for (const rawLine of lines) {
     const line = rawLine.trim()
@@ -69,13 +67,6 @@ function parseTasks(raw) {
     if (noticeMatch) {
       if (currentTask) { tasks.push(currentTask); currentTask = null }
       tasks.push({ type: 'notice', title: noticeMatch[1].trim() })
-      continue
-    }
-
-    // ─── SPRINT HEADER (e.g. ▶ SPRINT 1 (11:30 AM - 01:00 PM) | Duration: 1.5 Hours)
-    const sprintMatch = line.match(/^[▶►]?\s*SPRINT\s*\d*\s*\(?([\d: APM–\-]+(?:AM|PM))\)?/i) || line.match(/^[▶►]?\s*LIVE CLASS\s*\(?([\d: APM–\-]+(?:AM|PM))\)?/i)
-    if (sprintMatch) {
-      currentSprintTime = sprintMatch[1].trim()
       continue
     }
 
@@ -92,7 +83,7 @@ function parseTasks(raw) {
       continue
     }
 
-    // ─── STANDARD TASK LINE: [x] / [ ] / [-] 09:00 AM - 10:15 PM : Title
+    // ─── TASK LINE  [x] / [ ] / [-] 09:00 AM - 10:15 PM : Title
     const taskMatch = line.match(/^\[([xX\s\-]?)\]\s*([\d: APM–\-]+(?:AM|PM))\s*:\s*(.+)$/)
     if (taskMatch) {
       if (currentTask) tasks.push(currentTask)
@@ -102,30 +93,14 @@ function parseTasks(raw) {
         status: marker === 'x' ? 'done' : marker === '-' ? 'cancelled' : 'pending',
         time: taskMatch[2].trim(),
         title: taskMatch[3].trim(),
-        detail: ''
+        details: []
       }
       continue
     }
 
-    // ─── CHECKLIST ITEM FORMAT: - [x] / - [ ] / [ ] 1. Task Title
-    const checkMatch = line.match(/^[-*]?\s*\[([xX\s\-]?)\]\s*(?:(?:\d+\.)|(?:Sprint \d+:?))?\s*(.+)$/i)
-    if (checkMatch) {
-      if (currentTask) tasks.push(currentTask)
-      const marker = checkMatch[1].trim().toLowerCase()
-      currentTask = {
-        type: 'task',
-        status: marker === 'x' ? 'done' : marker === '-' ? 'cancelled' : 'pending',
-        time: currentSprintTime || 'Today',
-        title: checkMatch[2].trim(),
-        detail: ''
-      }
-      continue
-    }
-
-    // ─── DETAIL LINE (-> ... or Target File: ...)
-    if ((line.startsWith('->') || line.startsWith('Target File:') || line.startsWith('Goal:')) && currentTask) {
-      const detailText = line.replace(/^(?:->|Target File:|Goal:)\s*/i, '').trim()
-      currentTask.detail = currentTask.detail ? `${currentTask.detail} | ${detailText}` : detailText
+    // ─── DETAIL BULLET LINE  -> ...
+    if (line.startsWith('->') && currentTask) {
+      currentTask.details.push(line.slice(2).trim())
     }
   }
 
@@ -204,7 +179,7 @@ function renderTasks(rawText, container) {
         <div class="task-content">
           <span class="task-time">${escHtml(task.time)}</span>
           <h3 class="task-title">${escHtml(task.title)}</h3>
-          ${task.detail ? `<span class="task-link">→ ${escHtml(task.detail)}</span>` : ''}
+          ${task.details && task.details.length > 0 ? task.details.map(d => `<span class="task-link">→ ${escHtml(d)}</span>`).join('') : (task.detail ? `<span class="task-link">→ ${escHtml(task.detail)}</span>` : '')}
         </div>
       `
 
