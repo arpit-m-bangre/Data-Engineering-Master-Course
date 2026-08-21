@@ -3,6 +3,7 @@
 -- 📅 DATE: 21 AUGUST 2026 (FRIDAY) | BATCH: ONLINE BATCH 15 (DAY 18)
 -- 👨‍🏫 MODULE 1: ENTERPRISE SQL ARCHITECTURE & QUERY ENGINE
 -- 🎯 TOPIC: SELF JOIN MECHANICS, HIERARCHIES & FRAUD ANOMALY DETECTION
+-- ⚠️ MANDATORY RULE: ALL 14 DRILLS MUST BE SOLVED STRICTLY USING SELF JOIN ONLY (Table A1 JOIN Table A2)
 -- 📁 TOTAL QUESTIONS: EXACTLY 14 TARGETED DRILLS
 -- ====================================================================================================
 
@@ -139,12 +140,13 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 
 
 -- ====================================================================================================
--- 📝 PHASE 1: TARGETED PRACTICE DRILLS (EXACTLY 14 QUESTIONS)
+-- 📝 PHASE 1: TARGETED PRACTICE DRILLS (STRICTLY SELF JOIN ONLY)
 -- ====================================================================================================
 
 -- ==============================================================================
 -- QUESTION 1: BASIC EMPLOYEE TO MANAGER MAPPING
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (E.ManagerID = M.StaffID)
 -- Objective: Write a query to display every employee's name along with their direct manager's name.
 -- Output Columns: EmployeeName, ManagerName
 -- ==============================================================================
@@ -157,6 +159,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 2: EMPLOYEES OUTEARNING DIRECT MANAGERS
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (E.ManagerID = M.StaffID AND E.Salary > M.Salary)
 -- Objective: Find all employees who earn a higher salary than their direct manager.
 -- Output Columns: EmployeeName, EmployeeSalary, ManagerName, ManagerSalary, SalaryDifference
 -- ==============================================================================
@@ -169,6 +172,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 3: ALL EMPLOYEES INCLUDING TOP EXECUTIVES (ROOT MANAGERS)
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF LEFT JOIN on PracticeStaff (E.ManagerID = M.StaffID)
 -- Objective: List all employees and their managers using LEFT JOIN so top executives (with NULL ManagerID) are included.
 -- Output Columns: EmployeeName, ManagerName
 -- ==============================================================================
@@ -181,6 +185,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 4: CO-WORKERS UNDER THE SAME DIRECT MANAGER
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (E1.ManagerID = E2.ManagerID AND E1.StaffID < E2.StaffID)
 -- Objective: Find all unique pairs of employees who report to the exact same manager.
 -- Requirement: Ensure no duplicate pairs (e.g., show (A, B) but not (B, A)) and exclude self-matches.
 -- Output Columns: ManagerID, Employee1_Name, Employee2_Name
@@ -194,6 +199,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 5: DEPARTMENTAL PEERS WITH IDENTICAL SALARIES
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (E1.DeptID = E2.DeptID AND E1.Salary = E2.Salary AND E1.StaffID < E2.StaffID)
 -- Objective: Find pairs of employees working in the same department who draw the exact same salary.
 -- Output Columns: DeptID, Employee1_Name, Employee2_Name, Salary
 -- ==============================================================================
@@ -206,6 +212,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 6: EXTREME SALARY DISPARITY IN SAME DEPARTMENT
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (E1.DeptID = E2.DeptID AND E2.Salary - E1.Salary > 25000)
 -- Objective: Find pairs of employees in the same department where the salary gap is strictly greater than 25,000.
 -- Output Columns: DeptID, LowerPaidEmp, LowerSalary, HigherPaidEmp, HigherSalary, SalaryGap
 -- ==============================================================================
@@ -218,6 +225,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 7: STUDENTS LIVING IN THE SAME CITY
 -- Table: PracticeStudents(StudentID, StudentName, City)
+-- Technique: SELF JOIN on PracticeStudents (S1.City = S2.City AND S1.StudentID < S2.StudentID)
 -- Objective: Write a query to find all unique pairs of students who reside in the same city.
 -- Output Columns: City, Student1_Name, Student2_Name
 -- ==============================================================================
@@ -230,6 +238,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 8: SAME CATEGORY PRODUCT PRICE COMPARISON
 -- Table: PracticeCatalog(ProductID, ProductName, CategoryID, UnitPrice)
+-- Technique: SELF JOIN on PracticeCatalog (P1.CategoryID = P2.CategoryID AND P1.UnitPrice < P2.UnitPrice)
 -- Objective: Find products where there exists another product in the same category that is priced higher.
 -- Output Columns: CategoryID, ProductName, ProductPrice, MoreExpensiveProduct, HigherPrice
 -- ==============================================================================
@@ -242,6 +251,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 9: CONSECUTIVE DAY ORDERS PER CUSTOMER
 -- Table: PracticeOrders(OrderID, CustomerID, OrderDate, Amount)
+-- Technique: SELF JOIN on PracticeOrders (O1.CustomerID = O2.CustomerID AND DATEDIFF(DAY, O1.OrderDate, O2.OrderDate) = 1)
 -- Objective: Identify customers who placed orders on two consecutive calendar days.
 -- Output Columns: CustomerID, FirstOrderID, FirstDate, SecondOrderID, SecondDate
 -- ==============================================================================
@@ -254,6 +264,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 10: DUPLICATE ACCOUNT DETECTION BY EMAIL
 -- Table: PracticeAccounts(AccountID, CustomerName, Email, CreatedDate)
+-- Technique: SELF JOIN on PracticeAccounts (A1.Email = A2.Email AND A1.AccountID < A2.AccountID)
 -- Objective: Find all pairs of distinct account IDs that share the exact same email address.
 -- Output Columns: Email, AccountID_1, CustomerName_1, AccountID_2, CustomerName_2
 -- ==============================================================================
@@ -266,6 +277,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 11: SENIORITY & SALARY INVERSION AUDIT
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (S1.DeptID = S2.DeptID AND S1.JoinDate < S2.JoinDate AND S1.Salary < S2.Salary)
 -- Objective: Find staff members who joined earlier than a colleague in the same department but earn a lower salary.
 -- Output Columns: DeptID, SeniorStaffName, SeniorSalary, SeniorJoinDate, JuniorStaffName, JuniorSalary, JuniorJoinDate
 -- ==============================================================================
@@ -278,6 +290,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 12: EMPLOYEES HIRED IN THE SAME CALENDAR YEAR
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: SELF JOIN on PracticeStaff (DATEPART(YEAR, S1.JoinDate) = DATEPART(YEAR, S2.JoinDate) AND S1.JoinDate <> S2.JoinDate AND S1.StaffID < S2.StaffID)
 -- Objective: Find all unique pairs of staff members who were hired in the exact same calendar year, but on different calendar dates.
 -- Output Columns: HireYear, Staff1_Name, JoinDate1, Staff2_Name, JoinDate2
 -- ==============================================================================
@@ -290,6 +303,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 13: TWO-TIER MANAGEMENT (EMPLOYEE, MANAGER, GRAND-MANAGER)
 -- Table: PracticeStaff(StaffID, StaffName, ManagerID, DeptID, Salary, JoinDate)
+-- Technique: MULTI SELF JOIN on PracticeStaff (E.ManagerID = M.StaffID LEFT JOIN PracticeStaff GM ON M.ManagerID = GM.StaffID)
 -- Objective: Write a query using multiple Self Joins to display Employee Name, Direct Manager Name, and Grand-Manager Name (Manager's Manager).
 -- Output Columns: EmployeeName, ManagerName, GrandManagerName
 -- ==============================================================================
@@ -302,6 +316,7 @@ INSERT INTO PracticeTransactions (TxnID, CustID, City, TxnTime, Amount) VALUES
 -- ==============================================================================
 -- QUESTION 14: GEO-TEMPORAL BANKING VELOCITY FRAUD DETECTION
 -- Table: PracticeTransactions(TxnID, CustID, City, TxnTime, Amount)
+-- Technique: SELF JOIN on PracticeTransactions (T1.CustID = T2.CustID AND T1.City <> T2.City AND T1.TxnID < T2.TxnID AND DATEDIFF(MINUTE, T1.TxnTime, T2.TxnTime) BETWEEN 0 AND 10)
 -- Objective: Detect suspicious activity where the same customer had two transactions in different cities within 10 minutes of each other.
 -- Output Columns: CustID, Txn1_ID, City1, Time1, Txn2_ID, City2, Time2, MinutesApart
 -- ==============================================================================

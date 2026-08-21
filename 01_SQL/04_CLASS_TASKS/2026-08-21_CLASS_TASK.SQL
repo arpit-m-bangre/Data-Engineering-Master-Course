@@ -3,6 +3,7 @@
 -- 🏢 MODULE 01: SQL Relational Architecture & Query Engine
 -- 📆 CLASS DATE: 21 AUGUST 2026 (Day 18)
 -- 🎯 TOPIC: Self Join Mechanics, Hierarchies & Scenario-Based Anomaly Engines
+-- ⚠️ MANDATORY RULE: ALL TASKS MUST BE SOLVED STRICTLY USING SELF JOIN ONLY (Table A1 JOIN Table A2)
 -- ====================================================================================================
 
 -- ====================================================================================================
@@ -101,13 +102,14 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 
 
 -- ====================================================================================================
--- 📝 PHASE 1: IN-CLASS & HOMEWORK SCENARIO TASKS
+-- 📝 PHASE 1: IN-CLASS & HOMEWORK SCENARIO TASKS (STRICTLY SELF JOIN ONLY)
 -- ====================================================================================================
 
 -- ==============================================================================
 -- TASK 1: EMPLOYEE & MANAGER SALARY COMPARISON
 -- Table: Employees(EmployeeID, EmployeeName, ManagerID, Salary)
 -- Objective: Find all employees who earn more than their direct manager.
+-- Technique: SELF JOIN on Employees (E.ManagerID = M.EmployeeID)
 -- Output Columns: EmployeeName, EmployeeSalary, ManagerName, ManagerSalary
 -- ==============================================================================
 
@@ -120,6 +122,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 2: EMPLOYEES WITH THE SAME MANAGER
 -- Table: Employees(EmployeeID, EmployeeName, ManagerID, Salary)
 -- Objective: Find pairs of employees who report to the same manager.
+-- Technique: SELF JOIN on Employees (E1.ManagerID = E2.ManagerID AND E1.EmployeeID < E2.EmployeeID)
 -- Requirement: Avoid showing duplicate pairs (e.g. A-B and B-A) and do not match an employee with themselves.
 -- Output Columns: ManagerID, Employee1_Name, Employee2_Name
 -- ==============================================================================
@@ -133,6 +136,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 3: EMPLOYEES IN SAME DEPARTMENT WITH SAME SALARY
 -- Table: Employees(EmployeeID, EmployeeName, DepartmentID, Salary)
 -- Objective: Find employees who work in the same department and have the exact same salary.
+-- Technique: SELF JOIN on Employees (E1.DepartmentID = E2.DepartmentID AND E1.Salary = E2.Salary AND E1.EmployeeID < E2.EmployeeID)
 -- Requirement: Each pair should appear only once.
 -- Output Columns: DepartmentID, Employee1_Name, Employee2_Name, Salary
 -- ==============================================================================
@@ -146,6 +150,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 4: CUSTOMERS FROM SAME CITY
 -- Table: Customers(CustomerID, CustomerName, City)
 -- Objective: Find all unique pairs of customers who live in the same city.
+-- Technique: SELF JOIN on Customers (C1.City = C2.City AND C1.CustomerID < C2.CustomerID)
 -- Requirement: Do not display duplicate pairs or self-matches.
 -- Output Columns: City, Customer1_Name, Customer2_Name
 -- ==============================================================================
@@ -159,6 +164,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 5: PRODUCT PRICE COMPARISON WITHIN SAME CATEGORY
 -- Table: Products(ProductID, ProductName, CategoryID, Price)
 -- Objective: Find products where another product in the same category costs more than the current product.
+-- Technique: SELF JOIN on Products (P1.CategoryID = P2.CategoryID AND P1.Price < P2.Price)
 -- Output Columns: CategoryID, ProductName, ProductPrice, MoreExpensiveProduct, HigherPrice
 -- ==============================================================================
 
@@ -171,6 +177,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 6: EMPLOYEE SALARY DIFFERENCE IN SAME DEPARTMENT
 -- Table: Employees(EmployeeID, EmployeeName, DepartmentID, Salary)
 -- Objective: Find pairs of employees from the same department whose salary difference is strictly greater than 20,000.
+-- Technique: SELF JOIN on Employees (E1.DepartmentID = E2.DepartmentID AND E2.Salary - E1.Salary > 20000)
 -- Output Columns: DepartmentID, LowerPaidEmp, LowerSalary, HigherPaidEmp, HigherSalary, SalaryDifference
 -- ==============================================================================
 
@@ -183,6 +190,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 7: CONSECUTIVE ORDERS DETECTION
 -- Table: Orders(OrderID, CustomerID, OrderDate, TotalAmount)
 -- Objective: Find customers who placed two orders on consecutive days (difference of exactly 1 day).
+-- Technique: SELF JOIN on Orders (O1.CustomerID = O2.CustomerID AND DATEDIFF(DAY, O1.OrderDate, O2.OrderDate) = 1)
 -- Output Columns: CustomerID, FirstOrderID, FirstOrderDate, SecondOrderID, SecondOrderDate
 -- ==============================================================================
 
@@ -195,6 +203,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 8: DUPLICATE EMAIL DETECTION ACROSS CUSTOMER IDS
 -- Table: Customers(CustomerID, CustomerName, Email)
 -- Objective: Find customers having the same email address, but different CustomerIDs.
+-- Technique: SELF JOIN on Customers (C1.Email = C2.Email AND C1.CustomerID < C2.CustomerID)
 -- Output Columns: CustomerID_1, CustomerName_1, CustomerID_2, CustomerName_2, Email
 -- ==============================================================================
 
@@ -207,6 +216,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 9: EMPLOYEES HIRED IN THE SAME YEAR ON DIFFERENT DATES
 -- Table: Employees(EmployeeID, EmployeeName, HireDate)
 -- Objective: Find pairs of employees who were hired in the same calendar year, but on different dates.
+-- Technique: SELF JOIN on Employees (DATEPART(YEAR, E1.HireDate) = DATEPART(YEAR, E2.HireDate) AND E1.HireDate <> E2.HireDate AND E1.EmployeeID < E2.EmployeeID)
 -- Requirement: Avoid duplicate pairs.
 -- Output Columns: HireYear, Employee1_Name, HireDate1, Employee2_Name, HireDate2
 -- ==============================================================================
@@ -220,6 +230,7 @@ INSERT INTO Orders (OrderID, CustomerID, OrderDate, TotalAmount) VALUES
 -- TASK 10: EMPLOYEE & SENIOR EMPLOYEE COMPARISON (TIER-1 INTERVIEW PATTERN)
 -- Table: Employees(EmployeeID, EmployeeName, DepartmentID, Salary, HireDate)
 -- Objective: Find employees who have another colleague in the same department who was hired earlier AND earns a higher salary.
+-- Technique: SELF JOIN on Employees (E1.DepartmentID = E2.DepartmentID AND E2.HireDate < E1.HireDate AND E2.Salary > E1.Salary)
 -- Output Columns: DepartmentID, EmployeeName, HireDate, Salary, SeniorColleagueName, SeniorHireDate, SeniorSalary
 -- ==============================================================================
 
