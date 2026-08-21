@@ -1,39 +1,17 @@
 /**
  * ============================================================
- *  DE MISSION CONTROL — DASHBOARD ENGINE v3.0
- *  Author  : Arpit Manoj Bangre
+ *  DE MISSION CONTROL — DASHBOARD ENGINE v4.0 (Pippo & Cap Edition)
+ *  Author  : Arpit Manoj Bangre (Cap) & Pippo 🐥
  *  Repo    : Data-Engineering-Master-Course
  *
- *  ARCHITECTURE (100% Reliable, 3-Layer Data Strategy):
- *
- *  Layer 1 — INSTANT (0ms, always works, no network needed)
- *    TODAYS_TASKS.txt is baked into the JS bundle at Vite build
- *    time via the `?raw` Vite import. Renders immediately, even
- *    offline. This is the "floor" — it ALWAYS works.
- *
- *  Layer 2 — LIVE STATIC (from the same Vercel deployment)
- *    After instant render, we silently refetch /TODAYS_TASKS.txt
- *    from the Vercel-served public folder. Since GitHub Actions
- *    runs a fresh build on every push, this file is always the
- *    latest version. No GitHub rate-limits.
- *
- *  Layer 3 — FALLBACK LIVE (GitHub Raw CDN)
- *    If Layers 1+2 data match (i.e., no newer version found in
- *    the static folder), we optionally try GitHub Raw as a final
- *    check. Handles edge cases where Vercel cache lags.
- *
- *  AUTO-REDEPLOY:
- *    GitHub Actions (.github/workflows/deploy-dashboard.yml) fires
- *    on every push to main that touches TODAYS_TASKS.txt. This
- *    triggers a Vercel production build which bakes the new file
- *    into the bundle AND into the /public/ static serve path.
+ *  FEATURES:
+ *  - 100% Truthful Mission Progress Engine (Separates Active Sprints, Breaks & Deferred tasks)
+ *  - Real-time Interactive Progress Bar Recalculation on Checkbox Click
+ *  - Multi-layer Zero-Latency Data Pipeline (Bundle -> Vercel Static -> GitHub Raw)
  * ============================================================
  */
 
 import './style.css'
-
-// Layer 1: Tasks baked directly into the bundle at build time.
-// This is the most reliable source — zero network dependency.
 import BUNDLE_TASKS from '../public/TODAYS_TASKS.txt?raw'
 
 const GITHUB_RAW_URL =
@@ -41,22 +19,25 @@ const GITHUB_RAW_URL =
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-/**
- * Normalises task text to remove carriage returns and trim trailing whitespace.
- * This prevents false "new data" detections between CRLF and LF variants.
- */
 function normalise(text) {
   return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim()
 }
 
 /**
+ * Check if a title or description describes a break, recharge, meal, or personal slot.
+ */
+function isBreakTitle(title) {
+  return /break|lunch|dinner|tea|relax|recharge|market|family|nap|sleep|meal|friends|walk/i.test(title)
+}
+
+/**
  * Parse the TODAYS_TASKS.txt format into a structured array.
- * Supports: [!] notices, [ ] pending, [x] done, [-] cancelled tasks.
+ * Accurately classifies: notices, study tasks (pending/done/deferred), breaks/recharge slots, and notes.
  */
 function parseTasks(raw) {
   const lines = raw.split('\n')
-  const tasks = []
-  let currentTask = null
+  const items = []
+  let currentItem = null
 
   for (const rawLine of lines) {
     const line = rawLine.trim()
@@ -65,136 +46,246 @@ function parseTasks(raw) {
     // ─── [!] NOTICE LINE
     const noticeMatch = line.match(/^\[!\]\s*(.+)$/)
     if (noticeMatch) {
-      if (currentTask) { tasks.push(currentTask); currentTask = null }
-      tasks.push({ type: 'notice', title: noticeMatch[1].trim() })
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'notice', title: noticeMatch[1].trim() })
       continue
     }
 
     // ─── HEADING / SEPARATOR (====, ----)
     if (/^[=\-*]{4,}$/.test(line)) {
-      if (currentTask) { tasks.push(currentTask); currentTask = null }
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      continue
+    }
+
+    // ─── TOTAL STUDY TIME / STATS LINE
+    const statsMatch = line.match(/^TOTAL STUDY TIME[^:]*:\s*(.+)$/i)
+    if (statsMatch) {
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'stats', text: statsMatch[1].trim() })
       continue
     }
 
     // ─── *Note: ... FOOTER LINE
     if (line.startsWith('*Note:') || (line.startsWith('*') && !line.startsWith('**') && !line.includes('['))) {
-      if (currentTask) { tasks.push(currentTask); currentTask = null }
-      tasks.push({ type: 'note', title: line.replace(/^\*+|\*+$/g, '').trim() })
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'note', title: line.replace(/^\*+|\*+$/g, '').trim() })
       continue
     }
 
-    // ─── TASK LINE  [x] / [ ] / [-] 09:00 AM - 10:15 PM : Title
+    // ─── TIME-SLOT CARD LINE  [x] / [ ] / [-] HH:MM AM - HH:MM PM : Title
     const taskMatch = line.match(/^\[([xX\s\-]?)\]\s*([\d: APM–\-]+(?:AM|PM))\s*:\s*(.+)$/)
     if (taskMatch) {
-      if (currentTask) tasks.push(currentTask)
+      if (currentItem) items.push(currentItem)
       const marker = taskMatch[1].trim().toLowerCase()
-      currentTask = {
-        type: 'task',
-        status: marker === 'x' ? 'done' : marker === '-' ? 'cancelled' : 'pending',
-        time: taskMatch[2].trim(),
-        title: taskMatch[3].trim(),
-        details: []
+      const time = taskMatch[2].trim()
+      const title = taskMatch[3].trim()
+
+      if (marker === 'x') {
+        currentItem = {
+          type: 'task',
+          status: 'done',
+          time,
+          title,
+          details: []
+        }
+      } else if (marker === '-' || marker === '–') {
+        if (isBreakTitle(title)) {
+          currentItem = {
+            type: 'break',
+            status: 'break',
+            time,
+            title,
+            details: []
+          }
+        } else {
+          // Deferred or skipped study sprint
+          currentItem = {
+            type: 'task',
+            status: 'deferred',
+            time,
+            title,
+            details: []
+          }
+        }
+      } else {
+        // [ ] Active pending sprint
+        currentItem = {
+          type: 'task',
+          status: 'pending',
+          time,
+          title,
+          details: []
+        }
       }
       continue
     }
 
     // ─── DETAIL BULLET LINE  -> ...
-    if (line.startsWith('->') && currentTask) {
-      currentTask.details.push(line.slice(2).trim())
+    if (line.startsWith('->') && currentItem) {
+      currentItem.details.push(line.slice(2).trim())
     }
   }
 
-  if (currentTask) tasks.push(currentTask)
-  return tasks
+  if (currentItem) items.push(currentItem)
+  return items
 }
 
 // ─── Renderer ─────────────────────────────────────────────────────────────────
 
 function renderTasks(rawText, container) {
-  const tasks = parseTasks(rawText)
-  if (tasks.length === 0) {
+  const items = parseTasks(rawText)
+  if (items.length === 0) {
     container.innerHTML = '<p class="empty-state">No tasks found for today.</p>'
     return
   }
 
   container.innerHTML = ''
 
-  // Progress summary
-  const taskItems = tasks.filter(t => t.type === 'task')
-  const doneCount = taskItems.filter(t => t.status === 'done').length
-  const totalCount = taskItems.length
+  // ─── Filter Categories
+  const tasks = items.filter(t => t.type === 'task')
+  const breaks = items.filter(t => t.type === 'break')
+  const notices = items.filter(t => t.type === 'notice')
 
-  if (totalCount > 0) {
-    const pct = Math.round((doneCount / totalCount) * 100)
-    const summary = document.createElement('div')
-    summary.className = 'progress-bar-wrapper'
-    summary.innerHTML = `
-      <div class="progress-header">
-        <span class="progress-label">Mission Progress</span>
-        <span class="progress-count">${doneCount} / ${totalCount} tasks</span>
-      </div>
-      <div class="progress-track">
-        <div class="progress-fill" style="width: ${pct}%"></div>
-      </div>
-      <div class="progress-pct">${pct}% Complete</div>
-    `
-    container.appendChild(summary)
+  // Calculate Actionable Mission Progress (Excludes breaks, includes active done + pending)
+  function getProgressMetrics() {
+    const doneTasks = tasks.filter(t => t.status === 'done')
+    const pendingTasks = tasks.filter(t => t.status === 'pending')
+    const deferredTasks = tasks.filter(t => t.status === 'deferred')
+    const activeTotal = doneTasks.length + pendingTasks.length
+    const pct = activeTotal > 0 ? Math.round((doneTasks.length / activeTotal) * 100) : 100
+
+    return {
+      doneCount: doneTasks.length,
+      pendingCount: pendingTasks.length,
+      deferredCount: deferredTasks.length,
+      activeTotal,
+      pct
+    }
   }
 
-  // Task cards
-  tasks.forEach(task => {
+  const initialMetrics = getProgressMetrics()
+
+  // ─── 1. Progress Bar Widget
+  let progressBarEl = null
+  if (initialMetrics.activeTotal > 0 || initialMetrics.deferredCount > 0) {
+    progressBarEl = document.createElement('div')
+    progressBarEl.className = 'progress-bar-wrapper'
+    updateProgressBarUI(progressBarEl, initialMetrics)
+    container.appendChild(progressBarEl)
+  }
+
+  function updateProgressBarUI(el, metrics) {
+    el.innerHTML = `
+      <div class="progress-header">
+        <div class="progress-label-wrap">
+          <span class="progress-badge">🎯 ACTIVE SPRINT GOAL</span>
+          <span class="progress-label">Mission Progress</span>
+        </div>
+        <span class="progress-count">${metrics.doneCount} / ${metrics.activeTotal} Completed${metrics.deferredCount > 0 ? ` <span class="deferred-pill">(${metrics.deferredCount} Deferred)</span>` : ''}</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" style="width: ${metrics.pct}%"></div>
+      </div>
+      <div class="progress-footer-stats">
+        <span class="progress-remaining">${metrics.pendingCount === 0 ? '🔥 All Active Sprints Conquered!' : `⚡ ${metrics.pendingCount} Sprint${metrics.pendingCount > 1 ? 's' : ''} Remaining`}</span>
+        <span class="progress-pct">${metrics.pct}% Complete</span>
+      </div>
+    `
+  }
+
+  function refreshProgress() {
+    if (progressBarEl) {
+      updateProgressBarUI(progressBarEl, getProgressMetrics())
+    }
+  }
+
+  // ─── 2. Render Cards in Chronological Flow
+  items.forEach(item => {
     const card = document.createElement('div')
 
-    if (task.type === 'notice') {
+    if (item.type === 'notice') {
       card.className = 'notice-card'
       card.innerHTML = `
         <div class="notice-icon">📢</div>
         <div class="notice-content">
-          <h3 class="notice-title">${escHtml(task.title)}</h3>
+          <h3 class="notice-title">${escHtml(item.title)}</h3>
         </div>
       `
-    } else if (task.type === 'note') {
+    } else if (item.type === 'stats') {
+      card.className = 'study-time-card'
+      card.innerHTML = `
+        <div class="study-time-icon">⏱️</div>
+        <div class="study-time-content">
+          <span class="study-time-label">Total Study Time Today</span>
+          <span class="study-time-value">${escHtml(item.text)}</span>
+        </div>
+      `
+    } else if (item.type === 'note') {
       card.className = 'footer-note'
-      card.innerHTML = `<span class="note-icon">📌</span> ${escHtml(task.title)}`
+      card.innerHTML = `<span class="note-icon">📌</span> ${escHtml(item.title)}`
+    } else if (item.type === 'break') {
+      // ─── RECHARGE / BREAK CARD (Peaceful, non-punitive styling)
+      card.className = 'break-card'
+      card.innerHTML = `
+        <div class="break-icon-wrap">
+          <span class="break-icon">☕</span>
+        </div>
+        <div class="task-content">
+          <div class="break-header">
+            <span class="break-time">${escHtml(item.time)}</span>
+            <span class="break-badge">Recharge Window</span>
+          </div>
+          <h3 class="break-title">${escHtml(item.title)}</h3>
+          ${item.details && item.details.length > 0 ? item.details.map(d => `<span class="task-link break-link">→ ${escHtml(d)}</span>`).join('') : ''}
+        </div>
+      `
     } else {
-      // task.type === 'task'
-      const statusClass = task.status === 'done'
-        ? 'completed'
-        : task.status === 'cancelled'
-          ? 'cancelled'
-          : ''
+      // ─── STUDY TASK CARD (pending / done / deferred)
+      const isDone = item.status === 'done'
+      const isDeferred = item.status === 'deferred'
 
-      const statusIcon = task.status === 'done'
+      const statusClass = isDone ? 'completed' : isDeferred ? 'deferred' : 'pending'
+      const statusIcon = isDone
         ? '<span class="check-icon done-icon">✓</span>'
-        : task.status === 'cancelled'
-          ? '<span class="check-icon cancelled-icon">✕</span>'
+        : isDeferred
+          ? '<span class="check-icon deferred-icon">⏳</span>'
           : '<span class="check-icon pending-icon"></span>'
 
       card.className = `task-card ${statusClass}`
-      card.setAttribute('data-status', task.status)
+      card.setAttribute('data-status', item.status)
+
       card.innerHTML = `
-        <div class="checkbox-wrapper" title="${task.status === 'pending' ? 'Click to mark done' : ''}">
+        <div class="checkbox-wrapper" title="${item.status === 'pending' ? 'Click to mark done' : isDone ? 'Click to unmark' : 'Deferred Sprint'}">
           <div class="checkbox ${statusClass}">${statusIcon}</div>
         </div>
         <div class="task-content">
-          <span class="task-time">${escHtml(task.time)}</span>
-          <h3 class="task-title">${escHtml(task.title)}</h3>
-          ${task.details && task.details.length > 0 ? task.details.map(d => `<span class="task-link">→ ${escHtml(d)}</span>`).join('') : (task.detail ? `<span class="task-link">→ ${escHtml(task.detail)}</span>` : '')}
+          <div class="task-header-row">
+            <span class="task-time">${escHtml(item.time)}</span>
+            ${isDeferred ? '<span class="deferred-tag">Deferred</span>' : isDone ? '<span class="done-tag">Done ✓</span>' : ''}
+          </div>
+          <h3 class="task-title">${escHtml(item.title)}</h3>
+          ${item.details && item.details.length > 0 ? item.details.map(d => `<span class="task-link">→ ${escHtml(d)}</span>`).join('') : ''}
         </div>
       `
 
-      // Interactive toggle (UI only — doesn't write back to file)
-      if (task.status === 'pending') {
-        card.querySelector('.checkbox').addEventListener('click', () => {
-          card.classList.toggle('completed')
-          const icon = card.querySelector('.check-icon')
-          if (card.classList.contains('completed')) {
-            icon.textContent = '✓'
-            icon.className = 'check-icon done-icon'
-          } else {
-            icon.textContent = ''
-            icon.className = 'check-icon pending-icon'
+      // Interactive toggle with live progress bar synchronization
+      if (!isDeferred) {
+        const checkboxEl = card.querySelector('.checkbox')
+        checkboxEl.addEventListener('click', () => {
+          if (item.status === 'pending') {
+            item.status = 'done'
+            card.className = 'task-card completed'
+            card.setAttribute('data-status', 'done')
+            checkboxEl.className = 'checkbox completed'
+            checkboxEl.innerHTML = '<span class="check-icon done-icon">✓</span>'
+          } else if (item.status === 'done') {
+            item.status = 'pending'
+            card.className = 'task-card pending'
+            card.setAttribute('data-status', 'pending')
+            checkboxEl.className = 'checkbox pending'
+            checkboxEl.innerHTML = '<span class="check-icon pending-icon"></span>'
           }
+          refreshProgress()
         })
       }
     }
@@ -222,19 +313,14 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // ─── LAYER 1: Instant render from bundle ──────────────────────────────────
-  // Fires in < 1ms. Works 100% offline. Always shows SOMETHING meaningful.
   let currentRaw = normalise(BUNDLE_TASKS)
   renderTasks(currentRaw, container)
   setLastUpdated('Loaded from build bundle (instant)')
 
   // ─── LAYER 2 & 3: Silent background upgrade ───────────────────────────────
-  // Silently tries to get a fresher copy after page paint.
-  // If we find newer data, we re-render without any flicker.
   async function tryLiveUpgrade() {
     const cb = `?_=${Date.now()}`
 
-    // Layer 2: /TODAYS_TASKS.txt served by Vercel from public/
-    // This is rebuilt fresh on every GitHub push via GitHub Actions.
     try {
       const res = await fetch('/TODAYS_TASKS.txt' + cb, { cache: 'no-store' })
       if (res.ok) {
@@ -243,12 +329,11 @@ document.addEventListener('DOMContentLoaded', () => {
           currentRaw = text
           renderTasks(currentRaw, container)
           setLastUpdated('Live — from Vercel static ✅')
-          return // Job done, no need for Layer 3
+          return
         }
       }
     } catch (_) { /* silent */ }
 
-    // Layer 3: GitHub Raw CDN (fallback, rate-limited but fine as last resort)
     try {
       const res = await fetch(GITHUB_RAW_URL + cb, { cache: 'no-store' })
       if (res.ok) {
@@ -261,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
           setLastUpdated('Up to date ✅')
         }
       }
-    } catch (_) { /* silent — bundle data already showing */ }
+    } catch (_) { /* silent */ }
   }
 
   function setLastUpdated(msg) {
@@ -270,10 +355,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Run live upgrade after first paint
   requestAnimationFrame(() => setTimeout(tryLiveUpgrade, 200))
 
-  // Manual refresh button
   if (refreshBtn) {
     refreshBtn.addEventListener('click', async () => {
       refreshBtn.classList.add('spinning')
