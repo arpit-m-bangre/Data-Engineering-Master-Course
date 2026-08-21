@@ -51,12 +51,14 @@ function normalise(text) {
 
 /**
  * Parse the TODAYS_TASKS.txt format into a structured array.
- * Supports: [!] notices, [ ] pending, [x] done, [-] cancelled tasks.
+ * Supports: [!] notices, [ ] pending, [x] done, [-] cancelled tasks,
+ * and sprint-based / checklist formats.
  */
 function parseTasks(raw) {
   const lines = raw.split('\n')
   const tasks = []
   let currentTask = null
+  let currentSprintTime = ''
 
   for (const rawLine of lines) {
     const line = rawLine.trim()
@@ -70,6 +72,13 @@ function parseTasks(raw) {
       continue
     }
 
+    // ─── SPRINT HEADER (e.g. ▶ SPRINT 1 (11:30 AM - 01:00 PM) | Duration: 1.5 Hours)
+    const sprintMatch = line.match(/^[▶►]?\s*SPRINT\s*\d*\s*\(?([\d: APM–\-]+(?:AM|PM))\)?/i) || line.match(/^[▶►]?\s*LIVE CLASS\s*\(?([\d: APM–\-]+(?:AM|PM))\)?/i)
+    if (sprintMatch) {
+      currentSprintTime = sprintMatch[1].trim()
+      continue
+    }
+
     // ─── HEADING / SEPARATOR (====, ----)
     if (/^[=\-*]{4,}$/.test(line)) {
       if (currentTask) { tasks.push(currentTask); currentTask = null }
@@ -77,13 +86,13 @@ function parseTasks(raw) {
     }
 
     // ─── *Note: ... FOOTER LINE
-    if (line.startsWith('*Note:') || line.startsWith('*')) {
+    if (line.startsWith('*Note:') || (line.startsWith('*') && !line.startsWith('**') && !line.includes('['))) {
       if (currentTask) { tasks.push(currentTask); currentTask = null }
       tasks.push({ type: 'note', title: line.replace(/^\*+|\*+$/g, '').trim() })
       continue
     }
 
-    // ─── TASK LINE  [x] / [ ] / [-] 09:00 AM - 10:15 PM : Title
+    // ─── STANDARD TASK LINE: [x] / [ ] / [-] 09:00 AM - 10:15 PM : Title
     const taskMatch = line.match(/^\[([xX\s\-]?)\]\s*([\d: APM–\-]+(?:AM|PM))\s*:\s*(.+)$/)
     if (taskMatch) {
       if (currentTask) tasks.push(currentTask)
@@ -98,9 +107,25 @@ function parseTasks(raw) {
       continue
     }
 
-    // ─── DETAIL LINE  -> ...
-    if (line.startsWith('->') && currentTask) {
-      currentTask.detail = line.slice(2).trim()
+    // ─── CHECKLIST ITEM FORMAT: - [x] / - [ ] / [ ] 1. Task Title
+    const checkMatch = line.match(/^[-*]?\s*\[([xX\s\-]?)\]\s*(?:(?:\d+\.)|(?:Sprint \d+:?))?\s*(.+)$/i)
+    if (checkMatch) {
+      if (currentTask) tasks.push(currentTask)
+      const marker = checkMatch[1].trim().toLowerCase()
+      currentTask = {
+        type: 'task',
+        status: marker === 'x' ? 'done' : marker === '-' ? 'cancelled' : 'pending',
+        time: currentSprintTime || 'Today',
+        title: checkMatch[2].trim(),
+        detail: ''
+      }
+      continue
+    }
+
+    // ─── DETAIL LINE (-> ... or Target File: ...)
+    if ((line.startsWith('->') || line.startsWith('Target File:') || line.startsWith('Goal:')) && currentTask) {
+      const detailText = line.replace(/^(?:->|Target File:|Goal:)\s*/i, '').trim()
+      currentTask.detail = currentTask.detail ? `${currentTask.detail} | ${detailText}` : detailText
     }
   }
 
