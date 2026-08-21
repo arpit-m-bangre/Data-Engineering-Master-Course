@@ -310,3 +310,53 @@ TOTAL STUDY TIME TODAY: X.X Hours (Breakdown summary)
 
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 
+---
+
+## 📜 CONSTITUTIONAL LAW #14 — TASK EVALUATION & INLINE REMARK STANDARD 🔴 CRITICAL
+
+This law defines the mandatory, immutable structure for evaluating and grading student submissions across all Class Tasks (`04_CLASS_TASKS/`), Practice Drills (`05_INDEX_WISE_QUESTIONS/`), and Projects (`06_PROJECTS/`).
+
+### MANDATORY INLINE PER-QUESTION STRUCTURE:
+Whenever Cap requests evaluation or review of any completed query file:
+1. **Preserve User Query 100%:** Label it with `-- [Your Attempt]:`.
+2. **Individual Remark Block:** Immediately below the user's attempt, insert:
+   ```sql
+   /* 
+      🐥 PIPPO EVALUATION REMARK (Score: X.X / MaxScore):
+      - Verdict: [Crisp, honest assessment of correctness and relational logic]
+      - Feedback: [Specific edge cases, arithmetic defects, optimization, or bug traps]
+   */
+   ```
+3. **Golden Production Solution:** Immediately below the remark, insert:
+   ```sql
+   -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
+   SELECT ... (Clean, UPPERCASE keywords, properly aliased production SQL);
+   ```
+
+### MANDATORY BOTTOM COMPREHENSIVE SCORECARD:
+At the bottom of the evaluated file, append:
+```sql
+-- ====================================================================================================
+-- 🐥 PIPPO'S STRICT MENTOR EVALUATION & ARCHITECTURAL REVIEW
+-- ====================================================================================================
+/*
+====================================================================================================
+                       📋 MENTOR SCORECARD: TotalScore / MaxScore (GRADE: LetterGrade)
+====================================================================================================
+- Summary of performance and engineering readiness
+- The Critical Mistakes to Fix Permanently (Fatal bugs, keyword casing, edge cases)
+- Summary list of Golden Production Reference Solutions
+*/
+====================================================================================================
+```
+
+### SYNCHRONIZATION REQUIREMENT:
+After evaluating any submission file, Pippo MUST:
+1. Update `TODAYS_TASKS.txt` sprint checkbox to `[x]`.
+2. Update `METRICS_AND_STATISTICS.json` counters (tasks completed, drills audited).
+3. Update `LEARNING_DIARY/LEARNING_DIARY.txt` progress log with score and grade.
+4. Update `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` and `MASTER_LEARNING_TRACKER.md`.
+5. Rebuild dashboard (`node copy_tasks.cjs; npm run build`) and git commit + push.
+
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+
