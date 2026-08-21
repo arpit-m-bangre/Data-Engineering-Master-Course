@@ -115,6 +115,15 @@ from customer c
 left join orders o on c.custid = o.custid 
 full join  product p on o.pid = p.pid;
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 7.0 / 10.0):
+   - Verdict: Correct mathematical logic for line amount, but minor relational defects.
+   - Feedback: 
+     1. FULL JOIN on Product was unnecessary — standard orders lookup requires INNER JOIN or LEFT JOIN.
+     2. Best practice is to prefix all columns with table aliases (c.Custname, p.Pname, o.quantity, p.price).
+     3. Keywords should strictly be in UPPERCASE.
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
 SELECT 
     c.Custname,
@@ -144,6 +153,14 @@ inner join orders o on c.custid = o.custid
 inner join  product p on o.pid = p.pid 
 group by Custname;
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part a - Score: 3.0 / 5.0):
+   - Verdict: Group by structure correct, but fatal calculation bug.
+   - Fatal Bug: Used SUM(price) instead of SUM(quantity * price). If customer bought 5 laptops, 
+     your query counted 50,000 once instead of 250,000!
+   - Best Practice: Group by both `c.custid, c.Custname` to prevent merging duplicate names.
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a]:
 SELECT 
     c.custid,
@@ -164,6 +181,13 @@ left join orders o on c.custid = o.custid
 left join  product p on o.pid = p.pid 
 group by Custname;
 -- don't know how to use isnull
+
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part b - Score: 2.0 / 5.0):
+   - Verdict: Left join structure correct, but missed ISNULL() and repeated SUM(price) bug.
+   - ISNULL Syntax Guide: `ISNULL(SUM(o.quantity * p.price), 0.00) AS total_spend`.
+   - How it works: Replaces NULL aggregate with 0.00 for non-purchasing customers (Leena, Rajesh).
+*/
 
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b]:
 SELECT 
@@ -193,6 +217,13 @@ group by Custname
 having sum(price) > 200000
 order by total_spend asc;
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 6.5 / 10.0):
+   - Verdict: Filtering (LIKE '%a%'), HAVING syntax, and ORDER BY were spot-on!
+   - Defect: Repeated SUM(price) bug instead of SUM(quantity * price).
+   - Tip: With HAVING > 200000, non-purchasing customers are eliminated, so INNER JOIN is preferred.
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
 SELECT 
     c.custid,
@@ -221,6 +252,13 @@ left join orders o on c.custid = o.custid
 left join  product p on o.pid = p.pid 
 where datepart(qq,t_date) in (1,3);
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 7.5 / 10.0):
+   - Verdict: Very clean temporal logic (`DATEPART(qq, t_date) IN (1,3)`)!
+   - Defect: Missing column alias on `DATEPART(qq, o.T_date) AS order_quarter` (creates `(No column name)`).
+   - Join Choice: Since filtering on orders, INNER JOIN is cleaner than LEFT JOIN.
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
 SELECT 
     c.Custname,
@@ -247,6 +285,11 @@ select * from Customer,Product;
 select * 
 from Customer cross join Product;
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part a - Score: 5.0 / 5.0):
+   - Verdict: 100% PERFECT! Both legacy comma Cartesian and ANSI CROSS JOIN correctly demonstrated.
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a]:
 SELECT * 
 FROM Customer 
@@ -260,6 +303,12 @@ select * from Customer,Product,Orders;
 
 select * 
 from Customer cross join Product cross join orders;
+
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part b - Score: 4.0 / 5.0):
+   - Verdict: Excellent 3-table Cartesian product chaining!
+   - Minor: Ensure uppercase SQL keywords.
+*/
 
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b]:
 SELECT * 
@@ -281,6 +330,13 @@ SELECT TeamName as hometeam , city as homecity
 FROM TeamName cross join TeamName 
 where teamid <> teamid;
 -- no idea how to solve 
+
+/* 
+   🐥 PIPPO EVALUATION REMARK (Score: 3.0 / 10.0):
+   - Verdict: Good conceptual intuition on `teamid <> teamid`, but syntax broke.
+   - Core Rule: When joining a table to itself, you MUST give distinct aliases: `MatchTeams t1 CROSS JOIN MatchTeams t2`.
+   - Filter: `WHERE t1.TeamID <> t2.TeamID` excludes self-matches and generates all 12 fixtures (4 teams * 3 opponents).
+*/
 
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY]:
 SELECT 
@@ -309,6 +365,11 @@ select *
 from Customer c 
 inner join orders o on c.custid = o.custid;
 
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part a - Score: 3.5 / 5.0):
+   - Verdict: Query works, but labels were accidentally flipped (you wrote ANSI syntax under Legacy section).
+*/
+
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part a (Legacy Equi Join)]:
 SELECT 
     c.custid,
@@ -329,6 +390,11 @@ select *
 from Customer as c,orders as o
 where 
 c.custid = o.custid;
+
+/* 
+   🐥 PIPPO EVALUATION REMARK (Part b - Score: 3.0 / 5.0):
+   - Verdict: Query works, but wrote Legacy syntax under ANSI section and omitted the enterprise explanation.
+*/
 
 -- 💡 [PIPPO'S GOLDEN PRODUCTION QUERY - Part b (ANSI Inner Join)]:
 SELECT 
