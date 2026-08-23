@@ -59,6 +59,12 @@ Every daily plan MUST include:
 - State at the top:
   `TOTAL STUDY TIME TODAY: X.X Hours (Summary breakdown)`
 
+### 4. The 6-7-8 Hour Daily Planning Presets (24-48 LPA Tier Framework):
+When planning daily missions, align with Cap's energy target:
+- **6.0 Hours (Intense Deep Focus)**: Standard weekdays (3x 90-min coding blocks + Live Class + English).
+- **7.0 Hours (Moderate Focus)**: Acceleration weekdays (4x 90-min coding blocks + Live Class + English).
+- **8.0 Hours (Paced with Bio-Breaks)**: Weekend & holiday backlog clearance sprints with generous naps & meal windows.
+
 ---
 
 ## 🔒 PHASE 3: PARSER-COMPATIBLE FORMAT LOCK (Vercel Contract)

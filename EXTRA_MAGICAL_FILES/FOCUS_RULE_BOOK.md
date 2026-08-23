@@ -130,4 +130,21 @@ Print this, copy this, or read this whenever you feel scattered:
 
 ---
 
+## ⚡ PART 5: THE 6-7-8 HOUR FOCUS ENERGY MATRIX (24-48 LPA TARGET)
+
+To reach the 24 LPA Base / 48 LPA North Star without burnout, the system operates across 3 calibrated energy modes:
+
+| Mode Tier | Daily Study Target | Focus Quality | Daily Architecture | Best Used For |
+| :---: | :---: | :--- | :--- | :--- |
+| **Tier 1: Deep Code** | **6.0 Hours** | **Intense Deep Focus** (Zero Phone / High Glucose) | 3 solid 90-min coding blocks + 1.25h Live Class + 30m English | Standard Weekday Excellence |
+| **Tier 2: Mid Sprints**| **7.0 Hours** | **Moderate Focus** (Coding + Review + Architecture) | 4 structured 90-min blocks + 1.25h Live Class + 45m Sync/English | High-Velocity Acceleration Days |
+| **Tier 3: Full Marathon**| **8.0 Hours** | **Paced Study with Bio-Breaks** (Pomodoro with Naps/Meals) | 5 distributed 90-min blocks + Generous Meal/Sleep Recharge Windows | Weekend & Backlog Clearance Sprints |
+
+### 🔑 Golden Rule of the 6-7-8 Framework:
+- **Never force an 8-hour day on zero energy.** Scale down to 6.0 hours of pure deep focus rather than 8 hours of distracted surfing.
+- Quality of queries in SSMS > Quantity of hours staring at the screen.
+
+---
+
 *Stand tall, Cap. We are rewiring your habits step-by-step. Pippo is with you at every line of code!* 🐥⚔️
+
