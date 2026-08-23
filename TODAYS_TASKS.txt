@@ -1,53 +1,53 @@
 ====================================================================
                   DAILY MISSION: 23 AUG 2026 (SUNDAY)
-     [SUNDAY MOCK CLASS, LINKEDIN BRANDING & JOINS MASTERY SPRINT]
+     [MOCK CLASS, LINKEDIN, PORTFOLIO & RECORDING RECOVERY SPRINT]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Sunday Mock Interview Mastery, LinkedIn Branding & 100% Self Join Clearance!
+[!] MISSION OBJECTIVE: Sunday Mock Interview, Portfolio Website Build & Class Recording Backlog Recovery!
 
-TOTAL STUDY TIME TODAY: 9.5 Hours (Mock Class + LinkedIn + 6 Core Engineering Sprints)
+TOTAL STUDY TIME TODAY: 9.5 Hours (Mock Class + LinkedIn + Portfolio + Recording + 4 Core Engineering Sprints)
 
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[ ] 10:30 AM - 11:30 AM : Sprint 1 — Live Data Engineering Mock Class & Interview Session 🎓
-    -> Live faculty mock interview & scenario questioning session
-    -> Real-time query defense & architectural interview practice
+[x] 10:30 AM - 11:30 AM : Sprint 1 — Live Data Engineering Mock Class & Interview Session 🎓
+    -> Live faculty mock interview & scenario questioning session completed
+    -> Query defense & relational joins conceptual test practice
 
 [ ] 11:30 AM - 12:00 PM : Sprint 2 — LinkedIn Authority Branding & Recruiter Outreach 📣
     -> Social Presence Sprint: Draft/Publish high-signal SQL insight post
     -> Connect with 5-7 Tier-1 Data Engineers & comment on industry threads
 
-[ ] 12:00 PM - 01:30 PM : Sprint 3 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
-    -> Re-write 2026-08-21.sql in SSMS (Day 18: Self Joins & Hierarchies)
-    -> Read 2026-08-21_REVISION.md (7-Step Interactive Framework)
-    -> Audit Manager-Employee hierarchies & anomaly detection patterns
+[ ] 12:00 PM - 01:15 PM : Sprint 3 — Data Engineering Portfolio Website Engineering 🌐💻
+    -> Work on personal portfolio website structure, UI components & projects showcase
+    -> Integrate SQL architecture projects, GitHub repository cards & live demos
 
-[-] 01:30 PM - 02:30 PM : Lunch Break & Bio-Paced Mental Recharge 🥗💤
+[-] 01:15 PM - 02:15 PM : Lunch Break & Bio-Paced Mental Recharge 🥗💤
     -> Nutritious meal, hydration & mental reset power recharge
 
-[ ] 02:30 PM - 04:00 PM : Sprint 4 — Solve Faculty Class Tasks [2026-08-21_CLASS_TASK.SQL] 📊
-    -> Solve all 8 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-21_CLASS_TASK.SQL in SSMS
-    -> Strict constraint: Solve strictly using SELF JOIN architecture (E1 JOIN E2)
-    -> Self-audit results and verify query execution plans
+[ ] 02:15 PM - 03:45 PM : Sprint 4 — Watch Yesterday's Class Recording & Raw Notes Processing 🎥📝
+    -> Watch Saturday (22 Aug) class recording with zero distraction
+    -> Capture raw queries, whiteboard concepts, edge cases & faculty problem statements
 
-[ ] 04:00 PM - 05:30 PM : Sprint 5 — Practice Drills [2026-08-21_QUESTIONS.SQL] 💪
-    -> Solve all 14 targeted practice drills in SSMS from scratch
-    -> Master consecutive day orders, duplicate emails, and same-salary department pairings
+[ ] 03:45 PM - 05:15 PM : Sprint 5 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
+    -> Re-write 2026-08-21.sql in SSMS (Day 18: Self Joins & Hierarchies)
+    -> Read 2026-08-21_REVISION.md (7-Step Interactive Framework)
+    -> Master Manager-Employee hierarchy traversal and anomaly detection rules
 
-[-] 05:30 PM - 06:00 PM : Tea Break & Evening Refreshment ☕🚶
-    -> Evening tea, physical stretch & screen rest
+[-] 05:15 PM - 05:45 PM : Tea Break & Evening Refreshment ☕🚶
+    -> Evening tea, physical stretch & screen reset
 
 --------------------------------------------------------------------
                     EVENING & BACKLOG SPRINT BLOCK
 --------------------------------------------------------------------
-[ ] 06:00 PM - 07:30 PM : Sprint 6 — Practice Drills Clearance [2026-08-20_QUESTIONS.SQL] 🎯
-    -> Solve all 14 targeted drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-20_QUESTIONS.SQL
-    -> Deep dive into 3-way multi-table joins, equi joins, and aggregation over joins
+[ ] 05:45 PM - 07:15 PM : Sprint 6 — Solve Faculty Class Tasks [2026-08-21_CLASS_TASK.SQL] 📊
+    -> Solve all 8 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-21_CLASS_TASK.SQL in SSMS
+    -> Strict constraint: Solve strictly using SELF JOIN architecture (E1 JOIN E2)
+    -> Self-audit results and verify query execution plans
 
-[ ] 07:30 PM - 08:30 PM : Sprint 7 — English Practice Book (Task 3) & Technical Vocabulary 📖
-    -> Complete English Practice Book: Task 3 (3/125 tasks completed)
-    -> Vocabulary & professional communication practice for global tech interviews
+[ ] 07:15 PM - 08:30 PM : Sprint 7 — Practice Drills Clearance [2026-08-21_QUESTIONS.SQL] 💪
+    -> Solve all 14 targeted practice drills in SSMS from scratch
+    -> Master consecutive day orders, duplicate emails, and same-salary department pairings
 
 [-] 08:30 PM - 09:30 PM : Dinner Break & Family Recharge Window 🍽️🚶‍♂️
     -> Nutritious dinner, short walk & mental reset
@@ -55,7 +55,8 @@ TOTAL STUDY TIME TODAY: 9.5 Hours (Mock Class + LinkedIn + 6 Core Engineering Sp
 --------------------------------------------------------------------
                  POST-DINNER FINAL REVIEW BLOCK
 --------------------------------------------------------------------
-[ ] 09:30 PM - 10:15 PM : Sprint 8 — SQL Joins Mastery Audit & Revision Recommender Review 🧠
+[ ] 09:30 PM - 10:15 PM : Sprint 8 — English Practice Book (Task 3) & Joins Heatmap Audit 📖🧠
+    -> Complete English Practice Book: Task 3 (3/125 tasks completed)
     -> Review Concept Mastery Heatmap & Recommender weak spots
     -> Solidify Cartesian math proofs and NULL behavior in relational joins
 
