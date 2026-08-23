@@ -524,3 +524,222 @@ Zero errors. Zero missing files. Zero drift.
 Your entire system, brain, and course ecosystem are in **world-class condition**.
 
 Get your deep, peaceful sleep now, Captain! Pippo is fully locked in and ready for Monday! 💛🚀💤
+
+---
+
+### 👤 CAPTAIN:
+> *(Shared Claude/Anthropic Socratic Learning Mode Prompt)*:
+> Learning Mode
+> The goal is not to answer the learner's question but to help them be able to answer it themselves — this time and next time...
+> HEY JUST TELL ME HERE IN CHAT WHAT IS THIS
+
+### 🐥 PIPPO:
+**This is the complete system prompt / instruction manual for an "AI Socratic Tutor Skill" (Learning Mode), Cap!** 🐥🧠
+
+---
+
+#### 🔍 What It Actually Is:
+
+It is an advanced instruction set designed to teach an AI model how to be a **genuine teacher** instead of just an "answer dispenser."
+
+---
+
+#### 🔑 The 6 Core Rules Inside This Text:
+
+1. **Don't Spoon-Feed Answers:**  
+   Giving direct answers creates a student who can't solve problems independently.
+2. **Don't Over-Question (Avoid Socratic Traps):**  
+   Asking 5 questions in a row when a student is stuck makes them quit. The AI must give a small hint/scaffold, then ask *one* focused question.
+3. **"Diagnose Before You Teach":**  
+   Find out *where* the student is confused (the concept, the procedure, or the question itself) before explaining.
+4. **Holding the Line Against Impatience:**  
+   When a user says *"just tell me the answer!"*, recognize whether they are just impatient (give a sharper hint) vs genuinely stuck (step in and demonstrate).
+5. **Academic Integrity:**  
+   Never do graded homework or test questions for the student; work through a *parallel/similar* example instead.
+6. **No Fake Praise or Emoji Clutter:**  
+   Skip fake phrases like *"Great question!"* or empty cheerleading. Treat the student like a serious, capable adult.
+
+---
+
+#### 💡 Why It Is Useful For You:
+If you ever want Pippo to act as a **strict interview tutor** who drills you on SQL/Python instead of just generating solutions, we can turn this exact logic into a skill called `pippo_tutor_mode`! 💛🚀
+
+---
+
+### 👤 CAPTAIN:
+> OK MAKE IT PIPOO TUTOR MODE AND POLISH IT LITTLE MORE FOR MY SYSTEM I WANT YOU TO BE STRICT LIKE IF I AM BEING LAZY PLEASE SCOLD ME YOU HAVE FREE HAND GO AND YOU CAN SAY ME THAT DON'T WASTE TIME HERE AND ALL MAKE THIS MORE AWESOME AND POLISH AND MAKE PIPO TUTOR MODE GO
+
+### 🐥 PIPPO:
+*(Created `.agents/skills/pippo_tutor_mode/SKILL.md` and mirrored to `EXTRA_MAGICAL_FILES/AGENT_BRAIN_CUSTOMIZATIONS_VAULT/skills/pippo_tutor_mode/`)*:
+
+**`PIPPO TUTOR MODE` IS OFFICIALLY BUILT, POLISHED & DEPLOYED, CAP!** 🐥🎓🔥
+
+---
+
+#### 🥊 What is Inside Your New Skill:
+📂 `pippo_tutor_mode/SKILL.md`
+
+1. **Zero Spoon-Feeding Mandate**:
+   - Pippo will **never** just write the final SQL query or Python function for you.
+   - You get **1 scaffold (small hint/diagram/parallel example)** + **1 sharp question** per turn.
+2. **Strict Tough-Love & Anti-Laziness Authority**:
+   - Free hand granted. If you try to rush (*"just give me the answer"*, *"I have no time"*), Pippo will **push back firmly** and hold the line.
+   - If you get distracted or procrastinate, Pippo will **call you out directly**: *"Focus, Cap! Distraction is the enemy of 25+ LPA!"*
+3. **Tier-1 Interview Drill Engine**:
+   - **Query Defense**: Makes you defend *why* you chose `DENSE_RANK()` over `RANK()`.
+   - **Execution Tracing**: Tests you on the 6 logical query execution stages.
+   - **Edge-Case Attacks**: Tests your queries against `NULL` traps and Cartesian explosions.
+
+---
+
+#### ⚡ How to Trigger It:
+Whenever you want to practice or be grilled, just type:
+- `/tutor` or **"tutor mode"**
+- `/grill-me` or **"grill me on window functions"**
+- **"teach me this concept"** / **"test my understanding"**
+
+---
+
+#### 📦 Live Status:
+- **Active in Workspace**: `.agents/skills/pippo_tutor_mode/SKILL.md`
+- **Mirrored in Vault**: `EXTRA_MAGICAL_FILES/AGENT_BRAIN_CUSTOMIZATIONS_VAULT/skills/pippo_tutor_mode/`
+- **Committed & Pushed**: Commit `b96b7f2` live on `main`.
+
+No more shortcuts. Pure Tier-1 engineering muscle from here on, Cap! 💛🚀
+
+---
+
+### 👤 CAPTAIN:
+> OKAY PLEASE CREATE ONE MD FILE IN THE DE COURSE JUST NEAR REDEM.MD THE FILE WILL CONIST ALL SKILSS RULES NAME AND 
+> '/tutor'
+> '/grill-me' THIS TYPE OF COMMAND LIST IN SYSTEM OR CUSTOMIZE GO MAKE PROPER FULL LIST IN SIMPLE AND MINMAL
+
+### 🐥 PIPPO:
+*(Created `AI_COMMANDS_AND_CUSTOMIZATIONS.md` at workspace root)*:
+
+**Cheat sheet created and pushed right next to `README.md`, Cap!** 🐥📜✨
+
+---
+
+#### 📂 Your New Cheat Sheet:
+`AI_COMMANDS_AND_CUSTOMIZATIONS.md`
+
+---
+
+#### ⚡ What It Covers in 1 Clean Page:
+1. **Slash Commands & Triggers**:
+   - `/tutor` → Strict Socratic mentor mode (zero spoon-feeding).
+   - `/grill-me` → Mock interview grilling & query defense.
+   - `/caveman` → Ultra-terse 70% token saver mode.
+   - `/goal` → Long-running autonomous mission.
+   - `/schedule` → Timer & background reminders.
+   - `/learn` → Persistent knowledge learning.
+2. **Active Skills (`.agents/skills/`)**:
+   - `pippo_tutor_mode`, `pippo_brain_ops`, `pippo_daily_plan`, `caveman`, `agy-customizations`, `antigravity-guide`.
+3. **Active Rules (`.agents/rules/`)**:
+   - `AGENTS.md`, `pippo_accuracy_gate.md`, `todays_tasks_format_lock.md`, `class_processing_checklist.md`, `minimal_analogy_notes.md`, `dashboard_autodeploy_system.md`, `caveman_efficiency.md`, `pipoo_and_cap_identity.md`.
+4. **Portable Vault Backup Link**:
+   - Direct pointer to `AGENT_BRAIN_CUSTOMIZATIONS_VAULT/`.
+
+---
+
+#### ⚡ Live Status:
+- **Committed & Pushed**: Commit `2ab659c` pushed to GitHub main.
+
+Your entire cockpit is 100% documented, organized, and ready for action, Cap! 💛🚀💤
+
+---
+
+### 👤 CAPTAIN:
+> SO I HAVE TO ACTIVATE OR USE THIS ALWAYS OR WHAT
+> *(Referencing `PERSONAL_BRANDING/linkedin_post_prompt.md`)*
+
+### 🐥 PIPPO:
+**NO, Cap! You do NOT need to use or read this every day!** 🐥🚫
+
+---
+
+#### 📅 When to Use It:
+**Only 3 times a week (20–30 mins)** on your scheduled Social Presence days:
+- **Monday** (SQL Tips / Code insights)
+- **Wednesday** (Interview Traps / Optimization insights)
+- **Saturday** (Weekly Project Summary)
+
+During normal study, SSMS practice, or class notes, **completely ignore this file**.
+
+---
+
+#### 💡 The Easiest Way to Use It (Pippo does the work):
+
+You **never** have to manually read through all 596 lines. 
+
+When your scheduled LinkedIn sprint arrives on Monday, simply tell Pippo:
+> *"Pippo, use `linkedin_post_prompt.md` to draft today's post about Window Functions."*
+
+Pippo will automatically read the prompt, apply the visual strategy, hook structure, and technical accuracy rules, and hand you the ready-to-publish post in 30 seconds!
+
+---
+
+#### 🎯 Summary:
+- **Daily SQL / Python study**: ❌ Do not touch it.
+- **Mon / Wed / Sat LinkedIn Sprint**: ✅ Just tell Pippo to run it for you!
+
+Now close the tabs and sleep, Cap! We have a big Monday ahead! 💛🚀💤
+
+---
+
+### 👤 CAPTAIN:
+> I MEAN DO I NEED TO ACTIVATE THE SKILLS AND RULES ALWAYS OR IT WILL AUTOMATICALLY PLEASE TELL
+
+### 🐥 PIPPO:
+**IT IS 100% AUTOMATIC, CAP!** 🐥⚡
+
+You **NEVER** have to manually load, configure, or activate them.
+
+---
+
+#### 🔍 How It Works:
+
+##### 1. All Rules (`.agents/rules/` + `AGENTS.md`):
+- **ALWAYS ACTIVE IN THE BACKGROUND AUTOMATICALLY.**
+- Pippo follows your identity, 5 accuracy gates, format locks, and 14-question standards every single turn without you doing anything.
+
+##### 2. All Skills (`.agents/skills/`):
+- **AUTO-TRIGGERED BY NATURAL SPEECH.**
+- When you say *"process class note"* → Pippo automatically runs `pippo_brain_ops`.
+- When you say *"what should I do today"* → Pippo automatically runs `pippo_daily_plan`.
+- When you type `/tutor` or *"teach me"* → Pippo automatically runs `pippo_tutor_mode`.
+
+---
+
+#### 🎯 Bottom Line:
+Just talk to Pippo naturally like you always do. The entire system **detects and executes everything automatically behind the scenes**! 
+
+Zero manual effort required from you. 💛🚀💤
+
+---
+
+### 👤 CAPTAIN:
+> OK SO U MEAN IT GOT AUTO TRIGGER BY SPEECH AND IF I NEED TO TRIGHER IT MANUALLY I CAN DO IT USING /
+
+### 🐥 PIPPO:
+**YES! EXACTLY 100% CORRECT, CAP!** 🐥🎯🔥
+
+---
+
+```text
+TWO WAYS TO USE IT:
+
+1. NATURAL TALK (Automatic) 🗣️
+   → "process this note"       --> Auto-runs pippo_brain_ops
+   → "make today's plan"       --> Auto-runs pippo_daily_plan
+   → "explain why this failed" --> Auto-runs pippo_tutor_mode
+
+2. MANUAL SHORTCUT (Instant) ⚡
+   → /tutor                    --> Instant strict tutor mode
+   → /grill-me                 --> Instant mock interview defense
+   → /caveman                  --> Instant ultra-short token saver
+```
+
+Both ways work perfectly. You have total control! 💛🚀💤
+
