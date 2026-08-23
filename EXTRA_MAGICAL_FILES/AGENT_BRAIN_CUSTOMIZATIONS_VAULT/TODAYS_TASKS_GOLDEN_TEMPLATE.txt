@@ -1,0 +1,62 @@
+====================================================================
+                  DAILY MISSION: DD MMM YYYY (DAY_OF_WEEK)
+      [REAL-TIME STATUS / TAGLINE / SITUATION HEADER]
+====================================================================
+
+[!] MISSION OBJECTIVE: High-impact one-line objective for the day!
+
+TOTAL STUDY TIME TODAY: X.X Hours (Sprint breakdown summary)
+
+--------------------------------------------------------------------
+                       DAY SPRINT EXECUTION
+--------------------------------------------------------------------
+[ ] HH:MM AM - HH:MM PM : Sprint 1 — Class Note Re-write & Read Revision Note [DATE] ✍️
+    -> Re-write YYYY-MM-DD class notes in SSMS (Topic Name)
+    -> Read YYYY-MM-DD Revision Note (7-Step Framework)
+    -> Complete English Practice Book: Task N (N/125 tasks completed)
+
+[-] HH:MM AM - HH:MM PM : Lunch Break & Bio-Paced Mid-Day Recharge 🥗💤
+    -> Nutritious meal, hydration & mental reset power recharge!
+
+[ ] HH:MM PM - HH:MM PM : Sprint 2 — Solve Faculty Class Tasks [YYYY-MM-DD_CLASS_TASK.SQL] 📊
+    -> Solve all N faculty & in-class task queries from scratch in SSMS
+    -> Self-audit and mentor review
+
+[ ] HH:MM PM - HH:MM PM : Sprint 3 — Practice Drills [YYYY-MM-DD_QUESTIONS.SQL] 💪
+    -> Solve all 14 targeted practice drills in SSMS from scratch
+    -> Mark completed in MASTER_LEARNING_TRACKER.txt
+
+[-] HH:MM PM - HH:MM PM : Tea Break & Evening Refreshment ☕🚶
+    -> Evening tea, mental reset & physical stretch
+
+--------------------------------------------------------------------
+                    EVENING & LIVE CLASS BLOCK
+--------------------------------------------------------------------
+[-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class Setup 🍽️💻
+    -> Light nutritious dinner & SSMS warmup for live class
+
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY N) 🎓
+    -> Live lecture: [expected topic]
+    -> Take raw notes for post-class processing
+
+--------------------------------------------------------------------
+                 POST-CLASS NIGHT SPRINT BLOCK
+--------------------------------------------------------------------
+[-] 10:15 PM - 11:00 PM : Post-Class Quick Break & Night Setup Window ☕
+    -> Quick stretch, hydration & prep for night sprint
+
+[ ] 11:00 PM - 01:00 AM : Sprint 4 — Social Presence & LinkedIn Sprint 🚀
+    -> Publish #180DaysOfDataEngineering Post N: [Post Topic]
+    -> Send 7-10 targeted connection requests to Tier-1 Data Engineers
+    -> Engage with 3 posts from new network connections
+
+[ ] 01:00 AM - 01:15 AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
+    -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
+    -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
+    -> Committed & pushed to GitHub repository with live Vercel auto-deployment
+    -> Mission Accomplished & Rest Window 🌙
+
+====================================================================
+*Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
+*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+====================================================================
