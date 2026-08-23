@@ -6,27 +6,27 @@
     "start_date": "2026-07-26",
     "target_completion_date": "2026-09-02",
     "current_streak_days": 10,
-    "last_active_date": "2026-08-23"
+    "last_active_date": "2026-08-24"
   },
   "overall_metrics": {
     "total_modules": 7,
     "active_module": "01_SQL",
-    "module_completion_percentage": 71.4,
-    "backlog_debt_percentage": 28.6,
+    "module_completion_percentage": 73.5,
+    "backlog_debt_percentage": 26.5,
     "target_zero_debt_date": "2026-09-02"
   },
   "sql_ecosystem_counters": {
-    "class_notes_processed": 18,
-    "daily_indexes_created": 18,
+    "class_notes_processed": 19,
+    "daily_indexes_created": 19,
     "master_combined_index_files": 1,
-    "revision_notes_total": 18,
+    "revision_notes_total": 19,
     "revision_notes_completed": 6,
-    "practice_question_files": 18,
-    "practice_questions_total_drills": 342,
+    "practice_question_files": 19,
+    "practice_questions_total_drills": 356,
     "practice_questions_completed_drills": 75,
-    "faculty_class_task_files": 8,
+    "faculty_class_task_files": 9,
     "faculty_class_tasks_completed": 7,
-    "projects_total_scheduled": 5,
+    "projects_total_scheduled": 6,
     "projects_completed": 1
   },
   "offline_test_analytics": {
@@ -64,8 +64,8 @@
     ]
   },
   "concept_mastery_heatmap_summary": {
-    "mastered_concepts_count": 9,
+    "mastered_concepts_count": 10,
     "revision_priority_concepts_count": 4,
-    "high_interview_weight_concepts_count": 7
+    "high_interview_weight_concepts_count": 8
   }
 }

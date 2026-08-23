@@ -4,7 +4,7 @@
 **Student:** Arpit Manoj Bangre (Cap) | **Role:** Data Engineer Trainee | **Batch:** Online Batch 15  
 **Lead AI Mentor:** Pippo 🐥  
 **Companion Plain-Text Matrix:** [`MASTER_LEARNING_TRACKER.txt`](./MASTER_LEARNING_TRACKER.txt)  
-**Last Updated:** 22 AUG 2026 | **Streak Day:** Day 9 🔥  
+**Last Updated:** 24 AUG 2026 | **Streak Day:** Day 10 🔥  
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 18)
+## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 19)
 
 | Day | Topic Focus Area | Re-Write Note | Revision Note | Practice Drills | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -44,11 +44,12 @@
 | **16** | ANSI Joins Syntax, Ambiguity & Group By | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **17** | Multi-Table Joins, Cross & Equi Joins | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 | **18** | Self Joins, Hierarchies & Fraud Engines | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
+| **19** | Window Functions (Ranking & Partitions) | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 
 ## 🚀 3. ENTERPRISE DATA ENGINEERING PROJECTS MATRIX
-*Pre-Flight Audit Confirmed: 5 Project Files exist physically on disk.*
+*Pre-Flight Audit Confirmed: 6 Project Files exist physically on disk.*
 
 | ID | Project Title | Target File | Status |
 | :---: | :--- | :--- | :---: |
@@ -57,6 +58,7 @@
 | **P3** | Banking Transaction Audit & Fraud Engine | [`PROJECT3.SQL`](../01_SQL/06_PROJECTS/PROJECT3.SQL) | ⏳ **PENDING** |
 | **P4** | HR Payroll & Data Validation Engine | [`PROJECT4.SQL`](../01_SQL/06_PROJECTS/PROJECT4.SQL) | ⏳ **PENDING** |
 | **P5** | Retail Supply Chain & FK Architecture | [`PROJECT5.SQL`](../01_SQL/06_PROJECTS/PROJECT5.SQL) | ⏳ **PENDING** |
+| **P6** | Financial Analytics & Windowed Leaderboard Engine | [`PROJECT6.SQL`](../01_SQL/06_PROJECTS/PROJECT6.SQL) | ⏳ **PENDING** |
 
 ---
 

@@ -3,7 +3,7 @@
                                 SINGLE SOURCE OF TRUTH (SSOT)
 ====================================================================================================
 Student: ARPIT MANOJ BANGRE | Batch: ONLINE BATCH 15 | Role: Data Engineer Trainee
-Last Updated: 22 AUG 2026   | Overall SQL Completion: [██░░░░░░░░] 35%
+Last Updated: 24 AUG 2026   | Overall SQL Completion: [████░░░░░░] 38%
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ Last Updated: 22 AUG 2026   | Overall SQL Completion: [██░░░░░░�
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 18) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 19) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -42,12 +42,13 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 16   | ANSI Joins Syntax, Ambiguity & Group By   | [x] DONE      | [x] DONE      | [x] DONE        | COMPLETED
 17   | Multi-Table Joins, Cross & Equi Joins     | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 18   | Self Joins, Hierarchies & Fraud Engines   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+19   | Window Functions (Ranking & Partitions)   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
 
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
 ====================================================================================================
-*Pre-Flight Audit Confirmed: 5 Project Files exist physically on disk.*
+*Pre-Flight Audit Confirmed: 6 Project Files exist physically on disk.*
 
 ID  | PROJECT TITLE                                      | TARGET FILE    | STATUS
 ----------------------------------------------------------------------------------------
@@ -56,6 +57,7 @@ P2  | Healthcare Admissions & Billing Pipeline           | PROJECT2.SQL   | [ ] 
 P3  | Banking Transaction Audit & Fraud Engine           | PROJECT3.SQL   | [ ] PENDING
 P4  | HR Payroll & Data Validation Engine                | PROJECT4.SQL   | [ ] PENDING
 P5  | Retail Supply Chain & FK Architecture              | PROJECT5.SQL   | [ ] PENDING
+P6  | Financial Analytics & Windowed Leaderboard Engine  | PROJECT6.SQL   | [ ] PENDING
 
 ====================================================================================================
                         [ ⚔️ THE MASTER RECOVERY BATTLE PLAN ]

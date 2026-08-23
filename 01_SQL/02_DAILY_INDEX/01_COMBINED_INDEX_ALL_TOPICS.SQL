@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 18 Class Note Files (2026-08-01 to 2026-08-21)
+Total Modules / Files: 19 Class Note Files (2026-08-01 to 2026-08-22)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -171,6 +171,20 @@ SECTION 1: DAILY CLASS BREAKDOWN
     18.8 Enterprise Fraud Engineering: Geo-Temporal Transaction Anomalies within 5-Minute Windows
     18.9 10 Faculty Scenario Problem Sets (Consecutive Orders, Seniority Audits, Duplicate Emails)
 
+19. DAY 19 (AUGUST 22) - WINDOW FUNCTIONS: RANKING & PARTITIONS
+    19.1 Window Functions Overview & 3 Core Categories (Ranking, Value-based, Aggregate)
+    19.2 Window Functions vs GROUP BY Aggregation (Row Preservation vs Row Collapsing)
+    19.3 The OVER() Clause Architecture (ORDER BY vs PARTITION BY)
+    19.4 ROW_NUMBER() Function (Sequential Unique Line Numbering, No Ties, No Gaps)
+    19.5 DENSE_RANK() Function (Ties Share Rank, Continuous Numbering, Zero Gaps)
+    19.6 RANK() Function (Ties Share Rank, Positional Numbering with Gaps)
+    19.7 NULL Handling in Sorting & Window Functions (NULL placement in ASC vs DESC)
+    19.8 PARTITION BY Sub-grouping Mechanics (Independent Window Calculation per Category/Department)
+    19.9 Combining PARTITION BY with ORDER BY for Department-wise Ranking
+    19.10 Logical Query Execution Order with Window Functions (FROM -> WHERE -> GROUP BY -> HAVING -> WINDOW -> SELECT -> ORDER BY)
+    19.11 The WHERE Clause Window Function Restriction Trap (Msg 4108) & Derived Table / CTE Workaround
+    19.12 Top-N per Group Filtering Pattern using DENSE_RANK() in Derived Tables
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -254,6 +268,16 @@ J. SELF JOINS & HIERARCHICAL MODELING
    • Hierarchical Relative Comparisons (Employees earning > Manager salary)
    • Symmetric Mirror De-duplication Mechanics (s1.ID < s2.ID vs <>)
    • Geo-Temporal Window Anomaly & Banking Fraud Detection Engines
+
+K. WINDOW FUNCTIONS & ANALYTIC ENGINES
+   • Window Functions Architecture & The OVER() Clause
+   • ROW_NUMBER() Sequential Numbering Mechanics
+   • DENSE_RANK() Continuous Ranking with Tied Values (No Gaps)
+   • RANK() Positional Ranking with Tied Values (Leaves Gaps)
+   • PARTITION BY Sub-grouping vs GROUP BY Row Collapsing
+   • Logical Query Execution Order with Window Functions
+   • The WHERE Clause Window Function Restriction Trap (Msg 4108)
+   • Top-N per Group Filtering Pattern using Derived Tables and CTEs
 
 ================================================================================
 

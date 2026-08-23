@@ -17,6 +17,7 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **7. Temporal Data Types & Date Functions** | 5 | 5 | 0 | 🔴 High |
 | **8. Relational Joins & Cartesian Math** | 11 | 11 | 0 | 🔴 High |
 | **9. Self Joins & Hierarchical Modeling** | 5 | 5 | 0 | 🔴 High |
+| **10. Window Functions & Ranking Engines** | 6 | 6 | 0 | 🔴 High |
 
 ---
 
@@ -118,6 +119,16 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C9.3** | Root Manager Nullability & `LEFT JOIN` Handling | MASTERED | CEO disappearing from `INNER JOIN` report due to NULL MID | 1 | 🔴 High |
 | **C9.4** | Same-Table Pairing & Symmetric Deduplication (`<` vs `<>`) | MASTERED | Using `<>` and generating 2x mirror duplicate pairs | 1 | 🔴 High |
 | **C9.5** | Geo-Temporal Window Anomaly & Banking Fraud Detection | MASTERED | Incorrect timestamp interval window in `DATEDIFF()` | 1 | 🔴 High |
+
+### SECTION 10: WINDOW FUNCTIONS & RANKING ENGINES
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C10.1** | `OVER()` Clause & Window Taxonomy (Ranking/Value/Aggregate) | MASTERED | Missing parentheses after `OVER` | 1 | 🔴 High |
+| **C10.2** | `ROW_NUMBER()` Sequential Generation & Deterministic Ties | MASTERED | Non-deterministic ordering without unique secondary tie-breaker | 1 | 🔴 High |
+| **C10.3** | `DENSE_RANK()` Continuous Ranking without Gaps | MASTERED | Using `RANK()` instead of `DENSE_RANK()` for Nth highest salary | 1 | 🔴 High |
+| **C10.4** | `RANK()` Positional Ranking with Gaps on Ties | MASTERED | Miscalculating gap jumps after multi-row ties | 1 | 🔴 High |
+| **C10.5** | `PARTITION BY` Sub-Grouping Mechanics | MASTERED | Confusing `PARTITION BY` with `GROUP BY` row collapsing | 1 | 🔴 High |
+| **C10.6** | Window Function Query Execution Order & Scoping | MASTERED | Msg 4108: Attempting to use window functions directly in `WHERE` | 1 | 🔴 High |
 
 ---
 
