@@ -22,27 +22,34 @@ Here is the exhaustive list of all unlockable GitHub official badges, their tier
 
 ## ⚡ PART 2: THE 2ND GITHUB ACCOUNT ACCELERATOR ENGINE
 
-Having a second GitHub account is a high-leverage superpower. Here is how we use it to accelerate your main profile (`arpit-m-bangre`):
+### 👥 The Two-Account Architecture:
+* **Primary Lead Profile (Main Showcase):** [`https://github.com/arpit-m-bangre`](https://github.com/arpit-m-bangre)
+* **Secondary Accelerator Profile (Pair / Reviewer):** [`https://github.com/arpitbangre`](https://github.com/arpitbangre)
+
+---
 
 ### 1. Instant Pair Extraordinaire (Gold 🥇) Acceleration:
-In your commit messages, add your 2nd account as the co-author:
+In your commit messages, add your 2nd account (`arpitbangre`) as the co-author:
 ```text
 git commit -m "feat(sql): add enterprise financial window analytics
 
-Co-authored-by: SecondAccountName <second-account@gmail.com>"
+Co-authored-by: Arpit Bangre <arpitbangre@users.noreply.github.com>"
 ```
-*(Both your main and 2nd account rapidly earn the **Pair Extraordinaire** badge!)*
+*(Both `arpit-m-bangre` and `arpitbangre` rapidly earn the **Pair Extraordinaire** Gold badge!)*
 
 ### 2. Enterprise PR Code Reviews & Pull Shark Acceleration:
 Simulate real Tier-1 Big Tech team workflows:
-1. **2nd Account:** Forks `Data-Engineering-Master-Course` $\rightarrow$ creates branch $\rightarrow$ opens Pull Request.
+1. **2nd Account (`arpitbangre`):** Forks `Data-Engineering-Master-Course` $\rightarrow$ creates branch $\rightarrow$ opens Pull Request.
 2. **Main Account (`arpit-m-bangre`):** Reviews the PR, adds an architectural comment (*"Checked partition keys and execution plan. LGTM!"*), and merges.
 3. **Recruiter Impact:** Proves you know enterprise branching, code review standards, and PR lifecycle!
 
 ### 3. Galaxy Brain (Accepted Answers) Engine:
-1. **2nd Account:** Posts a genuine technical data engineering / SQL scenario question in GitHub Discussions.
+1. **2nd Account (`arpitbangre`):** Posts a genuine technical data engineering / SQL scenario question in GitHub Discussions.
 2. **Main Account (`arpit-m-bangre`):** Writes a comprehensive, formatted technical solution.
-3. **2nd Account:** Marks your response as **"Accepted Answer"** $\rightarrow$ Triggers **Galaxy Brain** badge!
+3. **2nd Account (`arpitbangre`):** Marks your response as **"Accepted Answer"** $\rightarrow$ Triggers **Galaxy Brain** badge on `arpit-m-bangre`!
+
+### 4. Starstruck & Social Authority:
+- **`arpitbangre`** Stars and Watches the primary `Data-Engineering-Master-Course` repository.
 
 ---
 
