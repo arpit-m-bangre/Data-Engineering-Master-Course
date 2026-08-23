@@ -1,9 +1,24 @@
 # 🔒 MASTER CLASS PROCESSING CHECKLIST
 # Zero-Miss Enforcement Protocol — MANDATORY FOR EVERY CLASS FILE
+# Aligned with AGENTS.md Supreme Law (14 Questions Standard)
 
 ## ⚡ TRIGGER
 This checklist is MANDATORY whenever the user provides a new class
 raw note file (.sql or .txt) for processing.
+
+---
+
+## 🛑 PRE-FLIGHT AUDIT (STEP 0 — BEFORE WRITING ANY FILE)
+1. Physically check all 6 subdirectories in `01_SQL/` using directory inspection.
+2. Record current counts:
+   - `01_CLASS_NOTES/` -> Count N
+   - `02_DAILY_INDEX/` -> Count N + 1 combined
+   - `03_REVISION_NOTES/` -> Count N
+   - `04_CLASS_TASKS/` -> Count T
+   - `05_INDEX_WISE_QUESTIONS/` -> Count N
+   - `06_PROJECTS/` -> Count P
+3. Read `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` to confirm day number and pending items.
+4. Read `LEARNING_DIARY/METRICS_AND_STATISTICS.json` to confirm current state.
 
 ---
 
@@ -14,42 +29,38 @@ No step may be skipped. No step may be reordered.
 ### STEP 1 — FORMAT CLASS NOTES
 - File: `01_SQL/01_CLASS_NOTES/YYYY-MM-DD.sql`
 - Rules:
-  * SQL queries FIRST, success/failure description BELOW them.
+  * Maximum file length: strictly 150-220 lines (Constitutional Law #12).
+  * Pure executable SQL only. Short 1-2 line `/* Theory: ... */` or `-- inline comment`.
   * ALL SQL keywords in UPPERCASE.
-  * All comments wrapped to max 80 characters per line.
-  * Add real-world analogy explanations for every new concept.
-  * Double equal-sign dividers for major sections.
-  * Single hyphen dividers for tips, notes, execution flow.
-  * ZERO data loss — preserve every query, value, and comment.
+  * NO paragraph essays, NO vocabulary sections, NO multi-paragraph analogies in .sql files (all rich content lives in _REVISION.md).
+  * Single line pointer for homework: `/* Faculty Homework: see 04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL */`.
+  * ZERO data loss — preserve 100% of underlying queries, constraints, and execution flow.
+- Post-Write Gate: Re-read file. Verify line count <= 220, all keywords uppercase, zero bloat.
 
 ### STEP 2 — CREATE REVISION NOTE
 - File: `01_SQL/03_REVISION_NOTES/YYYY-MM-DD_REVISION.md`
 - Rules:
   * Use the 7-step interactive framework:
-    1. What did we learn today? (Topic Summary)
-    2. Why does it matter? (Real-world relevance)
-    3. Key Syntax & Rules (Code blocks)
-    4. Analogy Corner (Simple real-life comparison)
-    5. Common Mistakes & Traps (What to avoid)
-    6. Vocabulary & Definitions (Plain English meanings)
-    7. Quick Self-Quiz (3–5 concept-check questions)
-  * Language must be extremely simple and conversational.
-  * Must include a dedicated Vocabulary section.
+    1. Executive Summary & Real-Life Analogies
+    2. Technical Vocabulary & Definitions (Plain English meanings)
+    3. Architecture & Deep Technical Breakdown (Side-by-side matrices)
+    4. Practical Code Blueprints & T-SQL Lab
+    5. Logical Query Execution Order & Scoping Rules
+    6. 10 Bug Traps & Tier-1 Interview Scenarios
+    7. Self-Assessment Flashcards & Practice Drills
+  * 100% Pure GitHub Flavored Markdown (Zero HTML tags: no `<details>`, `<summary>`, `<b>`).
+  * 100% Clean ASCII Math (Zero LaTeX delimiters: no `$$...$$`, `$...$`, `\times`).
+- Post-Write Gate: Verify all 7 steps present, no raw HTML, no LaTeX.
 
-### STEP 3 — GENERATE 20 PRACTICE QUESTIONS
+### STEP 3 — GENERATE 14 PRACTICE QUESTIONS
 - File: `01_SQL/05_INDEX_WISE_QUESTIONS/YYYY-MM-DD_QUESTIONS.SQL`
 - Rules:
-  * Begin with PHASE 0: ENVIRONMENT SETUP (CREATE TABLE + INSERT rows)
-  * Exactly 20 questions, divided into 4 phases of 5 questions each:
-    - Phase 1 (Q1–Q5):  Basic Syntax Drills
-    - Phase 2 (Q6–Q10): Cumulative Revision (previous topics)
-    - Phase 3 (Q11–Q15): Enterprise Scenario Challenges
-                         (use multi-part subquestions Q11.1, Q11.2...)
-    - Phase 4 (Q16–Q20): Logic Builder & Debug broken SQL
-  * Every question must have a blank line below
-    `-- Write your SQL Query below:` for the user to write freely.
-  * Comments wrapped to max 45–50 characters (SSMS side-by-side).
-  * NO answers pre-filled — practice only.
+  * Begin with PHASE 0: ENVIRONMENT SETUP (CREATE TABLE + INSERT rows).
+  * Exactly 14 targeted questions (Constitutional Law #3).
+  * Enclosed inside comment blocks with blank lines below `-- Write your SQL Query below:`.
+  * NO answers pre-filled in the practice file.
+  * Clean vertical layout for SSMS side-by-side editing.
+- Post-Write Gate: Re-read file. Count questions. Must equal EXACTLY 14.
 
 ### STEP 4 — CREATE DAILY INDEX
 - File: `01_SQL/02_DAILY_INDEX/YYYY-MM-DD_INDEX.SQL`
@@ -60,32 +71,34 @@ No step may be skipped. No step may be reordered.
 ### STEP 5 — UPDATE COMBINED INDEX
 - File: `01_SQL/02_DAILY_INDEX/01_COMBINED_INDEX_ALL_TOPICS.SQL`
 - Rules:
-  * Append today's topics as a new dated section.
-  * Never modify or delete existing sections.
+  * Update total module/file count header.
+  * Append today's topics as a new dated section under Section 1.
+  * Update Section 2 category mapping if new category/topic introduced.
+  * Never modify or delete previous existing sections.
 
 ### STEP 6 — EVALUATE CLASS TASK
 - File: `01_SQL/04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL`
-  (Only if instructor assigned tasks during class)
 - Rules:
-  * Preserve 100% of the instructor's original question wording.
-  * NO simplification or rewording of instructor text.
-  * Add space below each question for user answers.
+  * Include Phase 0 setup tables & seed data.
+  * Preserve 100% of instructor's scenario requirements and constraint rules.
+  * Provide blank query template blocks with `-- Write your SQL Query below:`.
 
 ### STEP 7 — EVALUATE PROJECT MILESTONE
 - File: `01_SQL/06_PROJECTS/PROJECT<N>.SQL`
-  (Only if today's topic introduces a new major milestone)
-- Milestones: Joins, Subqueries, CTEs, Window Functions,
-              Indexing, Stored Procedures.
 - Rules:
-  * Only create a new PROJECT<N>.SQL at a true milestone.
-  * Do NOT create a redundant project file for continuation lessons.
+  * Only create a new standalone project at true module milestones (Joins, Subqueries, CTEs, Window Functions, Indexing, Stored Procedures).
+  * Continuation lessons enhance existing projects or class tasks.
+  * Count existing projects on physical disk before naming PROJECT<N>.SQL.
 
-### STEP 8 — UPDATE MASTER LEARNING TRACKER
-- File: `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt`
+### STEP 8 — UPDATE MASTER LEARNING TRACKER (DUAL SYNC)
+- Files:
+  1. `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` (Plain text SSOT)
+  2. `LEARNING_DIARY/MASTER_LEARNING_TRACKER.md` (Rich Markdown SSOT)
 - Rules:
-  * Add a new row to Section 2 (Recovery Plan) for this date.
-  * Mark the status of each deliverable (Notes, Revision, Q, Task).
-  * Update the dashboard counters at the top.
+  * Add new dated row to Section 1 / 2 Backlog Matrix.
+  * Update overall completion percentage and date.
+  * Update Project Matrix with exact physical file count.
+  * Both `.txt` and `.md` MUST be updated in the same turn with identical values.
 
 ### STEP 9 — UPDATE METRICS & STATISTICS
 - File: `LEARNING_DIARY/METRICS_AND_STATISTICS.json`
@@ -94,66 +107,44 @@ No step may be skipped. No step may be reordered.
   * Increment `daily_indexes_created` by 1.
   * Increment `revision_notes_total` by 1.
   * Increment `practice_question_files` by 1.
-  * Add 20 to `practice_questions_total_drills`.
+  * Add 14 to `practice_questions_total_drills` (14 questions standard).
   * If a class task exists, increment `faculty_class_task_files`.
   * If a project was created, increment `projects_total_scheduled`.
-  * Update `last_active_date` to today.
+  * Update `last_active_date` to current date.
+  * ALL numbers must match physical file counts on disk.
 
 ### STEP 10 — UPDATE CONCEPT MASTERY HEATMAP
 - File: `LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md`
 - Rules:
-  * Add today's concepts to the matrix with mastery level.
+  * Add today's concepts to the matrix with mastery level and bug traps.
   * Flag high-interview-weight concepts.
 
 ### STEP 11 — APPEND TO LEARNING DIARY
 - File: `LEARNING_DIARY/LEARNING_DIARY.txt`
 - Rules:
   * Append a new dated entry summarizing today's progress.
-  * Include: topics covered, files created, and any notes.
+  * Include: topics covered, files created, and deliverables.
   * NEVER delete or overwrite existing diary entries.
 
-### STEP 12 — UPDATE GIT COMMIT & PORTFOLIO LOG
-- File: `LEARNING_DIARY/GIT_COMMIT_AND_PORTFOLIO_LOG.md`
-- Rules:
-  * Add a new row with today's commit hash, date,
-    files changed, and a short description.
-  * Keep the running total file count accurate.
-
-### STEP 13 — UPDATE README (PORTFOLIO HOMEPAGE)
+### STEP 12 — UPDATE README (PORTFOLIO HOMEPAGE)
 - File: `README.md`
 - Rules:
-  * Update the "Latest Progress" or "Days Completed"
-    section to reflect today's new files.
-  * Keep the portfolio summary accurate and up to date.
+  * Update project range (e.g. PROJECT1 - 6) and file references.
 
-### STEP 14 — COMMIT & PUSH TO GITHUB
-- Command: `git add . && git commit -m "..." && git push origin main`
+### STEP 13 — BUILD DASHBOARD & COMMIT TO GITHUB
+- Pipeline Command:
+  ```powershell
+  cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; git add . ; git commit -m "feat(sql): add Day N ecosystem & brain sync" ; git push origin main
+  ```
 - Rules:
-  * Commit message must clearly list ALL files changed.
-  * Verify push with git status after push.
-  * This MUST be the LAST step — never commit mid-flow.
+  * Vite build MUST complete with exit code 0.
+  * Git push MUST complete with exit code 0.
 
 ---
 
-## 🚨 PRE-FLIGHT AUDIT (BEFORE CONFIRMING DONE)
-After completing all 11 steps, the agent MUST run a physical
-directory count and confirm:
-- `01_CLASS_NOTES/`    → N files
-- `03_REVISION_NOTES/` → N files  ← (MUST match class notes count)
-- `05_INDEX_WISE_QUESTIONS/` → N files ← (MUST match class notes count)
-- `02_DAILY_INDEX/`    → N daily index files + 1 combined
-- `04_CLASS_TASKS/`    → only on task days
-- `06_PROJECTS/`       → only on milestone days
-
-If ANY count is mismatched, the agent MUST fix before committing.
-
----
-
-## ❌ WHAT IS NEVER ALLOWED
-1. Skipping the Revision Note (Step 2) — it is NOT optional.
-2. Skipping the Metrics update (Step 9) — numbers must stay live.
-3. Committing before all 11 steps are verified complete.
-4. Deleting or overwriting directories with recursive commands.
-5. Pre-filling answers in the Questions file.
-6. Rewording instructor task questions.
-7. Hallucinating file counts — always check disk physically.
+## 🚨 POST-FLIGHT AUDIT (MANDATORY BEFORE REPORTING DONE)
+After completing all steps, physically verify:
+1. `01_CLASS_NOTES/` count == `03_REVISION_NOTES/` count == `05_INDEX_WISE_QUESTIONS/` count.
+2. `METRICS_AND_STATISTICS.json` counters match disk counts exactly.
+3. `MASTER_LEARNING_TRACKER.txt` and `.md` match disk counts exactly.
+4. Git commit pushed successfully to GitHub main.

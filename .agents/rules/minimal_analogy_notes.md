@@ -17,17 +17,14 @@
 3. **Screen Fitting & Spacing**: Wrap all comments vertically (keep lines under 80 characters) so they fit comfortably on standard screens without horizontal scrolling. Use clean, open vertical spacing between blocks.
 4. **Keyword Uppercase**: Keep all SQL query keywords in UPPERCASE syntax.
 5. **Zero Data Loss**: Never delete, mask, or alter actual SQL query code blocks, sample insert statements, or data values.
-6. **Index-Wise Questions Format**: All practice question files in `05_INDEX_WISE_QUESTIONS/` must follow a high-yield, 20-question vertical stack layout with database setup tables:
+6. **Class Note Purity**: Class notes (`.sql`) must remain under 220 lines with concise 1-2 line theory comments. Rich explanations, analogies, and vocabulary belong in `_REVISION.md`.
+7. **Index-Wise Questions Format**: All practice question files in `05_INDEX_WISE_QUESTIONS/` must follow a high-yield, 14-question vertical stack layout with database setup tables:
    - Begin each file with a **0. ENVIRONMENT SETUP** SQL script that creates a clean practice table and inserts sample data so the user can immediately run it in SSMS.
-   - Target exactly **20 questions** per file (5 questions per section).
+   - Target exactly **14 questions** per file (Constitutional Law #3).
    - Keep comments and descriptions extremely narrow (wrap to a tight vertical stack, e.g., max 45-50 characters wide) to fit side-by-side edit layouts in SSMS.
    - Enclose questions in clean comment blocks with blank lines below `-- Write your SQL Query below:`.
-   - The 20 questions must be divided into 4 distinct phases:
-     * **Phase 1: Basic Syntax Drills (Q1 - Q5)**: Quick syntax validation on new topics.
-     * **Phase 2: Cumulative Revision (Q6 - Q10)**: Re-enforcing key concepts from previous classes.
-     * **Phase 3: Enterprise Scenario Challenges (Q11 - Q15)**: Complex real-world data engineering scenarios.
-     * **Phase 4: Logic Builder & Debugging (Q16 - Q20)**: SQL optimization and fixing broken queries.
-7. **Class Notes Dividers & Spacing Style**:
+   - NO answers pre-filled in the practice file.
+8. **Class Notes Dividers & Spacing Style**:
    - Use double equal-sign blocks for major sections:
      ```sql
      /*================================================================
