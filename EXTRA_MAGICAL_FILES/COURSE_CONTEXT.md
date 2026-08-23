@@ -67,8 +67,15 @@ Whenever a new raw class note is added, the system automatically updates all 6 S
 ### 6. Directory Security & Anti-Teardown Safeguard
 All root module folders (`00_SYLLABUS`, `01_SQL`, `02_PYTHON`, `03_ETL_DATA_PIPELINES`, `04_PYSPARK_BIG_DATA`, `05_DATA_WAREHOUSING`, `06_CLOUD_ENGINEERING`, `07_ORCHESTRATION`, `LEARNING_DIARY`, `.agents`) are strictly protected against recursive directory deletion (`rm -rf`, `git clean -fdx`). Internal code files can be freely altered and updated, while folder structures remain permanently safe.
 
+### 7. The Enterprise MNC Simulation Project (Public Capstone Engine)
+Alongside the private `DE COURSE` training workspace, the system maintains the master blueprint for a standalone, 100% public enterprise simulation repository:
+- **Project Name**: `NexusFin — Real-Time FinTech & Core Banking Data Platform`
+- **Blueprint Location**: `EXTRA_MAGICAL_FILES/ENTERPRISE_MNC_PROJECT_INITIALIZATION_BLUEPRINT.md`
+- **Purpose**: A production simulation where Cap acts as a Senior Data Engineer working on real JIRA tickets, PR code reviews, PySpark DAGs, dimensional models, and SLA incident runbooks for 25+ to 48 LPA Tier-1 hiring showcase.
+
 ---
 
 ## 🎯 ZERO BACKLOG MASTER TARGET
-- **Target Date**: **Monday, 24 August 2026**
-- **Goal**: 100% Zero Debt across all 19 days of SQL, 11 practice question sets, 19 revision notes, and 8 enterprise projects!
+- **Target Date**: **06 September 2026** (Before Python Module Launch)
+- **Goal**: 100% Zero Debt across all SQL days, practice question sets, revision notes, and enterprise projects!
+

@@ -44,10 +44,12 @@
 
 ---
 
-## 📂 4. PORTABLE VAULT BACKUP LOCATION
+## 📂 4. PORTABLE VAULT & ENTERPRISE BLUEPRINTS
 
 - **Active Runtime Folder**: `d:\DE COURSE\.agents\`
 - **Visible Lifetime Vault**: `d:\DE COURSE\EXTRA_MAGICAL_FILES\AGENT_BRAIN_CUSTOMIZATIONS_VAULT\`
+- **Enterprise MNC Capstone Blueprint**: `d:\DE COURSE\EXTRA_MAGICAL_FILES\ENTERPRISE_MNC_PROJECT_INITIALIZATION_BLUEPRINT.md`
+- **GitHub Badges Master Plan**: `d:\DE COURSE\EXTRA_MAGICAL_FILES\GITHUB_ACHIEVEMENTS_AND_BADGES_MASTER_PLAN.md`
 - **Cloud Remote**: Synced live on GitHub repository `main` branch.
 
 ---
