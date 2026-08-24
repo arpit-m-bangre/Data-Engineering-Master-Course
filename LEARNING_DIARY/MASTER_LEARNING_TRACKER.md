@@ -44,7 +44,7 @@
 | **16** | ANSI Joins Syntax, Ambiguity & Group By | [x] DONE | [x] DONE | [x] DONE | ✅ **COMPLETED (Zero-Debt)** |
 | **17** | Multi-Table Joins, Cross & Equi Joins | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 | **18** | Self Joins, Hierarchies & Fraud Engines | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
-| **19** | Window Functions (Ranking & Partitions) | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
+| **19** | Window Functions (Ranking & Partitions) | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 
