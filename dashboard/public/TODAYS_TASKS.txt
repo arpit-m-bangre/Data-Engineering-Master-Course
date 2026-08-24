@@ -10,11 +10,11 @@ TOTAL STUDY TIME TODAY: 8.75 Hours (7.00h Study & Project Sprints + 1.25h Live C
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[ ] 11:30 AM - 12:00 PM : Sprint 1 — Daily LinkedIn Authority & Digital Presence Engine 🚀
+[ ] 11:30 AM - 12:00 PM : Sprint 1 — Daily LinkedIn Authority, GitHub Badges & Digital Presence 🚀
     -> Draft and publish LinkedIn #180DaysOfDataEngineering Post #4 using PERSONAL_BRANDING/linkedin_post_prompt.md
     -> Topic: "How CTEs Resolve Msg 4108 WHERE Restrictions & Power In-Place Table Deduplication"
     -> Send 5-7 personalized connection requests to Data Engineers at Walmart, Swiggy, Amazon & Microsoft
-    -> Leave 3 high-value technical comments on Senior Data Architect posts & syndicate snippet to Digital Presence Ecosystem
+    -> Execute GitHub Badges Activation Blitz: Star repos with 2nd account, trigger Galaxy Brain Q&A & Pair Extraordinaire co-author commits
 
 [ ] 12:00 PM - 01:30 PM : Sprint 2 — Class Note Re-write & Read Revision Note [2026-08-24] ✍️
     -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-24.sql in SSMS from scratch (Day 20: CTEs & Deduplication)
