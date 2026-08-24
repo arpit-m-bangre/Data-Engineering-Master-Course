@@ -237,7 +237,7 @@ d:\DE COURSE\
 
 ## 🛡️ 4. CONSTITUTIONAL LAWS COMPLIANCE MATRIX
 
-Every one of the **16 Constitutional Laws** defined in `AGENTS.md` is strictly enforced and verified:
+Every one of the **18 Constitutional Laws** defined in `AGENTS.md` is strictly enforced and verified:
 
 ```text
 ========================================================================================================
@@ -259,6 +259,8 @@ Law #13: Daily Mission Format Immutability           ✅ PASSED   Regex-compatib
 Law #14: Task Evaluation & Inline Remark Standard    ✅ PASSED   Mentor remarks & golden solutions structure
 Law #15: Current-Focus Priority Protocol             ✅ PASSED   Active live class day prioritized first
 Law #16: Dynamic Spaced Revision & RPS Recommender   ✅ PASSED   Mathematical RPS formula & Top 10 Traps active
+Law #17: Continuous System Map & Workspace Audit     ✅ PASSED   SYSTEM_MAP.md updated on every class & commit
+Law #18: Brutal Tough-Love & Anti-Sycophancy Mentor  ✅ PASSED   Simple English, zero sugarcoating, brutal feedback
 ========================================================================================================
 ```
 
