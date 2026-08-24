@@ -10,41 +10,28 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (8.00h Hands-On Study Sprints + 1.25h Live Cl
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[ ] 11:45 AM - 12:15 PM : Sprint 1 — Social Presence Session 1/3 (LinkedIn Post #3 & Connections) 🚀
+[x] 02:00 PM - 03:30 PM : Sprint 1 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
+    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-21.sql in SSMS from scratch (Day 18: Self Joins)
+    -> Read 01_SQL/03_REVISION_NOTES/2026-08-21_REVISION.md (7-Step Interactive Framework)
+    -> Master Dual-Alias Memory Scope, Manager-Employee hierarchy & Banking velocity fraud detection
+
+[x] 03:30 PM - 04:00 PM : Sprint 2 — Social Presence Session 1/3 (LinkedIn Post #3 & Connections) 🚀
     -> Draft and publish LinkedIn #180DaysOfDataEngineering Post #3 using PERSONAL_BRANDING/linkedin_post_prompt.md
     -> Topic: "Window Functions vs GROUP BY: The Fundamental Architecture Difference"
     -> Send 7-10 targeted connection requests to Tier-1 Data Engineers (Amazon / Microsoft / Swiggy)
     -> Engage with 3 technical posts from network connections
 
-[-] 12:15 PM - 01:00 PM : Lunch Break & Mid-Day Nutrition Window 🥗💤
-    -> Nutritious lunch, hydration & mental reset for the day's engineering sprints
+[-] 04:00 PM - 05:00 PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
+    -> Physical rest, hydration & mental decompression after afternoon sprints
 
-[-] 01:00 PM - 02:00 PM : Personal Support Window — Assist Friend on Project 🤝
-    -> Help friend resolve technical project blocker (1-hour focused boundary)
-    -> Return to cockpit immediately at 02:00 PM sharp
+[-] 05:00 PM - 07:00 PM : Friends Chill & Social Boundary Window 🤝☕
+    -> Social relaxation, tea & evening reset
+    -> Strict return to cockpit at 07:00 PM sharp for pre-class revision sprint
 
-[ ] 02:00 PM - 03:30 PM : Sprint 2 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
-    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-21.sql in SSMS from scratch (Day 18: Self Joins)
-    -> Read 01_SQL/03_REVISION_NOTES/2026-08-21_REVISION.md (7-Step Interactive Framework)
-    -> Master Dual-Alias Memory Scope, Manager-Employee hierarchy & Banking velocity fraud detection
-
-[ ] 03:30 PM - 05:00 PM : Sprint 3 — Solve Faculty Class Tasks [2026-08-21_CLASS_TASK.SQL] 📊
-    -> Solve all 10 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-21_CLASS_TASK.SQL in SSMS
-    -> Strict constraint: Solve strictly using SELF JOIN architecture (E1 JOIN E2)
-    -> Self-audit results and verify query execution plans
-
-[-] 05:00 PM - 05:30 PM : Tea Break & Bio-Paced Physical Stretch ☕🚶
-    -> Evening green tea, physical walk & mental reset
-
-[ ] 05:30 PM - 07:00 PM : Sprint 4 — Practice Drills Clearance [2026-08-21_QUESTIONS.SQL] & English Book 💪
-    -> Solve all 14 targeted practice drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-21_QUESTIONS.SQL
-    -> Master consecutive day orders, duplicate emails & same-salary department pairings
-    -> Complete English Practice Book Task 4 (4/125 tasks completed)
-
-[ ] 07:00 PM - 08:30 PM : Sprint 5 — Class Note Re-write & Read Revision Note [2026-08-22] ✍️
+[ ] 07:00 PM - 08:30 PM : Sprint 3 — Pre-Live Class Revision: Note Re-write & Revision Note [2026-08-22] ✍️
     -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-22.sql in SSMS from scratch (Day 19: Window Functions)
     -> Read 01_SQL/03_REVISION_NOTES/2026-08-22_REVISION.md (7-Step Interactive Framework)
-    -> Master ROW_NUMBER vs DENSE_RANK vs RANK with PARTITION BY and Msg 4108 WHERE restrictions
+    -> Master ROW_NUMBER vs DENSE_RANK vs RANK with PARTITION BY and Msg 4108 WHERE restrictions before live lecture
 
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
@@ -60,14 +47,24 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (8.00h Hands-On Study Sprints + 1.25h Live Cl
                  POST-CLASS NIGHT SPRINT BLOCK
 --------------------------------------------------------------------
 [-] 10:15 PM - 10:30 PM : Post-Class Quick Stretch & Hydration Window ☕
-    -> Quick stretch, hydration & prep for night sprint
+    -> Quick stretch, hydration & prep for high-focus night sprints
 
-[ ] 10:30 PM - 12:00 AM : Sprint 6 — Solve Faculty Class Tasks [2026-08-22_CLASS_TASK.SQL] 📊
+[ ] 10:30 PM - 11:45 PM : Sprint 4 — Solve Faculty Class Tasks [2026-08-21_CLASS_TASK.SQL] 📊
+    -> Solve all 10 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-21_CLASS_TASK.SQL in SSMS
+    -> Strict constraint: Solve strictly using SELF JOIN architecture (E1 JOIN E2)
+    -> Self-audit results and verify query execution plans
+
+[ ] 11:45 PM - 01:00 AM : Sprint 5 — Solve Faculty Class Tasks [2026-08-22_CLASS_TASK.SQL] 📊
     -> Solve all 8 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-22_CLASS_TASK.SQL in SSMS
     -> Master top-N salaries per department, running transaction totals & partition boundaries
     -> Audit query plans and ensure zero Msg 4108 syntax violations
 
-[ ] 12:00 AM - 12:30 AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day 11 🔥) 🚀
+[ ] 01:00 AM - 02:30 AM : Sprint 6 — Practice Drills Clearance [2026-08-21_QUESTIONS.SQL] & English Book 💪
+    -> Solve all 14 targeted practice drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-21_QUESTIONS.SQL
+    -> Master consecutive day orders, duplicate emails & same-salary department pairings
+    -> Complete English Practice Book Task 4 (4/125 tasks completed)
+
+[ ] 02:30 AM - 03:00 AM : Sprint 7 — Final System Sync, GitHub Push & Vercel Trigger (Streak Day 11 🔥) 🚀
     -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Commit and push to GitHub repository with live Vercel auto-deployment
