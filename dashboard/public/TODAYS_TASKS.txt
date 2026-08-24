@@ -1,44 +1,39 @@
 ====================================================================
-                  DAILY MISSION: 24 AUG 2026 (MONDAY)
-    [DAY 18 & 19 SQL MASTERY | SOCIAL PRESENCE | STREAK DAY 11 🔥]
+                  DAILY MISSION: 25 AUG 2026 (TUESDAY)
+      [DAY 20 CTE MASTERY | DEDUPLICATION PIPELINE | STREAK DAY 12 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Master Self Joins & Window Ranking Functions, Publish LinkedIn Post #3, Attend Live Class (Day 20) & Bio-Paced Health Recovery!
+[!] MISSION OBJECTIVE: 100% Mastery of Day 20 Common Table Expressions, In-Place Row Deduplication, Faculty Tasks & 14 Practice Drills!
 
-TOTAL STUDY TIME TODAY: 4.75 Hours (3.50h Hands-On Study Sprints + 1.25h Live Class)
+TOTAL STUDY TIME TODAY: 7.00 Hours (5.75h Study Sprints + 1.25h Live Class)
 
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[x] 11:45 AM - 12:15 PM : Sprint 1 — Social Presence Session 1/3 (LinkedIn Post #3 & Connections) 🚀
-    -> Draft and publish LinkedIn #180DaysOfDataEngineering Post #3 using PERSONAL_BRANDING/linkedin_post_prompt.md
-    -> Topic: "Window Functions vs GROUP BY: The Fundamental Architecture Difference"
-    -> Send 7-10 targeted connection requests to Tier-1 Data Engineers (Amazon / Microsoft / Swiggy)
-    -> Engage with 3 technical posts from network connections
+[ ] 11:30 AM - 01:15 PM : Sprint 1 — Class Note Re-write & Read Revision Note [2026-08-24] ✍️
+    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-24.sql in SSMS from scratch (Day 20: CTEs & Deduplication)
+    -> Read 01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md (7-Step Interactive Framework)
+    -> Master in-memory CTE pipelining, resolving Msg 4108 WHERE restrictions & Nth highest ranking filters
 
-[-] 12:15 PM - 01:00 PM : Lunch Break & Mid-Day Nutrition Window 🥗💤
-    -> Nutritious lunch, hydration & mental reset for the day's engineering sprints
+[-] 01:15 PM - 02:00 PM : Lunch Break & Mid-Day Nutrition Window 🥗💤
+    -> Nutritious lunch, hydration & mental recharge before afternoon coding sprint
 
-[-] 01:00 PM - 02:00 PM : Personal Support Window — Assist Friend on Project 🤝
-    -> Help friend resolve technical project blocker (1-hour focused boundary)
-    -> Return to cockpit immediately at 02:00 PM sharp
+[ ] 02:00 PM - 03:45 PM : Sprint 2 — Solve Faculty Class Tasks [2026-08-24_CLASS_TASK.SQL] 📊
+    -> Solve all 8 scenario tasks in 01_SQL/04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL in SSMS
+    -> Master Alternating Gender (M/F/M/F), Latest Customer Order, City-wise 2nd Highest & CTE DELETE
+    -> Self-audit results and verify query execution plans in SSMS
 
-[x] 02:00 PM - 03:30 PM : Sprint 2 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
-    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-21.sql in SSMS from scratch (Day 18: Self Joins)
-    -> Read 01_SQL/03_REVISION_NOTES/2026-08-21_REVISION.md (7-Step Interactive Framework)
-    -> Master Dual-Alias Memory Scope, Manager-Employee hierarchy & Banking velocity fraud detection
+[-] 03:45 PM - 05:00 PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
+    -> Physical rest, hydration & mental decompression after intensive query writing
 
-[-] 03:30 PM - 05:00 PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
-    -> Physical rest, hydration & mental decompression after afternoon sprints
+[-] 05:00 PM - 06:30 PM : Friends Chill & Social Boundary Window 🤝☕
+    -> Social relaxation, evening tea & mental reset
+    -> Strict return to cockpit at 06:30 PM sharp for evening drills sprint
 
-[-] 05:00 PM - 07:00 PM : Friends Chill & Social Boundary Window 🤝☕
-    -> Social relaxation, tea & evening reset
-    -> Strict return to cockpit at 07:00 PM sharp for pre-class revision sprint
-
-[x] 07:00 PM - 08:30 PM : Sprint 3 — Pre-Live Class Revision: Note Re-write & Revision Note [2026-08-22] ✍️
-    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-22.sql in SSMS from scratch (Day 19: Window Functions)
-    -> Read 01_SQL/03_REVISION_NOTES/2026-08-22_REVISION.md (7-Step Interactive Framework)
-    -> Master ROW_NUMBER vs DENSE_RANK vs RANK with PARTITION BY and Msg 4108 WHERE restrictions before live lecture
+[ ] 06:30 PM - 08:30 PM : Sprint 3 — Practice Drills Clearance [2026-08-24_QUESTIONS.SQL] & English Book 💪
+    -> Solve all 14 targeted practice drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL
+    -> Master duplicate identification, CTE pipelining & multi-partition ranking in SSMS
+    -> Complete English Practice Book Task 4 (4/125 total)
 
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
@@ -46,36 +41,27 @@ TOTAL STUDY TIME TODAY: 4.75 Hours (3.50h Hands-On Study Sprints + 1.25h Live Cl
 [-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
     -> Light nutritious dinner & setup SSMS environment for live lecture
 
-[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 20) 🎓
-    -> Live lecture: Common Table Expressions (CTEs), In-Memory Pipelining & Row Deduplication
-    -> Standardized 2026-08-24.sql and synchronized 15-file ecosystem
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 21) 🎓
+    -> Live lecture: Advanced Analytic Windows, LAG/LEAD, FIRST_VALUE & Window Framing
+    -> Take raw notes for post-class automated processing
 
 --------------------------------------------------------------------
-                 POST-CLASS RECOVERY & DEFERRED BLOCK
+                 POST-CLASS NIGHT SPRINT BLOCK
 --------------------------------------------------------------------
 [-] 10:15 PM - 10:30 PM : Post-Class Quick Stretch & Hydration Window ☕
-    -> Quick stretch, hydration & transition to rest
+    -> Quick stretch, hydration & transition to final system sync
 
-[-] 10:30 PM - 11:45 PM : Sprint 4 — Solve Faculty Tasks [2026-08-21_CLASS_TASK.SQL] (Deferred to Tuesday) ⏳
-    -> 10 scenario tasks rolled over to Tuesday morning high-energy sprint
-
-[-] 11:45 PM - 01:00 AM : Sprint 5 — Solve Faculty Tasks [2026-08-22_CLASS_TASK.SQL] (Deferred to Tuesday) ⏳
-    -> 8 scenario tasks rolled over to Tuesday study block
-
-[-] 01:00 AM - 02:30 AM : Sprint 6 — Practice Drills & English Task 4 (Deferred to Tuesday) ⏳
-    -> 14 drills and English task rolled over to Tuesday recovery schedule
-
-[x] 10:30 PM - 10:45 PM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day 11 🔥) 🚀
+[ ] 10:30 PM - 10:45 PM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day 12 🔥) 🚀
     -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Commit and push to GitHub repository with live Vercel auto-deployment
-    -> Day 11 Streak 100% Locked & Protected 🔥
+    -> Day 12 Streak 100% Locked & Protected 🔥
 
 [-] 10:45 PM - 07:30 AM : Deep Sleep & Bio-Paced Health Recovery Window 🌙💤
     -> Complete physical rest, hydration and uninterrupted recovery sleep
-    -> Cockpit resumes Tuesday morning fresh and fully recharged
+    -> Cockpit resumes Wednesday morning fresh and fully recharged
 
 ====================================================================
 *Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
-*Daily Quote: "Health and recovery build the foundation of relentless consistency. Rest well, conquer tomorrow."*
+*Daily Quote: "Master today's concept completely. When consistency meets strategy, every sprint compounds toward 25+ LPA."*
 ====================================================================
