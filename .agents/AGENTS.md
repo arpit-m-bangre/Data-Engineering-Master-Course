@@ -48,10 +48,9 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Has METRICS_AND_STATISTICS.json been updated? → If NO: update it.
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
-### GATE F — SOCIAL PRESENCE SCHEDULE CHECK (Weekly)
-- [ ] Is today MONDAY? → Schedule Social Presence Session 1/3 (20-30 min, SQL tips).
-- [ ] Is today WEDNESDAY? → Schedule Social Presence Session 2/3 (20-30 min, interview insights).
-- [ ] Is today SATURDAY? → Schedule Social Presence Session 3/3 (20-30 min, weekly summary).
+### GATE F — DAILY SOCIAL PRESENCE & DIGITAL PRESENCE CHECK
+- [ ] Is the 30-min Daily LinkedIn Authority & Digital Presence Sprint scheduled (11:30 AM - 12:00 PM)? → If NO: add it.
+- [ ] Are targeted connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft) included? → If NO: add them.
 
 ---
 
@@ -205,18 +204,18 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 
 ---
 
-## 🏆 8 CORE DAILY HABITS & SCHEDULING RULES (NEW)
+## 🏆 8 CORE DAILY HABITS & SCHEDULING RULES (PERMANENT PROTOCOL)
 
 The Agent MUST ensure the user's daily plans automatically incorporate these 8 principles:
 
-1. **Daily Class Timing (9:00 PM - 10:15 PM):** The final block of the day (Mon-Sat) MUST be dedicated to the live class. This is a modular rule; be ready to update or add future class timings when the user informs you.
-2. **GitHub Streak & Atomic Sprint Commits (4X-8X Dark Green Law):** Every daily plan MUST include a step to commit and push work to GitHub to maintain the 200-day streak. To ensure maximum visual impact (Level 4 Darkest Green Squares), commits must be made **atomically after each completed sprint milestone** (targeting 6 to 10 commits per day: mission initialization, LinkedIn artifacts, note rewrites, task solves, practice drills, English tasks, and nightly brain syncs) rather than 1 single batch commit.
-3. **Project & Practical Exposure:** While not daily, project implementation and practical application MUST be treated as high-priority milestones in the weekly flow.
-4. **Perpetual SQL Practice:** Even after the SQL module finishes, daily SQL practice (LeetCode / Drills) MUST continue until the end of the course to maintain query sharpness.
-5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python practice MUST be enforced permanently alongside SQL. (Do not schedule this until Python officially starts).
-6. **English Practice Book:** The user is working through a 125-task English book. The daily plan MUST include 1 English task. Once all 125 are completed, schedule continuous 'N-time' revisions of the book.
-7. **Social Presence (SEO/Branding) — 3x PER WEEK:** Schedule social presence tasks on MONDAY, WEDNESDAY, and SATURDAY every week. Each session = 20-30 minutes. Content includes: SQL query tips, project progress posts, interview insights, and personal brand updates on LinkedIn/GitHub. Goal: build Google search presence and recruiter visibility. NEVER skip more than 1 session per week.
-8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually re-writing that day's original class SQL notes to understand the syntax and class flow. When generating the schedule, ALWAYS label this step as: `Class Note Re-write and Read Revision Note [Date]`.
+1. **Daily Class Timing (09:00 PM - 10:15 PM):** Dedicated evening lecture block (Mon-Sat) never compromised. Enter with zero cognitive fatigue by finishing current daily tasks in the afternoon.
+2. **GitHub Streak & Atomic Sprint Commits (4X-8X Dark Green Law):** Every daily plan MUST commit and push atomically after each completed sprint milestone (targeting 6 to 10 commits per day: LinkedIn, note rewrites, task solves, practice drills, English, live class note sync, NexusFin sprint, and nightly brain sync) rather than 1 single batch commit.
+3. **Project & Practical Exposure (NexusFin Night Power Sprint — 10:30 PM to 12:15 AM):** The post-class night window is dedicated to building and scaling the open-source **NexusFin Platform** (`nexusfin-platform`), translating daily advanced SQL/Python/Spark patterns into enterprise production code.
+4. **Perpetual SQL Practice (2 Hours / Day):** Daily SQL practice (Class tasks, 14 index-wise drills, LeetCode Hard, StrataScratch) continues permanently until placement, even during subsequent modules (Python, Spark, Snowflake, Cloud).
+5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python OOP and pipeline practice MUST be enforced permanently alongside SQL.
+6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
+7. **Daily Social Presence & Digital Presence Ecosystem (30 Mins Daily):** Opening sprint of the day (11:30 AM - 12:00 PM). Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft), leave 3 high-value technical comments on Lead Architect posts, and syndicate snippets to Dev.to / GitHub Discussions.
+8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
 
 ---
 

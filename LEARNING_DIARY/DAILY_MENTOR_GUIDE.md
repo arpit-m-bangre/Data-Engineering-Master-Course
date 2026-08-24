@@ -34,15 +34,22 @@ Whenever you open your workspace, simply send a message to your AI Mentor:
 
 ---
 
-### 2. Execution & Study (The 4-Stage Current-Focus Mastery Rule)
-Never compromise current live learning for past backlog! Follow your strict 4-stage daily learning flow:
-`Class Note Re-write (.sql)` ---> `Read 7-Step Revision Note (.md)` ---> `Solve Faculty Class Tasks (.SQL)` ---> `Solve 14 Practice Drills (.SQL)`
+### 2. Execution & Study (The 8-Pillar Daily Mastery Framework)
+Never compromise current live learning for past backlog! Follow your strict 8-pillar daily learning flow:
+1. **Pillar 1:** Daily LinkedIn Authority (30m) & Digital Presence Ecosystem.
+2. **Pillar 2:** Pre-Revision Class Note Re-write (`.sql`) & 7-Step Revision Read (`.md`).
+3. **Pillar 3:** Faculty Class Tasks Mastery in SSMS (`.SQL`).
+4. **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice.
+5. **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
+6. **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM).
+7. **Pillar 7:** Flagship MNC Project: NexusFin Platform Night Power Sprint (10:30 PM - 12:15 AM).
+8. **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (12:15 AM - 12:30 AM).
 
 *Note on Backlog:* Early backlogs are cleared sequentially and systematically during **Phase 3 (Post-Course Revision Cycle 1)** alongside the YouTube course deep-dive.
 
 ---
 
-### 🌟 THE 10+ REVISION & PLACEMENT ARCHITECTURE (TILL 25+ LPA)
+### 🌟 THE 10+ REVISION & PLACEMENT ARCHITECTURE (TILL 32+ LPA WALMART / TIER-1 FLEET)
 1. **Phase 1 (Live Course - Active Now):** 100% Up-to-date Daily Focus & Muscle Memory.
 2. **Phase 2 (Post-Course):** Comprehensive YouTube Course Deep-Dive.
 3. **Phase 3:** Revision Cycle 1 + Systematic Sequential Backlog Clearance (Days 1 to End).

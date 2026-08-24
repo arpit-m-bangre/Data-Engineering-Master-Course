@@ -1,62 +1,76 @@
 ====================================================================
                   DAILY MISSION: DD MMM YYYY (DAY_OF_WEEK)
-      [REAL-TIME STATUS / TAGLINE / SITUATION HEADER]
+      [REAL-TIME STATUS / TAGLINE / 8-PILLAR MASTERY / STREAK DAY N 🔥]
 ====================================================================
 
 [!] MISSION OBJECTIVE: High-impact one-line objective for the day!
 
-TOTAL STUDY TIME TODAY: X.X Hours (Sprint breakdown summary)
+TOTAL STUDY TIME TODAY: X.X Hours (Sprint breakdown summary across all 8 pillars)
 
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[ ] HH:MM AM - HH:MM PM : Sprint 1 — Class Note Re-write & Read Revision Note [DATE] ✍️
-    -> Re-write YYYY-MM-DD class notes in SSMS (Topic Name)
-    -> Read YYYY-MM-DD Revision Note (7-Step Framework)
-    -> Complete English Practice Book: Task N (N/125 tasks completed)
+[ ] HH:MM AM - HH:MM AM : Sprint 1 — Daily LinkedIn Authority & Digital Presence Engine 🚀
+    -> Draft and publish LinkedIn #180DaysOfDataEngineering Post #N using PERSONAL_BRANDING/linkedin_post_prompt.md
+    -> Topic: [Technical Theme / Real-World Architecture Insight]
+    -> Send 5-7 personalized connection requests to Data Engineers at Tier-1 MNCs (Walmart, Swiggy, Amazon, Microsoft)
+    -> Leave 3 high-value technical comments on Senior Data Architect posts & syndicate snippet to Digital Presence Ecosystem
 
-[-] HH:MM AM - HH:MM PM : Lunch Break & Bio-Paced Mid-Day Recharge 🥗💤
+[ ] HH:MM AM - HH:MM PM : Sprint 2 — Class Note Re-write & Read Revision Note [DATE] ✍️
+    -> Re-write 01_SQL/01_CLASS_NOTES/YYYY-MM-DD.sql in SSMS from scratch (Topic Name)
+    -> Read 01_SQL/03_REVISION_NOTES/YYYY-MM-DD_REVISION.md (7-Step Interactive Framework)
+    -> Master core relational architecture, analogies & bug traps before starting homework
+
+[-] HH:MM PM - HH:MM PM : Lunch Break & Mid-Day Nutrition Window 🥗💤
     -> Nutritious meal, hydration & mental reset power recharge!
 
-[ ] HH:MM PM - HH:MM PM : Sprint 2 — Solve Faculty Class Tasks [YYYY-MM-DD_CLASS_TASK.SQL] 📊
+[ ] HH:MM PM - HH:MM PM : Sprint 3 — Solve Faculty Class Tasks [YYYY-MM-DD_CLASS_TASK.SQL] 📊
     -> Solve all N faculty & in-class task queries from scratch in SSMS
-    -> Self-audit and mentor review
+    -> Self-audit and verify query execution plans in SSMS
 
-[ ] HH:MM PM - HH:MM PM : Sprint 3 — Practice Drills [YYYY-MM-DD_QUESTIONS.SQL] 💪
-    -> Solve all 14 targeted practice drills in SSMS from scratch
-    -> Mark completed in MASTER_LEARNING_TRACKER.txt
+[-] HH:MM PM - HH:MM PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
+    -> Physical rest, eye relaxation & afternoon power nap after intensive query writing
 
-[-] HH:MM PM - HH:MM PM : Tea Break & Evening Refreshment ☕🚶
-    -> Evening tea, mental reset & physical stretch
+[-] HH:MM PM - HH:MM PM : Friends Chill & Social Boundary Window 🤝☕
+    -> Social relaxation, evening tea & mental reset
+    -> Strict return to cockpit sharp for evening drills sprint
+
+[ ] HH:MM PM - HH:MM PM : Sprint 4 — Practice Drills Clearance [YYYY-MM-DD_QUESTIONS.SQL] & English Book 💪
+    -> Solve all 14 targeted practice drills in 01_SQL/05_INDEX_WISE_QUESTIONS/YYYY-MM-DD_QUESTIONS.SQL
+    -> Complete English Practice Book Task N (N/125 total)
 
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class Setup 🍽️💻
+[-] 08:15 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
     -> Light nutritious dinner & SSMS warmup for live class
 
 [ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY N) 🎓
-    -> Live lecture: [expected topic]
+    -> Live lecture: [Topic Name]
     -> Take raw notes for post-class processing
 
 --------------------------------------------------------------------
                  POST-CLASS NIGHT SPRINT BLOCK
 --------------------------------------------------------------------
-[-] 10:15 PM - 11:00 PM : Post-Class Quick Break & Night Setup Window ☕
-    -> Quick stretch, hydration & prep for night sprint
+[-] 10:15 PM - 10:30 PM : Post-Class Quick Stretch & Hydration Window ☕
+    -> Quick stretch, hydration & transition to high-focus night project sprint
 
-[ ] 11:00 PM - 01:00 AM : Sprint 4 — Social Presence & LinkedIn Sprint 🚀
-    -> Publish #180DaysOfDataEngineering Post N: [Post Topic]
-    -> Send 7-10 targeted connection requests to Tier-1 Data Engineers
-    -> Engage with 3 posts from new network connections
+[ ] 10:30 PM - 12:15 AM : Sprint 5 — Flagship MNC Project: NexusFin Platform Power Sprint 💻
+    -> Port active class architectural patterns into NexusFin Platform (nexusfin-platform/03_transformations/)
+    -> Build production simulation pipelines, idempotent staging schemas & data contract checks
+    -> Document architecture trade-offs in JIRA_BACKLOG_AND_SPRINTS.md
 
-[ ] 01:00 AM - 01:15 AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
+[ ] 12:15 AM - 12:30 AM : Sprint 6 — Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
     -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
-    -> Committed & pushed to GitHub repository with live Vercel auto-deployment
-    -> Mission Accomplished & Rest Window 🌙
+    -> Commit and push to GitHub repository with live Vercel auto-deployment
+    -> Day N Streak 100% Locked & Protected with 6-8 Atomic Commits 🔥
+
+[-] 12:30 AM - 08:00 AM : Deep Sleep & Bio-Paced Health Recovery Window 🌙💤
+    -> Complete physical rest, hydration and 7.5 hours of uninterrupted recovery sleep
+    -> Cockpit resumes next morning fresh and fully recharged
 
 ====================================================================
 *Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
-*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+*Daily Quote: "When 8 core habits combine with relentless consistency, every single sprint compounds toward 32+ LPA."*
 ====================================================================
