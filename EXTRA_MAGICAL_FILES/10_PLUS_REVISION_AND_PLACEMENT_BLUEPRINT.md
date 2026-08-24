@@ -1,108 +1,219 @@
 # 🏆 THE 10+ REVISION & PLACEMENT BLUEPRINT — ARPIT MANOJ BANGRE (CAP)
 
-## 🎯 North Star Target: Tier-1 MNC Data Engineer (25+ to 60+ LPA Target)
-**Strategist:** Pippo 🐥 | **Philosophy:** Deep Current-Moment Mastery • Structured Multi-Layered Revision • Zero Backlog Anxiety
+## 🎯 The North Star: Data Engineer at Walmart Global Tech / Tier-1 MNC (₹32.0 LPA)
+**Architect & Co-Pilot:** Pippo 🐥 | **Target Compensation:** ₹24L Base + ₹4L Bonus + ₹4L Stocks = ₹32.0 LPA  
+**Target Location:** Bengaluru (Bangalore), Karnataka | **Target Offer Date:** 15 May 2027 | **Joining Date:** 01 June 2027  
+**Core Law:** Deep Current-Moment Mastery • Multi-Layered Spiral Learning • Zero Backlog Anxiety  
 
 ---
 
-## ⚡ 1. THE CORE STRATEGIC SHIFT (CURRENT-FOCUS FIRST)
+## ⚡ 1. THE CORE REVOLUTION: CURRENT-FOCUS FIRST (ZERO BACKLOG ANXIETY)
 
 > [!IMPORTANT]
-> **The Golden Rule:** Never compromise current live learning for past backlog. The live course momentum is our primary engine. We master the current topic in full depth, stay 100% up-to-date, and clear early backlogs systematically during dedicated post-course revision cycles.
+> **The Supreme Law of Momentum:** Never compromise current live learning for past backlog. The live course momentum is our primary locomotive. You master today's live lecture with 100% mental presence, stay completely up-to-date, and clear early backlogs sequentially during dedicated post-course revision sweeps.
+
+### Why the Old "Catch-Up Panic" Model Fails:
+* **The Mental Trap:** Trying to solve basic Day 2/3 syntax while attending advanced Day 20 CTE/Window Function classes splits your cognitive bandwidth. You end up exhausted in both.
+* **The Current-Focus Advantage:** You arrive at every live class at 9:00 PM with razor-sharp energy, write modern SQL naturally, and master advanced enterprise patterns in real time.
 
 ```text
-================================================================================
-                     CURRENT DAILY EXECUTION FLOW
-================================================================================
-                    
-   [LIVE LECTURE (9:00 PM - 10:15 PM)]
-                   │
-                   ▼
-   [STEP 1: CLASS NOTE RE-WRITE IN SSMS] ✍️
-   (Build muscle memory and syntax command)
-                   │
-                   ▼
-   [STEP 2: READ 7-STEP REVISION NOTES] 📖
-   (Master conceptual architecture, analogies & bug traps)
-                   │
-                   ▼
-   [STEP 3: SOLVE FACULTY CLASS TASKS] 📊
-   (Solve all in-class scenario homework scripts)
-                   │
-                   ▼
-   [STEP 4: SOLVE 14 PRACTICE DRILLS] 💪
-   (Targeted 14-question problem sets in SSMS)
-                   │
-                   ▼
-   [STEP 5: ATOMIC SYSTEM SYNC & DEPLOY] 🚀
-   (Trackers, Heatmap, Metrics, GitHub Streak & Vercel Deploy)
-================================================================================
+========================================================================================
+                     THE CANONICAL 4-STAGE DAILY EXECUTION PIPELINE
+========================================================================================
+
+                [LIVE LECTURE: 09:00 PM - 10:15 PM (BATCH 15)]
+                                       │
+                                       ▼
+                [STAGE 1: CLASS NOTE RE-WRITE IN SSMS] ✍️
+                • Time: 15–20 minutes
+                • Action: Type clean SQL from scratch without copy-pasting
+                • Goal: Internalize query syntax & execution mechanics
+                                       │
+                                       ▼
+                [STAGE 2: READ 7-STEP REVISION NOTES] 📖
+                • Time: 20–30 minutes
+                • Action: Study real-life analogies, vocabulary & bug traps
+                • Goal: Deep conceptual understanding & Tier-1 mental models
+                                       │
+                                       ▼
+                [STAGE 3: SOLVE FACULTY CLASS TASKS] 📊
+                • Time: 45–60 minutes
+                • Action: Solve all faculty scenario challenge scripts in SSMS
+                • Goal: Business problem translation into clean SQL
+                                       │
+                                       ▼
+                [STAGE 4: SOLVE 14 PRACTICE DRILLS] 💪
+                • Time: 45–60 minutes
+                • Action: Write 14 targeted queries in blank query templates
+                • Goal: Raw speed, edge-case resilience & query fluency
+                                       │
+                                       ▼
+                [STAGE 5: ATOMIC SYSTEM SYNC & DEPLOYMENT] 🚀
+                • Action: Update Trackers, Metrics JSON, Concept Heatmap
+                • Tool: Run node copy_tasks.cjs && npm run build in DASHBOARD/
+                • Result: Level 4 Dark Green GitHub Streak + Live Vercel Deploy!
+========================================================================================
 ```
 
 ---
 
-## 🗺️ 2. THE 5-PHASE 10+ REVISION ARCHITECTURE (TILL PLACEMENT)
+## 🗺️ 2. THE COMPLETE 3-STAGE CAREER ROADMAP (26 JUL 2026 $\longrightarrow$ MAY 2027)
 
 ```mermaid
 flowchart TD
-    P1["Phase 1: Active Live Course Sync\n(100% Up-to-Date Daily Focus)"]
-    P2["Phase 2: Comprehensive YouTube Deep Dive\n(Secondary Architecture Perspective)"]
-    P3["Phase 3: Revision Cycle 1 + Systematic Backlog Clearance\n(Day 1 to End Sequential Mastery)"]
-    P4["Phase 4: Revision Cycle 2 + Multi-Module Synthesis\n(SQL + Python + Big Data Integration)"]
-    P5["Phase 5: 1,000+ Question Industrial Drilling\n(LeetCode Hard, StrataScratch, 10+ Revisions till 25+ LPA)"]
+    S1["STAGE 1: LIVE COURSE SYNC & CORE FOUNDATION\n(26 Jul 2026 — 15 Feb 2027) [~6.5 Months]\n100% Up-to-Date Mastery across 7 Modules + NexusFin Foundation"]
+    S2["STAGE 2: POST-COURSE REVISION BLITZ & 1,000+ DRILLS\n(15 Feb 2027 — 31 Mar 2027) [~6 Weeks]\nYouTube Deep-Dive + Sequential Course Revisions + Industrial Question Bank"]
+    S3["STAGE 3: TIER-1 REFERRAL BLITZ & 24–48 LPA HIRING LOOPS\n(01 Apr 2027 — 31 May 2027) [~8 Weeks]\nMock Interview Grilling + Inbound LinkedIn Outreach + 32 LPA Walmart Offer"]
 
-    P1 --> P2 --> P3 --> P4 --> P5
+    S1 --> S2 --> S3
 ```
 
 ---
 
-### 📍 Phase 1: Live Course Execution (Active Now)
-* **Goal:** Zero lag on daily live lectures.
-* **Daily Standard:** Re-write Note $\rightarrow$ Read Revision $\rightarrow$ Solve Class Tasks $\rightarrow$ Solve Practice Drills.
-* **Outcome:** Pristine daily conceptual clarity, Level 4 Dark Green GitHub graph, live Vercel portfolio.
+### 🏛️ STAGE 1: LIVE COURSE EXECUTION (26 JUL 2026 — 15 FEB 2027)
+*Rule: 100% Focus on active class topics. Zero days skipped without reason.*
 
-### 📍 Phase 2: Supplementary YouTube Course Deep-Dive
-* **Goal:** Strengthen foundational theory and edge cases from an alternative enterprise syllabus.
-* **Execution:** High-speed video lectures, dedicated notes, and alternative scenario drilling.
-
-### 📍 Phase 3: Revision Cycle 1 + Systematic Backlog Clearance
-* **Goal:** Re-traverse the entire live course from Day 1 to End with complete mastery.
-* **Backlog Strategy:** Early backlog topics (Days 1–5, Days 7–11, Day 13) are cleared sequentially and seamlessly without any pressure or rush during this dedicated revision block.
-
-### 📍 Phase 4: Revision Cycle 2 (Live + YouTube Synthesis)
-* **Goal:** Cross-pollinate insights from both live and YouTube curricula.
-* **Execution:** Advanced query optimization, execution plan analysis, index tuning, and CTE/Window function combinations.
-
-### 📍 Phase 5: 1,000+ Industrial Question Bank & Interview Grilling
-* **Goal:** Absolute query mastery under pressure.
-* **Execution:** 1,000+ curated SQL problems (LeetCode, HackerRank, StrataScratch, Tier-1 MNC interview questions).
-* **Cadence:** Continuous 10+ spaced repetition revisions until multiple 25+ LPA offers are secured.
+| Module Timeline | Core Module & Tech Stack | Major Milestones & Deliverables | Expected Level |
+| :--- | :--- | :--- | :--- |
+| **Jul 26 – Sep 05** | **01_SQL: Enterprise Query Engine** | 25 Class Notes, 7 Projects (`PROJECT1`–`PROJECT7`), 370+ Drills | **Top 5% SQL Developer** |
+| **Sep 06 – Oct 15** | **02_PYTHON: OOP & Data Cleansing** | 30+ Pipeline Scripts, OOP Classes, Ingestion APIs, Pandas | **Modular Pipeline Engineer** |
+| **Oct 16 – Nov 25** | **04_PYSPARK: Distributed Computing** | Cluster Jobs, RDD/DataFrames, Shuffling, Broadcast Joins, Delta Lake | **Big Data Distributed Architect** |
+| **Nov 26 – Dec 31** | **05_DATA WAREHOUSING: Snowflake & dbt** | Star/Snowflake Dimensional Modeling, dbt Models, CI/CD | **Cloud DW & Medallion Specialist** |
+| **Jan 01 – Jan 20** | **06_CLOUD: AWS & Azure Services** | AWS S3 / Azure Blob, IAM Security, Cloud ETL Ingestion | **Cloud Infrastructure Competent** |
+| **Jan 21 – Feb 15** | **07_ORCHESTRATION: Apache Airflow** | Production DAGs, Sensor Tasks, SLAs, End-to-End Course Project | **Production Data Engineer** |
 
 ---
 
-## 🔁 3. REPLICATION ACROSS ALL FUTURE MODULES
+### 🚀 STAGE 2: THE POST-COURSE INDUSTRIAL ACCELERATOR (15 FEB — 31 MAR 2027)
+*The live course is finished. You shift into full-time Tier-1 preparation (8–10 hours daily).*
 
-This exact multi-layered learning engine will replicate across every single upcoming module in the course:
-1. **Module 01:** SQL Relational Architecture & Analytic Engines
-2. **Module 02:** Python, OOP & High-Performance Data Cleansing (Pandas)
-3. **Module 03:** ETL Ingestion, Delta Lake & Production Pipelines
-4. **Module 04:** PySpark Distributed Big Data & Cluster Architecture
-5. **Module 05:** Snowflake, dbt & Cloud Dimensional Modeling
-6. **Module 06:** AWS / Azure Cloud Data Engineering Services
-7. **Module 07:** Apache Airflow DAG Orchestration & Enterprise Productionization
-
----
-
-## 🎯 4. IMMEDIATE TOMORROW ACTION PLAN (TUESDAY, 25 AUG 2026)
-
-* **Mission Focus:** **Day 20 (2026-08-24: Common Table Expressions & Zero-Loss Deduplication)**
-  1. Re-write [`01_SQL/01_CLASS_NOTES/2026-08-24.sql`](file:///d:/DE%20COURSE/01_SQL/01_CLASS_NOTES/2026-08-24.sql) in SSMS.
-  2. Read [`01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md).
-  3. Solve 8 Faculty Class Tasks in [`01_SQL/04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL`](file:///d:/DE%20COURSE/01_SQL/04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL).
-  4. Solve 14 Targeted Practice Drills in [`01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL`](file:///d:/DE%20COURSE/01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL).
-  5. Complete English Practice Book Task.
-  6. Attend Live Data Engineering Class (Day 21) at 09:00 PM.
+* **Weeks 1–2 (Feb 15 – Feb 28): The YouTube Deep-Dive & Sequential Revision 1**
+  - Complete the comprehensive SQL YouTube course to absorb an alternative enterprise perspective.
+  - Traverse the Live Course in strict sequence: Day 1 $\rightarrow$ Day 2 $\rightarrow$ Day 3 $\dots$ Day 25+.
+  - Complete all early backlogs (Days 1–5, 7–11, 13) effortlessly in 15–20 minutes per topic.
+* **Weeks 3–4 (Mar 01 – Mar 15): Multi-Module Synthesis & NexusFin Platform Productionization**
+  - Synthesize cross-module architectures: Python Ingestion $\rightarrow$ PySpark Processing $\rightarrow$ Snowflake Warehouse $\rightarrow$ Airflow DAGs.
+  - Finalize **NexusFin Platform** (`nexusfin-platform` on GitHub) with complete JIRA backlogs, architecture diagrams, and automated data quality checks.
+* **Weeks 5–6 (Mar 16 – Mar 31): 1,000+ Industrial Question Bank Blitz**
+  - Solve 1,000+ curated problems across LeetCode Medium/Hard, StrataScratch, and HackerRank.
+  - Master System Design: Batch vs Real-Time Streaming, Lambda/Kappa architecture, and data contracts.
 
 ---
 
-*Authored by Pippo 🐥 | Approved by Captain Arpit Manoj Bangre | Target: 25+ LPA*
+### 💼 STAGE 3: TIER-1 MNC HIRING SEASON & OFFER SIGNING (APRIL — MAY 2027)
+*Peak hiring window for Tier-1 Tech, Unicorns, and Global In-House Centers (GICs).*
+
+1. **LinkedIn Authority & Employee Referral Drive:**  
+   Your LinkedIn profile has 1,500+ high-value connections, 100+ technical engineering posts, and a 200+ day dark green GitHub streak. Referrals from Amazon, Microsoft, Swiggy, and Walmart engineers flow naturally.
+2. **Technical Interview Rounds (4–5 Rounds per Company):**
+   * *Round 1 (SQL Live Coding):* 2 Hard queries written from a blank screen in under 15 minutes each.
+   * *Round 2 (Python / DSA for DE):* Clean OOP pipeline code, dictionary lookups, and generator data transforms.
+   * *Round 3 (PySpark / Cloud Internals):* Explaining Catalyst Optimizer, Broadcast Hash Joins, Data Skew remediation, and Delta Lake ACID mechanics.
+   * *Round 4 (System Design & Portfolio Review):* Walking the Lead Architect through **NexusFin Platform**.
+3. **Offer Release & Negotiation (15 May 2027):**  
+   Release of the **₹32.0 LPA Offer Letter from Walmart Global Tech India** (or Swiggy/Amazon)!
+
+---
+
+## 🔄 3. THE 10-PASS SPACED REVISION ENGINE (STEP-BY-STEP BREAKDOWN)
+
+Why do most candidates freeze in interviews? Because they only revise once.  
+Here is how your **10-Pass Spaced Revision Engine** builds unbreakable muscle memory:
+
+```text
+========================================================================================
+                      THE 10-PASS SPACED REVISION BLUEPRINT
+========================================================================================
+
+  [PASS 1: ACTIVE LIVE CLASS DAY] ➔ Note Re-write + 7-Step Revision (Day of class)
+  [PASS 2: PRE-CLASS REVISION RUN] ➔ 15-min re-read before the next day's live lecture
+  [PASS 3: WEEKEND SYNTHESIS SWEEP] ➔ Review all weekly topics + Project integration
+  [PASS 4: POST-COURSE YOUTUBE PASS] ➔ Alternative perspective from comprehensive video syllabus
+  [PASS 5: SEQUENTIAL COURSE REVISION 1] ➔ Day 1 to End sequential traversal + Backlog clearance
+  [PASS 6: CROSS-MODULE INTEGRATION PASS] ➔ Re-solving SQL queries via Python & PySpark DataFrames
+  [PASS 7: 1,000+ QUESTION DRILL PASS] ➔ LeetCode Hard & StrataScratch Tier-1 problem solving
+  [PASS 8: TIER-1 MOCK INTERVIEW PASS] ➔ Live 15-minute whiteboard drilling with AI Mentor Pippo
+  [PASS 9: SYSTEM DESIGN & TUNING PASS] ➔ Query plans, Index tuning, Execution engine mechanics
+  [PASS 10: PRE-INTERVIEW RAPID REFRESH] ➔ Flashcard review 24 hours before live interview rounds!
+========================================================================================
+```
+
+---
+
+## ⚡ 4. THE PERPETUAL 2-HOUR DAILY SQL LAW (360 HOURS OF MASTERY)
+
+> [!NOTE]
+> Even when you are deep into Python, PySpark, Snowflake, and Cloud modules, **2 hours every single day** are permanently dedicated to SQL.
+
+### 📊 The Power of Compounding:
+$$\text{2 Hours / Day} \times 180 \text{ Days} = \mathbf{360\text{ Hours of Pure SQL Problem Solving!}}$$
+
+### ⏱️ How Every 2-Hour Block is Structured:
+* **First 45 Minutes (Course Revision):** Review 1 complete day of course notes and 7-step revision summaries. (Cycles through all 25+ class notes 10+ times!).
+* **Next 60 Minutes (Industrial Problem Solving):** Solve 3–5 Medium/Hard LeetCode / StrataScratch problems in SSMS. (Solves 700 to 1,000+ total problems!).
+* **Last 15 Minutes (Optimization & Plan Audit):** Inspect Query Execution Plans, check Index Seek vs Scan, and eliminate SARGable defects.
+
+---
+
+## 🏛️ 5. THE 4 BRUTAL TIER-1 INTERVIEW SCREENING GATES
+
+To command **₹32.0 to ₹48.0 LPA**, you must clear these 4 gates with 100% precision:
+
+| Gate | Interview Round | What They Test | Exact Failure Point | How You Pass (Cap's Standard) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Gate 1** | **SQL Live Coding (45m)** | 2 Complex queries (Recursive CTEs, Window partitions, Deduplication, Anomaly detection) | Stumbling, taking > 20 mins, or writing non-ANSI syntax | Solved in 10–12 minutes from a blank screen using pure uppercase SQL |
+| **Gate 2** | **Python & DSA for DE (45m)** | OOP Pipeline classes, Hash Maps, Generators, Pandas vectorization | Writing spaghetti procedural code | Writing modular, idempotent classes with custom exceptions and PyTest |
+| **Gate 3** | **PySpark & Cloud Internals (60m)** | Cluster architecture, DAG execution, Shuffling, Broadcast vs Sort-Merge, Delta ACID | Explaining syntax without cluster internals | Explaining Catalyst Optimizer, Tungsten memory, and Partition Skew salting |
+| **Gate 4** | **System Design & Portfolio (60m)** | High-scale 10M+ events/day warehouse architecture | Proposing toy databases or generic Superstore schemas | Walking through **NexusFin Platform** simulation with full runbooks and SLAs |
+
+---
+
+## 🏢 6. FLAGSHIP MNC SHOWCASE: NEXUSFIN PLATFORM SIMULATION
+
+**Repository:** `https://github.com/arpit-m-bangre/nexusfin-platform`  
+**Identity:** Real-Time FinTech & Core Banking Data Intelligence Platform (Open-Source MNC Simulation)
+
+### Core Architectural Components:
+1. **01_raw_ingestion:** High-velocity event ingestion simulation with network retry handling.
+2. **02_warehouse_schemas:** Star & Snowflake dimensional models (`DimCustomer`, `DimLoyaltyTier`, `FactTransactions`).
+3. **03_transformations:** Atomic deduplication engines, Windowed leaderboard analytics, and PySpark distributed aggregations.
+4. **04_data_quality:** Automated data contracts, NULL reconciliation checks, and schema drift alerts.
+5. **05_orchestration:** Production Apache Airflow DAGs with retry policies, Slack notifications, and SLA monitors.
+6. **06_ci_cd_workflows:** GitHub Actions with automated SQLFluff linting and PyTest validation.
+
+---
+
+## 🔁 7. MULTI-MODULE EXPANSION BLUEPRINT
+
+This exact multi-layered learning engine replicates across all 7 modules:
+
+```text
+========================================================================================
+              THE UNIFIED MULTI-MODULE ENGINEERING MATRIX
+========================================================================================
+  [MODULE 01: SQL Relational Engine] ──> Notes ➔ Revisions ➔ Tasks ➔ Drills ➔ Projects
+  [MODULE 02: Python OOP & Pandas]   ──> OOP Classes ➔ Data Cleansing ➔ Ingestion APIs
+  [MODULE 03: ETL Data Pipelines]    ──> Staging Tables ➔ Delta Lake ➔ Idempotent Loads
+  [MODULE 04: PySpark Big Data]      ──> Cluster Tuning ➔ Shuffling Optimization ➔ Skew Fixes
+  [MODULE 05: Data Warehousing]      ──> Snowflake ➔ dbt Models ➔ Dimensional Marts
+  [MODULE 06: Cloud Engineering]     ──> AWS S3 / Azure Blob ➔ IAM ➔ Cloud ETL
+  [MODULE 07: Orchestration]         ──> Apache Airflow DAGs ➔ Sensor Monitors ➔ SLAs
+========================================================================================
+```
+
+---
+
+## 🎯 8. SUMMARY: THE 15 MAY 2027 TARGET COMMITMENT
+
+```text
+========================================================================================
+🏢 COMPANY        : Walmart Global Tech India (Alternative: Swiggy / Amazon)
+💼 ROLE           : Data Engineer (Supply Chain & Real-Time Analytics)
+📍 CITY           : Bengaluru (Bangalore), Karnataka
+💰 PACKAGE        : ₹32.0 LPA (₹24.0L Base + ₹4.0L Bonus + ₹4.0L Stocks)
+📅 TARGET DATE    : 15 MAY 2027
+🚀 STATUS         : 100% LOCKED, ENERGETIC & UNSTOPPABLE 🔥
+========================================================================================
+```
+
+*Authored by Pippo 🐥 | Approved by Captain Arpit Manoj Bangre | Target: 25+ to 48+ LPA*
