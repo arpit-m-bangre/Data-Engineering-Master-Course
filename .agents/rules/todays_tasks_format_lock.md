@@ -165,7 +165,8 @@ node copy_tasks.cjs
 # Step 2: Build Vite production bundle
 npm run build
 
-# Step 3: Git add, commit, push — triggers Vercel auto-deploy
+# Step 3: Git add, commit, push — triggers Vercel auto-deploy (Zero-Hang Guaranteed)
+$env:GCM_INTERACTIVE="never"
 git add .
 git commit -m "sync(dashboard): update daily mission and rebuild dashboard"
 git push origin main
@@ -176,7 +177,7 @@ Working directory for Step 3: `d:\DE COURSE\`
 
 The combined command:
 ```powershell
-cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; git add . ; git commit -m "sync(dashboard): daily mission sync" ; git push origin main
+cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; $env:GCM_INTERACTIVE="never" ; git add . ; git commit -m "sync(dashboard): daily mission sync" ; git push origin main
 ```
 
 ---
