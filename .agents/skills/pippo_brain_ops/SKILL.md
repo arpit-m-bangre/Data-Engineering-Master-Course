@@ -114,13 +114,18 @@ Execute each step in order. Do NOT skip or batch-reorder.
 ### Step 13: Update `README.md`
 - Update project range (`PROJECT1 - <N>`) and course summary.
 
+### Step 14: Synchronize `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md` (Constitutional Law #17)
+- Add new files to the master inventory tables with line counts and byte sizes.
+- Verify 100% compliance across all 16 Constitutional Laws.
+- Update total file counts and certified audit status.
+
 ---
 
 ## 🚀 PHASE 3: PRODUCTION BUILD & LIVE DEPLOYMENT
 
-### Step 14: Execute Build & Push Pipeline
+### Step 15: Execute Build & Push Pipeline
 ```powershell
-cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; git add . ; git commit -m "feat(sql): add Day N ecosystem & brain synchronization" ; git push origin main
+cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; $env:GCM_INTERACTIVE="never" ; git add . ; git commit -m "feat(sql): add Day N ecosystem, SYSTEM_MAP sync & brain synchronization" ; git push origin main
 ```
 
 ---
@@ -128,7 +133,8 @@ cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE CO
 ## 🚨 PHASE 4: POST-FLIGHT AUDIT & VERIFICATION
 
 1. Verify:
-   $$\text{Class Notes Count} = \text{Revision Notes Count} = \text{Questions Count}$$
-2. Verify Metrics JSON matches disk count.
-3. Verify Trackers match disk count.
-4. Verify Git push completed with exit code 0.
+   $$\text{Class Notes Count} = \text{Revision Notes Count} = \text{Questions Count} = \text{Indexes Count}$$
+2. Verify Metrics JSON matches physical disk count.
+3. Verify Trackers match physical disk count.
+4. Verify `SYSTEM_MAP.md` is 100% synchronized.
+5. Verify Git push completed with exit code 0.

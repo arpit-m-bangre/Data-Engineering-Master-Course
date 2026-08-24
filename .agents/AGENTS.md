@@ -46,6 +46,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 ### GATE E — BEFORE ANY GIT COMMIT
 - [ ] Have BOTH MASTER_LEARNING_TRACKER.txt and MASTER_LEARNING_TRACKER.md been updated? → If NO: update them.
 - [ ] Has METRICS_AND_STATISTICS.json been updated? → If NO: update it.
+- [ ] Has EXTRA_MAGICAL_FILES/SYSTEM_MAP.md been updated and synchronized? → If NO: update it now.
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
 ### GATE F — DAILY SOCIAL PRESENCE & DIGITAL PRESENCE CHECK
@@ -75,7 +76,9 @@ d:\DE COURSE\
 ├── 07_ORCHESTRATION/             <-- Apache Airflow & Pipeline Scheduling (Upcoming)
 ├── TIER1_BRANDING_MASTER_PLAN.md <-- Consolidated Tier-1 Hiring, 90-Day LinkedIn & 360° SEO Blueprint
 ├── digital_presence_ecosystem.html <-- Interactive 34-Platform Digital Presence & SEO Web Showcase
-├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Focus Rulebook & Identity
+├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Focus Rulebook, SYSTEM_MAP & Identity
+│   ├── SYSTEM_MAP.md             <-- Exhaustive Master Inventory, Line Counts & Compliance Audit
+│   ├── 10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
 │   ├── FOCUS_RULE_BOOK.md        <-- Calm, Bio-Paced Focus, Phone & Friend Boundary Protocols
 │   ├── GOAL.md                   <-- North Star 25+ LPA Target & 200-Day Streak Manifesto
 │   ├── PIPPO_AND_CAPTAIN_IDENTITY.md <-- Pippo & Cap Identity Blueprint
@@ -126,6 +129,7 @@ d:\DE COURSE\
   9. `LEARNING_DIARY/CONCEPT_MASTERY_HEATMAP.md` (Updates concept matrix)
   10. `LEARNING_DIARY/LEARNING_DIARY.txt` (Appends progress entry)
   11. `README.md` (Updates portfolio homepage)
+  12. `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md` (Updates master inventory, file counts & compliance)
 
 ### 6. Directory Security & Anti-Teardown Protection Law
 - STRICT IMMUTABILITY FOR DIRECTORY STRUCTURES: Neither the AI agent nor any background script is EVER permitted to execute recursive directory deletion commands (such as `rm -rf`, `Remove-Item -Recurse`, `git clean -fdx`, `rd /s /q`) on `d:\DE COURSE\` or any of its top-level module folders (`00_SYLLABUS`, `01_SQL`, `02_PYTHON`, `03_ETL_DATA_PIPELINES`, `04_PYSPARK_BIG_DATA`, `05_DATA_WAREHOUSING`, `06_CLOUD_ENGINEERING`, `07_ORCHESTRATION`, `LEARNING_DIARY`, `.agents`).
@@ -410,6 +414,19 @@ Whenever drilling, teaching, or answering queries, Pippo MUST enforce the 10 Gol
 8. *Temporal velocity fraud window detection ($< 5$ mins in different cities).*
 9. *`UNION` (in-memory sort/distinct) vs `UNION ALL` (high-performance stream append).*
 10. *Cartesian $N \times M$ multiplier math & NULL non-matching behavior.*
+ 
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+ 
+---
+ 
+## 📜 CONSTITUTIONAL LAW #17 — CONTINUOUS SYSTEM MAP & WORKSPACE AUDIT LAW 🔴 CRITICAL
+ 
+This law mandates that `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md` is an immutable, active single source of truth for repository structure and MUST be synchronized continuously on every class processing and major workspace modification.
+ 
+### MANDATORY SYSTEM BEHAVIORS:
+1. **Zero-Drift Master Inventory:** Whenever any new class note, revision note, task file, practice question set, or project pipeline is added, modified, or evaluated, `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md` MUST be updated with the exact file name, line count, byte size, and compliance audit.
+2. **Pre-Commit Audit Gate:** Before executing any git commit, Pippo MUST physically verify that `SYSTEM_MAP.md` is 100% in sync with the physical disk (Gate E item 3).
+3. **Immutability of Certified Audits:** The system health metrics and file-by-file compliance statuses in `SYSTEM_MAP.md` MUST reflect real physical files — zero hallucinated files are ever permitted.
  
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 
