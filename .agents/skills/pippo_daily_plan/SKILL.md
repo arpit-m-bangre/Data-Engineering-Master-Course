@@ -44,14 +44,15 @@ For any class day being worked on, the order MUST be strictly:
 $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrightarrow \text{Solve Faculty Class Tasks} \longrightarrow \text{Solve Practice Drills}$$
 *NEVER schedule practice drills without first scheduling the note rewrite and revision read for that day.*
 
-### 2. Zero-Omission Requirements:
-Every daily plan MUST include:
-- [ ] Yesterday's pending class tasks (if unsolved).
-- [ ] Pending practice drills from the backlog.
-- [ ] 1 English Practice Book task (30 min).
-- [ ] 9:00 PM - 10:15 PM Live Data Engineering Class block (Mon-Sat).
-- [ ] Final System Sync, GitHub Push & Vercel Trigger sprint (Streak Day N 🔥).
-- [ ] Social Presence Sprint (20-30 min) on **Monday, Wednesday, and Saturday**.
+### 2. Current-Focus First & Zero-Omission Standard:
+- **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
+- **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
+- Every daily plan MUST include:
+  * [ ] Active/yesterday's class tasks and practice drills.
+  * [ ] 1 English Practice Book task (30 min).
+  * [ ] 9:00 PM - 10:15 PM Live Data Engineering Class block (Mon-Sat).
+  * [ ] Final System Sync, GitHub Push & Vercel Trigger sprint (Streak Day N 🔥).
+  * [ ] Social Presence Sprint (20-30 min) on **Monday, Wednesday, and Saturday**.
 
 ### 3. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).

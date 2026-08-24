@@ -34,11 +34,20 @@ Whenever you open your workspace, simply send a message to your AI Mentor:
 
 ---
 
-### 2. Execution & Study (3-Stage Mastery Rule)
-Follow your strict 3-stage learning flow:
-`Read Revision Note (.md)` ---> `Solve Practice Questions (.SQL)` ---> `Execute Project Pipeline (.SQL)`
+### 2. Execution & Study (The 4-Stage Current-Focus Mastery Rule)
+Never compromise current live learning for past backlog! Follow your strict 4-stage daily learning flow:
+`Class Note Re-write (.sql)` ---> `Read 7-Step Revision Note (.md)` ---> `Solve Faculty Class Tasks (.SQL)` ---> `Solve 14 Practice Drills (.SQL)`
+
+*Note on Backlog:* Early backlogs are cleared sequentially and systematically during **Phase 3 (Post-Course Revision Cycle 1)** alongside the YouTube course deep-dive.
 
 ---
+
+### 🌟 THE 10+ REVISION & PLACEMENT ARCHITECTURE (TILL 25+ LPA)
+1. **Phase 1 (Live Course - Active Now):** 100% Up-to-date Daily Focus & Muscle Memory.
+2. **Phase 2 (Post-Course):** Comprehensive YouTube Course Deep-Dive.
+3. **Phase 3:** Revision Cycle 1 + Systematic Sequential Backlog Clearance (Days 1 to End).
+4. **Phase 4:** Revision Cycle 2 (Live + YouTube Synthesis & Query Optimization).
+5. **Phase 5:** 1,000+ Question Industrial Drilling (LeetCode / StrataScratch / Tier-1 MNC Question Bank, 10+ revisions).
 
 ### 3. End-of-Day Progress Update (Night / After Study)
 When you finish your study session, report what you completed:
