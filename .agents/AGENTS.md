@@ -25,11 +25,9 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Is the file pure executable SQL with only short 2-3 line theory/error annotations? → If NO: fix it.
 
 ### GATE C — BEFORE WRITING ANY DAILY PLAN (TODAYS_TASKS.txt)
-- [ ] Did I physically READ MASTER_LEARNING_TRACKER.txt first? → If NO: read it now.
-- [ ] Did I check 04_CLASS_TASKS/ for unsolved class task file from yesterday? → If NO: check now.
-- [ ] Is yesterday's CLASS_TASK.SQL included in the plan? → If NO: add it.
-- [ ] Did I check ALL rows with PRACTICE DRILLS = [ ] PENDING in the backlog? → If NO: check now.
-- [ ] Are ALL pending drill files scheduled in the plan? → If NO: add them.
+- [ ] Did I prioritize the ACTIVE LIVE CLASS DAY first (Current-Focus First Law)? → If NO: prioritize active day.
+- [ ] Is active/yesterday's CLASS_TASK.SQL scheduled? → If NO: add it.
+- [ ] Are active/yesterday's practice drills scheduled? → If NO: add them.
 - [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
 - [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
 - [ ] Did I start from the GOLDEN TEMPLATE at `.agents/TODAYS_TASKS_GOLDEN_TEMPLATE.txt`? → If NO: use it.
@@ -38,7 +36,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are break/rest blocks formatted as `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title`? → If NO: fix format.
 - [ ] Did I verify format against `.agents/rules/todays_tasks_format_lock.md` parser contract? → If NO: verify now.
 - [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
-- [ ] Did I git commit and push to GitHub? → If NO: do it now.
+- [ ] Did I git commit and push to GitHub using non-interactive GCM? → If NO: do it now.
 
 ### GATE D — BEFORE WRITING PRACTICE QUESTIONS (.sql file)
 - [ ] Does the file contain exactly 14 targeted questions? → If NO: adjust to 14.
@@ -360,5 +358,25 @@ After evaluating any submission file, Pippo MUST:
 4. Update `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` and `MASTER_LEARNING_TRACKER.md`.
 5. Rebuild dashboard (`node copy_tasks.cjs; npm run build`) and git commit + push.
 
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+ 
+---
+ 
+## 📜 CONSTITUTIONAL LAW #15 — CURRENT-FOCUS PRIORITY & 10+ REVISION ENGINE 🔴 CRITICAL
+ 
+This law mandates that daily study planning ALWAYS prioritizes the active/yesterday's live class day first, completely eliminating backlog panic and context-switching fatigue.
+ 
+### MANDATORY SYSTEM BEHAVIORS:
+1. **Current-Focus Protocol:** Daily execution during the active course ALWAYS schedules the current active day's 4-stage pipeline first:
+   $$\text{Class Note Re-write} \longrightarrow \text{Read 7-Step Revision} \longrightarrow \text{Solve Class Tasks} \longrightarrow \text{Solve 14 Practice Drills}$$
+2. **Backlog Decoupling:** Past backlog is NEVER allowed to derail or overcrowd current daily live learning. Early backlogs are systematically scheduled during **Phase 3 (Post-Course Revision Cycle 1)** after the YouTube course deep-dive.
+3. **The 5-Phase 10+ Revision Architecture:**
+   - **Phase 1 (Active Now):** Live Course Daily Sync & Deep Muscle Memory.
+   - **Phase 2 (Post-Course):** Comprehensive YouTube Course Deep-Dive.
+   - **Phase 3:** Revision Cycle 1 + Sequential Backlog Clearance (Days 1 to End in strict sequence).
+   - **Phase 4:** Revision Cycle 2 (Live + YouTube Synthesis & Query Optimization).
+   - **Phase 5:** 1,000+ Question Industrial Drilling & 10+ Revisions Till 25+ to 60+ LPA Placement.
+4. **Perpetual 2-Hour Daily SQL Law:** Post-course, 2 hours daily are dedicated permanently to SQL practice and revision alongside all future modules.
+ 
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 
