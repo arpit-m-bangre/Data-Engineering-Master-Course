@@ -212,7 +212,7 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 The Agent MUST ensure the user's daily plans automatically incorporate these 8 principles:
 
 1. **Daily Class Timing (9:00 PM - 10:15 PM):** The final block of the day (Mon-Sat) MUST be dedicated to the live class. This is a modular rule; be ready to update or add future class timings when the user informs you.
-2. **GitHub Streak:** Every single daily plan MUST include a step to commit and push work to GitHub to maintain the 200-day commit streak.
+2. **GitHub Streak & Atomic Sprint Commits (4X-8X Dark Green Law):** Every daily plan MUST include a step to commit and push work to GitHub to maintain the 200-day streak. To ensure maximum visual impact (Level 4 Darkest Green Squares), commits must be made **atomically after each completed sprint milestone** (targeting 6 to 10 commits per day: mission initialization, LinkedIn artifacts, note rewrites, task solves, practice drills, English tasks, and nightly brain syncs) rather than 1 single batch commit.
 3. **Project & Practical Exposure:** While not daily, project implementation and practical application MUST be treated as high-priority milestones in the weekly flow.
 4. **Perpetual SQL Practice:** Even after the SQL module finishes, daily SQL practice (LeetCode / Drills) MUST continue until the end of the course to maintain query sharpness.
 5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python practice MUST be enforced permanently alongside SQL. (Do not schedule this until Python officially starts).

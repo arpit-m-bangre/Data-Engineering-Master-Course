@@ -36,6 +36,12 @@ Every gate is strictly YES or NO. If ANY gate is NO, STOP and fix the issue befo
   * Command: `cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE COURSE" ; git add . ; git commit -m "..." ; git push origin main`
   * If NO: Execute the pipeline now. Never leave the live dashboard out of sync.
 
+### GATE 6 — ATOMIC SPRINT COMMIT GATE (4X-8X Dark Green Graph Law)
+- [ ] Did I commit and push immediately after completing ANY individual sprint milestone (e.g. LinkedIn post, note rewrite, faculty task solve, practice drills) rather than batching everything into 1 single end-of-day commit?
+  * Standard: 6 to 10 atomic, descriptive commits per day (`feat(sql): ...`, `docs(linkedin): ...`, `test(drills): ...`).
+  * Target: Keep GitHub contribution square at Level 4 (Darkest Green 🔥).
+  * If NO: Commit the completed sprint milestone immediately.
+
 ---
 
 ## 🛑 STRICT PROHIBITION SUMMARY
@@ -43,3 +49,4 @@ Every gate is strictly YES or NO. If ANY gate is NO, STOP and fix the issue befo
 2. NEVER schedule practice drills without scheduling that day's class note re-write first.
 3. NEVER silently drop or omit unsolved class tasks or pending drills from the daily plan.
 4. NEVER commit with mismatched file counts between trackers and physical disk.
+5. NEVER batch all day's work into 1 single midnight commit — execute atomic sprint commits for dark green visibility.
