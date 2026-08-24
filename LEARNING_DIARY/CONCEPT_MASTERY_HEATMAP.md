@@ -18,6 +18,7 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **8. Relational Joins & Cartesian Math** | 11 | 11 | 0 | 🔴 High |
 | **9. Self Joins & Hierarchical Modeling** | 5 | 5 | 0 | 🔴 High |
 | **10. Window Functions & Ranking Engines** | 6 | 6 | 0 | 🔴 High |
+| **11. CTEs & Zero-Loss Deduplication Pipelines** | 5 | 5 | 0 | 🔴 High |
 
 ---
 
@@ -129,6 +130,15 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C10.4** | `RANK()` Positional Ranking with Gaps on Ties | MASTERED | Miscalculating gap jumps after multi-row ties | 1 | 🔴 High |
 | **C10.5** | `PARTITION BY` Sub-Grouping Mechanics | MASTERED | Confusing `PARTITION BY` with `GROUP BY` row collapsing | 1 | 🔴 High |
 | **C10.6** | Window Function Query Execution Order & Scoping | MASTERED | Msg 4108: Attempting to use window functions directly in `WHERE` | 1 | 🔴 High |
+
+### SECTION 11: COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION PIPELINES
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C11.1** | CTE Syntax & In-Memory Pipeline (`WITH CTE AS (...)`) | MASTERED | Missing semicolon `;` before `WITH` keyword | 1 | 🔴 High |
+| **C11.2** | CTE Lifecycle & Single-Query Scope Rules | MASTERED | Querying CTE in a second statement | 1 | 🔴 High |
+| **C11.3** | Nth Highest Filtering via CTE & `DENSE_RANK()` | MASTERED | Using `ROW_NUMBER()` on tied values | 1 | 🔴 High |
+| **C11.4** | Full-Row Deduplication via `ROW_NUMBER()` Partitioning | MASTERED | Partitioning by partial columns | 1 | 🔴 High |
+| **C11.5** | In-Place Data Cleansing via `DELETE FROM CTE` | MASTERED | Thinking CTE DELETE fails on virtual views | 1 | 🔴 High |
 
 ---
 

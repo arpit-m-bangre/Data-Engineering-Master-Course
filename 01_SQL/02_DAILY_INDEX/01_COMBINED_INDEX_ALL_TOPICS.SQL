@@ -185,6 +185,17 @@ SECTION 1: DAILY CLASS BREAKDOWN
     19.11 The WHERE Clause Window Function Restriction Trap (Msg 4108) & Derived Table / CTE Workaround
     19.12 Top-N per Group Filtering Pattern using DENSE_RANK() in Derived Tables
 
+20. DAY 20 (AUGUST 24) - COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION ARCHITECTURE
+    20.1 CTE Syntax & In-Memory Pipeline Architecture (`WITH CTE_Name AS (...)`)
+    20.2 Scope & Lifecycle of CTEs (Single Immediately Following Statement Scope)
+    20.3 Resolving Window Function WHERE Clause Restrictions via CTE Pipelining
+    20.4 Nth Highest / Maximum Value Filtering (Global vs Partitioned Top-N via DENSE_RANK)
+    20.5 Column-Level vs Full-Row Duplicate Identification Strategies
+    20.6 Full-Row Deduplication Engine using `ROW_NUMBER() OVER (PARTITION BY All_Columns ORDER BY ID)`
+    20.7 In-Place Data Cleansing via `DELETE FROM CTE WHERE RowOccurrence > 1`
+    20.8 Advanced Scenario Engineering: Alternating Gender (M/F) Sequences & Latest Order per Customer
+    20.9 Multi-Table Analytical CTE Joins: City-Wise 2nd Highest Amount
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -278,6 +289,14 @@ K. WINDOW FUNCTIONS & ANALYTIC ENGINES
    • Logical Query Execution Order with Window Functions
    • The WHERE Clause Window Function Restriction Trap (Msg 4108)
    • Top-N per Group Filtering Pattern using Derived Tables and CTEs
+
+L. COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION PIPELINES
+   • CTE Syntax & In-Memory Pipelining (`WITH CTE AS (...)`)
+   • Query-Scope Lifecycle & Invalid Object Name 'CTE' Scoping Rules
+   • Nth Highest / Maximum Value Filtering Architecture
+   • Full-Row Deduplication via `ROW_NUMBER() OVER (PARTITION BY ...)`
+   • In-Place Base Table Data Cleansing via `DELETE FROM CTE WHERE RowOccurrence > 1`
+   • Alternating Sequence Generation (Gender M/F/M/F) & Latest Event Ranking
 
 ================================================================================
 

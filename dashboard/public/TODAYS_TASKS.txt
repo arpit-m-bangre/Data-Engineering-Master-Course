@@ -46,7 +46,7 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (8.00h Hands-On Study Sprints + 1.25h Live Cl
 [-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
     -> Light nutritious dinner & setup SSMS environment for live lecture
 
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 20) 🎓
+[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 20) 🎓
     -> Live lecture: Advanced Window Functions (LAG, LEAD, FIRST_VALUE, Framing Windows)
     -> Take raw notes for post-class automated processing
 
