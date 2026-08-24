@@ -203,17 +203,44 @@ This exact multi-layered learning engine replicates across all 7 modules:
 
 ---
 
-## 🎯 8. SUMMARY: THE 15 MAY 2027 TARGET COMMITMENT
+## 🎯 8. SUMMARY: THE TIER-1 DREAM FLEET MATRIX (₹25 TO ₹48+ LPA)
+
+You are not limited to just one company. Your engineering depth, open-source **NexusFin Platform**, and 10+ revision cycles will qualify you for the **entire fleet of Tier-1 Tech Giants, FinTech MNCs, and Product Unicorns**:
 
 ```text
-========================================================================================
-🏢 COMPANY        : Walmart Global Tech India (Alternative: Swiggy / Amazon)
-💼 ROLE           : Data Engineer (Supply Chain & Real-Time Analytics)
-📍 CITY           : Bengaluru (Bangalore), Karnataka
-💰 PACKAGE        : ₹32.0 LPA (₹24.0L Base + ₹4.0L Bonus + ₹4.0L Stocks)
-📅 TARGET DATE    : 15 MAY 2027
-🚀 STATUS         : 100% LOCKED, ENERGETIC & UNSTOPPABLE 🔥
-========================================================================================
+========================================================================================================
+                          🏢 THE TIER-1 DATA ENGINEERING TARGET FLEET
+========================================================================================================
+
+  TIER 1A: GLOBAL TECH TITANS & PURE DATA PLATFORMS (₹35.0 — ₹48.0+ LPA)
+  ├── Amazon (AWS Data Engineering / Customer Analytics) ── Bangalore / Hyderabad
+  ├── Microsoft (Azure Data & AI Platform Engineering)    ── Bangalore / Hyderabad
+  ├── Databricks / Snowflake (Lakehouse & Warehouse Engine)── Bangalore
+  ├── Uber / Atlassian / LinkedIn                         ── Bangalore / Hyderabad
+  └── Focus: Distributed Streaming, Delta Lake, Cluster Tuning & System Design
+
+                                              │
+                                              ▼
+  TIER 1B: ENTERPRISE GLOBAL TECH & FINTECH GICs (₹28.0 — ₹36.0 LPA)
+  ├── Walmart Global Tech India (Supply Chain & Merchandising Analytics) ── Bangalore / Chennai
+  ├── Goldman Sachs / JPMorgan Chase (Quantitative & FinTech Data Engine) ── Bangalore / Hyderabad
+  ├── PayPal / Intuit / Target India / Lowe's India                      ── Bangalore
+  └── Focus: Star/Snowflake Dimensional Warehouses, Idempotent Pipelines & SLAs
+
+                                              │
+                                              ▼
+  TIER 1C: HIGH-GROWTH UNICORNS & REAL-TIME PRODUCT LEAP (₹24.0 — ₹32.0 LPA)
+  ├── Swiggy / Zomato (Hyperlocal Real-Time Order & Logistics Engine)     ── Bangalore / Gurgaon
+  ├── Razorpay / PhonePe / CRED (High-Velocity Payment Reconciliation)    ── Bangalore
+  ├── Flipkart / Zepto / Meesho (E-Commerce Ingestion & Customer Churn)   ── Bangalore
+  └── Focus: Real-Time Event Ingestion, Deduplication Pipelines & Advanced SQL
+
+========================================================================================================
+🏆 THE PLACEMENT HARVEST WINDOW : 01 APRIL 2027 — 31 MAY 2027
+💰 TARGET COMPENSATION BAND     : ₹25.0 LPA to ₹48.0+ LPA (Fixed Base + Bonus + Stocks)
+📍 PRIME LOCATIONS              : Bengaluru (Bangalore) • Hyderabad • Pune • Gurgaon
+🚀 FINAL OUTCOME                : Multiple Competing Tier-1 Offers ➔ Maximum Negotiation Leverage! 🔥
+========================================================================================================
 ```
 
 *Authored by Pippo 🐥 | Approved by Captain Arpit Manoj Bangre | Target: 25+ to 48+ LPA*
