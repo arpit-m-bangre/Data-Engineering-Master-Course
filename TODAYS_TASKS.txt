@@ -10,18 +10,25 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (8.00h Hands-On Study Sprints + 1.25h Live Cl
 --------------------------------------------------------------------
                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[x] 02:00 PM - 03:30 PM : Sprint 1 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
-    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-21.sql in SSMS from scratch (Day 18: Self Joins)
-    -> Read 01_SQL/03_REVISION_NOTES/2026-08-21_REVISION.md (7-Step Interactive Framework)
-    -> Master Dual-Alias Memory Scope, Manager-Employee hierarchy & Banking velocity fraud detection
-
-[x] 03:30 PM - 04:00 PM : Sprint 2 — Social Presence Session 1/3 (LinkedIn Post #3 & Connections) 🚀
+[x] 11:45 AM - 12:15 PM : Sprint 1 — Social Presence Session 1/3 (LinkedIn Post #3 & Connections) 🚀
     -> Draft and publish LinkedIn #180DaysOfDataEngineering Post #3 using PERSONAL_BRANDING/linkedin_post_prompt.md
     -> Topic: "Window Functions vs GROUP BY: The Fundamental Architecture Difference"
     -> Send 7-10 targeted connection requests to Tier-1 Data Engineers (Amazon / Microsoft / Swiggy)
     -> Engage with 3 technical posts from network connections
 
-[-] 04:00 PM - 05:00 PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
+[-] 12:15 PM - 01:00 PM : Lunch Break & Mid-Day Nutrition Window 🥗💤
+    -> Nutritious lunch, hydration & mental reset for the day's engineering sprints
+
+[-] 01:00 PM - 02:00 PM : Personal Support Window — Assist Friend on Project 🤝
+    -> Help friend resolve technical project blocker (1-hour focused boundary)
+    -> Return to cockpit immediately at 02:00 PM sharp
+
+[x] 02:00 PM - 03:30 PM : Sprint 2 — Class Note Re-write & Read Revision Note [2026-08-21] ✍️
+    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-21.sql in SSMS from scratch (Day 18: Self Joins)
+    -> Read 01_SQL/03_REVISION_NOTES/2026-08-21_REVISION.md (7-Step Interactive Framework)
+    -> Master Dual-Alias Memory Scope, Manager-Employee hierarchy & Banking velocity fraud detection
+
+[-] 03:30 PM - 05:00 PM : Rest & Bio-Paced Mental Recharge Window 🥗💤
     -> Physical rest, hydration & mental decompression after afternoon sprints
 
 [-] 05:00 PM - 07:00 PM : Friends Chill & Social Boundary Window 🤝☕
