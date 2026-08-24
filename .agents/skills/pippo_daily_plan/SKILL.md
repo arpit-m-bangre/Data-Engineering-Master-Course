@@ -54,8 +54,8 @@ $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrigh
   * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (2.00h).
   * [ ] **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
   * [ ] **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat).
-  * [ ] **Pillar 7:** Flagship MNC Project: NexusFin Platform Night Power Sprint (10:30 PM - 12:15 AM).
-  * [ ] **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (12:15 AM - 12:30 AM).
+  * [ ] **Pillar 7:** Flagship MNC Project: NexusFin & Enterprise Modules (Integrated in Day/Evening & Weekend Sprints).
+  * [ ] **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
 
 ### 3. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).
@@ -63,11 +63,11 @@ $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrigh
 - State at the top:
   `TOTAL STUDY TIME TODAY: X.X Hours (Summary breakdown across all 8 pillars)`
 
-### 4. The 8.5 – 9.0 Hour Elite Daily Framework (32+ LPA Walmart Tier):
+### 4. The Standard Daily Framework (32+ LPA Tier Framework):
 - **Anchor A (Start):** 11:30 AM (Cockpit Startup & Daily LinkedIn)
 - **Anchor B (Live Class):** 09:00 PM - 10:15 PM (Batch 15 Lecture)
-- **Anchor C (Night Cutoff):** 12:30 AM (Lights Out & 7.5h Rest)
-- **Total Study & Engineering Time:** **8.50 to 9.00 Hours Daily**.
+- **Anchor C (Night Cutoff):** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
+- **Total Study & Engineering Time:** **7.00 to 7.50 Hours Daily**.
 
 ---
 

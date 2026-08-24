@@ -42,10 +42,10 @@ Never compromise current live learning for past backlog! Follow your strict 8-pi
 4. **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice.
 5. **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
 6. **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM).
-7. **Pillar 7:** Flagship MNC Project: NexusFin Platform Night Power Sprint (10:30 PM - 12:15 AM).
-8. **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (12:15 AM - 12:30 AM).
+7. **Pillar 7:** Flagship MNC Project: NexusFin & Enterprise Modules (Integrated in Day/Evening & Weekend Sprints).
+8. **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
 
-*Note on Backlog:* Early backlogs are cleared sequentially and systematically during **Phase 3 (Post-Course Revision Cycle 1)** alongside the YouTube course deep-dive.
+*Note on Sleep Cutoff:* Anchor C is strictly locked to **10:45 PM** for bio-paced health recovery sleep.
 
 ---
 
