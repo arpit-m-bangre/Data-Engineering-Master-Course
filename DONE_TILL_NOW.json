@@ -1,0 +1,141 @@
+{
+  "student": "Arpit Manoj Bangre (Cap)",
+  "role": "Data Engineer / Pipeline Architect",
+  "batch": "Online Batch 15",
+  "target_ctc": "25.0 to 48.0+ LPA",
+  "last_synced": "2026-08-25",
+  "current_streak_days": 12,
+  "github_achievements": [
+    "Quickdraw",
+    "YOLO",
+    "Pull Shark (Bronze)",
+    "Pair Extraordinaire (Bronze)",
+    "Galaxy Brain (Bronze)"
+  ],
+  "modules": [
+    {
+      "id": "module_1_sql",
+      "name": "01_SQL: Enterprise Relational Architecture & Query Engine",
+      "status": "IN PROGRESS",
+      "completion_pct": 75,
+      "class_notes_processed": 20,
+      "practice_drills_total": 370,
+      "practice_drills_completed": 75,
+      "faculty_tasks_total": 10,
+      "faculty_tasks_completed": 7,
+      "projects_scheduled": 7,
+      "projects_completed": 1,
+      "completed_topics": [
+        "Day 01: DB Architecture & DDL/DML Internals",
+        "Day 02: WHERE Filtering & Wildcard Pattern Matching",
+        "Day 03: SUBSTRING, String Manipulation & Advanced Filters",
+        "Day 04: Arithmetic, UPDATE & DELETE Transactions",
+        "Day 05: TRUNCATE vs DROP & Schema ALTER Modifiers",
+        "Day 06: Aggregates, GROUP BY & Execution Mechanics",
+        "Day 07: Execution Order & Strict HAVING Filter Rules",
+        "Day 08: Complex Aggregation Scenarios & Error Analysis",
+        "Day 09: Constraints Architecture (PK, UNIQUE, CHECK, NOT NULL)",
+        "Day 10: DEFAULT, IDENTITY Properties & Foreign Key Rules",
+        "Day 11: Parent/Child Destruction Tests & Cascade Rules",
+        "Day 12: Retrofitting Constraints on Production Tables",
+        "Day 13: Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)",
+        "Day 14: Date & DateTime Functions (DATEDIFF, DATEADD, DATEPART)",
+        "Day 15: Foundations of Joins & Cartesian Math Analysis",
+        "Day 16: ANSI Joins Syntax, Ambiguity Resolution & Group By",
+        "Day 17: Multi-Table Joins, Cross Joins & Equi-Joins",
+        "Day 18: Self Joins, Manager Hierarchies & Fraud Engines",
+        "Day 19: Window Functions (ROW_NUMBER, RANK, DENSE_RANK, PARTITION BY)",
+        "Day 20: Common Table Expressions (CTEs) & In-Place Deduplication"
+      ],
+      "active_revision_pass": "Pass 4 (Socratic Grilling & 14-Drill Drills)"
+    },
+    {
+      "id": "module_2_python",
+      "name": "02_PYTHON: OOP, Memory & Data Cleansing Pipelines",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    },
+    {
+      "id": "module_3_etl",
+      "name": "03_ETL_DATA_PIPELINES: Ingestion, Staging & Quality Engines",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    },
+    {
+      "id": "module_4_pyspark",
+      "name": "04_PYSPARK_BIG_DATA: Distributed Computing & Delta Lake",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    },
+    {
+      "id": "module_5_warehouse",
+      "name": "05_DATA_WAREHOUSING: Snowflake & dbt Medallion Architecture",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    },
+    {
+      "id": "module_6_cloud",
+      "name": "06_CLOUD_ENGINEERING: AWS S3/Glue & Azure Data Services",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    },
+    {
+      "id": "module_7_orchestration",
+      "name": "07_ORCHESTRATION: Apache Airflow & Kafka Streaming",
+      "status": "UPCOMING",
+      "completion_pct": 0
+    }
+  ],
+  "projects": [
+    {
+      "id": "P1",
+      "name": "NexusFin Platform: E-Commerce Sales & Customer Analytics Pipeline",
+      "target_file": "PROJECT1.SQL",
+      "status": "COMPLETED",
+      "lines": 185
+    },
+    {
+      "id": "P2",
+      "name": "Healthcare Admissions & Billing Pipeline",
+      "target_file": "PROJECT2.SQL",
+      "status": "SCHEDULED",
+      "lines": 210
+    },
+    {
+      "id": "P3",
+      "name": "Banking Transaction Audit & Fraud Engine",
+      "target_file": "PROJECT3.SQL",
+      "status": "SCHEDULED",
+      "lines": 195
+    },
+    {
+      "id": "P4",
+      "name": "HR Corporate Payroll & Data Validation Engine",
+      "target_file": "PROJECT4.SQL",
+      "status": "SCHEDULED",
+      "lines": 180
+    },
+    {
+      "id": "P5",
+      "name": "Retail Supply Chain & FK Relational Architecture",
+      "target_file": "PROJECT5.SQL",
+      "status": "SCHEDULED",
+      "lines": 175
+    },
+    {
+      "id": "P6",
+      "name": "Telecommunications Call Detail Records (CDR) Analytics",
+      "target_file": "PROJECT6.SQL",
+      "status": "SCHEDULED",
+      "lines": 220
+    },
+    {
+      "id": "P7",
+      "name": "Financial Deduplication & Reconciliation Pipeline (CTEs & Window Functions)",
+      "target_file": "PROJECT7.SQL",
+      "status": "SCHEDULED",
+      "lines": 230
+    }
+  ],
+  "offline_test_score": "13/18 (72.2%) - SQL Test 1"
+}
