@@ -40,6 +40,10 @@ Recruiters search LinkedIn using Boolean strings like `"Data Engineer" AND ("SQL
   1 post daily under `#180DaysOfDataEngineering`. Share real architecture decisions, performance benchmarks, and error logs.
 * **Recruiter Magnet Trigger:**  
   Set profile to **"Open to Work" (Recruiters Only)** with target locations: *Bengaluru, Pune, Hyderabad, Remote*.
+* **🛡️ Safe Zone & Pending Queue Threshold Rules:**
+  - **Daily Velocity:** 5 to 7 invites/day (35–45/week) to maintain 100% account trust score and zero algorithm flags.
+  - **Queue Thresholds:** Keep pending queue within **20 to 50 pending invites** (Safe Zone). Never exceed 100+ pending invites.
+  - **The 14-Day Auto-Withdrawal Rule:** Withdraw any sent invite older than 14 days (2 weeks) to reclaim quota and maintain a 65%+ acceptance ratio.
 
 ---
 
