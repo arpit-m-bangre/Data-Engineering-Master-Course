@@ -221,8 +221,11 @@ d:\DE COURSE\
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
-| `README.md` | Job hunt command center and career overview | 18 | 845 |
-| `TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md` | Master 25+ to 32+ LPA inbound/outbound referral and interview cracking playbook | 150 | 7,650 |
+| `README.md` | Job hunt command center and career overview | 22 | 1,120 |
+| `TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md` | Master 25+ to 32+ LPA inbound/outbound referral and interview cracking playbook | 158 | 8,677 |
+| `01_TIER1_HIRING_CALENDAR.xlsx` | Quarterly hiring calendar and recruitment cycles for Tier-1 companies | Binary | 11,552 |
+| `02_TOP_300_COMPANIES_DIRECTORY.xlsx` | Curated directory of top 300 target tech product firms & GCCs | Binary | 38,012 |
+| `HR_CONTACT_DATABASES/` | Local HR databases & reference vault (.gitignored to maintain repo speed) | Vault | Local |
 
 ---
 

@@ -1,0 +1,4 @@
+# Ignore heavy binary contact dumps to keep Git repository fast and clean
+*.xlsx
+*.xls
+*.csv
