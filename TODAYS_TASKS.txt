@@ -3,15 +3,15 @@
    [STATUS: GREEN | DAY TYPE: BUILD | P1: SQL & P7: PROJECT | STREAK DAY 12 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Deploy GitHub & LinkedIn badges, master CTEs & deduplication, build MCA and Simplified Tracker systems!
+[!] MISSION OBJECTIVE: Master Day 20 CTEs & deduplication, solve class tasks/drills, setup MCA architecture and crush live class!
 
 [MUST-WIN 1] Master: Common Table Expressions (CTEs), Recursive CTEs & Deduplication (Day 20 Class Task + Drills)
-[MUST-WIN 2] Build: Complete MCA Academic System setup & Simplified Course Progress Tracker Engine
+[MUST-WIN 2] Build: Complete MCA Academic System setup & Project NexusFin pipeline integration
 [MUST-WIN 3] Prove: 100% execution on 2026-08-24 Class Tasks (5/5) & 14 Practice Drills in SSMS
 [SHOULD-WIN] Deploy GitHub profile badges & publish LinkedIn Authority post (#180DaysOfDataEngineering)
-[BONUS]      English Practice Book Task + Project NexusFin data pipeline integration
+[BONUS]      English Practice Book Task + Post-Class System Sync to Vercel
 
-TOTAL STUDY TIME TODAY: 9.35 Hours (CTEs & Class Tasks: 2.50h | Drills: 1.25h | Systems & Badges: 2.00h | Live Class: 1.25h | Project & English: 1.00h | Systems Engine & Sync: 1.35h)
+TOTAL STUDY TIME TODAY: 9.00 Hours (LinkedIn/Badges: 2.00h | CTEs & Tasks: 2.50h | Drills: 1.25h | Live Class: 1.25h | MCA & NexusFin: 1.25h | English & Sync: 0.75h)
 
 --------------------------------------------------------------------
                 MORNING SYSTEM BOOT & CAREER SHOWCASE
@@ -28,47 +28,32 @@ TOTAL STUDY TIME TODAY: 9.35 Hours (CTEs & Class Tasks: 2.50h | Drills: 1.25h | 
     -> Validate two-way synchronization between simplified tracker and master SSOT brain
     -> [DoD]: Simplified tracker created & functional | Zero drift from SSOT | Documentation locked
 
---------------------------------------------------------------------
-                         DAY SPRINT EXECUTION
---------------------------------------------------------------------
 [-] 01:45 PM - 02:30 PM : Lunch Break & Mid-Day Recovery Walk 🥗💤
     -> Nutritious meal, hydration and complete screen-free break
 
-[ ] 02:30 PM - 03:45 PM : Sprint 3 — Active Recall & Class Consolidation [2026-08-24 | Day 20 CTEs] ✍️
+[-] 02:30 PM - 05:00 PM : Rest, Document Help with Friends & Physical Workout 🤝🥗🏃
+    -> Friend document assistance, mental decompression and physical exercise workout
+
+--------------------------------------------------------------------
+                         DAY SPRINT EXECUTION
+--------------------------------------------------------------------
+[ ] 05:00 PM - 06:15 PM : Sprint 3 — Active Recall & Class Consolidation [2026-08-24 | Day 20 CTEs] ✍️
     -> 15-min closed-book recall of CTE syntax, anchor vs recursive terms & execution lifecycle
     -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-24.sql clean queries into SSMS
     -> Review 01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md 7-step guide and interview traps
     -> [DoD]: CTE queries validated in SSMS | Revision note fully absorbed | Bug traps logged
 
-[ ] 03:45 PM - 05:00 PM : Sprint 4 — Solve Faculty Class Tasks [2026-08-24_CLASS_TASK.SQL] 💻
+[ ] 06:15 PM - 07:30 PM : Sprint 4 — Solve Faculty Class Tasks [2026-08-24_CLASS_TASK.SQL] 💻
     -> Execute Phase 0 table setup and test data seeding in SSMS (Emp, StudentInfo, Orders)
     -> Solve Task 1 to 5 using strictly Common Table Expressions (WITH ... AS) and Window Functions
     -> Implement safe CTE-based in-place duplicate deletion using ROW_NUMBER() OVER (PARTITION BY ...)
     -> [DoD]: 5/5 tasks executed cleanly in SSMS | Solutions saved to 04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL
 
---------------------------------------------------------------------
-                   HEALTH & SOCIAL RECOVERY BLOCK
---------------------------------------------------------------------
-[-] 05:00 PM - 05:45 PM : Exercise, Physical Workout & Recovery Walk 🏃
-    -> Strength training, brisk walking, mobility or sport; shower & posture reset
-
-[-] 05:45 PM - 06:30 PM : Friends, Family & Tea Relaxation Window 🤝☕
-    -> Guilt-free social recovery & tea; return sharp at 06:30 PM
-
---------------------------------------------------------------------
-                 DRILLS & ACADEMIC EXPANSION BLOCK
---------------------------------------------------------------------
-[ ] 06:30 PM - 07:45 PM : Sprint 5 — Timed Interview & Practice Drills [2026-08-24_QUESTIONS.SQL] 💪
+[ ] 07:30 PM - 08:45 PM : Sprint 5 — Timed Interview & Practice Drills [2026-08-24_QUESTIONS.SQL] 💪
     -> Complete 14 targeted CTE & deduplication problems under strict interview conditions
     -> Solve without AI or notes; verify execution plans and output row counts in SSMS
     -> Re-solve any failed drill from blank query editor until 100% mastered
     -> [DoD]: 14/14 questions attempted in 05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL
-
-[ ] 07:45 PM - 08:45 PM : Sprint 6 — MCA Academic System & Semester Management Engine 🎓
-    -> Setup dedicated MCA directory architecture, semester roadmap, and subject workspaces
-    -> Structure subject modules (Advanced DBMS, Algorithms, OS, Cloud, Web Technologies)
-    -> Build MCA assignment and exam preparation tracker with deadline alert milestones
-    -> [DoD]: MCA workspace operational | Semester syllabus mapped | Study backlog connected
 
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
@@ -82,23 +67,25 @@ TOTAL STUDY TIME TODAY: 9.35 Hours (CTEs & Class Tasks: 2.50h | Drills: 1.25h | 
     -> [DoD]: 100% active class attendance | Raw notes secured for post-class ingestion
 
 --------------------------------------------------------------------
-                  POST-CLASS NIGHT SYNC & REST BLOCK
+                 NIGHT ENGINEERING & SYSTEM SYNC BLOCK
 --------------------------------------------------------------------
 [-] 10:15 PM - 10:30 PM : Post-Class Quick Stretch & Hydration Window ☕
-    -> Quick stretch, hydration transition to final evening sprint
+    -> Quick stretch, hydration transition to final evening sprints
 
-[ ] 10:30 PM - 11:30 PM : Sprint 7 — Production Project / NexusFin & English Communication 🏗️🎙️
-    -> Implement NexusFin transactional deduplication CTE pipeline module
+[ ] 10:30 PM - 11:45 PM : Sprint 6 — MCA Academic System & Project NexusFin Engine 🎓🏗️
+    -> Setup dedicated MCA directory architecture, semester roadmap, and subject workspaces
+    -> Structure subject modules (Advanced DBMS, Algorithms, OS, Cloud, Web Technologies)
+    -> Implement NexusFin transactional deduplication CTE pipeline module in SSMS
+    -> [DoD]: MCA workspace operational | NexusFin pipeline updated | Architecture documented
+
+[ ] 11:45 PM - 12:30 AM : Sprint 7 — English Communication & Final System Sync (Streak Day 12 🔥) 🎙️🚀
     -> Complete English Practice Book Task (125-task series) & record 2-min verbal explanation
-    -> [DoD]: Project code updated | English task completed | STAR interview story documented
-
-[ ] 11:30 PM - 11:45 PM : Evidence Sync, GitHub Push & Vercel Trigger (Streak Day 12 🔥) 🚀
     -> Sync Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Commit and push verified evidence to GitHub; confirm live Vercel deploy
 
-[-] 11:45 PM - 07:30 AM : Deep Sleep & Biological Recovery Window 🌙💤
-    -> 7 hours 45 minutes of protected restorative sleep; cockpit fully shut down
+[-] 12:30 AM - 08:00 AM : Deep Sleep & Biological Recovery Window 🌙💤
+    -> 7 hours 30 minutes of protected restorative sleep; cockpit fully shut down
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
