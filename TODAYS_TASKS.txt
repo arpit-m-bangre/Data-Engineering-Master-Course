@@ -16,13 +16,13 @@ TOTAL STUDY TIME TODAY: 9.35 Hours (CTEs & Class Tasks: 2.50h | Drills: 1.25h | 
 --------------------------------------------------------------------
                 MORNING SYSTEM BOOT & CAREER SHOWCASE
 --------------------------------------------------------------------
-[ ] 11:45 AM - 12:45 PM : Sprint 1 — LinkedIn Authority & GitHub Profile Badges Showcase 🚀
+[x] 11:45 AM - 12:45 PM : Sprint 1 — LinkedIn Authority & GitHub Profile Badges Showcase 🚀
     -> Design and integrate verified GitHub profile badges (tech stack, shields, stats, streak counter)
     -> Draft and publish LinkedIn #180DaysOfDataEngineering post on CTEs & In-Place Deduplication
     -> Send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon)
     -> [DoD]: Badges live on GitHub profile | LinkedIn post published | 3 senior comments added
 
-[ ] 12:45 PM - 01:45 PM : Sprint 2 — Simplified Tracker System Architecture & Build 📊
+[x] 12:45 PM - 01:45 PM : Sprint 2 — Simplified Tracker System Architecture & Build 📊
     -> Design and initialize lightweight, high-speed progress tracker for rapid daily visibility
     -> Integrate simplified module checklist with automated metrics and sprint status indicators
     -> Validate two-way synchronization between simplified tracker and master SSOT brain
