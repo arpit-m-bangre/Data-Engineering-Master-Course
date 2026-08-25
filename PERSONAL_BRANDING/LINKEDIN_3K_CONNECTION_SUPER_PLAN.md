@@ -112,10 +112,11 @@ flowchart TD
 - Every connection note MUST customize: `[Name]`, `[Company]`, `[Specific Tech Stack]`, and `[1 observation about their work]`.
 - Minimum 40% word variation between messages sent in the same day.
 
-**Law 5 — Weekly Pending Request Cleanup (Every Sunday):**
+**Law 5 — Weekly Pending Request Cleanup & Safe Zone Thresholds (Every Sunday):**
 
-- `My Network -> Manage Invitations -> Sent` -> Withdraw all requests older than 14 days.
-- Keep pending sent requests BELOW 150 at all times. (Above 150 = LinkedIn spam flag zone.)
+- `My Network -> Manage Invitations -> Sent` -> Withdraw all requests older than 14 days (2 weeks).
+- **🛡️ Queue Safe Zone:** Keep pending queue strictly within **20 to 50 pending invites**.
+- **🚫 Danger Threshold:** NEVER allow pending sent requests to exceed **100+** at any time. (Above 100 = LinkedIn algorithm flag zone & degraded invitation acceptance ratio).
 
 **Law 6 — Safe Profile Viewing Limits:**
 
