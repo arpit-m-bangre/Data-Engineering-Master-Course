@@ -3,7 +3,7 @@
    [STATUS: GREEN | DAY TYPE: BUILD | P1: SQL & P7: PROJECT | STREAK DAY 12 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: 100% Zero-Compromise Mission — Crush Day 21 Live Class, master Day 20 CTEs re-write & revision, solve all tasks/drills, setup MCA system and build NexusFin engine!
+[!] MISSION OBJECTIVE: 100% Zero-Compromise 9.00-Hour Full Study Mission — Crush Day 21 Live Class, master Day 20 CTEs re-write & revision, solve all tasks/drills, setup MCA architecture and build NexusFin engine!
 
 [MUST-WIN 1] Master: Common Table Expressions (CTEs), Recursive CTEs & Deduplication (Day 20 Note Re-write + Revision Note)
 [MUST-WIN 2] Build: Complete MCA Academic System setup & Project NexusFin pipeline integration
@@ -11,7 +11,7 @@
 [SHOULD-WIN] Live Class Day 21 active attendance & raw note ingestion
 [BONUS]      English Practice Book Task + Post-Class System Sync & Vercel Deploy
 
-TOTAL STUDY TIME TODAY: 7.75 Hours (Morning: 2.00h | Live Class: 1.25h | Note Re-write & Rev: 1.25h | Tasks & Drills: 1.25h | MCA & NexusFin: 1.25h | English & Sync: 0.75h)
+TOTAL STUDY TIME TODAY: 9.00 Hours (Morning: 2.00h | Live Class: 1.25h | Note Re-write & Rev: 1.50h | Tasks & Drills: 1.50h | MCA & NexusFin: 1.75h | English & Sync: 1.00h)
 
 --------------------------------------------------------------------
                 MORNING SYSTEM BOOT & CAREER SHOWCASE
@@ -51,31 +51,31 @@ TOTAL STUDY TIME TODAY: 7.75 Hours (Morning: 2.00h | Live Class: 1.25h | Note Re
 --------------------------------------------------------------------
                  POST-CLASS NIGHT ENGINEERING BLOCK
 --------------------------------------------------------------------
-[ ] 10:15 PM - 11:30 PM : Sprint 3 — Active Recall, Note Re-write & 7-Step Revision [2026-08-24 | Day 20 CTEs] ✍️
+[ ] 10:15 PM - 11:45 PM : Sprint 3 — Active Recall, Note Re-write & 7-Step Revision [2026-08-24 | Day 20 CTEs] ✍️
     -> 15-min closed-book recall of CTE syntax, anchor vs recursive terms & execution lifecycle
     -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-24.sql clean queries into SSMS
     -> Review 01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md 7-step guide and interview traps
     -> [DoD]: CTE queries validated in SSMS | Revision note fully absorbed | Bug traps logged
 
-[ ] 11:30 PM - 12:45 AM : Sprint 4 — Solve Faculty Class Tasks & Timed Practice Drills [2026-08-24] 💻💪
+[ ] 11:45 PM - 01:15 AM : Sprint 4 — Solve Faculty Class Tasks & Timed Practice Drills [2026-08-24] 💻💪
     -> Solve Task 1 to 5 in 04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL using CTEs & deduplication
     -> Complete 14 targeted CTE & deduplication practice drills in 05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL
     -> Verify execution plans and output row counts in SSMS
     -> [DoD]: 5/5 class tasks + 14/14 practice drills executed cleanly in SSMS
 
-[ ] 12:45 AM - 02:00 AM : Sprint 5 — MCA Academic System & Project NexusFin Engine 🎓🏗️
+[ ] 01:15 AM - 03:00 AM : Sprint 5 — MCA Academic System & Project NexusFin Engine 🎓🏗️
     -> Setup dedicated MCA directory architecture, semester roadmap, and subject workspaces
     -> Structure subject modules (Advanced DBMS, Algorithms, OS, Cloud, Web Technologies)
     -> Implement NexusFin transactional deduplication CTE pipeline module in SSMS
     -> [DoD]: MCA workspace operational | NexusFin pipeline updated | Architecture documented
 
-[ ] 02:00 AM - 02:45 AM : Sprint 6 — English Practice Book & Final System Sync (Streak Day 12 🔥) 🎙️🚀
+[ ] 03:00 AM - 04:00 AM : Sprint 6 — English Practice Book & Final System Sync (Streak Day 12 🔥) 🎙️🚀
     -> Complete English Practice Book Task (125-task series) & record verbal explanation
     -> Sync Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Commit and push verified evidence to GitHub; confirm live Vercel deploy
 
-[-] 02:45 AM - 09:45 AM : Deep Sleep & Biological Recovery Window 🌙💤
+[-] 04:00 AM - 11:00 AM : Deep Sleep & Biological Recovery Window 🌙💤
     -> 7 hours of protected restorative sleep; cockpit fully shut down
 
 ====================================================================
