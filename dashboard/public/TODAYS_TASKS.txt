@@ -1,17 +1,16 @@
 ====================================================================
                   DAILY MISSION: 25 AUG 2026 (TUESDAY)
-   [STATUS: GREEN | DAY TYPE: BUILD | P1: SQL & P7: PROJECT | STREAK DAY 12 🔥]
+   [STATUS: RECOVERY | DAY TYPE: HEALTH-FIRST | STREAK DAY 12 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: 100% Zero-Compromise 9.00-Hour Full Study Mission — Crush Day 21 Live Class, master Day 20 CTEs re-write & revision, solve all tasks/drills, setup MCA architecture and build NexusFin engine!
+[!] MISSION OBJECTIVE: Attend Live Class, lock tonight's raw notes, execute Day 12 streak sync, and trigger early biological recovery sleep!
 
-[MUST-WIN 1] Master: Common Table Expressions (CTEs), Recursive CTEs & Deduplication (Day 20 Note Re-write + Revision Note)
-[MUST-WIN 2] Build: Complete MCA Academic System setup & Project NexusFin pipeline integration
-[MUST-WIN 3] Prove: 100% execution on 2026-08-24 Class Tasks (5/5) & 14 Practice Drills in SSMS
-[SHOULD-WIN] Live Class Day 21 active attendance & raw note ingestion
-[BONUS]      English Practice Book Task + Post-Class System Sync & Vercel Deploy
+[MUST-WIN 1] Live Class: Attend Day 21 (LEAD/LAG Window Functions) & secure raw queries
+[MUST-WIN 2] Streak: Execute Git commit & Vercel deploy for Streak Day 12
+[MUST-WIN 3] Recovery: Lights out by 10:30 PM for deep fever recovery & immune restoration
+[LOCKED FOR MORNING] Day 20 CTE Note Re-write + 5/5 Class Tasks + 14 Drills locked for 08:00 AM tomorrow
 
-TOTAL STUDY TIME TODAY: 9.00 Hours (Morning: 2.00h | Live Class: 1.25h | Note Re-write & Rev: 1.50h | Tasks & Drills: 1.50h | MCA & NexusFin: 1.75h | English & Sync: 1.00h)
+TOTAL STUDY TIME TODAY: 3.25 Hours (Morning Sprints: 2.00h | Live Class: 1.25h | Health Recovery Mode)
 
 --------------------------------------------------------------------
                 MORNING SYSTEM BOOT & CAREER SHOWCASE
@@ -28,57 +27,30 @@ TOTAL STUDY TIME TODAY: 9.00 Hours (Morning: 2.00h | Live Class: 1.25h | Note Re
     -> Validate two-way synchronization between simplified tracker and master SSOT brain
     -> [DoD]: Simplified tracker created & functional | Zero drift from SSOT | Documentation locked
 
-[-] 01:45 PM - 02:30 PM : Lunch Break & Mid-Day Recovery Walk 🥗💤
-    -> Nutritious meal, hydration and complete screen-free break
-
-[-] 02:30 PM - 05:00 PM : Rest, Document Help with Friends & Physical Workout 🤝🥗🏃
-    -> Friend document assistance, mental decompression and physical exercise workout
-
-[-] 05:00 PM - 07:30 PM : Friend Assistance, Social Support & Dinner Window 🤝🥗🍽️
-    -> Assisted friend with personal work, had dinner, and recharged for evening sprint
-
-[-] 07:30 PM - 09:00 PM : Personal Errand & Travel Window 🚗💨
-    -> Handled personal outside errands; returning refreshed for live class
+[-] 01:45 PM - 09:00 PM : Lunch, Workout, Friend Assistance & Travel Window 🥗🤝🚗
+    -> Nutritional recharge, family/friend support, and evening errands
 
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 21) 🎓
-    -> Live lecture: Advanced SQL Query Optimization, Indexing or Subquery Engine
+[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 21) 🎓
+    -> Live lecture: LEAD(), LAG() Value Window Functions & Aggregates
     -> Capture raw queries, faculty interview tips & mark flags for tomorrow's consolidation
     -> [DoD]: 100% active class attendance | Raw notes secured for post-class ingestion
 
 --------------------------------------------------------------------
-                 POST-CLASS NIGHT ENGINEERING BLOCK
+              HEALTH RECOVERY & STREAK LOCK BLOCK (OPTION 1)
 --------------------------------------------------------------------
-[ ] 10:15 PM - 11:45 PM : Sprint 3 — Active Recall, Note Re-write & 7-Step Revision [2026-08-24 | Day 20 CTEs] ✍️
-    -> 15-min closed-book recall of CTE syntax, anchor vs recursive terms & execution lifecycle
-    -> Re-write 01_SQL/01_CLASS_NOTES/2026-08-24.sql clean queries into SSMS
-    -> Review 01_SQL/03_REVISION_NOTES/2026-08-24_REVISION.md 7-step guide and interview traps
-    -> [DoD]: CTE queries validated in SSMS | Revision note fully absorbed | Bug traps logged
-
-[ ] 11:45 PM - 01:15 AM : Sprint 4 — Solve Faculty Class Tasks & Timed Practice Drills [2026-08-24] 💻💪
-    -> Solve Task 1 to 5 in 04_CLASS_TASKS/2026-08-24_CLASS_TASK.SQL using CTEs & deduplication
-    -> Complete 14 targeted CTE & deduplication practice drills in 05_INDEX_WISE_QUESTIONS/2026-08-24_QUESTIONS.SQL
-    -> Verify execution plans and output row counts in SSMS
-    -> [DoD]: 5/5 class tasks + 14/14 practice drills executed cleanly in SSMS
-
-[ ] 01:15 AM - 03:00 AM : Sprint 5 — MCA Academic System & Project NexusFin Engine 🎓🏗️
-    -> Setup dedicated MCA directory architecture, semester roadmap, and subject workspaces
-    -> Structure subject modules (Advanced DBMS, Algorithms, OS, Cloud, Web Technologies)
-    -> Implement NexusFin transactional deduplication CTE pipeline module in SSMS
-    -> [DoD]: MCA workspace operational | NexusFin pipeline updated | Architecture documented
-
-[ ] 03:00 AM - 04:00 AM : Sprint 6 — English Practice Book & Final System Sync (Streak Day 12 🔥) 🎙️🚀
-    -> Complete English Practice Book Task (125-task series) & record verbal explanation
-    -> Sync Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
+[ ] 10:15 PM - 10:30 PM : Sprint 3 — Raw Note Save, Medicine & Streak Push (Day 12 🔥) 💊🚀
+    -> Paste/save raw lecture queries into 01_SQL/01_CLASS_NOTES/2026-08-25.sql
+    -> Take fever medication and warm water
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
-    -> Commit and push verified evidence to GitHub; confirm live Vercel deploy
+    -> Push verified Day 12 streak to GitHub & live Vercel deploy
 
-[-] 04:00 AM - 11:00 AM : Deep Sleep & Biological Recovery Window 🌙💤
-    -> 7 hours of protected restorative sleep; cockpit fully shut down
+[-] 10:30 PM - 07:30 AM : Deep Biological Fever Recovery & Protected Sleep 🌙💤
+    -> 9 hours of restorative healing sleep; body resets for fresh 08:00 AM morning battle
 
 ====================================================================
-*Rules: Must Win -> Should Win -> Bonus | Zero Dropped Targets | Full Integrity*
-*Daily Quote: "When consistency meets uncompromising discipline, capability compounds toward 32+ LPA."*
+*Rules: Health-First MED | Streak Preserved | Zero Dropped Targets (Morning Locked)*
+*Daily Quote: "Rest is part of the engineering process. Heal tonight, dominate tomorrow."*
 ====================================================================
