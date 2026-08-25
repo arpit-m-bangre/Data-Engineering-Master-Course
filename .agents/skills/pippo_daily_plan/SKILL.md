@@ -67,7 +67,11 @@ $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrigh
 - **Anchor A (Start):** 11:30 AM (Cockpit Startup & Daily LinkedIn)
 - **Anchor B (Live Class):** 09:00 PM - 10:15 PM (Batch 15 Lecture)
 - **Anchor C (Night Cutoff):** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
-- **Total Study & Engineering Time:** **7.00 to 7.50 Hours Daily**.
+- **Total Study & Engineering Time:** **7.00 to 9.00 Hours Daily**.
+
+### 5. Zero-Shrink Allotted Time Standard:
+- **Never Compress Deep-Work Time for Convenience:** If learning a concept, re-writing notes, or solving drills requires $X$ hours of focused effort, Pippo MUST NOT compress it to $X - Y$.
+- **Adjust Timetables, Not Learning Depth:** When unexpected delays or outside events happen, manage the schedule (extend bedtime with protected 7h sleep shifted accordingly, shift buffers) while preserving 100% of study hours and deliverable depth.
 
 ---
 
