@@ -493,7 +493,9 @@ When your free Premium ends on **20 November 2026**:
 1. **Organic Connection Velocity:** Shift to **8–10 high-precision personalized invites/day** (Max 50/week).
 2. **The "Top Comment" Inbound Magnet:** Leave early, insightful 3-line architectural comments on top creators' posts to generate **20–30 daily incoming profile views** without sending invites.
 3. **Network Harvesting:** You will already be 1st-degree connected to 1,000+ Lead DEs—**direct 1st-degree messages on LinkedIn Free are 100% free and unlimited forever!**
-4. **Weekly Hygiene:** Always withdraw pending sent invites older than 14 days every Sunday.
+4. **Weekly Hygiene & Safe Zone Protocol:**
+   - **Queue Safe Zone:** Maintain pending queue strictly between **20 to 50 pending invites** (Safe Zone). Never exceed 100+ pending invites.
+   - **14-Day Auto-Withdrawal:** Always withdraw pending sent invites older than 14 days every Sunday to protect acceptance ratio above 65%.
 
 ---
 
