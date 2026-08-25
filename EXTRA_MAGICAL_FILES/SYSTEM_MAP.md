@@ -43,6 +43,7 @@ d:\DE COURSE\
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- AWS S3, IAM & Azure Data Services (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (Upcoming)
+├── JOB_HUNT/                     <-- Tier-1 Job Hunt, Referral Engine & 25+ to 32+ LPA Playbook (2 Files)
 ├── LEARNING_DIARY/               <-- Central Course Brain & SSOT Analytics Center (9 Files)
 ├── .agents/                      <-- Pippo's Constitution, Skills, Templates & Rules (13 Files)
 ├── EXTRA_MAGICAL_FILES/          <-- Strategic Career Vault, Badges & Chat Archives (33 Files)
@@ -216,7 +217,16 @@ d:\DE COURSE\
 
 ---
 
-### 📍 ZONE 10: `EXTRA_MAGICAL_FILES/` (CAREER ASSETS & CHAT ARCHIVES)
+### 📍 ZONE 10: `JOB_HUNT/` (TIER-1 PLACEMENT & CTC ACCELERATION HUB)
+
+| File Name | Scope & Content | Lines | Size (Bytes) |
+| :--- | :--- | :---: | :---: |
+| `README.md` | Job hunt command center and career overview | 18 | 845 |
+| `TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md` | Master 25+ to 32+ LPA inbound/outbound referral and interview cracking playbook | 150 | 7,650 |
+
+---
+
+### 📍 ZONE 11: `EXTRA_MAGICAL_FILES/` (CAREER ASSETS & CHAT ARCHIVES)
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
