@@ -1,56 +1,96 @@
 ====================================================================
-                  DAILY MISSION: 25 AUG 2026 (TUESDAY)
-   [STATUS: RECOVERY | DAY TYPE: HEALTH-FIRST | STREAK DAY 12 🔥]
+                  DAILY MISSION: 26 AUG 2026 (WEDNESDAY)
+   [STATUS: GREEN | DAY TYPE: BUILD & DEEP PRACTICE | STREAK DAY 13 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Attend Live Class, lock tonight's raw notes, execute Day 12 streak sync, and trigger early biological recovery sleep!
+[!] MISSION OBJECTIVE: Master Value Window Functions (LEAD/LAG), solve 5 faculty enterprise scenarios + 14 practice drills in SSMS, and lock Streak Day 13!
 
-[MUST-WIN 1] Live Class: Attend Day 21 (LEAD/LAG Window Functions) & secure raw queries
-[MUST-WIN 2] Streak: Execute Git commit & Vercel deploy for Streak Day 12
-[MUST-WIN 3] Recovery: Lights out by 10:30 PM for deep fever recovery & immune restoration
-[LOCKED FOR MORNING] Day 20 CTE Note Re-write + 5/5 Class Tasks + 14 Drills locked for 08:00 AM tomorrow
+[MUST-WIN 1] Master: Value Window Functions (LEAD/LAG offsets, defaults, YoY deltas) in SSMS
+[MUST-WIN 2] Build: Solve 5 Faculty Class Tasks (2026-08-25_CLASS_TASK.SQL) with zero errors
+[MUST-WIN 3] Prove: 14/14 Targeted Practice Drills (2026-08-25_QUESTIONS.SQL) solved in SSMS
+[SHOULD-WIN] Publish LinkedIn #180DaysOfDataEngineering post & send 5 Tier-1 DE connections
+[BONUS]      English Practice Book Task 3 & 2-min verbal technical concept walkthrough
 
-TOTAL STUDY TIME TODAY: 3.25 Hours (Morning Sprints: 2.00h | Live Class: 1.25h | Health Recovery Mode)
+TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h | Class Tasks: 1.75h | Drills: 2.00h | English: 0.50h | Live Class: 1.25h | Night Sync: 0.50h)
 
 --------------------------------------------------------------------
-                MORNING SYSTEM BOOT & CAREER SHOWCASE
+                MORNING ROUTINE & PERSONAL COMMITMENTS
 --------------------------------------------------------------------
-[x] 11:45 AM - 12:45 PM : Sprint 1 — LinkedIn Authority & GitHub Profile Badges Showcase 🚀
-    -> Design and integrate verified GitHub profile badges (tech stack, shields, stats, streak counter)
-    -> Draft and publish LinkedIn #180DaysOfDataEngineering post on CTEs & In-Place Deduplication
-    -> Send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon)
-    -> [DoD]: Badges live on GitHub profile | LinkedIn post published | 3 senior comments added
+[-] 09:15 AM - 09:45 AM : Wake-Up, Fresh Up, Brush & Morning Tea ☕
+    -> Morning hydration, oral hygiene, and warm tea activation
 
-[x] 12:45 PM - 01:45 PM : Sprint 2 — Simplified Tracker System Architecture & Build 📊
-    -> Design and initialize lightweight, high-speed progress tracker for rapid daily visibility
-    -> Integrate simplified module checklist with automated metrics and sprint status indicators
-    -> Validate two-way synchronization between simplified tracker and master SSOT brain
-    -> [DoD]: Simplified tracker created & functional | Zero drift from SSOT | Documentation locked
+[-] 09:45 AM - 10:15 AM : House Cleaning & Living Space Reset 🧹✨
+    -> Sweep, dust, organize workspace cockpit and living space
 
-[-] 01:45 PM - 09:00 PM : Lunch, Workout, Friend Assistance & Travel Window 🥗🤝🚗
-    -> Nutritional recharge, family/friend support, and evening errands
+[-] 10:15 AM - 11:00 AM : Skin Care, Bath & Grooming Routine 🚿✨
+    -> Refreshing shower, skin care ritual, grooming, and fresh attire
+
+[-] 11:00 AM - 01:00 PM : Gift Packing for Semi & Nidhi Window 🎁🎀
+    -> Dedicated personal time: wrap and pack special gifts for Semi and Nidhi with care
+
+[-] 01:00 PM - 02:00 PM : Lunch Break & Pre-Battle Mental Recharge Window 🥗💤
+    -> Wholesome nutritious meal, hydration, and short power recharge before engineering battle
+
+--------------------------------------------------------------------
+                        DAY SPRINT EXECUTION
+--------------------------------------------------------------------
+[ ] 02:00 PM - 02:30 PM : Sprint 1 — Daily LinkedIn Authority & Tier-1 Networking (P8) 🚀
+    -> Draft and publish LinkedIn #180DaysOfDataEngineering post on Value Window Functions (LEAD/LAG & Year-over-Year Delta Pipelines)
+    -> Send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft)
+    -> Leave 3 high-value technical comments on Lead Data Architect posts
+    -> [DoD]: Post published | 5 targeted connections sent | 3 technical comments engaged
+
+[ ] 02:30 PM - 04:00 PM : Sprint 2 — Class Note Re-write & 7-Step Revision Read [2026-08-25] (Day 21) ✍️
+    -> Manually re-write raw SQL lecture note in SSMS (01_SQL/01_CLASS_NOTES/2026-08-25.sql)
+    -> Internalize LEAD(), LAG(), PARTITION BY, and running aggregate window mechanics
+    -> Study 7-step revision note (01_SQL/03_REVISION_NOTES/2026-08-25_REVISION.md) & interview traps
+    -> [DoD]: Note re-written & executed clean in SSMS | Revision read completed | Edge cases logged
+
+[ ] 04:00 PM - 05:45 PM : Sprint 3 — Solve Faculty Class Tasks in SSMS [2026-08-25_CLASS_TASK.SQL] 💻
+    -> Scenario 1: Employee Salary Analysis (Top 2 highest-paid per department in last 3 years)
+    -> Scenario 2: Customer Monthly Orders (>3 orders in 2026 with city rank)
+    -> Scenario 3: Product Sales (Top-selling product per category per month)
+    -> Scenario 4: Employee Joining Trend (Month-over-month difference with LAG)
+    -> Scenario 5: Customer Order Gap (Orders with >=30 days gap) & 50% Order Amount Rule
+    -> [DoD]: All 5 scenarios + homework solved from scratch in SSMS | Zero copy-paste
+
+[-] 05:45 PM - 06:15 PM : Evening Walk, Tea Break & Mental Reset Window ☕🚶‍♂️
+    -> Screen-free outdoor walk, fresh air, evening tea, and cognitive rest
+
+[ ] 06:15 PM - 08:15 PM : Sprint 4 — Perpetual SQL Practice: Solve 14 Practice Drills [2026-08-25_QUESTIONS.SQL] 🎯
+    -> Solve all 14 targeted drills on LEAD, LAG, offsets, default values, and moving aggregations in SSMS
+    -> Test border conditions: First row LAG (NULL), Last row LEAD (NULL), and multi-column PARTITION BY
+    -> [DoD]: 14/14 queries executed cleanly in SSMS | Blank query blocks filled independently
+
+[ ] 08:15 PM - 08:45 PM : Sprint 5 — English Practice Book (Task 3) & Technical Voice Drill 📖🎙️
+    -> Complete English Practice Book Task 3 (3/125 total)
+    -> 2-minute verbal technical walkthrough: Explain LEAD vs LAG and Year-over-Year Delta calculation
+    -> [DoD]: Task 3 written | Verbal explanation recorded/practiced aloud
+
+[-] 08:45 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
+    -> Light nutritious dinner, launch SSMS, setup class notes workspace for Day 22 lecture
 
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[x] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 21) 🎓
-    -> Live lecture: LEAD(), LAG() Value Window Functions & Aggregates
-    -> Capture raw queries, faculty interview tips & mark flags for tomorrow's consolidation
-    -> [DoD]: 100% active class attendance | Raw notes secured for post-class ingestion
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 22) 🎓
+    -> Live lecture: Advanced Window Functions & Analytical SQL
+    -> Capture raw queries, faculty tips, and edge case traps in real time
+    -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
 --------------------------------------------------------------------
-              HEALTH RECOVERY & STREAK LOCK BLOCK (OPTION 1)
+                  POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
-[x] 10:15 PM - 10:30 PM : Sprint 3 — Raw Note Save, Medicine & Streak Push (Day 12 🔥) 💊🚀
-    -> Paste/save raw lecture queries into 01_SQL/01_CLASS_NOTES/2026-08-25.sql
-    -> Take fever medication and warm water
+[ ] 10:15 PM - 10:45 PM : Sprint 6 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
+    -> Sync Master Learning Tracker, Metrics JSON, and System Map
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
-    -> Push verified Day 12 streak to GitHub & live Vercel deploy
+    -> Push verified Day 13 streak to GitHub & trigger live Vercel deploy
+    -> [DoD]: Green build confirmed | Vercel deployed | Dark green GitHub streak logged
 
-[-] 10:30 PM - 07:30 AM : Deep Biological Fever Recovery & Protected Sleep 🌙💤
-    -> 9 hours of restorative healing sleep; body resets for fresh 08:00 AM morning battle
+[-] 10:45 PM - 07:30 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
+    -> 8 hours 45 minutes of protected healing sleep; cockpit fully powered down
 
 ====================================================================
-*Rules: Health-First MED | Streak Preserved | Zero Dropped Targets (Morning Locked)*
-*Daily Quote: "Rest is part of the engineering process. Heal tonight, dominate tomorrow."*
+*Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
+*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 32+ LPA."*
 ====================================================================
