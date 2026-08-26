@@ -145,9 +145,65 @@ Output columns: CustomerID, FirstOrderAmount, SecondOrderAmount, DropPercentage
 */
 
 -- Write your SQL Query below:
+-- table order 
+-- display customer id , first order amount , second order amount ,drop percentage 
+-- prartion by customer id order by order date 
 
+-- ----------------------------------------------------------------------------------------------------
+-- 🐥 PIPPO'S CODE REVIEW & ARCHITECT FEEDBACK (FOR CAP)
+-- ----------------------------------------------------------------------------------------------------
+/*
+⭐ SCORE: 7.5 / 10  (Solid Architectural Intuition!)
 
+🔥 What You Nailed:
+- Perfect intuition using LEAD() with PARTITION BY CustomerID ORDER BY OrderDate!
 
+💡 2 Key Architecture Traps in Initial Attempt:
+1. Row Filtering Trap (Missing Order Anchoring):
+   - Without ROW_NUMBER() = 1, LEAD() evaluates Order 1 -> Order 2, Order 2 -> Order 3, Order 3 -> Order 4.
+   - The question specifically compares "1st Order vs 2nd Order", so we must filter on `OrderNumber = 1`.
+
+2. Drop Math Trap (< 50 vs > 50% Drop):
+   - If Order 1 = 8000 and Order 2 = 3500:
+     Drop Amount = 8000 - 3500 = 4500 (56.25% drop).
+     Since 56.25% > 50%, this is a drop of MORE than 50% (SecondOrder < 50% of FirstOrder).
+   - In the initial query, `... < 50` was checking for drop < 50% instead of `SecondOrder < FirstOrder * 0.50` (Drop > 50%).
+*/
+
+-- [Cap's Initial Attempt]
+WITH CTE AS 
+(
+    SELECT 
+        CustomerID,
+        OrderAmount AS FirstOrderAmount,
+        LEAD(OrderAmount) OVER (PARTITION BY CustomerID ORDER BY OrderDate) AS SecondOrderAmount 
+    FROM Orders 
+)
+SELECT 
+    *,
+    (FirstOrderAmount - SecondOrderAmount) AS Diff,
+    ((FirstOrderAmount - SecondOrderAmount) / FirstOrderAmount) * 100 AS Diff_Percentage 
+FROM CTE 
+WHERE ((FirstOrderAmount - SecondOrderAmount) / FirstOrderAmount) * 100 > 50;
+
+-- [Final Correct Enterprise Production Solution]
+WITH RankedOrdersCTE AS
+(
+    SELECT
+        CustomerID,
+        OrderAmount AS FirstOrderAmount,
+        LEAD(OrderAmount) OVER (PARTITION BY CustomerID ORDER BY OrderDate) AS SecondOrderAmount,
+        ROW_NUMBER() OVER (PARTITION BY CustomerID ORDER BY OrderDate) AS OrderNumber
+    FROM Orders
+)
+SELECT
+    CustomerID,
+    FirstOrderAmount,
+    SecondOrderAmount,
+    ((FirstOrderAmount - SecondOrderAmount) / FirstOrderAmount) * 100.0 AS DropPercentage
+FROM RankedOrdersCTE
+WHERE OrderNumber = 1
+  AND SecondOrderAmount < (FirstOrderAmount * 0.50);
 
 -- ====================================================================================================
 -- 📝 TASK 2: SCENARIO 1 — EMPLOYEE SALARY ANALYSIS (TOP 2 PER DEPT IN LAST 3 YEARS)

@@ -238,6 +238,7 @@ d:\DE COURSE\
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
 | `10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md` | Master 5-Phase Career Plan, 10-Pass Engine & ₹32L Walmart Fleet | 195 | 16,519 |
+| `IG_CONTENT_PLAN/` (4 Files) | Anonymous 210-Day Omnichannel Content Vault (Reels, Carousels, Quizzes) | ~550 | ~55 KB |
 | `GITHUB_ACHIEVEMENTS_AND_BADGES_MASTER_PLAN.md` | Strategy to unlock all 7 GitHub badges + 200-day streak | 71 | 6,479 |
 | `ENTERPRISE_MNC_PROJECT_INITIALIZATION_BLUEPRINT.md`| NexusFin Platform production architecture blueprint | 73 | 5,439 |
 | `MCA_AND_WORK_EXPERIENCE_MANAGEMENT_STRATEGY.md` | ATS profile positioning: B.Sc. + MCA + Data Engineer role | 98 | 8,460 |

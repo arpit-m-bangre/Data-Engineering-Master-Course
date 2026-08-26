@@ -47,7 +47,7 @@ $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrigh
 ### 2. The 8-Pillar Current-Focus & Zero-Omission Standard:
 - **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
 - **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
-- Every daily plan MUST incorporate all 8 core pillars:
+- Every daily plan MUST incorporate all 9 core pillars:
   * [ ] **Pillar 1:** Daily LinkedIn Authority Sprint (30 min: 11:30 AM - 12:00 PM) + Digital Presence Ecosystem syndication.
   * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read (1.50h).
   * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.75h).
@@ -55,7 +55,8 @@ $$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrigh
   * [ ] **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
   * [ ] **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat).
   * [ ] **Pillar 7:** Flagship MNC Project: NexusFin & Enterprise Modules (Integrated in Day/Evening & Weekend Sprints).
-  * [ ] **Pillar 8:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
+  * [ ] **Pillar 8:** Compulsory 210-Day IG / Short-Form Content Publishing (15 min: 10:15 PM - 10:30 PM, 0.0 Study Hr Impact).
+  * [ ] **Pillar 9:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
 
 ### 3. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).

@@ -49,9 +49,10 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Has EXTRA_MAGICAL_FILES/SYSTEM_MAP.md been updated and synchronized? → If NO: update it now.
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
-### GATE F — DAILY SOCIAL PRESENCE & DIGITAL PRESENCE CHECK
+### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
 - [ ] Is the 30-min Daily LinkedIn Authority & Digital Presence Sprint scheduled (11:30 AM - 12:00 PM)? → If NO: add it.
 - [ ] Are targeted connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft) included? → If NO: add them.
+- [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
 
 ---
 
@@ -220,6 +221,7 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 8 p
 6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
 7. **Daily Social Presence & Digital Presence Ecosystem (30 Mins Daily):** Opening sprint of the day (11:30 AM - 12:00 PM). Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft), leave 3 high-value technical comments on Lead Architect posts, and syndicate snippets to Dev.to / GitHub Discussions.
 8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
+9. **Compulsory 210-Day IG / Short-Form Content Publishing (15 Mins Daily - 0.0 Study Hr Impact):** Dedicated fun/recharge slot right after live class (10:15 PM - 10:30 PM). Publish today's scheduled 15-minute asset from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md` (Reels, Carousels, Infographics, Sunday Quizzes) across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: Last priority, 100% compulsory, 0.0 study hour impact.
 
 ---
 

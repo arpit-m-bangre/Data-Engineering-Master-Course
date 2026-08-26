@@ -81,7 +81,12 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
 --------------------------------------------------------------------
                   POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
-[ ] 10:15 PM - 10:45 PM : Sprint 6 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
+[ ] 10:15 PM - 10:30 PM : Sprint 6 — Creative Recharge & 210-Day IG/Shorts Launch Setup (0.0 Study Hr Impact) 📱
+    -> Set up anonymous profile bio & prepare Day 001 Carousel (5 Window Functions Every Data Engineer Must Master)
+    -> Review EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md
+    -> [DoD]: Day 001 asset ready for publishing | 0.0 study hr impact (fun/recharge)
+
+[ ] 10:30 PM - 10:45 PM : Sprint 7 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
     -> Sync Master Learning Tracker, Metrics JSON, and System Map
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Push verified Day 13 streak to GitHub & trigger live Vercel deploy
