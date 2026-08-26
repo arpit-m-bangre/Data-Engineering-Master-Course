@@ -9,23 +9,23 @@
 
 ## 🎭 1. OFFICIAL BRAND IDENTITY & MINIMALIST BIO
 
-### 🧪 Official Brand Profile
-* **Display Name:** `Data Engineering Lab 🧪`
-* **Username / Handle:** `@dataengineering.lab` (Alt: `@dataengineeringlab_`)
-* **Category:** Science & Technology / Engineering
+### 📐 Official Brand Profile
+* **Display Name:** `Data Engineering Craft 📐`
+* **Username / Handle:** `@dataengineering.craft` (Alt: `@dataengineercraft` / `@datacraft.engine`)
+* **Category:** Design & Tech / Engineering Studio
 
 ### 👑 Minimalist Artistic Bio (Locked Standard)
 ```text
-Data Engineering Lab 🧪
-Deconstructing high-scale distributed systems & production query engines.
-Zero fluff. Pure visual architecture & internals.
+Data Engineering Craft 📐
+The art of distributed data systems & high-performance query engines.
+Precision blueprints • Zero fluff • Pure engineering craft.
 ```
 
-### ⚡ Alternative Deep-Tech Bio
+### ⚡ Alternative Architectural Bio
 ```text
-Data Engineering Lab ⚡
-Visual blueprints of enterprise databases, lakehouses & stream pipelines.
-Production traps • System design • Query optimization.
+Data Engineering Craft 📐
+Visualizing the architecture of databases, lakehouses & stream pipelines.
+Production patterns • Internal mechanics • System design.
 ```
 
 ---
