@@ -1,7 +1,7 @@
 # 🗺️ MASTER SYSTEM MAP & EXHAUSTIVE WORKSPACE AUDIT
 ### *The Definitive Structural Inventory, Compliance Matrix & Single Source of Truth*
 **Architect:** Pippo 🐥 | **Lead Candidate:** Captain Arpit Manoj Bangre (Cap) | **Target CTC:** ₹25.0 to ₹48.0+ LPA  
-**Audit Date:** 25 August 2026 | **Workspace:** `d:\DE COURSE\` | **System Integrity Score:** 100% / 100% 🛡️  
+**Audit Date:** 26 August 2026 | **Workspace:** `d:\DE COURSE\` | **System Integrity Score:** 100% / 100% 🛡️  
 
 ---
 
@@ -13,10 +13,10 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 ========================================================================================================
                                  📊 SYSTEM-WIDE AUDIT METRICS
 ========================================================================================================
-  • Total Physical Files Audited    : 137 Files (Zero Omissions, Zero Hallucinations)
+  • Total Physical Files Audited    : 141 Files (Zero Omissions, Zero Hallucinations)
   • Active Core SQL Modules         : 6 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects)
-  • Tracked Practice Questions      : 384 Targeted Drills across 21 Files
-  • Active Class Days Synchronized  : 21 Class Days (2026-08-01 to 2026-08-25)
+  • Tracked Practice Questions      : 398 Targeted Drills across 22 Files
+  • Active Class Days Synchronized  : 22 Class Days (2026-08-01 to 2026-08-26)
   • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7)
   • Unbroken GitHub Streak          : 13 Days (Locked & Deploying to Live Vercel Production)
   • Constitutional Law Compliance   : 100% (19 / 19 Laws Fully Enforced)
@@ -98,6 +98,7 @@ d:\DE COURSE\
 | `2026-08-22.sql` | Day 19: Window Ranking Functions (ROW_NUMBER, DENSE_RANK) | 122 | 5,188 | ✅ Under 220 | Pure SQL |
 | `2026-08-24.sql` | Day 20: CTEs & Atomic Table Deduplication | 128 | 5,585 | ✅ Under 220 | Pure SQL |
 | `2026-08-25.sql` | Day 21: Value Window Functions (LEAD/LAG) & Running Aggregates | 120 | 3,500 | ✅ Under 220 | Pure SQL |
+| `2026-08-26.sql` | Day 22: Conditional Logic (CASE Expressions) & Dynamic Flow | 108 | 3,200 | ✅ Under 220 | Pure SQL |
 
 ---
 
@@ -105,8 +106,8 @@ d:\DE COURSE\
 
 | File Name | Indexed Topics | Size (Bytes) | Purpose |
 | :--- | :---: | :---: | :--- |
-| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 320+ Topics (Cat A–M) | 19,095 | Master relational topic index across all 21 class days |
-| `2026-08-01_INDEX.SQL` to `2026-08-25_INDEX.SQL` (21 Files) | ~15 topics/day | 700 – 2,877 | Standalone daily topic lookup indexes |
+| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 335+ Topics (Cat A–N) | 20,500 | Master relational topic index across all 22 class days |
+| `2026-08-01_INDEX.SQL` to `2026-08-26_INDEX.SQL` (22 Files) | ~15 topics/day | 700 – 2,877 | Standalone daily topic lookup indexes |
 
 ---
 
@@ -136,6 +137,7 @@ d:\DE COURSE\
 | `2026-08-22_REVISION.md` | 214 | 13,793 | Olympic medal podium vs leaderboard ranking ties | ✅ 100% Pure MD |
 | `2026-08-24_REVISION.md` | 317 | 16,067 | Office meeting whiteboard pipelining & deduplication | ✅ 100% Pure MD |
 | `2026-08-25_REVISION.md` | 185 | 8,200 | Train passenger queue lookahead & mirror reflection | ✅ 100% Pure MD |
+| `2026-08-26_REVISION.md` | 195 | 8,900 | Airport security fast-track lane boolean sorting | ✅ 100% Pure MD |
 
 ---
 
@@ -154,6 +156,7 @@ d:\DE COURSE\
 | `2026-08-22_CLASS_TASK.SQL` | 8 Tasks | 139 | 7,775 | Top-N salaries per department & running totals |
 | `2026-08-24_CLASS_TASK.SQL` | 8 Tasks | 146 | 8,234 | Alternating gender, latest order, CTE deduplication |
 | `2026-08-25_CLASS_TASK.SQL` | 6 Tasks | 180 | 6,500 | 50% order drop, 3-yr salary top 2, order gap >=30 days |
+| `2026-08-26_CLASS_TASK.SQL` | 5 Tasks | 170 | 6,200 | Department salary rank tiering, pinned sorting, quarters |
 
 ---
 
@@ -168,6 +171,7 @@ d:\DE COURSE\
 | `2026-08-17_QUESTIONS.SQL` | 21 Drills | 353 | 16,322 | Comprehensive temporal date functions |
 | `2026-08-18_QUESTIONS.SQL` to `2026-08-24_QUESTIONS.SQL` (7 Files) | 14–20 each (175 total) | 163–484 | 10,992–28,075 | Joins, self joins, window functions, CTEs |
 | `2026-08-25_QUESTIONS.SQL` | 14 Drills | 220 | 7,500 | Value window functions (LEAD/LAG) & running totals |
+| `2026-08-26_QUESTIONS.SQL` | 14 Drills | 215 | 7,800 | Simple/Searched CASE, dynamic sorting & NULL arithmetic |
 
 ---
 

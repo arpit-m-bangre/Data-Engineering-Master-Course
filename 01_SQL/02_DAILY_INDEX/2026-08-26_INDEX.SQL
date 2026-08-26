@@ -1,0 +1,16 @@
+-- ====================================================================================================
+-- 📑 DAILY TOPIC INDEX: 2026-08-26 (DAY 22)
+-- 🏢 MODULE 01: SQL Relational Architecture & Query Engine
+-- 🎯 FOCUS: Conditional Logic (CASE Expressions), Conditional Aggregation, NULL Arithmetic & Dynamic Ordering
+-- ====================================================================================================
+
+-- 1. Searched CASE vs Simple CASE syntax and execution semantics
+-- 2. Value categorization and dynamic column aliasing (SalaryTier, CityStatus)
+-- 3. CASE expressions inside Common Table Expressions (CTEs)
+-- 4. Conditional aggregation: GROUP BY status calculated via CASE
+-- 5. Arithmetic operations on nullable columns and handling NULL addition traps
+-- 6. Date difference evaluation combined with NULL presence checking for multi-tier status
+-- 7. Custom dynamic sorting: Pinning specific values to the top via ORDER BY CASE
+-- 8. Department-wise salary rank labeling (1st, 2nd, and common remainder tiers)
+-- 9. Quarter-based order partitioning and seasonal labeling (Q1/Q3 vs Q2/Q4)
+-- 10. Data type consistency rules and implicit conversion priorities across THEN/ELSE branches

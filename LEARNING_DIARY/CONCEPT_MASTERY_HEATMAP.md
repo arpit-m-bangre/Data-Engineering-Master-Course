@@ -153,6 +153,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 13: CONDITIONAL LOGIC & CASE EXPRESSIONS
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C13.1** | Searched CASE vs Simple CASE Syntax & Execution Semantics | MASTERED | Attempting `CASE col WHEN NULL` (fails due to 3-valued logic) | 0 | 🔴 High |
+| **C13.2** | Multi-Tier Categorization & Data Type Precedence | MASTERED | Data type conversion conflict across `THEN` vs `ELSE` branches | 0 | 🔴 High |
+| **C13.3** | Conditional Aggregations via CTE Pipelining | MASTERED | Attempting to reference SELECT `CASE` alias in `WHERE` or `GROUP BY` | 0 | 🔴 High |
+| **C13.4** | NULL Arithmetic Resilience with Custom Fallback Values | MASTERED | `M1 + M2` returning NULL when single operand is NULL | 0 | 🔴 High |
+| **C13.5** | Dynamic Custom Priority Sorting via `ORDER BY CASE` | MASTERED | Sorting performance degradation on unindexed billion-row tables | 0 | 🟡 Medium |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:

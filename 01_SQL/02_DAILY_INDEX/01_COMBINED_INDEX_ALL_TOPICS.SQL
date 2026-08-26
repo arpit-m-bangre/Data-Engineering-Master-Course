@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 20 Class Note Files (2026-08-01 to 2026-08-25)
+Total Modules / Files: 21 Class Note Files (2026-08-01 to 2026-08-26)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -205,6 +205,15 @@ SECTION 1: DAILY CLASS BREAKDOWN
     21.6 Multi-Row Boundary Scanning (Prev < Current < Next Sequence Logic)
     21.7 Advanced Scenarios: Customer Order Gaps (DATEDIFF >= 30 days) & 50% Order Drop Analysis
 
+22. DAY 22 (AUGUST 26) - CONDITIONAL LOGIC (CASE EXPRESSIONS) & DYNAMIC FLOW
+    22.1 Searched CASE vs Simple CASE Expression Syntax & Execution Flow
+    22.2 Multi-Tier Categorization & Labeling (Salary Tiers, City Status)
+    22.3 Conditional Aggregations: GROUP BY Calculated CASE Status via CTEs
+    22.4 NULL Arithmetic Handling & Resilient Addition Operations
+    22.5 Temporal Status Evaluation: Multi-Condition Date Intervals with DATEDIFF
+    22.6 Custom Dynamic Sorting: ORDER BY CASE Expression (Pinned Priority Sorting)
+    22.7 Tier-1 Interview Scenarios: Department Salary Tiering & Quarter Segmentation
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -308,11 +317,19 @@ L. COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION PIPELINES
    • Alternating Sequence Generation (Gender M/F/M/F) & Latest Event Ranking
 
 M. VALUE WINDOW FUNCTIONS & RUNNING AGGREGATES
-   • LEAD() and LAG() Inter-Row Peeking Mechanics
-   • Offset and Default Value Parameter Customization
-   • Inventory Shift & Period-over-Period Delta Analysis
-   • Cumulative Running Totals & Moving Window Aggregates (SUM, MIN, MAX)
-   • Multi-Row Sequence & Sandwiched Boundary Analytics
+    • LEAD() and LAG() Inter-Row Peeking Mechanics
+    • Offset and Default Value Parameter Customization
+    • Inventory Shift & Period-over-Period Delta Analysis
+    • Cumulative Running Totals & Moving Window Aggregates (SUM, MIN, MAX)
+    • Multi-Row Sequence & Sandwiched Boundary Analytics
+
+N. CONDITIONAL LOGIC & CASE EXPRESSIONS
+    • Searched CASE vs Simple CASE Syntax & Execution Semantics
+    • Multi-Condition Boolean Evaluation Chains (WHEN ... THEN ... ELSE ... END)
+    • Conditional Grouping & Aggregations via CTE Pipelines
+    • Resilient NULL Arithmetic Handling (Simulating COALESCE)
+    • Dynamic Sorting Patterns: ORDER BY CASE for Priority Pinning
+    • Multi-Tier Temporal Status Labeling (DATEDIFF + NULL Checks)
+    • Seasonal Quarter & Business Window Segmentation
 
 ================================================================================
-
