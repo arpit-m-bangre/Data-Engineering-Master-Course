@@ -13,12 +13,12 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 ========================================================================================================
                                  📊 SYSTEM-WIDE AUDIT METRICS
 ========================================================================================================
-  • Total Physical Files Audited    : 132 Files (Zero Omissions, Zero Hallucinations)
+  • Total Physical Files Audited    : 137 Files (Zero Omissions, Zero Hallucinations)
   • Active Core SQL Modules         : 6 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects)
-  • Tracked Practice Questions      : 370 Targeted Drills across 20 Files
-  • Active Class Days Synchronized  : 20 Class Days (2026-08-01 to 2026-08-24)
+  • Tracked Practice Questions      : 384 Targeted Drills across 21 Files
+  • Active Class Days Synchronized  : 21 Class Days (2026-08-01 to 2026-08-25)
   • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7)
-  • Unbroken GitHub Streak          : 11 Days (Locked & Deploying to Live Vercel Production)
+  • Unbroken GitHub Streak          : 13 Days (Locked & Deploying to Live Vercel Production)
   • Constitutional Law Compliance   : 100% (19 / 19 Laws Fully Enforced)
 ========================================================================================================
 ```
@@ -30,12 +30,12 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 ```text
 d:\DE COURSE\
 ├── 00_SYLLABUS/                  <-- Master Curriculum, Roadmaps & Snowflake-dbt Syllabus (7 Files)
-├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (98 Files)
-│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (20 Files + 1 Asset)
-│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (21 Files)
-│   ├── 03_REVISION_NOTES/        <-- 7-Step interactive Markdown deep-dives (20 Files)
-│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (10 Files)
-│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (20 Files / 370 Drills)
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (103 Files)
+│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (21 Files + 1 Asset)
+│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (22 Files)
+│   ├── 03_REVISION_NOTES/        <-- 7-Step interactive Markdown deep-dives (21 Files)
+│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (11 Files)
+│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (21 Files / 384 Drills)
 │   └── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
 ├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging & Delta Transformations (Upcoming)
@@ -68,14 +68,14 @@ d:\DE COURSE\
 | `SNOWFLAKE_DBT_SYLLABUS.md` | 15,856 | 220 | Detailed Snowflake & dbt modern data stack syllabus | ✅ Passed |
 | `SNOWFLAKE_DBT_SYLLABUS.pdf` | 273,173 | — | Snowflake-dbt enterprise curriculum PDF | ✅ Passed |
 | `SYLLABUS_AUDIT_REPORT.md` | 2,428 | 33 | Verification audit of curriculum coverage | ✅ Passed |
-| `TRUE_2027_SYLLABUS.md` | 4,507 | 63 | Realistic 2027 enterprise hiring syllabus | ✅ Passed |
+| `SYLLABUS_COMPLETION_REPORT.md` | 2,122 | 29 | Audit of covered vs pending modules | ✅ Passed |
 
 ---
 
-### 📍 ZONE 2: `01_SQL/01_CLASS_NOTES/` (CLEAN EXECUTABLE T-SQL)
-*Enforcing Constitutional Law #12: $\le 220$ lines, uppercase SQL keywords, concise 1–2 line theory comments, zero bloat.*
+### 📍 ZONE 2: `01_SQL/01_CLASS_NOTES/` (CLEAN T-SQL CLASS SCRIPTS)
+*Enforcing Law #2 (Strict Uppercase Keywords) and Law #12 (Under 220 lines, Zero Bloat).*
 
-| File Name | Date / Topic | Lines | Size (Bytes) | Law #12 Audit | Status |
+| File Name | Topic Covered | Lines | Size (Bytes) | Line Compliance | Syntax Standard |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | `2026-08-01.sql` | Day 1: DDL/DML/DQL Taxonomy & Storage | 100 | 4,658 | ✅ Under 220 | Pure SQL |
 | `2026-08-02.sql` | Day 2: WHERE Filters & LIKE Wildcards | 104 | 7,222 | ✅ Under 220 | Pure SQL |
@@ -97,6 +97,7 @@ d:\DE COURSE\
 | `2026-08-21.sql` | Day 18: Self Joins & Banking Fraud Anomaly Engine | 123 | 5,029 | ✅ Under 220 | Pure SQL |
 | `2026-08-22.sql` | Day 19: Window Ranking Functions (ROW_NUMBER, DENSE_RANK) | 122 | 5,188 | ✅ Under 220 | Pure SQL |
 | `2026-08-24.sql` | Day 20: CTEs & Atomic Table Deduplication | 128 | 5,585 | ✅ Under 220 | Pure SQL |
+| `2026-08-25.sql` | Day 21: Value Window Functions (LEAD/LAG) & Running Aggregates | 120 | 3,500 | ✅ Under 220 | Pure SQL |
 
 ---
 
@@ -104,8 +105,8 @@ d:\DE COURSE\
 
 | File Name | Indexed Topics | Size (Bytes) | Purpose |
 | :--- | :---: | :---: | :--- |
-| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 300+ Topics (Cat A–L) | 18,483 | Master relational topic index across all 20 class days |
-| `2026-08-01_INDEX.SQL` to `2026-08-24_INDEX.SQL` (20 Files) | ~15 topics/day | 700 – 2,877 | Standalone daily topic lookup indexes |
+| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 320+ Topics (Cat A–M) | 19,095 | Master relational topic index across all 21 class days |
+| `2026-08-01_INDEX.SQL` to `2026-08-25_INDEX.SQL` (21 Files) | ~15 topics/day | 700 – 2,877 | Standalone daily topic lookup indexes |
 
 ---
 
@@ -113,7 +114,7 @@ d:\DE COURSE\
 *Enforcing Law #9 (Pure Markdown, Zero HTML) and Law #10 (Clean ASCII Math, Zero LaTeX).*
 
 | File Name | Lines | Size (Bytes) | Key Real-World Analogy & Mental Model | Compliance |
-| :--- | :---: | :---: | :--- | :---: |
+| :--- | :--- | :---: | :--- | :--- |
 | `2026-08-01_REVISION.md` | 159 | 8,575 | Warehouse construction vs stocking goods (DDL vs DML) | ✅ 100% Pure MD |
 | `2026-08-02_REVISION.md` | 143 | 8,081 | Airport security metal detector wildcard filtering | ✅ 100% Pure MD |
 | `2026-08-03_REVISION.md` | 131 | 7,813 | Highway speed traps (BETWEEN boundaries) | ✅ 100% Pure MD |
@@ -134,6 +135,7 @@ d:\DE COURSE\
 | `2026-08-21_REVISION.md` | 419 | 18,594 | Two detectives investigating card clone fraud | ✅ 100% Pure MD |
 | `2026-08-22_REVISION.md` | 214 | 13,793 | Olympic medal podium vs leaderboard ranking ties | ✅ 100% Pure MD |
 | `2026-08-24_REVISION.md` | 317 | 16,067 | Office meeting whiteboard pipelining & deduplication | ✅ 100% Pure MD |
+| `2026-08-25_REVISION.md` | 185 | 8,200 | Train passenger queue lookahead & mirror reflection | ✅ 100% Pure MD |
 
 ---
 
@@ -151,6 +153,7 @@ d:\DE COURSE\
 | `2026-08-21_CLASS_TASK.SQL` | 10 Tasks | 178 | 10,887 | Self join managerial hierarchy & fraud detection |
 | `2026-08-22_CLASS_TASK.SQL` | 8 Tasks | 139 | 7,775 | Top-N salaries per department & running totals |
 | `2026-08-24_CLASS_TASK.SQL` | 8 Tasks | 146 | 8,234 | Alternating gender, latest order, CTE deduplication |
+| `2026-08-25_CLASS_TASK.SQL` | 6 Tasks | 180 | 6,500 | 50% order drop, 3-yr salary top 2, order gap >=30 days |
 
 ---
 
@@ -164,6 +167,7 @@ d:\DE COURSE\
 | `2026-08-07_QUESTIONS.SQL` to `2026-08-14_QUESTIONS.SQL` (6 Files) | 14 each (84 total) | 95–128 | 4,182–6,105 | Execution order, constraints, set operators |
 | `2026-08-17_QUESTIONS.SQL` | 21 Drills | 353 | 16,322 | Comprehensive temporal date functions |
 | `2026-08-18_QUESTIONS.SQL` to `2026-08-24_QUESTIONS.SQL` (7 Files) | 14–20 each (175 total) | 163–484 | 10,992–28,075 | Joins, self joins, window functions, CTEs |
+| `2026-08-25_QUESTIONS.SQL` | 14 Drills | 220 | 7,500 | Value window functions (LEAD/LAG) & running totals |
 
 ---
 

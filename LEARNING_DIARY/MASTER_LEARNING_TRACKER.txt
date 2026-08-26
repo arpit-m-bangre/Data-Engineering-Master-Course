@@ -3,7 +3,7 @@
                                 SINGLE SOURCE OF TRUTH (SSOT)
 ====================================================================================================
 Student: ARPIT MANOJ BANGRE | Batch: ONLINE BATCH 15 | Role: Data Engineer Trainee
-Last Updated: 24 AUG 2026   | Overall SQL Completion: [████░░░░░░] 38%
+Last Updated: 25 AUG 2026   | Overall SQL Completion: [████░░░░░░] 40%
 ====================================================================================================
 
 ----------------------------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ Last Updated: 24 AUG 2026   | Overall SQL Completion: [████░░░░�
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 19) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 21) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -44,6 +44,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 18   | Self Joins, Hierarchies & Fraud Engines   | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 19   | Window Functions (Ranking & Partitions)   | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 20   | CTEs & Zero-Loss Deduplication Pipelines  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+21   | Value Window Functions (LEAD & LAG)       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
 
 
 ====================================================================================================

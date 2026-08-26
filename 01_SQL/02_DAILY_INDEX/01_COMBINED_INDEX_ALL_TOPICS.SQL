@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 19 Class Note Files (2026-08-01 to 2026-08-22)
+Total Modules / Files: 20 Class Note Files (2026-08-01 to 2026-08-25)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -196,6 +196,15 @@ SECTION 1: DAILY CLASS BREAKDOWN
     20.8 Advanced Scenario Engineering: Alternating Gender (M/F) Sequences & Latest Order per Customer
     20.9 Multi-Table Analytical CTE Joins: City-Wise 2nd Highest Amount
 
+21. DAY 21 (AUGUST 25) - VALUE WINDOW FUNCTIONS & RUNNING AGGREGATE ENGINES
+    21.1 Value Window Functions Mechanics (LEAD & LAG)
+    21.2 Inter-Row Peeking: Forward Offsets via LEAD() and Backward Offsets via LAG()
+    21.3 Handling NULLs & Offsets with Custom Fallback Defaults
+    21.4 Stock Inventory Delta Pipelines (Daily Consumption / Restock Variance)
+    21.5 Running Aggregate Windows: Cumulative SUM() and Running MIN()/MAX()
+    21.6 Multi-Row Boundary Scanning (Prev < Current < Next Sequence Logic)
+    21.7 Advanced Scenarios: Customer Order Gaps (DATEDIFF >= 30 days) & 50% Order Drop Analysis
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -297,6 +306,13 @@ L. COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION PIPELINES
    • Full-Row Deduplication via `ROW_NUMBER() OVER (PARTITION BY ...)`
    • In-Place Base Table Data Cleansing via `DELETE FROM CTE WHERE RowOccurrence > 1`
    • Alternating Sequence Generation (Gender M/F/M/F) & Latest Event Ranking
+
+M. VALUE WINDOW FUNCTIONS & RUNNING AGGREGATES
+   • LEAD() and LAG() Inter-Row Peeking Mechanics
+   • Offset and Default Value Parameter Customization
+   • Inventory Shift & Period-over-Period Delta Analysis
+   • Cumulative Running Totals & Moving Window Aggregates (SUM, MIN, MAX)
+   • Multi-Row Sequence & Sandwiched Boundary Analytics
 
 ================================================================================
 

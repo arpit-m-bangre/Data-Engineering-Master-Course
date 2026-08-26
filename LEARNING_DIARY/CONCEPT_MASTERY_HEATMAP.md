@@ -142,6 +142,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 12: VALUE WINDOW FUNCTIONS & RUNNING AGGREGATES
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C12.1** | `LEAD()` Lookahead Mechanics & Offsets | MASTERED | NULL propagation when offset exceeds partition boundary | 1 | 🔴 High |
+| **C12.2** | `LAG()` Lookback Mechanics & Defaults | MASTERED | Forgetting default fallback parameter (e.g. `0`) in variance math | 1 | 🔴 High |
+| **C12.3** | Inventory Delta & Period-over-Period Pipelines | MASTERED | Using expensive self-joins instead of single-pass window cursors | 1 | 🔴 High |
+| **C12.4** | Running / Cumulative Aggregate Windows (`SUM`, `MIN`) | MASTERED | Omitting `ORDER BY` and collapsing window into static partition total | 1 | 🔴 High |
+| **C12.5** | Inter-Row Sequence & Boundary Comparison Analytics | MASTERED | Filtering directly in `WHERE` instead of wrapping inside CTE | 1 | 🔴 High |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:

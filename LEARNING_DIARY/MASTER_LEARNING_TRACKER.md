@@ -4,7 +4,7 @@
 **Student:** Arpit Manoj Bangre (Cap) | **Role:** Data Engineer Trainee | **Batch:** Online Batch 15  
 **Lead AI Mentor:** Pippo 🐥  
 **Companion Plain-Text Matrix:** [`MASTER_LEARNING_TRACKER.txt`](./MASTER_LEARNING_TRACKER.txt)  
-**Last Updated:** 24 AUG 2026 | **Streak Day:** Day 10 🔥  
+**Last Updated:** 25 AUG 2026 | **Streak Day:** Day 13 🔥  
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 19)
+## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 21)
 
 | Day | Topic Focus Area | Re-Write Note | Revision Note | Practice Drills | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -46,6 +46,7 @@
 | **18** | Self Joins, Hierarchies & Fraud Engines | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 | **19** | Window Functions (Ranking & Partitions) | [x] DONE | [x] DONE | [ ] PENDING | 🟡 **IN PROGRESS** |
 | **20** | CTEs & Zero-Loss Deduplication Pipelines | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
+| **21** | Value Window Functions (LEAD & LAG) | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 
