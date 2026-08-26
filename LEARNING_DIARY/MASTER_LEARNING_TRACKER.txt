@@ -44,7 +44,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 18   | Self Joins, Hierarchies & Fraud Engines   | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 19   | Window Functions (Ranking & Partitions)   | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 20   | CTEs & Zero-Loss Deduplication Pipelines  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
-21   | Value Window Functions (LEAD & LAG)       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+21   | Value Window Functions (LEAD & LAG)       | [x] DONE      | [x] DONE      | [ ] PENDING     | IN PROGRESS
 
 
 ====================================================================================================

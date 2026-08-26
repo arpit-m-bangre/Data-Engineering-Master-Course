@@ -40,32 +40,23 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
     -> Leave 3 high-value technical comments on Lead Data Architect posts
     -> [DoD]: Post published | 5 targeted connections sent | 3 technical comments engaged
 
-[ ] 02:30 PM - 04:00 PM : Sprint 2 — Class Note Re-write & 7-Step Revision Read [2026-08-25] (Day 21) ✍️
+[X] 02:30 PM - 04:00 PM : Sprint 2 — Class Note Re-write & 7-Step Revision Read [2026-08-25] (Day 21) ✍️
     -> Manually re-write raw SQL lecture note in SSMS (01_SQL/01_CLASS_NOTES/2026-08-25.sql)
     -> Internalize LEAD(), LAG(), PARTITION BY, and running aggregate window mechanics
     -> Study 7-step revision note (01_SQL/03_REVISION_NOTES/2026-08-25_REVISION.md) & interview traps
     -> [DoD]: Note re-written & executed clean in SSMS | Revision read completed | Edge cases logged
 
-[ ] 04:00 PM - 05:45 PM : Sprint 3 — Solve Faculty Class Tasks in SSMS [2026-08-25_CLASS_TASK.SQL] 💻
-    -> Scenario 1: Employee Salary Analysis (Top 2 highest-paid per department in last 3 years)
-    -> Scenario 2: Customer Monthly Orders (>3 orders in 2026 with city rank)
-    -> Scenario 3: Product Sales (Top-selling product per category per month)
-    -> Scenario 4: Employee Joining Trend (Month-over-month difference with LAG)
-    -> Scenario 5: Customer Order Gap (Orders with >=30 days gap) & 50% Order Amount Rule
-    -> [DoD]: All 5 scenarios + homework solved from scratch in SSMS | Zero copy-paste
+[-] 04:00 PM - 05:45 PM : Sprint 3 — Solve Faculty Class Tasks in SSMS [2026-08-25_CLASS_TASK.SQL] (Deferred)
+    -> Rolled over to next daytime practice block
 
 [-] 05:45 PM - 06:15 PM : Evening Walk, Tea Break & Mental Reset Window ☕🚶‍♂️
     -> Screen-free outdoor walk, fresh air, evening tea, and cognitive rest
 
-[ ] 06:15 PM - 08:15 PM : Sprint 4 — Perpetual SQL Practice: Solve 14 Practice Drills [2026-08-25_QUESTIONS.SQL] 🎯
-    -> Solve all 14 targeted drills on LEAD, LAG, offsets, default values, and moving aggregations in SSMS
-    -> Test border conditions: First row LAG (NULL), Last row LEAD (NULL), and multi-column PARTITION BY
-    -> [DoD]: 14/14 queries executed cleanly in SSMS | Blank query blocks filled independently
+[-] 06:15 PM - 08:15 PM : Sprint 4 — Perpetual SQL Practice: Solve 14 Practice Drills [2026-08-25_QUESTIONS.SQL] (Deferred)
+    -> Rolled over to next daytime practice block
 
-[ ] 08:15 PM - 08:45 PM : Sprint 5 — English Practice Book (Task 3) & Technical Voice Drill 📖🎙️
-    -> Complete English Practice Book Task 3 (3/125 total)
-    -> 2-minute verbal technical walkthrough: Explain LEAD vs LAG and Year-over-Year Delta calculation
-    -> [DoD]: Task 3 written | Verbal explanation recorded/practiced aloud
+[-] 08:15 PM - 08:45 PM : Sprint 5 — English Practice Book (Task 3) & Technical Voice Drill (Deferred)
+    -> Rolled over to next daytime practice block
 
 [-] 08:45 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
     -> Light nutritious dinner, launch SSMS, setup class notes workspace for Day 22 lecture
@@ -73,7 +64,7 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 22) 🎓
+[X] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 22) 🎓
     -> Live lecture: Advanced Window Functions & Analytical SQL
     -> Capture raw queries, faculty tips, and edge case traps in real time
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
@@ -81,12 +72,10 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
 --------------------------------------------------------------------
                   POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
-[ ] 10:15 PM - 10:30 PM : Sprint 6 — Creative Recharge & 210-Day IG/Shorts Launch Setup (0.0 Study Hr Impact) 📱
-    -> Set up anonymous profile bio & prepare Day 001 Carousel (5 Window Functions Every Data Engineer Must Master)
-    -> Review EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md
-    -> [DoD]: Day 001 asset ready for publishing | 0.0 study hr impact (fun/recharge)
+[-] 10:15 PM - 10:30 PM : Sprint 6 — Creative Recharge & 210-Day IG/Shorts Launch Setup (Deferred)
+    -> Ready for Day 001 rollout starting tomorrow
 
-[ ] 10:30 PM - 10:45 PM : Sprint 7 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
+[X] 10:30 PM - 10:45 PM : Sprint 7 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
     -> Sync Master Learning Tracker, Metrics JSON, and System Map
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
     -> Push verified Day 13 streak to GitHub & trigger live Vercel deploy
