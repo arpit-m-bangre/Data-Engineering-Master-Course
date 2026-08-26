@@ -54,6 +54,9 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are targeted connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft) included? → If NO: add them.
 - [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
 
+### GATE G — ANTI-PASSIVE COMPLIANCE & SPRINT SKIP NEGOTIATION (Every task modification)
+- [ ] Did Cap say "skip", "defer", or "drop" a task/sprint? → If YES: Did I challenge the blocker, negotiate minimum-effective-dose, and ask the real reason instead of blindly marking deferred? If NO: STOP and challenge/negotiate now!
+
 ---
 
 ## 🏛️ WORKSPACE ARCHITECTURE & MODULE MATRIX
