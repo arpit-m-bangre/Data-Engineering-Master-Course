@@ -15,9 +15,10 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 ========================================================================================================
   • Total Physical Files Audited    : 255 Files (100% Physically Verified, Zero Hallucinations)
   • Active Core SQL Modules         : 113 Files across 6 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects)
-  • Master Question Bank Blueprint  : 2,500 Questions (22 Pillars) in INTERVIEW_QUESTION_BANK/
+  • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank)
   • Active Class Days Synchronized  : 22 Class Days (Day 1: 2026-08-01 to Day 22: 2026-08-26)
   • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7)
+  • Personal Branding Hub           : 7 Files (Post Calendars, Fleet Strategy & Profile Templates)
   • Unbroken GitHub Streak          : 23 Days 🔥 (Locked & Deploying to Live Vercel Production)
   • Constitutional Law Compliance   : 100% (18 / 18 Laws Fully Enforced)
 ========================================================================================================
@@ -39,7 +40,7 @@ d:\DE COURSE\
 │   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
 │   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
 ├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (113 Files)
-│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (22 Notes + 1 Asset)
+│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (22 Notes + 1 Spreadsheet)
 │   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (23 Files)
 │   ├── 03_REVISION_NOTES/        <-- 00_DAY_01_TO_DAY_22_MASTER_REVISION_PLAYBOOK.md + 7-Step Notes (24 Files)
 │   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (12 Files)
@@ -53,8 +54,10 @@ d:\DE COURSE\
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- AWS S3, IAM & Azure Data Services (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (Upcoming)
-├── INTERVIEW_QUESTION_BANK/      <-- Master 2,500 Question Ceiling & 22-Pillar Blueprint (1 File)
-│   └── 00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md <-- 2,500 Question Master Bank & Methodology
+├── INTERVIEW_QUESTION_BANK/      <-- Master 2,500 Question Hub, Mocks & External Banks (4 Files)
+│   ├── 00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md <-- 2,500 Question Master Blueprint
+│   ├── 01_SQL_MOCK_INTERVIEWS/   <-- Live Faculty Mock Interview Scripts & Notes (1 File)
+│   └── 02_EXTERNAL_QUESTION_BANKS/ <-- 800+ External SQL Server Question PDF & Reading Guide (2 Files)
 ├── JOB_HUNT/                     <-- Tier-1 Job Hunt, Referral Engine & 25+ to 50+ LPA Playbook (6 Items / 9 Files)
 │   ├── 00_END_TO_END_TIER1_HIRING_AND_ONBOARDING_PLAYBOOK.md <-- 11-Stage Hiring & Day 1 Playbook
 │   ├── 01_TIER1_HIRING_CALENDAR.xlsx <-- Quarterly Hiring Timeline & Referral Cycles
@@ -72,11 +75,12 @@ d:\DE COURSE\
 │   ├── METRICS_AND_STATISTICS.json  <-- Live Machine-Readable Telemetry & Statistics Brain
 │   ├── REVISION_RECOMMENDER_ENGINE.md <-- Mathematical RPS Spaced Retention Formula & Top 10 Traps
 │   └── ZERO_TO_OFFER_ROADMAP.md     <-- High-Level Career Progression Archive
-├── PERSONAL_BRANDING/            <-- Tier-1 LinkedIn Authority & Digital Presence Engine (5 Files)
+├── PERSONAL_BRANDING/            <-- Tier-1 LinkedIn Authority & Profile Engine (7 Files)
 │   ├── DAILY_POST_CALENDAR.md    <-- 180-Day Master Post Calendar & High-Engagement Hooks
 │   ├── LINKEDIN_3K_CONNECTION_SUPER_PLAN.md <-- Targeted Tier-1 Fleet Connection Strategy
 │   ├── LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md <-- 360° Profile Optimization
 │   ├── LINKEDIN_POST_PROMPT.MD   <-- AI High-Impact Post Generation Prompt Matrix
+│   ├── PROFILE_TEMPLATES/        <-- GitHub Special & Panda Profile README Templates (2 Files)
 │   └── TIER1_BRANDING_MASTER_PLAN.md <-- Master 90-Day Authority Blueprint
 ├── .agents/                      <-- Pippo's Constitution, Skills, Templates & Rules (17 Files)
 │   ├── AGENTS.md                 <-- Global AI Constitution (18 Laws, 6 Binary Gates, 8 Core Habits)
@@ -105,10 +109,7 @@ d:\DE COURSE\
 ├── README.md                     <-- Public GitHub Landing Page & Profile Showcase
 ├── AI_COMMANDS_AND_CUSTOMIZATIONS.md <-- Universal AI Copilot Customization Guide
 ├── digital_presence_ecosystem.html <-- 34-Platform Interactive Digital Presence Showcase
-├── EXTRA_FREE_RESOURCES.md       <-- Curated Data Engineering External Learning Vault
-├── GITHUB_PROFILE_README.md      <-- GitHub Special Profile README Showcase
-├── PANDA_PROFILE_README.md       <-- Alternate Profile Readme Template
-└── TIER1_BRANDING_MASTER_PLAN.md <-- Consolidated Tier-1 Hiring & SEO Blueprint
+└── EXTRA_FREE_RESOURCES.md       <-- Curated Data Engineering External Learning Vault
 ```
 
 ---
@@ -317,15 +318,18 @@ d:\DE COURSE\
 
 ---
 
-### 📍 ZONE 11: `INTERVIEW_QUESTION_BANK/` (MASTER 2,500 QUESTION CEILING — 1 FILE)
+### 📍 ZONE 11: `INTERVIEW_QUESTION_BANK/` (MASTER 2,500 QUESTION & MOCK HUB — 4 FILES)
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
 | `00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md` | Master 2,500 question blueprint across all 22 pillars (1,310 practical + 1,190 theory) | 303 | 18,363 |
+| `01_SQL_MOCK_INTERVIEWS/SQL Mock Interview Class — 16 August 2026.md` | Live faculty mock interview transcript & evaluation notes | 167 | 10,240 |
+| `02_EXTERNAL_QUESTION_BANKS/800+ SQL Server Interview Question Answers...pdf` | Comprehensive 800+ SQL Server question archive PDF | Binary | 2,420,530 |
+| `02_EXTERNAL_QUESTION_BANKS/PDF_READING_GUIDE.md` | Quick navigation and topic index guide for the 800+ question bank | 42 | 2,150 |
 
 ---
 
-### 📍 ZONE 12: `PERSONAL_BRANDING/` (TIER-1 AUTHORITY & SEO ENGINE — 5 FILES)
+### 📍 ZONE 12: `PERSONAL_BRANDING/` (TIER-1 AUTHORITY & PROFILE ENGINE — 7 FILES)
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
@@ -333,6 +337,8 @@ d:\DE COURSE\
 | `LINKEDIN_3K_CONNECTION_SUPER_PLAN.md` | Targeted Tier-1 Fleet Connection Strategy | 656 | 30,981 |
 | `LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md` | 360° Profile Optimization | 225 | 13,975 |
 | `LINKEDIN_POST_PROMPT.MD` | AI High-Impact Post Generation Prompt Matrix | 596 | 11,217 |
+| `PROFILE_TEMPLATES/GITHUB_PROFILE_README.md` | GitHub Special Profile README showcase template | 95 | 6,179 |
+| `PROFILE_TEMPLATES/PANDA_PROFILE_README.md` | Alternate visual profile README template | 85 | 2,427 |
 | `TIER1_BRANDING_MASTER_PLAN.md` | Master 90-Day Authority Blueprint | 509 | 32,927 |
 
 ---
@@ -360,7 +366,7 @@ d:\DE COURSE\
 
 ---
 
-### 📍 ZONE 14: `DASHBOARD/` & WORKSPACE ROOT ASSETS (27 TOTAL FILES)
+### 📍 ZONE 14: `DASHBOARD/` & WORKSPACE ROOT ASSETS (25 TOTAL FILES)
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
@@ -369,9 +375,6 @@ d:\DE COURSE\
 | `digital_presence_ecosystem.html` | 34-Platform interactive digital presence showcase | 680 | 38,450 |
 | `AI_COMMANDS_AND_CUSTOMIZATIONS.md` | AI copilot commands & instructions guide | 145 | 9,870 |
 | `EXTRA_FREE_RESOURCES.md` | Curated Data Engineering external learning vault | 120 | 8,450 |
-| `GITHUB_PROFILE_README.md` | GitHub special profile README showcase | 95 | 6,120 |
-| `PANDA_PROFILE_README.md` | Alternate profile README template | 85 | 5,400 |
-| `TIER1_BRANDING_MASTER_PLAN.md` | 90-Day LinkedIn & Recruiter Authority Strategy | 509 | 32,927 |
 | `DASHBOARD/` (19 Files) | Live Vite + React web portfolio deployed to Vercel production | Source | App |
 
 ---
