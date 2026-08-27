@@ -48,7 +48,7 @@ For any class day being worked on, the order MUST be strictly:
 - **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
 - **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
 - Every daily plan MUST incorporate all 9 core pillars (targeting standard 9.0 Hours study):
-  * [ ] **Pillar 1:** 60-Min Omni-Channel Authority & Syndication Sprint (1.0h) — LinkedIn, Pinterest, Dev.to, Twitter/X.
+  * [ ] **Pillar 1 (Career & Social Authority — 1.0h Total):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Post on daily concept + 5-7 Tier-1 connections (Walmart, Swiggy) + 3 comments. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
   * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read in SSMS (1.50h).
   * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.50h).
   * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (1.50h).

@@ -51,7 +51,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
 ### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
-- [ ] Is the 60-min Omni-Channel Authority & Syndication Sprint scheduled (LinkedIn, Pinterest, Dev.to, Twitter/X)? → If NO: add it.
+- [ ] Is the 60-min Omni-Channel Authority & Syndication Sprint scheduled (LinkedIn + 50-Platform Roadmap)? → If NO: add it.
 - [ ] Are targeted connection requests strictly aligned with the Tier-1 Dream Fleet (Tier 1A Titans, Tier 1B GCCs, Tier 1C Unicorns) per `.agents/rules/linkedin_networking_targeting_protocol.md`? → If NO: enforce now.
 - [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
 
@@ -223,7 +223,7 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 8 p
 4. **Perpetual SQL Practice (2 Hours / Day):** Daily SQL practice (Class tasks, 14 index-wise drills, LeetCode Hard, StrataScratch) continues permanently until placement, even during subsequent modules (Python, Spark, Snowflake, Cloud).
 5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python OOP and pipeline practice MUST be enforced permanently alongside SQL.
 6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
-7. **Daily Social Presence & 34-Platform Digital Presence Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 34-Platform Distribution: Upload SQL architecture visual cheat sheets to Pinterest & Dev.to linking to GitHub, and syndicate snippets to Twitter/X & GitHub Discussions.
+7. **Daily Social Presence & 50-Platform Digital Authority Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
 8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
 9. **Compulsory 210-Day IG / Short-Form Content Publishing (15 Mins Daily - 0.0 Study Hr Impact):** Dedicated fun/recharge slot right after live class (10:15 PM - 10:30 PM). Publish today's scheduled 15-minute asset from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md` (Reels, Carousels, Infographics, Sunday Quizzes) across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: Last priority, 100% compulsory, 0.0 study hour impact.
 
