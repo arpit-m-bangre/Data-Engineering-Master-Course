@@ -51,8 +51,9 @@ PHASE 3                • SlideShare (DA 95)              🎯 10 High-Design S
 (10 Days)              • Scribd (DA 94)                  🎯 5 Complete Study Guides        • 05m: Upload to Scribd archive
 
 PHASE 4                • LeetCode (DA 90)                🎯 50 FAANG SQL Problems Solved   • 20m: Solve 5 SQL drills in SSMS
-27 Sep – 06 Oct 2026   • StrataScratch (DA 70)           🎯 10 Advanced Business Queries   • 05m: Submit on LeetCode/Strata
-(10 Days)              • HackerRank (DA 88)              🎯 5-Star SQL Gold Badge          • 05m: Auto-sync via LeetHub
+27 Sep – 06 Oct 2026   • HackerRank (DA 88)              🎯 5-Star SQL Gold Badge          • 05m: Submit on LeetCode/GFG
+(10 Days)              • GeeksforGeeks (DA 91)           🎯 GFG SQL Practice & Points      • 05m: Auto-sync via LeetHub
+                       • StrataScratch (DA 70)           🎯 10 Advanced Business Queries
 
 PHASE 5                • Stack Overflow (DA 94)          🎯 20 SQL Server Verified Answers • 15m: Answer 2 fresh SQL queries
 07 Oct – 16 Oct 2026   • Reddit r/dataeng (DA 92)        🎯 10 Deep Technical Discussions  • 10m: Post 1 architecture case study
@@ -175,22 +176,22 @@ PHASE 12               • DataTalks.Club (DA 75)          🎯 10 Active Commun
 
 ---
 
-### 📍 PHASE 4: LEETCODE, STRATASCRATCH & HACKERRANK ALGORITHMIC PROOF
+### 📍 PHASE 4: LEETCODE, HACKERRANK, GEEKSFORGEEKS (GFG) & STRATASCRATCH PROOF
 * **Dates:** 27 September 2026 – 06 October 2026 (10 Days)
-* **Platforms:** [LeetCode](https://leetcode.com/arpitbangre) (DA 90), [StrataScratch](https://stratascratch.com) (DA 70), [HackerRank](https://hackerrank.com/arpitbangre) (DA 88)
-* **Goal:** **50 Solved Problems** + 5-Star SQL Badge + LeetHub auto-sync to GitHub.
+* **Platforms:** [LeetCode](https://leetcode.com/arpitbangre) (DA 90), [HackerRank](https://hackerrank.com/arpitbangre) (DA 88), [GeeksforGeeks (GFG)](https://auth.geeksforgeeks.org/user/arpitbangre) (DA 91), [StrataScratch](https://stratascratch.com) (DA 70)
+* **Goal:** **50 Solved Problems** + 5-Star SQL Gold Badge (HackerRank) + GFG Practice Profile + LeetHub auto-sync to GitHub.
 * **Daily Workflow (30 Mins):**
   1. Solve 5 targeted SQL drills from LeetCode SQL 50 study plan.
   2. Test solutions locally in SSMS first for 100% conceptual mastery.
   3. Submit on LeetCode (LeetHub extension automatically creates a commit on GitHub).
   4. Solve 1 real FAANG problem on StrataScratch (Amazon/Uber SQL question).
-  5. Earn HackerRank SQL Gold Stars.
+  5. Earn HackerRank 5-Star Gold Badges in SQL and complete GeeksforGeeks (GFG) SQL problem tracks.
 * **10-Day Practice Focus:**
-  - *Days 31–33 (27–29 Sep):* LeetCode SQL 50: Select, Joins & Basic Filtering (15 Problems).
-  - *Days 34–36 (30 Sep–02 Oct):* LeetCode SQL 50: Aggregate Functions & Subqueries (15 Problems).
-  - *Days 37–38 (03–04 Oct):* LeetCode SQL 50: Advanced Select, Joins & CASE (10 Problems).
-  - *Days 39–40 (05–06 Oct):* LeetCode SQL 50: Advanced String, Regex, Clause & Window Functions (10 Problems).
-* **Verification DoD:** 50/50 LeetCode SQL 50 solved | 5-Star HackerRank SQL Badge embedded on portfolio.
+  - *Days 31–33 (27–29 Sep):* LeetCode SQL 50: Select, Joins & Basic Filtering + HackerRank SQL Badges (15 Problems).
+  - *Days 34–36 (30 Sep–02 Oct):* LeetCode SQL 50: Aggregate Functions, GFG SQL Quizzes & Subqueries (15 Problems).
+  - *Days 37–38 (03–04 Oct):* LeetCode SQL 50: Advanced Select, Joins & StrataScratch FAANG CASE queries (10 Problems).
+  - *Days 39–40 (05–06 Oct):* LeetCode SQL 50: Window Functions, GFG Practice Score & GitHub Streak Sync (10 Problems).
+* **Verification DoD:** 50/50 LeetCode SQL 50 solved | 5-Star HackerRank SQL Badge | GFG Practice profile public | LeetHub auto-sync active.
 
 ---
 
