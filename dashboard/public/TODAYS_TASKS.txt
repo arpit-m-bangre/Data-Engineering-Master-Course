@@ -1,88 +1,104 @@
 ====================================================================
-                  DAILY MISSION: 26 AUG 2026 (WEDNESDAY)
-   [STATUS: GREEN | DAY TYPE: BUILD & DEEP PRACTICE | STREAK DAY 13 🔥]
+                  DAILY MISSION: 27 AUG 2026 (THURSDAY)
+   [STATUS: GREEN | DAY TYPE: BUILD & SPECIAL TECH | STREAK DAY 14 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Master Value Window Functions (LEAD/LAG), solve 5 faculty enterprise scenarios + 14 practice drills in SSMS, and lock Streak Day 13!
+[!] MISSION OBJECTIVE: Master Conditional Logic (CASE Expressions), conquer 5 faculty tasks + 14 practice drills in SSMS, execute 2h Special Tech Window, and lock Streak Day 14!
 
-[MUST-WIN 1] Master: Value Window Functions (LEAD/LAG offsets, defaults, YoY deltas) in SSMS
-[MUST-WIN 2] Build: Solve 5 Faculty Class Tasks (2026-08-25_CLASS_TASK.SQL) with zero errors
-[MUST-WIN 3] Prove: 14/14 Targeted Practice Drills (2026-08-25_QUESTIONS.SQL) solved in SSMS
-[SHOULD-WIN] Publish LinkedIn #180DaysOfDataEngineering post & send 5 Tier-1 DE connections
-[BONUS]      English Practice Book Task 3 & 2-min verbal technical concept walkthrough
+[MUST-WIN 1] Master: Conditional Logic (Searched vs Simple CASE, NULL-safe aggregations, pinned sorting) in SSMS
+[MUST-WIN 2] Build: Solve 5 Faculty Class Tasks (2026-08-26_CLASS_TASK.SQL) with zero syntax errors
+[MUST-WIN 3] Prove: 14/14 Targeted Practice Drills (2026-08-26_QUESTIONS.SQL) solved from blank editor
+[SHOULD-WIN] Complete 2-Hour Special Tech Window (Hrushikesh Remote, LinkedIn Learning, DataCamp Cert & GPT Explore)
+[BONUS]      English Practice Book Task 4 & 210-Day IG/Shorts Day 001 Rollout
 
-TOTAL STUDY TIME TODAY: 8.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h | Class Tasks: 1.75h | Drills: 2.00h | English: 0.50h | Live Class: 1.25h | Night Sync: 0.50h)
+TOTAL STUDY TIME TODAY: 10.00 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h | Class Tasks: 1.75h | Special Tech: 2.00h | Drills: 2.00h | English: 0.50h | Live Class: 1.25h | Night Sync: 0.50h)
 
 --------------------------------------------------------------------
-                MORNING ROUTINE & PERSONAL COMMITMENTS
+                MORNING ROUTINE & COCKPIT READINESS
 --------------------------------------------------------------------
-[-] 09:15 AM - 09:45 AM : Wake-Up, Fresh Up, Brush & Morning Tea ☕
-    -> Morning hydration, oral hygiene, and warm tea activation
+[-] 09:00 AM - 09:30 AM : Wake-Up, Fresh Up, Brush, Morning Tea & Day Plan Setup ☕
+    -> Morning hydration, oral hygiene, warm tea activation, and Pippo mission alignment
 
-[-] 09:45 AM - 10:15 AM : House Cleaning & Living Space Reset 🧹✨
-    -> Sweep, dust, organize workspace cockpit and living space
+[-] 09:30 AM - 10:30 AM : House Cleaning & Workspace Living Space Reset 🧹✨
+    -> Deep sweep, dust, sanitize cockpit desk and living space for clutter-free focus
 
-[-] 10:15 AM - 11:00 AM : Skin Care, Bath & Grooming Routine 🚿✨
-    -> Refreshing shower, skin care ritual, grooming, and fresh attire
-
-[-] 11:00 AM - 01:00 PM : Gift Packing for Semi & Nidhi Window 🎁🎀
-    -> Dedicated personal time: wrap and pack special gifts for Semi and Nidhi with care
-
-[-] 01:00 PM - 02:00 PM : Lunch Break & Pre-Battle Mental Recharge Window 🥗💤
-    -> Wholesome nutritious meal, hydration, and short power recharge before engineering battle
+[-] 10:30 AM - 11:00 AM : Skin Care, Bath & Grooming Routine 🚿✨
+    -> Refreshing shower, skin care ritual, grooming, and crisp professional cockpit attire
 
 --------------------------------------------------------------------
                         DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[X] 02:00 PM - 02:30 PM : Sprint 1 — Daily LinkedIn Authority & Tier-1 Networking (P8) 🚀
-    -> Draft and publish LinkedIn #180DaysOfDataEngineering post on Value Window Functions (LEAD/LAG & Year-over-Year Delta Pipelines)
+[ ] 11:00 AM - 11:30 AM : Sprint 1 — Daily LinkedIn Authority & Tier-1 DE Networking (P8) 🚀
+    -> Draft and publish LinkedIn #180DaysOfDataEngineering post on Conditional Logic & Dynamic CASE Expressions
     -> Send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft)
     -> Leave 3 high-value technical comments on Lead Data Architect posts
     -> [DoD]: Post published | 5 targeted connections sent | 3 technical comments engaged
 
-[X] 02:30 PM - 04:00 PM : Sprint 2 — Class Note Re-write & 7-Step Revision Read [2026-08-25] (Day 21) ✍️
-    -> Manually re-write raw SQL lecture note in SSMS (01_SQL/01_CLASS_NOTES/2026-08-25.sql)
-    -> Internalize LEAD(), LAG(), PARTITION BY, and running aggregate window mechanics
-    -> Study 7-step revision note (01_SQL/03_REVISION_NOTES/2026-08-25_REVISION.md) & interview traps
+[ ] 11:30 AM - 01:00 PM : Sprint 2 — Class Note Re-write & 7-Step Revision Read [2026-08-26] (Day 22) ✍️
+    -> Manually re-write raw SQL lecture note in SSMS (01_SQL/01_CLASS_NOTES/2026-08-26.sql)
+    -> Internalize Simple vs Searched CASE, CASE inside ORDER BY, and conditional SUM/COUNT aggregates
+    -> Study 7-step revision note (01_SQL/03_REVISION_NOTES/2026-08-26_REVISION.md) & interview traps
     -> [DoD]: Note re-written & executed clean in SSMS | Revision read completed | Edge cases logged
 
-[-] 04:00 PM - 05:45 PM : Sprint 3 — Solve Faculty Class Tasks in SSMS [2026-08-25_CLASS_TASK.SQL] (Deferred)
-    -> Rolled over to next daytime practice block
+[-] 01:00 PM - 02:00 PM : Lunch Break & Pre-Battle Meal Recharge 🥗💤
+    -> Wholesome nutritious meal, hydration, and short power recharge before engineering battle
+
+[ ] 02:00 PM - 03:45 PM : Sprint 3 — Faculty Class Tasks Mastery in SSMS [2026-08-26_CLASS_TASK.SQL] 💻
+    -> Solve Task 1: Dept-wise Salary Rank Classification (Dense Rank + CASE)
+    -> Solve Task 2: Pinned Custom Sorting (Pune 1st, rest descending)
+    -> Solve Task 3: Customer Quarter Order Season Segmentation (DATEPART + CASE)
+    -> Solve Task 4: NULL-Resilient Arithmetic & Status Classification (CTE + Aggregate)
+    -> Solve Task 5: Multi-Tier Delivery Tracking with Reference Date (DATEDIFF + CASE)
+    -> [DoD]: All 5 task queries solved and validated in SSMS with zero errors
+
+[ ] 03:45 PM - 05:45 PM : Sprint 4 — Special Tech & Certifications Power Window ⚡
+    -> Execute Hrushikesh Remote Access collaboration & setup
+    -> Complete LinkedIn Learning targeted modules
+    -> Progress / complete Free DataCamp Certification track
+    -> GPT deep exploration & AI tooling workflows
+    -> [DoD]: Remote session done | Certificate progress logged | AI prompt techniques archived
 
 [-] 05:45 PM - 06:15 PM : Evening Walk, Tea Break & Mental Reset Window ☕🚶‍♂️
     -> Screen-free outdoor walk, fresh air, evening tea, and cognitive rest
 
-[-] 06:15 PM - 08:15 PM : Sprint 4 — Perpetual SQL Practice: Solve 14 Practice Drills [2026-08-25_QUESTIONS.SQL] (Deferred)
-    -> Rolled over to next daytime practice block
+[ ] 06:15 PM - 08:15 PM : Sprint 5 — Perpetual SQL Practice: Solve 14 Practice Drills [2026-08-26_QUESTIONS.SQL] 📊
+    -> Solve 14 targeted practice drills (01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-26_QUESTIONS.SQL) in SSMS
+    -> Cover salary bands, custom sort hierarchies, NULL coalescing CASE, and quarterly pivots
+    -> Review execution plans and verify query output correctness
+    -> [DoD]: 14/14 queries executed clean from blank editor in SSMS
 
-[-] 08:15 PM - 08:45 PM : Sprint 5 — English Practice Book (Task 3) & Technical Voice Drill (Deferred)
-    -> Rolled over to next daytime practice block
+[ ] 08:15 PM - 08:45 PM : Sprint 6 — English Practice Book (Task 4) & Technical Voice Drill 📖🎙️
+    -> Complete English Practice Book Task 4 (4/125 total)
+    -> Record 2-minute verbal walkthrough explaining Searched vs Simple CASE expressions & STAR scenario
+    -> [DoD]: Written task completed | 2-minute verbal recording reviewed
 
 [-] 08:45 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
-    -> Light nutritious dinner, launch SSMS, setup class notes workspace for Day 22 lecture
+    -> Light nutritious dinner, launch SSMS, setup class notes workspace for Day 23 lecture
 
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[X] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 22) 🎓
-    -> Live lecture: Advanced Window Functions & Analytical SQL
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 23) 🎓
+    -> Live lecture: Advanced SQL Architecture & Query Optimization
     -> Capture raw queries, faculty tips, and edge case traps in real time
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
 --------------------------------------------------------------------
                   POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
-[-] 10:15 PM - 10:30 PM : Sprint 6 — Creative Recharge & 210-Day IG/Shorts Launch Setup (Deferred)
-    -> Ready for Day 001 rollout starting tomorrow
+[ ] 10:15 PM - 10:30 PM : Sprint 7 — 210-Day IG / Short-Form Content Publishing (Day 001 Rollout) 📱✨
+    -> Publish Day 001 asset from EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md
+    -> Zero overthinking: publish 1 short-form reel/infographic to IG/Shorts under tech persona
+    -> [DoD]: Day 001 published | 0.0 study hr impact (fun creative release)
 
-[X] 10:30 PM - 10:45 PM : Sprint 7 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 13 🔥) 🚀
-    -> Sync Master Learning Tracker, Metrics JSON, and System Map
+[ ] 10:30 PM - 11:00 PM : Sprint 8 — Final System Sync, Atomic GitHub Push & Vercel Trigger (Streak Day 14 🔥) 🚀
+    -> Sync Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
-    -> Push verified Day 13 streak to GitHub & trigger live Vercel deploy
+    -> Push verified Day 14 streak to GitHub & trigger live Vercel deploy
     -> [DoD]: Green build confirmed | Vercel deployed | Dark green GitHub streak logged
 
-[-] 10:45 PM - 07:30 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
-    -> 8 hours 45 minutes of protected healing sleep; cockpit fully powered down
+[-] 11:00 PM - 07:30 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
+    -> 8 hours 30 minutes of protected healing sleep; cockpit fully powered down
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
