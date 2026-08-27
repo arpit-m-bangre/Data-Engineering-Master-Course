@@ -22,11 +22,10 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (Authority: 1.00h | Re-write/Revision: 1.50h 
 --------------------------------------------------------------------
                     CAREER & COMMUNICATION ENGINE
 --------------------------------------------------------------------
-[x] 12:00 PM - 01:00 PM : Sprint 1 — Daily LinkedIn Authority & Tier-1 DE Networking (P8) 🚀
-    -> Draft & publish LinkedIn #180DaysOfDataEngineering post on Conditional Logic & Dynamic CASE
-    -> Send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon)
-    -> Leave 3 high-value technical comments on Lead Data Architect posts
-    -> [DoD]: Post published | 7+ connections sent | 3 technical comments engaged
+[x] 12:00 PM - 01:00 PM : Sprint 1 — 60-Min Omni-Channel Authority & 34-Platform Distribution Engine (P8) 🚀
+    -> [First 30 Mins — LinkedIn]: Draft & publish #180DaysOfDataEngineering post on CASE Expressions + 5-7 Tier-1 connections (Walmart, Swiggy) + 3 comments
+    -> [Second 30 Mins — 34 Platforms]: Upload SQL architecture visual cheat sheet to Pinterest & Dev.to + syndicate snippets to Twitter/X & GitHub Discussions
+    -> [DoD]: LinkedIn post live | 7 connections sent | Pinterest & Dev.to cheat sheet uploaded | Multi-platform reach locked
 
 --------------------------------------------------------------------
                         DAY SPRINT EXECUTION
