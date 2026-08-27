@@ -132,7 +132,6 @@ Output columns: DeptName, EmpID, EmpName, Salary, SalaryRank, SalaryClassificati
 
 
 
-
 -- ====================================================================================================
 -- 📝 TASK 2: FACULTY HOMEWORK 2 — CUSTOM PINNED SORTING (PUNE FIRST, REST DESCENDING)
 -- ====================================================================================================
