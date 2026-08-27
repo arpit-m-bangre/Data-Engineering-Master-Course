@@ -40,14 +40,14 @@ d:\DE COURSE\
 │   ├── SNOWFLAKE_DBT_SYLLABUS.pdf <-- Snowflake & dbt Enterprise PDF
 │   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
 │   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
-├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (115 Files)
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (116 Files)
 │   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (22 Notes + 1 Spreadsheet)
 │   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (23 Files)
 │   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (23 Files)
 │   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (12 Files)
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (22 Files)
 │   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
-│   ├── 07_QUICK_REVISION/        <-- Master Revision Playbook & Super 50 Challenge Dossier (2 Files)
+│   ├── 07_QUICK_REVISION/        <-- 10-Hour Mastery Bootcamp, Revision Playbook & Super 50 Dossier (3 Files)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
