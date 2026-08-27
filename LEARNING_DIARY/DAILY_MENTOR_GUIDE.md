@@ -50,10 +50,10 @@ Never compromise current live learning for past backlog! Follow your strict 8-pi
 ---
 
 ### 🌟 THE 10+ REVISION & PLACEMENT ARCHITECTURE (TILL 32+ LPA WALMART / TIER-1 FLEET)
-1. **Phase 1 (Live Course - Active Now):** 100% Up-to-date Daily Focus & Muscle Memory.
-2. **Phase 2 (Post-Course):** Comprehensive YouTube Course Deep-Dive.
-3. **Phase 3:** Revision Cycle 1 + Systematic Sequential Backlog Clearance (Days 1 to End).
-4. **Phase 4:** Revision Cycle 2 (Live + YouTube Synthesis & Query Optimization).
+1. **Phase 1 (Live Course - Active Now):** 100% Up-to-date Daily Focus & SSMS Muscle Memory.
+2. **Phase 2 (Post-Course Active Blitz):** 7-Step Revision Notes (`_REVISION.md`) & Interview Bug Trap Mastery.
+3. **Phase 3:** Revision Cycle 1 + Systematic Sequential Backlog Clearance in SSMS (Days 1 to End).
+4. **Phase 4:** Revision Cycle 2 (Enterprise Projects `PROJECT1` to `PROJECT7` & Query Optimization).
 5. **Phase 5:** 1,000+ Question Industrial Drilling (LeetCode / StrataScratch / Tier-1 MNC Question Bank, 10+ revisions).
 
 ### 3. End-of-Day Progress Update (Night / After Study)
