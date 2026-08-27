@@ -153,9 +153,7 @@
 
 ## 🚀 8. THE CANONICAL DAILY STANDARD (FROM NOW ONWARD)
 
-Every single active live class day follows this immutable 4-step chain:
-
-$$\mathbf{Class\ Note\ Re-write\ (.sql)} \longrightarrow \mathbf{Read\ 7-Step\ Revision\ (.md)} \longrightarrow \mathbf{Solve\ Class\ Tasks\ (.sql)} \longrightarrow \mathbf{Solve\ 14\ Practice\ Drills\ (.sql)}$$
+`Class Note Re-write (.sql) -> Read 7-Step Revision (.md) -> Solve Class Tasks (.sql) -> Solve 14 Practice Drills (.sql)`
 
 *Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*  
 *Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*  

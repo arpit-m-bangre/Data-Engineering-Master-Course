@@ -344,11 +344,11 @@ FROM Orders;
 ## 🔹 5.1 The Fundamental Join Equation & 3VL (Day 15)
 
 ### 💡 The Mathematical Law:
-$$\mathbf{JOIN = (Cartesian\ Cross\ Product\ N \times M) + (Filter\ Predicate)}$$
+`JOIN = (Cartesian Cross Product N x M) + (Filter Predicate)`
 
 * **Three-Valued Logic (3VL):** In SQL, boolean expressions evaluate to `TRUE`, `FALSE`, or `UNKNOWN`.
 * **NULL Behavior in Joins:** `NULL = NULL` evaluates to `UNKNOWN`. Therefore, rows with `NULL` keys will **never match** in an `INNER JOIN`!
-* **Cartesian Matching Matrix:** If Table 1 has 4 rows with key `1`, and Table 2 has 3 rows with key `1`, the `INNER JOIN` produces $\mathbf{4 \times 3 = 12\text{ rows}}$!
+* **Cartesian Matching Matrix:** If Table 1 has 4 rows with key `1`, and Table 2 has 3 rows with key `1`, the `INNER JOIN` produces **4 x 3 = 12 rows**!
 
 ---
 

@@ -8,12 +8,12 @@
 
 Instead of guessing what to revise, Pippo calculates the **Retention Priority Score (RPS)** for every topic:
 
-$$\mathbf{RPS} = \left( \mathbf{W}_{\text{Interview}} \times \mathbf{C}_{\text{Complexity}} \right) \times \left( 1 + \frac{\mathbf{D}_{\text{Days Since Last Review}}}{7} \right) - \left( \mathbf{M}_{\text{Mastery Count}} \times 5 \right)$$
+`RPS = (W_Interview x C_Complexity) x (1 + D_DaysSinceLastReview / 7) - (M_MasteryCount x 5)`
 
-* **$\mathbf{W}_{\text{Interview}}$ (Weight in Tier-1 Rounds, 1–10):** Frequency of appearance in Amazon/Walmart/Swiggy technical screens.
-* **$\mathbf{C}_{\text{Complexity}}$ (Architectural Depth, 1–10):** Intellectual difficulty (e.g. Cartesian math = 9, DDL basics = 2).
-* **$\mathbf{D}_{\text{Days}}$ (Memory Decay Factor):** Increases priority exponentially if not revised for $> 7$ days.
-* **$\mathbf{M}_{\text{Mastery}}$ (Completed Drills / Revisions):** Reduces priority as muscle memory solidifies.
+* **W_Interview (Weight in Tier-1 Rounds, 1–10):** Frequency of appearance in Amazon/Walmart/Swiggy technical screens.
+* **C_Complexity (Architectural Depth, 1–10):** Intellectual difficulty (e.g. Cartesian math = 9, DDL basics = 2).
+* **D_Days (Memory Decay Factor):** Increases priority exponentially if not revised for > 7 days.
+* **M_Mastery (Completed Drills / Revisions):** Reduces priority as muscle memory solidifies.
 
 ```text
 ========================================================================================

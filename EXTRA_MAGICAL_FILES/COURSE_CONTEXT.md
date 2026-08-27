@@ -56,7 +56,7 @@ All SQL code blocks maintain 100% uppercase keywords (`SELECT`, `FROM`, `WHERE`,
 
 ### 3. 3-Stage Learning Mastery Rule
 Every topic follows a strict 3-stage mastery rule:
-$$\text{Revision Notes (.md)} \longrightarrow \text{Index-Wise Practice Questions (.SQL)} \longrightarrow \text{Data Engineering Projects (.SQL)}$$
+`Revision Notes (.md) -> Index-Wise Practice Questions (.SQL) -> Data Engineering Projects (.SQL)`
 
 ### 4. Hands-On SSMS Drill Design
 Practice question sets inside `05_INDEX_WISE_QUESTIONS/` are formatted inside comment blocks with blank space lines below `-- Write your SQL Query below:` to enable hands-on query writing from scratch in SQL Server Management Studio (SSMS).

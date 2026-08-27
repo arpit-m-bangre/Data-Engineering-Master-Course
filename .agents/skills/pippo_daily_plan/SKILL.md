@@ -41,7 +41,7 @@ Before generating any plan, execute all 4 physical reads:
 
 ### 1. Mandatory Sprint Execution Order:
 For any class day being worked on, the order MUST be strictly:
-$$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrightarrow \text{Solve Faculty Class Tasks} \longrightarrow \text{Solve Practice Drills}$$
+`Class Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Solve Practice Drills`
 *NEVER schedule practice drills without first scheduling the note rewrite and revision read for that day.*
 
 ### 2. The 8-Pillar Current-Focus & Zero-Omission Standard:
@@ -151,5 +151,5 @@ git push origin main
 7. **Commit 7:** Live Class Notes capture & ecosystem sync (`feat(sql): add Day N ecosystem`).
 8. **Commit 8:** Final System Sync, Trackers & Dashboard deploy (`sync(dashboard): daily mission complete`).
 
-$$\mathbf{Result:\text{ }6\text{ to }10\text{ Atomic Commits / Day}\longrightarrow\text{Level 4 Darkest Green Square Every Single Day!}\text{ 🟩🔥}}$$
+*Result: 6 to 10 Atomic Commits / Day -> Level 4 Darkest Green Square Every Single Day! 🟩🔥*
 

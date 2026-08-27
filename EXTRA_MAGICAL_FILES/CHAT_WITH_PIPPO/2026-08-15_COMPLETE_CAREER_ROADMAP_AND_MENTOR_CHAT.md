@@ -66,7 +66,7 @@ It’s great to connect. Take a relaxed breath — here is a snapshot of everyth
 2. 💻 **GitHub Streak:** Building and maintaining your continuous **200-day commit streak**.
 3. ✍️ **Pre-Revision Habit:** Spending **15–30 minutes re-writing original class SQL notes** before diving into revision notes to master query flow and syntax muscle memory.
 4. 🔄 **3-Stage Mastery Rule:** Progressing systematically through:
-   $$\text{Revision Notes (.md)} \longrightarrow \text{Practice Drills (.SQL)} \longrightarrow \text{Project Pipelines (.SQL)}$$
+   `Revision Notes (.md) -> Practice Drills (.SQL) -> Project Pipelines (.SQL)`
 5. 📖 **English Practice:** Advancing consistently through your **125-task English workbook**.
 6. 🌐 **Personal Brand & SEO:** Cultivating your professional presence on **LinkedIn & GitHub**.
 7. ⚡ **Perpetual Practice:** Committing to continuous daily SQL (and upcoming Python) drills throughout the entire course.
@@ -251,7 +251,7 @@ Whenever you ask *"What should I do today?"*:
 #### 1. 🎯 **Consistency Guarantee (Anti-Burnout System)**
 * **Fixed 6-Hour Boundary:** Instead of random 12-hour cramming that leads to exhaustion, your daily schedule is strictly capped at **10:15 PM**. 
 * **The 3-Stage Mastery Pipeline:** Every topic moves through a predictable, low-friction flow:
-  $$\text{15-min Re-write} \longrightarrow \text{Revision Note Reading} \longrightarrow \text{Hands-on Practice in SSMS / IDE}$$
+  `15-min Re-write -> Revision Note Reading -> Hands-on Practice in SSMS / IDE`
 * **Daily GitHub Streak:** Keeps you accountable with visible proof of daily momentum for 200 consecutive days.
 
 #### 2. 📈 **Scalability Across 7 Tech Pillars**
@@ -656,7 +656,7 @@ You should **never blindly trust anyone or any tool** when it comes to your care
 
 #### 1. 🛡️ **What Makes the System 100% Trustworthy & Perfect?**
 * **The "Definition of Done" Checklist:**
-  $$\text{1. Write Code} \longrightarrow \text{2. Local Build} \longrightarrow \text{3. Git Commit \& Push} \longrightarrow \text{4. Terminal Verification Output}$$
+  `1. Write Code -> 2. Local Build -> 3. Git Commit & Push -> 4. Terminal Verification Output`
 * **Physical Disk Pre-Flight Audits:** Real filesystem scanning before any recommendation.
 * **Git Version Control Safety Net:** Instant 1-second rollback capability for every single file.
 

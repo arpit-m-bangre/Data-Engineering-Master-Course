@@ -146,7 +146,7 @@ Here is how your **10-Pass Spaced Revision Engine** builds unbreakable muscle me
 > Even when you are deep into Python, PySpark, Snowflake, and Cloud modules, **2 hours every single day** are permanently dedicated to SQL.
 
 ### 📊 The Power of Compounding:
-$$\text{2 Hours / Day} \times 180 \text{ Days} = \mathbf{360\text{ Hours of Pure SQL Problem Solving!}}$$
+`2 Hours / Day x 180 Days = 360 Hours of Pure SQL Problem Solving!`
 
 ### ⏱️ How Every 2-Hour Block is Structured:
 * **First 45 Minutes (Course Revision):** Review 1 complete day of course notes and 7-step revision summaries. (Cycles through all 25+ class notes 10+ times!).
