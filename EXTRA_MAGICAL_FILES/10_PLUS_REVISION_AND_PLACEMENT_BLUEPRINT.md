@@ -57,7 +57,7 @@
 
 ---
 
-## 🗺️ 2. THE COMPLETE 3-STAGE CAREER ROADMAP (26 JUL 2026 $\longrightarrow$ MAY 2027)
+## 🗺️ 2. THE COMPLETE 3-STAGE CAREER ROADMAP (26 JUL 2026 --> MAY 2027)
 
 ```mermaid
 flowchart TD
@@ -88,11 +88,11 @@ flowchart TD
 *The live course is finished. You shift into full-time Tier-1 preparation (8–10 hours daily). Zero passive video consumption — 100% active SSMS query execution.*
 
 * **Weeks 1–2 (Feb 15 – Feb 28): Sequential SSMS Active Retrieval & Backlog Elimination**
-  - Systematic active recall across all 25+ SQL days: Day 1 $\rightarrow$ Day 2 $\rightarrow$ Day 3 $\dots$ Day 25+.
+  - Systematic active recall across all 25+ SQL days: Day 1 --> Day 2 --> Day 3 $\dots$ Day 25+.
   - Rapid scan of 7-Step Revision Notes (`_REVISION.md`) + re-solving 14 Practice Drills from blank editor in SSMS.
   - Complete all early backlogs (Days 1–5, 7–11, 13) in 15–20 minutes per topic via direct SSMS execution.
 * **Weeks 3–4 (Mar 01 – Mar 15): Multi-Module Synthesis & NexusFin Platform Productionization**
-  - Synthesize cross-module architectures: Python Ingestion $\rightarrow$ PySpark Processing $\rightarrow$ Snowflake Warehouse $\rightarrow$ Airflow DAGs.
+  - Synthesize cross-module architectures: Python Ingestion --> PySpark Processing --> Snowflake Warehouse --> Airflow DAGs.
   - Finalize **NexusFin Platform** (`nexusfin-platform` on GitHub) with complete JIRA backlogs, architecture diagrams, and automated data quality checks.
 * **Weeks 5–6 (Mar 16 – Mar 31): 1,000+ Industrial Question Bank Blitz**
   - Solve 1,000+ curated problems across LeetCode Medium/Hard, StrataScratch, and HackerRank.

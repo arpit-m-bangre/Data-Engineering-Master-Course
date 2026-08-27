@@ -13,7 +13,7 @@ Topic Focus: FOUNDATIONS OF RELATIONAL JOINS, CARTESIAN CROSS-PRODUCTS & NULL LO
     15.5 The Fundamental Join Equation: JOIN = (Cartesian Cross Product) + (Filter Condition)
     15.6 Three-Valued Logic (3VL) & Why `NULL = NULL` is UNKNOWN in Relational Joins
     15.7 INTERSECT vs INNER JOIN Behavior on NULL Values
-    15.8 Step-by-Step Cartesian Matching Matrix with Duplicate Keys ($N \times M$ combinations)
+    15.8 Step-by-Step Cartesian Matching Matrix with Duplicate Keys ($N x M$ combinations)
     15.9 Tier-1 Interview Trap: String Literal `'NULL'` vs SQL Keyword `NULL`
     15.10 Master Data Engineer Row-Count Formulas for INNER, LEFT, RIGHT & FULL OUTER JOINS
 

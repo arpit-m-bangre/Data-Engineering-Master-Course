@@ -398,7 +398,7 @@ Law #6: Directory Security & Anti-Teardown           ✅ PASSED   Strict immutab
 Law #7: Simple Language, Analogies & Vocabulary      ✅ PASSED   Real-life models & vocabulary dictionaries
 Law #8: Pre-Flight Audit Law (1000% Sync)            ✅ PASSED   Zero hallucinated files; matches disk exactly
 Law #9: Pure Markdown Law (Zero HTML Tags)           ✅ PASSED   Zero <details>, <div>, <b> across all .md
-Law #10: Clean ASCII Math & Zero LaTeX Law           ✅ PASSED   Zero $$...$$, clean plain text formulas
+Law #10: Clean ASCII Math & Zero LaTeX Law           ✅ PASSED   Zero ..., clean plain text formulas
 Law #11: Daily Plan Zero-Omission Mandate            ✅ PASSED   Class tasks, drills, and live class included
 Law #12: Class Note Purity Law (<220 lines)          ✅ PASSED   All 22 class notes under clean line limits
 Law #13: Daily Mission Format Immutability           ✅ PASSED   Regex-compatible parser cards with -> bullets

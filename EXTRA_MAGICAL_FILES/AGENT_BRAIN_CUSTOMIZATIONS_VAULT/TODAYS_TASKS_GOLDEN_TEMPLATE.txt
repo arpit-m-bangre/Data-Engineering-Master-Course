@@ -1,62 +1,114 @@
 ====================================================================
                   DAILY MISSION: DD MMM YYYY (DAY_OF_WEEK)
-      [REAL-TIME STATUS / TAGLINE / SITUATION HEADER]
+   [STATUS: GREEN | DAY TYPE: BUILD | P1: SQL & P7: PROJECT | STREAK DAY N 🔥]
 ====================================================================
 
 [!] MISSION OBJECTIVE: High-impact one-line objective for the day!
 
-TOTAL STUDY TIME TODAY: X.X Hours (Sprint breakdown summary)
+[MUST-WIN 1] Master: [Concept + measurable mastery test]
+[MUST-WIN 2] Build: [Project feature + verifiable deliverable]
+[MUST-WIN 3] Prove: [Timed problems / interview score / explanation]
+[SHOULD-WIN] [Revision, communication or career-development outcome]
+[BONUS]      [Optional drill, dashboard improvement or additional networking]
+
+TOTAL STUDY TIME TODAY: 8.25 Hours (P1: 1.75h | P2/P7: 1.75h | P8: 1.0h | Class: 1.25h | Drills: 1.25h | Recall: 1.25h)
 
 --------------------------------------------------------------------
-                       DAY SPRINT EXECUTION
+                MORNING SYSTEM BOOT & PRIORITIZATION
 --------------------------------------------------------------------
-[ ] HH:MM AM - HH:MM PM : Sprint 1 — Class Note Re-write & Read Revision Note [DATE] ✍️
-    -> Re-write YYYY-MM-DD class notes in SSMS (Topic Name)
-    -> Read YYYY-MM-DD Revision Note (7-Step Framework)
-    -> Complete English Practice Book: Task N (N/125 tasks completed)
-
-[-] HH:MM AM - HH:MM PM : Lunch Break & Bio-Paced Mid-Day Recharge 🥗💤
-    -> Nutritious meal, hydration & mental reset power recharge!
-
-[ ] HH:MM PM - HH:MM PM : Sprint 2 — Solve Faculty Class Tasks [YYYY-MM-DD_CLASS_TASK.SQL] 📊
-    -> Solve all N faculty & in-class task queries from scratch in SSMS
-    -> Self-audit and mentor review
-
-[ ] HH:MM PM - HH:MM PM : Sprint 3 — Practice Drills [YYYY-MM-DD_QUESTIONS.SQL] 💪
-    -> Solve all 14 targeted practice drills in SSMS from scratch
-    -> Mark completed in MASTER_LEARNING_TRACKER.txt
-
-[-] HH:MM PM - HH:MM PM : Tea Break & Evening Refreshment ☕🚶
-    -> Evening tea, mental reset & physical stretch
+[-] 07:30 AM - 08:00 AM : Wake-Up, Performance Activation & Morning Recharge Window ☀️🥗
+    -> Hydration, sunlight, mobility and protein-rich breakfast
+    -> Review yesterday's error log and spaced-repetition queue
+    -> Select exactly three must-win outcomes; phone kept outside cockpit
 
 --------------------------------------------------------------------
-                    EVENING & LIVE CLASS BLOCK
+                        DAY SPRINT EXECUTION
 --------------------------------------------------------------------
-[-] 08:30 PM - 09:00 PM : Dinner Break & Pre-Class Setup 🍽️💻
-    -> Light nutritious dinner & SSMS warmup for live class
+[ ] 08:00 AM - 09:45 AM : Sprint 1 — Core Technical Deep Work (P1/P2/P5) 🧠
+    -> Learn one clearly bounded concept; solve N unfamiliar problems independently
+    -> Explain aloud: Definition -> Why it matters -> Example -> Trade-off -> Failure case
+    -> Record mistakes and misconceptions in the Error Log
+    -> [DoD]: Output tested with edge cases | No copy-paste | Recall score recorded
+
+[-] 09:45 AM - 10:00 AM : Eye Recovery, Hydration & Break Window ☕
+    -> Eye relaxation, hydration and quick screen break
+
+[ ] 10:00 AM - 11:15 AM : Sprint 2 — Active Recall & Class Consolidation [DATE] ✍️
+    -> 15-min closed-book recall of [DATE/TOPIC] before opening notes
+    -> Re-write missing logic & edge cases in 01_SQL/01_CLASS_NOTES/YYYY-MM-DD.sql
+    -> Review 01_SQL/03_REVISION_NOTES/YYYY-MM-DD_REVISION.md & solve faculty class tasks
+    -> [DoD]: Queries validated in SSMS | Class tasks solved | Bug traps logged
+
+[-] 11:15 AM - 12:00 PM : Lunch Break & Mid-Day Recovery Walk 🥗💤
+    -> Nutritious meal, hydration and complete screen-free break
+
+[ ] 12:00 PM - 01:45 PM : Sprint 3 — Production Data Engineering Project (P7: NexusFin) 🏗️
+    -> Build deployable slice: Ingestion -> Transformation -> Validation -> Storage
+    -> Add meaningful tests, logging, failure handling and architecture decisions
+    -> [DoD]: Feature works end-to-end | Tests pass | Able to explain design in <3 mins
+
+[-] 01:45 PM - 02:30 PM : Rest & Bio-Paced Mental Recharge Window 💤
+    -> Power nap, eye relaxation or quiet physical rest; zero social media
+
+[ ] 02:30 PM - 03:45 PM : Sprint 4 — Timed Interview & Practice Drills (01_SQL/05_INDEX_WISE_QUESTIONS) 💪
+    -> Complete 14 targeted problems under strict interview conditions (no AI/notes)
+    -> Review execution plans in SSMS; re-solve any failed problems from blank editor
+    -> [DoD]: Accuracy & time tracked | All failed drills re-solved independently
+
+--------------------------------------------------------------------
+                   HEALTH & SOCIAL RECOVERY BLOCK
+--------------------------------------------------------------------
+[-] 03:45 PM - 04:30 PM : Exercise, Physical Workout & Recovery Walk 🏃
+    -> Strength training, brisk walking, mobility or sport; shower & posture reset
+
+[-] 04:30 PM - 05:15 PM : Friends, Family & Social Relaxation Window 🤝☕
+    -> Guilt-free social recovery & tea; return sharp at 05:15 PM
+
+--------------------------------------------------------------------
+                    CAREER & COMMUNICATION ENGINE
+--------------------------------------------------------------------
+[ ] 05:15 PM - 05:45 PM : Sprint 5 — Career Opportunity & LinkedIn Authority Engine (P8) 🚀
+    -> Publish 1 #180DaysOfDataEngineering post OR send 5-7 Tier-1 personalized connection requests
+    -> Leave 3 high-value technical comments on Senior Architect posts
+    -> [Rule]: Strict 30-min cutoff; visibility supports—never replaces—engineering
+
+[ ] 05:45 PM - 06:15 PM : Sprint 6 — English & Technical Communication (Task N/125) 🎙️
+    -> Complete English Practice Book Task N (N/125 total)
+    -> Record 2-min verbal explanation of today's technical concept & 1 STAR answer
+
+[-] 06:15 PM - 07:00 PM : Protected Flex, Catch-Up & Rest Buffer 🛡️
+    -> Buffer window: Recover top-priority unfinished Must-Win OR take walk/rest
+
+[-] 07:00 PM - 08:15 PM : Personal Reset, Pre-Class Readiness & Dinner Setup 🌿🍽️
+    -> Light meal preparation, household reset; 10-min pre-class topic overview
+
+--------------------------------------------------------------------
+                     EVENING & LIVE CLASS BLOCK
+--------------------------------------------------------------------
+[-] 08:15 PM - 09:00 PM : Dinner Break & Pre-Class SSMS Warmup 🍽️💻
+    -> Light nutritious dinner; launch SSMS and setup workspace
 
 [ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY N) 🎓
-    -> Live lecture: [expected topic]
-    -> Take raw notes for post-class processing
+    -> Live lecture: [TOPIC NAME]
+    -> Capture raw notes, instructor tips & mark [?] flags for tomorrow's consolidation
 
 --------------------------------------------------------------------
-                 POST-CLASS NIGHT SPRINT BLOCK
+                  POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
-[-] 10:15 PM - 11:00 PM : Post-Class Quick Break & Night Setup Window ☕
-    -> Quick stretch, hydration & prep for night sprint
+[ ] 10:15 PM - 10:30 PM : Sprint N — Creative Recharge & 210-Day IG/Shorts Publishing (0.0 Study Hr Impact) 📱
+    -> Publish today's scheduled 15-min technical asset from EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/
+    -> Zero perfectionist loop: 1 Reel / Carousel / Infographic / Quiz Story published to IG, Shorts & LinkedIn
+    -> [DoD]: Asset published & saved to profile highlight | 0.0 study hr impact (creative fun)
 
-[ ] 11:00 PM - 01:00 AM : Sprint 4 — Social Presence & LinkedIn Sprint 🚀
-    -> Publish #180DaysOfDataEngineering Post N: [Post Topic]
-    -> Send 7-10 targeted connection requests to Tier-1 Data Engineers
-    -> Engage with 3 posts from new network connections
-
-[ ] 01:00 AM - 01:15 AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
-    -> Synchronize Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
+[ ] 10:30 PM - 10:45 PM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
+    -> Sync Master Learning Tracker, Metrics JSON, Concept Heatmap & Dashboard
     -> Run: node copy_tasks.cjs && npm run build (in DASHBOARD/)
-    -> Committed & pushed to GitHub repository with live Vercel auto-deployment
-    -> Mission Accomplished & Rest Window 🌙
+    -> Commit and push verified evidence to GitHub; confirm live Vercel deploy
+
+[-] 10:45 PM - 07:30 AM : Deep Sleep & Biological Recovery Window 🌙💤
+    -> 8 hours 45 minutes of protected sleep; cockpit fully shut down
 
 ====================================================================
-*Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
-*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+*Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
+*Daily Quote: "Build proof, correct mistakes and compound capability toward 32+ LPA."*
 ====================================================================

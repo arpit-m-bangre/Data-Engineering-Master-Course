@@ -49,7 +49,7 @@ No step may be skipped. No step may be reordered.
     6. 10 Bug Traps & Tier-1 Interview Scenarios
     7. Self-Assessment Flashcards & Practice Drills
   * 100% Pure GitHub Flavored Markdown (Zero HTML tags: no `<details>`, `<summary>`, `<b>`).
-  * 100% Clean ASCII Math (Zero LaTeX delimiters: no `$$...$$`, `$...$`, `\times`).
+  * 100% Clean ASCII Math (Zero LaTeX delimiters: no `...`, `$...$`, `x`).
 - Post-Write Gate: Verify all 7 steps present, no raw HTML, no LaTeX.
 
 ### STEP 3 — GENERATE 14 PRACTICE QUESTIONS

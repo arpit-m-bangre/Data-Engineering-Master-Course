@@ -55,7 +55,7 @@ GRAND TOTAL ALL 22 PILLARS COMPLETED BY 31 JANUARY 2027:                        
   - Day 12: System metadata auditing (`INFORMATION_SCHEMA`), dirty data retrofitting.
   - Day 13: Set operators (`UNION` sort vs `UNION ALL` append, `INTERSECT`, `EXCEPT`).
   - Day 14: Temporal date functions (`DATEDIFF`, `DATEADD`, `DATEPART`, `GETDATE`, `EOMONTH`).
-  - Day 15: Relational Joins foundations, Cartesian $N \times M$ math, 3VL NULL behavior.
+  - Day 15: Relational Joins foundations, Cartesian $N x M$ math, 3VL NULL behavior.
 * **Days 16–22 (16 Aug – 26 Aug):**
   - Day 16: ANSI Joins (`INNER`, `LEFT`, `RIGHT`, `FULL OUTER`), Anti-Join pattern.
   - Day 17: 3-Table chains, `CROSS JOIN` tournament matrices.

@@ -63,7 +63,7 @@ Execute each step in order. Do NOT skip or batch-reorder.
   5. Logical Query Execution Order & Scoping Rules
   6. 10 Bug Traps & Tier-1 Interview Scenarios
   7. Self-Assessment Flashcards & Practice Drills
-- **Rules**: 100% Pure Markdown (Zero raw HTML tags: no `<details>`, `<summary>`, `<b>`). 100% Clean ASCII Math (Zero LaTeX delimiters: no `$$...$$`, `\times`).
+- **Rules**: 100% Pure Markdown (Zero raw HTML tags: no `<details>`, `<summary>`, `<b>`). 100% Clean ASCII Math (Zero LaTeX delimiters: no `...`, `x`).
 
 ### Step 5: Create Faculty Class Tasks (`01_SQL/04_CLASS_TASKS/YYYY-MM-DD_CLASS_TASK.SQL`)
 - Phase 0 environment setup tables & seed data.
@@ -133,7 +133,7 @@ cd "d:\DE COURSE\DASHBOARD" ; node copy_tasks.cjs ; npm run build ; cd "d:\DE CO
 ## 🚨 PHASE 4: POST-FLIGHT AUDIT & VERIFICATION
 
 1. Verify:
-   $$\text{Class Notes Count} = \text{Revision Notes Count} = \text{Questions Count} = \text{Indexes Count}$$
+   \text{Class Notes Count} = \text{Revision Notes Count} = \text{Questions Count} = \text{Indexes Count}
 2. Verify Metrics JSON matches physical disk count.
 3. Verify Trackers match physical disk count.
 4. Verify `SYSTEM_MAP.md` is 100% synchronized.

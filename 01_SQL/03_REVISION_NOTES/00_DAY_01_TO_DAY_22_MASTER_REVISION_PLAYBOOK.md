@@ -389,7 +389,7 @@ WHERE o.OrderID IS NULL;
 
 ### 💡 The Core Idea:
 Chaining 3+ tables connects master entities to transactions and reference catalogs.
-`CROSS JOIN` produces an unconditional Cartesian multiplication ($N \times M$). Used for tournament pairing, date-spine matrices, and test data generation.
+`CROSS JOIN` produces an unconditional Cartesian multiplication ($N x M$). Used for tournament pairing, date-spine matrices, and test data generation.
 
 ### ⚙️ Practical Code Blueprint:
 ```sql
@@ -420,7 +420,7 @@ WHERE T1.TeamName <> T2.TeamName;
 
 ### 💡 The Core Idea:
 A **Self Join** joins a table to itself using memory aliasing (`T1` vs `T2`).
-* **Hierarchy:** Employee $\rightarrow$ Manager (`e.ManagerID = m.EmpID`).
+* **Hierarchy:** Employee --> Manager (`e.ManagerID = m.EmpID`).
 * **Symmetric Deduplication:** Match pairs without duplicates using `s1.ID < s2.ID`.
 * **Geo-Temporal Fraud Detection:** Finding transactions on the same card in different cities within a 5-minute window!
 

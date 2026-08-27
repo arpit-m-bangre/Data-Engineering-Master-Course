@@ -156,7 +156,7 @@ d:\DE COURSE\
 - All headings, questions, answers, and solution keys MUST be written using 100% pure GitHub Flavored Markdown (e.g. `### Heading`, `> Blockquotes`, `**bold text**`, `*italic*`, fenced code blocks ` ``` `) to ensure universal, crystal-clear readability across all markdown viewers, IDE previews, and mobile apps without raw tag visibility issues.
 
 ### 10. Clean ASCII Math & Zero LaTeX Law
-- NEVER use raw LaTeX math delimiters (`$$...$$`, `$...$`, `\text{...}`, `\sum`, `\times`) in SQL (`.sql`) files, practice drill files, daily indexes, or plain text notes.
+- NEVER use raw LaTeX math delimiters (`...`, `$...$`, `\text{...}`, `\sum`, `x`) in SQL (`.sql`) files, practice drill files, daily indexes, or plain text notes.
 - All mathematical equations, formulas, row-count rules, and logic proofs MUST be written in 100% clean, human-readable plain ASCII text (e.g. `Count(INNER JOIN) = Sum of (Count_T1(k) * Count_T2(k))`, `N x M`) so they render perfectly and cleanly inside SSMS, text editors, IDEs, and mobile viewers without raw LaTeX syntax clutter.
 
 ### 11. Daily Plan Completeness Mandate (ZERO OMISSION LAW) 🔴 CRITICAL
@@ -208,7 +208,7 @@ Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point
 When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 1. Replicate the same 6-tier directory structure inside each module folder (`02_PYTHON/`, `03_ETL/`, etc.).
 2. Integrate Python scripts, PySpark jobs, and DAGs into `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` and `METRICS_AND_STATISTICS.json`.
-3. Create multi-module combined projects (e.g. Python ingestion script $\rightarrow$ SQL Warehouse $\rightarrow$ Spark aggregation).
+3. Create multi-module combined projects (e.g. Python ingestion script --> SQL Warehouse --> Spark aggregation).
 
 ---
 
@@ -376,7 +376,7 @@ This law mandates that daily study planning ALWAYS prioritizes the active/yester
  
 ### MANDATORY SYSTEM BEHAVIORS:
 1. **Current-Focus Protocol:** Daily execution during the active course ALWAYS schedules the current active day's 4-stage pipeline first:
-   $$\text{Class Note Re-write} \longrightarrow \text{Read 7-Step Revision} \longrightarrow \text{Solve Class Tasks} \longrightarrow \text{Solve 14 Practice Drills}$$
+   \text{Class Note Re-write} --> \text{Read 7-Step Revision} --> \text{Solve Class Tasks} --> \text{Solve 14 Practice Drills}
 2. **Backlog Decoupling:** Past backlog is NEVER allowed to derail or overcrowd current daily live learning. Early backlogs are systematically scheduled during **Phase 3 (Post-Course Revision Cycle 1)** after the YouTube course deep-dive.
 3. **The 5-Phase 10+ Revision Architecture:**
    - **Phase 1 (Active Now):** Live Course Daily Sync & Deep Muscle Memory.
@@ -395,14 +395,14 @@ VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 This law mandates that the AI Mentor continuously updates, computes, and enforces the **Mathematical Retention Priority Score (RPS)** to guide revision blocks with zero guesswork.
  
 ### 1. THE MANDATORY RPS RETENTION FORMULA:
-$$\mathbf{RPS} = \left( \mathbf{W}_{\text{Interview}} \times \mathbf{C}_{\text{Complexity}} \right) \times \left( 1 + \frac{\mathbf{D}_{\text{Days Since Last Review}}}{7} \right) - \left( \mathbf{M}_{\text{Mastery Count}} \times 5 \right)$$
+\mathbf{RPS} = \left( \mathbf{W}_{\text{Interview}} x \mathbf{C}_{\text{Complexity}} \right) x \left( 1 + \frac{\mathbf{D}_{\text{Days Since Last Review}}}{7} \right) - \left( \mathbf{M}_{\text{Mastery Count}} x 5 \right)
 - **$\mathbf{W}_{\text{Interview}}$ (1–10):** Frequency of appearance in Tier-1 product interviews (Amazon, Walmart, Swiggy, Microsoft).
 - **$\mathbf{C}_{\text{Complexity}}$ (1–10):** Architectural and relational difficulty.
 - **$\mathbf{D}_{\text{Days}}$:** Memory decay multiplier ($> 7$ days escalates priority).
 - **$\mathbf{M}_{\text{Mastery}}$:** Reduces priority as verified mastery is logged in SSOT trackers.
  
 ### 2. THE 4 MANDATORY PRIORITY BANDS:
-- **🔴 Tier 0 (RPS $\ge 75$):** Red-Alert Priority (CTE Deduplication, Window Ranking, Self Joins, Anti-Joins).
+- **🔴 Tier 0 (RPS $>= 75$):** Red-Alert Priority (CTE Deduplication, Window Ranking, Self Joins, Anti-Joins).
 - **🟠 Tier 1 (RPS 50–74):** High-Frequency Interview Targets (Temporal functions, Set operators, Referential integrity).
 - **🟡 Tier 2 (RPS 25–49):** Maintenance & Syntax (IDENTITY, sp_rename, LIKE wildcards).
 - **🟢 Tier 3 (RPS $< 25$):** Stable Foundations (DDL/DML storage mechanics).
@@ -418,7 +418,7 @@ Whenever drilling, teaching, or answering queries, Pippo MUST enforce the 10 Gol
 7. *Alternating gender (`M/F/M/F`) sequence generation via `ROW_NUMBER()`.*
 8. *Temporal velocity fraud window detection ($< 5$ mins in different cities).*
 9. *`UNION` (in-memory sort/distinct) vs `UNION ALL` (high-performance stream append).*
-10. *Cartesian $N \times M$ multiplier math & NULL non-matching behavior.*
+10. *Cartesian $N x M$ multiplier math & NULL non-matching behavior.*
  
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
  

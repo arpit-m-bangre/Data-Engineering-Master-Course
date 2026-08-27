@@ -103,16 +103,16 @@ When Cap explains the logic back correctly, identifies the edge case, or writes 
 ## 🥊 STEP 6: THE TOP 10 TIER-1 WHITEBOARD TRAPS GRILLING ENGINE
 
 When Cap requests mock interview questioning or whiteboard drills, Pippo draws directly from the **Tier-0 Red-Alert Traps in `REVISION_RECOMMENDER_ENGINE.md`**:
-1. **Msg 4108 Window Function WHERE Trap** $\rightarrow$ Demand CTE / subquery wrapping.
-2. **In-Place Base Table Deduplication** $\rightarrow$ Demand `DELETE FROM CTE WHERE rn > 1`.
-3. **`NOT IN` with NULL Trap** $\rightarrow$ Demand Left Anti-Join or `NOT EXISTS`.
-4. **`TRUNCATE` Transactional Rollback** $\rightarrow$ Demand explicit transaction behavior proof.
-5. **`COUNT(*)` vs `COUNT(col)` vs `AVG(col)` NULL Trap** $\rightarrow$ Demand physical row vs value denominator trace.
-6. **CEO Root Node Nullability** $\rightarrow$ Demand `LEFT JOIN` proof in self joins.
-7. **Alternating Gender (`M/F/M/F`) Sequence** $\rightarrow$ Demand `ROW_NUMBER() PARTITION BY gender ORDER BY rn, gender DESC`.
-8. **5-Minute Banking Velocity Fraud Anomaly** $\rightarrow$ Demand `T1.id < T2.id AND DATEDIFF(MINUTE) BETWEEN 0 AND 5`.
-9. **`UNION` vs `UNION ALL` Execution Cost** $\rightarrow$ Demand in-memory sort/distinct explanation.
-10. **Cartesian $N \times M$ Row Multipliers** $\rightarrow$ Demand row calculation on duplicate keys.
+1. **Msg 4108 Window Function WHERE Trap** --> Demand CTE / subquery wrapping.
+2. **In-Place Base Table Deduplication** --> Demand `DELETE FROM CTE WHERE rn > 1`.
+3. **`NOT IN` with NULL Trap** --> Demand Left Anti-Join or `NOT EXISTS`.
+4. **`TRUNCATE` Transactional Rollback** --> Demand explicit transaction behavior proof.
+5. **`COUNT(*)` vs `COUNT(col)` vs `AVG(col)` NULL Trap** --> Demand physical row vs value denominator trace.
+6. **CEO Root Node Nullability** --> Demand `LEFT JOIN` proof in self joins.
+7. **Alternating Gender (`M/F/M/F`) Sequence** --> Demand `ROW_NUMBER() PARTITION BY gender ORDER BY rn, gender DESC`.
+8. **5-Minute Banking Velocity Fraud Anomaly** --> Demand `T1.id < T2.id AND DATEDIFF(MINUTE) BETWEEN 0 AND 5`.
+9. **`UNION` vs `UNION ALL` Execution Cost** --> Demand in-memory sort/distinct explanation.
+10. **Cartesian $N x M$ Row Multipliers** --> Demand row calculation on duplicate keys.
 
 ---
 

@@ -28,7 +28,7 @@ Instead of guessing what to revise, Pippo calculates the **Retention Priority Sc
 
 ---
 
-## 🎯 2. THE TIER-0 RED-ALERT REVISION QUEUE (RPS $\ge 75$)
+## 🎯 2. THE TIER-0 RED-ALERT REVISION QUEUE (RPS $>= 75$)
 
 These are the concepts that determine whether you receive a **₹32+ LPA Offer or an Immediate Rejection**:
 
@@ -67,7 +67,7 @@ TOPIC & CLASS DAY                RPS SCORE   CORE MECHANICS & INTERVIEW DANGER  
 | **Day 14: Temporal Functions** | `DATEDIFF` boundary crossings, `DATEADD`, `EOMONTH` leap years. | Customer churn, rolling 30-day active windows. | [`2026-08-17_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-17_REVISION.md) |
 | **Day 13: Set Operators** | `UNION` (implicit distinct sort) vs `UNION ALL` (fast append), `INTERSECT`, `EXCEPT`. | Data reconciliation, warehouse delta detection. | [`2026-08-14_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-14_REVISION.md) |
 | **Day 11: Referential Integrity** | Foreign Key parent-child destruction cascades, `RESTRICT`, `CASCADE`, `SET NULL`. | Schema design, preventing orphan transactional records. | [`2026-08-11_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-11_REVISION.md) |
-| **Day 07: 6-Stage Execution Flow** | `FROM` $\rightarrow$ `WHERE` $\rightarrow$ `GROUP BY` $\rightarrow$ `HAVING` $\rightarrow$ `SELECT` $\rightarrow$ `ORDER BY`. Alias visibility scope. | Why `WHERE` cannot use SELECT aliases, query performance tuning. | [`2026-08-07_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-07_REVISION.md) |
+| **Day 07: 6-Stage Execution Flow** | `FROM` --> `WHERE` --> `GROUP BY` --> `HAVING` --> `SELECT` --> `ORDER BY`. Alias visibility scope. | Why `WHERE` cannot use SELECT aliases, query performance tuning. | [`2026-08-07_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-07_REVISION.md) |
 | **Day 06: Aggregates & NULLs** | `COUNT(*)` counts rows, `COUNT(col)` & `AVG(col)` silently ignore NULLs. | Financial payroll & metrics calculation. | [`2026-08-06_REVISION.md`](file:///d:/DE%20COURSE/01_SQL/03_REVISION_NOTES/2026-08-06_REVISION.md) |
 
 ---
@@ -87,7 +87,7 @@ When an interviewer at **Amazon, Walmart, or Swiggy** wants to test your real-wo
 
 ### 🥊 Trap 1: The "Msg 4108 Window Function in WHERE" Trap
 * **Interviewer:** *"Write a query to find the 2nd highest salary using `DENSE_RANK()` in the `WHERE` clause."*
-* **Candidate Mistake:** Writing `WHERE DENSE_RANK() OVER (...) = 2` $\rightarrow$ ❌ **CRASH: Msg 4108**.
+* **Candidate Mistake:** Writing `WHERE DENSE_RANK() OVER (...) = 2` --> ❌ **CRASH: Msg 4108**.
 * **Pippo's Golden Fix:** Window functions execute in Stage 5 (`SELECT`); `WHERE` runs in Stage 2. You MUST wrap in a **CTE** or **Subquery**!
 
 ### 🥊 Trap 2: The In-Place Deduplication Trap
@@ -152,9 +152,9 @@ When an interviewer at **Amazon, Walmart, or Swiggy** wants to test your real-wo
 * **Interviewer:** *"Why is `UNION` 5x slower than `UNION ALL` on a 10M row pipeline?"*
 * **Pippo's Golden Fix:** `UNION` performs an expensive in-memory sort and deduplication pass (`DISTINCT`). `UNION ALL` simply streams and appends pages without sorting. Always use `UNION ALL` unless deduplication is strictly mandated.
 
-### 🥊 Trap 10: Cartesian $N \times M$ Multiplier Math
+### 🥊 Trap 10: Cartesian $N x M$ Multiplier Math
 * **Interviewer:** *"Table A has 4 rows with key `1`. Table B has 3 rows with key `1`. How many rows does `INNER JOIN` return?"*
-* **Pippo's Golden Fix:** $\mathbf{4 \times 3 = 12\text{ rows}}$. If both have NULL keys, `INNER JOIN` returns **0 rows** (NULL never equals NULL).
+* **Pippo's Golden Fix:** $\mathbf{4 x 3 = 12\text{ rows}}$. If both have NULL keys, `INNER JOIN` returns **0 rows** (NULL never equals NULL).
 
 ---
 

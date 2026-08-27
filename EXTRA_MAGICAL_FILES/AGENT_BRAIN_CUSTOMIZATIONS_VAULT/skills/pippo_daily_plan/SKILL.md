@@ -41,29 +41,38 @@ Before generating any plan, execute all 4 physical reads:
 
 ### 1. Mandatory Sprint Execution Order:
 For any class day being worked on, the order MUST be strictly:
-$$\text{Class Note Re-write} \longrightarrow \text{Read Revision Note} \longrightarrow \text{Solve Faculty Class Tasks} \longrightarrow \text{Solve Practice Drills}$$
+`Class Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Solve Practice Drills`
 *NEVER schedule practice drills without first scheduling the note rewrite and revision read for that day.*
 
-### 2. Zero-Omission Requirements:
-Every daily plan MUST include:
-- [ ] Yesterday's pending class tasks (if unsolved).
-- [ ] Pending practice drills from the backlog.
-- [ ] 1 English Practice Book task (30 min).
-- [ ] 9:00 PM - 10:15 PM Live Data Engineering Class block (Mon-Sat).
-- [ ] Final System Sync, GitHub Push & Vercel Trigger sprint (Streak Day N 🔥).
-- [ ] Social Presence Sprint (20-30 min) on **Monday, Wednesday, and Saturday**.
+### 2. The 8-Pillar Current-Focus & Zero-Omission Standard:
+- **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
+- **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
+- Every daily plan MUST incorporate all 9 core pillars:
+  * [ ] **Pillar 1:** Daily LinkedIn Authority Sprint (30 min: 11:30 AM - 12:00 PM) + Digital Presence Ecosystem syndication.
+  * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read (1.50h).
+  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.75h).
+  * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (2.00h).
+  * [ ] **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
+  * [ ] **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat).
+  * [ ] **Pillar 7:** Flagship MNC Project: NexusFin & Enterprise Modules (Integrated in Day/Evening & Weekend Sprints).
+  * [ ] **Pillar 8:** Compulsory 210-Day IG / Short-Form Content Publishing (15 min: 10:15 PM - 10:30 PM, 0.0 Study Hr Impact).
+  * [ ] **Pillar 9:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
 
 ### 3. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).
 - Exclude meal breaks, naps, and non-study windows.
 - State at the top:
-  `TOTAL STUDY TIME TODAY: X.X Hours (Summary breakdown)`
+  `TOTAL STUDY TIME TODAY: X.X Hours (Summary breakdown across all 8 pillars)`
 
-### 4. The 6-7-8 Hour Daily Planning Presets (24-48 LPA Tier Framework):
-When planning daily missions, align with Cap's energy target:
-- **6.0 Hours (Intense Deep Focus)**: Standard weekdays (3x 90-min coding blocks + Live Class + English).
-- **7.0 Hours (Moderate Focus)**: Acceleration weekdays (4x 90-min coding blocks + Live Class + English).
-- **8.0 Hours (Paced with Bio-Breaks)**: Weekend & holiday backlog clearance sprints with generous naps & meal windows.
+### 4. The Standard Daily Framework (32+ LPA Tier Framework):
+- **Anchor A (Start):** 11:30 AM (Cockpit Startup & Daily LinkedIn)
+- **Anchor B (Live Class):** 09:00 PM - 10:15 PM (Batch 15 Lecture)
+- **Anchor C (Night Cutoff):** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
+- **Total Study & Engineering Time:** **7.00 to 9.00 Hours Daily**.
+
+### 5. Zero-Shrink Allotted Time Standard:
+- **Never Compress Deep-Work Time for Convenience:** If learning a concept, re-writing notes, or solving drills requires $X$ hours of focused effort, Pippo MUST NOT compress it to $X - Y$.
+- **Adjust Timetables, Not Learning Depth:** When unexpected delays or outside events happen, manage the schedule (extend bedtime with protected 7h sleep shifted accordingly, shift buffers) while preserving 100% of study hours and deliverable depth.
 
 ---
 
@@ -142,5 +151,5 @@ git push origin main
 7. **Commit 7:** Live Class Notes capture & ecosystem sync (`feat(sql): add Day N ecosystem`).
 8. **Commit 8:** Final System Sync, Trackers & Dashboard deploy (`sync(dashboard): daily mission complete`).
 
-$$\mathbf{Result:\text{ }6\text{ to }10\text{ Atomic Commits / Day}\longrightarrow\text{Level 4 Darkest Green Square Every Single Day!}\text{ 🟩🔥}}$$
+*Result: 6 to 10 Atomic Commits / Day -> Level 4 Darkest Green Square Every Single Day! 🟩🔥*
 
