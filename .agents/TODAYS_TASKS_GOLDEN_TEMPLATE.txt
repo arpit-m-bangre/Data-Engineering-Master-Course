@@ -67,12 +67,10 @@ TOTAL STUDY TIME TODAY: 9.0 Hours (Core SQL: 1.75h | Recall: 1.25h | Project: 1.
 --------------------------------------------------------------------
                     CAREER & COMMUNICATION ENGINE
 --------------------------------------------------------------------
-[ ] 05:00 PM - 06:00 PM : Sprint 5 — 60-Min Omni-Channel Authority, LinkedIn & Distribution Engine (P8) 🚀
-    -> Publish 1 #180DaysOfDataEngineering post on LinkedIn + 5-7 Tier-1 personalized connection requests
-    -> Leave 3 high-value technical comments on Senior Data Architect posts
-    -> Upload 1-2 SQL/Architecture visual cheat sheets to Pinterest & Dev.to linking to GitHub
-    -> Syndicate key technical takeaways/snippets to Twitter/X and GitHub Discussions
-    -> [Rule]: Strict 60-min cutoff; high-leverage multi-platform authority distribution
+[ ] 05:00 PM - 06:00 PM : Sprint 5 — 60-Min Omni-Channel Authority & 34-Platform Distribution Engine (P8) 🚀
+    -> [First 30 Mins — LinkedIn]: Draft & publish #180DaysOfDataEngineering post + 5-7 Tier-1 connections (Walmart, Swiggy) + 3 comments
+    -> [Second 30 Mins — 34 Platforms]: Upload SQL architecture visual cheat sheet to Pinterest & Dev.to + syndicate snippets to Twitter/X & GitHub Discussions
+    -> [DoD]: LinkedIn post live | 7 connections sent | Pinterest & Dev.to cheat sheet uploaded | Multi-platform reach locked
 
 [ ] 06:00 PM - 06:30 PM : Sprint 6 — English & Technical Communication (Task N/125) 🎙️
     -> Complete English Practice Book Task N (N/125 total)
