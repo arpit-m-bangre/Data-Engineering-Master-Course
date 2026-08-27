@@ -295,7 +295,7 @@ Law #18: Brutal Tough-Love & Anti-Sycophancy Mentor  ✅ PASSED   Simple English
                                   🚀 THE COMPLETE 3-STAGE CAREER ARC
 ========================================================================================================
   [STAGE 1: LIVE COURSE EXECUTION] ──> 26 Jul 2026 to 15 Feb 2027 (100% Up-to-date Daily Sync across 7 Modules)
-  [STAGE 2: INDUSTRIAL ACCELERATOR]──> 15 Feb 2027 to 31 Mar 2027 (Active SSMS Retrieval + 1,000+ Industrial Drills)
+  [STAGE 2: INDUSTRIAL ACCELERATOR]──> 15 Feb 2027 to 31 Mar 2027 (YouTube Deep-Dive + 1,000+ Industrial Drills)
   [STAGE 3: TIER-1 PLACEMENT LOOP] ──> 01 Apr 2027 to 31 May 2027 (Referral Blitz ➔ ₹32.0 LPA Walmart Offer!)
 ========================================================================================================
 ```

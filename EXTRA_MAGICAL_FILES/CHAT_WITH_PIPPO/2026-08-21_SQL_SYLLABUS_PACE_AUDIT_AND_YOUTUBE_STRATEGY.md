@@ -74,19 +74,26 @@ During this strategic alignment session, Cap and Pippo conducted an in-depth eva
 
 ---
 
-## 🎯 Section 4: 100% Active SSMS Workspace Revision Protocol (Zero Video Waste)
+## 🎯 Section 4: Post-Sep 7 Surgical Execution Blueprint
 
-### The Strategic Alignment:
-* Passive video watching creates an illusion of competence while burning 30+ precious hours with zero query output.
-* Instead of watching someone else code, Cap will utilize our structured workspace ecosystem (`01_SQL/`):
-  * **Tier 1:** 15-Minute scan of `03_REVISION_NOTES/YYYY-MM-DD_REVISION.md` (mental models & bug traps).
-  * **Tier 2:** Pure hands-on solving of `05_INDEX_WISE_QUESTIONS/` (14 drills from blank editor in SSMS).
-  * **Tier 3:** Solving enterprise pipeline architectures in `06_PROJECTS/` (`PROJECT1` to `PROJECT7`).
+### The Strategic Dilemma:
+* When the live SQL module concludes on **September 7, 2026**, the batch will immediately kick off **02_PYTHON & DSA**.
+* Watching the entire 30-hour YouTube course from scratch would consume 15+ hours re-learning basic `SELECT`, `WHERE`, and `JOIN` commands, risking cognitive overload and backlog in Python.
+
+### The Surgical 10-Hour Solution:
+Cap will extract only the high-leverage modules from Data With Baraa that elevate his resume to Tier-1 product standards:
+
+```
+Data With Baraa (30-Hour Masterclass)
+ ├── ❌ SKIP [00:00:00 - 12:00:00] -> Basic Syntax & Joins (Already Mastered in Live Batch)
+ ├── ⚡ STUDY [18:23:42 - 22:24:25] -> Indexes, Execution Plans & Table Partitioning (~4 Hours)
+ └── 🔥 BUILD [23:21:04 - 27:41:51] -> Bronze/Silver/Gold SQL Data Warehouse Capstone (~6 Hours)
+```
 
 ### Key Deliverables & Outcomes:
-1. **Zero Burnout & Zero Backlog:** 100% focus preserved for active live classes and the upcoming Python/DSA module.
-2. **True Muscle Memory:** Queries flow naturally under 60 seconds without reference code.
-3. **Query Optimization Prowess:** Master query execution plans (`Ctrl + M`) directly in SSMS on real data.
+1. **Zero Burnout & Zero Backlog:** Live Python and DSA progress continues unimpeded.
+2. **Enterprise Medallion Project:** Cap gains a production-grade **Bronze -> Silver -> Gold SQL Data Warehouse** project on GitHub.
+3. **Query Optimization Prowess:** Cap masters query cost analysis, execution plan profiling, and index strategies for 20+ LPA technical interviews.
 
 ---
 

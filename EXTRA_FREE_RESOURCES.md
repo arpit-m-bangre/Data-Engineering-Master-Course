@@ -1,8 +1,4 @@
-# 📚 EXTRA FREE RESOURCES & SUPPLEMENTARY REFERENCE HUB
-
-> [!CAUTION]
-> **ANTI-PASSIVE CONSUMPTION LAW (100% ACTIVE REVISION FIRST):**
-> Do NOT passively re-watch 30 hours of video lectures. All core theory, formulas, and edge cases are already structured inside `d:\DE COURSE\01_SQL\`. Use this timestamp library **strictly as a 5-minute emergency visual reference** (e.g. B-Tree splits or Execution Plans) when troubleshooting, NOT as a primary revision vehicle.
+# 📚 EXTRA FREE RESOURCES & SUPPLEMENTARY SQL ROADMAP
 
 ---
 
@@ -14,14 +10,14 @@
 
 ---
 
-## 🌟 TIER-1 SUPPLEMENTARY LOOKUP RESOURCE: (30-HOUR SQL MASTERCLASS TIMESTAMPS)
+## 🌟 TIER-1 SUPPLEMENTARY RESOURCE: "DATA WITH BARAA" (30-HOUR SQL MASTERCLASS)
 
 - **Source:** [YouTube Master Course Link (Data With Baraa)](https://www.youtube.com/watch?v=SSKVgrwhzus&t=920s)
 - **Author:** Data With Baraa
 - **Companion Materials:** [Course Materials & Datasets](https://academy.datawithbaraa.com/l/digital_download/930511/sql-course-materials) | [GitHub Course Repo](https://github.com/DataWithBaraa/sql-ultimate-course)
 - **Project Repos:** [SQL Data Warehouse Project Repo](https://github.com/DataWithBaraa/sql-data-warehouse-project) | [SQL Data Analytics Project Repo](https://github.com/DataWithBaraa/sql-data-analytics-project)
 - **Interactive Mindmap & Notion Template:** [Interactive Mindmap Roadmap](https://mm.tt/app/map/2937557798?t=gEsd0gNKbd) | [Notion Project Template](https://www.notion.com/templates/sql-data-warehouse-project)
-- **Operational Rule:** Emergency lookup only (0.0 study hour impact on daily plan).
+- **Target Phase:** Secondary Sprint (Post Zero-Backlog Clearance of Main Course)
 
 ---
 
