@@ -11,7 +11,7 @@
 [SHOULD-WIN] Complete 2-Hour Special Tech Window (Hrushikesh Remote, LinkedIn Learning, DataCamp Cert & GPT Explore)
 [BONUS]      English Practice Book Task 4 & 210-Day IG/Shorts Day 001 Rollout
 
-TOTAL STUDY TIME TODAY: 9.25 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h | Class Tasks: 1.50h | English: 0.50h | Live Class: 1.25h | Special Tech: 2.00h | Drills: 1.50h | Night Sync: 0.50h)
+TOTAL STUDY TIME TODAY: 9.25 Hours (Authority: 0.50h | Re-write/Revision: 1.50h | Class Tasks: 1.50h | English: 0.50h | Live Class: 1.25h | Special Tech: 2.00h | Drills: 1.50h | Night Sync: 0.50h)
 
 --------------------------------------------------------------------
                 MORNING ROUTINE & COCKPIT READINESS
@@ -54,6 +54,9 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
     -> Solve Task 5: Multi-Tier Delivery Tracking with Reference Date (DATEDIFF + CASE)
     -> [DoD]: All 5 task queries solved and validated in SSMS with zero errors
 
+--------------------------------------------------------------------
+                    CAREER & COMMUNICATION ENGINE
+--------------------------------------------------------------------
 [ ] 07:45 PM - 08:15 PM : Sprint 4 — English Practice Book (Task 4) & Technical Voice Drill 📖🎙️
     -> Complete English Practice Book Task 4 (4/125 total)
     -> Record 2-minute verbal walkthrough explaining Searched vs Simple CASE expressions & STAR scenario
@@ -71,7 +74,7 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
 --------------------------------------------------------------------
-                   NIGHT BATTLE & SPECIAL TECH BLOCK
+                   POST-CLASS NIGHT SYNC & REST BLOCK
 --------------------------------------------------------------------
 [ ] 10:15 PM - 10:30 PM : Sprint 5 — 210-Day IG / Short-Form Content Publishing (Day 001 Rollout) 📱✨
     -> Publish Day 001 asset from EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md
@@ -102,5 +105,5 @@ TOTAL STUDY TIME TODAY: 9.25 Hours (LinkedIn: 0.50h | Re-write/Revision: 1.50h |
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
-*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 32+ LPA."*
+*Daily Quote: "Build proof, correct mistakes and compound capability toward 32+ LPA."*
 ====================================================================
