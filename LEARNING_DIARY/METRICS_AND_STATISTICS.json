@@ -38,6 +38,13 @@
     "projects_total_scheduled": 7,
     "projects_completed": 1
   },
+  "english_communication_counters": {
+    "total_book_tasks": 125,
+    "tasks_completed": 3,
+    "active_queued_task": 4,
+    "completion_percentage": 2.4,
+    "last_completed_task_date": "2026-08-21"
+  },
   "offline_test_analytics": {
     "test_name": "SQL_Test1_Offline",
     "date_taken": "2026-08-13",
