@@ -14,12 +14,6 @@
 TOTAL STUDY TIME TODAY: 9.0 Hours (Authority: 1.00h | Re-write/Revision: 1.50h | Tasks: 1.50h | Drills: 1.50h | Project: 1.50h | English: 0.50h | Warmup: 0.25h | Live Class: 1.25h | Night Sync: 0.25h)
 
 --------------------------------------------------------------------
-                MORNING BOOT & COCKPIT READINESS
---------------------------------------------------------------------
-[-] 09:30 AM - 11:00 AM : Wake-Up, Morning Routine & Cockpit Readiness Window ☕
-    -> Morning hydration, tea, personal reset, and mental readiness for 11:00 AM launch
-
---------------------------------------------------------------------
                     CAREER & COMMUNICATION ENGINE
 --------------------------------------------------------------------
 [ ] 11:00 AM - 12:00 PM : Sprint 1 — 60-Min Omni-Channel Authority, LinkedIn & Distribution Engine (P8) 🚀
@@ -99,8 +93,8 @@ TOTAL STUDY TIME TODAY: 9.0 Hours (Authority: 1.00h | Re-write/Revision: 1.50h |
     -> Push verified Day 24 streak to GitHub & trigger live Vercel deploy
     -> [DoD]: Green build confirmed | Vercel deployed | Dark green GitHub streak logged
 
-[-] 10:45 PM - 08:30 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
-    -> 9 hours 45 minutes of protected healing sleep; cockpit fully powered down
+[-] 10:45 PM - 09:00 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
+    -> Protected healing sleep; cockpit fully powered down
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*

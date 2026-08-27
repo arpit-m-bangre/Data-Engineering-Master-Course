@@ -47,16 +47,20 @@ For any class day being worked on, the order MUST be strictly:
 ### 2. The 8-Pillar Current-Focus & Zero-Omission Standard:
 - **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
 - **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
-- Every daily plan MUST incorporate all 9 core pillars:
-  * [ ] **Pillar 1:** Daily LinkedIn Authority Sprint (30 min: 11:30 AM - 12:00 PM) + Digital Presence Ecosystem syndication.
-  * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read (1.50h).
-  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.75h).
-  * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (2.00h).
-  * [ ] **Pillar 5:** English Practice Book Task (1 task daily, cycling 1 to 125).
-  * [ ] **Pillar 6:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat).
-  * [ ] **Pillar 7:** Flagship MNC Project: NexusFin & Enterprise Modules (Integrated in Day/Evening & Weekend Sprints).
-  * [ ] **Pillar 8:** Compulsory 210-Day IG / Short-Form Content Publishing (15 min: 10:15 PM - 10:30 PM, 0.0 Study Hr Impact).
-  * [ ] **Pillar 9:** Final System Sync, Atomic GitHub Streak Commits (6-8 commits/day) & Vercel Trigger (10:30 PM - 10:45 PM).
+- Every daily plan MUST incorporate all 9 core pillars (targeting standard 9.0 Hours study):
+  * [ ] **Pillar 1:** 60-Min Omni-Channel Authority & Syndication Sprint (1.0h) — LinkedIn, Pinterest, Dev.to, Twitter/X.
+  * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read in SSMS (1.50h).
+  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.50h).
+  * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (1.50h).
+  * [ ] **Pillar 5:** Flagship MNC Project: NexusFin Platform Pipeline Sprints (1.50h).
+  * [ ] **Pillar 6:** English Practice Book Task (0.50h: 1 task daily, cycling 1 to 125).
+  * [ ] **Pillar 7:** Pre-Class Warmup & Readiness (0.25h).
+  * [ ] **Pillar 8:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat, 1.25h).
+  * [ ] **Pillar 9:** Compulsory 210-Day IG/Shorts Publishing (10:15 PM - 10:30 PM, 0.0 Study Hr Impact) + Final System Sync & GitHub Push (10:30 PM - 10:45 PM, 0.25h).
+
+### 3. User Stated Start Time & Zero Personal Assumptions Law:
+- When Cap specifies a start time (e.g. *"Start day from 11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.
+- **NEVER inject unrequested morning routine, grooming, bath, or chore cards** prior to Cap's stated start time unless Cap explicitly asks for them.
 
 ### 3. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).

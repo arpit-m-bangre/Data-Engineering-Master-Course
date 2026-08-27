@@ -35,6 +35,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are ALL task details strictly formatted as indented bullets (`    -> Description`)? → If NO: fix format.
 - [ ] Are break/rest blocks formatted as `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title`? → If NO: fix format.
 - [ ] Did I verify format against `.agents/rules/todays_tasks_format_lock.md` parser contract? → If NO: verify now.
+- [ ] If Cap gave a specific start time (e.g. 11:00 AM), did I start Sprint 1 directly at that hour without unrequested morning routine cards? → If NO: fix it.
 - [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
 - [ ] Did I git commit and push to GitHub using non-interactive GCM? → If NO: do it now.
 
@@ -50,7 +51,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
 ### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
-- [ ] Is the 30-min Daily LinkedIn Authority & Digital Presence Sprint scheduled (11:30 AM - 12:00 PM)? → If NO: add it.
+- [ ] Is the 60-min Omni-Channel Authority & Syndication Sprint scheduled (LinkedIn, Pinterest, Dev.to, Twitter/X)? → If NO: add it.
 - [ ] Are targeted connection requests strictly aligned with the Tier-1 Dream Fleet (Tier 1A Titans, Tier 1B GCCs, Tier 1C Unicorns) per `.agents/rules/linkedin_networking_targeting_protocol.md`? → If NO: enforce now.
 - [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
 
