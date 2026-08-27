@@ -30,11 +30,15 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 
 ```text
 d:\DE COURSE\
-├── 00_SYLLABUS/                  <-- Master Curriculum, 6-Month Timeline & Snowflake Syllabus (7 Files)
+├── 00_SYLLABUS/                  <-- Master Curriculum, 6-Month Timeline & Snowflake Syllabus (8 Files)
 │   ├── 00_MASTER_22_MODULE_6_MONTH_EXECUTION_TIMELINE_2026_2027.md <-- 6-Month 22-Module Master Calendar
-│   ├── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
 │   ├── 60_LPA_OPTIMISTIC_ROADMAP.md <-- Long-term Career Arc
-│   └── SNOWFLAKE_DBT_SYLLABUS.md <-- Snowflake & dbt Deep-Dive Roadmap
+│   ├── COURSE_SYLLABUS.pdf       <-- Official DE Master Curriculum PDF
+│   ├── DE 60 LPA PLAN.pdf        <-- Comprehensive 60 LPA Strategy PDF
+│   ├── SNOWFLAKE_DBT_SYLLABUS.md <-- Snowflake & dbt Deep-Dive Roadmap
+│   ├── SNOWFLAKE_DBT_SYLLABUS.pdf <-- Snowflake & dbt Enterprise PDF
+│   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
+│   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
 ├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (103 Files)
 │   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (21 Files + 1 Asset)
 │   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (22 Files)
@@ -72,13 +76,14 @@ d:\DE COURSE\
 
 | File Name | Size (Bytes) | Lines | Purpose & Technical Scope | Compliance Status |
 | :--- | :---: | :---: | :--- | :---: |
-| `60_LPA_OPTIMISTIC_ROADMAP.md` | 1,767 | 25 | 3-Phase Long-term career progression to 60+ LPA | ✅ Passed |
+| `00_MASTER_22_MODULE_6_MONTH_EXECUTION_TIMELINE_2026_2027.md` | 13,235 | 201 | 6-Month 22-Module master execution timeline (2026-2027) | ✅ Passed |
+| `60_LPA_OPTIMISTIC_ROADMAP.md` | 1,767 | 33 | 3-Phase Long-term career progression to 60+ LPA | ✅ Passed |
 | `COURSE_SYLLABUS.pdf` | 55,644 | — | Official Data Engineering Master Curriculum PDF | ✅ Passed |
 | `DE 60 LPA PLAN.pdf` | 839,788 | — | Comprehensive 60 LPA strategy guide PDF | ✅ Passed |
-| `SNOWFLAKE_DBT_SYLLABUS.md` | 15,856 | 220 | Detailed Snowflake & dbt modern data stack syllabus | ✅ Passed |
+| `SNOWFLAKE_DBT_SYLLABUS.md` | 15,856 | 280 | Detailed Snowflake & dbt modern data stack syllabus | ✅ Passed |
 | `SNOWFLAKE_DBT_SYLLABUS.pdf` | 273,173 | — | Snowflake-dbt enterprise curriculum PDF | ✅ Passed |
-| `SYLLABUS_AUDIT_REPORT.md` | 2,428 | 33 | Verification audit of curriculum coverage | ✅ Passed |
-| `SYLLABUS_COMPLETION_REPORT.md` | 2,122 | 29 | Audit of covered vs pending modules | ✅ Passed |
+| `SYLLABUS_AUDIT_REPORT.md` | 2,428 | 46 | Verification audit of curriculum coverage | ✅ Passed |
+| `TRUE_2027_SYLLABUS.md` | 4,507 | 84 | True 2027 tier-1 product company DE syllabus & roadmap | ✅ Passed |
 
 ---
 
