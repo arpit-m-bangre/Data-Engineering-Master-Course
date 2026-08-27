@@ -61,25 +61,27 @@ TOTAL STUDY TIME TODAY: 8.25 Hours (P1: 1.75h | P2/P7: 1.75h | P8: 1.0h | Class:
 [-] 03:45 PM - 04:30 PM : Exercise, Physical Workout & Recovery Walk 🏃
     -> Strength training, brisk walking, mobility or sport; shower & posture reset
 
-[-] 04:30 PM - 05:15 PM : Friends, Family & Social Relaxation Window 🤝☕
-    -> Guilt-free social recovery & tea; return sharp at 05:15 PM
+[-] 04:30 PM - 05:00 PM : Friends, Family & Social Relaxation Window 🤝☕
+    -> Guilt-free social recovery & tea; return sharp at 05:00 PM
 
 --------------------------------------------------------------------
                     CAREER & COMMUNICATION ENGINE
 --------------------------------------------------------------------
-[ ] 05:15 PM - 05:45 PM : Sprint 5 — Career Opportunity & LinkedIn Authority Engine (P8) 🚀
-    -> Publish 1 #180DaysOfDataEngineering post OR send 5-7 Tier-1 personalized connection requests
-    -> Leave 3 high-value technical comments on Senior Architect posts
-    -> [Rule]: Strict 30-min cutoff; visibility supports—never replaces—engineering
+[ ] 05:00 PM - 06:00 PM : Sprint 5 — 60-Min Omni-Channel Authority, LinkedIn & Distribution Engine (P8) 🚀
+    -> Publish 1 #180DaysOfDataEngineering post on LinkedIn + 5-7 Tier-1 personalized connection requests
+    -> Leave 3 high-value technical comments on Senior Data Architect posts
+    -> Upload 1-2 SQL/Architecture visual cheat sheets to Pinterest & Dev.to linking to GitHub
+    -> Syndicate key technical takeaways/snippets to Twitter/X and GitHub Discussions
+    -> [Rule]: Strict 60-min cutoff; high-leverage multi-platform authority distribution
 
-[ ] 05:45 PM - 06:15 PM : Sprint 6 — English & Technical Communication (Task N/125) 🎙️
+[ ] 06:00 PM - 06:30 PM : Sprint 6 — English & Technical Communication (Task N/125) 🎙️
     -> Complete English Practice Book Task N (N/125 total)
     -> Record 2-min verbal explanation of today's technical concept & 1 STAR answer
 
-[-] 06:15 PM - 07:00 PM : Protected Flex, Catch-Up & Rest Buffer 🛡️
+[-] 06:30 PM - 07:15 PM : Protected Flex, Catch-Up & Rest Buffer 🛡️
     -> Buffer window: Recover top-priority unfinished Must-Win OR take walk/rest
 
-[-] 07:00 PM - 08:15 PM : Personal Reset, Pre-Class Readiness & Dinner Setup 🌿🍽️
+[-] 07:15 PM - 08:15 PM : Personal Reset, Pre-Class Readiness & Dinner Setup 🌿🍽️
     -> Light meal preparation, household reset; 10-min pre-class topic overview
 
 --------------------------------------------------------------------
