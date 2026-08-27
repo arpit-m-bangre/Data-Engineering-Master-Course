@@ -1,0 +1,190 @@
+%====================================================================
+% UNIVERSAL ATS-OPTIMIZED 1-PAGE RESUME TEMPLATE (LaTeX)
+% Calibrated for 100 ATS Score, Single-Page Fit & Clean Typography
+% Target: Nidhi Jangde - Data Analyst / Procurement Analytics
+%====================================================================
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+
+\setlength{\multicolsep}{-3pt}
+\setlength{\columnsep}{-1pt}
+
+%----------ATS MACHINE READABILITY ENGINE CHECK----------
+\ifdefined\pdfgentounicode
+\input{glyphtounicode}
+\pdfgentounicode=1
+\fi
+
+%----------COLOR PALETTE (Native RGB Model)----------
+\definecolor{highlightblue}{rgb}{0.0, 0.31, 0.65} % Sharp Executive Blue (RGB: 0, 79, 166)
+\definecolor{dark-grey}{rgb}{0.28, 0.28, 0.28}       % Deep Charcoal (RGB: 71, 71, 71)
+\definecolor{body-black}{rgb}{0.10, 0.10, 0.10}      % Crisp Body Black (RGB: 25, 25, 25)
+
+%----------PAGE STYLE----------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4pt}
+
+%----------MARGINS (Strict 1-Page Calibration)----------
+\addtolength{\oddsidemargin}{-0.58in}
+\addtolength{\evensidemargin}{-0.58in}
+\addtolength{\textwidth}{1.16in}
+\addtolength{\topmargin}{-0.72in}
+\addtolength{\textheight}{1.45in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%----------SECTION FORMATTING (Enhanced Breathing Room)----------
+\titleformat{\section}{\vspace{2pt}\scshape\raggedright\small\bfseries}{}{0em}{}[\color{highlightblue}\titlerule \vspace{2pt}]
+
+%----------CUSTOM REUSABLE MACROS----------
+\newcommand{\contactitem}[2]{{\color{highlightblue}#1}\hspace{3pt}{\color{dark-grey}#2}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1\vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\textcolor{highlightblue}{#1}} & \textbf{\small \color{dark-grey} #2} \\
+    \textit{\small \color{body-black} #3} & \textit{\small \color{dark-grey} #4}
+  \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+  \vspace{1.5pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{\textcolor{highlightblue}{#1}} \hspace{4pt}{\small\color{dark-grey}$|$\hspace{4pt}\href{#2}{\underline{\color{dark-grey}GitHub}}} & \textbf{\small \color{dark-grey} #3}
+  \end{tabular*}\vspace{-1.5pt}
+}
+
+% Bullet List with Explicit Visual Dots & Readable Line Spacing
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, label=\textcolor{highlightblue}{\raisebox{0.8pt}{\scriptsize\faCircle}}, itemsep=2pt, topsep=1.5pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%====================================================================
+% DOCUMENT START
+%====================================================================
+\begin{document}
+\color{body-black}
+
+%----------HEADER / CONTACT INFO----------
+\begin{center}
+    {\fontsize{17pt}{20pt}\selectfont \textbf{\color{highlightblue}NIDHI JANGDE}} \\[3pt]
+    {\small \textbf{\color{dark-grey}Data Analyst \ \textbar\ \ Power BI \ \textbar\ \ SQL \ \textbar\ \ Python \ \textbar\ \ Advanced Excel \ \textbar\ \ MIS \& Procurement Analytics}} \\[4pt]
+    \footnotesize
+    \contactitem{\faMapMarker*}{Nagpur, India} \hspace{5pt}\textbar\hspace{5pt}
+    \contactitem{\faPhone*}{+91 78882 88625} \hspace{5pt}\textbar\hspace{5pt}
+    \contactitem{\faEnvelope}{\href{mailto:nidhijangde19@gmail.com}{\underline{nidhijangde19@gmail.com}}} \hspace{5pt}\textbar\hspace{5pt}
+    \contactitem{\faLinkedin}{\href{https://linkedin.com/in/nidhijangde}{\underline{linkedin.com/in/nidhijangde}}} \hspace{5pt}\textbar\hspace{5pt}
+    \contactitem{\faGithub}{\href{https://github.com/nidhijangde09}{\underline{github.com/nidhijangde09}}}
+\end{center}
+\vspace{-6pt}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{PROFESSIONAL SUMMARY}
+\small{Results-driven \textbf{Data Analyst} with 1+ year of hands-on experience in \textbf{SQL, Python, Power BI, Advanced Excel (Power Pivot, VBA)}, and \textbf{ETL pipelines}. Proven expertise in analyzing complex procurement lifecycles—including spend optimization, purchase order (PO) tracking, vendor scorecarding, pricing variance, and SLA governance. Adept at building scalable star-schema data models, executive KPI dashboards, and automated reconciliation workflows. Certified with the \textbf{IBM Data Engineering Professional Certificate}.}
+\vspace{1pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=0in, label={}, itemsep=2.5pt, topsep=1.5pt]
+\small{\item{
+\textbf{\textcolor{highlightblue}{BI \& Data Visualization}}{: Power BI, DAX (Time Intelligence, Iterators), Power Query (M-code), KPI Dashboards, Star Schema Modeling, Tableau} \\
+\textbf{\textcolor{highlightblue}{Data Analysis \& MIS}}{: Advanced Excel (XLOOKUP, Dynamic Arrays, Pivot Tables, Power Pivot, VBA/Macros), MIS Reporting, Ad-hoc Analytics} \\
+\textbf{\textcolor{highlightblue}{Procurement Analytics}}{: Spend Analysis, PO Tracking, Vendor Performance Scorecards, Pricing Variance, Lead-Time \& Cost Optimization} \\
+\textbf{\textcolor{highlightblue}{Languages \& Databases}}{: Advanced SQL (CTEs, Window Functions, Complex Joins, Subqueries, Indexing), MySQL, Python (Pandas, NumPy, Matplotlib, Seaborn)} \\
+\textbf{\textcolor{highlightblue}{ETL \& Data Quality}}{: Data Cleansing, Schema Validation, Data Reconciliation, Warehousing Concepts, Power Automate, Power Apps} \\
+\textbf{\textcolor{highlightblue}{Developer Tools \& Big Data}}{: PySpark, Spark SQL, Google BigQuery, Git, GitHub, VS Code, Jupyter Notebook}
+}}
+\end{itemize}
+\vspace{-2pt}
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{PROFESSIONAL EXPERIENCE}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Data Analyst Intern}{Sep 2025 -- Jun 2026}
+    {VividNex Innovations}{Nagpur, India}
+    \resumeItemListStart
+      \resumeItem{Extracted, transformed, and consolidated high-volume transactional records across multi-source enterprise databases using \textbf{SQL} and \textbf{Python}, generating daily and monthly executive MIS reporting packs.}
+      \resumeItem{Engineered automated procurement analytics models tracking \textbf{Spend Distribution, Purchase Orders (PO), Vendor Compliance, and Lead Times}, directly surfacing actionable cost-saving opportunities for leadership.}
+      \resumeItem{Conducted rigorous end-to-end data reconciliation and quality assurance audits across relational databases and Excel sheets, reducing reporting discrepancies and operational error rates by \textbf{25\%+}.}
+      \resumeItem{Streamlined recurring weekly reporting cycles by deploying automated \textbf{Power Query} workflows and \textbf{Excel VBA/Macros}, cutting manual report generation turnaround time by \textbf{30\%+}.}
+      \resumeItem{Designed interactive, cross-filtered \textbf{Power BI} KPI dashboards using advanced \textbf{DAX measures}, providing senior decision-makers real-time visibility into business performance metrics.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------TECHNICAL PROJECTS-----------
+\section{TECHNICAL PROJECTS}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {AI Skill Demand Tracker}{https://github.com/nidhijangde09}{2025}
+    \textit{\small \color{dark-grey}Tech Stack: Python (Pandas, NumPy, Seaborn, Matplotlib), SQL, Exploratory Data Analysis, Data Cleansing}
+    \resumeItemListStart
+      \resumeItem{Built an end-to-end analytical pipeline analyzing \textbf{5,000+ tech job postings} across 10 skill categories, 4 experience tiers, and 10 regional hubs.}
+      \resumeItem{Executed multi-level SQL aggregations and Python statistical modeling to quantify industry demand shifts, identifying Python and SQL as primary market drivers.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {Blinkit Quick-Commerce Business Analytics Dashboard}{https://github.com/nidhijangde09}{2025}
+    \textit{\small \color{dark-grey}Tech Stack: Power BI, DAX, Power Query (M), Data Modeling (Star Schema), Advanced Excel}
+    \resumeItemListStart
+      \resumeItem{Architected a multi-page Power BI dashboard synthesizing sales revenue, inventory turn ratios, delivery SLAs, and customer feedback across 15+ product categories.}
+      \resumeItem{Constructed 25+ custom DAX measures (YTD, MoM growth, moving averages) and star-schema relationships, empowering instant ad-hoc variance diagnosis.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {IPL Performance Analytics Platform (2008--2024)}{https://github.com/nidhijangde09}{2024}
+    \textit{\small \color{dark-grey}Tech Stack: Python, SQL, Power BI, Statistical Benchmarking, Data Visualization}
+    \resumeItemListStart
+      \resumeItem{Ingested, normalized, and benchmarked 16 years of historical ball-by-ball tournament data using SQL window functions and Python data pipelines.}
+      \resumeItem{Generated rich comparative visualizations to evaluate player strike-rate trends, bowling economy thresholds, and head-to-head match momentum patterns.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-1pt}
+
+%-----------EDUCATION & CERTIFICATIONS-----------
+\section{EDUCATION \& CERTIFICATIONS}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bachelor of Computer Application (BCA)}{Jan 2022 -- May 2025}
+    {SNDT Women's University --- CGPA: 8.18 / 10}{Nagpur, India}
+\resumeSubHeadingListEnd
+\vspace{1pt}
+\begin{itemize}[leftmargin=0.18in, label=\textcolor{highlightblue}{\raisebox{0.8pt}{\scriptsize\faCircle}}, itemsep=1.5pt, topsep=1pt]
+  \small{\item{
+    \textbf{IBM Data Engineering Professional Certificate} --- Issued by IBM / Coursera (Comprehensive Data Warehousing, SQL, Python \& ETL)
+  }}
+\end{itemize}
+
+\end{document}

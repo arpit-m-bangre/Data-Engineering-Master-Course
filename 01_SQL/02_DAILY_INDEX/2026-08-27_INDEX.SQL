@@ -1,0 +1,16 @@
+-- ====================================================================================================
+-- 📑 DAILY TOPIC INDEX: 2026-08-27 (DAY 23)
+-- 🏢 MODULE 01: SQL Relational Architecture & Query Engine
+-- 🎯 FOCUS: Surprise Test — Advanced SQL Scenarios, Window Functions, LAG/LEAD, Self Joins & Fraud Analytics
+-- ====================================================================================================
+
+-- 1. Salary growth analytics: Tracking salary increases > 30% via LAG() and CTE filtering
+-- 2. Multi-event price volatility: Detecting price changes > twice in 90 days via LAG() and temporal filtering
+-- 3. Temporal completeness: Finding customers with transactions in all 12 distinct calendar months
+-- 4. Self-join deduplication: Identifying identical product pricing pairs without mirror permutations
+-- 5. Lifetime customer value (LTV): Ranking top 5 customers via DENSE_RANK() and CTE aggregation
+-- 6. Hourly peak sales detection: Slicing timestamps with DATEPART(HOUR, ...) to find maximum revenue windows
+-- 7. Partitioned category leaders: Finding top revenue generating product per category using DENSE_RANK()
+-- 8. Monthly employee leaderboard: Determining top performing sales representative per month
+-- 9. Account deduplication: Finding duplicate email addresses using GROUP BY and HAVING COUNT(*) > 1
+-- 10. Financial fraud engine: Detecting simultaneous transactions from different geographical cities (Self Join)

@@ -164,6 +164,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 14: SURPRISE ASSESSMENT: ADVANCED SQL & SCENARIO LAB
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C14.1** | Percentage Growth Analytics via `LAG()` | MASTERED | First row NULL evaluation failing in `WHERE Salary > PrevSalary * 1.3` | 0 | 🔴 High |
+| **C14.2** | Multi-Event Rolling Window Detection (>2 in 90d) | MASTERED | Counting unchanged price logs instead of true price changes (`Price <> PrevPrice`) | 0 | 🔴 High |
+| **C14.3** | Calendar Completeness via `COUNT(DISTINCT MONTH)` | MASTERED | Using `COUNT(MONTH)` instead of `COUNT(DISTINCT MONTH)` | 0 | 🔴 High |
+| **C14.4** | Self Join Pairing & Mirror Permutation Pruning | MASTERED | Using `<>` instead of `<` causing 2x mirror duplicate pairs `(A, B)` and `(B, A)` | 0 | 🔴 High |
+| **C14.5** | Geo-Temporal Bank Fraud Collision Detection | MASTERED | Matching transaction against itself (missing `t1.TxnID < t2.TxnID`) | 0 | 🔴 High |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:
@@ -176,3 +187,4 @@ This document tracks every core SQL & Data Engineering technical concept covered
    - *Key Rule*: Always execute pre-cleaning queries (`DELETE ... WHERE col IS NULL`) prior to running `ALTER TABLE ADD CONSTRAINT` to avoid Error Msg 1750.
 5. **The Cartesian Duplicate Explosion in Production ETL Pipelines**:
    - *Key Rule*: Always verify join key cardinality and deduplicate staging tables before joining to avoid accidental N x M Cartesian runaway row explosions.
+

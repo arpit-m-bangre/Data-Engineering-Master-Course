@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 21 Class Note Files (2026-08-01 to 2026-08-26)
+Total Modules / Files: 22 Class Note Files (2026-08-01 to 2026-08-27)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -213,6 +213,18 @@ SECTION 1: DAILY CLASS BREAKDOWN
     22.5 Temporal Status Evaluation: Multi-Condition Date Intervals with DATEDIFF
     22.6 Custom Dynamic Sorting: ORDER BY CASE Expression (Pinned Priority Sorting)
     22.7 Tier-1 Interview Scenarios: Department Salary Tiering & Quarter Segmentation
+
+23. DAY 23 (AUGUST 27) - SURPRISE TEST: ADVANCED SQL & SCENARIO LAB
+    23.1 Salary Growth Analytics: Tracking Salary Jumps > 30% via LAG() & CTEs
+    23.2 Multi-Event Price Volatility: Detecting Price Changes > 2 Times in 90 Days
+    23.3 Temporal Completeness: Identifying Customers Active in All 12 Calendar Months
+    23.4 Self Join Matching: Finding Identical Sale Amount Pairs Without Permutations
+    23.5 Lifetime Value Analytics: Ranking Top 5 Spenders via DENSE_RANK() & CTE
+    23.6 Temporal Slicing: Hourly Peak Revenue Identification via DATEPART(HOUR, ...)
+    23.7 Partitioned Category Leaders: Top Revenue Product per Category
+    23.8 Monthly Representative Leaderboard: Top Sales Rep per Month via DENSE_RANK()
+    23.9 User Account Deduplication: Finding Duplicate Email IDs via GROUP BY & HAVING
+    23.10 Banking Fraud Detection: Detecting Simultaneous Multi-City Transactions (Self Join)
 
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
