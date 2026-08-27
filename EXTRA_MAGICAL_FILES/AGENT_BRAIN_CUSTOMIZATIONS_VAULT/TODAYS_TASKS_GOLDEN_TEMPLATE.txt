@@ -11,7 +11,7 @@
 [SHOULD-WIN] [Revision, communication or career-development outcome]
 [BONUS]      [Optional drill, dashboard improvement or additional networking]
 
-TOTAL STUDY TIME TODAY: 8.25 Hours (P1: 1.75h | P2/P7: 1.75h | P8: 1.0h | Class: 1.25h | Drills: 1.25h | Recall: 1.25h)
+TOTAL STUDY TIME TODAY: 9.0 Hours (Core SQL: 1.75h | Recall: 1.25h | Project: 1.75h | Drills: 1.25h | Authority: 1.0h | English: 0.50h | Live Class: 1.25h | Night Sync: 0.25h)
 
 --------------------------------------------------------------------
                 MORNING SYSTEM BOOT & PRIORITIZATION
