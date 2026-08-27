@@ -130,7 +130,62 @@ Output columns: DeptName, EmpID, EmpName, Salary, SalaryRank, SalaryClassificati
 
 -- Write your SQL Query below:
 
+-- ----------------------------------------------------------------------------------------------------
+-- 👤 CAPTAIN'S SUBMISSION (Score: 5.5 / 10):
+-- ----------------------------------------------------------------------------------------------------
+/*
+-- ⚠️ Review Feedback by Pippo 🐥:
+-- 1. [Sorting]: ORDER BY salary is ASC (lowest gets 1). Needs ORDER BY Salary DESC.
+-- 2. [Schema]: Table is 'Employees' (not 'employee') and column is 'DeptID' (not 'dept').
+-- 3. [Join]: Requires JOIN with Departments to output 'DeptName'.
+-- 4. [Spec]: Use 'Common Salary' instead of 'unknown', and alias 'SalaryClassification' instead of 'rank_'.
+-- 5. [T-SQL]: Preceding statement must end with semicolon (;) before WITH clause.
+*/
 
+-- [Cap's Query]:
+/*
+select * from employee
+
+with cte as 
+(
+select dept,empname,salary,DENSE_RANK() over ( partition by dept order by salary) as salary_rank from employee
+)
+select *,
+case 
+    when salary_rank = 1 then 'highest salary'
+    when salary_rank = 2 then '2nd highest salary'
+    else 'unknown'
+    end as rank_
+    from cte 
+*/
+
+-- ----------------------------------------------------------------------------------------------------
+-- 🐥 PIPPO'S BENCHMARK SOLUTION (Production Standard):
+-- ----------------------------------------------------------------------------------------------------
+WITH SalaryRanks AS
+(
+    SELECT 
+        d.DeptName,
+        e.EmpID,
+        e.EmpName,
+        e.Salary,
+        DENSE_RANK() OVER (PARTITION BY e.DeptID ORDER BY e.Salary DESC) AS SalaryRank
+    FROM Employees e
+    INNER JOIN Departments d 
+        ON e.DeptID = d.DeptID
+)
+SELECT 
+    DeptName,
+    EmpID,
+    EmpName,
+    Salary,
+    SalaryRank,
+    CASE 
+        WHEN SalaryRank = 1 THEN 'Highest Salary'
+        WHEN SalaryRank = 2 THEN '2nd Highest Salary'
+        ELSE 'Common Salary'
+    END AS SalaryClassification
+FROM SalaryRanks;
 
 -- ====================================================================================================
 -- 📝 TASK 2: FACULTY HOMEWORK 2 — CUSTOM PINNED SORTING (PUNE FIRST, REST DESCENDING)
@@ -143,7 +198,6 @@ Output columns: CustomerID, CustomerName, City
 */
 
 -- Write your SQL Query below:
-
 
 
 

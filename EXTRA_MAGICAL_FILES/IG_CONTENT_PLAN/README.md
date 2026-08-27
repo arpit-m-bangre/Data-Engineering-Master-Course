@@ -11,13 +11,13 @@
 
 | File | Purpose | Description |
 | :--- | :--- | :--- |
-| [`01_210_DAYS_MASTER_CONTENT_CALENDAR.md`](file:///d:/DE%20COURSE/EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md) | **Master 210-Day Calendar** | Complete 30-week day-by-day roadmap (27 Aug 2026 – 24 Mar 2027) with titles, hooks, and formats. |
+| [`01_210_DAYS_MASTER_CONTENT_CALENDAR.md`](file:///d:/DE%20COURSE/EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md) | **Master 210-Day Calendar** | Complete 30-week day-by-day roadmap (31 Aug 2026 – 28 Mar 2027) with titles, hooks, and formats. |
 | [`02_CREATOR_BLUEPRINT_AND_REEL_SCRIPTS.md`](file:///d:/DE%20COURSE/EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/02_CREATOR_BLUEPRINT_AND_REEL_SCRIPTS.md) | **Viral Production Framework** | 4-Step Viral Hook Formula, 5 ready-to-shoot scripts, and 15-minute creation checklist. |
 | [`03_INSTAGRAM_HIGHLIGHTS_AND_BIO_STRATEGY.md`](file:///d:/DE%20COURSE/EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/03_INSTAGRAM_HIGHLIGHTS_AND_BIO_STRATEGY.md) | **Profile & Highlights Architecture** | Anonymous high-authority bio templates, 6 permanent story highlight vaults, and Sunday quiz strategies. |
 
 ---
 
-## 🎯 THE 210-DAY ENDGAME SCORECARD (BY 24 MARCH 2027)
+## 🎯 THE 210-DAY ENDGAME SCORECARD (BY 28 MARCH 2027)
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐

@@ -1,5 +1,5 @@
 # 🚀 DAY 001 CAROUSEL ASSET KIT
-### *Data Engineering Craft 📐 — 27 August 2026*
+### *Data Engineering Craft 📐 — 31 August 2026*
 
 **Topic:** 5 Window Functions Every Data Engineer Must Master  
 **Target Profile:** `@dataengineering.craft`  
