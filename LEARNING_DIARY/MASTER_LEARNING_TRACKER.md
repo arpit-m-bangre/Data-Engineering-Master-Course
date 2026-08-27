@@ -86,60 +86,24 @@
 
 ---
 
-## ⚔️ 4. THE MASTER RECOVERY BATTLE PLAN (LOG & ROADMAP)
+## ⚔️ 4. STRATEGIC EXECUTION PHASES & MILESTONE ROADMAP
 
-### Day 1 (Saturday, Aug 15) — Career Vision & System Lock
-- [x] 02:00 PM - 03:30 PM: Google Form MCQ Test & `2026-08-14_CLASS_TASK.SQL` (10 Queries) — **DONE!**
-- [x] 03:30 PM - 04:00 PM: Python Developer Resume Formatting in LaTeX — **DONE!**
-- [x] 04:30 PM - 05:30 PM: Class Note Re-write `2026-08-13` (Day 12: Retrofitting Constraints) — **DONE!**
-- [x] 05:30 PM - 08:30 PM: Master Career Blueprint & System Lock Session — **DONE!**
-- [-] 09:00 PM - 10:15 PM: LIVE CLASS (Cancelled - Faculty Holiday)
-- [x] 08:45 PM: Commit & Push to GitHub (Streak Day 1 Maintained 🔥)
-
-### Day 2 (Sunday, Aug 16) — Mock Interview & Streak
-- [x] 10:30 AM - 12:30 PM: Mock Interview Live Class Session — **DONE!**
-- [-] 12:30 PM - 07:30 PM: Friend's Admission Duty & Travel (Personal Outing)
-- [-] 07:30 PM - 10:00 PM: Rest & Personal Time
-- [x] 10:15 PM: Commit & Push to GitHub (Streak Day 2 Maintained 🔥)
-
-### Day 3 (Monday, Aug 17) — Live Class (Day 14) Done
-- [x] 09:00 AM - 06:00 PM: Morning Pooja & College Admission Duty with Friend — **DONE!**
-- [x] 06:00 PM - 08:45 PM: Rest & Physical Recovery (Fatigue Reset) — **DONE!**
-- [x] 09:00 PM - 10:15 PM: LIVE CLASS (Day 14: Date & DateTime Functions) — **DONE!**
-- [x] 10:15 PM: Commit & Push to GitHub (Streak Day 4 Maintained 🔥)
-
-### Day 4 (Tuesday, Aug 18) — Temporal Drills & Joins Foundations
-- [x] 10:00 AM - 01:00 PM: Class Note Re-write `2026-08-17`, Revision Note Read & 4 In-Class Tasks — **DONE!**
-- [x] 01:00 PM - 02:00 PM: Lunch Break & Meal Recharge 🥗 — **DONE!**
-- [x] 03:00 PM - 03:45 PM: Complete 11 Temporal Questions (Q10 to Q20) & Line-by-Line Audit — **DONE!**
-- [x] 09:00 PM - 10:15 PM: LIVE CLASS (Day 15: JOINS Foundations, Set vs Join, Cross Product & NULLs) — **DONE!**
-- [x] 10:15 PM: Commit & Push to GitHub (Streak Day 5 Maintained 🔥)
-
-### Day 5 (Wednesday, Aug 19) — 🏆 Project 1 & Day 6 Zero-Debt
-- [x] 12:30 PM - 01:45 PM: Class Note Re-write and Revision Note `2026-08-18` (Day 15) — **DONE!**
-- [x] 01:45 PM - 02:45 PM: Solve 14 Practice Questions `2026-08-18` in SSMS — **DONE!**
-- [x] 09:00 PM - 10:15 PM: LIVE CLASS (Day 16: ANSI Joins, Ambiguity & Aggregations) — **DONE!**
-- [x] 10:30 PM - 12:00 AM: PROJECT 1 (E-Commerce Analytics Pipeline) — **SOLVED & AUDITED! ✅**
-- [x] 12:00 AM - 01:00 AM: Class Note Re-write `2026-08-06` (Day 6: Aggregates & GROUP BY) — **DONE! ✅**
-- [x] 01:00 AM - 02:00 AM: English Practice Book (Task 1) — **DONE! ✅**
-- [x] 02:00 AM: Commit & Push to GitHub (Streak Day 6 Maintained 🔥)
-
-### Day 6 (Thursday, Aug 20) — 🏆 Day 16 & Day 6 Complete + Live Class (Day 17) + Branding Sprint
-- [x] 11:30 AM - 01:15 PM: Class Note Re-write & 6 Tasks in `2026-08-19_CLASS_TASK.SQL` + 14 Drills — **100% DONE & AUDITED! ✅**
-- [x] 04:00 PM - 05:00 PM: Backlog Clearance: 20 Practice Drills in `2026-08-06_QUESTIONS.SQL` (17.8/20.0 - Grade A-) — **DONE! ✅**
-- [x] 08:30 PM - 09:00 PM: English Practice (Task 2) — **DONE! ✅**
-- [x] 09:00 PM - 10:15 PM: LIVE CLASS (Day 17: Multi-Table Joins, Cross Join & Equi Joins) — **DONE! ✅**
-- [x] 10:30 PM - 02:30 AM: LinkedIn & 34-Platform Social Authority Architecture Sprint — **DONE! ✅**
-- [x] 02:30 AM: Commit & Push to GitHub (Streak Day 7 Maintained 🔥)
+| Phase # | Phase Milestone & Target Area | Primary Target / Output | Status & Timeline |
+| :---: | :--- | :--- | :---: |
+| **Phase 1** | **Ecosystem Architecture & SQL Foundations (Days 1–23)** | 23 Restructured Notes, 23 Indexes, 23 Revisions, Project 1 & Vercel Dashboard | ✅ **COMPLETED (Audited & Synced)** |
+| **Phase 2** | **Super 50 Grand Revision Campaign (Days 1–22 Synthesis)** | 50 Benchmark Complex Scenarios in [`10_HOUR_SQL_BOOTCAMP.md`](../01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md) | 🔥 **IN PROGRESS (Target: Aug 29, 9 PM)** |
+| **Phase 3** | **Advanced SQL Modules & Zero-Debt Clearance (Classes 24–31)** | Subqueries, Recursive CTEs, Indexing B-Trees, Execution Plans & Stored Procedures | ⏳ **UPCOMING (Aug 28 – Sep 05)** |
+| **Phase 4** | **02_PYTHON Module Launch & Ingestion Engine** | Python OOP, Data Cleansing, Pandas, Polars & Automated Ingestion Pipelines | ⏳ **UPCOMING (Target: Sep 06 Launch)** |
+| **Phase 5** | **Tier-1 Job Hunt, Referral Engine & Fleet Placements** | 14,500+ HR DB Outreach, Portfolio Showcases, 32+ LPA Placements | ⏳ **PLANNED (Post-Module 04)** |
 
 ---
 
-## 📣 5. SOCIAL PRESENCE SCHEDULE — 3x PER WEEK
+## 📣 5. DIGITAL PRESENCE & OMNI-CHANNEL AUTHORITY ENGINE
 
-Fixed weekly authority slots — MANDATORY across all weeks:
-- **MONDAY:** Session 1 of 3 (20-30 min) — SQL query tips, technical optimization threads.
-- **WEDNESDAY:** Session 2 of 3 (20-30 min) — Interview insights, project progress deep dives.
-- **SATURDAY:** Session 3 of 3 (20-30 min) — Weekly engineering summary, personal brand portfolio updates.
+| Platform Hub | Frequency / Schedule | Core Deliverables & Strategy |
+| :--- | :---: | :--- |
+| **LinkedIn Authority** | **Daily / 5x Weekly** | #180DaysOfDataEngineering technical threads, architecture breakdowns, 5–7 Tier-1 connections |
+| **210-Day Short-Form Engine** | **Daily (Starting Mon 31-Aug)** | Reels, Carousels, and Infographics from [`EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/`](../EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/) |
+| **50-Platform SEO Ecosystem** | **Weekly Campaigns** | GitHub README portfolio, Dev.to articles, SlideShare decks, LeetCode/HackerRank badges |
+| **North Star Outcome** | **Inbound Recruiter Gravity** | Establish undeniable technical proof to attract **32+ LPA Tier-1 offers** (Walmart, Swiggy, Uber) |
 
-**Core Platforms:** LinkedIn, GitHub README, Medium, Dev.to & SlideShare.  
-**North Star:** Build recruiter inbound visibility for the **25+ LPA Target**! 🚀
