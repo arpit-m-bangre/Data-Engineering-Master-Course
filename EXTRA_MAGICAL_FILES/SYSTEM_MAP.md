@@ -13,8 +13,8 @@ This document serves as the **exhaustive, file-by-file master map** of the entir
 ========================================================================================================
                                  📊 SYSTEM-WIDE AUDIT METRICS
 ========================================================================================================
-  • Total Physical Files Audited    : 264 Files (100% Physically Verified, Zero Hallucinations)
-  • Active Core SQL Modules         : 120 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision)
+  • Total Physical Files Audited    : 262 Files (100% Physically Verified, Zero Hallucinations)
+  • Active Core SQL Modules         : 118 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision)
   • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank)
   • Active Class Days Synchronized  : 23 Class Days (Day 1: 2026-08-01 to Day 23: 2026-08-27)
   • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7)
@@ -40,14 +40,14 @@ d:\DE COURSE\
 │   ├── SNOWFLAKE_DBT_SYLLABUS.pdf <-- Snowflake & dbt Enterprise PDF
 │   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
 │   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
-├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (120 Files)
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (118 Files)
 │   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (23 Notes + 1 Spreadsheet)
 │   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (24 Files)
 │   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (24 Markdown + 1 PDF)
 │   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (13 Files)
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (23 Files)
 │   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
-│   ├── 07_QUICK_REVISION/        <-- 10-Hour Mastery Bootcamp, Revision Playbook & Super 50 Dossier (3 Files)
+│   ├── 07_QUICK_REVISION/        <-- 10-Hour SQL Server Mastery Bootcamp Master Guide (1 File: 10_HOUR_SQL_BOOTCAMP.md)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
