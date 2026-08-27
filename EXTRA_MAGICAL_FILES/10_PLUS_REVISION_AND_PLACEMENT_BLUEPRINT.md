@@ -62,7 +62,7 @@
 ```mermaid
 flowchart TD
     S1["STAGE 1: LIVE COURSE SYNC & CORE FOUNDATION\n(26 Jul 2026 — 15 Feb 2027) [~6.5 Months]\n100% Up-to-Date Mastery across 7 Modules + NexusFin Foundation"]
-    S2["STAGE 2: POST-COURSE REVISION BLITZ & 1,000+ DRILLS\n(15 Feb 2027 — 31 Mar 2027) [~6 Weeks]\nYouTube Deep-Dive + Sequential Course Revisions + Industrial Question Bank"]
+    S2["STAGE 2: POST-COURSE REVISION BLITZ & 1,000+ DRILLS\n(15 Feb 2027 — 31 Mar 2027) [~6 Weeks]\nActive SSMS Retrieval + 7-Step Revision Notes + Industrial Question Bank"]
     S3["STAGE 3: TIER-1 REFERRAL BLITZ & 24–48 LPA HIRING LOOPS\n(01 Apr 2027 — 31 May 2027) [~8 Weeks]\nMock Interview Grilling + Inbound LinkedIn Outreach + 32 LPA Walmart Offer"]
 
     S1 --> S2 --> S3
@@ -85,12 +85,12 @@ flowchart TD
 ---
 
 ### 🚀 STAGE 2: THE POST-COURSE INDUSTRIAL ACCELERATOR (15 FEB — 31 MAR 2027)
-*The live course is finished. You shift into full-time Tier-1 preparation (8–10 hours daily).*
+*The live course is finished. You shift into full-time Tier-1 preparation (8–10 hours daily). Zero passive video consumption — 100% active SSMS query execution.*
 
-* **Weeks 1–2 (Feb 15 – Feb 28): The YouTube Deep-Dive & Sequential Revision 1**
-  - Complete the comprehensive SQL YouTube course to absorb an alternative enterprise perspective.
-  - Traverse the Live Course in strict sequence: Day 1 $\rightarrow$ Day 2 $\rightarrow$ Day 3 $\dots$ Day 25+.
-  - Complete all early backlogs (Days 1–5, 7–11, 13) effortlessly in 15–20 minutes per topic.
+* **Weeks 1–2 (Feb 15 – Feb 28): Sequential SSMS Active Retrieval & Backlog Elimination**
+  - Systematic active recall across all 25+ SQL days: Day 1 $\rightarrow$ Day 2 $\rightarrow$ Day 3 $\dots$ Day 25+.
+  - Rapid scan of 7-Step Revision Notes (`_REVISION.md`) + re-solving 14 Practice Drills from blank editor.
+  - Complete all early backlogs (Days 1–5, 7–11, 13) in 15–20 minutes per topic via direct SSMS execution.
 * **Weeks 3–4 (Mar 01 – Mar 15): Multi-Module Synthesis & NexusFin Platform Productionization**
   - Synthesize cross-module architectures: Python Ingestion $\rightarrow$ PySpark Processing $\rightarrow$ Snowflake Warehouse $\rightarrow$ Airflow DAGs.
   - Finalize **NexusFin Platform** (`nexusfin-platform` on GitHub) with complete JIRA backlogs, architecture diagrams, and automated data quality checks.
@@ -117,8 +117,8 @@ flowchart TD
 
 ## 🔄 3. THE 10-PASS SPACED REVISION ENGINE (STEP-BY-STEP BREAKDOWN)
 
-Why do most candidates freeze in interviews? Because they only revise once.  
-Here is how your **10-Pass Spaced Revision Engine** builds unbreakable muscle memory:
+Why do most candidates freeze in interviews? Because they only revise once or passively watch videos.  
+Here is how your **10-Pass Spaced Revision Engine** builds unbreakable muscle memory through 100% active SSMS retrieval:
 
 ```text
 ========================================================================================
@@ -128,8 +128,8 @@ Here is how your **10-Pass Spaced Revision Engine** builds unbreakable muscle me
   [PASS 1: ACTIVE LIVE CLASS DAY] ➔ Note Re-write + 7-Step Revision (Day of class)
   [PASS 2: PRE-CLASS REVISION RUN] ➔ 15-min re-read before the next day's live lecture
   [PASS 3: WEEKEND SYNTHESIS SWEEP] ➔ Review all weekly topics + Project integration
-  [PASS 4: POST-COURSE YOUTUBE PASS] ➔ Alternative perspective from comprehensive video syllabus
-  [PASS 5: SEQUENTIAL COURSE REVISION 1] ➔ Day 1 to End sequential traversal + Backlog clearance
+  [PASS 4: 7-STEP REVISION & BUG TRAPS] ➔ Deep scan of all _REVISION.md files & interview traps
+  [PASS 5: SEQUENTIAL COURSE REVISION 1] ➔ Day 1 to End sequential traversal + Backlog clearance in SSMS
   [PASS 6: CROSS-MODULE INTEGRATION PASS] ➔ Re-solving SQL queries via Python & PySpark DataFrames
   [PASS 7: 1,000+ QUESTION DRILL PASS] ➔ LeetCode Hard & StrataScratch Tier-1 problem solving
   [PASS 8: TIER-1 MOCK INTERVIEW PASS] ➔ Live 15-minute whiteboard drilling with AI Mentor Pippo
