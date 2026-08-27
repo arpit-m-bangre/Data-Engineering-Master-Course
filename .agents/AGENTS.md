@@ -51,7 +51,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 
 ### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
 - [ ] Is the 30-min Daily LinkedIn Authority & Digital Presence Sprint scheduled (11:30 AM - 12:00 PM)? → If NO: add it.
-- [ ] Are targeted connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Microsoft) included? → If NO: add them.
+- [ ] Are targeted connection requests strictly aligned with the Tier-1 Dream Fleet (Tier 1A Titans, Tier 1B GCCs, Tier 1C Unicorns) per `.agents/rules/linkedin_networking_targeting_protocol.md`? → If NO: enforce now.
 - [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
 
 ### GATE G — ANTI-PASSIVE COMPLIANCE & SPRINT SKIP NEGOTIATION (Every task modification)
