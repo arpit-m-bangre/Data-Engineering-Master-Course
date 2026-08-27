@@ -5,7 +5,7 @@
 
 [!] MISSION OBJECTIVE: Launch the 3-Day Super 50 Grand Revision Campaign covering all 22 SQL days from Combined Index (12:30 AM Sleep Paced)!
 
-[🎯 CURRENT TARGET]: Super 50 Grand Revision Campaign (Days 01 to 22) — Target Finish: 29 Aug 2026
+[🎯 CURRENT TARGET]: Super 50 Grand Revision Campaign (Days 01 to 22) — Target Finish: 29 Aug 2026 by 9 PM
 
 [MUST-WIN 1] Super 50 Phase 1: Conquer Problems 01 – 10 (DDL, Composite Keys, Constraints & Dirty Retrofits) in SSMS
 [MUST-WIN 2] Review Blueprint: Study 01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md (CompanyDB Sandbox)
