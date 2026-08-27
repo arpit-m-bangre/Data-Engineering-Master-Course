@@ -43,6 +43,14 @@ function parseTasks(raw) {
     const line = rawLine.trim()
     if (!line) continue
 
+    // ─── [🎯 CURRENT TARGET] OR [TARGET] LINE
+    const targetMatch = line.match(/^\[(?:🎯\s*)?(?:CURRENT\s+)?TARGET\]:\s*(.+)$/i) || line.match(/^CURRENT TARGET:\s*(.+)$/i)
+    if (targetMatch) {
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'target', text: targetMatch[1].trim() })
+      continue
+    }
+
     // ─── [!] NOTICE LINE
     const noticeMatch = line.match(/^\[!\]\s*(.+)$/)
     if (noticeMatch) {
@@ -164,6 +172,33 @@ function renderTasks(rawText, container) {
   }
 
   const initialMetrics = getProgressMetrics()
+
+  // ─── 0. Short-Term Target / Weekly Milestone Widget
+  const targetItem = items.find(t => t.type === 'target')
+  const targetText = targetItem ? targetItem.text.trim() : 'No active short-term goal'
+  const isTargetActive = targetItem && !/^no\s+active/i.test(targetText) && !/^none/i.test(targetText) && targetText.length > 0
+
+  const targetCardEl = document.createElement('div')
+  targetCardEl.className = `target-banner-card ${isTargetActive ? 'active' : 'idle'}`
+  targetCardEl.innerHTML = `
+    <div class="target-banner-header">
+      <div class="target-badge-wrap">
+        <span class="target-icon">🎯</span>
+        <span class="target-badge ${isTargetActive ? 'badge-active' : 'badge-idle'}">
+          ${isTargetActive ? 'ACTIVE SHORT-TERM TARGET' : 'SHORT-TERM TARGET'}
+        </span>
+      </div>
+      <span class="target-status-pill ${isTargetActive ? 'status-active' : 'status-idle'}">
+        ${isTargetActive ? 'In Focus 🔥' : 'Idle ⚡'}
+      </span>
+    </div>
+    <div class="target-body">
+      <p class="target-text ${isTargetActive ? 'text-active' : 'text-idle'}">
+        ${escHtml(targetText)}
+      </p>
+    </div>
+  `
+  container.appendChild(targetCardEl)
 
   // ─── 1. Progress Bar Widget
   let progressBarEl = null

@@ -15,6 +15,8 @@ Every `TODAYS_TASKS.txt` file MUST follow this exact structure without any devia
 
 [!] MISSION OBJECTIVE: High-impact one-line objective for the day!
 
+[🎯 CURRENT TARGET]: [Active weekly or multi-day milestone goal OR "No active short-term goal"]
+
 [MUST-WIN 1] Master: [Concept + measurable mastery test]
 [MUST-WIN 2] Build: [Project feature + verifiable deliverable]
 [MUST-WIN 3] Prove: [Timed problems / interview score / explanation]

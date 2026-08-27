@@ -5,8 +5,10 @@
 
 [!] MISSION OBJECTIVE: Launch the 3-Day Super 50 Grand Revision Campaign covering all 22 SQL days from Combined Index (12:30 AM Sleep Paced)!
 
+[🎯 CURRENT TARGET]: Super 50 Grand Revision Campaign (Days 01 to 22) — Target Finish: 29 Aug 2026
+
 [MUST-WIN 1] Super 50 Phase 1: Conquer Problems 01 – 10 (DDL, Composite Keys, Constraints & Dirty Retrofits) in SSMS
-[MUST-WIN 2] Review Blueprint: Study 01_SQL/07_QUICK_REVISION/00_DAY_01_TO_DAY_22_SUPER_50_COMPLEX_QUESTIONS_AND_PLAN.md
+[MUST-WIN 2] Review Blueprint: Study 01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md (CompanyDB Sandbox)
 [MUST-WIN 3] Master System: Lock Streak Day 23 with English Task 4 and unified Brain Sync
 [SHOULD-WIN] Stage 3-Day Raksha Bandhan study window (Fri-Sat 2 PM - 7 PM protected)
 [BONUS]      210-Day IG Master Calendar locked for Monday 31-Aug rollout
@@ -51,13 +53,13 @@ TOTAL STUDY TIME TODAY: 5.75 Hours (Authority: 1.00h | Re-write/Revision: 1.50h 
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
 [-] 10:15 PM - 10:30 PM : Super 50 Workspace Boot & SSMS Setup Window ☕
-    -> Launch SSMS, open test bed seed script, load 01_SQL/07_QUICK_REVISION/00_DAY_01_TO_DAY_22_SUPER_50_COMPLEX_QUESTIONS_AND_PLAN.md
+    -> Launch SSMS, open test bed seed script, load 01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md
 
 --------------------------------------------------------------------
                    NIGHT BATTLE: SUPER 50 LAUNCH BLOCK
 --------------------------------------------------------------------
 [ ] 10:30 PM - 12:00 AM : Sprint 3 — Super 50 Grand Campaign Phase 1: Problems 01 to 10 (DDL, Constraints & Keys) 💻🔥
-    -> Execute Unified Seed Schema from 01_SQL/07_QUICK_REVISION/00_DAY_01_TO_DAY_22_SUPER_50_COMPLEX_QUESTIONS_AND_PLAN.md
+    -> Execute Unified Seed Schema from 01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md
     -> Solve Block 1 (Problems 01 – 10): Composite keys, parent/child destruction, dirty column retrofits, identity gaps & unindexed FK audits
     -> [DoD]: 10/10 complex challenge problems executed clean in SSMS with zero syntax errors
 
