@@ -20,6 +20,13 @@
 | **06** | **06_CLOUD_ENGINEERING** | AWS & Azure Big Data Infrastructure Services | ⏳ *UPCOMING* |
 | **07** | **07_ORCHESTRATION** | Apache Airflow DAGs, Sensor Architecture & Scheduling | ⏳ *UPCOMING* |
 
+## 🎯 1.1 ACTIVE SHORT-TERM TARGET & SPRINT CAMPAIGN
+
+| Target Milestone | Deadline | Target Resource | Status & Phases |
+| :--- | :--- | :--- | :--- |
+| **Super 50 Grand Revision Campaign (Days 01 to 22)** | **29 Aug 2026 by 9:00 PM** | [`01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md`](../01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md) | 🟡 **Phase 1 in Progress** (1-10 DDL & Keys) |
+| **210-Day IG / Short-Form Content Rollout** | **31 Aug 2026 (Monday)** | [`EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/`](../EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/) | ⏳ Scheduled for Monday Rollout |
+
 ---
 
 ## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 23)

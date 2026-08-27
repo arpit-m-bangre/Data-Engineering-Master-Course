@@ -25,6 +25,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Is the file pure executable SQL with only short 2-3 line theory/error annotations? → If NO: fix it.
 
 ### GATE C — BEFORE WRITING ANY DAILY PLAN (TODAYS_TASKS.txt)
+- [ ] Did I check active_short_term_target in METRICS_AND_STATISTICS.json & state `[🎯 CURRENT TARGET]:` under MISSION OBJECTIVE? → If NO: add it.
 - [ ] Did I prioritize the ACTIVE LIVE CLASS DAY first (Current-Focus First Law)? → If NO: prioritize active day.
 - [ ] Is active/yesterday's CLASS_TASK.SQL scheduled? → If NO: add it.
 - [ ] Are active/yesterday's practice drills scheduled? → If NO: add them.

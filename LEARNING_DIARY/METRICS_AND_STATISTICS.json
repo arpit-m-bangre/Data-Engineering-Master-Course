@@ -15,6 +15,15 @@
     "backlog_debt_percentage": 20.5,
     "target_zero_debt_date": "2026-09-02"
   },
+  "active_short_term_target": {
+    "target_title": "Super 50 Grand Revision Campaign (Days 01 to 22)",
+    "target_deadline": "2026-08-29 21:00",
+    "status": "IN_PROGRESS",
+    "total_phases": 3,
+    "current_phase": 1,
+    "target_resource": "01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md",
+    "social_content_rollout_date": "2026-08-31 (Monday)"
+  },
   "sql_ecosystem_counters": {
     "class_notes_processed": 23,
     "daily_indexes_created": 23,

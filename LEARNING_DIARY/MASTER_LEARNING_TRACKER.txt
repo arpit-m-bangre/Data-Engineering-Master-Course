@@ -17,6 +17,15 @@ Last Updated: 27 AUG 2026   | Overall SQL Completion: [████░░░░�
 [6] 06_CLOUD_ENGINEERING (AWS/Azure)                 -> UPCOMING
 [7] 07_ORCHESTRATION (Apache Airflow)                -> UPCOMING
 
+----------------------------------------------------------------------------------------------------
+                            [ 🎯 ACTIVE SHORT-TERM TARGET & CAMPAIGN ]
+----------------------------------------------------------------------------------------------------
+* TARGET: Super 50 Grand Revision Campaign (Days 01 to 22)
+* DEADLINE: 29 Aug 2026 by 9:00 PM
+* STATUS: Phase 1 In Progress (Problems 01-10 in SSMS)
+* RESOURCE: 01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md
+* SOCIAL ENGINE: 210-Day IG / Short-Form Publishing starts Monday 31-Aug-2026
+
 ====================================================================================================
                     [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 23) ]
 ====================================================================================================
