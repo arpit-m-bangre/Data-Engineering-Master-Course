@@ -216,38 +216,6 @@ function renderTasks(rawText, container) {
   `
   container.appendChild(targetCardEl)
 
-  // ─── 0.1 Daily Priority Outcomes & Must-Wins Widget
-  const mustWins = items.filter(t => t.type === 'mustwin')
-  if (mustWins.length > 0) {
-    const priorityCardEl = document.createElement('div')
-    priorityCardEl.className = 'priority-outcomes-card'
-    priorityCardEl.innerHTML = `
-      <div class="priority-header">
-        <div class="priority-badge-wrap">
-          <span class="priority-icon">⭐</span>
-          <span class="priority-badge">DAILY OUTCOMES & MUST-WINS</span>
-        </div>
-      </div>
-      <div class="priority-list">
-        ${mustWins.map(mw => {
-          const match = mw.text.match(/^\[([A-Z0-9\s\-]+)\]\s*(.+)$/i)
-          const tag = match ? match[1].trim() : 'GOAL'
-          const desc = match ? match[2].trim() : mw.text
-          const isMust = /MUST-WIN/i.test(tag)
-          const isShould = /SHOULD-WIN/i.test(tag)
-          const tagClass = isMust ? 'tag-must' : isShould ? 'tag-should' : 'tag-bonus'
-          return `
-            <div class="priority-item">
-              <span class="priority-tag ${tagClass}">${escHtml(tag)}</span>
-              <span class="priority-desc">${escHtml(desc)}</span>
-            </div>
-          `
-        }).join('')}
-      </div>
-    `
-    container.appendChild(priorityCardEl)
-  }
-
   // ─── 1. Progress Bar Widget
   let progressBarEl = null
   if (initialMetrics.activeTotal > 0 || initialMetrics.deferredCount > 0) {
