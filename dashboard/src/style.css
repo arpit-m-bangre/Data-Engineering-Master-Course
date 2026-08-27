@@ -453,6 +453,139 @@ header {
   font-style: italic;
 }
 
+/* ── Priority Outcomes / Must-Wins Card ──────────────────────── */
+.priority-outcomes-card {
+  margin-bottom: 14px;
+  padding: 14px 18px;
+  background: linear-gradient(135deg, rgba(255, 209, 102, 0.06), rgba(12, 24, 48, 0.65));
+  border: 1px solid rgba(255, 209, 102, 0.22);
+  border-radius: var(--radius-card);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+  transition: all var(--transition);
+}
+
+.priority-outcomes-card:hover {
+  border-color: rgba(255, 209, 102, 0.45);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 20px rgba(255, 209, 102, 0.1);
+  transform: translateY(-2px);
+}
+
+.priority-header {
+  margin-bottom: 10px;
+}
+
+.priority-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priority-icon {
+  font-size: 1rem;
+}
+
+.priority-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: var(--accent-yellow);
+  background: rgba(255, 209, 102, 0.12);
+  border: 1px solid rgba(255, 209, 102, 0.3);
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.priority-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.priority-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
+.priority-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.priority-tag.tag-must {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.15);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+}
+
+.priority-tag.tag-should {
+  color: var(--accent-yellow);
+  background: rgba(255, 209, 102, 0.12);
+  border: 1px solid rgba(255, 209, 102, 0.3);
+}
+
+.priority-tag.tag-bonus {
+  color: var(--accent-cyan);
+  background: rgba(0, 229, 255, 0.12);
+  border: 1px solid rgba(0, 229, 255, 0.3);
+}
+
+.priority-desc {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* ── Section Header Card ─────────────────────────────────────── */
+.section-header-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 18px 0 6px;
+  padding: 4px 0;
+}
+
+.section-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.35), transparent);
+}
+
+.section-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(12, 24, 48, 0.75);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.section-title-icon {
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+}
+
+.section-heading {
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c9e8ff;
+  white-space: nowrap;
+}
+
 /* ── Progress Bar ───────────────────────────────────────────── */
 .progress-bar-wrapper {
   margin-bottom: 18px;

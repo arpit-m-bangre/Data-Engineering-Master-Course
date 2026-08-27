@@ -27,12 +27,12 @@ function normalise(text) {
  * Check if a title or description describes a break, recharge, meal, or personal slot.
  */
 function isBreakTitle(title) {
-  return /break|lunch|dinner|tea|relax|recharge|market|family|nap|sleep|meal|friends|walk/i.test(title)
+  return /break|lunch|dinner|tea|relax|recharge|market|family|nap|sleep|meal|friends|walk|window|buffer|boot|setup|prep|flex|recovery/i.test(title) || /[☕💤🥗🍽️🏃🤝🌿]/.test(title)
 }
 
 /**
  * Parse the TODAYS_TASKS.txt format into a structured array.
- * Accurately classifies: notices, study tasks (pending/done/deferred), breaks/recharge slots, and notes.
+ * Accurately classifies: target, notice, mustwin, stats, section headers, study tasks (pending/done/deferred), breaks/recharge slots, and notes.
  */
 function parseTasks(raw) {
   const lines = raw.split('\n')
@@ -51,7 +51,7 @@ function parseTasks(raw) {
       continue
     }
 
-    // ─── [!] NOTICE LINE
+    // ─── [!] NOTICE / MISSION OBJECTIVE LINE
     const noticeMatch = line.match(/^\[!\]\s*(.+)$/)
     if (noticeMatch) {
       if (currentItem) { items.push(currentItem); currentItem = null }
@@ -59,7 +59,7 @@ function parseTasks(raw) {
       continue
     }
 
-    // ─── HEADING / SEPARATOR (====, ----)
+    // ─── DIVIDERS / SEPARATORS (====, ----)
     if (/^[=\-*]{4,}$/.test(line)) {
       if (currentItem) { items.push(currentItem); currentItem = null }
       continue
@@ -73,7 +73,7 @@ function parseTasks(raw) {
       continue
     }
 
-    // ─── *Note: ... FOOTER LINE
+    // ─── *Note: ... FOOTER NOTE LINE
     if (line.startsWith('*Note:') || (line.startsWith('*') && !line.startsWith('**') && !line.includes('['))) {
       if (currentItem) { items.push(currentItem); currentItem = null }
       items.push({ type: 'note', title: line.replace(/^\*+|\*+$/g, '').trim() })
@@ -87,6 +87,7 @@ function parseTasks(raw) {
       const marker = taskMatch[1].trim().toLowerCase()
       const time = taskMatch[2].trim()
       const title = taskMatch[3].trim()
+      const isBreak = isBreakTitle(title)
 
       if (marker === 'x') {
         currentItem = {
@@ -97,7 +98,7 @@ function parseTasks(raw) {
           details: []
         }
       } else if (marker === '-' || marker === '–') {
-        if (isBreakTitle(title)) {
+        if (isBreak) {
           currentItem = {
             type: 'break',
             status: 'break',
@@ -131,6 +132,21 @@ function parseTasks(raw) {
     // ─── DETAIL BULLET LINE  -> ...
     if (line.startsWith('->') && currentItem) {
       currentItem.details.push(line.slice(2).trim())
+      continue
+    }
+
+    // ─── MUST-WIN / SHOULD-WIN / BONUS OUTCOMES
+    if (/^\[(?:MUST-WIN|SHOULD-WIN|BONUS)[^\]]*\]/i.test(line)) {
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'mustwin', text: line })
+      continue
+    }
+
+    // ─── SECTION HEADERS (Between dividers, e.g. MORNING BOOT & HOUSEHOLD RESET)
+    if (/^[A-Z0-9\s&—\-_:()]+$/.test(line) && line.length > 3 && !line.startsWith('DAILY MISSION') && !line.startsWith('[STATUS')) {
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'section', title: line })
+      continue
     }
   }
 
@@ -200,6 +216,38 @@ function renderTasks(rawText, container) {
   `
   container.appendChild(targetCardEl)
 
+  // ─── 0.1 Daily Priority Outcomes & Must-Wins Widget
+  const mustWins = items.filter(t => t.type === 'mustwin')
+  if (mustWins.length > 0) {
+    const priorityCardEl = document.createElement('div')
+    priorityCardEl.className = 'priority-outcomes-card'
+    priorityCardEl.innerHTML = `
+      <div class="priority-header">
+        <div class="priority-badge-wrap">
+          <span class="priority-icon">⭐</span>
+          <span class="priority-badge">DAILY OUTCOMES & MUST-WINS</span>
+        </div>
+      </div>
+      <div class="priority-list">
+        ${mustWins.map(mw => {
+          const match = mw.text.match(/^\[([A-Z0-9\s\-]+)\]\s*(.+)$/i)
+          const tag = match ? match[1].trim() : 'GOAL'
+          const desc = match ? match[2].trim() : mw.text
+          const isMust = /MUST-WIN/i.test(tag)
+          const isShould = /SHOULD-WIN/i.test(tag)
+          const tagClass = isMust ? 'tag-must' : isShould ? 'tag-should' : 'tag-bonus'
+          return `
+            <div class="priority-item">
+              <span class="priority-tag ${tagClass}">${escHtml(tag)}</span>
+              <span class="priority-desc">${escHtml(desc)}</span>
+            </div>
+          `
+        }).join('')}
+      </div>
+    `
+    container.appendChild(priorityCardEl)
+  }
+
   // ─── 1. Progress Bar Widget
   let progressBarEl = null
   if (initialMetrics.activeTotal > 0 || initialMetrics.deferredCount > 0) {
@@ -236,9 +284,24 @@ function renderTasks(rawText, container) {
 
   // ─── 2. Render Cards in Chronological Flow
   items.forEach(item => {
+    // Skip items that are rendered in top summary widgets
+    if (item.type === 'target' || item.type === 'mustwin') {
+      return
+    }
+
     const card = document.createElement('div')
 
-    if (item.type === 'notice') {
+    if (item.type === 'section') {
+      card.className = 'section-header-card'
+      card.innerHTML = `
+        <div class="section-divider-line"></div>
+        <div class="section-title-wrap">
+          <span class="section-title-icon">⚡</span>
+          <h2 class="section-heading">${escHtml(item.title)}</h2>
+        </div>
+        <div class="section-divider-line"></div>
+      `
+    } else if (item.type === 'notice') {
       card.className = 'notice-card'
       card.innerHTML = `
         <div class="notice-icon">📢</div>
