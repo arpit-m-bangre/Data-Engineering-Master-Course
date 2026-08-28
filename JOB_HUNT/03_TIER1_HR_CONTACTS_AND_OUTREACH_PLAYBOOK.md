@@ -65,7 +65,7 @@ The companion master file **[`TIER1_HR_AND_TECH_RECRUITER_MASTER_DATABASE.xlsx`]
 When reaching out to recruiters from this database, **never send a generic copy-paste template**. Use these high-conversion, proven scripts:
 
 ### 📧 Template 1: Direct Inbound to Technical Recruiter / Talent Acquisition Lead
-**Subject:** *Data Engineer (SQL, Relational Architecture, ETL) — Arpit Bangre | Ex-PrimaThink*
+**Subject:** *Data Engineer (SQL, Relational Architecture, ETL) — Arpit Bangre*
 
 > **Hi [Recruiter First Name],**
 > 
