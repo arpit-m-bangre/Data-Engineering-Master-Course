@@ -1,6 +1,6 @@
 /* ====================================================================
    🚀 10-HOUR SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 22)
-   THE DEFINITIVE 22-DAY COMPREHENSIVE T-SQL REVISION & PRACTICE ENGINE
+   THE DEFINITIVE 22-DAY T-SQL REVISION & PRACTICE GUIDE
    Database: `BootcampMasteryDB` | Target: SSMS Direct Execution
    Author  : Pippo 🐥 | Candidate: Captain Arpit Manoj Bangre (Cap)
 ==================================================================== */
@@ -9,71 +9,72 @@
 ====================================================================
            📑 MASTER TABLE OF CONTENTS & TOPIC INDEX
 ====================================================================
-📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`BootcampMasteryDB`)
-   ├─ 1.1 Database Initialization & Safe Cleanup Protocol
-   ├─ 1.2 Master Schema Creation (8 Core Relational Tables)
-   │     • Departments (PK)
-   │     • Employees (PK, FK, Self-Referencing Hierarchy)
-   │     • Customers (PK)
-   │     • Products (PK)
-   │     • Orders (PK, FK)
-   │     • OrderItems (IDENTITY PK, Dual FKs)
-   │     • BankTransactions (Fraud & Velocity Sandbox)
-   │     • StockMovements (Inventory & Running Totals)
-   └─ 1.3 Master Production Seed Datasets (Multi-City Enterprise Data)
+📦 SECTION 1: MASTER DATABASE & TABLE SETUP (`BootcampMasteryDB`)
+   ├─ 1.1 Fresh Database Creation & Cleanup
+   ├─ 1.2 Table Creation (8 Core Tables with Simple Keys)
+   │     • Departments (Primary Key)
+   │     • Employees (Primary Key, Foreign Key, Manager Hierarchy)
+   │     • Customers (Primary Key)
+   │     • Products (Primary Key)
+   │     • Orders (Primary Key, Foreign Key)
+   │     • OrderItems (Auto-Increment ID, Dual Foreign Keys)
+   │     • BankTransactions (Fraud Detection Practice Table)
+   │     • StockMovements (Stock In/Out Practice Table)
+   └─ 1.3 Sample Data Insertion (Real-life Multi-City Records)
 
-🏛️ SECTION 2: 22-DAY COMPLETE CURRICULUM DEEP-DIVE MODULES
-   ├─ 🗓️ DAY 01: SQL Architecture, Commands Taxonomy & Table Creation
-   ├─ 🗓️ DAY 02: Filtering Clauses, Operators, Wildcards & Information Schema
-   ├─ 🗓️ DAY 03: Precision Pattern Matching, Ranges & Vowel/Digit Filters
-   ├─ 🗓️ DAY 04: Numeric Types, Arithmetic, UPDATE, DELETE & Security
-   ├─ 🗓️ DAY 05: The Deletion Battle (DELETE vs TRUNCATE vs DROP) & ALTER TABLE
-   ├─ 🗓️ DAY 06: Aggregates (MIN/MAX/SUM/AVG/COUNT), DISTINCT & TOP N
-   ├─ 🗓️ DAY 07: 6-Stage Execution Pipeline, GROUP BY, HAVING & ORDER BY
-   ├─ 🗓️ DAY 08: Query Mistakes Analysis & Scoping Rules (Rows vs Groups)
-   ├─ 🗓️ DAY 09: Core Constraints (PRIMARY KEY, UNIQUE, NOT NULL, CHECK)
-   ├─ 🗓️ DAY 10: DEFAULT, IDENTITY & FOREIGN KEY Referential Architecture
-   ├─ 🗓️ DAY 11: Parent Protection vs Child Table Destruction Rules
-   ├─ 🗓️ DAY 12: 3-Step Live Constraint Retrofitting & TRUNCATE Rollback Proof
-   ├─ 🗓️ DAY 13: Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)
-   ├─ 🗓️ DAY 14: Temporal Engine, DATEDIFF, DATEADD, DATEPART & EOMONTH
-   ├─ 🗓️ DAY 15: Joins Foundations, Cartesian Math (N x M) & 3VL Traps
-   ├─ 🗓️ DAY 16: ANSI Relational Joins (INNER, LEFT, RIGHT, FULL) & Anti-Joins
-   ├─ 🗓️ DAY 17: Multi-Table Ingestion Chains (3+ Tables) & CROSS JOIN Matrices
-   ├─ 🗓️ DAY 18: Self-Joins, Manager Trees, CEO Shield & 5-Min Geo-Fraud
-   ├─ 🗓️ DAY 19: Window Functions (ROW_NUMBER, RANK, DENSE_RANK) & Msg 4108
-   ├─ 🗓️ DAY 20: Common Table Expressions (CTEs) & In-Place Deduplication
-   ├─ 🗓️ DAY 21: Value Functions (LEAD/LAG), Stock Deltas & Running Totals
-   └─ 🗓️ DAY 22: Conditional CASE Logic, Multi-Tiering & Dynamic Pinned Sort
+🏛️ SECTION 2: 22-DAY COMPLETE COURSE REVISION (SIMPLE ENGLISH)
+   ├─ 🗓️ DAY 01: SQL Basics, 4 Command Types & Table Creation
+   ├─ 🗓️ DAY 02: WHERE Filtering, Basic Operators & Wildcard Search
+   ├─ 🗓️ DAY 03: Smart Pattern Matching with LIKE & NULL Safety
+   ├─ 🗓️ DAY 04: Math Calculations, UPDATE, DELETE & Safe Changes
+   ├─ 🗓️ DAY 05: DELETE vs TRUNCATE vs DROP & Table Structure Changes
+   ├─ 🗓️ DAY 06: Aggregate Functions (MIN, MAX, AVG, SUM, COUNT) & TOP N
+   ├─ 🗓️ DAY 07: The 6 Execution Steps, GROUP BY, HAVING & ORDER BY
+   ├─ 🗓️ DAY 08: Common SQL Mistakes (WHERE on Rows vs HAVING on Groups)
+   ├─ 🗓️ DAY 09: 4 Core Rules (PRIMARY KEY, UNIQUE, NOT NULL, CHECK)
+   ├─ 🗓️ DAY 10: DEFAULT Values, Auto-ID (IDENTITY) & FOREIGN KEY Links
+   ├─ 🗓️ DAY 11: Parent vs Child Table Rules when Deleting or Dropping
+   ├─ 🗓️ DAY 12: Adding Rules to Old Data (3 Steps) & TRUNCATE Rollback
+   ├─ 🗓️ DAY 13: Combining Results Vertically (UNION, UNION ALL, INTERSECT, EXCEPT)
+   ├─ 🗓️ DAY 14: Date Functions (DATEDIFF, DATEADD, EOMONTH) & Fast Index Filters
+   ├─ 🗓️ DAY 15: Joining Tables Basics, Row Multiplication & NULL Rules
+   ├─ 🗓️ DAY 16: Standard Joins (INNER, LEFT, RIGHT, FULL) & Finding Missing Data
+   ├─ 🗓️ DAY 17: Joining 3 or More Tables & Table Pairing (CROSS JOIN)
+   ├─ 🗓️ DAY 18: Self-Joins (Employee-Boss Tree) & 5-Min Multi-City Fraud Check
+   ├─ 🗓️ DAY 19: Ranking Functions (ROW_NUMBER, RANK, DENSE_RANK) & Filter Traps
+   ├─ 🗓️ DAY 20: Common Table Expressions (CTEs) & Safe Duplicate Deletion
+   ├─ 🗓️ DAY 21: Looking at Previous/Next Rows (LEAD/LAG) & Running Balances
+   └─ 🗓️ DAY 22: IF-ELSE in SQL (CASE Statement) & Custom Priority Sorting
 
-🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
-   ├─ Drill 1: 6-Stage Logical Query Execution Order
-   ├─ Drill 2: 3-Step Constraint Retrofitting Template
-   ├─ Drill 3: SARGable Temporal Date Range Template
-   ├─ Drill 4: 3-Way Ranking Behavior Matrix
-   ├─ Drill 5: Value Functions & Running Cumulative Syntax
-   └─ Drill 6: Dynamic Pinned Sorting via Searched CASE
+🧠 SECTION 3: QUICK SYNTAX MEMORY CHEAT SHEET
+   ├─ Rule 1: The 6 SQL Execution Steps in Order
+   ├─ Rule 2: 3-Step Recipe for Adding Constraints to Old Tables
+   ├─ Rule 3: Fast Index Date Filter Template
+   ├─ Rule 4: Difference between ROW_NUMBER, RANK, and DENSE_RANK
+   ├─ Rule 5: LEAD, LAG & Running Balance Formula
+   └─ Rule 6: Custom Priority Sorting with CASE
 
-🧪 SECTION 4: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
-   ├─ 🟢 Block 1: Foundation & Filtering (Q01 – Q10)
-   ├─ 🟡 Block 2: GROUP BY, HAVING & Aggregations (Q11 – Q20)
-   ├─ 🟠 Block 3: Relational Joins & Self-Joins (Q21 – Q30)
-   ├─ 🔴 Block 4: Window Functions & Deduplication (Q31 – Q40)
-   └─ 💀 Block 5: Analytical Boss & War Room (Q41 – Q50)
+🧪 SECTION 4: 50 INTERVIEW PRACTICE QUESTIONS (SUPER 50)
+   ├─ 🟢 Block 1: Basic Filters & Projections (Q01 – Q10)
+   ├─ 🟡 Block 2: GROUP BY & Group Calculations (Q11 – Q20)
+   ├─ 🟠 Block 3: Joining Tables & Self-Joins (Q21 – Q30)
+   ├─ 🔴 Block 4: Window Ranking & Duplicate Removal (Q31 – Q40)
+   └─ 💀 Block 5: Advanced Analytics & Tricky Scenarios (Q41 – Q50)
 
-🏆 SECTION 5: FINAL BOSS CUSTOMER INTELLIGENCE VIEW (vw_EnterpriseCustomer360)
-🧠 SECTION 6: TOP 20 WHITEBOARD INTERVIEW TRAPS CHEAT SHEET
-🏁 SECTION 7: THE 13-STEP SQL PROBLEM-SOLVING ALGORITHM
+🏆 SECTION 5: FINAL BOSS PROJECT (360° Customer Intelligence View)
+🧠 SECTION 6: TOP 20 INTERVIEW TRAPS & HOW TO FIX THEM
+🏁 SECTION 7: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
 ====================================================================
 */
 
 -- ====================================================================
--- 📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`BootcampMasteryDB`)
+-- 📦 SECTION 1: MASTER DATABASE & TABLE SETUP (`BootcampMasteryDB`)
 -- ====================================================================
 
 USE master;
 GO
 
+-- Recreate a clean database so tests are always 100% fresh
 IF DB_ID('BootcampMasteryDB') IS NOT NULL
 BEGIN
     ALTER DATABASE BootcampMasteryDB 
@@ -95,7 +96,7 @@ CREATE TABLE Departments (
     Location VARCHAR(50) NOT NULL
 );
 
--- 2. Employees Table (Self-referencing hierarchy)
+-- 2. Employees Table (Has ManagerID to show Boss-Employee link)
 CREATE TABLE Employees (
     EmpID INT PRIMARY KEY,
     EmpName VARCHAR(50) NOT NULL,
@@ -135,7 +136,7 @@ CREATE TABLE Orders (
     DeliveryDate DATE NULL
 );
 
--- 6. OrderItems Table
+-- 6. OrderItems Table (Uses IDENTITY for auto 1, 2, 3 ID)
 CREATE TABLE OrderItems (
     OrderItemID INT IDENTITY(1,1) PRIMARY KEY,
     OrderID INT NOT NULL 
@@ -146,7 +147,7 @@ CREATE TABLE OrderItems (
     UnitPrice DECIMAL(10,2) NOT NULL
 );
 
--- 7. BankTransactions Table (Fraud & Velocity Testing)
+-- 7. BankTransactions Table (For Fraud & Speed Tests)
 CREATE TABLE BankTransactions (
     TxnID INT PRIMARY KEY,
     AccountID INT NOT NULL,
@@ -156,7 +157,7 @@ CREATE TABLE BankTransactions (
     Channel VARCHAR(20) NOT NULL
 );
 
--- 8. StockMovements Table (Inventory Windowing)
+-- 8. StockMovements Table (For Tracking Items In & Out)
 CREATE TABLE StockMovements (
     MovementID INT IDENTITY(1,1) PRIMARY KEY,
     ProductID INT NOT NULL,
@@ -166,7 +167,7 @@ CREATE TABLE StockMovements (
 GO
 
 -- ====================================================================
--- 🌱 SEED MASTER DATASETS
+-- 🌱 INSERT SAMPLE REAL-LIFE DATA
 -- ====================================================================
 
 INSERT INTO Departments VALUES
@@ -228,106 +229,97 @@ INSERT INTO StockMovements (ProductID, MovementDate, QtyChange) VALUES
 GO
 
 -- ====================================================================
--- 🏛️ SECTION 2: 22-DAY COMPLETE CURRICULUM DEEP-DIVE MODULES
+-- 🏛️ SECTION 2: 22-DAY COMPLETE COURSE REVISION (SIMPLE ENGLISH)
 -- ====================================================================
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 01: SQL ARCHITECTURE, COMMANDS TAXONOMY & TABLE CREATION
+-- 🗓️ DAY 01: SQL BASICS, 4 COMMAND TYPES & TABLE CREATION
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Data vs Database vs DBMS vs RDBMS:
-     • Data: Raw unorganized facts.
-     • DBMS: Software to store/manage data (flat files / hierarchical).
-     • RDBMS: Relational engine enforcing tables, columns, rows & keys.
-   - SQL Commands Taxonomy:
-     • DDL (Data Definition Language) : CREATE, ALTER, DROP, TRUNCATE
-       -> Modifies metadata catalog, system tables, storage allocations.
-     • DML (Data Manipulation Language): INSERT, UPDATE, DELETE
-       -> Modifies data rows inside existing tables; locks rows.
-     • DQL (Data Query Language)       : SELECT
-       -> Projects, transforms, aggregates in-memory result sets.
-     • TCL (Transaction Control)       : COMMIT, ROLLBACK, SAVEPOINT
-       -> Manages ACID transaction state and lock release.
-   - Primary Key & Foreign Key Principles:
-     • Primary Key enforces entity uniqueness and creates Clustered Index.
-     • Foreign Key establishes parent-child referential integrity.
+   📖 SIMPLE EXPLANATION:
+   - Data: Raw facts (like numbers or names).
+   - Database: A digital organized locker to store data.
+   - RDBMS: Software (like SQL Server) that stores data in connected tables.
+   
+   4 Types of SQL Commands:
+   1. DDL (Create & Change Structure) : CREATE, ALTER, DROP, TRUNCATE.
+   2. DML (Change Data Inside)        : INSERT, UPDATE, DELETE.
+   3. DQL (Read & View Data)          : SELECT.
+   4. TCL (Save & Undo Changes)       : COMMIT (save), ROLLBACK (undo).
+
+   Keys:
+   - Primary Key: Gives each row a unique identity number. No duplicates, no NULL.
+   - Foreign Key: Connects a child table to a parent table.
 */
 
--- 1. Exploring table definitions & column metadata
+-- 1. View all columns in Employees table
 SELECT EmpID, EmpName, DeptID, Salary, JoiningDate 
 FROM Employees;
 
--- 2. Basic Column Projection & Explicit Aliasing
+-- 2. View specific columns with clean English labels
 SELECT 
-    EmpName AS EmployeeFullName,
-    Salary  AS BaseCompensationMonthly
+    EmpName AS [Employee Full Name],
+    Salary  AS [Monthly Base Salary]
 FROM Employees;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 02: FILTERING CLAUSES, OPERATORS & INFORMATION SCHEMA
+-- 🗓️ DAY 02: WHERE FILTERING, BASIC OPERATORS & WILDCARD SEARCH
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - WHERE Clause: Evaluates Boolean conditions row by row at Stage 2.
-   - Relational Comparison Operators: =, <>, !=, <, <=, >, >=.
-   - Special Set & Range Operators:
-     • IN (val1, val2) / NOT IN (val1, val2)
-     • BETWEEN lower AND upper (inclusive range)
-     • IS NULL / IS NOT NULL (handles Three-Valued Logic NULL state)
-   - Pattern Matching with LIKE:
-     • '%'  : Zero or more characters (e.g. '%tech%').
-     • '_'  : Exactly ONE single character position (e.g. 'R__').
-     • '[]' : Character set list/range (e.g. '[A-Z]%').
-     • '[^]': Negated character set (e.g. '[^0-9]%').
-   - INFORMATION_SCHEMA: ANSI standard system metadata exploration view.
+   📖 SIMPLE EXPLANATION:
+   - WHERE: Filters rows one by one to pick only matching records.
+   - Comparison: =, <> (not equal), <, <=, >, >=.
+   - List & Range:
+     • IN (1, 2)            : Matches if value is in list.
+     • BETWEEN 100 AND 200  : Matches if value is between 100 and 200.
+     • IS NULL / IS NOT NULL: Checks if value is empty/missing.
+   - LIKE Wildcards:
+     • '%'  : Means any number of characters (e.g. 'P%' means starts with P).
+     • '_'  : Means exactly 1 single character.
 */
 
--- 1. Exploring database catalog via INFORMATION_SCHEMA
-SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE 
+-- 1. List all active tables in our database
+SELECT TABLE_SCHEMA, TABLE_NAME 
 FROM INFORMATION_SCHEMA.TABLES 
 WHERE TABLE_TYPE = 'BASE TABLE';
 
--- 2. Range & Set Filtering with Combined Predicates
+-- 2. Filter employees in Departments 1 or 2 earning 100k to 160k
 SELECT EmpID, EmpName, DeptID, Salary 
 FROM Employees 
 WHERE DeptID IN (1, 2) 
   AND Salary BETWEEN 100000.00 AND 160000.00;
 
--- 3. Basic Pattern Matching with LIKE
+-- 3. Find customers from cities starting with 'P' or ending with 'luru'
 SELECT CustomerID, CustomerName, City 
 FROM Customers 
 WHERE City LIKE 'P%' OR City LIKE '%luru';
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 03: PRECISION PATTERN MATCHING & VOWEL/DIGIT FILTERS
+-- 🗓️ DAY 03: SMART PATTERN MATCHING WITH LIKE & NULL SAFETY
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Character Length & Boundary Matching:
-     • 'A____n' matches names starting with 'A', ending with 'n', length 6.
-   - Character Set Matching:
-     • LIKE '[AEIOU]%' : Starts with a vowel (case-insensitive in SQL Server).
-     • LIKE '[0-9]%'   : Starts with any numeric digit.
-     • LIKE '[^0-9]%'  : Starts with any non-digit character.
-   - 3VL (Three-Valued Logic) Pattern Exclusion Trap:
-     • WHERE Email NOT LIKE '%@gmail.com' drops NULL emails!
-     • Fix: Always append `OR Email IS NULL`.
+   📖 SIMPLE EXPLANATION:
+   - Fixed Length Pattern: 'A____n' matches 6-letter words (A + 4 letters + n).
+   - Letter Ranges: '[A-M]%' matches names starting with any letter from A to M.
+   - The Big NULL Rule:
+     In SQL, NULL means "Unknown". If a person has no email (NULL),
+     `WHERE Email NOT LIKE '%@gmail.com'` will drop them by mistake!
+     -> Fix: Always write `WHERE Email NOT LIKE '%@gmail.com' OR Email IS NULL`.
 */
 
--- 1. Exact 6-Character length pattern with fixed boundary
+-- 1. Exact 6-letter name search
 SELECT EmpID, EmpName 
 FROM Employees 
 WHERE EmpName LIKE 'A____n';
 
--- 2. Vowel and Range pattern filtering
+-- 2. Search names starting with letters A to P
 SELECT EmpID, EmpName 
 FROM Employees 
 WHERE EmpName LIKE '[A-P]%';
 
--- 3. Resilient NULL exclusion query
+-- 3. Safe query that keeps employees with NULL email
 SELECT EmpID, EmpName, Email 
 FROM Employees 
 WHERE Email NOT LIKE '%@gmail.com' 
@@ -335,219 +327,188 @@ WHERE Email NOT LIKE '%@gmail.com'
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 04: NUMERIC TYPES, ARITHMETIC, UPDATE, DELETE & SECURITY
+-- 🗓️ DAY 04: MATH CALCULATIONS, UPDATE, DELETE & SAFE CHANGES
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Numeric Data Types: INT, BIGINT, DECIMAL(p,s), FLOAT.
-     • DECIMAL(10,2): Exact financial precision (10 total digits, 2 decimals).
-     • FLOAT: Approximate floating-point representation.
-   - Arithmetic Operators: (+, -, *, /).
-   - DML UPDATE Mechanics:
-     • Modifies existing column values in place.
-     • Always specify WHERE clause to prevent accidental whole-table overwrites!
-   - DML DELETE Mechanics:
-     • Removes selected rows one by one.
-     • Logs each individual row deletion in the transaction log.
-   - Database Security Architecture:
-     • Principle of Least Privilege: Analysts get DQL (SELECT); 
-       DBAs/Admins get DDL (CREATE/ALTER) and DML (INSERT/UPDATE/DELETE).
+   📖 SIMPLE EXPLANATION:
+   - You can do direct math in SELECT (+, -, *, /).
+   - UPDATE: Changes data in existing rows. Always use WHERE, or it updates everything!
+   - DELETE: Removes rows one by one.
+   - Safety: Wrap changes inside `BEGIN TRANSACTION` and check output with
+     SELECT before running `COMMIT` or `ROLLBACK`.
 */
 
--- 1. Computed arithmetic expressions in SELECT
+-- 1. Calculate 10% bonus and monthly split
 SELECT 
     EmpID, EmpName, Salary,
-    (Salary * 1.10)       AS SalaryWith10PercentHike,
-    (Salary / 12.0)       AS MonthlyCompensation,
-    (Salary - 25000.00)   AS NetAfterDeductions
+    (Salary * 1.10)     AS [Salary With 10% Hike],
+    (Salary / 12.0)     AS [Monthly Split],
+    (Salary - 25000.00) AS [Net After Tax]
 FROM Employees;
 
--- 2. Safe transaction-wrapped UPDATE demonstration
+-- 2. Test an update safely inside a transaction and rollback
 BEGIN TRANSACTION;
     UPDATE Employees 
     SET Salary = Salary + 5000.00 
     WHERE DeptID = 4;
     
+    -- Check updated salary
     SELECT EmpID, EmpName, DeptID, Salary 
     FROM Employees 
     WHERE DeptID = 4;
-ROLLBACK TRANSACTION;
+ROLLBACK TRANSACTION; -- Undo the change completely!
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 05: THE DELETION BATTLE & DDL ALTER TABLE
+-- 🗓️ DAY 05: DELETE vs TRUNCATE vs DROP & TABLE STRUCTURE CHANGES
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The Great Deletion Comparison:
-     ------------------------------------------------------------------
-     Dimension             DELETE            TRUNCATE          DROP
-     ------------------------------------------------------------------
-     Command Type          DML               DDL               DDL
-     Execution Level       Row-by-row        Page deallocation Schema wipe
-     WHERE Clause          Supported         Forbidden         Forbidden
-     IDENTITY Property     Keeps current     Resets to seed    Destroyed
-     FK Target Table       Allowed           Blocked by FK     Blocked by FK
-     Transaction Rollback  Supported         Supported (MSSQL) Supported
-     ------------------------------------------------------------------
-   - DDL ALTER TABLE Operations:
-     • ADD Column: Appends column metadata to table catalog.
-     • DROP Column: Removes column definition and unlinks storage.
-     • ALTER COLUMN: Changes data type and nullability rules.
-   - Object Renaming via `sp_rename`:
-     • EXEC sp_rename 'OldTable', 'NewTable';
-     • EXEC sp_rename 'Table.OldCol', 'NewCol', 'COLUMN';
+   📖 SIMPLE EXPLANATION:
+   - DELETE   : Slowest | Deletes row by row | Can use WHERE | Keeps ID seed.
+   - TRUNCATE : Super fast | Wipes all rows by freeing disk pages | Resets ID seed to 1.
+   - DROP     : Completely destroys table and all its data.
+   - ALTER TABLE: Adds new columns or changes data types.
+   - sp_rename  : Built-in tool to rename tables or columns.
 */
 
--- 1. Creating scratch table to demonstrate DDL ALTER operations
-CREATE TABLE TempAudit_Day05 (
+-- 1. Create a quick test table
+CREATE TABLE TempAuditTest (
     AuditID INT PRIMARY KEY IDENTITY(1,1),
     Notes VARCHAR(100) NULL
 );
 
--- 2. ALTER TABLE ADD & ALTER COLUMN
-ALTER TABLE TempAudit_Day05 ADD StatusFlag CHAR(1) DEFAULT 'A';
-ALTER TABLE TempAudit_Day05 ALTER COLUMN Notes VARCHAR(250) NOT NULL;
+-- 2. Add a new column and change column size
+ALTER TABLE TempAuditTest ADD StatusFlag CHAR(1) DEFAULT 'A';
+ALTER TABLE TempAuditTest ALTER COLUMN Notes VARCHAR(250) NOT NULL;
 
--- 3. Cleanup scratch object
-DROP TABLE TempAudit_Day05;
+-- 3. Delete the test table
+DROP TABLE TempAuditTest;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 06: AGGREGATES, DISTINCT & TOP N
+-- 🗓️ DAY 06: AGGREGATE FUNCTIONS (MIN, MAX, AVG, SUM, COUNT) & TOP N
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The 5 Standard Aggregate Functions:
-     • MIN(col)   : Minimum value (ignores NULL).
-     • MAX(col)   : Maximum value (ignores NULL).
-     • SUM(col)   : Sum of numeric expressions (ignores NULL).
-     • AVG(col)   : Average = SUM(col) / COUNT(col) (IGNORES NULLs!).
-     • COUNT(col) : Count of non-NULL column entries.
-     • COUNT(*)   : Count of all physical rows (INCLUDING NULLs!).
-   - The Average Null Trap:
-     • If 4 rows exist with salaries: 100k, 100k, 100k, NULL:
-       -> AVG(Salary) = 300k / 3 = 100k.
-       -> If NULL represents 0 salary: AVG(ISNULL(Salary, 0)) = 300k / 4 = 75k!
-   - DISTINCT vs COUNT(DISTINCT):
-     • DISTINCT collapses duplicate result rows.
-     • COUNT(DISTINCT col) counts unique non-NULL values.
-   - TOP N Clause: Returns the first N rows based on sorting criteria.
+   📖 SIMPLE EXPLANATION:
+   - 5 Main Summary Functions:
+     • MIN(col)   : Smallest value.
+     • MAX(col)   : Highest value.
+     • SUM(col)   : Total addition.
+     • AVG(col)   : Average value (Note: Silently skips NULL rows!).
+     • COUNT(col) : Counts non-empty rows.
+     • COUNT(*)   : Counts all rows (including empty/NULL rows).
+   - TOP N: Picks first N rows based on sorting.
 */
 
--- 1. Complete aggregate summary scorecard
+-- 1. Complete company salary summary
 SELECT 
-    COUNT(*)                 AS TotalRowsCount,
-    COUNT(Email)             AS ValidEmailsCount,
-    COUNT(DISTINCT DeptID)   AS DistinctDepartments,
-    MIN(Salary)              AS MinSalary,
-    MAX(Salary)              AS MaxSalary,
-    AVG(Salary)              AS StandardAvgSalary,
-    AVG(ISNULL(Salary, 0.0)) AS ResilientAvgSalary,
-    SUM(Salary)              AS TotalCompanyPayroll
+    COUNT(*)                 AS [Total Headcount],
+    COUNT(Email)             AS [Employees With Email],
+    COUNT(DISTINCT DeptID)   AS [Total Departments],
+    MIN(Salary)              AS [Lowest Salary],
+    MAX(Salary)              AS [Highest Salary],
+    AVG(Salary)              AS [Average Salary],
+    AVG(ISNULL(Salary, 0.0)) AS [Average Including 0],
+    SUM(Salary)              AS [Total Company Payroll]
 FROM Employees;
 
--- 2. TOP N with deterministic ordering
+-- 2. Find Top 3 highest earning employees
 SELECT TOP 3 EmpID, EmpName, Salary 
 FROM Employees 
 ORDER BY Salary DESC;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 07: 6-STAGE EXECUTION PIPELINE, GROUP BY & HAVING
+-- 🗓️ DAY 07: THE 6 EXECUTION STEPS, GROUP BY, HAVING & ORDER BY
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The 6-Stage Logical Query Processing Order:
-     [STAGE 1] FROM + JOIN  ──► Load source tables, evaluate join matrix
-     [STAGE 2] WHERE        ──► Filter individual rows before grouping
-     [STAGE 3] GROUP BY     ──► Group rows into distinct summary buckets
-     [STAGE 4] HAVING       ──► Filter aggregate group statistics
-     [STAGE 5] SELECT       ──► Compute projections & assign column aliases
-     [STAGE 6] ORDER BY     ──► Sort final output (Can see SELECT aliases!)
-   - Why WHERE Fails on Aliases:
-     • WHERE executes at Stage 2. The alias created at Stage 5 (SELECT)
-       does not exist in memory yet!
-   - Why ORDER BY Succeeds on Aliases:
-     • ORDER BY executes at Stage 6, after SELECT has assigned the alias.
+   📖 SIMPLE EXPLANATION:
+   SQL does NOT read top to bottom. It runs in this exact 6-step order:
+   
+   Step 1: FROM + JOIN  ──► Pick tables and match rows.
+   Step 2: WHERE        ──► Filter individual raw rows.
+   Step 3: GROUP BY     ──► Group rows into buckets (e.g. by Department).
+   Step 4: HAVING       ──► Filter group totals (e.g. Total Salary > 100k).
+   Step 5: SELECT       ──► Pick columns and give them nicknames (Aliases).
+   Step 6: ORDER BY     ──► Sort the final output (Can see SELECT nicknames!).
+
+   * Why WHERE fails on nicknames: WHERE runs at Step 2, before nicknames 
+     are created at Step 5.
+   * Why ORDER BY works on nicknames: ORDER BY runs at Step 6, after SELECT.
 */
 
--- Benchmark query exercising all 6 execution stages:
+-- Running all 6 steps in one query:
 SELECT 
     DeptID,
     COUNT(*)    AS Headcount,
     AVG(Salary) AS AvgDeptSalary
 FROM Employees
-WHERE JoiningDate >= '2023-01-01'  -- Stage 2: Filter raw rows
-GROUP BY DeptID                    -- Stage 3: Bucket into department groups
-HAVING AVG(Salary) >= 100000.00    -- Stage 4: Filter aggregated group stats
-ORDER BY AvgDeptSalary DESC;       -- Stage 6: Sort by Stage 5 SELECT alias!
+WHERE JoiningDate >= '2023-01-01'  -- Step 2: Filter rows
+GROUP BY DeptID                    -- Step 3: Bucket by department
+HAVING AVG(Salary) >= 100000.00    -- Step 4: Filter bucket average
+ORDER BY AvgDeptSalary DESC;       -- Step 6: Sort by Step 5 nickname!
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 08: COMMON MISTAKES ANALYSIS (WHERE vs HAVING)
+-- 🗓️ DAY 08: COMMON SQL MISTAKES (WHERE on Rows vs HAVING on Groups)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Rule of Thumb:
-     • WHERE  -> Filters individual ROWS (runs before GROUP BY).
-     • HAVING -> Filters aggregated GROUPS (runs after GROUP BY).
-   - SQL Server Error Msg 8120:
-     • "Column is invalid in the select list because it is not contained
-        in either an aggregate function or the GROUP BY clause."
-     • Every column in SELECT must either be in GROUP BY or inside an aggregate!
+   📖 SIMPLE EXPLANATION:
+   - Simple Golden Rule:
+     • WHERE  -> Filters raw individual ROWS (runs before grouping).
+     • HAVING -> Filters summarized GROUPS (runs after grouping).
+   - Error Msg 8120:
+     If you use GROUP BY, any column you put in SELECT must either be 
+     in the GROUP BY list OR inside a function like SUM() / AVG()!
 */
 
--- ❌ Wrong: SELECT DeptID, EmpName, AVG(Salary) FROM Employees GROUP BY DeptID; (Msg 8120)
--- ✅ Correct: Grouping key and aggregates only:
+-- ❌ Wrong: SELECT DeptID, COUNT(*) FROM Employees WHERE COUNT(*) > 2 GROUP BY DeptID;
+-- ✅ Correct:
 SELECT 
     DeptID,
     COUNT(*)    AS StaffCount,
-    MIN(Salary) AS MinDeptSal,
-    MAX(Salary) AS MaxDeptSal
+    MIN(Salary) AS MinSalary,
+    MAX(Salary) AS MaxSalary
 FROM Employees 
 GROUP BY DeptID 
 HAVING COUNT(*) >= 2;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 09: SQL CONSTRAINTS & DATA VALIDATION
+-- 🗓️ DAY 09: 4 CORE RULES (PRIMARY KEY, UNIQUE, NOT NULL, CHECK)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The Core Constraints:
-     1. PRIMARY KEY : Unique identifier + NOT NULL. Creates Clustered Index.
-     2. UNIQUE      : Enforces uniqueness. Allows 1 single NULL in SQL Server.
-     3. NOT NULL    : Blocks NULL value insertion into the column.
-     4. CHECK       : Validates Boolean expressions on row insertion/update.
+   📖 SIMPLE EXPLANATION:
+   1. PRIMARY KEY : Unique ID for every row. Cannot be NULL (Max 1 per table).
+   2. UNIQUE      : No duplicates allowed. (Allows 1 single NULL in SQL Server).
+   3. NOT NULL    : Field cannot be left empty.
+   4. CHECK       : Sets a business rule (e.g. Age must be 18 or older).
 */
 
-CREATE TABLE ConstraintValidation_Day09 (
+CREATE TABLE TestRules_Day09 (
     RecordID INT PRIMARY KEY,
     UserEmail VARCHAR(100) UNIQUE NOT NULL,
     Age INT CHECK (Age >= 18 AND Age <= 65),
     Salary DECIMAL(10,2) CHECK (Salary > 0)
 );
 
--- Inserting valid row
-INSERT INTO ConstraintValidation_Day09 VALUES 
-(1, 'valid.user@company.com', 28, 95000.00);
+-- Insert 1 valid row
+INSERT INTO TestRules_Day09 VALUES 
+(1, 'demo.user@company.com', 25, 80000.00);
 
--- Cleanup
-DROP TABLE ConstraintValidation_Day09;
+-- Delete test table
+DROP TABLE TestRules_Day09;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 10: DEFAULT, IDENTITY & FOREIGN KEY ARCHITECTURE
+-- 🗓️ DAY 10: DEFAULT VALUES, AUTO-ID (IDENTITY) & FOREIGN KEY LINKS
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - DEFAULT Constraint: Fallback value when column is omitted in INSERT.
-   - IDENTITY(seed, increment): System-managed surrogate key.
-   - FOREIGN KEY Constraint:
-     • Enforces referential integrity between child table and parent PK/UNIQUE.
-     • Prevents orphan records in child tables.
-     • Controls CASCADE actions: ON DELETE CASCADE / ON DELETE SET NULL.
+   📖 SIMPLE EXPLANATION:
+   - DEFAULT: Auto-fills value (like 'Active') if user doesn't provide one.
+   - IDENTITY(1,1): Auto-generates numbers (1, 2, 3...) automatically.
+   - FOREIGN KEY: Connects child table to parent table.
+     • Prevents adding an order for a customer that does not exist.
 */
 
 SELECT 
@@ -558,110 +519,110 @@ INNER JOIN Departments d ON e.DeptID = d.DeptID;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 11: PARENT VS CHILD DESTRUCTION RULES
+-- 🗓️ DAY 11: PARENT VS CHILD TABLE RULES (DELETING & DROPPING)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The Parent Protection Protocol:
-     1. DELETE Parent Row: Blocked if child rows reference it (Msg 547).
-     2. TRUNCATE Parent Table: FORBIDDEN by SQL Server engine if any child
-        table has a Foreign Key pointing to it, EVEN IF CHILD IS EMPTY!
-     3. DROP Parent Table: Blocked until child foreign key is dropped.
-     4. Child Table Operations: Child rows can always be DELETED, TRUNCATED,
-        or DROPPED freely without affecting the parent table.
+   📖 SIMPLE EXPLANATION:
+   - Parent Table = Main master table (e.g. Departments).
+   - Child Table  = Connected table (e.g. Employees).
+
+   Rules:
+   1. You cannot delete a Parent row if Child rows are using it.
+   2. You CANNOT TRUNCATE a Parent table if a Child Foreign Key points to it,
+      even if the child table is 100% empty!
+   3. You cannot DROP a Parent table before dropping the Child link.
 */
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 12: 3-STEP CONSTRAINT RETROFITTING & TRUNCATE ROLLBACK
+-- 🗓️ DAY 12: ADDING RULES TO OLD DATA (3 STEPS) & TRUNCATE ROLLBACK
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The 3-Step Retrofitting Framework on Live Dirty Tables:
-     • Step 1: Detect duplicate violations using GROUP BY + HAVING COUNT(*) > 1.
-     • Step 2: Cleanse duplicates using CTE + ROW_NUMBER() in-place delete.
-     • Step 3: Apply ALTER TABLE ADD CONSTRAINT safely.
-   - Proof of TRUNCATE Rollback:
-     • TRUNCATE deallocates data pages. The page deallocations are logged
-       in the transaction log, allowing full 100% rollback in MSSQL!
+   📖 SIMPLE EXPLANATION:
+   - 3-Step Recipe to add UNIQUE rule to a table with existing dirty data:
+     • Step 1: Find duplicates using `GROUP BY col HAVING COUNT(*) > 1`.
+     • Step 2: Delete extra copies using CTE and `ROW_NUMBER() > 1`.
+     • Step 3: Add the rule using `ALTER TABLE ADD CONSTRAINT`.
+
+   - Can TRUNCATE be undone?
+     YES! In SQL Server, TRUNCATE runs inside transactions and can be 
+     undone 100% with `ROLLBACK TRANSACTION`.
 */
 
--- TRUNCATE Transaction Rollback Verification:
+-- Undo TRUNCATE proof test:
 BEGIN TRANSACTION;
     TRUNCATE TABLE BankTransactions;
-    SELECT COUNT(*) AS CountDuringTransaction FROM BankTransactions; -- 0 rows
+    -- Shows 0 rows inside transaction
+    SELECT COUNT(*) AS [Rows Inside Transaction] FROM BankTransactions;
 ROLLBACK TRANSACTION;
-SELECT COUNT(*) AS CountAfterRollback FROM BankTransactions; -- 4 rows restored!
+
+-- All 4 original rows are completely back!
+SELECT COUNT(*) AS [Rows After Rollback] FROM BankTransactions;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 13: SET OPERATORS (UNION, ALL, INTERSECT, EXCEPT)
+-- 🗓️ DAY 13: COMBINING RESULTS VERTICALLY (UNION, ALL, INTERSECT, EXCEPT)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Vertical Result Set Appending:
-     • UNION     : Combines query results + runs in-memory DISTINCT sort (slower).
-     • UNION ALL : Combines query results directly without sorting (10x faster!).
-     • INTERSECT : Returns rows present in BOTH result sets.
-     • EXCEPT    : Returns rows in Query 1 that do not exist in Query 2.
-   - Structural Rules:
-     • Both queries must have the exact same number of columns.
-     • Corresponding column data types must be compatible.
+   📖 SIMPLE EXPLANATION:
+   - Stacking query results on top of each other:
+     • UNION     : Combines results and removes duplicate rows (slower).
+     • UNION ALL : Combines results directly without removing duplicates (10x faster!).
+     • INTERSECT : Shows only rows that exist in BOTH queries.
+     • EXCEPT    : Shows rows from Query 1 that do not exist in Query 2.
+   - Rule: Both queries must have the same number of columns and compatible types.
 */
 
--- 1. UNION (Deduplicated locations)
+-- 1. UNION (Combines and removes duplicates)
 SELECT City FROM Customers
 UNION
 SELECT Location FROM Departments;
 
--- 2. UNION ALL (All locations preserved)
+-- 2. UNION ALL (Combines and keeps all duplicates)
 SELECT City FROM Customers
 UNION ALL
 SELECT Location FROM Departments;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 14: TEMPORAL DATA TYPES, DATEDIFF & SARGABILITY
+-- 🗓️ DAY 14: DATE FUNCTIONS & FAST INDEX SEARCHES (SARGABLE)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Temporal Built-in Functions:
-     • GETDATE()                  : Current system clock timestamp.
-     • DATEDIFF(unit, start, end) : Counts boundary crossings between two dates.
-     • DATEADD(unit, n, date)     : Adds/subtracts time intervals.
-     • DATEPART(unit, date)       : Extracts calendar components (year, month, qq).
-     • EOMONTH(date)              : Returns last day of month (handles leap years).
-   - SARGability (Search Argument Able):
-     • Non-SARGable: WHERE YEAR(OrderDate) = 2026 (Forces Full Index Scan).
-     • SARGable    : WHERE OrderDate >= '2026-01-01' AND OrderDate < '2027-01-01'
-                     (Enables B-Tree Index Seek!).
+   📖 SIMPLE EXPLANATION:
+   - Useful Date Functions:
+     • GETDATE()                  : Today's current date and time.
+     • DATEDIFF(unit, start, end) : Counts how many days/months between two dates.
+     • DATEADD(unit, n, date)     : Adds or subtracts days/months.
+     • EOMONTH(date)              : Gives the last day of the month (e.g. 28 Feb).
+   - Fast Index Search Rule (SARGable):
+     • Slow (Table Scan): WHERE YEAR(OrderDate) = 2026
+     • Fast (Index Seek): WHERE OrderDate >= '2026-01-01' AND OrderDate < '2027-01-01'
 */
 
 SELECT 
     OrderID, OrderDate,
-    DATEDIFF(DAY, OrderDate, GETDATE()) AS DaysSinceOrderPlaced,
-    DATEADD(DAY, 7, OrderDate)          AS EstimatedDeliveryDate,
-    DATEPART(QUARTER, OrderDate)        AS OrderQuarter,
-    EOMONTH(OrderDate)                  AS MonthEndDate
+    DATEDIFF(DAY, OrderDate, GETDATE()) AS [Days Since Order],
+    DATEADD(DAY, 7, OrderDate)          AS [Expected Delivery Date],
+    DATEPART(QUARTER, OrderDate)        AS [Quarter Number],
+    EOMONTH(OrderDate)                  AS [Month End Date]
 FROM Orders;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 15: RELATIONAL JOINS, CARTESIAN MATH (N x M) & 3VL
+-- 🗓️ DAY 15: JOINING TABLES BASICS, ROW MULTIPLICATION & NULL RULES
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - The Fundamental Join Equation:
-     JOIN = (Cartesian Cross Product N x M) + (ON Filter Predicate)
-   - Cartesian Row Multiplication:
-     • If Table A has 4 rows with key '1', and Table B has 3 rows with key '1':
-       -> INNER JOIN generates 4 x 3 = 12 matching rows!
-   - Three-Valued Logic (3VL) in Joins:
-     • In SQL, NULL = NULL evaluates to UNKNOWN.
-     • Rows with NULL join keys will NOT match in standard INNER JOIN!
+   📖 SIMPLE EXPLANATION:
+   - How Joins Work Behind the Scenes:
+     Join = (Multiply Table A rows by Table B rows) + (Filter with ON rule).
+   - Row Multiplication Rule:
+     If Table A has 4 rows with ID '1', and Table B has 3 rows with ID '1':
+     INNER JOIN creates 4 x 3 = 12 rows!
+   - NULL Rule:
+     In SQL, NULL = NULL is Unknown (False). Rows with NULL keys will not match!
 */
 
--- ANSI CROSS JOIN Demonstration (Total rows = Customers x Orders)
+-- CROSS JOIN multiplies all customers by all orders:
 SELECT 
     c.CustomerID, c.CustomerName, o.OrderID, o.TotalAmount
 FROM Customers c
@@ -669,18 +630,18 @@ CROSS JOIN Orders o;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 16: ANSI RELATIONAL JOINS & ANTI-JOIN PATTERNS
+-- 🗓️ DAY 16: STANDARD JOINS (INNER, LEFT, RIGHT, FULL) & ANTI-JOINS
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - ANSI Relational Join Taxonomy:
-     • INNER JOIN : Returns rows that satisfy the ON condition in both tables.
-     • LEFT JOIN  : Preserves ALL left table rows; fills NULL for unmatched right.
-     • RIGHT JOIN : Preserves ALL right table rows; fills NULL for unmatched left.
-     • FULL JOIN  : Preserves ALL rows from both tables.
-   - The Relational Anti-Join Pattern:
-     • Used to find parent records with ZERO corresponding child records.
-     • Syntax: `LEFT JOIN Child c ON p.ID = c.ID WHERE c.ID IS NULL`
+   📖 SIMPLE EXPLANATION:
+   - 4 Main Join Types:
+     • INNER JOIN : Shows only rows that match in BOTH tables.
+     • LEFT JOIN  : Keeps ALL rows from left table; puts NULL if right has no match.
+     • RIGHT JOIN : Keeps ALL rows from right table.
+     • FULL JOIN  : Keeps ALL rows from both tables.
+   - Anti-Join (Finding Missing Links):
+     • Find customers who never ordered:
+       `LEFT JOIN Orders ON ... WHERE Orders.OrderID IS NULL`
 */
 
 -- 1. Standard Inner Join
@@ -688,7 +649,7 @@ SELECT e.EmpID, e.EmpName, d.DeptName, e.Salary
 FROM Employees e 
 INNER JOIN Departments d ON e.DeptID = d.DeptID;
 
--- 2. Anti-Join: Customers who have never placed an order
+-- 2. Anti-Join: Find customers who NEVER placed an order
 SELECT c.CustomerID, c.CustomerName, c.City 
 FROM Customers c 
 LEFT JOIN Orders o ON c.CustomerID = o.CustomerID 
@@ -696,17 +657,13 @@ WHERE o.OrderID IS NULL;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 17: MULTI-TABLE INGESTION CHAINS & CROSS JOIN MATRICES
+-- 🗓️ DAY 17: JOINING 3 OR MORE TABLES & TABLE PAIRING (CROSS JOIN)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Multi-Table Chaining:
-     • Connects 3 or more entities across normalized schemas.
-     • Customer Master -> Orders Header -> Order Items -> Product Master.
-   - ANSI SQL-92 vs Legacy Non-ANSI Comma Joins:
-     • Always use explicit ANSI `INNER JOIN ... ON` syntax.
-     • Avoid legacy comma joins (`FROM T1, T2 WHERE T1.ID = T2.ID`) due to
-       accidental accidental Cartesian explosion risks.
+   📖 SIMPLE EXPLANATION:
+   - Chaining Multiple Tables:
+     Table 1 -> JOIN Table 2 ON ... -> JOIN Table 3 ON ...
+   - Always use clean table short names (like `c` for Customers, `o` for Orders).
 */
 
 SELECT 
@@ -717,7 +674,7 @@ SELECT
     p.Category,
     oi.Quantity,
     oi.UnitPrice,
-    (oi.Quantity * oi.UnitPrice) AS TotalLineAmount
+    (oi.Quantity * oi.UnitPrice) AS [Line Total Price]
 FROM Customers c
 INNER JOIN Orders o ON c.CustomerID = o.CustomerID
 INNER JOIN OrderItems oi ON o.OrderID = oi.OrderID
@@ -725,77 +682,70 @@ INNER JOIN Products p ON oi.ProductID = p.ProductID;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 18: SELF-JOINS, MANAGER TREES & 5-MIN GEO-FRAUD ENGINE
+-- 🗓️ DAY 18: SELF-JOINS (EMPLOYEE-BOSS TREE) & 5-MIN FRAUD CHECK
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Self-Join Mechanics:
-     • Joins a table to itself in memory using aliases (e.g. `e` and `m`).
-   - Hierarchical Mapping & Root Node Handling:
-     • Using INNER JOIN drops the CEO (whose ManagerID is NULL).
-     • Using LEFT JOIN preserves the CEO at the root of the hierarchy!
-   - Symmetric Deduplication:
-     • In same-table comparisons, `t1.ID < t2.ID` eliminates self-matches
-       and symmetric mirror duplicate pairs (A-B vs B-A).
+   📖 SIMPLE EXPLANATION:
+   - Self-Join: Joining a table to itself using two nicknames (`e` and `m`).
+   - Boss Tree with CEO Protection:
+     • Use LEFT JOIN so the CEO (who has NULL manager) is not dropped!
+   - Removing Duplicate Pairs:
+     • Writing `t1.ID < t2.ID` prevents pairing an item with itself and 
+       removes reverse duplicates (like A-B and B-A).
 */
 
--- 1. Employee-Manager Hierarchy with CEO Shield
+-- 1. Employee-Boss List (Includes CEO)
 SELECT 
-    e.EmpName AS EmployeeName,
-    e.Salary  AS EmployeeSalary,
-    ISNULL(m.EmpName, '👑 CEO / TOP EXECUTIVE') AS ManagerName,
-    m.Salary  AS ManagerSalary
+    e.EmpName AS [Employee Name],
+    e.Salary  AS [Employee Salary],
+    ISNULL(m.EmpName, '👑 Top CEO (No Boss)') AS [Manager Name],
+    m.Salary  AS [Manager Salary]
 FROM Employees e
 LEFT JOIN Employees m ON e.ManagerID = m.EmpID;
 
--- 2. Geo-Temporal Fraud Anomaly Engine (Different cities in <= 5 mins)
+-- 2. Fraud Check: Same account transacting in different cities in <= 5 mins
 SELECT 
     t1.AccountID,
     t1.TxnID AS Txn1, t1.TxnCity AS City1, t1.TxnTimestamp AS Time1,
     t2.TxnID AS Txn2, t2.TxnCity AS City2, t2.TxnTimestamp AS Time2,
-    DATEDIFF(SECOND, t1.TxnTimestamp, t2.TxnTimestamp) AS TimeDiffSeconds
+    DATEDIFF(SECOND, t1.TxnTimestamp, t2.TxnTimestamp) AS [Seconds Apart]
 FROM BankTransactions t1
 INNER JOIN BankTransactions t2 
     ON t1.AccountID = t2.AccountID
-   AND t1.TxnID < t2.TxnID                          -- Suppresses self-match & mirror duplicates
-   AND t1.TxnCity <> t2.TxnCity                     -- Distinct locations
+   AND t1.TxnID < t2.TxnID                          -- Stops self-pairing & reverse duplicates
+   AND t1.TxnCity <> t2.TxnCity                     -- Different cities
    AND DATEDIFF(MINUTE, t1.TxnTimestamp, t2.TxnTimestamp) BETWEEN 0 AND 5;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 19: WINDOW FUNCTIONS (ROW_NUMBER, RANK, DENSE_RANK)
+-- 🗓️ DAY 19: RANKING FUNCTIONS (ROW_NUMBER, RANK, DENSE_RANK)
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Window Functions vs GROUP BY:
-     • GROUP BY collapses individual rows into a single summary row.
-     • Window Functions preserve individual row identity while calculating
-       aggregates and rankings across a defined subset (PARTITION BY).
-   - The 3 Core Ranking Functions:
-     • ROW_NUMBER() : 1, 2, 3, 4 (Strict sequential ID; no ties, no gaps).
-     • DENSE_RANK() : 1, 2, 2, 3 (Tied rows share rank; NO gaps).
-     • RANK()       : 1, 2, 2, 4 (Tied rows share rank; LEAVES gaps).
-   - SQL Server Error Msg 4108:
-     • "Windowed functions can only appear in the SELECT or ORDER BY clauses."
-     • Window functions are forbidden in WHERE clauses.
-     • Solution: Wrap the window function in a CTE or Derived Table!
+   📖 SIMPLE EXPLANATION:
+   - 3 Ways to Rank Rows:
+     • ROW_NUMBER() : Simple 1, 2, 3, 4 (Every row gets a unique number).
+     • DENSE_RANK() : Tied items get same number, NO gaps: 1, 2, 2, 3 (Best for 2nd highest).
+     • RANK()       : Tied items get same number, LEAVES gaps: 1, 2, 2, 4.
+   - The WHERE Trap (Error 4108):
+     • You CANNOT put `WHERE ROW_NUMBER() = 1`.
+     • Fix: Put the query inside a CTE or subquery first, then filter!
 */
 
--- 1. Direct comparison of the 3 ranking functions
+-- 1. Compare the 3 ranking functions side-by-side
 SELECT 
     DeptID, EmpName, Salary,
-    ROW_NUMBER() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS SeqRow,
-    DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS DenseRnk,
-    RANK()       OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS PosRnk
+    ROW_NUMBER() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS [Row Number],
+    DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS [Dense Rank (No Gaps)],
+    RANK()       OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS [Rank (With Gaps)]
 FROM Employees;
 
--- 2. Resolving Msg 4108 via Derived Table (Top 1 Earner per Department)
+-- 2. Find Top 1 highest earner per department
 SELECT DeptID, EmpName, Salary 
 FROM (
     SELECT DeptID, EmpName, Salary,
            DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS rnk
     FROM Employees
-) RankedData
+) RankedSalaries
 WHERE rnk = 1;
 GO
 
@@ -803,92 +753,90 @@ GO
 -- 🗓️ DAY 20: COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Common Table Expressions (CTEs):
-     • A temporary named in-memory result set defined using `WITH CTE AS (...)`.
-     • Exists only for the execution scope of the immediately following statement.
-   - Safe In-Place Full-Row Deduplication:
-     • SQL Server allows executing DELETE directly against a CTE!
-     • The deletions propagate immediately to the underlying physical table.
+   📖 SIMPLE EXPLANATION:
+   - What is a CTE?
+     A clean temporary named query block created with `WITH CTE_Name AS (...)`.
+   - Safe Duplicate Deletion:
+     In SQL Server, you can run `DELETE` directly on a CTE, and it deletes
+     duplicate rows straight from the real table!
 */
 
--- Safe In-Place Full-Row Deduplication Engine Template:
-WITH DuplicateCleanser AS (
+-- Safe Duplicate Deletion Template:
+WITH DuplicateCleaner AS (
     SELECT CustomerID, Email,
            ROW_NUMBER() OVER (
                PARTITION BY Email 
                ORDER BY RegistrationDate ASC
-           ) AS RowOccurrence
+           ) AS OccurrenceNumber
     FROM Customers
     WHERE Email IS NOT NULL
 )
--- Preview first: SELECT * FROM DuplicateCleanser WHERE RowOccurrence > 1;
-DELETE FROM DuplicateCleanser 
-WHERE RowOccurrence > 1;
+-- Preview first: SELECT * FROM DuplicateCleaner WHERE OccurrenceNumber > 1;
+DELETE FROM DuplicateCleaner 
+WHERE OccurrenceNumber > 1;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 21: VALUE FUNCTIONS (LEAD/LAG) & RUNNING TOTALS
+-- 🗓️ DAY 21: LOOKING AT PREVIOUS/NEXT ROWS (LEAD/LAG) & RUNNING TOTALS
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Value Window Functions:
-     • LAG(col, offset, default)  : Peeks backwards into previous rows.
-     • LEAD(col, offset, default) : Peeks forwards into upcoming rows.
-   - Cumulative Running Totals Formula:
-     • SUM(col) OVER (PARTITION BY id ORDER BY date 
-                      ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
-     • Computes running balance across chronological rows without subqueries.
+   📖 SIMPLE EXPLANATION:
+   - Looking across rows:
+     • LAG(col, 1, 0)  : Looks at the PREVIOUS row value.
+     • LEAD(col, 1, 0) : Looks at the NEXT upcoming row value.
+   - Cumulative Running Total:
+     • `SUM(col) OVER (ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)`
+     • Adds up amounts continuously from top row down to current row.
 */
 
--- 1. Inter-row peeking and cumulative running balance
+-- 1. Look at previous transaction amount and running account balance
 SELECT 
     AccountID, TxnTimestamp, TxnAmount,
     LAG(TxnAmount, 1, 0.00) OVER (
         PARTITION BY AccountID 
         ORDER BY TxnTimestamp
-    ) AS PriorTxnAmount,
+    ) AS [Previous Transaction Amount],
     SUM(TxnAmount) OVER (
         PARTITION BY AccountID 
         ORDER BY TxnTimestamp 
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-    ) AS CumulativeAccountBalance
+    ) AS [Running Account Balance]
 FROM BankTransactions;
 
--- 2. Stock Inventory Delta & Running Stock Balance
+-- 2. Track warehouse stock changes over time
 SELECT 
     ProductID, MovementDate, QtyChange,
     SUM(QtyChange) OVER (
         PARTITION BY ProductID 
         ORDER BY MovementDate 
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-    ) AS ClosingStockOnHand
+    ) AS [Stock Remaining On Hand]
 FROM StockMovements;
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 22: CONDITIONAL CASE LOGIC & DYNAMIC PINNED SORTING
+-- 🗓️ DAY 22: IF-ELSE IN SQL (CASE STATEMENT) & CUSTOM SORTING
 -- --------------------------------------------------------------------
 /*
-   🧠 CONCEPT SUMMARY:
-   - Searched CASE vs Simple CASE:
-     • Simple CASE: `CASE col WHEN 'val' THEN ...` (equality checks only).
-     • Searched CASE: `CASE WHEN condition1 THEN ...` (arbitrary Boolean logic).
-   - Dynamic Pinned Sorting via ORDER BY CASE:
-     • Custom priority sorting without modifying table data or creating temp tables.
+   📖 SIMPLE EXPLANATION:
+   - CASE Expression:
+     Works like IF-THEN-ELSE to label data dynamically.
+   - Custom Priority Sorting:
+     You can sort your favourite city (e.g. Pune) to the top of the list
+     without changing any database data!
 */
 
--- 1. Multi-Tier Categorization via Searched CASE
+-- 1. Label employees into salary tiers
 SELECT 
     EmpID, EmpName, Salary,
     CASE 
         WHEN Salary >= 140000.00 THEN '💎 Executive Tier'
         WHEN Salary >= 110000.00 THEN '🥇 Senior Tier'
         ELSE '🥈 Associate Tier'
-    END AS CompensationBand
+    END AS [Salary Level]
 FROM Employees;
 
--- 2. Dynamic Pinned Sorting (Pune 1st, Bengaluru 2nd, others alphabetical)
+-- 2. Custom Priority Sorting (Pune 1st, Bengaluru 2nd, other cities alphabetical)
 SELECT CustomerID, CustomerName, City
 FROM Customers
 ORDER BY 
@@ -901,11 +849,11 @@ ORDER BY
 GO
 
 -- ====================================================================
--- 🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
+-- 🧠 SECTION 3: QUICK SYNTAX MEMORY CHEAT SHEET
 -- ====================================================================
 
 /*
-   DRILL 1: 6-STAGE EXECUTION ORDER
+   RULE 1: 6-STAGE EXECUTION ORDER
    Write the 6 stages in order from memory:
    1. FROM + JOIN
    2. WHERE
@@ -916,7 +864,7 @@ GO
 */
 
 /*
-   DRILL 2: THE 3-STEP CONSTRAINT RETROFITTING
+   RULE 2: 3-STEP CONSTRAINT RETROFITTING
    Step 1: SELECT col, COUNT(*) FROM table GROUP BY col HAVING COUNT(*) > 1;
    Step 2: WITH C AS (SELECT id, ROW_NUMBER() OVER(PARTITION BY col ORDER BY id) rn FROM table)
            DELETE FROM C WHERE rn > 1;
@@ -924,27 +872,27 @@ GO
 */
 
 /*
-   DRILL 3: SARGABLE DATE FILTERING
-   -- Non-SARGable: WHERE YEAR(OrderDate) = 2026 AND MONTH(OrderDate) = 5
-   -- SARGable    : WHERE OrderDate >= '2026-05-01' AND OrderDate < '2026-06-01'
+   RULE 3: SARGABLE DATE FILTERING
+   -- Slow (Scan): WHERE YEAR(OrderDate) = 2026 AND MONTH(OrderDate) = 5
+   -- Fast (Seek): WHERE OrderDate >= '2026-05-01' AND OrderDate < '2026-06-01'
 */
 
 /*
-   DRILL 4: 3-WAY RANKING BEHAVIOR
+   RULE 4: 3-WAY RANKING BEHAVIOR
    - ROW_NUMBER() : Unique sequential (1, 2, 3, 4) - Deduplication & Pagination
    - DENSE_RANK() : Tied shared rank without gaps (1, 2, 2, 3) - Nth highest salary
    - RANK()       : Tied shared rank with gaps (1, 2, 2, 4) - Official standings
 */
 
 /*
-   DRILL 5: VALUE WINDOW FUNCTIONS & RUNNING TOTALS
+   RULE 5: VALUE WINDOW FUNCTIONS & RUNNING TOTALS
    - LAG(col, offset, default) OVER (PARTITION BY id ORDER BY date)
    - LEAD(col, offset, default) OVER (PARTITION BY id ORDER BY date)
    - SUM(col) OVER (PARTITION BY id ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 */
 
 /*
-   DRILL 6: DYNAMIC PINNED SORTING (CASE)
+   RULE 6: DYNAMIC PINNED SORTING (CASE)
    ORDER BY 
        CASE 
            WHEN City = 'Pune' THEN 1
@@ -955,17 +903,17 @@ GO
 */
 
 -- ====================================================================
--- 🧪 SECTION 4: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
+-- 🧪 SECTION 4: 50 INTERVIEW PRACTICE QUESTIONS (SUPER 50)
 -- --------------------------------------------------------------------
--- All official solution keys are enclosed in comments below each task.
--- Try solving on your own in the blank query space first!
+-- All official solutions are enclosed in comments below each question.
+-- Try writing your own query in the blank space first!
 -- ====================================================================
 
 -- --------------------------------------------------------------------
--- 🟢 BLOCK 1: FOUNDATION & FILTERING (Q01 – Q10)
+-- 🟢 BLOCK 1: BASIC FILTERS & PROJECTIONS (Q01 – Q10)
 -- --------------------------------------------------------------------
 
--- [Q01] Retrieve all employees earning more than 120,000 ordered by salary descending.
+-- [Q01] Find all employees earning more than 120,000 ordered by salary highest first.
 -- Write your SQL Query below:
 
 
@@ -978,7 +926,7 @@ ORDER BY Salary DESC;
 -------------------------------- */
 
 
--- [Q02] Find employees in Departments 1, 2, or 4 without using multiple OR conditions.
+-- [Q02] Find employees in Departments 1, 2, or 4 without typing multiple OR conditions.
 -- Write your SQL Query below:
 
 
@@ -1002,7 +950,7 @@ WHERE EmpName LIKE 'A____n';
 -------------------------------- */
 
 
--- [Q04] Retrieve all employees whose email does NOT end with '@gmail.com' (preserve NULLs).
+-- [Q04] Find all employees whose email does NOT end with '@gmail.com' (keep employees with no email).
 -- Write your SQL Query below:
 
 
@@ -1015,7 +963,7 @@ WHERE Email NOT LIKE '%@gmail.com'
 -------------------------------- */
 
 
--- [Q05] Select orders placed between '2026-01-01' and '2026-03-31' using BETWEEN.
+-- [Q05] Find orders placed between '2026-01-01' and '2026-03-31' using BETWEEN.
 -- Write your SQL Query below:
 
 
@@ -1027,7 +975,7 @@ WHERE OrderDate BETWEEN '2026-01-01' AND '2026-03-31';
 -------------------------------- */
 
 
--- [Q06] Find top-level leaders who have no direct manager assigned (ManagerID is NULL).
+-- [Q06] Find top leaders who have no boss assigned (ManagerID is NULL).
 -- Write your SQL Query below:
 
 
@@ -1039,7 +987,7 @@ WHERE ManagerID IS NULL;
 -------------------------------- */
 
 
--- [Q07] Retrieve the top 5 highest-paid employees in the company using TOP.
+-- [Q07] Find the top 5 highest-paid employees in the company.
 -- Write your SQL Query below:
 
 
@@ -1051,7 +999,7 @@ ORDER BY Salary DESC;
 -------------------------------- */
 
 
--- [Q08] Find the exact 2nd highest distinct salary across company using DENSE_RANK.
+-- [Q08] Find the exact 2nd highest salary in the company using DENSE_RANK.
 -- Write your SQL Query below:
 
 
@@ -1068,7 +1016,7 @@ WHERE rnk = 2;
 -------------------------------- */
 
 
--- [Q09] Compute MIN, MAX, AVG, SUM salary and total headcount in a single query.
+-- [Q09] In a single query, show Lowest, Highest, Average, Total salary and Total employee count.
 -- Write your SQL Query below:
 
 
@@ -1084,7 +1032,7 @@ FROM Employees;
 -------------------------------- */
 
 
--- [Q10] Return DeptID and total employee headcount per department.
+-- [Q10] Show DeptID and total number of employees working in each department.
 -- Write your SQL Query below:
 
 
@@ -1097,10 +1045,10 @@ GROUP BY DeptID;
 
 
 -- --------------------------------------------------------------------
--- 🟡 BLOCK 2: GROUP BY, HAVING & AGGREGATIONS (Q11 – Q20)
+-- 🟡 BLOCK 2: GROUP BY & GROUP CALCULATIONS (Q11 – Q20)
 -- --------------------------------------------------------------------
 
--- [Q11] Departments with strictly more than 3 employees.
+-- [Q11] Find departments that have more than 3 employees.
 -- Write your SQL Query below:
 
 
@@ -1113,7 +1061,7 @@ HAVING COUNT(*) > 3;
 -------------------------------- */
 
 
--- [Q12] Departments where average salary is strictly greater than 120,000.
+-- [Q12] Find departments where average salary is greater than 120,000.
 -- Write your SQL Query below:
 
 
@@ -1126,7 +1074,7 @@ HAVING AVG(Salary) > 120000.00;
 -------------------------------- */
 
 
--- [Q13] Department with the absolute highest average salary.
+-- [Q13] Find the single department that has the highest average salary.
 -- Write your SQL Query below:
 
 
@@ -1139,7 +1087,7 @@ ORDER BY AVG(Salary) DESC;
 -------------------------------- */
 
 
--- [Q14] Department with highest cumulative payroll spend.
+-- [Q14] Find the department where the company spends the most total money on salary.
 -- Write your SQL Query below:
 
 
@@ -1152,7 +1100,7 @@ ORDER BY SUM(Salary) DESC;
 -------------------------------- */
 
 
--- [Q15] Employees earning more than their own department's average salary.
+-- [Q15] Find employees who earn more than their own department's average salary.
 -- Write your SQL Query below:
 
 
@@ -1170,7 +1118,7 @@ WHERE e.Salary > d.AvgSal;
 -------------------------------- */
 
 
--- [Q16] Second-highest distinct salary across entire company without window functions.
+-- [Q16] Find the second-highest salary in the company without using window functions.
 -- Write your SQL Query below:
 
 
@@ -1182,7 +1130,7 @@ WHERE Salary < (SELECT MAX(Salary) FROM Employees);
 -------------------------------- */
 
 
--- [Q17] Third-highest salary using DENSE_RANK without TOP keyword.
+-- [Q17] Find the 3rd highest salary using DENSE_RANK without using the TOP keyword.
 -- Write your SQL Query below:
 
 
@@ -1199,7 +1147,7 @@ WHERE rnk = 3;
 -------------------------------- */
 
 
--- [Q18] Duplicate Email detection query on Customers table.
+-- [Q18] Find duplicate customer emails (emails appearing more than once).
 -- Write your SQL Query below:
 
 
@@ -1213,7 +1161,7 @@ HAVING COUNT(*) > 1;
 -------------------------------- */
 
 
--- [Q19] Departments where the minimum salary is above 90,000.
+-- [Q19] Find departments where the lowest-earning employee makes more than 90,000.
 -- Write your SQL Query below:
 
 
@@ -1226,7 +1174,7 @@ HAVING MIN(Salary) > 90000.00;
 -------------------------------- */
 
 
--- [Q20] Multi-metric department scorecard: DeptName, TotalEmployees, AvgSalary, TotalPayroll.
+-- [Q20] Create a department report showing DeptName, TotalStaff, AvgSalary, TotalPayroll.
 -- Write your SQL Query below:
 
 
@@ -1244,10 +1192,10 @@ GROUP BY d.DeptID, d.DeptName;
 
 
 -- --------------------------------------------------------------------
--- 🟠 BLOCK 3: RELATIONAL JOINS & SELF-JOINS (Q21 – Q30)
+-- 🟠 BLOCK 3: JOINING TABLES & SELF-JOINS (Q21 – Q30)
 -- --------------------------------------------------------------------
 
--- [Q21] Standard Employee + Department Inner Join returning EmpID, EmpName, DeptName, Salary.
+-- [Q21] Join Employees and Departments to show EmpID, EmpName, DeptName, Salary.
 -- Write your SQL Query below:
 
 
@@ -1259,7 +1207,7 @@ INNER JOIN Departments d ON e.DeptID = d.DeptID;
 -------------------------------- */
 
 
--- [Q22] Find employees without assigned departments (Orphan Check).
+-- [Q22] Find employees who are not assigned to any department.
 -- Write your SQL Query below:
 
 
@@ -1272,7 +1220,7 @@ WHERE d.DeptID IS NULL;
 -------------------------------- */
 
 
--- [Q23] Find departments with zero hired staff.
+-- [Q23] Find departments that have zero employees hired.
 -- Write your SQL Query below:
 
 
@@ -1285,7 +1233,7 @@ WHERE e.EmpID IS NULL;
 -------------------------------- */
 
 
--- [Q24] Customer and Orders Join: CustomerName, OrderID, OrderDate, TotalAmount.
+-- [Q24] Join Customers and Orders to show CustomerName, OrderID, OrderDate, TotalAmount.
 -- Write your SQL Query below:
 
 
@@ -1297,7 +1245,7 @@ INNER JOIN Orders o ON c.CustomerID = o.CustomerID;
 -------------------------------- */
 
 
--- [Q25] Relational Anti-Join: Customers who have NEVER placed any order.
+-- [Q25] Find customers who have NEVER placed any order.
 -- Write your SQL Query below:
 
 
@@ -1310,7 +1258,7 @@ WHERE o.OrderID IS NULL;
 -------------------------------- */
 
 
--- [Q26] Products that have never been ordered (Anti-Join with OrderItems).
+-- [Q26] Find products that have never been ordered by anyone.
 -- Write your SQL Query below:
 
 
@@ -1323,7 +1271,7 @@ WHERE oi.OrderItemID IS NULL;
 -------------------------------- */
 
 
--- [Q27] Customer Lifetime Spend scorecard including customers with zero orders.
+-- [Q27] Show Total Orders and Lifetime Spend per customer (include customers with 0 orders).
 -- Write your SQL Query below:
 
 
@@ -1339,7 +1287,7 @@ GROUP BY c.CustomerID, c.CustomerName;
 -------------------------------- */
 
 
--- [Q28] Self-Join: Employees earning higher salary than their direct manager.
+-- [Q28] Find employees who earn a higher salary than their direct manager.
 -- Write your SQL Query below:
 
 
@@ -1355,7 +1303,7 @@ WHERE e.Salary > m.Salary;
 -------------------------------- */
 
 
--- [Q29] Employee-to-Manager hierarchy with CEO preservation ('👑 CEO / NO MANAGER').
+-- [Q29] List all employees and their managers (show '👑 CEO' for top leader).
 -- Write your SQL Query below:
 
 
@@ -1369,7 +1317,7 @@ LEFT JOIN Employees m ON e.ManagerID = m.EmpID;
 -------------------------------- */
 
 
--- [Q30] Same-department employee pairs without symmetric duplicates (Emp1 < Emp2).
+-- [Q30] Pair employees in the same department without pairing anyone with themselves or repeating.
 -- Write your SQL Query below:
 
 
@@ -1387,10 +1335,10 @@ INNER JOIN Employees e2
 
 
 -- --------------------------------------------------------------------
--- 🔴 BLOCK 4: WINDOW FUNCTIONS & DEDUPLICATION (Q31 – Q40)
+-- 🔴 BLOCK 4: WINDOW RANKING & DUPLICATE REMOVAL (Q31 – Q40)
 -- --------------------------------------------------------------------
 
--- [Q31] Highest paid employee in each department using DENSE_RANK.
+-- [Q31] Find the highest paid employee in each department using DENSE_RANK.
 -- Write your SQL Query below:
 
 
@@ -1410,7 +1358,7 @@ WHERE rnk = 1;
 -------------------------------- */
 
 
--- [Q32] Top 3 highest earners in each department using DENSE_RANK.
+-- [Q32] Find top 3 highest earners in each department using DENSE_RANK.
 -- Write your SQL Query below:
 
 
@@ -1430,7 +1378,7 @@ WHERE rnk <= 3;
 -------------------------------- */
 
 
--- [Q33] Exact 2nd highest earner in each department using DENSE_RANK.
+-- [Q33] Find the exact 2nd highest earner in each department using DENSE_RANK.
 -- Write your SQL Query below:
 
 
@@ -1450,7 +1398,7 @@ WHERE rnk = 2;
 -------------------------------- */
 
 
--- [Q34] Sequential row numbering by salary across the entire company using ROW_NUMBER.
+-- [Q34] Give every employee a unique line number (1, 2, 3...) ordered by salary highest first.
 -- Write your SQL Query below:
 
 
@@ -1463,7 +1411,7 @@ FROM Employees;
 -------------------------------- */
 
 
--- [Q35] Structural comparison of RANK vs DENSE_RANK in a single query.
+-- [Q35] Show DENSE_RANK and RANK side-by-side on salaries to see the gap difference.
 -- Write your SQL Query below:
 
 
@@ -1477,7 +1425,7 @@ FROM Employees;
 -------------------------------- */
 
 
--- [Q36] Find all employees who share the exact same salary rank with a colleague.
+-- [Q36] Find employees who earn the exact same salary as another colleague (salary ties).
 -- Write your SQL Query below:
 
 
@@ -1495,7 +1443,7 @@ INNER JOIN SalaryCounts s ON e.Salary = s.Salary;
 -------------------------------- */
 
 
--- [Q37] Highest spending customer per city using DENSE_RANK.
+-- [Q37] Find the highest spending customer in each city using DENSE_RANK.
 -- Write your SQL Query below:
 
 
@@ -1517,7 +1465,7 @@ WHERE rnk = 1;
 -------------------------------- */
 
 
--- [Q38] Retrieve only the latest order record for each customer using ROW_NUMBER.
+-- [Q38] Show only the most recent (latest) order for each customer using ROW_NUMBER.
 -- Write your SQL Query below:
 
 
@@ -1537,7 +1485,7 @@ WHERE rn = 1;
 -------------------------------- */
 
 
--- [Q39] Retrieve the first lifetime order for each customer using ROW_NUMBER.
+-- [Q39] Show only the very first lifetime order for each customer using ROW_NUMBER.
 -- Write your SQL Query below:
 
 
@@ -1557,7 +1505,7 @@ WHERE rn = 1;
 -------------------------------- */
 
 
--- [Q40] Find employees who earn more than the chronologically preceding hire using LAG.
+-- [Q40] Find employees who earn more than the person hired immediately before them using LAG.
 -- Write your SQL Query below:
 
 
@@ -1575,10 +1523,10 @@ WHERE Salary > PrevHireSalary;
 
 
 -- --------------------------------------------------------------------
--- 💀 BLOCK 5: ANALYTICAL BOSS & WAR ROOM (Q41 – Q50)
+-- 💀 BLOCK 5: ADVANCED ANALYTICS & TRICKY SCENARIOS (Q41 – Q50)
 -- --------------------------------------------------------------------
 
--- [Q41] Safe In-Place Full-Row Deduplication Engine on Customers using CTE.
+-- [Q41] Delete duplicate customer emails permanently using a CTE and ROW_NUMBER.
 -- Write your SQL Query below:
 
 
@@ -1598,7 +1546,7 @@ WHERE RowOccurrence > 1;
 -------------------------------- */
 
 
--- [Q42] Find customers with orders on two consecutive calendar days using LAG.
+-- [Q42] Find customers who placed orders on two back-to-back calendar days using LAG.
 -- Write your SQL Query below:
 
 
@@ -1619,7 +1567,7 @@ WHERE DATEDIFF(DAY, PrevOrderDate, OrderDate) = 1;
 -------------------------------- */
 
 
--- [Q43] Identify customers with a gap of 30+ days between any two consecutive orders.
+-- [Q43] Find customers who had a gap of 30 or more days between two consecutive orders.
 -- Write your SQL Query below:
 
 
@@ -1644,7 +1592,7 @@ WHERE DaysBetween >= 30;
 -------------------------------- */
 
 
--- [Q44] Cumulative running revenue total per customer using SUM() OVER (ROWS UNBOUNDED).
+-- [Q44] Calculate running total of money spent by each customer over time using SUM() OVER.
 -- Write your SQL Query below:
 
 
@@ -1661,7 +1609,7 @@ FROM Orders;
 -------------------------------- */
 
 
--- [Q45] Variance and dollar delta from immediately preceding order using LAG.
+-- [Q45] Show order amount, previous order amount, and the dollar difference using LAG.
 -- Write your SQL Query below:
 
 
@@ -1681,7 +1629,7 @@ FROM Orders;
 -------------------------------- */
 
 
--- [Q46] Forward sequence peeking (Next Scheduled Order Date) using LEAD.
+-- [Q46] For each order, display the date of the customer's NEXT order using LEAD.
 -- Write your SQL Query below:
 
 
@@ -1697,7 +1645,7 @@ FROM Orders;
 -------------------------------- */
 
 
--- [Q47] Categorize employees into Executive (>=140k), Senior (110k-140k), Associate (<110k) and summarize.
+-- [Q47] Group employees into Executive (>=140k), Senior (110k-140k), Associate (<110k) and count staff.
 -- Write your SQL Query below:
 
 
@@ -1721,7 +1669,7 @@ GROUP BY
 -------------------------------- */
 
 
--- [Q48] Top 2 highest paid employees per department returning all tied employees using DENSE_RANK.
+-- [Q48] Find Top 2 salaries in each department (if two employees tie for 2nd, show both).
 -- Write your SQL Query below:
 
 
@@ -1755,13 +1703,13 @@ SELECT
 FROM BankTransactions t1
 INNER JOIN BankTransactions t2 
     ON t1.AccountID = t2.AccountID
-   AND t1.TxnID < t2.TxnID                          -- Suppresses self-match
-   AND t1.TxnCity <> t2.TxnCity                     -- Distinct cities
+   AND t1.TxnID < t2.TxnID                          -- Stops self-pairing
+   AND t1.TxnCity <> t2.TxnCity                     -- Different cities
    AND DATEDIFF(MINUTE, t1.TxnTimestamp, t2.TxnTimestamp) BETWEEN 0 AND 5;
 -------------------------------- */
 
 
--- [Q50] Master 360° Customer Analytics Intelligence Pipeline.
+-- [Q50] Build a 360-degree customer summary (Name, First Order, Latest Order, Lifetime Spend, Status Tier).
 -- Write your SQL Query below:
 
 
@@ -1877,55 +1825,55 @@ SELECT
 FROM AggregatedCustomerSummary;
 GO
 
--- Verify View Output:
+-- Check View Output:
 SELECT * 
 FROM vw_EnterpriseCustomer360 
 ORDER BY TotalLifetimeRevenue DESC;
 GO
 
 -- ====================================================================
--- 🧠 SECTION 6: TOP 20 WHITEBOARD INTERVIEW TRAPS CHEAT SHEET
+-- 🧠 SECTION 6: TOP 20 INTERVIEW TRAPS & HOW TO FIX THEM
 -- ====================================================================
 
 /*
-   1. WHERE DENSE_RANK() = 2 -> Fails (Msg 4108). Fix: Wrap in CTE.
+   1. WHERE DENSE_RANK() = 2 -> Fails (Msg 4108). Fix: Wrap inside CTE or subquery.
    2. DELETE duplicates without temp table -> Use CTE + ROW_NUMBER() > 1.
-   3. WHERE id NOT IN (SELECT with NULL) -> 3VL returns 0 rows! Use LEFT JOIN.
-   4. Can TRUNCATE rollback? -> YES! Inside explicit transaction.
-   5. AVG(Salary) with NULLs -> Excludes NULLs. Use AVG(ISNULL(Salary, 0)).
-   6. Self-join missing CEO -> Use LEFT JOIN to preserve NULL manager.
-   7. Alternating M/F sort -> Use ROW_NUMBER() PARTITION BY Gender.
-   8. Same card diff cities <= 5m -> Self-join ON ID < ID AND DATEDIFF <= 5.
-   9. UNION vs UNION ALL -> UNION ALL skips expensive in-memory sort.
-   10. Table A (4 '1's) JOIN Table B (3 '1's) -> 4 x 3 = 12 rows!
-   11. 50% order drop -> Anchor with ROW_NUMBER() in CTE before LEAD().
-   12. WHERE YEAR(date) = 2026 -> Non-SARGable. Use range: date >= '2026-01-01'.
-   13. TRUNCATE parent with empty child -> Blocked by FK metadata check.
-   14. NULL = NULL in ON predicate -> Evaluates to UNKNOWN. Use IS NULL OR.
-   15. WHERE alias > 1000 -> Alias not visible in WHERE (Stage 2 vs 5).
-   16. LEFT JOIN + WHERE Right.Col = 'X' -> Converts to INNER JOIN!
-   17. COUNT(*) vs COUNT(Col) -> COUNT(Col) ignores NULLs; COUNT(*) counts rows.
-   18. PK vs UNIQUE -> UNIQUE allows 1 NULL in SQL Server; PK allows 0.
-   19. DATEDIFF boundary count -> DATEDIFF('2025-12-31', '2026-01-01', YEAR) = 1.
-   20. sp_rename vs ALTER TABLE -> sp_rename changes names; ALTER modifies types.
+   3. WHERE id NOT IN (SELECT with NULL) -> Returns 0 rows! Fix: Use LEFT JOIN ... WHERE IS NULL.
+   4. Can TRUNCATE be undone? -> YES! Inside BEGIN TRANSACTION, it rolls back 100%.
+   5. AVG(Salary) with NULLs -> Skips NULL rows. Use AVG(ISNULL(Salary, 0)) if NULL means 0.
+   6. Boss Tree missing CEO -> Use LEFT JOIN on ManagerID so CEO is not dropped.
+   7. Alternating Male/Female list -> Use ROW_NUMBER() PARTITION BY Gender.
+   8. Same account diff cities in <= 5 mins -> Self-join with ID < ID and DATEDIFF <= 5.
+   9. UNION vs UNION ALL -> UNION ALL is 10x faster because it skips in-memory duplicate sorting.
+   10. Table A (4 '1's) JOIN Table B (3 '1's) -> Produces 4 x 3 = 12 rows!
+   11. 50% order drop -> Anchor with ROW_NUMBER() in CTE before comparing with LEAD().
+   12. WHERE YEAR(date) = 2026 -> Slow. Fix: Use date range: date >= '2026-01-01' AND < '2027-01-01'.
+   13. TRUNCATE parent with empty child table -> Blocked by Foreign Key link.
+   14. NULL = NULL in Join ON condition -> Evaluates to False. Use IS NULL OR.
+   15. WHERE TotalSalary > 1000 -> Cannot use SELECT nickname in WHERE (Step 2 vs Step 5).
+   16. LEFT JOIN + WHERE RightTable.City = 'Pune' -> Accidentally turns LEFT JOIN into INNER JOIN!
+   17. COUNT(*) vs COUNT(Col) -> COUNT(Col) skips NULLs; COUNT(*) counts all rows.
+   18. PK vs UNIQUE -> UNIQUE allows 1 single NULL in SQL Server; PK allows zero NULLs.
+   19. DATEDIFF boundary count -> DATEDIFF('2025-12-31', '2026-01-01', YEAR) = 1 (even though 1 day passed).
+   20. sp_rename vs ALTER TABLE -> sp_rename changes object names; ALTER changes data types.
 */
 
 -- ====================================================================
--- 🏁 SECTION 7: THE 13-STEP SQL PROBLEM-SOLVING ALGORITHM
+-- 🏁 SECTION 7: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
 -- ====================================================================
 
 /*
-   1. Clarify Output Granularity  (What does one row represent?)
-   2. Identify Source Entities    (Which tables contain the attributes?)
-   3. Determine Joins Needed      (INNER, LEFT to protect, or Anti-Join?)
-   4. Check Cartesian Explosion   (Will duplicate keys multiply rows?)
-   5. Filter Early at Stage 2     (Apply SARGable WHERE before grouping)
-   6. Grouping vs Row Preservation(Do you need aggregate summary or details?)
-   7. Window Functions Selection  (Top-N, rankings, running sums, LEAD/LAG?)
-   8. Wrap into Sequential CTEs   (Never write deeply nested subqueries)
-   9. Add Conditional Logic       (Use Searched CASE for dynamic tiers)
-   10. Handle 3VL & NULL Traps    (Guard with ISNULL/COALESCE)
-   11. Eliminate Mirror Duplicates(In self-joins, enforce A.ID < B.ID)
-   12. Verify SARGability         (Keep indexed columns function-free)
-   13. Final Deterministic Sort   (Apply explicit ORDER BY at Stage 6)
+   1. Clarify Output Granularity  (What does 1 single row mean?)
+   2. Identify Source Tables      (Which tables have the columns I need?)
+   3. Choose Correct Joins        (INNER, LEFT to keep parents, or Anti-Join?)
+   4. Check Row Multiplication    (Will duplicate IDs multiply my rows?)
+   5. Filter Early at Step 2      (Use fast WHERE filters before grouping)
+   6. Check Grouping Need         (Do I need summary totals or row details?)
+   7. Pick Window Functions       (Do I need Top-N, Rankings, LEAD/LAG, or Running Sum?)
+   8. Wrap into Clean CTEs        (Avoid messy deep subqueries)
+   9. Add Conditional Logic       (Use CASE for dynamic status labels or custom sorting)
+   10. Guard Against NULLs        (Protect math and averages with ISNULL)
+   11. Remove Reverse Duplicates  (In self-joins, use Table1.ID < Table2.ID)
+   12. Fast Index Search          (Never wrap date columns in functions inside WHERE)
+   13. Final Sort                 (Apply explicit ORDER BY at Step 6)
 */
