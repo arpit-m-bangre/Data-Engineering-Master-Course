@@ -15,6 +15,7 @@ This document tracks all repository commit milestones, file integrity verificati
 | [`01_SQL/05_INDEX_WISE_QUESTIONS/`](file:///d:/DE%20COURSE/01_SQL/05_INDEX_WISE_QUESTIONS/) | Practice Question Sets (Targeted Drills) | 23 | 100% Verified |
 | [`01_SQL/06_PROJECTS/`](file:///d:/DE%20COURSE/01_SQL/06_PROJECTS/) | End-to-End Enterprise SQL Projects | 7 | 100% Verified |
 | [`01_SQL/07_QUICK_REVISION/`](file:///d:/DE%20COURSE/01_SQL/07_QUICK_REVISION/) | Consolidated Master Revision SSOT | 1 | 100% Verified |
+| [`01_SQL/SQL TEST/`](file:///d:/DE%20COURSE/01_SQL/SQL%20TEST/) | Live Faculty Assessment & Test Artifacts | 1 | 100% Verified |
 | [`LEARNING_DIARY/`](file:///d:/DE%20COURSE/LEARNING_DIARY/) | Central Brain & Daily Tracking Engine | 9 | 100% Verified |
 
 ---

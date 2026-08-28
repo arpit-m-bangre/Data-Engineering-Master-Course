@@ -72,6 +72,8 @@ d:\DE COURSE\
 │   ├── 04_CLASS_TASKS/           <-- Faculty-assigned in-class task solution scripts (.SQL)
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- 14-Question practice sets inside comment blocks with blank lines
 │   ├── 06_PROJECTS/              <-- Enterprise Data Engineering projects (PROJECT<N>.SQL)
+│   ├── 07_QUICK_REVISION/        <-- Fast-track bootcamp notes & Super 50 challenges
+│   ├── SQL TEST/                 <-- Faculty assessment reports & live test artifacts
 │   └── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 ├── 02_PYTHON/                    <-- Python, OOP, Pandas & Data Cleansing (Upcoming)
 ├── 03_ETL_DATA_PIPELINES/        <-- ETL Architecture, Ingestion & Transformation (Upcoming)
