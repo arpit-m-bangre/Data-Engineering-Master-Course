@@ -7,14 +7,67 @@
 
 /*
 ====================================================================
-               💡 HOW TO USE THIS MASTER BOOTCAMP SCRIPT
+           📑 MASTER TABLE OF CONTENTS & TOPIC INDEX
 ====================================================================
-1. Open this file directly in SQL Server Management Studio (SSMS).
-2. Execute SECTION 1 to build and seed your testbed DB (CompanyDB).
-3. Walk through each module sequentially: read the theory in comment 
-   blocks, run the benchmark queries, and observe execution plans.
-4. In SECTION 4 (SUPER 50), write your queries in the blank space
-   provided under each question before opening the solution key!
+📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`CompanyDB`)
+   ├─ 1.1 Database Initialization & Teardown Protocol
+   ├─ 1.2 Master Schema Creation (8 Relational Tables)
+   │     • Departments (PK)
+   │     • Employees (PK, FK, Self-Referencing Hierarchy)
+   │     • Customers (PK)
+   │     • Products (PK)
+   │     • Orders (PK, FK)
+   │     • OrderItems (IDENTITY PK, Dual FKs)
+   │     • BankTransactions (Fraud & Velocity Sandbox)
+   │     • StockMovements (Inventory & Running Totals)
+   └─ 1.3 Production Seed Datasets (7 Master Multi-City Inserts)
+
+🏛️ SECTION 2: THE 6 CORE CONCEPTUAL DEEP-DIVE MODULES
+   ├─ MODULE 1: SQL Engine, DDL/DML & Storage (Hours 1 & 2)
+   │     • 1.1 SQL Taxonomy (DDL, DML, DQL, TCL Engine Impact)
+   │     • 1.2 The Deletion Battle (DELETE vs TRUNCATE vs DROP)
+   │     • 1.3 TRUNCATE Rollback Proof in Explicit Transactions
+   │     • 1.4 Filtering Operators, Wildcards (%, _, [A-Z], [^A-Z])
+   │     • 1.5 Three-Valued Logic (3VL) & Safe NULL Exclusion
+   ├─ MODULE 2: Aggregations & 6-Stage Execution Flow (Hour 3)
+   │     • 2.1 The 6-Stage Logical Pipeline (FROM -> ORDER BY)
+   │     • 2.2 Alias Scoping Traps (WHERE Stage 2 vs SELECT Stage 5)
+   │     • 2.3 GROUP BY vs HAVING Scoping Standard
+   ├─ MODULE 3: Enterprise Constraints & Retrofitting (Hour 4)
+   │     • 3.1 The 6 Constraints (PK, UNIQUE, NOT NULL, CHECK, DEFAULT, FK)
+   │     • 3.2 3-Step Live Constraint Retrofitting on Dirty Tables
+   ├─ MODULE 4: Set Operators & SARGable Date Engine (Hour 5)
+   │     • 4.1 Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)
+   │     • 4.2 SARGability & Index-Seekable Temporal Filtering
+   ├─ MODULE 5: Relational Joins & Cartesian Math (Hours 6 & 7)
+   │     • 5.1 Join Mathematics & N x M Duplication Matrix
+   │     • 5.2 Anti-Join Pattern (LEFT JOIN ... WHERE IS NULL)
+   │     • 5.3 Self-Joins: Employee-Manager Hierarchy & CEO Shield
+   │     • 5.4 High-Velocity Geo-Temporal Fraud Anomaly Engine
+   └─ MODULE 6: Window Functions, CTEs & Analytics (Hours 8 & 9)
+         • 6.1 3-Way Ranking Engine (ROW_NUMBER vs RANK vs DENSE_RANK)
+         • 6.2 CTE Scope & In-Place Full-Row Deduplication
+         • 6.3 Value Functions (LEAD, LAG) & Running Balances
+         • 6.4 Dynamic Pinned Sorting via Searched CASE
+
+🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
+   ├─ Recall 1: 6-Stage Logical Execution Flow
+   ├─ Recall 2: 3-Step Constraint Retrofitting
+   ├─ Recall 3: SARGable Temporal Date Range
+   ├─ Recall 4: 3-Way Ranking Behavior Matrix
+   ├─ Recall 5: Value Functions & Running Cumulative Syntax
+   └─ Recall 6: Searched CASE Pinned Sort Order
+
+🧪 SECTION 4: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
+   ├─ 🟢 Block 1: Foundation & Filtering (Q01 – Q10)
+   ├─ 🟡 Block 2: GROUP BY, HAVING & Aggregates (Q11 – Q20)
+   ├─ 🟠 Block 3: Relational Joins & Self-Joins (Q21 – Q30)
+   ├─ 🔴 Block 4: Window Functions & Deduplication (Q31 – Q40)
+   └─ 💀 Block 5: Analytical Boss & War Room (Q41 – Q50)
+
+🏆 SECTION 5: FINAL BOSS CUSTOMER INTELLIGENCE VIEW (vw_EnterpriseCustomer360)
+🧠 SECTION 6: TOP 20 WHITEBOARD INTERVIEW TRAPS CHEAT SHEET
+🏁 SECTION 7: THE 13-STEP SQL PROBLEM-SOLVING ALGORITHM
 ====================================================================
 */
 
