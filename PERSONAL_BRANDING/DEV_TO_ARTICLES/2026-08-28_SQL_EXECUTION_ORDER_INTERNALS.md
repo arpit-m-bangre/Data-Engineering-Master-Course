@@ -50,5 +50,5 @@ HAVING COUNT(*) > 5;
 
 ---
 💡 *What's your favorite SQL execution order quirk? Drop your thoughts below!*  
-🌐 *Portfolio:* [arpitbangre.vercel.app](https://arpitbangre.vercel.app/)
+💼 *Let's connect:* [linkedin.com/in/arpitmbangre](https://www.linkedin.com/in/arpitmbangre/)
 ```

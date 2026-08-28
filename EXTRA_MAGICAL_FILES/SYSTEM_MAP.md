@@ -80,7 +80,8 @@ d:\DE COURSE\
 │   ├── METRICS_AND_STATISTICS.json  <-- Live Machine-Readable Telemetry & Statistics Brain
 │   ├── REVISION_RECOMMENDER_ENGINE.md <-- Mathematical RPS Spaced Retention Formula & Top 10 Traps
 │   └── ZERO_TO_OFFER_ROADMAP.md     <-- High-Level Career Progression Archive
-├── PERSONAL_BRANDING/            <-- Tier-1 LinkedIn Authority & Profile Engine (8 Files)
+├── PERSONAL_BRANDING/            <-- Tier-1 LinkedIn Authority, Dev.to Articles & Profile Engine (11 Items)
+│   ├── DEV_TO_ARTICLES/          <-- Dev.to 20-Article Authority Vault & 1-Click Copy Files (3 Files)
 │   ├── 50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md <-- 50-Platform Master Authority & Badge Blueprint
 │   ├── DAILY_POST_CALENDAR.md    <-- 180-Day Master Post Calendar & High-Engagement Hooks
 │   ├── digital_presence_ecosystem.html <-- 50-Platform Interactive Digital Presence Showcase
