@@ -1,6 +1,6 @@
 /* ====================================================================
    🚀 10-HOUR SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 22)
-   T-SQL BENCHMARKS, ARCHITECTURE & SUPER 50 INTERVIEW ENGINE
+   T-SQL BENCHMARKS, SYNTAX RECALL & SUPER 50 PRACTICE ENGINE
    Dialect: Microsoft SQL Server (T-SQL) | Target: SSMS Execution
    Author : Pippo 🐥 | Candidate: Captain Arpit Manoj Bangre (Cap)
 ==================================================================== */
@@ -166,251 +166,160 @@ INSERT INTO StockMovements (ProductID, MovementDate, QtyChange) VALUES
 GO
 
 -- ====================================================================
--- 🧱 MODULE 1: DDL/DML, STORAGE & DELETION MECHANICS (HOURS 1 & 2)
+-- 🧠 SECTION 2: SYNTAX RECALL & MUSCLE MEMORY DRILLS
 -- ====================================================================
 
 /*
-   THE BIG DELETION BATTLE:
-   - DELETE   : DML | Row-by-row lock | Keeps IDENTITY | Slower
-   - TRUNCATE : DDL | Page deallocation | Resets IDENTITY | Fast
-   - DROP     : DDL | Destroys table structure & metadata
-   
-   TRUNCATE ROLLBACK PROOF IN SQL SERVER:
-   TRUNCATE can be rolled back 100% inside explicit transactions!
+   SYNTAX RECALL 1: 6-STAGE EXECUTION ORDER
+   Write the 6 stages in order from memory:
+   1. FROM + JOIN
+   2. WHERE
+   3. GROUP BY
+   4. HAVING
+   5. SELECT
+   6. ORDER BY
 */
-
-BEGIN TRANSACTION;
-    TRUNCATE TABLE BankTransactions;
-    -- Returns 0 rows
-    SELECT COUNT(*) AS CountAfterTruncate FROM BankTransactions;
-ROLLBACK TRANSACTION;
-
--- Original 4 rows restored!
-SELECT COUNT(*) AS CountAfterRollback FROM BankTransactions;
 
 /*
-   PATTERN MATCHING & 3VL (Three-Valued Logic):
-   - '%'  : 0 or more chars
-   - '_'  : Exactly 1 char
-   - NULL : Represents UNKNOWN. col NOT IN (1, NULL) returns 0 rows!
+   SYNTAX RECALL 2: THE 3-STEP CONSTRAINT RETROFITTING
+   Step 1: SELECT col, COUNT(*) FROM table GROUP BY col HAVING COUNT(*) > 1;
+   Step 2: WITH C AS (SELECT id, ROW_NUMBER() OVER(PARTITION BY col ORDER BY id) rn FROM table)
+           DELETE FROM C WHERE rn > 1;
+   Step 3: ALTER TABLE table ADD CONSTRAINT UQ_name UNIQUE (col);
 */
-
--- Exactly 6 letters: starts with A, ends with n
-SELECT EmpID, EmpName 
-FROM Employees 
-WHERE EmpName LIKE 'A____n';
-
--- Safe NULL handling with pattern exclusion
-SELECT EmpID, EmpName, Email 
-FROM Employees 
-WHERE Email NOT LIKE '%@gmail.com' 
-   OR Email IS NULL;
-
--- ====================================================================
--- 📊 MODULE 2: AGGREGATIONS & 6-STAGE EXECUTION ENGINE (HOUR 3)
--- ====================================================================
 
 /*
-   THE 6-STAGE LOGICAL EXECUTION FLOW:
-   Stage 1: FROM + JOIN  (Identify sources & Cartesian product)
-   Stage 2: WHERE        (Filter raw rows before grouping)
-   Stage 3: GROUP BY     (Bucket rows into aggregate groups)
-   Stage 4: HAVING       (Filter aggregate group stats)
-   Stage 5: SELECT       (Compute expressions & column aliases)
-   Stage 6: ORDER BY     (Sort output - Can see SELECT aliases!)
+   SYNTAX RECALL 3: SARGABLE DATE FILTERING
+   -- Non-SARGable: WHERE YEAR(OrderDate) = 2026 AND MONTH(OrderDate) = 5
+   -- SARGable    : WHERE OrderDate >= '2026-05-01' AND OrderDate < '2026-06-01'
 */
-
-SELECT 
-    DeptID,
-    COUNT(*)    AS Headcount,
-    AVG(Salary) AS AvgSalary
-FROM Employees
-WHERE JoiningDate >= '2023-01-01'  -- Stage 2: Filter rows
-GROUP BY DeptID                    -- Stage 3: Bucket
-HAVING AVG(Salary) >= 100000.00    -- Stage 4: Filter stats
-ORDER BY AvgSalary DESC;           -- Stage 6: Sort by alias
-
--- ====================================================================
--- 🛡️ MODULE 3: CONSTRAINTS & DIRTY TABLE RETROFITTING (HOUR 4)
--- ====================================================================
 
 /*
-   3-STEP RETROFITTING FRAMEWORK:
-   Step 1: Detect duplicate violations
-   Step 2: Cleanse duplicates using CTE + ROW_NUMBER()
-   Step 3: Apply ALTER TABLE ADD CONSTRAINT safely
+   SYNTAX RECALL 4: 3-WAY RANKING BEHAVIOR
+   - ROW_NUMBER() : Unique sequential (1, 2, 3, 4) - Deduplication & Pagination
+   - DENSE_RANK() : Tied shared rank without gaps (1, 2, 2, 3) - Nth highest salary
+   - RANK()       : Tied shared rank with gaps (1, 2, 2, 4) - Official standings
 */
-
--- Step 1: Detect duplicates
-SELECT Email, COUNT(*) AS DupCount 
-FROM Customers 
-WHERE Email IS NOT NULL 
-GROUP BY Email 
-HAVING COUNT(*) > 1;
-
--- Step 2: Cleanse duplicates (keep earliest)
-WITH DuplicateCleanser AS (
-    SELECT CustomerID, Email,
-           ROW_NUMBER() OVER (
-               PARTITION BY Email 
-               ORDER BY RegistrationDate ASC
-           ) AS rn
-    FROM Customers
-    WHERE Email IS NOT NULL
-)
-DELETE FROM DuplicateCleanser WHERE rn > 1;
-
--- Step 3: Retrofit constraint
--- ALTER TABLE Customers ADD CONSTRAINT UQ_Customers_Email UNIQUE (Email);
-
--- ====================================================================
--- 📅 MODULE 4: SET OPERATORS & TEMPORAL ENGINE (HOUR 5)
--- ====================================================================
 
 /*
-   SET OPERATORS:
-   - UNION     : Appends & deduplicates (in-memory sort)
-   - UNION ALL : Appends directly (10x faster for big data!)
-   - INTERSECT : Common rows
-   - EXCEPT    : Query 1 minus Query 2
-
-   SARGABLE TEMPORAL FILTERING:
-   - Avoid: WHERE YEAR(OrderDate) = 2026 (Forces Table Scan)
-   - Use  : WHERE OrderDate >= '2026-01-01' AND OrderDate < '2027-01-01' (Index Seek)
+   SYNTAX RECALL 5: VALUE WINDOW FUNCTIONS & RUNNING TOTALS
+   - LAG(col, offset, default) OVER (PARTITION BY id ORDER BY date)
+   - LEAD(col, offset, default) OVER (PARTITION BY id ORDER BY date)
+   - SUM(col) OVER (PARTITION BY id ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
 */
-
-SELECT OrderID, CustomerID, OrderDate, TotalAmount
-FROM Orders
-WHERE OrderDate >= '2026-01-01' 
-  AND OrderDate < '2026-04-01';
-
--- ====================================================================
--- 🔗 MODULE 5: RELATIONAL JOINS & SELF-JOINS (HOURS 6 & 7)
--- ====================================================================
 
 /*
-   THE JOIN EQUATION:
-   JOIN = (Cartesian Cross Product N x M) + (ON Filter)
+   SYNTAX RECALL 6: DYNAMIC PINNED SORTING (CASE)
+   ORDER BY 
+       CASE 
+           WHEN City = 'Pune' THEN 1
+           WHEN City = 'Bengaluru' THEN 2
+           ELSE 3
+       END ASC,
+       City DESC;
 */
 
--- 1. Anti-Join: Customers who NEVER placed an order
-SELECT c.CustomerID, c.CustomerName, c.City
-FROM Customers c
-LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
-WHERE o.OrderID IS NULL;
-
--- 2. Self-Join: Employee-to-Manager Tree (Preserve CEO with LEFT JOIN)
-SELECT 
-    e.EmpName AS EmployeeName,
-    e.Salary  AS EmployeeSalary,
-    ISNULL(m.EmpName, '👑 CEO / TOP EXECUTIVE') AS ManagerName,
-    m.Salary  AS ManagerSalary
-FROM Employees e
-LEFT JOIN Employees m ON e.ManagerID = m.EmpID;
-
--- 3. Geo-Temporal Fraud Anomaly Engine (Diff city in <= 5 mins)
-SELECT 
-    t1.AccountID,
-    t1.TxnID AS Txn1, t1.TxnCity AS City1, t1.TxnTimestamp AS Time1,
-    t2.TxnID AS Txn2, t2.TxnCity AS City2, t2.TxnTimestamp AS Time2,
-    DATEDIFF(SECOND, t1.TxnTimestamp, t2.TxnTimestamp) AS TimeDiffSec
-FROM BankTransactions t1
-INNER JOIN BankTransactions t2 
-    ON t1.AccountID = t2.AccountID
-   AND t1.TxnID < t2.TxnID      -- Eliminates mirror duplicates!
-   AND t1.TxnCity <> t2.TxnCity -- Distinct cities
-   AND DATEDIFF(MINUTE, t1.TxnTimestamp, t2.TxnTimestamp) BETWEEN 0 AND 5;
-
 -- ====================================================================
--- 👑 MODULE 6: WINDOW FUNCTIONS, CTES & ANALYTICS (HOURS 8 & 9)
--- ====================================================================
-
-/*
-   RANKING COMPARISON:
-   - ROW_NUMBER() : 1, 2, 3, 4 (Zero gaps, unique sequential ID)
-   - DENSE_RANK() : 1, 2, 2, 3 (Zero gaps, ties share rank)
-   - RANK()       : 1, 2, 2, 4 (Leaves gaps after ties)
-*/
-
--- 1. Ranking Engine Demonstration
-SELECT 
-    DeptID, EmpName, Salary,
-    ROW_NUMBER() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS SeqRow,
-    DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS DenseRnk,
-    RANK()       OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS PosRnk
-FROM Employees;
-
--- 2. LEAD / LAG & Cumulative Running Balance
-SELECT 
-    AccountID, TxnTimestamp, TxnAmount,
-    LAG(TxnAmount, 1, 0.00) OVER (
-        PARTITION BY AccountID 
-        ORDER BY TxnTimestamp
-    ) AS PrevTxnAmount,
-    SUM(TxnAmount) OVER (
-        PARTITION BY AccountID 
-        ORDER BY TxnTimestamp 
-        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-    ) AS RunningAccountBalance
-FROM BankTransactions;
-
--- 3. Dynamic Pinned Sorting via Searched CASE
-SELECT CustomerID, CustomerName, City
-FROM Customers
-ORDER BY 
-    CASE 
-        WHEN City = 'Pune'      THEN 1
-        WHEN City = 'Bengaluru' THEN 2
-        ELSE 3
-    END ASC,
-    City DESC;
-
--- ====================================================================
--- 🧪 50 HIGH-LEVEL SQL SERVER INTERVIEW CHALLENGES (SUPER 50)
+-- 🧪 SECTION 3: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
+-- All solutions enclosed in comments below each challenge!
 -- ====================================================================
 
 -- --------------------------------------------------------------------
--- 🟢 SECTION A: FOUNDATION & FILTERING (Q01 – Q10)
+-- 🟢 BLOCK 1: FOUNDATION & FILTERING (Q01 – Q10)
 -- --------------------------------------------------------------------
 
--- Q01: Employees with Salary > 120,000 ordered descending
+-- [Q01] Employees with Salary > 120,000 ordered by salary descending.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q01] ---
 SELECT EmpID, EmpName, DeptID, Salary 
 FROM Employees 
 WHERE Salary > 120000.00 
 ORDER BY Salary DESC;
+-------------------------------- */
 
--- Q02: Department Membership Filtering via IN
+
+-- [Q02] Find employees in Departments 1, 2, or 4 without multiple OR conditions.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q02] ---
 SELECT EmpID, EmpName, DeptID 
 FROM Employees 
 WHERE DeptID IN (1, 2, 4);
+-------------------------------- */
 
--- Q03: Pattern Matching: Starts with 'A', ends with 'n', exactly 6 chars
+
+-- [Q03] Find employees whose name starts with 'A', ends with 'n', and has exactly 6 letters.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q03] ---
 SELECT EmpID, EmpName 
 FROM Employees 
 WHERE EmpName LIKE 'A____n';
+-------------------------------- */
 
--- Q04: Non-Gmail Domain Users (Preserving NULLs)
+
+-- [Q04] Retrieve all employees whose email does NOT end with '@gmail.com' (preserve NULLs).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q04] ---
 SELECT EmpID, EmpName, Email 
 FROM Employees 
 WHERE Email NOT LIKE '%@gmail.com' 
    OR Email IS NULL;
+-------------------------------- */
 
--- Q05: Safe Range Filtering with BETWEEN
+
+-- [Q05] Select orders placed between '2026-01-01' and '2026-03-31' using BETWEEN.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q05] ---
 SELECT OrderID, CustomerID, OrderDate, TotalAmount 
 FROM Orders 
 WHERE OrderDate BETWEEN '2026-01-01' AND '2026-03-31';
+-------------------------------- */
 
--- Q06: Root Node Executives (No Manager Assigned)
+
+-- [Q06] Find top-level leaders who have no direct manager assigned (ManagerID is NULL).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q06] ---
 SELECT EmpID, EmpName, Salary 
 FROM Employees 
 WHERE ManagerID IS NULL;
+-------------------------------- */
 
--- Q07: Top 5 Highest Compensated Employees
+
+-- [Q07] Retrieve the 5 highest-paid employees in the company using TOP.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q07] ---
 SELECT TOP 5 EmpID, EmpName, Salary 
 FROM Employees 
 ORDER BY Salary DESC;
+-------------------------------- */
 
--- Q08: Global 2nd Highest Salary via DENSE_RANK
+
+-- [Q08] Find the exact 2nd highest distinct salary using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q08] ---
 WITH SalaryRanks AS (
     SELECT Salary, 
            DENSE_RANK() OVER (ORDER BY Salary DESC) AS rnk 
@@ -419,8 +328,15 @@ WITH SalaryRanks AS (
 SELECT DISTINCT Salary 
 FROM SalaryRanks 
 WHERE rnk = 2;
+-------------------------------- */
 
--- Q09: Departmental Salary Summary Aggregates
+
+-- [Q09] Compute MIN, MAX, AVG, SUM salary and total employee headcount in one query.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q09] ---
 SELECT 
     COUNT(*)    AS Headcount,
     MIN(Salary) AS MinSal,
@@ -428,41 +344,83 @@ SELECT
     AVG(Salary) AS AvgSal,
     SUM(Salary) AS TotalPayroll
 FROM Employees;
+-------------------------------- */
 
--- Q10: Employee Headcount per Department
+
+-- [Q10] Return DeptID and total employee headcount per department.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q10] ---
 SELECT DeptID, COUNT(*) AS DeptHeadcount 
 FROM Employees 
 GROUP BY DeptID;
+-------------------------------- */
+
 
 -- --------------------------------------------------------------------
--- 🟡 SECTION B: GROUP BY, HAVING & AGGREGATE DRILLS (Q11 – Q20)
+-- 🟡 BLOCK 2: GROUP BY, HAVING & AGGREGATIONS (Q11 – Q20)
 -- --------------------------------------------------------------------
 
--- Q11: Departments with More Than 3 Employees
+-- [Q11] Departments with strictly more than 3 employees.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q11] ---
 SELECT DeptID, COUNT(*) AS StaffCount 
 FROM Employees 
 GROUP BY DeptID 
 HAVING COUNT(*) > 3;
+-------------------------------- */
 
--- Q12: High Average Salary Departments (> 120,000)
+
+-- [Q12] Departments where average salary is strictly greater than 120,000.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q12] ---
 SELECT DeptID, AVG(Salary) AS AvgSalary 
 FROM Employees 
 GROUP BY DeptID 
 HAVING AVG(Salary) > 120000.00;
+-------------------------------- */
 
--- Q13: Department with Absolute Highest Average Salary
+
+-- [Q13] Department with the absolute highest average salary.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q13] ---
 SELECT TOP 1 DeptID, AVG(Salary) AS HighestAvgSalary 
 FROM Employees 
 GROUP BY DeptID 
 ORDER BY AVG(Salary) DESC;
+-------------------------------- */
 
--- Q14: Department with Highest Cumulative Payroll Spend
+
+-- [Q14] Department with highest cumulative payroll spend.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q14] ---
 SELECT TOP 1 DeptID, SUM(Salary) AS TotalSpend 
 FROM Employees 
 GROUP BY DeptID 
 ORDER BY SUM(Salary) DESC;
+-------------------------------- */
 
--- Q15: Employees Earning More than Their Department's Average
+
+-- [Q15] Employees earning more than their own department's average salary.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q15] ---
 WITH DeptAvg AS (
     SELECT DeptID, AVG(Salary) AS AvgSal 
     FROM Employees 
@@ -472,13 +430,27 @@ SELECT e.EmpID, e.EmpName, e.Salary, d.AvgSal AS DeptAverage
 FROM Employees e
 INNER JOIN DeptAvg d ON e.DeptID = d.DeptID
 WHERE e.Salary > d.AvgSal;
+-------------------------------- */
 
--- Q16: Second-Highest Salary without Window Functions
+
+-- [Q16] Second-highest distinct salary across entire company without window functions.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q16] ---
 SELECT MAX(Salary) AS SecondHighestSalary 
 FROM Employees 
 WHERE Salary < (SELECT MAX(Salary) FROM Employees);
+-------------------------------- */
 
--- Q17: Third-Highest Salary without TOP Keyword
+
+-- [Q17] Third-highest salary using DENSE_RANK without TOP keyword.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q17] ---
 WITH RankedSalaries AS (
     SELECT Salary, 
            DENSE_RANK() OVER (ORDER BY Salary DESC) AS rnk 
@@ -487,21 +459,42 @@ WITH RankedSalaries AS (
 SELECT DISTINCT Salary 
 FROM RankedSalaries 
 WHERE rnk = 3;
+-------------------------------- */
 
--- Q18: Duplicate Email Detection
+
+-- [Q18] Duplicate Email detection query on Customers table.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q18] ---
 SELECT Email, COUNT(*) AS DuplicateCount 
 FROM Customers 
 WHERE Email IS NOT NULL 
 GROUP BY Email 
 HAVING COUNT(*) > 1;
+-------------------------------- */
 
--- Q19: Departments Where Minimum Salary is Above 90,000
+
+-- [Q19] Departments where the minimum salary is above 90,000.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q19] ---
 SELECT DeptID, MIN(Salary) AS LowestSalary 
 FROM Employees 
 GROUP BY DeptID 
 HAVING MIN(Salary) > 90000.00;
+-------------------------------- */
 
--- Q20: Multi-Metric Departmental Salary Scorecard
+
+-- [Q20] Multi-metric department scorecard: DeptName, TotalEmployees, AvgSalary, TotalPayroll.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q20] ---
 SELECT 
     d.DeptName,
     COUNT(e.EmpID)           AS TotalEmployees,
@@ -510,46 +503,95 @@ SELECT
 FROM Departments d
 LEFT JOIN Employees e ON d.DeptID = e.DeptID
 GROUP BY d.DeptID, d.DeptName;
+-------------------------------- */
+
 
 -- --------------------------------------------------------------------
--- 🟠 SECTION C: RELATIONAL JOINS & SELF-JOINS (Q21 – Q30)
+-- 🟠 BLOCK 3: RELATIONAL JOINS & SELF-JOINS (Q21 – Q30)
 -- --------------------------------------------------------------------
 
--- Q21: Standard Employee + Department Inner Join
+-- [Q21] Standard Employee + Department Inner Join returning EmpID, EmpName, DeptName, Salary.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q21] ---
 SELECT e.EmpID, e.EmpName, d.DeptName, e.Salary 
 FROM Employees e 
 INNER JOIN Departments d ON e.DeptID = d.DeptID;
+-------------------------------- */
 
--- Q22: Employees Without Assigned Departments (Orphan Check)
+
+-- [Q22] Find employees without assigned departments (Orphan Check).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q22] ---
 SELECT e.EmpID, e.EmpName 
 FROM Employees e 
 LEFT JOIN Departments d ON e.DeptID = d.DeptID 
 WHERE d.DeptID IS NULL;
+-------------------------------- */
 
--- Q23: Departments with Zero Hired Staff
+
+-- [Q23] Find departments with zero hired staff.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q23] ---
 SELECT d.DeptID, d.DeptName 
 FROM Departments d 
 LEFT JOIN Employees e ON d.DeptID = e.DeptID 
 WHERE e.EmpID IS NULL;
+-------------------------------- */
 
--- Q24: Customer and Orders Join
+
+-- [Q24] 2-Table Join: CustomerName, OrderID, OrderDate, TotalAmount.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q24] ---
 SELECT c.CustomerName, o.OrderID, o.OrderDate, o.TotalAmount
 FROM Customers c
 INNER JOIN Orders o ON c.CustomerID = o.CustomerID;
+-------------------------------- */
 
--- Q25: Relational Anti-Join: Customers with Zero Orders
+
+-- [Q25] Relational Anti-Join: Customers who have NEVER placed any order.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q25] ---
 SELECT c.CustomerID, c.CustomerName, c.City 
 FROM Customers c 
 LEFT JOIN Orders o ON c.CustomerID = o.CustomerID 
 WHERE o.OrderID IS NULL;
+-------------------------------- */
 
--- Q26: Products That Have Never Been Ordered
+
+-- [Q26] Products that have never been ordered (Anti-Join with OrderItems).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q26] ---
 SELECT p.ProductID, p.ProductName, p.Price 
 FROM Products p 
 LEFT JOIN OrderItems oi ON p.ProductID = oi.ProductID 
 WHERE oi.OrderItemID IS NULL;
+-------------------------------- */
 
--- Q27: Customer Lifetime Spend Including Zero Spend
+
+-- [Q27] Customer Lifetime Spend scorecard including customers with zero orders.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q27] ---
 SELECT 
     c.CustomerID, c.CustomerName,
     COUNT(o.OrderID) AS OrderCount,
@@ -557,8 +599,15 @@ SELECT
 FROM Customers c
 LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
 GROUP BY c.CustomerID, c.CustomerName;
+-------------------------------- */
 
--- Q28: Employees Earning Higher Salaries Than Their Direct Boss
+
+-- [Q28] Self-Join: Employees earning higher salary than their direct manager.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q28] ---
 SELECT 
     e.EmpID, e.EmpName AS EmployeeName, e.Salary AS EmployeeSalary,
     m.EmpName AS ManagerName, m.Salary AS ManagerSalary,
@@ -566,15 +615,29 @@ SELECT
 FROM Employees e
 INNER JOIN Employees m ON e.ManagerID = m.EmpID
 WHERE e.Salary > m.Salary;
+-------------------------------- */
 
--- Q29: Complete Employee-Manager Hierarchy with CEO Preservation
+
+-- [Q29] Employee-to-Manager hierarchy with CEO preservation ('👑 CEO / NO MANAGER').
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q29] ---
 SELECT 
     e.EmpName AS EmployeeName,
     ISNULL(m.EmpName, '👑 CEO / NO MANAGER') AS ManagerName
 FROM Employees e
 LEFT JOIN Employees m ON e.ManagerID = m.EmpID;
+-------------------------------- */
 
--- Q30: Same-Department Employee Pairs (No Symmetric Duplicates)
+
+-- [Q30] Same-department employee pairs without symmetric duplicate combinations (Emp1 < Emp2).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q30] ---
 SELECT 
     e1.EmpName AS Employee1,
     e2.EmpName AS Employee2,
@@ -583,12 +646,19 @@ FROM Employees e1
 INNER JOIN Employees e2 
     ON e1.DeptID = e2.DeptID 
    AND e1.EmpID < e2.EmpID;
+-------------------------------- */
+
 
 -- --------------------------------------------------------------------
--- 🔴 SECTION D: WINDOW FUNCTIONS & DEDUPLICATION (Q31 – Q40)
+-- 🔴 BLOCK 4: WINDOW FUNCTIONS & DEDUPLICATION (Q31 – Q40)
 -- --------------------------------------------------------------------
 
--- Q31: Highest Paid Employee per Department
+-- [Q31] Highest paid employee in each department using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q31] ---
 WITH RankedSalaries AS (
     SELECT DeptID, EmpName, Salary,
            DENSE_RANK() OVER (
@@ -600,8 +670,15 @@ WITH RankedSalaries AS (
 SELECT DeptID, EmpName, Salary 
 FROM RankedSalaries 
 WHERE rnk = 1;
+-------------------------------- */
 
--- Q32: Top 3 Highest Earners per Department
+
+-- [Q32] Top 3 highest earners in each department using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q32] ---
 WITH RankedSalaries AS (
     SELECT DeptID, EmpName, Salary,
            DENSE_RANK() OVER (
@@ -613,8 +690,15 @@ WITH RankedSalaries AS (
 SELECT DeptID, EmpName, Salary, rnk 
 FROM RankedSalaries 
 WHERE rnk <= 3;
+-------------------------------- */
 
--- Q33: Exact 2nd Highest Earner per Department
+
+-- [Q33] Exact 2nd highest earner in each department using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q33] ---
 WITH RankedSalaries AS (
     SELECT DeptID, EmpName, Salary,
            DENSE_RANK() OVER (
@@ -626,21 +710,42 @@ WITH RankedSalaries AS (
 SELECT DeptID, EmpName, Salary 
 FROM RankedSalaries 
 WHERE rnk = 2;
+-------------------------------- */
 
--- Q34: Sequential Row Numbering by Salary Across Company
+
+-- [Q34] Sequential row numbering by salary across the entire company using ROW_NUMBER.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q34] ---
 SELECT 
     ROW_NUMBER() OVER (ORDER BY Salary DESC) AS SeqID,
     EmpName, DeptID, Salary
 FROM Employees;
+-------------------------------- */
 
--- Q35: Structural Comparison of RANK vs DENSE_RANK
+
+-- [Q35] Structural comparison of RANK vs DENSE_RANK in a single query.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q35] ---
 SELECT 
     EmpName, Salary,
     DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRankNoGaps,
     RANK()       OVER (ORDER BY Salary DESC) AS PositionalRankWithGaps
 FROM Employees;
+-------------------------------- */
 
--- Q36: Employees Sharing the Exact Same Salary Rank
+
+-- [Q36] Find all employees who share the exact same salary rank with a colleague.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q36] ---
 WITH SalaryCounts AS (
     SELECT Salary, COUNT(*) AS TieCount 
     FROM Employees 
@@ -650,8 +755,15 @@ WITH SalaryCounts AS (
 SELECT e.EmpID, e.EmpName, e.Salary 
 FROM Employees e 
 INNER JOIN SalaryCounts s ON e.Salary = s.Salary;
+-------------------------------- */
 
--- Q37: Highest Spending Customer per City
+
+-- [Q37] Highest spending customer per city using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q37] ---
 WITH CustomerTotals AS (
     SELECT c.City, c.CustomerName, SUM(o.TotalAmount) AS CitySpend,
            DENSE_RANK() OVER (
@@ -665,8 +777,15 @@ WITH CustomerTotals AS (
 SELECT City, CustomerName, CitySpend 
 FROM CustomerTotals 
 WHERE rnk = 1;
+-------------------------------- */
 
--- Q38: Latest Order Record per Customer via CTE
+
+-- [Q38] Retrieve only the latest order record for each customer using ROW_NUMBER.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q38] ---
 WITH LatestOrders AS (
     SELECT OrderID, CustomerID, OrderDate, TotalAmount,
            ROW_NUMBER() OVER (
@@ -678,8 +797,15 @@ WITH LatestOrders AS (
 SELECT OrderID, CustomerID, OrderDate, TotalAmount 
 FROM LatestOrders 
 WHERE rn = 1;
+-------------------------------- */
 
--- Q39: First Lifetime Order per Customer
+
+-- [Q39] Retrieve the first lifetime order for each customer using ROW_NUMBER.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q39] ---
 WITH FirstOrders AS (
     SELECT OrderID, CustomerID, OrderDate, TotalAmount,
            ROW_NUMBER() OVER (
@@ -691,8 +817,15 @@ WITH FirstOrders AS (
 SELECT OrderID, CustomerID, OrderDate, TotalAmount 
 FROM FirstOrders 
 WHERE rn = 1;
+-------------------------------- */
 
--- Q40: Employees Earning More Than Chronologically Preceding Hire
+
+-- [Q40] Find employees who earn more than the chronologically preceding hire using LAG.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q40] ---
 WITH SalaryProgression AS (
     SELECT EmpID, EmpName, JoiningDate, Salary,
            LAG(Salary) OVER (ORDER BY JoiningDate ASC) AS PrevHireSalary
@@ -701,12 +834,19 @@ WITH SalaryProgression AS (
 SELECT EmpID, EmpName, JoiningDate, Salary, PrevHireSalary
 FROM SalaryProgression
 WHERE Salary > PrevHireSalary;
+-------------------------------- */
+
 
 -- --------------------------------------------------------------------
--- 💀 SECTION E: ANALYTICAL BOSS & WAR ROOM (Q41 – Q50)
+-- 💀 BLOCK 5: ANALYTICAL BOSS & WAR ROOM (Q41 – Q50)
 -- --------------------------------------------------------------------
 
--- Q41: Safe In-Place Full-Row Deduplication Engine
+-- [Q41] Safe In-Place Full-Row Deduplication Engine on Customers using CTE.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q41] ---
 WITH DuplicateRecords AS (
     SELECT CustomerID, Email,
            ROW_NUMBER() OVER (
@@ -718,8 +858,15 @@ WITH DuplicateRecords AS (
 )
 DELETE FROM DuplicateRecords 
 WHERE RowOccurrence > 1;
+-------------------------------- */
 
--- Q42: Customers with Orders on Consecutive Calendar Days
+
+-- [Q42] Find customers with orders on two consecutive calendar days using LAG.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q42] ---
 WITH OrderGaps AS (
     SELECT 
         CustomerID, OrderDate,
@@ -732,8 +879,15 @@ WITH OrderGaps AS (
 SELECT DISTINCT CustomerID, PrevOrderDate, OrderDate
 FROM OrderGaps
 WHERE DATEDIFF(DAY, PrevOrderDate, OrderDate) = 1;
+-------------------------------- */
 
--- Q43: Customer 30-Day Inactivity Gap Analysis
+
+-- [Q43] Identify customers with a gap of 30+ days between any two consecutive orders.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q43] ---
 WITH InactivityIntervals AS (
     SELECT 
         CustomerID, OrderID, OrderDate,
@@ -750,8 +904,15 @@ WITH InactivityIntervals AS (
 SELECT CustomerID, OrderID, PreviousOrderDate, OrderDate, DaysBetween
 FROM InactivityIntervals
 WHERE DaysBetween >= 30;
+-------------------------------- */
 
--- Q44: Cumulative Running Revenue Total per Customer
+
+-- [Q44] Cumulative running revenue total per customer using SUM() OVER (ROWS UNBOUNDED).
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q44] ---
 SELECT 
     CustomerID, OrderID, OrderDate, TotalAmount,
     SUM(TotalAmount) OVER (
@@ -760,8 +921,15 @@ SELECT
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
     ) AS CumulativeCustomerSpend
 FROM Orders;
+-------------------------------- */
 
--- Q45: Variance from Immediately Preceding Order
+
+-- [Q45] Variance and dollar delta from immediately preceding order using LAG.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q45] ---
 SELECT 
     CustomerID, OrderID, OrderDate, TotalAmount,
     LAG(TotalAmount, 1, 0.00) OVER (
@@ -773,8 +941,15 @@ SELECT
         ORDER BY OrderDate
     ) AS DeltaVariance
 FROM Orders;
+-------------------------------- */
 
--- Q46: Forward Sequence Peeking (Next Scheduled Order Date)
+
+-- [Q46] Forward sequence peeking (Next Scheduled Order Date) using LEAD.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q46] ---
 SELECT 
     CustomerID, OrderID, OrderDate,
     LEAD(OrderDate, 1, NULL) OVER (
@@ -782,8 +957,15 @@ SELECT
         ORDER BY OrderDate ASC
     ) AS NextOrderDate
 FROM Orders;
+-------------------------------- */
 
--- Q47: Dynamic Salary Tiering & Department Headcount Summary
+
+-- [Q47] Categorize employees into Executive (>=140k), Senior (110k-140k), Associate (<110k) and summarize.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q47] ---
 SELECT 
     CASE 
         WHEN Salary >= 140000.00 THEN 'Executive Tier'
@@ -799,8 +981,15 @@ GROUP BY
         WHEN Salary >= 110000.00 THEN 'Senior Tier'
         ELSE 'Associate Tier'
     END;
+-------------------------------- */
 
--- Q48: Top 2 Highest Paid Employees per Department (Including Ties)
+
+-- [Q48] Top 2 highest paid employees per department returning all tied employees using DENSE_RANK.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q48] ---
 WITH DeptRanks AS (
     SELECT DeptID, EmpName, Salary,
            DENSE_RANK() OVER (
@@ -812,8 +1001,15 @@ WITH DeptRanks AS (
 SELECT DeptID, EmpName, Salary, rnk
 FROM DeptRanks
 WHERE rnk <= 2;
+-------------------------------- */
 
--- Q49: High-Velocity Geo-Temporal Fraud Anomaly Engine
+
+-- [Q49] Detect potential fraud: same account transacted in different cities within 5 minutes.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q49] ---
 SELECT 
     t1.AccountID,
     t1.TxnID AS Txn1, t1.TxnCity AS City1, t1.TxnTimestamp AS Time1,
@@ -825,8 +1021,15 @@ INNER JOIN BankTransactions t2
    AND t1.TxnID < t2.TxnID                          -- Suppresses self-match
    AND t1.TxnCity <> t2.TxnCity                     -- Distinct cities
    AND DATEDIFF(MINUTE, t1.TxnTimestamp, t2.TxnTimestamp) BETWEEN 0 AND 5;
+-------------------------------- */
 
--- Q50: Master 360° Customer Analytics Intelligence Pipeline
+
+-- [Q50] Master 360° Customer Analytics Intelligence Pipeline.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q50] ---
 WITH CustomerOrderAnalytics AS (
     SELECT 
         c.CustomerID,
@@ -870,9 +1073,10 @@ SELECT
     END AS CustomerStatusTier
 FROM CustomerOrderAnalytics
 WHERE rn = 1;
+-------------------------------- */
 
 -- ====================================================================
--- 🏆 SECTION 7: FINAL BOSS CUSTOMER INTELLIGENCE VIEW
+-- 🏆 SECTION 4: FINAL BOSS CUSTOMER INTELLIGENCE VIEW
 -- ====================================================================
 
 CREATE OR ALTER VIEW vw_EnterpriseCustomer360 AS
