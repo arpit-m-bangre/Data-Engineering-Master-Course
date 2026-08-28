@@ -1,17 +1,17 @@
 /* ====================================================================
    🚀 10-HOUR SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 22)
-   THE EXHAUSTIVE T-SQL COMPREHENSIVE REVISION & PRACTICE ENGINE
-   Dialect: Microsoft SQL Server (T-SQL) | Target: SSMS Execution
-   Author : Pippo 🐥 | Candidate: Captain Arpit Manoj Bangre (Cap)
+   THE DEFINITIVE 22-DAY COMPREHENSIVE T-SQL REVISION & PRACTICE ENGINE
+   Database: `BootcampMasteryDB` | Target: SSMS Direct Execution
+   Author  : Pippo 🐥 | Candidate: Captain Arpit Manoj Bangre (Cap)
 ==================================================================== */
 
 /*
 ====================================================================
            📑 MASTER TABLE OF CONTENTS & TOPIC INDEX
 ====================================================================
-📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`CompanyDB`)
-   ├─ 1.1 Database Initialization & Teardown Protocol
-   ├─ 1.2 Master Schema Creation (8 Relational Tables)
+📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`BootcampMasteryDB`)
+   ├─ 1.1 Database Initialization & Safe Cleanup Protocol
+   ├─ 1.2 Master Schema Creation (8 Core Relational Tables)
    │     • Departments (PK)
    │     • Employees (PK, FK, Self-Referencing Hierarchy)
    │     • Customers (PK)
@@ -20,64 +20,43 @@
    │     • OrderItems (IDENTITY PK, Dual FKs)
    │     • BankTransactions (Fraud & Velocity Sandbox)
    │     • StockMovements (Inventory & Running Totals)
-   └─ 1.3 Production Seed Datasets (7 Master Multi-City Inserts)
+   └─ 1.3 Master Production Seed Datasets (Multi-City Enterprise Data)
 
-🏛️ SECTION 2: THE 6 CORE CONCEPTUAL DEEP-DIVE MODULES
-   ├─ MODULE 1: SQL Engine, DDL/DML & Storage (Hours 1 & 2)
-   │     • 1.1 SQL Taxonomy (DDL, DML, DQL, TCL Engine Impact)
-   │     • 1.2 The Deletion Battle (DELETE vs TRUNCATE vs DROP)
-   │     • 1.3 TRUNCATE Rollback Proof in Explicit Transactions
-   │     • 1.4 Filtering Operators, Wildcards (%, _, [A-Z], [^A-Z])
-   │     • 1.5 Three-Valued Logic (3VL) & Safe NULL Exclusion
-   │     • 1.6 DDL ALTER TABLE & Object Renaming via sp_rename
-   ├─ MODULE 2: Aggregations & 6-Stage Execution Flow (Hour 3)
-   │     • 2.1 The 6-Stage Logical Pipeline (FROM -> ORDER BY)
-   │     • 2.2 Alias Scoping Traps (WHERE Stage 2 vs SELECT Stage 5)
-   │     • 2.3 GROUP BY vs HAVING Scoping Standard (Rows vs Groups)
-   │     • 2.4 Aggregate Data Types & NULL Evaluation Rules
-   ├─ MODULE 3: Enterprise Constraints & Retrofitting (Hour 4)
-   │     • 3.1 The 6 Constraints (PK, UNIQUE, NOT NULL, CHECK, DEFAULT, FK)
-   │     • 3.2 Parent Protection vs Child Destruction Rules (DELETE/TRUNCATE/DROP)
-   │     • 3.3 3-Step Live Constraint Retrofitting on Dirty Tables
-   │     • 3.4 System Metadata Auditing (INFORMATION_SCHEMA.TABLES & CONSTRAINTS)
-   ├─ MODULE 4: Set Operators & SARGable Date Engine (Hour 5)
-   │     • 4.1 Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)
-   │     • 4.2 Structural Validation Rules for Set Operations
-   │     • 4.3 SARGability & Index-Seekable Temporal Filtering
-   │     • 4.4 Date Functions: GETDATE, DATEDIFF, DATEADD, DATEPART, EOMONTH
-   ├─ MODULE 5: Relational Joins & Cartesian Math (Hours 6 & 7)
-   │     • 5.1 Join Mathematics & N x M Duplication Matrix
-   │     • 5.2 ANSI Relational Joins (INNER, LEFT, RIGHT, FULL OUTER)
-   │     • 5.3 Column Ambiguity (Msg 209) & Table Aliasing Standards
-   │     • 5.4 Anti-Join Pattern (LEFT JOIN ... WHERE right.key IS NULL)
-   │     • 5.5 Multi-Table Ingestion Chains (3+ Tables via ON Clauses)
-   │     • 5.6 ANSI CROSS JOIN Matrices vs Legacy Comma Joins
-   │     • 5.7 Self-Joins: Employee-Manager Hierarchy & CEO Shield
-   │     • 5.8 Symmetric Deduplication (< vs <>) in Self-Joins
-   │     • 5.9 High-Velocity Geo-Temporal Fraud Anomaly Engine (5-Min Velocity)
-   └─ MODULE 6: Window Functions, CTEs & Analytics (Hours 8 & 9)
-         • 6.1 3-Way Ranking Engine (ROW_NUMBER vs RANK vs DENSE_RANK)
-         • 6.2 Top-N per Group Filtering Pattern
-         • 6.3 Msg 4108 Window Function WHERE Restriction Trap
-         • 6.4 CTE Syntax, Scope & Lifecycle Architecture
-         • 6.5 In-Place Full-Row Deduplication Engine via CTE
-         • 6.6 Value Functions (LEAD, LAG) & Inter-Row Offset Peeking
-         • 6.7 Stock Inventory Delta & 50% Order Drop Analysis
-         • 6.8 Running Cumulative Totals (ROWS BETWEEN UNBOUNDED PRECEDING)
-         • 6.9 Simple vs Searched CASE Expression Syntax & Dynamic Flow
-         • 6.10 Dynamic Pinned Sorting via ORDER BY CASE Expression
+🏛️ SECTION 2: 22-DAY COMPLETE CURRICULUM DEEP-DIVE MODULES
+   ├─ 🗓️ DAY 01: SQL Architecture, Commands Taxonomy & Table Creation
+   ├─ 🗓️ DAY 02: Filtering Clauses, Operators, Wildcards & Information Schema
+   ├─ 🗓️ DAY 03: Precision Pattern Matching, Ranges & Vowel/Digit Filters
+   ├─ 🗓️ DAY 04: Numeric Types, Arithmetic, UPDATE, DELETE & Security
+   ├─ 🗓️ DAY 05: The Deletion Battle (DELETE vs TRUNCATE vs DROP) & ALTER TABLE
+   ├─ 🗓️ DAY 06: Aggregates (MIN/MAX/SUM/AVG/COUNT), DISTINCT & TOP N
+   ├─ 🗓️ DAY 07: 6-Stage Execution Pipeline, GROUP BY, HAVING & ORDER BY
+   ├─ 🗓️ DAY 08: Query Mistakes Analysis & Scoping Rules (Rows vs Groups)
+   ├─ 🗓️ DAY 09: Core Constraints (PRIMARY KEY, UNIQUE, NOT NULL, CHECK)
+   ├─ 🗓️ DAY 10: DEFAULT, IDENTITY & FOREIGN KEY Referential Architecture
+   ├─ 🗓️ DAY 11: Parent Protection vs Child Table Destruction Rules
+   ├─ 🗓️ DAY 12: 3-Step Live Constraint Retrofitting & TRUNCATE Rollback Proof
+   ├─ 🗓️ DAY 13: Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)
+   ├─ 🗓️ DAY 14: Temporal Engine, DATEDIFF, DATEADD, DATEPART & EOMONTH
+   ├─ 🗓️ DAY 15: Joins Foundations, Cartesian Math (N x M) & 3VL Traps
+   ├─ 🗓️ DAY 16: ANSI Relational Joins (INNER, LEFT, RIGHT, FULL) & Anti-Joins
+   ├─ 🗓️ DAY 17: Multi-Table Ingestion Chains (3+ Tables) & CROSS JOIN Matrices
+   ├─ 🗓️ DAY 18: Self-Joins, Manager Trees, CEO Shield & 5-Min Geo-Fraud
+   ├─ 🗓️ DAY 19: Window Functions (ROW_NUMBER, RANK, DENSE_RANK) & Msg 4108
+   ├─ 🗓️ DAY 20: Common Table Expressions (CTEs) & In-Place Deduplication
+   ├─ 🗓️ DAY 21: Value Functions (LEAD/LAG), Stock Deltas & Running Totals
+   └─ 🗓️ DAY 22: Conditional CASE Logic, Multi-Tiering & Dynamic Pinned Sort
 
 🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
-   ├─ Recall 1: 6-Stage Logical Execution Flow
-   ├─ Recall 2: 3-Step Constraint Retrofitting
-   ├─ Recall 3: SARGable Temporal Date Range
-   ├─ Recall 4: 3-Way Ranking Behavior Matrix
-   ├─ Recall 5: Value Functions & Running Cumulative Syntax
-   └─ Recall 6: Searched CASE Pinned Sort Order
+   ├─ Drill 1: 6-Stage Logical Query Execution Order
+   ├─ Drill 2: 3-Step Constraint Retrofitting Template
+   ├─ Drill 3: SARGable Temporal Date Range Template
+   ├─ Drill 4: 3-Way Ranking Behavior Matrix
+   ├─ Drill 5: Value Functions & Running Cumulative Syntax
+   └─ Drill 6: Dynamic Pinned Sorting via Searched CASE
 
 🧪 SECTION 4: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
    ├─ 🟢 Block 1: Foundation & Filtering (Q01 – Q10)
-   ├─ 🟡 Block 2: GROUP BY, HAVING & Aggregates (Q11 – Q20)
+   ├─ 🟡 Block 2: GROUP BY, HAVING & Aggregations (Q11 – Q20)
    ├─ 🟠 Block 3: Relational Joins & Self-Joins (Q21 – Q30)
    ├─ 🔴 Block 4: Window Functions & Deduplication (Q31 – Q40)
    └─ 💀 Block 5: Analytical Boss & War Room (Q41 – Q50)
@@ -85,55 +64,28 @@
 🏆 SECTION 5: FINAL BOSS CUSTOMER INTELLIGENCE VIEW (vw_EnterpriseCustomer360)
 🧠 SECTION 6: TOP 20 WHITEBOARD INTERVIEW TRAPS CHEAT SHEET
 🏁 SECTION 7: THE 13-STEP SQL PROBLEM-SOLVING ALGORITHM
-
-====================================================================
- 🗺️ 22-DAY COMBINED COURSE CURRICULUM VALIDATION MAPPING MATRIX
-====================================================================
-Day 01 (Aug 01): SQL Theory, Commands, PK/FK, CREATE TABLE  -> Module 1.1, Sec 1
-Day 02 (Aug 02): Clauses, Comparison/Logical, Wildcards     -> Module 1.4, Q02-Q04
-Day 03 (Aug 03): Pattern Matching, Ranges, LIKE 'A____n'    -> Module 1.4, Q03
-Day 04 (Aug 04): Numerics, Arithmetic, UPDATE, DELETE, DROP -> Module 1.1, 1.2
-Day 05 (Aug 05): DELETE vs TRUNCATE vs DROP, ALTER, sp_rename-> Module 1.2, 1.3, 1.6
-Day 06 (Aug 06): Aggregates (MIN, MAX, SUM, AVG, COUNT), TOP-> Module 2.1, Q07-Q10
-Day 07 (Aug 07): 6-Stage Execution Flow, HAVING vs WHERE    -> Module 2.1, Q11-Q15
-Day 08 (Aug 08): Complex Scenarios & Query Misconceptions   -> Module 2.3, Sec 6
-Day 09 (Aug 10): PRIMARY KEY, UNIQUE, NOT NULL, CHECK       -> Module 3.1, Sec 1
-Day 10 (Aug 11): DEFAULT, IDENTITY, FOREIGN KEY Architecture -> Module 3.1, Sec 1
-Day 11 (Aug 12): Parent vs Child Destruction Principles     -> Module 3.2, Sec 6
-Day 12 (Aug 13): Live Table Constraint Retrofitting (3 Steps)-> Module 3.3, Sec 3
-Day 13 (Aug 14): Set Operators (UNION, ALL, INTERSECT, EXCEPT)-> Module 4.1, Sec 6
-Day 14 (Aug 17): Temporal Engine, DATEDIFF, DATEADD, EOMONTH -> Module 4.3, Q42-Q43
-Day 15 (Aug 18): Joins Overview, Cartesian Math (N x M), 3VL-> Module 5.1, Sec 6
-Day 16 (Aug 19): ANSI Joins, Column Ambiguity, Anti-Joins   -> Module 5.2, Q21-Q26
-Day 17 (Aug 20): Multi-Table Chains, CROSS JOIN, Equi Joins -> Module 5.5, Q24
-Day 18 (Aug 21): Self Joins, Manager Trees, Geo-Fraud Spikes-> Module 5.7, Q28-Q30, Q49
-Day 19 (Aug 22): Window Rankings (ROW_NUMBER, RANK, DENSE)  -> Module 6.1, Q31-Q36
-Day 20 (Aug 24): CTEs, Safe In-Place Full-Row Deduplication -> Module 6.4, Q37-Q39, Q41
-Day 21 (Aug 25): Value Window Functions (LEAD/LAG), Run Sum -> Module 6.6, Q40, Q44-Q46
-Day 22 (Aug 26): Conditional CASE Logic, Dynamic Pinned Sort-> Module 6.9, Q47, Q50, Sec 5
-Day 23 (Aug 27): Offline Test Lab & Scenarios Verification  -> Sec 4 (Super 50), Sec 5
 ====================================================================
 */
 
 -- ====================================================================
--- 📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`CompanyDB`)
+-- 📦 SECTION 1: MASTER TESTBED DATABASE SETUP (`BootcampMasteryDB`)
 -- ====================================================================
 
 USE master;
 GO
 
-IF DB_ID('CompanyDB') IS NOT NULL
+IF DB_ID('BootcampMasteryDB') IS NOT NULL
 BEGIN
-    ALTER DATABASE CompanyDB 
+    ALTER DATABASE BootcampMasteryDB 
     SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-    DROP DATABASE CompanyDB;
+    DROP DATABASE BootcampMasteryDB;
 END;
 GO
 
-CREATE DATABASE CompanyDB;
+CREATE DATABASE BootcampMasteryDB;
 GO
 
-USE CompanyDB;
+USE BootcampMasteryDB;
 GO
 
 -- 1. Departments Table
@@ -143,7 +95,7 @@ CREATE TABLE Departments (
     Location VARCHAR(50) NOT NULL
 );
 
--- 2. Employees Table (with Self-Referencing ManagerID)
+-- 2. Employees Table (Self-referencing hierarchy)
 CREATE TABLE Employees (
     EmpID INT PRIMARY KEY,
     EmpName VARCHAR(50) NOT NULL,
@@ -204,7 +156,7 @@ CREATE TABLE BankTransactions (
     Channel VARCHAR(20) NOT NULL
 );
 
--- 8. StockMovements Table (Inventory & Running Totals)
+-- 8. StockMovements Table (Inventory Windowing)
 CREATE TABLE StockMovements (
     MovementID INT IDENTITY(1,1) PRIMARY KEY,
     ProductID INT NOT NULL,
@@ -276,235 +228,310 @@ INSERT INTO StockMovements (ProductID, MovementDate, QtyChange) VALUES
 GO
 
 -- ====================================================================
--- 🏛️ MODULE 1: SQL FOUNDATIONS, DDL/DML & STORAGE (HOURS 1 & 2)
+-- 🏛️ SECTION 2: 22-DAY COMPLETE CURRICULUM DEEP-DIVE MODULES
 -- ====================================================================
 
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 01: SQL ARCHITECTURE, COMMANDS TAXONOMY & TABLE CREATION
+-- --------------------------------------------------------------------
 /*
-   1.1 SQL TAXONOMY & ENGINE IMPACT
-   -------------------------------------------------------------------
-   - DDL (Data Definition Language) : CREATE, ALTER, DROP, TRUNCATE
-     -> Modifies the physical data dictionary and schema catalogs.
-   - DML (Data Manipulation Language): INSERT, UPDATE, DELETE
-     -> Manipulates individual data rows inside tables.
-   - DQL (Data Query Language)       : SELECT
-     -> Reads, filters, projects, and transforms in-memory datasets.
-   - TCL (Transaction Control)       : COMMIT, ROLLBACK, SAVEPOINT
-     -> Manages ACID transaction boundaries and lock states.
+   Theory:
+   - DDL (CREATE, ALTER, DROP, TRUNCATE) alters schemas and catalogs.
+   - DML (INSERT, UPDATE, DELETE) manipulates data rows in tables.
+   - DQL (SELECT) queries and projects in-memory result sets.
+   - TCL (COMMIT, ROLLBACK) controls transaction persistence and locks.
 */
-
--- DDL: Creating dynamic audit table
-CREATE TABLE ExecutionAuditLog (
-    LogID INT PRIMARY KEY IDENTITY(1,1),
-    CommandExecuted VARCHAR(100) NOT NULL,
-    ExecutionTimestamp DATETIME DEFAULT GETDATE()
-);
+SELECT EmpID, EmpName, DeptID, Salary FROM Employees;
 GO
 
--- DML: Inserting and querying records
-INSERT INTO ExecutionAuditLog (CommandExecuted) 
-VALUES ('BOOTCAMP_INITIALIZATION_SUCCESS');
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 02: FILTERING CLAUSES, OPERATORS & INFORMATION SCHEMA
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - WHERE filters row by row before any grouping happens.
+   - Operators: =, <>, !=, <, <=, >, >=, IN, NOT IN, BETWEEN.
+   - Wildcards: '%' (0+ chars), '_' (exact 1 char), '[A-Z]', '[^A-Z]'.
+*/
+SELECT TABLE_SCHEMA, TABLE_NAME 
+FROM INFORMATION_SCHEMA.TABLES 
+WHERE TABLE_TYPE = 'BASE TABLE';
 
-SELECT LogID, CommandExecuted, ExecutionTimestamp 
-FROM ExecutionAuditLog;
+SELECT EmpID, EmpName, DeptID, Salary 
+FROM Employees 
+WHERE DeptID IN (1, 2) AND Salary >= 120000.00;
 GO
 
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 03: PRECISION PATTERN MATCHING & VOWEL/DIGIT FILTERS
+-- --------------------------------------------------------------------
 /*
-   1.2 THE DELETION BATTLE: DELETE vs TRUNCATE vs DROP
-   -------------------------------------------------------------------
-   Dimension             DELETE            TRUNCATE          DROP
-   -------------------------------------------------------------------
-   Category              DML               DDL               DDL
-   WHERE Clause          Supported         Forbidden         Forbidden
-   Mechanism             Row-by-row lock   Page deallocation Object wipe
-   IDENTITY Reset        No                Yes (Resets seed) Yes (Destroyed)
-   FK Target Table       Allowed           Blocked by FK     Blocked by FK
-   Transaction Rollback  Supported         Supported (MSSQL) Supported
+   Theory:
+   - Exact length matching: 'A____n' matches 6-letter names starting with A.
+   - Range pattern matching: '[A-M]%' matches names starting with A through M.
+   - Negated pattern matching: '[^0-9]%' matches non-digit starters.
 */
-
-/*
-   INTERVIEW PROOF: CAN TRUNCATE BE ROLLED BACK?
-   YES! In Microsoft SQL Server, TRUNCATE is a fully logged metadata
-   operation and rolls back 100% inside an explicit transaction block.
-*/
-
-BEGIN TRANSACTION;
-    TRUNCATE TABLE BankTransactions;
-    -- Returns 0 rows inside transaction
-    SELECT COUNT(*) AS RowsDuringTruncate FROM BankTransactions;
-ROLLBACK TRANSACTION;
-
--- All 4 original transaction rows are completely restored!
-SELECT COUNT(*) AS RowsAfterRollback FROM BankTransactions;
-GO
-
-/*
-   1.3 FILTERING OPERATORS, PATTERN MATCHING & 3VL (Three-Valued Logic)
-   -------------------------------------------------------------------
-   WILDCARD RULES:
-   - '%'      : Matches 0 or more arbitrary characters.
-   - '_'      : Matches exactly 1 character position.
-   - '[A-Z]'  : Matches any single character within the range.
-   - '[^A-Z]' : Matches any single character NOT in the range.
-
-   THREE-VALUED LOGIC (3VL):
-   - In SQL, NULL represents UNKNOWN (not zero, not empty string).
-   - Any direct comparison (col = NULL) returns UNKNOWN (False in WHERE).
-   - WHERE col NOT IN (1, 2, NULL) ALWAYS returns 0 rows because
-     col <> NULL evaluates to UNKNOWN!
-*/
-
--- Exactly 6 letters: Starts with 'A', ends with 'n'
 SELECT EmpID, EmpName 
 FROM Employees 
 WHERE EmpName LIKE 'A____n';
 
--- Safe Exclusion Pattern: Preserving NULLs against 3VL dropping
-SELECT EmpID, EmpName, Email 
+SELECT EmpID, EmpName 
 FROM Employees 
-WHERE Email NOT LIKE '%@gmail.com' 
-   OR Email IS NULL;
+WHERE EmpName LIKE '[A-P]%';
 GO
 
--- ====================================================================
--- 📊 MODULE 2: AGGREGATIONS & 6-STAGE EXECUTION ENGINE (HOUR 3)
--- ====================================================================
-
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 04: NUMERIC TYPES, ARITHMETIC, UPDATE, DELETE & SECURITY
+-- --------------------------------------------------------------------
 /*
-   2.1 THE 6-STAGE LOGICAL QUERY EXECUTION ENGINE
-   -------------------------------------------------------------------
-   SQL is NOT executed from top to bottom. It follows this exact order:
-
-   [STAGE 1] FROM + JOIN  ──► Identify source tables & Cartesian matrix
-   [STAGE 2] WHERE        ──► Filter raw rows BEFORE grouping
-   [STAGE 3] GROUP BY     ──► Bucket rows into summary groups
-   [STAGE 4] HAVING       ──► Filter aggregated group stats
-   [STAGE 5] SELECT       ──► Project expressions, evaluate aliases
-   [STAGE 6] ORDER BY     ──► Sort output (Can see SELECT aliases!)
-
-   WHY ALIASES FAIL IN WHERE BUT WORK IN ORDER BY:
-   - WHERE runs at Stage 2 (before SELECT at Stage 5 created the alias).
-   - ORDER BY runs at Stage 6 (after SELECT at Stage 5 created the alias).
+   Theory:
+   - Arithmetic expressions (+, -, *, /) can be computed in SELECT.
+   - UPDATE modifies existing row values conditionally with WHERE.
+   - DELETE removes rows one by one, logging each row deletion.
 */
+SELECT 
+    EmpID, EmpName, Salary,
+    (Salary * 1.10) AS ProjectedSalaryWith10PctHike,
+    (Salary / 12)   AS MonthlySalary
+FROM Employees;
+GO
 
--- Demonstrating the 6 stages in a single benchmark query:
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 05: THE DELETION BATTLE & DDL ALTER TABLE
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - DELETE: DML, row-by-row lock, logs rows, does NOT reset IDENTITY.
+   - TRUNCATE: DDL, page deallocation, minimal logging, RESETS IDENTITY.
+   - DROP: DDL, removes table structure, metadata, and storage entirely.
+   - ALTER TABLE: ADD column, DROP column, ALTER COLUMN data type.
+   - sp_rename: Renames database objects and columns.
+*/
+-- sp_rename demonstration (commented to preserve schema)
+-- EXEC sp_rename 'Employees.Email', 'WorkEmail', 'COLUMN';
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 06: AGGREGATES, DISTINCT & TOP N
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Aggregate functions (MIN, MAX, SUM, AVG, COUNT) collapse rows.
+   - AVG(Col) silently ignores NULLs in the denominator!
+   - COUNT(*) counts rows including NULLs; COUNT(Col) ignores NULLs.
+   - TOP N returns the top N rows based on ORDER BY.
+*/
+SELECT 
+    COUNT(*)                 AS TotalEmployees,
+    COUNT(Email)             AS EmployeesWithEmail,
+    MIN(Salary)              AS MinSalary,
+    MAX(Salary)              AS MaxSalary,
+    AVG(Salary)              AS AvgSalary,
+    AVG(ISNULL(Salary, 0.0)) AS SafeAvgSalary,
+    SUM(Salary)              AS TotalPayroll
+FROM Employees;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 07: 6-STAGE EXECUTION PIPELINE, GROUP BY & HAVING
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   Logical Execution Order:
+   1. FROM + JOIN  ──► Source datasets and Cartesian cross product
+   2. WHERE        ──► Filter raw rows before grouping
+   3. GROUP BY     ──► Bucket rows into summary groups
+   4. HAVING       ──► Filter aggregated group statistics
+   5. SELECT       ──► Project expressions, evaluate column aliases
+   6. ORDER BY     ──► Sort output (Can see SELECT column aliases!)
+*/
 SELECT 
     DeptID,
-    COUNT(*)    AS Headcount,
+    COUNT(*)    AS StaffCount,
     AVG(Salary) AS AvgSalary
 FROM Employees
-WHERE JoiningDate >= '2023-01-01'  -- Stage 2: Raw row filter
-GROUP BY DeptID                    -- Stage 3: Bucket by department
-HAVING AVG(Salary) >= 100000.00    -- Stage 4: Aggregate filter
-ORDER BY AvgSalary DESC;           -- Stage 6: Sort by SELECT alias
+WHERE JoiningDate >= '2023-01-01'  -- Stage 2: Filter rows
+GROUP BY DeptID                    -- Stage 3: Bucket
+HAVING AVG(Salary) >= 100000.00    -- Stage 4: Filter groups
+ORDER BY AvgSalary DESC;           -- Stage 6: Sort by alias
 GO
 
--- ====================================================================
--- 🛡️ MODULE 3: CONSTRAINTS & DIRTY TABLE RETROFITTING (HOUR 4)
--- ====================================================================
-
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 08: COMMON MISTAKES ANALYSIS (WHERE vs HAVING)
+-- --------------------------------------------------------------------
 /*
-   3.1 THE 6 ENTERPRISE CONSTRAINTS
-   -------------------------------------------------------------------
-   1. PRIMARY KEY : Unique + NOT NULL. Creates Clustered Index (Max 1).
-   2. UNIQUE      : Unique + allows ONE single NULL in SQL Server.
-   3. NOT NULL    : Blocks NULL insertions.
-   4. CHECK       : Boolean rule validation (e.g. Salary > 0).
-   5. DEFAULT     : Fallback value if omitted during INSERT.
-   6. FOREIGN KEY : Enforces referential integrity with parent key.
-
-   3.2 THE 3-STEP CONSTRAINT RETROFITTING FRAMEWORK
-   -------------------------------------------------------------------
-   When adding a UNIQUE constraint on a live dirty table with duplicates:
-   Step 1: Detect duplicate violations.
-   Step 2: Cleanse duplicates using CTE + ROW_NUMBER() in-place delete.
-   Step 3: Apply ALTER TABLE ADD CONSTRAINT safely.
+   Rule Summary:
+   - WHERE filters individual ROWS (cannot contain aggregate functions).
+   - HAVING filters aggregated GROUPS (evaluates aggregate expressions).
 */
-
--- Step 1: Detect duplicate emails
-SELECT Email, COUNT(*) AS DuplicateCount 
-FROM Customers 
-WHERE Email IS NOT NULL 
-GROUP BY Email 
-HAVING COUNT(*) > 1;
-
--- Step 2: Cleanse duplicates (keep earliest registration date)
-WITH DuplicateEmailCleanser AS (
-    SELECT CustomerID, Email,
-           ROW_NUMBER() OVER (
-               PARTITION BY Email 
-               ORDER BY RegistrationDate ASC
-           ) AS rn
-    FROM Customers
-    WHERE Email IS NOT NULL
-)
-DELETE FROM DuplicateEmailCleanser WHERE rn > 1;
-
--- Step 3: Retrofit constraint safely
--- ALTER TABLE Customers ADD CONSTRAINT UQ_Customers_Email UNIQUE (Email);
+-- ❌ Wrong: SELECT DeptID, COUNT(*) FROM Employees WHERE COUNT(*) > 2 GROUP BY DeptID;
+-- ✅ Correct:
+SELECT DeptID, COUNT(*) AS Headcount 
+FROM Employees 
+GROUP BY DeptID 
+HAVING COUNT(*) > 2;
 GO
 
--- ====================================================================
--- 📅 MODULE 4: SET OPERATORS & TEMPORAL SARGABILITY (HOUR 5)
--- ====================================================================
-
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 09: SQL CONSTRAINTS & DATA VALIDATION
+-- --------------------------------------------------------------------
 /*
-   4.1 SET OPERATORS: VERTICAL QUERY APPENDING
-   -------------------------------------------------------------------
-   - UNION     : Appends rows & runs in-memory DISTINCT sort (slower).
-   - UNION ALL : Appends rows directly with zero sorting (10x faster!).
-   - INTERSECT : Returns rows present in BOTH query results.
-   - EXCEPT    : Returns rows in Query 1 that do not exist in Query 2.
-
-   4.2 SARGABILITY: SEARCH ARGUMENT ABLE
-   -------------------------------------------------------------------
-   - Non-SARGable (Forces Table Scan): 
-     WHERE YEAR(OrderDate) = 2026 AND MONTH(OrderDate) = 5
-   - SARGable (Enables Direct B-Tree Index Seek): 
-     WHERE OrderDate >= '2026-05-01' AND OrderDate < '2026-06-01'
+   Theory:
+   - PRIMARY KEY : Unique + NOT NULL. Max 1 per table (Clustered Index).
+   - UNIQUE      : Unique values. Allows 1 single NULL in SQL Server.
+   - NOT NULL    : Blocks NULL value insertion.
+   - CHECK       : Evaluates Boolean validation rules (e.g. Salary > 0).
 */
-
--- SARGable Index-Seekable Temporal Query Benchmark:
-SELECT OrderID, CustomerID, OrderDate, TotalAmount
-FROM Orders
-WHERE OrderDate >= '2026-01-01' 
-  AND OrderDate < '2026-04-01';
+CREATE TABLE ConstraintDemo (
+    DemoID INT PRIMARY KEY,
+    UserCode VARCHAR(20) UNIQUE NOT NULL,
+    Age INT CHECK (Age >= 18),
+    Status VARCHAR(20) DEFAULT 'ACTIVE'
+);
+DROP TABLE ConstraintDemo;
 GO
 
--- ====================================================================
--- 🔗 MODULE 5: RELATIONAL JOINS & CARTESIAN DUPLICATION (HOURS 6 & 7)
--- ====================================================================
-
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 10: DEFAULT, IDENTITY & FOREIGN KEY ARCHITECTURE
+-- --------------------------------------------------------------------
 /*
-   5.1 THE JOIN EQUATION & N x M DUPLICATION MATHEMATICS
-   -------------------------------------------------------------------
-   JOIN = (Cartesian Cross Product N x M) + (ON Filter Condition)
-
-   If Table A has 4 rows with ID '1', and Table B has 3 rows with ID '1':
-   - INNER JOIN produces: 4 x 3 = 12 rows!
-   - CROSS JOIN produces: Total_Rows_A x Total_Rows_B unconditionally.
+   Theory:
+   - DEFAULT: Auto-fills value if omitted during INSERT.
+   - IDENTITY(start, step): Auto-increments surrogate key.
+   - FOREIGN KEY: Enforces referential integrity with parent table.
 */
-
--- 1. Anti-Join Pattern: Find Customers with ZERO orders placed
-SELECT c.CustomerID, c.CustomerName, c.City
-FROM Customers c
-LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
-WHERE o.OrderID IS NULL;
-
--- 2. Self-Join: Employee-to-Manager Tree with CEO Preservation
 SELECT 
-    e.EmpName AS EmployeeName,
-    e.Salary  AS EmployeeSalary,
-    ISNULL(m.EmpName, '👑 CEO / TOP EXECUTIVE') AS ManagerName,
-    m.Salary  AS ManagerSalary
+    e.EmpName, e.Salary, d.DeptName 
+FROM Employees e 
+INNER JOIN Departments d ON e.DeptID = d.DeptID;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 11: PARENT VS CHILD DESTRUCTION RULES
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Cannot DELETE a Parent row if referenced by Child (unless CASCADE).
+   - Cannot TRUNCATE a Parent table if Child FK references it (even if Child empty!).
+   - Cannot DROP a Parent table if Child FK references it.
+*/
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 12: 3-STEP CONSTRAINT RETROFITTING & TRUNCATE ROLLBACK
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - TRUNCATE is fully logged at page-level and rolls back in transactions!
+   - 3-Step Retrofitting: (1) Find dups, (2) Clean via CTE, (3) Add constraint.
+*/
+BEGIN TRANSACTION;
+    TRUNCATE TABLE BankTransactions;
+    SELECT COUNT(*) AS CountInTxn FROM BankTransactions; -- 0 rows
+ROLLBACK TRANSACTION;
+SELECT COUNT(*) AS CountAfterRollback FROM BankTransactions; -- 4 rows restored!
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 13: SET OPERATORS (UNION, ALL, INTERSECT, EXCEPT)
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - UNION: Combines datasets + deduplicates (in-memory sort).
+   - UNION ALL: Combines datasets directly without sort (10x faster!).
+   - INTERSECT: Extracts common rows between two queries.
+   - EXCEPT: Query 1 minus Query 2 rows.
+*/
+SELECT City FROM Customers
+UNION
+SELECT Location FROM Departments;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 14: TEMPORAL DATA TYPES, DATEDIFF & SARGABILITY
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - GETDATE(): Current system timestamp.
+   - DATEDIFF(unit, start, end): Counts boundary crossings.
+   - DATEADD(unit, n, date): Adds/subtracts time intervals.
+   - EOMONTH(date): Returns last day of the month (handles leap years).
+   - SARGable Range Filter: OrderDate >= '2026-01-01' AND OrderDate < '2026-04-01'
+*/
+SELECT 
+    OrderID, OrderDate,
+    DATEDIFF(DAY, OrderDate, GETDATE()) AS DaysSinceOrder,
+    DATEADD(DAY, 7, OrderDate)          AS EstimatedDeliveryDate,
+    EOMONTH(OrderDate)                  AS MonthEndDate
+FROM Orders;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 15: RELATIONAL JOINS, CARTESIAN MATH (N x M) & 3VL
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Join Equation: JOIN = (Cartesian Cross Product N x M) + (ON Filter)
+   - 3VL in Joins: NULL = NULL evaluates to UNKNOWN, dropping matching NULLs.
+*/
+SELECT 
+    c.CustomerID, c.CustomerName, o.OrderID, o.TotalAmount
+FROM Customers c
+CROSS JOIN Orders o;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 16: ANSI RELATIONAL JOINS & ANTI-JOIN PATTERNS
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - INNER JOIN: Matches rows present in both tables.
+   - LEFT JOIN: Preserves all left table rows; fills NULL for unmatched right.
+   - Anti-Join: LEFT JOIN + WHERE right.key IS NULL (finds orphans).
+*/
+SELECT c.CustomerID, c.CustomerName, c.City 
+FROM Customers c 
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID 
+WHERE o.OrderID IS NULL;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 17: MULTI-TABLE INGESTION CHAINS & CROSS JOIN MATRICES
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Multi-Table Chaining: Table A JOIN Table B ON ... JOIN Table C ON ...
+*/
+SELECT 
+    c.CustomerName, o.OrderID, o.OrderDate,
+    p.ProductName, oi.Quantity, oi.UnitPrice,
+    (oi.Quantity * oi.UnitPrice) AS LineTotal
+FROM Customers c
+INNER JOIN Orders o ON c.CustomerID = o.CustomerID
+INNER JOIN OrderItems oi ON o.OrderID = oi.OrderID
+INNER JOIN Products p ON oi.ProductID = p.ProductID;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 18: SELF-JOINS, MANAGER TREES & 5-MIN GEO-FRAUD ENGINE
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Self-Join: Joins a table to itself using memory aliasing (A1 vs A2).
+   - Enforcing A.ID < B.ID eliminates self-matches and mirror duplicates!
+*/
+SELECT 
+    e.EmpName AS Employee,
+    ISNULL(m.EmpName, '👑 CEO / TOP EXECUTIVE') AS Manager
 FROM Employees e
 LEFT JOIN Employees m ON e.ManagerID = m.EmpID;
 
--- 3. Geo-Temporal Fraud Anomaly Engine (Different cities in <= 5 mins)
+-- Geo-Temporal Fraud Anomaly Engine (Different city in <= 5 mins)
 SELECT 
     t1.AccountID,
     t1.TxnID AS Txn1, t1.TxnCity AS City1, t1.TxnTimestamp AS Time1,
     t2.TxnID AS Txn2, t2.TxnCity AS City2, t2.TxnTimestamp AS Time2,
-    DATEDIFF(SECOND, t1.TxnTimestamp, t2.TxnTimestamp) AS TimeDiffSeconds
+    DATEDIFF(SECOND, t1.TxnTimestamp, t2.TxnTimestamp) AS TimeDiffSec
 FROM BankTransactions t1
 INNER JOIN BankTransactions t2 
     ON t1.AccountID = t2.AccountID
@@ -513,41 +540,71 @@ INNER JOIN BankTransactions t2
    AND DATEDIFF(MINUTE, t1.TxnTimestamp, t2.TxnTimestamp) BETWEEN 0 AND 5;
 GO
 
--- ====================================================================
--- 👑 MODULE 6: WINDOW FUNCTIONS, CTES & ANALYTICS (HOURS 8 & 9)
--- ====================================================================
-
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 19: WINDOW FUNCTIONS (ROW_NUMBER, RANK, DENSE_RANK)
+-- --------------------------------------------------------------------
 /*
-   6.1 THE 3-WAY RANKING ENGINE
-   -------------------------------------------------------------------
-   - ROW_NUMBER() : Sequential 1, 2, 3, 4 (Zero gaps, unique IDs).
-   - DENSE_RANK() : Shared ties 1, 2, 2, 3 (Zero gaps, ideal for Nth salary).
-   - RANK()       : Shared ties 1, 2, 2, 4 (Leaves gaps after ties).
+   Theory:
+   - ROW_NUMBER(): 1, 2, 3, 4 (Unique sequential ID, no ties, no gaps).
+   - DENSE_RANK(): 1, 2, 2, 3 (Ties share rank, no gaps, ideal for Nth salary).
+   - RANK():       1, 2, 2, 4 (Ties share rank, leaves gaps).
+   - Msg 4108: Window functions forbidden in WHERE. Workaround: CTE / Subquery.
 */
-
--- 1. Ranking Engine Comparison Benchmark
 SELECT 
     DeptID, EmpName, Salary,
     ROW_NUMBER() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS SeqRow,
     DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS DenseRnk,
     RANK()       OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS PosRnk
 FROM Employees;
+GO
 
--- 2. Value Window Functions (LEAD/LAG) & Cumulative Running Totals
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 20: COMMON TABLE EXPRESSIONS (CTEs) & DEDUPLICATION
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - CTE: Named temporary in-memory result set (`WITH CTE AS (...)`).
+   - In-place deduplication: `DELETE FROM CTE WHERE rn > 1` deletes from base table!
+*/
+WITH TopEarners AS (
+    SELECT DeptID, EmpName, Salary,
+           DENSE_RANK() OVER (PARTITION BY DeptID ORDER BY Salary DESC) AS rnk
+    FROM Employees
+)
+SELECT DeptID, EmpName, Salary FROM TopEarners WHERE rnk = 1;
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 21: VALUE FUNCTIONS (LEAD/LAG) & RUNNING TOTALS
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - LAG(col, offset, default): Peeks backwards to preceding rows.
+   - LEAD(col, offset, default): Peeks forwards to upcoming rows.
+   - Cumulative Running Total: SUM(col) OVER (ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+*/
 SELECT 
     AccountID, TxnTimestamp, TxnAmount,
     LAG(TxnAmount, 1, 0.00) OVER (
         PARTITION BY AccountID 
         ORDER BY TxnTimestamp
-    ) AS PreviousTxnAmount,
+    ) AS PrevTxnAmount,
     SUM(TxnAmount) OVER (
         PARTITION BY AccountID 
         ORDER BY TxnTimestamp 
         ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
-    ) AS CumulativeAccountBalance
+    ) AS RunningAccountBalance
 FROM BankTransactions;
+GO
 
--- 3. Dynamic Pinned Sorting via Searched CASE
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 22: CONDITIONAL CASE LOGIC & DYNAMIC PINNED SORTING
+-- --------------------------------------------------------------------
+/*
+   Theory:
+   - Searched CASE evaluates arbitrary Boolean expressions in order.
+   - Pinned sorting: Place prioritized values first (1, 2) and others last (3).
+*/
 SELECT CustomerID, CustomerName, City
 FROM Customers
 ORDER BY 
@@ -558,6 +615,60 @@ ORDER BY
     END ASC,
     City DESC;
 GO
+
+-- ====================================================================
+-- 🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
+-- ====================================================================
+
+/*
+   DRILL 1: 6-STAGE EXECUTION ORDER
+   Write the 6 stages in order from memory:
+   1. FROM + JOIN
+   2. WHERE
+   3. GROUP BY
+   4. HAVING
+   5. SELECT
+   6. ORDER BY
+*/
+
+/*
+   DRILL 2: THE 3-STEP CONSTRAINT RETROFITTING
+   Step 1: SELECT col, COUNT(*) FROM table GROUP BY col HAVING COUNT(*) > 1;
+   Step 2: WITH C AS (SELECT id, ROW_NUMBER() OVER(PARTITION BY col ORDER BY id) rn FROM table)
+           DELETE FROM C WHERE rn > 1;
+   Step 3: ALTER TABLE table ADD CONSTRAINT UQ_name UNIQUE (col);
+*/
+
+/*
+   DRILL 3: SARGABLE DATE FILTERING
+   -- Non-SARGable: WHERE YEAR(OrderDate) = 2026 AND MONTH(OrderDate) = 5
+   -- SARGable    : WHERE OrderDate >= '2026-05-01' AND OrderDate < '2026-06-01'
+*/
+
+/*
+   DRILL 4: 3-WAY RANKING BEHAVIOR
+   - ROW_NUMBER() : Unique sequential (1, 2, 3, 4) - Deduplication & Pagination
+   - DENSE_RANK() : Tied shared rank without gaps (1, 2, 2, 3) - Nth highest salary
+   - RANK()       : Tied shared rank with gaps (1, 2, 2, 4) - Official standings
+*/
+
+/*
+   DRILL 5: VALUE WINDOW FUNCTIONS & RUNNING TOTALS
+   - LAG(col, offset, default) OVER (PARTITION BY id ORDER BY date)
+   - LEAD(col, offset, default) OVER (PARTITION BY id ORDER BY date)
+   - SUM(col) OVER (PARTITION BY id ORDER BY date ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+*/
+
+/*
+   DRILL 6: DYNAMIC PINNED SORTING (CASE)
+   ORDER BY 
+       CASE 
+           WHEN City = 'Pune' THEN 1
+           WHEN City = 'Bengaluru' THEN 2
+           ELSE 3
+       END ASC,
+       City DESC;
+*/
 
 -- ====================================================================
 -- 🧪 SECTION 4: 50 HIGH-LEVEL INTERVIEW CHALLENGES (SUPER 50)
