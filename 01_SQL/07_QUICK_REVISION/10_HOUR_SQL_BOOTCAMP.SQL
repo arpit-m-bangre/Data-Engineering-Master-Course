@@ -29,26 +29,43 @@
    │     • 1.3 TRUNCATE Rollback Proof in Explicit Transactions
    │     • 1.4 Filtering Operators, Wildcards (%, _, [A-Z], [^A-Z])
    │     • 1.5 Three-Valued Logic (3VL) & Safe NULL Exclusion
+   │     • 1.6 DDL ALTER TABLE & Object Renaming via sp_rename
    ├─ MODULE 2: Aggregations & 6-Stage Execution Flow (Hour 3)
    │     • 2.1 The 6-Stage Logical Pipeline (FROM -> ORDER BY)
    │     • 2.2 Alias Scoping Traps (WHERE Stage 2 vs SELECT Stage 5)
-   │     • 2.3 GROUP BY vs HAVING Scoping Standard
+   │     • 2.3 GROUP BY vs HAVING Scoping Standard (Rows vs Groups)
+   │     • 2.4 Aggregate Data Types & NULL Evaluation Rules
    ├─ MODULE 3: Enterprise Constraints & Retrofitting (Hour 4)
    │     • 3.1 The 6 Constraints (PK, UNIQUE, NOT NULL, CHECK, DEFAULT, FK)
-   │     • 3.2 3-Step Live Constraint Retrofitting on Dirty Tables
+   │     • 3.2 Parent Protection vs Child Destruction Rules (DELETE/TRUNCATE/DROP)
+   │     • 3.3 3-Step Live Constraint Retrofitting on Dirty Tables
+   │     • 3.4 System Metadata Auditing (INFORMATION_SCHEMA.TABLES & CONSTRAINTS)
    ├─ MODULE 4: Set Operators & SARGable Date Engine (Hour 5)
    │     • 4.1 Set Operators (UNION, UNION ALL, INTERSECT, EXCEPT)
-   │     • 4.2 SARGability & Index-Seekable Temporal Filtering
+   │     • 4.2 Structural Validation Rules for Set Operations
+   │     • 4.3 SARGability & Index-Seekable Temporal Filtering
+   │     • 4.4 Date Functions: GETDATE, DATEDIFF, DATEADD, DATEPART, EOMONTH
    ├─ MODULE 5: Relational Joins & Cartesian Math (Hours 6 & 7)
    │     • 5.1 Join Mathematics & N x M Duplication Matrix
-   │     • 5.2 Anti-Join Pattern (LEFT JOIN ... WHERE IS NULL)
-   │     • 5.3 Self-Joins: Employee-Manager Hierarchy & CEO Shield
-   │     • 5.4 High-Velocity Geo-Temporal Fraud Anomaly Engine
+   │     • 5.2 ANSI Relational Joins (INNER, LEFT, RIGHT, FULL OUTER)
+   │     • 5.3 Column Ambiguity (Msg 209) & Table Aliasing Standards
+   │     • 5.4 Anti-Join Pattern (LEFT JOIN ... WHERE right.key IS NULL)
+   │     • 5.5 Multi-Table Ingestion Chains (3+ Tables via ON Clauses)
+   │     • 5.6 ANSI CROSS JOIN Matrices vs Legacy Comma Joins
+   │     • 5.7 Self-Joins: Employee-Manager Hierarchy & CEO Shield
+   │     • 5.8 Symmetric Deduplication (< vs <>) in Self-Joins
+   │     • 5.9 High-Velocity Geo-Temporal Fraud Anomaly Engine (5-Min Velocity)
    └─ MODULE 6: Window Functions, CTEs & Analytics (Hours 8 & 9)
          • 6.1 3-Way Ranking Engine (ROW_NUMBER vs RANK vs DENSE_RANK)
-         • 6.2 CTE Scope & In-Place Full-Row Deduplication
-         • 6.3 Value Functions (LEAD, LAG) & Running Balances
-         • 6.4 Dynamic Pinned Sorting via Searched CASE
+         • 6.2 Top-N per Group Filtering Pattern
+         • 6.3 Msg 4108 Window Function WHERE Restriction Trap
+         • 6.4 CTE Syntax, Scope & Lifecycle Architecture
+         • 6.5 In-Place Full-Row Deduplication Engine via CTE
+         • 6.6 Value Functions (LEAD, LAG) & Inter-Row Offset Peeking
+         • 6.7 Stock Inventory Delta & 50% Order Drop Analysis
+         • 6.8 Running Cumulative Totals (ROWS BETWEEN UNBOUNDED PRECEDING)
+         • 6.9 Simple vs Searched CASE Expression Syntax & Dynamic Flow
+         • 6.10 Dynamic Pinned Sorting via ORDER BY CASE Expression
 
 🧠 SECTION 3: SYNTAX RECALL & MUSCLE MEMORY DRILLS
    ├─ Recall 1: 6-Stage Logical Execution Flow
@@ -68,6 +85,33 @@
 🏆 SECTION 5: FINAL BOSS CUSTOMER INTELLIGENCE VIEW (vw_EnterpriseCustomer360)
 🧠 SECTION 6: TOP 20 WHITEBOARD INTERVIEW TRAPS CHEAT SHEET
 🏁 SECTION 7: THE 13-STEP SQL PROBLEM-SOLVING ALGORITHM
+
+====================================================================
+ 🗺️ 22-DAY COMBINED COURSE CURRICULUM VALIDATION MAPPING MATRIX
+====================================================================
+Day 01 (Aug 01): SQL Theory, Commands, PK/FK, CREATE TABLE  -> Module 1.1, Sec 1
+Day 02 (Aug 02): Clauses, Comparison/Logical, Wildcards     -> Module 1.4, Q02-Q04
+Day 03 (Aug 03): Pattern Matching, Ranges, LIKE 'A____n'    -> Module 1.4, Q03
+Day 04 (Aug 04): Numerics, Arithmetic, UPDATE, DELETE, DROP -> Module 1.1, 1.2
+Day 05 (Aug 05): DELETE vs TRUNCATE vs DROP, ALTER, sp_rename-> Module 1.2, 1.3, 1.6
+Day 06 (Aug 06): Aggregates (MIN, MAX, SUM, AVG, COUNT), TOP-> Module 2.1, Q07-Q10
+Day 07 (Aug 07): 6-Stage Execution Flow, HAVING vs WHERE    -> Module 2.1, Q11-Q15
+Day 08 (Aug 08): Complex Scenarios & Query Misconceptions   -> Module 2.3, Sec 6
+Day 09 (Aug 10): PRIMARY KEY, UNIQUE, NOT NULL, CHECK       -> Module 3.1, Sec 1
+Day 10 (Aug 11): DEFAULT, IDENTITY, FOREIGN KEY Architecture -> Module 3.1, Sec 1
+Day 11 (Aug 12): Parent vs Child Destruction Principles     -> Module 3.2, Sec 6
+Day 12 (Aug 13): Live Table Constraint Retrofitting (3 Steps)-> Module 3.3, Sec 3
+Day 13 (Aug 14): Set Operators (UNION, ALL, INTERSECT, EXCEPT)-> Module 4.1, Sec 6
+Day 14 (Aug 17): Temporal Engine, DATEDIFF, DATEADD, EOMONTH -> Module 4.3, Q42-Q43
+Day 15 (Aug 18): Joins Overview, Cartesian Math (N x M), 3VL-> Module 5.1, Sec 6
+Day 16 (Aug 19): ANSI Joins, Column Ambiguity, Anti-Joins   -> Module 5.2, Q21-Q26
+Day 17 (Aug 20): Multi-Table Chains, CROSS JOIN, Equi Joins -> Module 5.5, Q24
+Day 18 (Aug 21): Self Joins, Manager Trees, Geo-Fraud Spikes-> Module 5.7, Q28-Q30, Q49
+Day 19 (Aug 22): Window Rankings (ROW_NUMBER, RANK, DENSE)  -> Module 6.1, Q31-Q36
+Day 20 (Aug 24): CTEs, Safe In-Place Full-Row Deduplication -> Module 6.4, Q37-Q39, Q41
+Day 21 (Aug 25): Value Window Functions (LEAD/LAG), Run Sum -> Module 6.6, Q40, Q44-Q46
+Day 22 (Aug 26): Conditional CASE Logic, Dynamic Pinned Sort-> Module 6.9, Q47, Q50, Sec 5
+Day 23 (Aug 27): Offline Test Lab & Scenarios Verification  -> Sec 4 (Super 50), Sec 5
 ====================================================================
 */
 
