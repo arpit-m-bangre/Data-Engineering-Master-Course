@@ -5,28 +5,28 @@
     "batch": "Online Batch 15",
     "start_date": "2026-07-26",
     "target_completion_date": "2026-09-02",
-    "current_streak_days": 24,
-    "last_active_date": "2026-08-27"
+    "current_streak_days": 25,
+    "last_active_date": "2026-08-28"
   },
   "overall_metrics": {
     "total_modules": 7,
     "active_module": "01_SQL",
-    "module_completion_percentage": 79.5,
-    "backlog_debt_percentage": 20.5,
+    "module_completion_percentage": 82.0,
+    "backlog_debt_percentage": 18.0,
     "target_zero_debt_date": "2026-09-02"
   },
   "active_short_term_target": {
-    "target_title": "Super 50 Grand Revision Campaign (Days 01 to 22)",
+    "target_title": "10-Hour SQL Bootcamp Mastery & Super 50 Engine Execution (Days 01 to 22)",
     "target_deadline": "2026-08-29 21:00",
     "status": "IN_PROGRESS",
     "total_phases": 3,
-    "current_phase": 1,
-    "target_resource": "01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.md",
+    "current_phase": 3,
+    "target_resource": "01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL",
     "social_content_rollout_date": "2026-08-31 (Monday)"
   },
   "sql_ecosystem_counters": {
-    "class_notes_processed": 23,
-    "daily_indexes_created": 23,
+    "class_notes_processed": 24,
+    "daily_indexes_created": 24,
     "master_combined_index_files": 1,
     "revision_notes_total": 23,
     "revision_notes_completed": 8,

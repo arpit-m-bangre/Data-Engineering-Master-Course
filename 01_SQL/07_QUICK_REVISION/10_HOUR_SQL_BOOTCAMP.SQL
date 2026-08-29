@@ -346,6 +346,7 @@ SELECT
     (Salary - 25000.00) AS [Net After Tax]
 FROM Employees;
 
+-- till here done 
 -- 2. Test an update safely inside a transaction and rollback
 BEGIN TRANSACTION;
     UPDATE Employees 
