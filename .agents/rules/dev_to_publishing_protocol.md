@@ -20,13 +20,13 @@ For EVERY Dev.to article created, Pippo MUST create two dedicated files:
 ---
 
 ## 💼 2. MANDATORY CLOSING CALL-TO-ACTION (CTA) STANDARD
-- Every Dev.to post MUST end with Cap's **LinkedIn profile link** as the primary networking anchor:
+- Every Dev.to/public post MUST end ONLY with Cap's **LinkedIn profile link** as the sole networking anchor:
   ```markdown
   ---
   💡 *What's your favorite SQL execution order quirk? Drop your thoughts below!*  
   💼 *Let's connect:* [linkedin.com/in/arpitmbangre](https://www.linkedin.com/in/arpitmbangre/)
   ```
-- Do NOT link to private repository files in public articles.
+- 🔴 **STRICT PRIVACY LAW:** NEVER include `data-engineering-master-course.vercel.app` or any internal study tracker URLs in public blog posts or articles. The Vercel Mission Control is Cap's private course dashboard only.
 
 ---
 

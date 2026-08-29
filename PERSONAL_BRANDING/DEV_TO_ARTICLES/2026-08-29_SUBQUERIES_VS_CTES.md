@@ -68,6 +68,5 @@ If you reference the **same CTE multiple times** in a query (e.g. `CTE_A JOIN CT
 
 ---
 💡 *How do you choose between CTEs, Temp Tables, and Subqueries in your pipelines?*  
-💼 *Connect on LinkedIn:* [linkedin.com/in/arpitmbangre](https://www.linkedin.com/in/arpitmbangre/)  
-🚀 *Explore my live DE Cockpit:* [data-engineering-master-course.vercel.app](https://data-engineering-master-course.vercel.app/)
+💼 *Connect on LinkedIn:* [linkedin.com/in/arpitmbangre](https://www.linkedin.com/in/arpitmbangre/)
 ```
