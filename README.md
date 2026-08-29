@@ -60,7 +60,7 @@ DE COURSE/
 **Digital Craftsman — Data Engineer / Pipeline Architect**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arpitmbangre/)
 &nbsp;
-[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://arpitbangre.vercel.app/)
+[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://data-engineering-master-course.vercel.app/)
 
 <br/>
 <img src="https://capsule-render.vercel.app/api?type=soft&color=0:0b0f19,40:0d1b2a,70:1b263b,100:00f2fe&height=70&section=footer" width="100%" />
