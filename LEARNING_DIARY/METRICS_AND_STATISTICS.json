@@ -83,5 +83,17 @@
     "mastered_concepts_count": 13,
     "revision_priority_concepts_count": 4,
     "high_interview_weight_concepts_count": 11
+  },
+  "github_achievements_telemetry": {
+    "target_full_fleet_date": "2026-09-20",
+    "streak_color_target": "SOLID_DARK_GREEN (6-10 atomic commits/day)",
+    "badges_unlocked_live": ["Galaxy Brain (Bronze)", "Quickdraw"],
+    "badges_queued_next": ["Pull Shark (Bronze - 2026-08-30)", "YOLO (2026-08-30)", "Pair Extraordinaire (Bronze - 2026-08-30)"],
+    "gold_tier_target_dates": {
+      "pair_extraordinaire_gold": "2026-09-12",
+      "galaxy_brain_gold": "2026-09-20",
+      "hackerrank_5star_sql_gold": "2026-09-06",
+      "leetcode_top_sql_50": "2026-09-15"
+    }
   }
 }
