@@ -14,7 +14,7 @@
 [SHOULD-WIN] Publish daily tech tip in 210-Day IG / Short-Form slot (10:15 PM - 10:30 PM)
 [BONUS]      Lock Streak Day 25 with full green build and live Vercel dashboard deployment
 
-TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h | Bootcamp Part 2: 2.50h | Super 50 Suite: 2.75h | Live Class: 1.25h | Night Wrap & Sync: 0.25h | Late Night Sprint: 1.00h)
+TOTAL STUDY TIME TODAY: 11.25 Hours (Authority: 1.00h | Bootcamp Foundations: 2.00h | Portfolio Build: 2.50h | Bootcamp Days 08-22: 3.00h | Live Class: 1.25h | Night Sync: 0.25h | Super 50 Suite: 3.00h)
 
 --------------------------------------------------------------------
                  MORNING BOOT & COCKPIT LAUNCH
@@ -34,11 +34,11 @@ TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
     -> Quick tea break, stretch, and launch `BootcampMasteryDB` in SSMS for deep study block
 
 --------------------------------------------------------------------
-       BLOCK 1: 10-HOUR SQL BOOTCAMP — FOUNDATIONS (DAYS 01 TO 08)
+       BLOCK 1: 10-HOUR SQL BOOTCAMP — FOUNDATIONS (DAYS 01 TO 07)
 --------------------------------------------------------------------
-[X] 11:30 AM - 01:30 PM : Sprint 2 — 10-Hour SQL Bootcamp: Part 1 — Database Setup & Foundations (Days 01 to 08) 💻🔥
+[X] 11:30 AM - 01:30 PM : Sprint 2 — 10-Hour SQL Bootcamp: Part 1 — Database Setup & Foundations (Days 01 to 07) 💻🔥
     -> Execute Section 1: Fresh `BootcampMasteryDB` creation, 8 tables DDL, and multi-city seed datasets in SSMS
-    -> Execute Section 2 Modules Days 01 to 08:
+    -> Execute Section 2 Modules Days 01 to 07:
        • Day 01: DDL, DML, DQL, TCL taxonomy & table definitions
        • Day 02: WHERE filtering, operators & INFORMATION_SCHEMA
        • Day 03: Precision LIKE wildcards & safe NULL handling
@@ -46,17 +46,29 @@ TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
        • Day 05: DELETE vs TRUNCATE vs DROP & ALTER TABLE
        • Day 06: Aggregate functions (MIN/MAX/AVG/SUM/COUNT), NULL average trap & TOP N
        • Day 07: 6-Stage execution pipeline & column alias scoping rules
-       • Day 08: Common query mistakes (WHERE on rows vs HAVING on groups)
-    -> [DoD]: Section 1 + Days 01 to 08 executed clean in SSMS with zero syntax errors
+    -> [DoD]: Section 1 + Days 01 to 07 executed clean in SSMS with zero syntax errors
 
 [-] 01:30 PM - 02:30 PM : Nutritious Lunch, Hydration & Relaxation Break 🍽️
     -> Healthy lunch, mental break, and hydration reset
 
 --------------------------------------------------------------------
-      BLOCK 2: 10-HOUR SQL BOOTCAMP — ADVANCED CORE (DAYS 09 TO 22)
+        BLOCK 2: PORTFOLIO PLATFORM ARCHITECTURE (ARPITBANGRE.COM)
 --------------------------------------------------------------------
-[X] 02:30 PM - 05:00 PM : Sprint 3 — 10-Hour SQL Bootcamp: Part 2 — Constraints, Joins & Window Functions (Days 09 to 22) 💻⚔️
-    -> Execute Section 2 Modules Days 09 to 22 in SSMS:
+[X] 02:30 PM - 05:00 PM : Sprint 3 — Portfolio Platform Build & Custom Domain Architecture (P1) 🌐💎
+    -> Built and tested interactive portfolio website components at `d:\arpitbangre.com\`
+    -> Created SQL Sandbox, Terminal Emulator, Live System Status & Architecture Blueprints
+    -> Locked `PERSONAL_BRANDING/CUSTOM_DOMAIN_AND_PORTFOLIO_PLAN.md` on Cloudflare & Vercel
+    -> [DoD]: Portfolio foundation, dark mode UI & live DE sandbox verified
+
+[-] 05:00 PM - 05:30 PM : Evening Tea, Relaxation & Transition to SSMS ☕
+    -> 30-min tea break, stretch, hydration, and cockpit reset for Bootcamp Part 2
+
+--------------------------------------------------------------------
+      BLOCK 3: 10-HOUR SQL BOOTCAMP — ADVANCED CORE (DAYS 08 TO 22)
+--------------------------------------------------------------------
+[ ] 05:30 PM - 08:30 PM : Sprint 4 — 10-Hour SQL Bootcamp: Advanced Core Mastery (Days 08 to 22) 💻⚔️
+    -> Execute Section 2 Modules Days 08 to 22 in SSMS:
+       • Day 08: Common query mistakes (WHERE on rows vs HAVING on groups)
        • Day 09: 4 Core constraints (PK, UNIQUE, NOT NULL, CHECK)
        • Day 10: DEFAULT, IDENTITY & FOREIGN KEY parent-child links
        • Day 11: Parent vs Child table destruction rules
@@ -71,24 +83,7 @@ TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
        • Day 20: CTEs & safe in-place full-row duplicate deletion
        • Day 21: Value window functions (LEAD, LAG), stock deltas & running cumulative totals
        • Day 22: Conditional CASE logic, multi-tiering & dynamic pinned sorting
-    -> [DoD]: Days 09 to 22 conceptual benchmark queries executed clean in SSMS
-
-[-] 05:00 PM - 05:30 PM : Evening Tea & Focus Reset ☕
-    -> Quick tea break, stretch, and launch SSMS for Super 50 & Portfolio sync
-
---------------------------------------------------------------------
-     BLOCK 3: SUPER 50 INTERVIEW CHALLENGE SUITE (Q01 TO Q50) & PORTFOLIO
---------------------------------------------------------------------
-[ ] 05:30 PM - 08:30 PM : Sprint 4 — Super 50 Challenge Suite (Q01–Q50) & Portfolio Ingestion 🏆🔥
-    -> Solve all 50 interview scenarios from Section 4 in SSMS:
-       • Block 1 (Q01–Q10): Basic filters, range checks, pattern matching & aggregates
-       • Block 2 (Q11–Q20): Advanced GROUP BY, HAVING thresholds, payroll scorecards
-       • Block 3 (Q21–Q30): 5 Join types, anti-joins, manager hierarchies, duplicate pair filters
-       • Block 4 (Q31–Q40): Top-N per group, DENSE_RANK vs RANK, CTE recency, LAG progressions
-       • Block 5 (Q41–Q50): Safe CTE deduplication, consecutive order gaps, 30-day inactivity, running totals, LEAD peeking, multi-city fraud & 360° pipeline
-    -> Execute Section 5: Final Boss 360° Customer Intelligence View (`vw_EnterpriseCustomer360`)
-    -> Consolidate custom portfolio blueprint (`arpitbangre.com`) in `PERSONAL_BRANDING/`
-    -> [DoD]: Super 50 suite solved in SSMS + Portfolio architecture locked
+    -> [DoD]: Days 08 to 22 conceptual benchmark queries executed clean in SSMS
 
 [-] 08:30 PM - 09:00 PM : Dinner, Hydration & Pre-Class SSMS Launch 🍽️💻
     -> Nutritious dinner, hydration, and classroom workspace preparation
@@ -111,13 +106,22 @@ TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
     -> Fast git push to lock dark-green Streak Day 25 on GitHub & Vercel
     -> [DoD]: 15-minute sharp brain sync completed & deployed
 
-[ ] 10:30 PM - 12:00 AM : Sprint 6 — Late-Night Super 50 Clearance & Deep Code Sprint 💻⚔️
-    -> Finish remaining Super 50 benchmark queries (Q25 to Q50) & Final Boss View in SSMS
-    -> Full whiteboard traps review & zero-debt lock for Sunday
-    -> [DoD]: 100% 10-Hour Bootcamp completed before sleep
+--------------------------------------------------------------------
+     BLOCK 4: SUPER 50 INTERVIEW CHALLENGE SUITE (Q01 TO Q50) & BOSS VIEW
+--------------------------------------------------------------------
+[ ] 10:30 PM - 01:30 AM : Sprint 6 — Super 50 Challenge Suite (Q01–Q50) & Final Boss 360° View 🏆🔥
+    -> Solve all 50 interview scenarios from Section 4 in SSMS:
+       • Block 1 (Q01–Q10): Basic filters, range checks, pattern matching & aggregates
+       • Block 2 (Q11–Q20): Advanced GROUP BY, HAVING thresholds, payroll scorecards
+       • Block 3 (Q21–Q30): 5 Join types, anti-joins, manager hierarchies, duplicate pair filters
+       • Block 4 (Q31–Q40): Top-N per group, DENSE_RANK vs RANK, CTE recency, LAG progressions
+       • Block 5 (Q41–Q50): Safe CTE deduplication, consecutive order gaps, 30-day inactivity, running totals, LEAD peeking, multi-city fraud & 360° pipeline
+    -> Execute Section 5: Final Boss 360° Customer Intelligence View (`vw_EnterpriseCustomer360`)
+    -> Review Section 6: Top 20 Whiteboard Traps & Section 7: 13-Step Problem Solving Method
+    -> [DoD]: All 50 Super 50 queries executed successfully with verified outputs
 
-[-] 12:00 AM - 07:30 AM : Deep Sleep & Restorative Recovery 🌙💤
-    -> 7.5 hours deep sleep; cockpit powered down with 100% daily target crushed
+[-] 01:30 AM - 08:30 AM : Deep Sleep & Restorative Recovery 🌙💤
+    -> 7 hours deep restorative sleep; cockpit powered down with 100% daily target crushed
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
