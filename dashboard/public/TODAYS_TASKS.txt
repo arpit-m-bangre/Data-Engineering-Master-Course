@@ -25,7 +25,7 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
 --------------------------------------------------------------------
                      CAREER & AUTHORITY ENGINE
 --------------------------------------------------------------------
-[ ] 10:15 AM - 11:15 AM : Sprint 1 — 60-Min Omni-Channel Authority & Tier-1 LinkedIn Syndication Engine (P1) 🚀
+[X] 10:15 AM - 11:15 AM : Sprint 1 — 60-Min Omni-Channel Authority & Tier-1 LinkedIn Syndication Engine (P1) 🚀
     -> [First 30 Mins — LinkedIn]: Draft & publish #180DaysOfDataEngineering Post #6 (10-Hour SQL Engine Blueprint & 6-Stage Execution Mechanics) + send 5-7 Tier-1 connections (Walmart, Swiggy, Amazon, Uber) + leave 3 technical comments
     -> [Second 30 Mins — 34 Platforms]: Stage Dev.to Article #02 draft + update profile technical tags
     -> [DoD]: LinkedIn post published | 5 Tier-1 requests sent | Dev.to Article #02 staged ✅
@@ -36,7 +36,7 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
 --------------------------------------------------------------------
        BLOCK 1: 10-HOUR SQL BOOTCAMP — FOUNDATIONS (DAYS 01 TO 08)
 --------------------------------------------------------------------
-[ ] 11:30 AM - 01:30 PM : Sprint 2 — 10-Hour SQL Bootcamp: Part 1 — Database Setup & Foundations (Days 01 to 08) 💻🔥
+[X] 11:30 AM - 01:30 PM : Sprint 2 — 10-Hour SQL Bootcamp: Part 1 — Database Setup & Foundations (Days 01 to 08) 💻🔥
     -> Execute Section 1: Fresh `BootcampMasteryDB` creation, 8 tables DDL, and multi-city seed datasets in SSMS
     -> Execute Section 2 Modules Days 01 to 08:
        • Day 01: DDL, DML, DQL, TCL taxonomy & table definitions
