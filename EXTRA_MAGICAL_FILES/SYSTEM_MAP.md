@@ -366,6 +366,7 @@ d:\DE COURSE\
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
+| `CUSTOM_DOMAIN_AND_PORTFOLIO_PLAN.md` | Complete Cloudflare Registrar, Vercel & arpitbangre.com Blueprint | 85 | ~4.5 KB |
 | `50_PLATFORM_ROADMAP.md` | Master 50-Platform Authority, Verifiable Badges & SEO Conquest SSOT | 200+ | ~16 KB |
 | `DAILY_POST_CALENDAR.md` | 180-Day Master Post Calendar & High-Engagement Hooks | 1,929 | 100,637 |
 | `digital_presence_ecosystem.html` | 50-Platform Interactive Digital Presence & SEO Web Showcase | 460+ | ~18 KB |
