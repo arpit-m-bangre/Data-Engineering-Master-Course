@@ -22,7 +22,7 @@
 | # | Date | Title & Architectural Topic | File Path | Status |
 | :-: | :---: | :--- | :--- | :---: |
 | **01** | 2026-08-28 | [SQL Execution Order Internals: Why WHERE Fails on Aliases](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-08-28_SQL_EXECUTION_ORDER_INTERNALS.md) | `2026-08-28_SQL_EXECUTION_ORDER_INTERNALS.md` | ✅ Published |
-| **02** | 2026-09-03 | Subqueries vs CTEs: Query Optimizer Internals & Spooling Overhead | `2026-09-03_SUBQUERIES_VS_CTES.md` | ⏳ Queued |
+| **02** | 2026-08-29 | [Subqueries vs CTEs: Query Optimizer Internals & Spooling Overhead](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-08-29_SUBQUERIES_VS_CTES.md) | `2026-08-29_SUBQUERIES_VS_CTES.md` | ✅ Published |
 | **03** | 2026-09-06 | Clustered vs Non-Clustered Indexes: What Really Happens in B-Trees | `2026-09-06_INDEX_BTREE_INTERNALS.md` | ⏳ Queued |
 | **04** | 2026-09-10 | Window Functions Demystified: Partition By vs Group By Execution | `2026-09-10_WINDOW_FUNCTIONS_EXECUTION.md` | ⏳ Queued |
 | **05** | 2026-09-13 | Top 5 SQL Interview Traps in Super 50: TRUNCATE Rollback & NULL Math | `2026-09-13_TOP_5_SUPER_50_TRAPS.md` | ⏳ Queued |
