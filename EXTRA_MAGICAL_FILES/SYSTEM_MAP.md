@@ -47,8 +47,8 @@ d:\DE COURSE\
 │   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (13 Files)
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (23 Files)
 │   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
-│   ├── 07_QUICK_REVISION/        <-- 10-Hour SQL Server Mastery Bootcamp Master Guide (1 File: 10_HOUR_SQL_BOOTCAMP.md)
-│   ├── SQL TEST/                 <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
+│   ├── 07_QUICK_REVISION/        <-- 10-Hour SQL Server Mastery Bootcamp Master Guide (10_HOUR_SQL_BOOTCAMP.SQL & .md)
+│   ├── 08_SQL_TESTS/             <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
@@ -58,18 +58,18 @@ d:\DE COURSE\
 ├── 06_CLOUD_ENGINEERING/         <-- AWS S3, IAM & Azure Data Services (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (Upcoming)
 ├── INTERVIEW_QUESTION_BANK/      <-- Master 2,500 Question Hub, Mocks & External Banks (4 Files)
-│   ├── 00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md <-- 2,500 Question Master Blueprint
+│   ├── 00_MASTER_2500_QUESTIONS.md <-- 2,500 Question Master Blueprint
 │   ├── 01_SQL_MOCK_INTERVIEWS/   <-- Live Faculty Mock Interview Scripts & Notes (1 File)
 │   └── 02_EXTERNAL_QUESTION_BANKS/ <-- 800+ External SQL Server Question PDF & Reading Guide (2 Files)
 ├── JOB_HUNT/                     <-- Tier-1 Job Hunt, Referral Engine & 25+ to 50+ LPA Playbook (8 Items / 11 Files)
-│   ├── 00_END_TO_END_TIER1_HIRING_AND_ONBOARDING_PLAYBOOK.md <-- 11-Stage Hiring & Day 1 Playbook
+│   ├── 00_TIER1_HIRING_PLAYBOOK.md <-- 11-Stage Hiring & Day 1 Playbook
 │   ├── 01_TIER1_HIRING_CALENDAR.xlsx <-- Quarterly Hiring Timeline & Referral Cycles
 │   ├── 02_TOP_300_COMPANIES_DIRECTORY.xlsx <-- Target Tech Product Firms & GCC Directory
-│   ├── 03_TIER1_HR_CONTACTS_AND_OUTREACH_PLAYBOOK.md <-- 14,500+ Recruiter Analysis & Cold Email Playbook
+│   ├── 03_HR_OUTREACH_PLAYBOOK.md <-- 14,500+ Recruiter Analysis & Cold Email Playbook
 │   ├── TIER1_HR_AND_TECH_RECRUITER_MASTER_DATABASE.xlsx <-- Master 14,542 Recruiter Database in 5 Sheets
 │   ├── HR_CONTACT_DATABASES/     <-- Local HR Databases (.gitignored for speed)
 │   ├── README.md                 <-- Job Hunt Hub Command Center
-│   └── TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md <-- Inbound/Outbound Referral Strategy
+│   └── TIER1_JOB_HUNT_STRATEGY.md <-- Inbound/Outbound Referral Strategy
 ├── LEARNING_DIARY/               <-- Central Course Brain & SSOT Analytics Center (9 Files)
 │   ├── CONCEPT_MASTERY_HEATMAP.md   <-- Concept Intelligence Matrix, Bug Traps & Retention Heatmap
 │   ├── DAILY_MENTOR_GUIDE.md        <-- Pippo AI Mentor Operational Protocol & 8-Pillar Framework
@@ -82,15 +82,15 @@ d:\DE COURSE\
 │   └── ZERO_TO_OFFER_ROADMAP.md     <-- High-Level Career Progression Archive
 ├── PERSONAL_BRANDING/            <-- Tier-1 LinkedIn Authority, Dev.to Articles & Profile Engine (12 Items)
 │   ├── DEV_TO_ARTICLES/          <-- Dev.to 20-Article Authority Vault & 1-Click Copy Files (3 Files)
-│   ├── 50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md <-- 50-Platform Master Authority & Badge Blueprint
+│   ├── 50_PLATFORM_ROADMAP.md    <-- 50-Platform Master Authority & Badge Blueprint
 │   ├── DAILY_POST_CALENDAR.md    <-- 180-Day Master Post Calendar & High-Engagement Hooks
 │   ├── digital_presence_ecosystem.html <-- 50-Platform Interactive Digital Presence Showcase
 │   ├── LINKEDIN_3K_CONNECTION_SUPER_PLAN.md <-- Targeted Tier-1 Fleet Connection Strategy
-│   ├── LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md <-- 360° Profile Optimization
+│   ├── LINKEDIN_PROFILE_GUIDE.md <-- 360° Profile Optimization
 │   ├── LINKEDIN_POST_PROMPT.MD   <-- AI High-Impact Post Generation Prompt Matrix
-│   ├── MILESTONE_CELEBRATION_LINKEDIN_STRATEGY.md <-- High-Impact Achievement & Proof-of-Work Post Engine
+│   ├── MILESTONE_POSTS_GUIDE.md  <-- High-Impact Achievement & Proof-of-Work Post Engine
 │   ├── PROFILE_TEMPLATES/        <-- GitHub Special & Panda Profile README Templates (2 Files)
-│   └── TIER1_BRANDING_MASTER_PLAN.md <-- Master 90-Day Authority Blueprint
+│   └── TIER1_BRANDING_PLAN.md    <-- Master 90-Day Authority Blueprint
 ├── .agents/                      <-- Pippo's Constitution, Skills, Templates & Rules (17 Files)
 │   ├── AGENTS.md                 <-- Global AI Constitution (18 Laws, 6 Binary Gates, 8 Core Habits)
 │   ├── TODAYS_TASKS_GOLDEN_TEMPLATE.txt <-- Immutable Regex-Compatible Daily Mission Template
@@ -98,9 +98,9 @@ d:\DE COURSE\
 │   └── skills/                   <-- 4 Automated Operational Skills (Ops, Daily Plan, Tutor, Caveman)
 ├── EXTRA_MAGICAL_FILES/          <-- Strategic Career Vault, Badges & Chat Archives (65 Files)
 │   ├── MASTER_BRAIN_FILES_AND_DECISION_MATRIX.md <-- 45-File Master Brain Intelligence & Audit Catalog
-│   ├── 10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
+│   ├── PLACEMENT_BLUEPRINT.md    <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
 │   ├── AGENT_BRAIN_CUSTOMIZATIONS_VAULT/ <-- Portable Backup Vault of Brain Skills & Rules (12 Items)
-│   ├── ANTIGRAVITY_MODEL_USAGE_STRATEGY.md <-- AI Model Optimization Guide
+│   ├── AI_MODEL_STRATEGY.md      <-- AI Model Optimization Guide
 │   ├── ASSETS/                   <-- High-Resolution Trust & Identity Visual Assets
 │   ├── CHAT_WITH_PIPPO/          <-- 13 Historical Strategy Dialogue Files
 │   ├── COURSE_CONTEXT.md         <-- Master Repository Matrix & Overview
@@ -110,7 +110,7 @@ d:\DE COURSE\
 │   ├── GOAL.md                   <-- North Star 25+ LPA Target & 200-Day Streak Manifesto
 │   ├── IG_CONTENT_PLAN/          <-- 210-Day Short-Form Content Engine & Asset Vault (7 Items)
 │   ├── MCA_AND_WORK_EXPERIENCE_MANAGEMENT_STRATEGY.md <-- ATS Profile Positioning Guide
-│   ├── PIPPO_AND_CAPTAIN_IDENTITY.md <-- Pippo & Cap Identity Blueprint
+│   ├── PIPPO_IDENTITY.md         <-- Pippo & Cap Identity Blueprint
 │   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
 │   ├── SYSTEM_MAP.md             <-- Exhaustive Master Inventory, Line Counts & Compliance Audit
 │   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
@@ -289,7 +289,7 @@ d:\DE COURSE\
 
 ---
 
-### 📍 ZONE 7C: `01_SQL/SQL TEST/` (ASSESSMENT REPORTS & SCENARIO TESTS — 1 FILE)
+### 📍 ZONE 7C: `01_SQL/08_SQL_TESTS/` (ASSESSMENT REPORTS & SCENARIO TESTS — 1 FILE)
 
 | File Name | Size (Bytes) | Lines | Purpose & Technical Scope | Compliance Status |
 | :--- | :---: | :---: | :--- | :---: |
@@ -340,14 +340,14 @@ d:\DE COURSE\
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
-| `00_END_TO_END_TIER1_HIRING_AND_ONBOARDING_PLAYBOOK.md` | Complete 11-stage hiring lifecycle from resume tailoring to Day 1 & 90-day probation | 226 | 14,175 |
+| `00_TIER1_HIRING_PLAYBOOK.md` | Complete 11-stage hiring lifecycle from resume tailoring to Day 1 & 90-day probation | 226 | 14,175 |
 | `01_TIER1_HIRING_CALENDAR.xlsx` | Quarterly hiring calendar and recruitment cycles for Tier-1 companies | Binary | 11,552 |
 | `02_TOP_300_COMPANIES_DIRECTORY.xlsx` | Curated directory of top 300 target tech product firms & GCCs | Binary | 38,012 |
-| `03_TIER1_HR_CONTACTS_AND_OUTREACH_PLAYBOOK.md` | Exhaustive 14,500+ Recruiter analysis, cold outreach email templates & safety rules | 130+ | ~8.5 KB |
+| `03_HR_OUTREACH_PLAYBOOK.md` | Exhaustive 14,500+ Recruiter analysis, cold outreach email templates & safety rules | 130+ | ~8.5 KB |
 | `TIER1_HR_AND_TECH_RECRUITER_MASTER_DATABASE.xlsx` | Master 14,542 Recruiter database categorized into 5 prioritized sheets | Binary | ~1.6 MB |
 | `HR_CONTACT_DATABASES/` | Local HR databases & reference vault (.gitignored to maintain repo speed) | Vault | 4 Files |
 | `README.md` | Job hunt command center and career overview | 25 | 1,278 |
-| `TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md` | Master 25+ to 50+ LPA inbound/outbound referral and interview cracking playbook | 167 | 8,677 |
+| `TIER1_JOB_HUNT_STRATEGY.md` | Master 25+ to 50+ LPA inbound/outbound referral and interview cracking playbook | 167 | 8,677 |
 
 ---
 
@@ -355,7 +355,7 @@ d:\DE COURSE\
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
-| `00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md` | Master 2,500 question blueprint across all 22 pillars (1,310 practical + 1,190 theory) | 303 | 18,363 |
+| `00_MASTER_2500_QUESTIONS.md` | Master 2,500 question blueprint across all 22 pillars (1,310 practical + 1,190 theory) | 303 | 18,363 |
 | `01_SQL_MOCK_INTERVIEWS/SQL Mock Interview Class — 16 August 2026.md` | Live faculty mock interview transcript & evaluation notes | 167 | 10,240 |
 | `02_EXTERNAL_QUESTION_BANKS/800+ SQL Server Interview Question Answers...pdf` | Comprehensive 800+ SQL Server question archive PDF | Binary | 2,420,530 |
 | `02_EXTERNAL_QUESTION_BANKS/PDF_READING_GUIDE.md` | Quick navigation and topic index guide for the 800+ question bank | 42 | 2,150 |
@@ -366,15 +366,16 @@ d:\DE COURSE\
 
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
-| `50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` | Master 50-Platform Authority, Verifiable Badges & SEO Conquest SSOT | 200+ | ~16 KB |
+| `50_PLATFORM_ROADMAP.md` | Master 50-Platform Authority, Verifiable Badges & SEO Conquest SSOT | 200+ | ~16 KB |
 | `DAILY_POST_CALENDAR.md` | 180-Day Master Post Calendar & High-Engagement Hooks | 1,929 | 100,637 |
 | `digital_presence_ecosystem.html` | 50-Platform Interactive Digital Presence & SEO Web Showcase | 460+ | ~18 KB |
 | `LINKEDIN_3K_CONNECTION_SUPER_PLAN.md` | Targeted Tier-1 Fleet Connection Strategy | 656 | 30,981 |
-| `LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md` | 360° Profile Optimization | 225 | 13,975 |
+| `LINKEDIN_PROFILE_GUIDE.md` | 360° Profile Optimization | 225 | 13,975 |
 | `LINKEDIN_POST_PROMPT.MD` | AI High-Impact Post Generation Prompt Matrix | 596 | 11,217 |
+| `MILESTONE_POSTS_GUIDE.md` | High-Impact Achievement & Proof-of-Work Post Engine | 85 | ~3.5 KB |
 | `PROFILE_TEMPLATES/GITHUB_PROFILE_README.md` | GitHub Special Profile README showcase template | 95 | 6,179 |
 | `PROFILE_TEMPLATES/PANDA_PROFILE_README.md` | Alternate visual profile README template | 85 | 2,427 |
-| `TIER1_BRANDING_MASTER_PLAN.md` | Master 90-Day Authority Blueprint | 509 | 32,927 |
+| `TIER1_BRANDING_PLAN.md` | Master 90-Day Authority Blueprint | 509 | 32,927 |
 
 ---
 
@@ -383,9 +384,9 @@ d:\DE COURSE\
 | File Name | Scope & Content | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
 | `MASTER_BRAIN_FILES_AND_DECISION_MATRIX.md` | Master 45-File Decision-Maker & Intelligence Audit Catalog | 124 | 11,007 |
-| `10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md` | Master 5-Phase Career Plan, 10-Pass Engine & ₹32L Walmart Fleet | 247 | 16,906 |
+| `PLACEMENT_BLUEPRINT.md` | Master 5-Phase Career Plan, 10-Pass Engine & ₹32L Walmart Fleet | 247 | 16,906 |
 | `AGENT_BRAIN_CUSTOMIZATIONS_VAULT/` (21 Files)| Portable backup vault of all agent brain skills and rules | ~1,200 | ~90 KB |
-| `ANTIGRAVITY_MODEL_USAGE_STRATEGY.md` | AI Model token and capability optimization guide | 49 | 2,599 |
+| `AI_MODEL_STRATEGY.md` | AI Model token and capability optimization guide | 49 | 2,599 |
 | `ASSETS/` (1 File: `TRUST.png`) | High-resolution visual identity badge | — | ~120 KB |
 | `CHAT_WITH_PIPPO/` (15 Dialogue Files) | Full historical records of major strategic roadmap breakthroughs | ~2,850 | ~205 KB |
 | `COURSE_CONTEXT.md` | Master repository matrix and overview | 82 | 6,244 |
@@ -395,7 +396,7 @@ d:\DE COURSE\
 | `GOAL.md` | North Star 25+ LPA Target & 200-Day Streak Manifesto | 33 | 1,993 |
 | `IG_CONTENT_PLAN/` (16 Files including assets) | Anonymous 210-Day Omnichannel Content Vault (Reels, Carousels, Quizzes) | ~900 | ~2.5 MB |
 | `MCA_AND_WORK_EXPERIENCE_MANAGEMENT_STRATEGY.md` | ATS profile positioning: B.Sc. + MCA + Data Engineer role | 139 | 8,460 |
-| `PIPPO_AND_CAPTAIN_IDENTITY.md` | Pippo & Cap co-pilot identity documentation | 26 | 1,612 |
+| `PIPPO_IDENTITY.md` | Pippo & Cap co-pilot identity documentation | 26 | 1,612 |
 | `SYSTEM_LOCK.md` | System immutability protocols and integrity audits | 35 | 1,517 |
 | `SYSTEM_MAP.md` | Exhaustive Master Inventory, Line Counts & Compliance Audit | 360+ | ~28 KB |
 | `SYSTEM_VALIDATION_REPORT.md` | System Integrity and Verification Audit | 38 | 2,098 |

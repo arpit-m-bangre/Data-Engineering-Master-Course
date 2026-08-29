@@ -42,7 +42,7 @@ DE COURSE/
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question cumulative practice sets
 │   ├── 06_PROJECTS/              <-- Production-grade enterprise SQL pipelines (PROJECT1 - 7)
 │   ├── 07_QUICK_REVISION/        <-- Fast-track bootcamp notes & Super 50 challenges
-│   └── SQL TEST/                 <-- Faculty assessment reports & live test artifacts
+│   └── 08_SQL_TESTS/             <-- Faculty assessment reports & live test artifacts
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
 ├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging & Delta Transformations (Upcoming)
 ├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (Upcoming)

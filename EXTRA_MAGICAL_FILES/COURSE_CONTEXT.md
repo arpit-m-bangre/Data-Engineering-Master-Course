@@ -23,14 +23,15 @@ d:\DE COURSE\
 ├── 04_PYSPARK_BIG_DATA/          <-- Distributed Big Data Computing & Delta Lake (Upcoming)
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake, Redshift & Dimensional Modeling (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- AWS / Azure Data Services & Infrastructure (Upcoming)
-├── TIER1_BRANDING_MASTER_PLAN.md <-- Consolidated Tier-1 Hiring, 90-Day LinkedIn & 360° SEO Blueprint
-├── digital_presence_ecosystem.html <-- Interactive 34-Platform Digital Presence & SEO Web Showcase
+├── PERSONAL_BRANDING/            <-- 34-Platform Brand Engine & TIER1_BRANDING_PLAN.md
+├── JOB_HUNT/                     <-- Placement Playbooks & Recruiter Outreach
 ├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Focus Rulebook & Identity
 │   ├── FOCUS_RULE_BOOK.md        <-- Calm, Bio-Paced Focus, Phone & Friend Boundary Protocols
 │   ├── GOAL.md                   <-- North Star 25+ LPA Target & 200-Day Streak Manifesto
-│   ├── PIPPO_AND_CAPTAIN_IDENTITY.md <-- Pippo & Cap Identity Blueprint
+│   ├── PIPPO_IDENTITY.md         <-- Pippo & Cap Identity Blueprint
 │   ├── COURSE_CONTEXT.md         <-- Central Course Blueprint & Matrix
-│   ├── ANTIGRAVITY_MODEL_USAGE_STRATEGY.md <-- AI Model Optimization Guide
+│   ├── AI_MODEL_STRATEGY.md      <-- AI Model Optimization Guide
+│   ├── PLACEMENT_BLUEPRINT.md    <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
 │   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
 │   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
 └── LEARNING_DIARY/               <-- Central Course Brain & Daily Mentor Intelligence System

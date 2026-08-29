@@ -74,7 +74,7 @@ d:\DE COURSE\
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- 14-Question practice sets inside comment blocks with blank lines
 │   ├── 06_PROJECTS/              <-- Enterprise Data Engineering projects (PROJECT<N>.SQL)
 │   ├── 07_QUICK_REVISION/        <-- Fast-track bootcamp notes & Super 50 challenges
-│   ├── SQL TEST/                 <-- Faculty assessment reports & live test artifacts
+│   ├── 08_SQL_TESTS/             <-- Faculty assessment reports & live test artifacts
 │   └── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 ├── 02_PYTHON/                    <-- Python, OOP, Pandas & Data Cleansing (Upcoming)
 ├── 03_ETL_DATA_PIPELINES/        <-- ETL Architecture, Ingestion & Transformation (Upcoming)
@@ -82,16 +82,16 @@ d:\DE COURSE\
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake, Redshift & Dimensional Models (Upcoming)
 ├── 06_CLOUD_ENGINEERING/         <-- AWS / Azure Data Services & Infra (Upcoming)
 ├── 07_ORCHESTRATION/             <-- Apache Airflow & Pipeline Scheduling (Upcoming)
-├── TIER1_BRANDING_MASTER_PLAN.md <-- Consolidated Tier-1 Hiring, 90-Day LinkedIn & 360° SEO Blueprint
-├── digital_presence_ecosystem.html <-- Interactive 34-Platform Digital Presence & SEO Web Showcase
+├── PERSONAL_BRANDING/            <-- 34-Platform Brand Engine & TIER1_BRANDING_PLAN.md
+├── JOB_HUNT/                     <-- Placement Playbooks & Recruiter Outreach
 ├── EXTRA_MAGICAL_FILES/          <-- Career Targets, Focus Rulebook, SYSTEM_MAP & Identity
 │   ├── SYSTEM_MAP.md             <-- Exhaustive Master Inventory, Line Counts & Compliance Audit
-│   ├── 10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
+│   ├── PLACEMENT_BLUEPRINT.md    <-- Master 5-Phase Career & 32 LPA Fleet Blueprint
 │   ├── FOCUS_RULE_BOOK.md        <-- Calm, Bio-Paced Focus, Phone & Friend Boundary Protocols
 │   ├── GOAL.md                   <-- North Star 25+ LPA Target & 200-Day Streak Manifesto
-│   ├── PIPPO_AND_CAPTAIN_IDENTITY.md <-- Pippo & Cap Identity Blueprint
+│   ├── PIPPO_IDENTITY.md         <-- Pippo & Cap Identity Blueprint
 │   ├── COURSE_CONTEXT.md         <-- Central Course Blueprint & Matrix
-│   ├── ANTIGRAVITY_MODEL_USAGE_STRATEGY.md <-- AI Model Optimization Guide
+│   ├── AI_MODEL_STRATEGY.md      <-- AI Model Optimization Guide
 │   ├── SYSTEM_LOCK.md            <-- System Lock Protocol
 │   └── SYSTEM_VALIDATION_REPORT.md <-- System Integrity Audit
 └── LEARNING_DIARY/               <-- Central Course Brain & Daily Mentor Intelligence Engine
@@ -226,7 +226,7 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 8 p
 4. **Perpetual SQL Practice (2 Hours / Day):** Daily SQL practice (Class tasks, 14 index-wise drills, LeetCode Hard, StrataScratch) continues permanently until placement, even during subsequent modules (Python, Spark, Snowflake, Cloud).
 5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python OOP and pipeline practice MUST be enforced permanently alongside SQL.
 6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
-7. **Daily Social Presence & 50-Platform Digital Authority Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
+7. **Daily Social Presence & 50-Platform Digital Authority Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
 8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
 9. **Compulsory 210-Day IG / Short-Form Content Publishing (15 Mins Daily - 0.0 Study Hr Impact):** Dedicated fun/recharge slot right after live class (10:15 PM - 10:30 PM). Publish today's scheduled 15-minute asset from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md` (Reels, Carousels, Infographics, Sunday Quizzes) across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: Last priority, 100% compulsory, 0.0 study hour impact.
 

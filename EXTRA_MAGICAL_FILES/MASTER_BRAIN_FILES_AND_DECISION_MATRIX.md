@@ -56,23 +56,23 @@ This document provides a **deep, file-by-file audit and scoring analysis** of th
 
 ─── [ZONE 4: STRATEGIC CAREER BLUEPRINTS & LIFE VAULTS — 11 FILES] ─────────────────────────────────────────────────────
 26  EXTRA_MAGICAL_FILES/SYSTEM_MAP.md                       365   28,650  100/100 Exhaustive Physical Inventory & Map
-27  EXTRA_MAGICAL_FILES/10_PLUS_REVISION_AND_PLACEMENT_BLUEPRINT.md 247 16,906 100/100 Current-Focus Law & 10-Pass Revision Engine
+27  EXTRA_MAGICAL_FILES/PLACEMENT_BLUEPRINT.md              247   16,906  100/100 Current-Focus Law & 10-Pass Revision Engine
 28  EXTRA_MAGICAL_FILES/FOCUS_RULE_BOOK.md                  167   10,754  100/100 Bio-Pacing, Sleep Cutoff & Focus Rules
 29  EXTRA_MAGICAL_FILES/GOAL.md                              33    1,993  100/100 North Star 25+ LPA & 200-Day Streak Manifesto
 30  EXTRA_MAGICAL_FILES/ENTERPRISE_MNC_PROJECT_INITIALIZATION_BLUEPRINT.md 93 5,439 99/100 NexusFin Platform Production Architecture
 31  EXTRA_MAGICAL_FILES/MCA_AND_WORK_EXPERIENCE_MANAGEMENT_STRATEGY.md 139 8,460 98/100 ATS Resume & Degree Positioning Strategy
 32  EXTRA_MAGICAL_FILES/GITHUB_ACHIEVEMENTS_AND_BADGES_MASTER_PLAN.md 132 8,020 98/100 All 7 GitHub Badges Unlocking Guide
 33  EXTRA_MAGICAL_FILES/COURSE_CONTEXT.md                    82    6,244   99/100 Master Curriculum Blueprint & Context
-34  EXTRA_MAGICAL_FILES/PIPPO_AND_CAPTAIN_IDENTITY.md        26    1,612  100/100 Pippo & Cap Relationship Blueprint
-35  EXTRA_MAGICAL_FILES/ANTIGRAVITY_MODEL_USAGE_STRATEGY.md  49    2,599   98/100 AI Model Token Optimization Guide
+34  EXTRA_MAGICAL_FILES/PIPPO_IDENTITY.md                    26    1,612  100/100 Pippo & Cap Relationship Blueprint
+35  EXTRA_MAGICAL_FILES/AI_MODEL_STRATEGY.md                 49    2,599   98/100 AI Model Token Optimization Guide
 36  EXTRA_MAGICAL_FILES/SYSTEM_LOCK.md                       35    1,517  100/100 Immutability & Anti-Teardown Lock
 
 ─── [ZONE 5: CURRICULUM, INTERVIEW BANK & REFERRAL FLEET — 6 FILES] ────────────────────────────────────────────────────
 37  00_SYLLABUS/00_MASTER_22_MODULE_6_MONTH_EXECUTION_TIMELINE_2026_2027.md 201 13,235 100/100 Master 6-Month 22-Module Curriculum
-38  INTERVIEW_QUESTION_BANK/00_MASTER_2500_DATA_ENGINEERING_QUESTION_PLAN.md 303 18,363 100/100 2,500 Question Ceiling & 22 Pillars
-39  JOB_HUNT/00_END_TO_END_TIER1_HIRING_AND_ONBOARDING_PLAYBOOK.md 226 14,175 100/100 11-Stage Hiring & Day 1 Playbook
-40  JOB_HUNT/TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md       167    8,677  100/100 Inbound/Outbound Referral Blitz
-41  PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md 187 16,827 100/100 50-Platform Master Authority & 7 Badges SSOT
+38  INTERVIEW_QUESTION_BANK/00_MASTER_2500_QUESTIONS.md     303   18,363  100/100 2,500 Question Ceiling & 22 Pillars
+39  JOB_HUNT/00_TIER1_HIRING_PLAYBOOK.md                    226   14,175  100/100 11-Stage Hiring & Day 1 Playbook
+40  JOB_HUNT/TIER1_JOB_HUNT_STRATEGY.md                     167    8,677  100/100 Inbound/Outbound Referral Blitz
+41  PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md                187   16,827  100/100 50-Platform Master Authority & 7 Badges SSOT
 42  PERSONAL_BRANDING/DAILY_POST_CALENDAR.md              1,929  100,637   99/100 180-Day Content Calendar & Viral Hooks
 
 ─── [ZONE 6: PRODUCTION DAILY PARSER & PUBLIC SHOWCASE — 3 FILES] ──────────────────────────────────────────────────────

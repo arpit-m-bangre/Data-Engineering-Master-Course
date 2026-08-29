@@ -645,9 +645,9 @@ DE skills. Would love to connect!
 
 ## 🔗 CROSS-REFERENCES
 
-- Full 60+ Company Directory: [`TIER1_BRANDING_MASTER_PLAN.md`](./TIER1_BRANDING_MASTER_PLAN.md)
-- Copy-Paste Profile Sections: [`LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md`](./LINKEDIN_DATA_ENGINEER_PROFILE_REDESIGN_AND_PREMIUM_STRATEGY.md)
-- Live Course Portfolio Dashboard: `arpitbangre.vercel.app`
+- Full 60+ Company Directory: [`TIER1_BRANDING_PLAN.md`](./TIER1_BRANDING_PLAN.md)
+- Copy-Paste Profile Sections: [`LINKEDIN_PROFILE_GUIDE.md`](./LINKEDIN_PROFILE_GUIDE.md)
+- Live Mission Control Dashboard: `data-engineering-master-course.vercel.app`
 
 ---
 

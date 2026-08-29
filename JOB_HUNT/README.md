@@ -7,14 +7,16 @@ Welcome to the central **Job Hunt & Placement Command Center** for Captain Arpit
 
 ## 📂 DIRECTORY ARCHITECTURE & FILES
 
-1. **[TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md](file:///d:/DE%20COURSE/JOB_HUNT/TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md)**  
+1. **[TIER1_JOB_HUNT_STRATEGY.md](file:///d:/DE%20COURSE/JOB_HUNT/TIER1_JOB_HUNT_STRATEGY.md)**  
    *The Master 360° Inbound, Outbound, Referral, Interview Cracking, Safe Zone & Salary Negotiation Playbook.*
-2. **`01_TIER1_HIRING_CALENDAR.xlsx`**  
+2. **[00_TIER1_HIRING_PLAYBOOK.md](file:///d:/DE%20COURSE/JOB_HUNT/00_TIER1_HIRING_PLAYBOOK.md)**  
+   *11-Stage Hiring Lifecycle from Resume Tailoring to Day 1 & Probation.*
+3. **[03_HR_OUTREACH_PLAYBOOK.md](file:///d:/DE%20COURSE/JOB_HUNT/03_HR_OUTREACH_PLAYBOOK.md)**  
+   *14,500+ Recruiter Analysis & Cold Email Strategy.*
+4. **`01_TIER1_HIRING_CALENDAR.xlsx`**  
    *Quarterly hiring cycles and recruitment calendar for Tier-1 companies.*
-3. **`02_TOP_300_COMPANIES_DIRECTORY.xlsx`**  
+5. **`02_TOP_300_COMPANIES_DIRECTORY.xlsx`**  
    *Curated directory of top 300 target tech product companies, GCCs, and high-paying unicorns.*
-4. **[HR_CONTACT_DATABASES/](file:///d:/DE%20COURSE/JOB_HUNT/HR_CONTACT_DATABASES/)** *(Local Vault)*  
-   *Local offline databases of HR contacts and recruitment references (kept gitignored to maintain high repo velocity).*
 
 ---
 
