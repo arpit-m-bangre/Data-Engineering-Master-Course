@@ -14,7 +14,7 @@
 [SHOULD-WIN] Publish daily tech tip in 210-Day IG / Short-Form slot (10:15 PM - 10:30 PM)
 [BONUS]      Lock Streak Day 25 with full green build and live Vercel dashboard deployment
 
-TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h | Bootcamp Part 2: 2.50h | Super 50 Suite: 2.75h | Live Class: 1.25h | Night Wrap: 0.75h)
+TOTAL STUDY TIME TODAY: 10.75 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h | Bootcamp Part 2: 2.50h | Super 50 Suite: 2.75h | Live Class: 1.25h | Night Wrap & Sync: 0.25h | Late Night Sprint: 1.00h)
 
 --------------------------------------------------------------------
                  MORNING BOOT & COCKPIT LAUNCH
@@ -55,7 +55,7 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
 --------------------------------------------------------------------
       BLOCK 2: 10-HOUR SQL BOOTCAMP — ADVANCED CORE (DAYS 09 TO 22)
 --------------------------------------------------------------------
-[ ] 02:30 PM - 05:00 PM : Sprint 3 — 10-Hour SQL Bootcamp: Part 2 — Constraints, Joins & Window Functions (Days 09 to 22) 💻⚔️
+[X] 02:30 PM - 05:00 PM : Sprint 3 — 10-Hour SQL Bootcamp: Part 2 — Constraints, Joins & Window Functions (Days 09 to 22) 💻⚔️
     -> Execute Section 2 Modules Days 09 to 22 in SSMS:
        • Day 09: 4 Core constraints (PK, UNIQUE, NOT NULL, CHECK)
        • Day 10: DEFAULT, IDENTITY & FOREIGN KEY parent-child links
@@ -73,13 +73,13 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
        • Day 22: Conditional CASE logic, multi-tiering & dynamic pinned sorting
     -> [DoD]: Days 09 to 22 conceptual benchmark queries executed clean in SSMS
 
-[-] 05:00 PM - 05:45 PM : Evening Walk, Tea & Fresh Air Brain Reset 🚶‍♂️☕
-    -> 30-min walk, fresh air, evening tea, and focus recharge for the Super 50 blitz
+[-] 05:00 PM - 05:30 PM : Evening Tea & Focus Reset ☕
+    -> Quick tea break, stretch, and launch SSMS for Super 50 & Portfolio sync
 
 --------------------------------------------------------------------
-     BLOCK 3: SUPER 50 INTERVIEW CHALLENGE SUITE (Q01 TO Q50)
+     BLOCK 3: SUPER 50 INTERVIEW CHALLENGE SUITE (Q01 TO Q50) & PORTFOLIO
 --------------------------------------------------------------------
-[ ] 05:45 PM - 08:30 PM : Sprint 4 — 10-Hour SQL Bootcamp: Part 3 — Super 50 Challenge Suite (Q01 to Q50) & Boss View 🏆🔥
+[ ] 05:30 PM - 08:30 PM : Sprint 4 — Super 50 Challenge Suite (Q01–Q50) & Portfolio Ingestion 🏆🔥
     -> Solve all 50 interview scenarios from Section 4 in SSMS:
        • Block 1 (Q01–Q10): Basic filters, range checks, pattern matching & aggregates
        • Block 2 (Q11–Q20): Advanced GROUP BY, HAVING thresholds, payroll scorecards
@@ -87,8 +87,8 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
        • Block 4 (Q31–Q40): Top-N per group, DENSE_RANK vs RANK, CTE recency, LAG progressions
        • Block 5 (Q41–Q50): Safe CTE deduplication, consecutive order gaps, 30-day inactivity, running totals, LEAD peeking, multi-city fraud & 360° pipeline
     -> Execute Section 5: Final Boss 360° Customer Intelligence View (`vw_EnterpriseCustomer360`)
-    -> Review Section 6: Top 20 Whiteboard Traps & Section 7: 13-Step Problem Solving Method
-    -> [DoD]: All 50 Super 50 queries executed successfully with verified outputs
+    -> Consolidate custom portfolio blueprint (`arpitbangre.com`) in `PERSONAL_BRANDING/`
+    -> [DoD]: Super 50 suite solved in SSMS + Portfolio architecture locked
 
 [-] 08:30 PM - 09:00 PM : Dinner, Hydration & Pre-Class SSMS Launch 🍽️💻
     -> Nutritious dinner, hydration, and classroom workspace preparation
@@ -102,20 +102,22 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
 --------------------------------------------------------------------
-                   POST-CLASS NIGHT WRAP & SYNC BLOCK
+              POST-CLASS NIGHT SPRINT & FAST 15-MIN SYNC BLOCK
 --------------------------------------------------------------------
-[-] 10:15 PM - 10:30 PM : 210-Day IG / Short-Form Publishing & Night Buffer (0.0 Study Hr) 📱✨
-    -> Stage/publish today's tech infographic snippet across Instagram & YouTube Shorts
-
-[ ] 10:30 PM - 11:15 PM : Sprint 5 — Live Class 24 Note Ingestion, Trackers & Brain Sync (Streak Day 25 🔥) 🚀
-    -> Ingest Day 24 raw notes into `01_CLASS_NOTES/2026-08-29.sql` & sync daily index
+[ ] 10:15 PM - 10:30 PM : Sprint 5 — 15-Min Fast Night Sync & Streak Lock (Day 25 🔥) ⚡
+    -> Ingest Day 24 live notes into `01_CLASS_NOTES/2026-08-29.sql` & sync daily index
     -> Update Master Learning Tracker, Metrics JSON, Concept Heatmap & System Map
     -> Run: `node copy_tasks.cjs; npm run build` in `DASHBOARD/`
-    -> Commit and push verified Day 25 streak to GitHub & trigger live Vercel deploy
-    -> [DoD]: Brain synced | Green build confirmed | Vercel deployed | Cockpit shut down
+    -> Fast git push to lock dark-green Streak Day 25 on GitHub & Vercel
+    -> [DoD]: 15-minute sharp brain sync completed & deployed
 
-[-] 11:15 PM - 07:15 AM : Deep Sleep & Biological Health Recovery Window 🌙💤
-    -> 8 hours of protected restorative sleep; cockpit fully powered down
+[ ] 10:30 PM - 12:00 AM : Sprint 6 — Late-Night Super 50 Clearance & Deep Code Sprint 💻⚔️
+    -> Finish remaining Super 50 benchmark queries (Q25 to Q50) & Final Boss View in SSMS
+    -> Full whiteboard traps review & zero-debt lock for Sunday
+    -> [DoD]: 100% 10-Hour Bootcamp completed before sleep
+
+[-] 12:00 AM - 07:30 AM : Deep Sleep & Restorative Recovery 🌙💤
+    -> 7.5 hours deep sleep; cockpit powered down with 100% daily target crushed
 
 ====================================================================
 *Rules: Must Win -> Should Win -> Bonus | Zero Silent Dropping | Sleep Protected*
