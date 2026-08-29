@@ -104,10 +104,11 @@ flowchart TD
 
 ### 3. 📍 City-by-City Engineering Breakdown: Where to Target First
 
-#### 🏙️ 1. PUNE (Top Engineering Hub for Enterprise FinTech & Automotive R&D)
-- **FinTech & Banks:** Barclays Pune (Yerwada/Hinjawadi), Deutsche Bank (Yerwada), BNY Mellon (Kalyani Nagar), Mastercard (Yerwada), UBS/Credit Suisse (Kharadi), Citi Pune, FinIQ.
-- **Global GCCs & Automotive:** John Deere (Magarpatta), Mercedes-Benz R&D, BP Digital Hub, Eaton (Kharadi), Siemens (Balewadi), Amdocs (Magarpatta).
-- **Product & Cloud Giants:** NVIDIA (Yerwada), Veritas Technologies (Baner), Snowflake, Microsoft, Salesforce (Senapati Bapat Rd), Persistent Systems Labs.
+#### 🏙️ 1. PUNE (Top Engineering Hub for Enterprise FinTech, Cloud Unicorns & Automotive R&D)
+- **FinTech & Global Banks:** Barclays Pune (Yerwada/Hinjawadi), Deutsche Bank (Yerwada), BNY Mellon (Kalyani Nagar), Mastercard (Yerwada), UBS/Credit Suisse (Kharadi), Citi Pune, FinIQ, Synechron.
+- **High-Scale Cloud Unicorns & Ad-Tech (Underrated High-Pay Gems):** PubMatic (Kalyani Nagar/Baner - Trillions of real-time ad events), Druva (Baner - Cloud Data Protection Unicorn), Icertis (Baner - Contract Intelligence Unicorn), Avalara (Baner - Global Tax Tech Engine).
+- **Product, AI & Storage Titans:** NVIDIA (Yerwada), Veritas Technologies (Baner), Snowflake, Microsoft, Salesforce (Senapati Bapat Rd), SLB Digital / Schlumberger (Pune Energy Data), Persistent Systems Labs.
+- **Global GCCs & Automotive R&D:** John Deere (Magarpatta), Mercedes-Benz R&D (MBRDI), BP Digital Hub, Eaton (Kharadi), Siemens (Balewadi), Amdocs (Magarpatta), Rockwell Automation.
 - **Analytics & Modern Consulting:** Tiger Analytics Pune, Fractal Analytics, Tredence, Searce, Thoughtworks.
 
 #### 🏙️ 2. BENGALURU (Silicon Valley of India — Highest Volume of High-CTC Openings)
