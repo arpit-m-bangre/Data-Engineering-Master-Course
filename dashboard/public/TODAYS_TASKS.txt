@@ -96,8 +96,8 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
 --------------------------------------------------------------------
                       EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 25) 🎓
-    -> Live lecture: Advanced SQL Architecture, Complex CTEs & Subquery Optimization
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 24) 🎓
+    -> Live lecture (resumed after Rakhi holiday): Advanced SQL Architecture, Complex CTEs & Subquery Optimization
     -> Capture live faculty queries, execution internals, and whiteboard questions in real time
     -> [DoD]: 100% active class attendance | Raw notes captured for ingestion
 
@@ -107,8 +107,8 @@ TOTAL STUDY TIME TODAY: 10.25 Hours (Authority: 1.00h | Bootcamp Part 1: 2.00h |
 [-] 10:15 PM - 10:30 PM : 210-Day IG / Short-Form Publishing & Night Buffer (0.0 Study Hr) 📱✨
     -> Stage/publish today's tech infographic snippet across Instagram & YouTube Shorts
 
-[ ] 10:30 PM - 11:15 PM : Sprint 5 — Live Class 25 Note Ingestion, Trackers & Brain Sync (Streak Day 25 🔥) 🚀
-    -> Ingest Day 25 raw notes into `01_CLASS_NOTES/2026-08-29.sql` & sync daily index
+[ ] 10:30 PM - 11:15 PM : Sprint 5 — Live Class 24 Note Ingestion, Trackers & Brain Sync (Streak Day 25 🔥) 🚀
+    -> Ingest Day 24 raw notes into `01_CLASS_NOTES/2026-08-29.sql` & sync daily index
     -> Update Master Learning Tracker, Metrics JSON, Concept Heatmap & System Map
     -> Run: `node copy_tasks.cjs; npm run build` in `DASHBOARD/`
     -> Commit and push verified Day 25 streak to GitHub & trigger live Vercel deploy

@@ -25,8 +25,8 @@
     "social_content_rollout_date": "2026-08-31 (Monday)"
   },
   "sql_ecosystem_counters": {
-    "class_notes_processed": 24,
-    "daily_indexes_created": 24,
+    "class_notes_processed": 23,
+    "daily_indexes_created": 23,
     "master_combined_index_files": 1,
     "revision_notes_total": 23,
     "revision_notes_completed": 8,
