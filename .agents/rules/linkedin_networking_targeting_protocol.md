@@ -7,22 +7,19 @@ This protocol governs every single daily LinkedIn networking suggestion, search 
 
 ## 🎯 1. THE NORTH STAR TARGET COMPANIES FLEET
 
-Whenever suggesting connection searches, Pippo MUST strictly rotate across these 3 verified Tier-1 categories from `JOB_HUNT/TIER1_JOB_HUNT_AND_PLACEMENT_STRATEGY.md` and `PERSONAL_BRANDING/TIER1_BRANDING_MASTER_PLAN.md`:
+Whenever suggesting connection searches, Pippo MUST strictly rotate across the verified 65+ Tier-1 companies and City Hubs in `PERSONAL_BRANDING/TIER1_BRANDING_MASTER_PLAN.md` (Sections 2 & 3):
 
-### 💎 TIER 1A: GLOBAL TECH TITANS & PURE DATA PLATFORMS (₹35.0 — ₹48.0+ LPA)
-* **Companies:** Amazon / AWS, Microsoft IDC, Snowflake, Databricks, Uber India, Google, Atlassian, LinkedIn.
-* **Target Roles:** `Data Engineer`, `Data Engineer 2`, `Senior Data Engineer`, `Big Data Engineer`.
-* **Primary Hubs:** Bengaluru, Hyderabad.
+### 💎 CATEGORY A & B: GLOBAL TITANS & ENTERPRISE GCCs (₹28.0 — ₹48.0+ LPA)
+* **Companies:** Microsoft IDC, Amazon/AWS, Google, Snowflake, Databricks, Salesforce, NVIDIA, Barclays, Deutsche Bank, BNY Mellon, Mastercard, JPMorgan Chase, Goldman Sachs, Target India, Lowe's India.
+* **Hubs:** Pune (Yerwada, Kharadi, Magarpatta, Baner), Bengaluru, Hyderabad.
 
-### 🏢 TIER 1B: ENTERPRISE GLOBAL CAPABILITY CENTERS (GCCs) & FINTECH (₹28.0 — ₹36.0 LPA)
-* **Companies:** Walmart Global Tech India, Goldman Sachs, JPMorgan Chase, PayPal, Intuit, Mastercard, Barclays Tech, Target Technology India, Lowe's India, American Express.
-* **Target Roles:** `Data Engineer`, `Data Engineer - BA4/AVP`, `Senior Data Engineer`, `Staff Data Engineer`, `Lead Data Architect`.
-* **Primary Hubs:** Bengaluru, Pune, Hyderabad, Gurugram.
+### 🚗 CATEGORY C: AUTOMOTIVE R&D & INDUSTRIAL GCCs (₹24.0 — ₹36.0 LPA)
+* **Companies:** John Deere, Mercedes-Benz R&D (MBRDI), BP Digital Hub, Eaton, Siemens, Bosch, Boeing India, Shell.
+* **Hubs:** Pune, Bengaluru, Chennai.
 
-### 🦄 TIER 1C: HIGH-GROWTH UNICORNS & PRODUCT HEAVYWEIGHTS (₹24.0 — ₹32.0 LPA)
-* **Companies:** Swiggy, PhonePe, Razorpay, CRED, Zepto, Meesho, Flipkart, Zomato/Blinkit, Groww, Zerodha.
-* **Target Roles:** `Data Engineer`, `Data Engineer II`, `Senior Data Engineer`, `Analytics Engineer`.
-* **Primary Hubs:** Bengaluru, Pune, Gurugram, Mumbai.
+### 🦄 CATEGORY D & E: HIGH-GROWTH UNICORNS & ANALYTICS FIRMS (₹22.0 — ₹38.0 LPA)
+* **Companies:** Flipkart, Swiggy, Zepto, Zomato/Blinkit, PhonePe, Razorpay, CRED, Groww, Zerodha, Meesho, InMobi, Tiger Analytics, Fractal Analytics, Thoughtworks, Quantiphi.
+* **Hubs:** Bengaluru, Pune, Gurugram, Mumbai.
 
 ---
 
