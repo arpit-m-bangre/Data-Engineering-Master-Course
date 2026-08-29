@@ -511,7 +511,7 @@ GO
    - FOREIGN KEY: Connects child table to parent table.
      • Prevents adding an order for a customer that does not exist.
 */
-
+-- till here 
 SELECT 
     e.EmpID, e.EmpName, e.Salary,
     d.DeptName, d.Location

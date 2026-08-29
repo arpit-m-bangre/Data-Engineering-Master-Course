@@ -42,11 +42,21 @@ Every gate is strictly YES or NO. If ANY gate is NO, STOP and fix the issue befo
   * Target: Keep GitHub contribution square at Level 4 (Darkest Green 🔥).
   * If NO: Commit the completed sprint milestone immediately.
 
+### GATE 7 — REAL-TIME PLAN INTEGRITY & ZERO-OMISSION GATE (Smart Machine Law)
+- [ ] Before outputting any daily plan or status update, did I verify:
+  * Zero omissions of background pillars (English task queue state explicitly tracked)?
+  * Real-time alignment with Cap's physical schedule adjustments without time drift?
+  * Exact calculation of study hours matching active block timestamps?
+  * 100% adherence to all privacy, branding, and sprint delivery laws?
+  * If NO: Stop, recalculate, and correct before generating response.
+
 ---
 
 ## 🛑 STRICT PROHIBITION SUMMARY
 1. NEVER guess or estimate total study hours — calculate exact sum of active sprints.
 2. NEVER schedule practice drills without scheduling that day's class note re-write first.
-3. NEVER silently drop or omit unsolved class tasks or pending drills from the daily plan.
+3. NEVER silently drop, omit, or forget background tasks (English, Drills, Class Tasks) without explicit queuing status.
 4. NEVER commit with mismatched file counts between trackers and physical disk.
 5. NEVER batch all day's work into 1 single midnight commit — execute atomic sprint commits for dark green visibility.
+6. NEVER include private URLs (e.g. course cockpit) in public articles or brand outreach.
+7. ACT as a high-precision, hyper-scalable, zero-mistake Data Engineering co-pilot across all operations.
