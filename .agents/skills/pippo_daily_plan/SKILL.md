@@ -56,7 +56,7 @@ For any class day being worked on, the order MUST be strictly:
   * [ ] **Pillar 6:** English Practice Book Task (0.50h: 1 task daily, cycling 1 to 125).
   * [ ] **Pillar 7:** Pre-Class Warmup & Readiness (0.25h).
   * [ ] **Pillar 8:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat, 1.25h).
-  * [ ] **Pillar 9:** Compulsory 210-Day IG/Shorts Publishing (10:15 PM - 10:30 PM, 0.0 Study Hr Impact) + Final System Sync & GitHub Push (10:30 PM - 10:45 PM, 0.25h).
+  * [ ] **Pillar 9 (Launches Monday 31 Aug 2026):** Compulsory 210-Day IG/Shorts Publishing (10:15 PM - 10:30 PM, 0.0 Study Hr Impact, active starting Monday 31 Aug 2026 Day 001) + Final System Sync & GitHub Push (10:30 PM - 10:45 PM, 0.25h). NEVER schedule prior to Monday 31 Aug 2026.
 
 ### 3. User Stated Start Time & Zero Personal Assumptions Law:
 - When Cap specifies a start time (e.g. *"Start day from 11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.

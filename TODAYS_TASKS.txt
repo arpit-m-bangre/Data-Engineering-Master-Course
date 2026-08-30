@@ -12,7 +12,7 @@
 [MUST-WIN 3] Super 50 Practice Engine (02:45 PM - 05:15 PM & 05:45 PM - 07:45 PM): Solve Q01 to Q50 Complete in SSMS
 [MUST-WIN 4] Class Test Mastery (08:30 PM - 09:45 PM): Solve 10 Practical Assessment Scenarios (`2026-08-27_CLASS_TASK.SQL`)
 [SHOULD-WIN] English Communication Task 4 (09:45 PM - 10:15 PM): STAR Method & Voice Articulation
-[BONUS]      Compulsory IG Content (10:15 PM) + Lock Streak Day 26 with Live Vercel Dashboard Sync (10:30 PM)
+[BONUS]      Lock Streak Day 26 with Live Vercel Dashboard Sync (10:15 PM - 10:45 PM)
 
 TOTAL STUDY TIME TODAY: 9.50 Hours (Authority: 1.00h | Bootcamp Revision: 2.00h | Super 50 Part 1: 2.50h | Super 50 Part 2: 2.00h | Class Test 10Q: 1.25h | English: 0.50h | Night Sync: 0.25h)
 
@@ -80,20 +80,16 @@ TOTAL STUDY TIME TODAY: 9.50 Hours (Authority: 1.00h | Bootcamp Revision: 2.00h 
     -> [DoD]: All 10 test scenarios solved and validated in SSMS
 
 --------------------------------------------------------------------
-           COMMUNICATION & 210-DAY SOCIAL AUTHORITY BLOCK
+               COMMUNICATION & ENGLISH PRACTICE BLOCK
 --------------------------------------------------------------------
 [ ] 09:45 PM - 10:15 PM : Sprint 6 — English Communication Task 4: STAR Framework & Voice Articulation 🎙️📖
     -> Complete Task 4 from 125-Task English Book: STAR technique articulation, DE scenario pitch & speaking aloud
     -> [DoD]: Task 4 notes logged and vocalized
 
-[ ] 10:15 PM - 10:30 PM : Sprint 7 — Compulsory 210-Day Short-Form Tech Authority Publishing (Day 07) 📱🎬
-    -> Publish today's 15-minute scheduled reel/carousel from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/` across IG, Shorts & LinkedIn (0.0 study hour impact)
-    -> [DoD]: Short-form asset published across channels
-
 --------------------------------------------------------------------
-          NIGHT BRAIN SYNC & BIO-PACED RECOVERY BLOCK
+           NIGHT BRAIN SYNC & BIO-PACED RECOVERY BLOCK
 --------------------------------------------------------------------
-[ ] 10:30 PM - 10:45 PM : Sprint 8 — Final Night Brain Sync, GitHub Dark Green Push & Vercel Trigger (Streak Day 26 🔥) 🚀
+[ ] 10:15 PM - 10:45 PM : Sprint 7 — Final Night Brain Sync, GitHub Dark Green Push & Vercel Trigger (Streak Day 26 🔥) 🚀
     -> Update Master Learning Tracker, Metrics JSON, Concept Heatmap & System Map
     -> Run `node copy_tasks.cjs; npm run build` in `DASHBOARD/`
     -> Git commit and push to lock Streak Day 26 on GitHub & Vercel

@@ -53,7 +53,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 ### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
 - [ ] Is the 60-min Omni-Channel Authority & Syndication Sprint scheduled (LinkedIn + 50-Platform Roadmap)? → If NO: add it.
 - [ ] Are targeted connection requests strictly aligned with the Tier-1 Dream Fleet (Tier 1A Titans, Tier 1B GCCs, Tier 1C Unicorns) per `.agents/rules/linkedin_networking_targeting_protocol.md`? → If NO: enforce now.
-- [ ] Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) before final sync? → If NO: add it.
+- [ ] Is today >= Monday 31 Aug 2026? If YES: Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) per `01_210_DAYS_MASTER_CONTENT_CALENDAR.md`? If NO (i.e. before Monday 31 Aug 2026): Strictly DO NOT schedule 210-Day IG/Shorts content.
 
 ### GATE G — ANTI-PASSIVE COMPLIANCE & SPRINT SKIP NEGOTIATION (Every task modification)
 - [ ] Did Cap say "skip", "defer", or "drop" a task/sprint? → If YES: Did I challenge the blocker, negotiate minimum-effective-dose, and ask the real reason instead of blindly marking deferred? If NO: STOP and challenge/negotiate now!
@@ -227,7 +227,7 @@ The Agent MUST ensure the user's daily plans automatically incorporate these 8 p
 6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
 7. **Daily Social Presence & 50-Platform Digital Authority Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
 8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
-9. **Compulsory 210-Day IG / Short-Form Content Publishing (15 Mins Daily - 0.0 Study Hr Impact):** Dedicated fun/recharge slot right after live class (10:15 PM - 10:30 PM). Publish today's scheduled 15-minute asset from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md` (Reels, Carousels, Infographics, Sunday Quizzes) across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: Last priority, 100% compulsory, 0.0 study hour impact.
+9. **Compulsory 210-Day IG / Short-Form Content Publishing (15 Mins Daily - 0.0 Study Hr Impact - Launches Monday 31 Aug 2026):** Dedicated fun/recharge slot right after live class (10:15 PM - 10:30 PM). Officially begins Monday, 31 August 2026 (Day 001). NEVER schedule prior to Monday 31 Aug 2026. Publish today's scheduled 15-minute asset from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md` (Reels, Carousels, Infographics, Sunday Quizzes) across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: Last priority, 100% compulsory once active, 0.0 study hour impact.
 
 ---
 

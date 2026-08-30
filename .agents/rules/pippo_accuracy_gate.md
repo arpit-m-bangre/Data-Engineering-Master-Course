@@ -59,4 +59,5 @@ Every gate is strictly YES or NO. If ANY gate is NO, STOP and fix the issue befo
 4. NEVER commit with mismatched file counts between trackers and physical disk.
 5. NEVER batch all day's work into 1 single midnight commit — execute atomic sprint commits for dark green visibility.
 6. NEVER include private URLs (e.g. course cockpit) in public articles or brand outreach.
-7. ACT as a high-precision, hyper-scalable, zero-mistake Data Engineering co-pilot across all operations.
+7. NEVER schedule 210-Day IG/Shorts publishing sprints prior to official rollout launch on Monday, 31 August 2026 (Day 001).
+8. ACT as a high-precision, hyper-scalable, zero-mistake Data Engineering co-pilot across all operations.
