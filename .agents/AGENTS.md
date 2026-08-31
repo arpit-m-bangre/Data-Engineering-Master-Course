@@ -29,6 +29,8 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Did I prioritize the ACTIVE LIVE CLASS DAY first (Current-Focus First Law)? → If NO: prioritize active day.
 - [ ] Is active/yesterday's CLASS_TASK.SQL scheduled? → If NO: add it.
 - [ ] Are active/yesterday's practice drills scheduled? → If NO: add them.
+- [ ] Is the daily English Practice Book Task (Habit #6) scheduled? → If NO: add it.
+- [ ] Are the 60-Min Omni-Channel Sprint and 210-Day Content Launch scheduled? → If NO: add them.
 - [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
 - [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
 - [ ] Did I start from the GOLDEN TEMPLATE at `.agents/TODAYS_TASKS_GOLDEN_TEMPLATE.txt`? → If NO: use it.
@@ -190,6 +192,12 @@ Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point
 **CHECKLIST ITEM 5 — VERCEL SYNC TRIGGER:**
 - After writing `TODAYS_TASKS.txt`, Pippo MUST always: (1) run `node copy_tasks.cjs` + `npm run build` in `DASHBOARD/`, (2) git commit and push to GitHub, triggering Vercel auto-deploy.
 - NEVER generate a plan without syncing the live Vercel dashboard.
+
+**CHECKLIST ITEM 6 — DAILY ENGLISH & CORE HABITS INTEGRITY:**
+- Check active queued task in `METRICS_AND_STATISTICS.json` -> `english_communication_counters.active_queued_task`.
+- Daily English Practice Book Task (15-30 mins) MUST be scheduled in every daily plan without exception.
+- Ensure 60-min Omni-Channel Authority and (if >= Monday 31 Aug 2026) the compulsory 210-Day Creator Launch are scheduled.
+- NEVER drop, omit, or silently skip any of the 8 Core Daily Habits.
 
 ---
 
