@@ -18,6 +18,9 @@ Desktop.ini
 *.tmp.sql
 scratch_*.sql
 
+# Personal Media & Unoptimized Raw Assets
+PHOTOS/
+
 # System & Environment Files
 *.env
 *.pem
