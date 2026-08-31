@@ -1,19 +1,20 @@
 ====================================================================
                   DAILY MISSION: 31 AUG 2026 (MONDAY)
-      [STATUS: REALIGNED NIGHT ENGINE | 02:45 AM HARD CUTOFF | STREAK DAY 27]
+      [STATUS: ZERO-OMISSION NIGHT ENGINE | 02:45 AM HARD CUTOFF | STREAK DAY 27]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Realigned night execution after hospital & portfolio duty. Execute Live Class Day 24, Omni-Channel Authority, 210-Day IG/Shorts Launch, Day 23 Class Test (10 Scenarios) + Days 09-22 SQL Bootcamp, and Streak Day 27 lock.
+[!] MISSION OBJECTIVE: Zero-omission night execution. Execute Live Class Day 24, Omni-Channel Authority, 210-Day IG Launch, English Task #04, Day 23 Class Test (10 Scenarios) + Days 09-22 SQL Bootcamp, and Streak Day 27 lock.
 
 [CURRENT TARGET]: Day 23 Class Test (10 Practical Scenarios Lab) + 10-Hour SQL Bootcamp Mastery (Days 09 to 22) - Target Finish: 31 Aug 2026 Night Finish
 
 [MUST-WIN 1] Live Data Engineering Class (Online Batch 15 - 09:00 PM to 10:15 PM).
 [MUST-WIN 2] 60-Min Omni-Channel Authority & Syndication (LinkedIn Post + Moniver/50-Platform Syndication).
 [MUST-WIN 3] 210-Day Creator Engine Launch (Day 001 Carousel: 5 Window Functions - IG & LinkedIn PDF).
-[MUST-WIN 4] Deep SQL Mastery (12:00 AM - 02:30 AM: Day 23 Class Test 10 Scenarios + Days 09-22 Core Syntax).
-[MUST-WIN 5] Final Night Brain Sync & GitHub Push (Streak Day 27 Locked).
+[MUST-WIN 4] English Communication Mastery (Task #04 - STAR Method & Verbal Pitch).
+[MUST-WIN 5] Deep SQL Mastery (12:05 AM - 02:30 AM: Day 23 Class Test 10 Scenarios + Days 09-22 Core Syntax).
+[MUST-WIN 6] Final Night Brain Sync & GitHub Push (Streak Day 27 Locked).
 
-TOTAL STUDY TIME TODAY: 5.5 Hours (Live Class: 1.25h | Omni-Channel: 1.00h | 210-Day Creator: 0.50h | Deep SQL Lab: 2.50h | Brain Sync: 0.25h)
+TOTAL STUDY TIME TODAY: 5.8 Hours (Live Class: 1.25h | Omni-Channel: 1.00h | 210-Day Creator: 0.50h | English: 0.35h | Deep SQL Lab: 2.40h | Brain Sync: 0.25h)
 
 --------------------------------------------------------------------
                      AFTERNOON / EVENING DUTY
@@ -41,15 +42,17 @@ TOTAL STUDY TIME TODAY: 5.5 Hours (Live Class: 1.25h | Omni-Channel: 1.00h | 210
     -> Theme: "5 Window Functions Every Data Engineer Must Master" (IG Carousel + LinkedIn Document).
     -> [DoD]: Carousel published or finalized with caption & tags ready.
 
-[-] 11:45 PM - 12:00 AM : Transition, Hydration & SSMS Setup Break
-    -> Rest eyes, hydrate, stretch, and launch SSMS workspace for SQL deep sprint.
+[ ] 11:45 PM - 12:05 AM : Sprint 3 - English Communication Mastery (Task #04)
+    -> Execute Task #04: STAR method behavioral framework for technical interviews.
+    -> 10 mins writing concise scenario + 10 mins verbal pitch recording/speaking.
+    -> [DoD]: Task #04 answered cleanly and spoken fluently.
 
-[ ] 12:00 AM - 02:30 AM : Sprint 3 - Deep SQL Mastery: Day 23 Class Test & Days 09-22 Bootcamp
-    -> Part A (12:00 - 01:15): Day 23 Class Test Lab (10 Practical Scenarios) in `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`.
-    -> Part B (01:15 - 02:30): 10-Hour SQL Bootcamp Days 09 to 22 Core Drills in `01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`.
+[ ] 12:05 AM - 02:30 AM : Sprint 4 - Deep SQL Mastery: Day 23 Class Test & Days 09-22 Bootcamp
+    -> Part A (12:05 - 01:20): Day 23 Class Test Lab (10 Practical Scenarios) in `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`.
+    -> Part B (01:20 - 02:30): 10-Hour SQL Bootcamp Days 09 to 22 Core Drills in `01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`.
     -> [DoD]: 10 class-test scenarios solved in SSMS + key bootcamp query syntax verified.
 
-[ ] 02:30 AM - 02:45 AM : Sprint 4 - Final Night Brain Sync, GitHub Push & Vercel Trigger (Streak Day 27)
+[ ] 02:30 AM - 02:45 AM : Sprint 5 - Final Night Brain Sync, GitHub Push & Vercel Trigger (Streak Day 27)
     -> Update completion status in `MASTER_LEARNING_TRACKER.txt` & `METRICS_AND_STATISTICS.json`.
     -> Run `node copy_tasks.cjs` and `npm run build` in `DASHBOARD/`.
     -> Git commit and push to lock Streak Day 27 on GitHub and deploy live Vercel dashboard.
@@ -59,6 +62,6 @@ TOTAL STUDY TIME TODAY: 5.5 Hours (Live Class: 1.25h | Omni-Channel: 1.00h | 210
     -> 6.75 hours protected sleep; phone away, recovery locked.
 
 ====================================================================
-*Rules: Clean Focus | No Fake Completion | 02:45 AM Hard Stop | Streak Day 27 Locked*
-*Daily Quote: "Pace the night with precision — solve the active class test and lock the streak."*
+*Rules: Zero Habit Loss | English Locked | 02:45 AM Hard Stop | Streak Day 27*
+*Daily Quote: "Every core daily habit executed — no compromises on the 32 LPA standard."*
 ====================================================================
