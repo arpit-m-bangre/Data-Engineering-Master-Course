@@ -17,9 +17,9 @@
   },
   "active_short_term_target": {
     "target_title": "10-Hour SQL Bootcamp Mastery (Days 01 to 22) + Day 23 Class Test (10 Practical Scenarios)",
-    "target_deadline": "2026-08-31 21:00",
+    "target_deadline": "2026-09-01 02:45",
     "status": "IN_PROGRESS",
-    "progress_summary": "Days 01 to 08 Completed in SSMS; Days 09 to 22 Revision + 10 Class Test Scenarios Target Finish by Monday 9 PM",
+    "progress_summary": "Hospital duty completed; Night block realigned for Live Class Day 24, Omni-Channel, 210-Day Creator launch, and Deep SQL Practice (Days 09-22 + Day 23 Class Test 10 Scenarios)",
     "total_phases": 2,
     "current_phase": 2,
     "target_resource": "01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL & 01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL",

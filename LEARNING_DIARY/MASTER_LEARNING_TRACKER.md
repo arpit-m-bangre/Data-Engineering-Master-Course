@@ -24,7 +24,7 @@
 
 | Target Milestone | Deadline | Target Resource | Status & Phases |
 | :--- | :--- | :--- | :--- |
-| **10-Hour SQL Bootcamp Mastery (Days 01-22) + Day 23 Class Test (10 Scenarios)** | **31 Aug 2026 by 9:00 PM** | [`01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`](../01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL) & [`01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`](../01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL) | 🟡 **Phase 2 in Progress** (Days 01-08 Done, Days 09-22 + 10Q Test Target Finish Mon 9 PM) |
+| **10-Hour SQL Bootcamp Mastery (Days 01-22) + Day 23 Class Test (10 Scenarios)** | **01 Sep 2026 by 02:45 AM** | [`01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`](../01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL) & [`01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`](../01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL) | 🟡 **Phase 2 Realigned for Night Execution** (Days 01-08 Done, Days 09-22 + 10Q Test Target Finish 02:45 AM) |
 | **210-Day IG / Short-Form Content Rollout** | **31 Aug 2026 (Monday)** | [`EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/`](../EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/) | ⏳ Scheduled for Monday Rollout |
 
 ---
