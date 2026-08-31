@@ -1,82 +1,86 @@
-====================================================================
+﻿====================================================================
                   DAILY MISSION: 31 AUG 2026 (MONDAY)
-      [STATUS: EXTENDED DEEP-WORK ENGINE | 12:45 AM BEDTIME | STREAK DAY 27 🔥]
+      [STATUS: HEALTH-ADJUSTED DEEP-WORK ENGINE | 01:45 AM BEDTIME | STREAK DAY 27]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Execute full 60-Min Omni-Channel Authority, master Bootcamp Phase 2 (Days 09-22), conquer Day 23 Class Test Scenarios, complete English Task #04, attend Live Class Day 24, launch 210-Day Creator Engine (30-Min Carousel Sprint), clear 14 Practice Drills, and lock Dark Green Streak Day 27!
+[!] MISSION OBJECTIVE: Protect health with a 03:00 PM to 05:00 PM recovery nap, then execute the highest-value SQL bootcamp, Day 23 class-test scenarios, English Task #04, Live Class Day 24, 210-Day Creator launch, Day 23 drills, and final dashboard sync without fake overloading.
 
-[🎯 CURRENT TARGET]: 10-Hour SQL Bootcamp Mastery (Days 01 to 22 — Days 01 to 08 Complete, Days 09 to 22 Pending) + Day 23 Surprise Class Test (10 Practical Scenarios Lab) — Target Finish: 31 Aug 2026 by 9:00 PM / Night Finish
+[CURRENT TARGET]: 10-Hour SQL Bootcamp Mastery (Days 01 to 22 - Days 01 to 08 Complete, Days 09 to 22 Pending) + Day 23 Surprise Class Test (10 Practical Scenarios Lab) - Target Finish: 31 Aug 2026 Night Finish
 
-[MUST-WIN 1] 60-Min Omni-Channel Authority & 50-Platform Syndication (LinkedIn + Dev.to/HackerRank Badges)
-[MUST-WIN 2] 10-Hour SQL Bootcamp Part 2 (Days 09 to 22 in SSMS) + Day 23 Class Test (10 Scenarios in SSMS)
-[MUST-WIN 3] Live Data Engineering Class (Online Batch 15 - 09:00 PM to 10:15 PM)
-[MUST-WIN 4] 210-Day Creator Engine Launch (30-Min Carousel Sprint: 5 Window Functions) + Day 23 Practice Drills (14 Drills)
-[MUST-WIN 5] English Communication Task #04 + Final Night Brain Sync (Streak Day 27 Push)
+[MUST-WIN 1] Health-first recovery nap from 03:00 PM to 05:00 PM so the night work does not crash.
+[MUST-WIN 2] 10-Hour SQL Bootcamp Part 2 (Days 09 to 22 in SSMS) + Day 23 Class Test split into two focused blocks.
+[MUST-WIN 3] Live Data Engineering Class (Online Batch 15 - 09:00 PM to 10:15 PM).
+[MUST-WIN 4] 210-Day Creator Engine Launch (30-Min Carousel Sprint: 5 Window Functions) + Day 23 Practice Drills (14 Drills).
+[MUST-WIN 5] English Communication Task #04 + Final Night Brain Sync (Streak Day 27 Push).
 
-TOTAL STUDY TIME TODAY: 8.75 Hours (Omni-Channel: 1.00h | Bootcamp: 1.75h | Class Test: 1.75h | English: 0.75h | Class: 1.25h | Drills: 1.50h | Class Sync: 0.35h | Night Sync: 0.15h)
-
---------------------------------------------------------------------
-                       AFTERNOON SPRINT BLOCK
---------------------------------------------------------------------
-[ ] 03:00 PM - 04:00 PM : Sprint 1 — 60-Min Omni-Channel Authority & 50-Platform Digital Syndication 🌐✍️
-    -> Part 1 (03:00 - 03:30): LinkedIn Post #26 on Window Functions vs GROUP BY + 5-7 Tier-1 DE connections (Walmart, Swiggy) + 3 comments
-    -> Part 2 (03:30 - 04:00): 50-Platform Syndication per `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md` (Dev.to article cross-post + HackerRank SQL 5-Star practice badge progress)
-    -> [DoD]: LinkedIn live, 5 requests sent, and Dev.to / HackerRank badge milestone logged
-
-[ ] 04:00 PM - 05:45 PM : Sprint 2 — 10-Hour SQL Bootcamp Mastery (Part 2: Days 09 to 22) 💻
-    -> Execute in SSMS: `01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`
-    -> Master Constraints, Subqueries, Joins, CTEs, Window Functions (LEAD/LAG), and CASE expressions with full query executions
-    -> [DoD]: All queries executed in SSMS with zero syntax errors and execution logic verified
-
-[-] 05:45 PM - 06:00 PM : Tea & Brain Refreshment Break ☕🌿
-    -> Physical stretch, hydration, and short mental reset
+TOTAL STUDY TIME TODAY: 8.1 Hours (Omni-Channel: 1.00h | Bootcamp: 1.75h | Class Test: 1.75h | English: 0.50h | Class: 1.25h | Drills: 1.50h | Sync: 0.35h)
 
 --------------------------------------------------------------------
-                     EVENING DEEP WORK BLOCK
+                       HEALTH RECOVERY BLOCK
 --------------------------------------------------------------------
-[ ] 06:00 PM - 07:45 PM : Sprint 3 — Faculty Class Test Mastery (10 Practical Scenarios Lab) 🛡️
-    -> Open and solve: `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL` in SSMS
-    -> Solve Scenarios 1-10: Salary jumps >30%, Price changes via LAG(), User balance running totals, and Fraud detection
-    -> [DoD]: All 10 test queries written, validated, and returning accurate row counts
+[-] 03:00 PM - 05:00 PM : Health Recovery Nap & Reset Break
+    -> Sleep properly; phone away, lights low, no scrolling.
+    -> Hydrate after waking and do a 5-minute slow mobility reset.
+    -> [DoD]: Wake at 05:00 PM with water, light snack, and SSMS ready.
 
-[ ] 07:45 PM - 08:30 PM : Sprint 4 — English Communication Mastery (Task #04) 🗣️
-    -> Open and complete: `PERSONAL_BRANDING/ENGLISH_BOOK/04_Task_04.md`
-    -> Practice 20-minute vocal pronunciation drill and written professional responses
-    -> [DoD]: Task #04 completed and signed off
+--------------------------------------------------------------------
+                       EVENING SPRINT BLOCK
+--------------------------------------------------------------------
+[ ] 05:00 PM - 06:00 PM : Sprint 1 - 60-Min Omni-Channel Authority & 50-Platform Digital Syndication
+    -> Part 1 (05:00 - 05:30): LinkedIn Post #26 on Window Functions vs GROUP BY + 5 Tier-1 DE connections (Walmart, Swiggy) + 3 comments.
+    -> Part 2 (05:30 - 06:00): 50-Platform Syndication per `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md` (Dev.to cross-post + HackerRank SQL badge progress).
+    -> [DoD]: LinkedIn live, 5 requests sent, and Dev.to / HackerRank badge milestone logged.
 
-[-] 08:30 PM - 09:00 PM : Dinner & Pre-Class Warmup Reset Break 🍽️🥗
-    -> Wholesome dinner, database connection test, and mental prep for live class
+[ ] 06:00 PM - 07:45 PM : Sprint 2 - 10-Hour SQL Bootcamp Mastery (Part 2: Days 09 to 22)
+    -> Execute in SSMS: `01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`.
+    -> Focus: Constraints, Subqueries, Joins, CTEs, Window Functions (LEAD/LAG), and CASE expressions.
+    -> [DoD]: Core queries executed in SSMS with syntax errors fixed immediately.
+
+[ ] 07:45 PM - 08:20 PM : Sprint 3 - Day 23 Class Test Mastery Part A (Scenarios 1 to 4)
+    -> Open: `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`.
+    -> Solve Scenarios 1-4: salary jumps, price volatility, calendar completeness, and identical price self-join.
+    -> [DoD]: First 4 queries written, run, and result shape checked.
+
+[ ] 08:20 PM - 08:50 PM : Sprint 4 - English Communication Mastery (Task #04)
+    -> Complete the active Task #04: STAR method, professional tone, and 2-minute verbal summary.
+    -> Keep it lean today because health recovery already consumed the afternoon block.
+    -> [DoD]: One written answer and one spoken practice round completed.
+
+[-] 08:50 PM - 09:00 PM : Dinner, Hydration & Pre-Class Warmup Break
+    -> Light dinner, database connection check, and class notebook ready.
 
 --------------------------------------------------------------------
                      LIVE CLASS & NIGHT SPRINT BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 24) 🎓
-    -> Live lecture focus: Advanced Relational Engine, Indexing & Query Tuning
-    -> Capture raw queries, whiteboard architectural diagrams, and faculty interview tips
+[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 24)
+    -> Live lecture focus: Advanced Relational Engine, Indexing & Query Tuning.
+    -> Capture raw queries, whiteboard architecture notes, and faculty interview tips.
 
-[-] 10:15 PM - 10:45 PM : 210-Day Creator Engine Launch (Day 001 — 30-Min Carousel Sprint) 📑🚀
-    -> Compulsory 30-min Carousel Production & Publishing per format rule (Carousel = 30m, Single Post = 15m, Reel = 60m)
-    -> Design, assemble & publish 5-slide Carousel: "5 Window Functions Every Data Engineer Must Master" (IG Carousel + LinkedIn PDF Document)
+[ ] 10:15 PM - 10:45 PM : Sprint 5 - 210-Day Creator Engine Launch (Day 001 Carousel)
+    -> Compulsory 30-min Carousel Production & Publishing per format rule (Carousel = 30m).
+    -> Design, assemble, and publish: "5 Window Functions Every Data Engineer Must Master" (IG Carousel + LinkedIn PDF Document).
+    -> [DoD]: Carousel published or final export saved with caption ready.
 
-[ ] 10:45 PM - 12:15 AM : Sprint 5 — Perpetual SQL Practice: Day 23 Practice Drills (14 Drills) 🎯
-    -> Solve Q1-Q14 drills in SSMS: `01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-27_QUESTIONS.SQL`
-    -> Unhurried deep execution: LEAD/LAG partitions, DENSE_RANK salary tiers, and running balance fraud traps
-    -> [DoD]: 14 queries verified, executed cleanly in SSMS, and committed
+[ ] 10:45 PM - 11:55 PM : Sprint 6 - Day 23 Class Test Mastery Part B (Scenarios 5 to 10)
+    -> Continue: `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`.
+    -> Solve Scenarios 5-10: top spenders, peak hour, category revenue, monthly top employee, duplicate emails, and fraud collision.
+    -> [DoD]: All 10 class-test queries completed and validated in SSMS.
 
-[ ] 12:15 AM - 12:35 AM : Sprint 6 — Live Class Note Initial Capture & SSMS Verification ⚡
-    -> Review and run initial Day 24 live class queries in SSMS
-    -> [DoD]: Day 24 query scripts saved and validated
+[ ] 11:55 PM - 01:25 AM : Sprint 7 - Perpetual SQL Practice: Day 23 Practice Drills (14 Drills)
+    -> Solve Q1-Q14 drills in SSMS: `01_SQL/05_INDEX_WISE_QUESTIONS/2026-08-27_QUESTIONS.SQL`.
+    -> Prioritize LEAD/LAG partitions, DENSE_RANK salary tiers, consecutive orders, and multi-city fraud traps.
+    -> [DoD]: 14 queries attempted, failed cases marked, and clean reruns completed where possible.
 
-[ ] 12:35 AM - 12:45 AM : Sprint 7 — Final Night Brain Sync, GitHub Dark Green Push & Vercel Trigger (Streak Day 27 🔥) 🚀
-    -> Update Master Learning Tracker, Metrics JSON (Streak Day 27), and System Map
-    -> Run `node copy_tasks.cjs; npm run build` in `DASHBOARD/`
-    -> Git commit and push to lock Dark Green Streak Day 27 on GitHub & Vercel
-    -> [DoD]: Clean build, green Vercel deployment, and SSOT trackers 100% synchronized
+[ ] 01:25 AM - 01:45 AM : Sprint 8 - Final Night Brain Sync, GitHub Push & Vercel Trigger (Streak Day 27)
+    -> Update completion checkboxes honestly; do not mark unfinished work as done.
+    -> Run `node copy_tasks.cjs` and `npm run build` in `DASHBOARD/`.
+    -> Git commit and push to lock Streak Day 27 and dashboard sync.
+    -> [DoD]: Clean build, pushed commit, dashboard task source synchronized.
 
-[-] 12:45 AM - 08:00 AM : Deep Sleep & Bio-Paced Health Recovery 🌙💤
-    -> 7.25+ hours restorative sleep; protect circadian rhythm and bio-paced brain recovery
+[-] 01:45 AM - 09:00 AM : Deep Sleep & Bio-Paced Health Recovery
+    -> 7.25 hours protected sleep after the afternoon nap; no late scrolling.
 
 ====================================================================
-*Rules: Dynamic Content Time Standard (Carousel=30m) | 12:45 AM Hard Stop | Streak Day 27 Locked*
-*Daily Quote: "When precision meets execution, every single format delivers maximum authority."*
+*Rules: Health First | No Fake Completion | 01:45 AM Hard Stop | Streak Day 27 Locked*
+*Daily Quote: "Recover first, then execute the important work with clean focus."*
 ====================================================================
