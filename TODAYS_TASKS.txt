@@ -22,10 +22,9 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (Omni-Channel Authority: 1.00h | English & Te
     -> Second 30 Mins (50-Platform): Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Dev.to Article #03 published).
     -> [DoD]: LinkedIn live, Tier-1 invites sent, Dev.to Article #03 live on DA 92 profile.
 
-[ ] 10:00 AM - 10:30 AM : Sprint 2 — English Communication Mastery (Task #04) 🎙️
-    -> Execute English Practice Book Task #04 (STAR Method & Technical Articulation Aloud).
-    -> Record voice articulation of complex data engineering architectural decisions.
-    -> [DoD]: Task #04 practiced aloud, pitch recorded, articulation notes saved.
+[-] 10:00 AM - 10:30 AM : Sprint 2 — English Communication Mastery (Task #04) [DEFERRED - Book at Home, Rolled to Next Session]
+    -> English practice book not physically available during outing/travel.
+    -> [DoD]: Queued for execution upon return home with physical book.
 
 [ ] 10:30 AM - 11:00 AM : Sprint 3 — Deep SQL Engine: Day 23 Class Test (Part 1 - Scenarios 1 to 3) 💻
     -> Open SSMS and solve Scenarios 1, 2, and 3 in `01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL`.
@@ -66,10 +65,10 @@ TOTAL STUDY TIME TODAY: 8.00 Hours (Omni-Channel Authority: 1.00h | English & Te
 --------------------------------------------------------------------
                   POST-CLASS NIGHT SPRINT BLOCK
 --------------------------------------------------------------------
-[ ] 10:15 PM - 10:45 PM : Sprint 6 — 210-Day Creator Engine (Day 002 Reel Production) 🎬
-    -> Produce Day 002 Reel: "The 50% Order Drop Trap: Why LEAD() Needs an Anchor" (per `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md`).
-    -> Clean code snippet, record 30-45s screen walkthrough / voiceover, dished with viral copy.
-    -> [DoD]: Day 002 Reel published/scheduled across IG Reels & YouTube Shorts (0.0 study hr impact).
+[x] 10:15 PM - 10:45 PM : Sprint 6 — 210-Day Creator Engine (Day 002 Reel Staged & Code Ready) 🎬
+    -> Day 002 Reel Script & SQL Snippet generated in `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/day2/`.
+    -> Topic: "The 50% Order Drop Trap: Why LEAD() Needs an Anchor" (Vertical video script & copy locked).
+    -> [DoD]: Assets ready, prepped for record/publish across IG Reels & YouTube Shorts.
 
 [ ] 10:45 PM - 12:15 AM : Sprint 7 — 10-Hour SQL Bootcamp Mastery (Days 09 to 22 Rapid Fire) 🔥
     -> Execute rapid-fire drills for Days 09 to 22 in `01_SQL/07_QUICK_REVISION/10_HOUR_SQL_BOOTCAMP.SQL`.
