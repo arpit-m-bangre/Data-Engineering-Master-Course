@@ -212,9 +212,24 @@ INSERT INTO BankTransactions (TxnID, CustomerID, City, TxnTime, Amount) VALUES
 -- ----------------------------------------------------------------------------------------------------
 
 -- Write your SQL Query below:
-
-
-
+with salarydata as 
+(
+select 
+    empid,
+    salary,
+    salarydate,
+    lag(salary) over (partition by empid order by salarydate ) as prevsalary,
+    ROW_NUMBER() over ( partition by empid order by salarydate ) as rn 
+from EmployeeSalaries
+)
+select 
+    empid ,
+    salary as latestsaslary,
+    prevsalary,
+    SalaryDate
+from salarydata
+where rn = 1 
+    and (salary - prevsalary ) * 100 / prevsalary > 30 
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -225,8 +240,24 @@ INSERT INTO BankTransactions (TxnID, CustomerID, City, TxnTime, Amount) VALUES
 
 -- Write your SQL Query below:
 
-
-
+with pricedata as 
+(
+select 
+    productId,
+    ProductName,
+    price,
+    pricedate,
+    lag(price) over ( partition by productid order by pricedate) as prevprice 
+from ProductPriceHistory
+)
+select 
+    PRODUCTid,
+    productname,
+    count(*) as pricechangecount 
+from pricedata
+where price <> prevprice
+    and prevprice is not null 
+group by ProductID,ProductName
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -236,9 +267,24 @@ INSERT INTO BankTransactions (TxnID, CustomerID, City, TxnTime, Amount) VALUES
 -- ----------------------------------------------------------------------------------------------------
 
 -- Write your SQL Query below:
+with cte as
+(
+select 
+    CustomerID,count(distinct month(orderdate)) as count_of_months
+from Orders
+group by CustomerID
+)
+select * 
+from cte 
+where count_of_months = 12 
 
+-- or 
 
-
+select 
+    CustomerID,count(distinct month(orderdate)) as count_of_months
+from Orders
+group by CustomerID
+having count(distinct month(orderdate)) = 12
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -249,8 +295,14 @@ INSERT INTO BankTransactions (TxnID, CustomerID, City, TxnTime, Amount) VALUES
 
 -- Write your SQL Query below:
 
+select * from Products
 
 
+select 
+    p1.ProductName as prodcut1,
+    p2.ProductName as product2 ,
+    p1.price as matchingprice 
+from products p1  join products p2 on p1.price = p2.price 
 
 
 -- ----------------------------------------------------------------------------------------------------
@@ -261,6 +313,10 @@ INSERT INTO BankTransactions (TxnID, CustomerID, City, TxnTime, Amount) VALUES
 
 -- Write your SQL Query below:
 
+select top 5 CustomerID,sum(amount) as total_amount  
+from orders
+group by CustomerID
+order by total_amount desc
 
 
 

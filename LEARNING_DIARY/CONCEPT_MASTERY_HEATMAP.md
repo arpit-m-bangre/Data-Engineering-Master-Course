@@ -175,6 +175,19 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 15: T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING ENGINE
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C15.1** | `UPPER()` & `LOWER()` Case Normalization | MASTERED | Assuming SELECT projection permanently alters disk data | 0 | 🟢 Low |
+| **C15.2** | Case Sensitivity in CHECK Constraints (Collation Trap) | MASTERED | Default `CI_AS` collation evaluating `a = UPPER(a)` as true | 0 | 🔴 High |
+| **C15.3** | `LEN()` vs `DATALENGTH()` Storage Measurement | MASTERED | `LEN()` silently stripping trailing whitespace | 0 | 🔴 High |
+| **C15.4** | `CONCAT()` vs `+` Operator Null Propagation | MASTERED | `+` operator turning whole concatenated string to NULL | 0 | 🔴 High |
+| **C15.5** | `SUBSTRING()` 1-Based Indexing & Positional Extraction | MASTERED | Starting at index 0 and dropping 1st character | 0 | 🔴 High |
+| **C15.6** | Substring Frequency Counting Formula | MASTERED | `(LEN(str) - LEN(REPLACE(str, ch, ''))) / LEN(ch)` math error | 0 | 🔴 High |
+| **C15.7** | Dynamic PII Masking via `REPLICATE()` & `SUBSTRING()` | MASTERED | Negative length in `REPLICATE()` when string is short | 0 | 🔴 High |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:

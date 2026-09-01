@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 23 Class Note Files (2026-08-01 to 2026-08-27)
+Total Modules / Files: 24 Class Note Files (2026-08-01 to 2026-09-01)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -226,6 +226,19 @@ SECTION 1: DAILY CLASS BREAKDOWN
     23.9 User Account Deduplication: Finding Duplicate Email IDs via GROUP BY & HAVING
     23.10 Banking Fraud Detection: Detecting Simultaneous Multi-City Transactions (Self Join)
 
+24. DAY 24 (SEPTEMBER 01) - T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING ENGINE
+    24.1 T-SQL Server String Functions Overview (8 Primary Built-in Transformation Functions)
+    24.2 UPPER() & LOWER(): Dynamic Projection vs Permanent DML UPDATE
+    24.3 Case-Sensitivity Checks & SSMS Collation Trap (Latin1_General_BIN)
+    24.4 LEN() Mechanics: Trailing Space Trimming vs Leading/Embedded Spaces
+    24.5 REVERSE() Inversion Mechanics & Last Character Extraction
+    24.6 REPLACE() String Pattern Substitution & Reversible Swapping
+    24.7 REPLICATE() Character Multipliers & Visual Data Masking
+    24.8 String Concatenation: Operator '+' Coercion Errors vs Null-Safe CONCAT()
+    24.9 SUBSTRING() Positional Extraction (1-Based Slicing: start_pos, length)
+    24.10 Composite String Pipelines: Dynamic Password Generators & Name Formatting
+    24.11 Enterprise Data Cleansing: Mobile PII Masking (*******527) & Substring Frequency Counting
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -343,5 +356,15 @@ N. CONDITIONAL LOGIC & CASE EXPRESSIONS
     • Dynamic Sorting Patterns: ORDER BY CASE for Priority Pinning
     • Multi-Tier Temporal Status Labeling (DATEDIFF + NULL Checks)
     • Seasonal Quarter & Business Window Segmentation
+
+O. T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING
+    • Case Normalization: UPPER(), LOWER()
+    • Collation & Binary Case Enforcement (Latin1_General_BIN)
+    • String Metric & Storage: LEN() vs DATALENGTH()
+    • String Reversal & Slicing: REVERSE(), SUBSTRING()
+    • Search & Substitution: REPLACE()
+    • Padding & Masking: REPLICATE(), Dynamic PII Masking
+    • Null-Safe Concatenation: CONCAT() vs '+' Operator
+    • Substring Frequency Counting Formula: (LEN(str) - LEN(REPLACE(str, ch, ''))) / LEN(ch)
 
 ================================================================================
