@@ -3,7 +3,7 @@
 - **Platform:** [Dev.to](https://dev.to/arpitmbangre)
 - **Author:** Arpit Manoj Bangre
 - **Category:** SQL Internals & Window Functions
-- **Status:** Ready to Publish 🚀
+- **Status:** Published ✅
 - **Target Link:** `https://dev.to/new`
 
 ---

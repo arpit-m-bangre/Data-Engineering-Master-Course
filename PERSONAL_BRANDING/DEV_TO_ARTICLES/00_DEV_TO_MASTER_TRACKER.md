@@ -10,7 +10,7 @@
 
 | Metric | Current Status | Target Goal | Progress |
 | :--- | :---: | :---: | :---: |
-| **Total Articles Published** | **1** | 20 | 5.0% |
+| **Total Articles Published** | **3** | 20 | 15.0% |
 | **Active 4-Week Streak** | Week 1 Active 🔥 | 4 Weeks | [█░░░] 25% |
 | **Target Verified Badge** | In Progress 🏅 | 4-Week Author Badge | Target Unlock: ~28 Sep 2026 |
 | **Google 1st-Page Keywords** | Indexing | 15+ Ranked Articles | Permanent DA 92 Backlinks |
@@ -23,7 +23,7 @@
 | :-: | :---: | :--- | :--- | :---: |
 | **01** | 2026-08-28 | [SQL Execution Order Internals: Why WHERE Fails on Aliases](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-08-28_SQL_EXECUTION_ORDER_INTERNALS.md) | `2026-08-28_SQL_EXECUTION_ORDER_INTERNALS.md` | ✅ Published |
 | **02** | 2026-08-29 | [Subqueries vs CTEs: Query Optimizer Internals & Spooling Overhead](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-08-29_SUBQUERIES_VS_CTES.md) | `2026-08-29_SUBQUERIES_VS_CTES.md` | ✅ Published |
-| **03** | 2026-09-01 | [Window Functions Demystified: ROW_NUMBER vs RANK vs DENSE_RANK](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-09-01_WINDOW_FUNCTIONS_EXECUTION.md) | `2026-09-01_WINDOW_FUNCTIONS_EXECUTION.md` | 🚀 Ready to Publish |
+| **03** | 2026-09-01 | [Window Functions Demystified: ROW_NUMBER vs RANK vs DENSE_RANK](file:///d:/DE%20COURSE/PERSONAL_BRANDING/DEV_TO_ARTICLES/2026-09-01_WINDOW_FUNCTIONS_EXECUTION.md) | `2026-09-01_WINDOW_FUNCTIONS_EXECUTION.md` | ✅ Published |
 | **04** | 2026-09-06 | Clustered vs Non-Clustered Indexes: What Really Happens in B-Trees | `2026-09-06_INDEX_BTREE_INTERNALS.md` | ⏳ Queued |
 | **05** | 2026-09-13 | Top 5 SQL Interview Traps in Super 50: TRUNCATE Rollback & NULL Math | `2026-09-13_TOP_5_SUPER_50_TRAPS.md` | ⏳ Queued |
 | **06** | 2026-09-17 | Self Joins & Hierarchical Tree Queries Without Recursion | `2026-09-17_SELF_JOINS_HIERARCHIES.md` | ⏳ Queued |
