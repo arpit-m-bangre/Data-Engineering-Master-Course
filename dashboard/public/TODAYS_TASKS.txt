@@ -11,12 +11,12 @@
 [MUST-WIN 2] Class Task & Re-write Lab: Day 24 T-SQL String Functions (`01_SQL/04_CLASS_TASKS/2026-09-01_CLASS_TASK.SQL`) [07:00 PM - 09:00 PM].
 [MUST-WIN 3] Live Data Engineering Class (Online Batch 15 - Day 25) & Post-Class Night System Sync [09:00 PM - 12:15 AM].
 
-TOTAL STUDY TIME TODAY: 5.75 Hours (Omni-Channel Engine: 1.00h | System Deep Work: 1.00h | Class Tasks & Note Re-write: 2.00h | Pre-Class Prep: 0.50h | Live Class Day 25: 1.25h | Friends Meet Recharge: 6.00h Protected)
+TOTAL STUDY TIME TODAY: 8.50 Hours (Omni-Channel Engine: 1.00h | System Setup & Deep Work: 4.25h | Class Tasks & Note Re-write: 2.00h | Live Class Day 25: 1.25h | Friends Meet Recharge: 6.00h Protected)
 
 --------------------------------------------------------------------
                      MORNING BOOT & SYSTEM SETUP
 --------------------------------------------------------------------
-[ ] 09:30 AM - 11:00 AM : Sprint 1 — Morning System Setup & Architecture Calibration ⚙️
+[X] 09:30 AM - 11:00 AM : Sprint 1 — Morning System Setup & Architecture Calibration ⚙️
     -> Calibrate workspace tools, SSMS session, and daily mission parameters.
     -> Verify git state, review Day 24 T-SQL string notes buffer, and set up daily cockpit.
     -> [DoD]: Workstation primed, daily plan deployed, system ready for high-yield evening execution.
@@ -34,14 +34,9 @@ TOTAL STUDY TIME TODAY: 5.75 Hours (Omni-Channel Engine: 1.00h | System Deep Wor
     -> [DoD]: Restful social recharge completed, safe return home, ready for focused evening sprints.
 
 --------------------------------------------------------------------
-                 AFTERNOON / EVENING DEEP WORK & AUTHORITY
+                 AFTERNOON / EVENING DEEP WORK & SYSTEM
 --------------------------------------------------------------------
-[ ] 05:00 PM - 06:00 PM : Sprint 2 — 60-Min Omni-Channel Authority & 50-Platform Syndication 🌐
-    -> First 30 Mins (LinkedIn): Draft & publish Post #12 (#180DaysOfDataEngineering on T-SQL String Functions) + send 5-7 personalized connection requests to Tier-1 DEs (Amazon, Walmart, Swiggy, Uber) + 3 high-value architect comments.
-    -> Second 30 Mins (50-Platform): Execute today's active syndication from `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md`.
-    -> [DoD]: LinkedIn Post #12 published, 5-7 Tier-1 connection invites in queue, 50-Platform footprint extended.
-
-[ ] 06:00 PM - 07:00 PM : Sprint 3 — Core System Architecture & Platform Work 💻
+[X] 06:00 PM - 07:00 PM : Sprint 3 — Core System Architecture & Platform Work 💻
     -> Deep focus on core system engineering, script enhancements, and pipeline utilities.
     -> Review workspace consistency and portfolio alignment.
     -> [DoD]: Core system enhancements executed and validated.
@@ -72,20 +67,25 @@ TOTAL STUDY TIME TODAY: 5.75 Hours (Omni-Channel Engine: 1.00h | System Deep Wor
     -> [DoD]: Live class completed with raw notes captured for instant processing.
 
 --------------------------------------------------------------------
-                   NIGHT SYSTEM SPRINT & SYNC BLOCK
+                   NIGHT AUTHORITY & SYSTEM SYNC BLOCK
 --------------------------------------------------------------------
-[ ] 10:15 PM - 12:00 AM : Sprint 6 — Night System Deep Work & Day 25 Ecosystem Generation 🚀
+[ ] 10:15 PM - 11:15 PM : Sprint 2 — 60-Min Omni-Channel Authority & 50-Platform Syndication 🌐
+    -> First 30 Mins (LinkedIn): Draft & publish Post #12 (#180DaysOfDataEngineering on T-SQL String Functions) + send 5-7 personalized connection requests to Tier-1 DEs (Amazon, Walmart, Swiggy, Uber) + 3 high-value architect comments.
+    -> Second 30 Mins (50-Platform): Execute today's active syndication from `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md`.
+    -> [DoD]: LinkedIn Post #12 published, 5-7 Tier-1 connection invites in queue, 50-Platform footprint extended.
+
+[ ] 11:15 PM - 12:45 AM : Sprint 6 — Night System Deep Work & Day 25 Ecosystem Generation 🚀
     -> Process Day 25 live class into structured ecosystem (Class Notes, Daily Index, Revision Notes).
     -> Advance core workspace systems, automated tooling, and Sunday mock assessment roadmap.
     -> [DoD]: System components enhanced and Day 25 lecture materials structured.
 
-[ ] 12:00 AM - 12:15 AM : Sprint 7 — Final System Sync, GitHub Push & Vercel Trigger (Streak Day 29 🔥) 🚀
+[ ] 12:45 AM - 01:00 AM : Sprint 7 — Final System Sync, GitHub Push & Vercel Trigger (Streak Day 29 🔥) 🚀
     -> Update `MASTER_LEARNING_TRACKER.txt`, `METRICS_AND_STATISTICS.json`, and `SYSTEM_MAP.md`.
     -> Run `node copy_tasks.cjs` and `npm run build` in `DASHBOARD/`.
     -> Push atomic commit to GitHub to lock Streak Day 29 and update live Vercel dashboard.
     -> [DoD]: Clean build, verified deployment, Streak Day 29 locked.
 
-[-] 12:15 AM - 07:15 AM : Deep Sleep & Bio-Paced Health Recovery 💤
+[-] 01:00 AM - 08:00 AM : Deep Sleep & Bio-Paced Health Recovery 💤
     -> 7.0 hours protected recovery sleep; bio-paced circadian recharge.
 
 ====================================================================
