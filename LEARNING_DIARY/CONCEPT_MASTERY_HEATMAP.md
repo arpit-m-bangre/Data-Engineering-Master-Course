@@ -188,6 +188,18 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 16: ADVANCED STRING SLICING, TYPE CONVERSION & PARSING ENGINE
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C16.1** | `LEFT()` & `RIGHT()` Fixed-Width Boundary Extraction | MASTERED | Trailing spaces altering right boundary without `TRIM()` | 0 | 🟡 Medium |
+| **C16.2** | `TRIM()`, `LTRIM()`, `RTRIM()` Whitespace Cleansing | MASTERED | Unclean tabs `\t` escaping basic space checks | 0 | 🟡 Medium |
+| **C16.3** | `CAST()` vs `CONVERT()` Runtime Datatype Conversion | MASTERED | Assuming SELECT projection permanently alters column schema | 0 | 🔴 High |
+| **C16.4** | T-SQL Date Style Formatting (101, 103, 112, 120) | MASTERED | 2-digit year truncation ambiguity (Style 1 vs 101) | 0 | 🔴 High |
+| **C16.5** | Dynamic Name Parsing via `CHARINDEX()` & `LEFT`/`SUBSTRING` | MASTERED | Msg 537 crash on single-word names (0 - 1 = -1 length parameter) | 0 | 🔴 High |
+| **C16.6** | Non-Sargable Predicates via Function Wrapping | MASTERED | `WHERE CONVERT(...)` destroying B-Tree index seeks | 0 | 🔴 High |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:

@@ -308,4 +308,21 @@ DAY 19 — 01 SEP 2026 (TUESDAY) — Streak Day 28 🔥
 
 ============================================================
 
+DAY 20 — 02 SEP 2026 (WEDNESDAY) — Streak Day 29 🔥
+  * Live Data Engineering Class, Batch 15 (09:00 PM - 10:15 PM):
+    - Attended Day 25 Live Lecture — T-SQL Server Functions Part 2: Advanced String Manipulation & Type Casting.
+    - Covered: LEFT(), RIGHT() positional slicing, TRIM(), LTRIM(), RTRIM() tab and whitespace sanitization.
+    - Datatype Conversion: CAST() vs CONVERT() with regional style codes (US 101, British 103, ISO 112, ODBC 120), runtime conversion in aggregations SUM(CONVERT(INT, ...)) vs permanent DDL ALTER TABLE ... ALTER COLUMN.
+    - Delimiter and Pattern Search: CHARINDEX().
+    - Faculty Homework & Real-World String Parsing: Dynamically splitting Full Name into First Name and Second Name (Last Name) via LEFT, SUBSTRING, RIGHT, LEN, and CHARINDEX.
+    - Strategic Interview Framework: Prioritizing Clauses, Dates, Joins, Windows, CASE, Server Functions, ISNULL, and eliminating Correlated Subqueries in favor of set-based Joins & Window Functions. Upcoming DB objects preview: Stored Procedures, Views, Triggers, Indexes.
+  * Day 25 Ecosystem Synchronization:
+    - Standardized `01_SQL/01_CLASS_NOTES/2026-09-02.sql` (144 lines, uppercase SQL keywords, pure executable T-SQL under Constitutional Law #12).
+    - Created `01_SQL/02_DAILY_INDEX/2026-09-02_INDEX.SQL` and updated `01_COMBINED_INDEX_ALL_TOPICS.SQL` (25 class notes indexed, Category O expanded).
+    - Generated `01_SQL/03_REVISION_NOTES/2026-09-02_REVISION.md` (7-step framework, loaf slicer & lint roller analogies, pure markdown, clean ASCII math).
+    - Created `01_SQL/04_CLASS_TASKS/2026-09-02_CLASS_TASK.SQL` (5 faculty scenario tasks: First/Second name separation via SUBSTRING, separation via RIGHT, tab/space sanitization, date styles, and staging aggregation).
+    - Created 14 targeted practice drills in `01_SQL/05_INDEX_WISE_QUESTIONS/2026-09-02_QUESTIONS.SQL` (unsolved query blocks, exactly 14 questions).
+    - Synchronized dual trackers (`MASTER_LEARNING_TRACKER.txt` & `.md`), `METRICS_AND_STATISTICS.json`, `CONCEPT_MASTERY_HEATMAP.md`, and `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md`.
+  * System brain sync committed and pushed to GitHub (Streak Day 29 officially locked 🔥).
 
+============================================================

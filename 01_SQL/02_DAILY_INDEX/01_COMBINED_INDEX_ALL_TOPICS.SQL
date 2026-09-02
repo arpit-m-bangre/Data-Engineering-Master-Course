@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 24 Class Note Files (2026-08-01 to 2026-09-01)
+Total Modules / Files: 25 Class Note Files (2026-08-01 to 2026-09-02)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -239,6 +239,18 @@ SECTION 1: DAILY CLASS BREAKDOWN
     24.10 Composite String Pipelines: Dynamic Password Generators & Name Formatting
     24.11 Enterprise Data Cleansing: Mobile PII Masking (*******527) & Substring Frequency Counting
 
+25. DAY 25 (SEPTEMBER 02) - ADVANCED STRING FUNCTIONS, TYPE CASTING & NAME PARSER
+    25.1 Positional String Extraction: LEFT(str, n) & RIGHT(str, n)
+    25.2 Whitespace Cleansing: TRIM(), LTRIM(), RTRIM() & Tab/Space Sanitization
+    25.3 Runtime Datatype Conversion: CAST(expression AS data_type) ANSI Standard
+    25.4 T-SQL Styled Conversions: CONVERT(data_type, expression [, style]) & Date Formatting (1, 101, 103, 112, 120)
+    25.5 Runtime Conversion in Aggregations (SUM(CONVERT(INT, col))) vs DDL Schema Alterations (ALTER TABLE)
+    25.6 Substring Index Search: CHARINDEX(pattern, string [, start_pos])
+    25.7 Dynamic Text Parser Pipeline: Splitting Full Names into First Name & Last Name (LEFT, SUBSTRING, RIGHT, LEN)
+    25.8 Enterprise Interview Strategy: Scenario-based Query Solving (Clauses, Dates, Joins, Windows, CASE, ISNULL)
+    25.9 Query Performance Best Practices: Avoiding Correlated Subqueries in Favor of Set-Based Joins
+    25.10 Database Objects Roadmap: Stored Procedures, Views, Triggers, Indexes
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -366,5 +378,11 @@ O. T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING
     • Padding & Masking: REPLICATE(), Dynamic PII Masking
     • Null-Safe Concatenation: CONCAT() vs '+' Operator
     • Substring Frequency Counting Formula: (LEN(str) - LEN(REPLACE(str, ch, ''))) / LEN(ch)
+    • Positional Extraction: LEFT(), RIGHT()
+    • Whitespace Sanitization: TRIM(), LTRIM(), RTRIM()
+    • Pattern Searching: CHARINDEX()
+    • Runtime Datatype Conversions: CAST() vs CONVERT() with Style Codes
+    • Dynamic Text Parsing: Splitting Composite Strings & Full Names
+    • Interview Query Design Strategy & Upcoming Enterprise Objects (Procedures, Views, Triggers, Indexes)
 
 ================================================================================
