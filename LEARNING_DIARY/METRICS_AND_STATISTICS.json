@@ -26,13 +26,13 @@
     "status": "100% UP TO DATE (ZERO BACKLOG)"
   },
   "active_short_term_target": {
-    "target_title": "Comprehensive Full Course Revision (Days 01-22 Core Concepts + Day 23 Test Scenarios + Days 24-28 Live Classes)",
+    "target_title": "Complete SQL_SERVER_MASTERY_BOOTCAMP.SQL (Days 01-28 + 60 Checkpoint Questions)",
     "target_deadline": "2026-09-06 10:30",
     "status": "IN_PROGRESS",
-    "progress_summary": "Days 01-08 Revision done; Days 09-22 Core Deep Revision + Day 23 Test 10 Scenarios + Days 24-28 Live Classes targeted for full completion before Sunday 06 Sep 2026 10:30 AM Mock Assessment",
-    "total_phases": 3,
-    "current_phase": 2,
-    "target_resource": "01_SQL/03_REVISION_NOTES/ & 01_SQL/04_CLASS_TASKS/2026-08-27_CLASS_TASK.SQL",
+    "progress_summary": "Complete full 28-day curriculum revision and all 60 checkpoint questions across DataEngineeringMasterDB before Sunday 06 Sep 2026 10:30 AM Mock Assessment",
+    "total_phases": 6,
+    "current_phase": 1,
+    "target_resource": "!_QUICK_ACCESS/SQL_SERVER_MASTERY_BOOTCAMP.SQL",
     "social_content_rollout_date": "2026-09-02 (Wednesday - Day 001 Multi-Image Post Launch)"
   },
   "sql_ecosystem_counters": {
