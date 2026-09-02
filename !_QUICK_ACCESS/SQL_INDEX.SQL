@@ -1,10 +1,10 @@
 ================================================================================
                     MASTER COMBINED SQL COURSE INDEX
-                         (ALL TOPICS TILL NOW)
+                (COMPLETE 28-DAY SYLLABUS: DAYS 01 TO 28)
 ================================================================================
 
-Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 25 Class Note Files (2026-08-01 to 2026-09-02)
+Folder: !_QUICK_ACCESS/ (Direct Student Reference Hub)
+Total Curriculum Scope: Full 28 Class Days (2026-08-01 to 2026-09-05)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -251,6 +251,44 @@ SECTION 1: DAILY CLASS BREAKDOWN
     25.9 Query Performance Best Practices: Avoiding Correlated Subqueries in Favor of Set-Based Joins
     25.10 Database Objects Roadmap: Stored Procedures, Views, Triggers, Indexes
 
+26. DAY 26 (SEPTEMBER 03) - STORED PROCEDURES & DATABASE VIEWS
+    26.1 Stored Procedures Architecture (Pre-compiled execution batches vs ad-hoc scripts)
+    26.2 Syntax & Lifecycle: CREATE PROCEDURE, ALTER PROCEDURE, EXEC / EXECUTE
+    26.3 Input Parameters: Required parameters (@DeptID INT) & Default values (@City = 'Pune')
+    26.4 Output Parameters: Returning computed scalar metrics via @TotalCount INT OUTPUT
+    26.5 Procedural Control Flow: IF ... ELSE branching, WHILE loops, and error trapping
+    26.6 Explicit Transactions inside SP: BEGIN TRANSACTION, COMMIT TRANSACTION, ROLLBACK
+    26.7 Stored Procedure vs User-Defined Function (UDF): DML permissions & execution plan caching
+    26.8 Database Views: Stored query definitions vs physical storage (Virtual tables)
+    26.9 Security & Data Masking via Views (Restricting column and row access for analytics)
+    26.10 DML Mutations through Views: Single base table rule & non-updatable view limits
+    26.11 Materialized / Indexed Views: WITH SCHEMABINDING & clustered index materialization
+
+27. DAY 27 (SEPTEMBER 04) - TRIGGERS, BIGINT STORAGE & NULL COALESCING ENGINE
+    27.1 DML Triggers: Automated event execution on INSERT, UPDATE, DELETE
+    27.2 Trigger Types: AFTER / FOR Triggers vs INSTEAD OF Triggers
+    27.3 Magic Memory Tables: INSERTED (new state) & DELETED (old state) in RAM
+    27.4 Enterprise Audit Pipelines: Automated change tracking, mutation timestamps & SYSTEM_USER
+    27.5 INSTEAD OF Triggers on Views: Intercepting DML on multi-table joins safely
+    27.6 Integer Hierarchy: TINYINT (1B), SMALLINT (2B), INT (4B, 2.14B), BIGINT (8B, 9 Quintillion)
+    27.7 Arithmetic Overflow Trap (Msg 8115): High-volume SUM aggregations exceeding INT limit
+    27.8 Safe Pipeline Casting: SUM(CAST(Amount AS BIGINT)) & SUM(CONVERT(BIGINT, Amount))
+    27.9 Null Coalescing: COALESCE(val1, val2, ... fallback) multi-parameter left-to-right evaluation
+    27.10 COALESCE vs ISNULL: Data type precedence resolution & ANSI standard portability
+    27.11 Row Condensing / Collapsing: MAX(CASE ...) row collapsing & PIVOT foundations
+
+28. DAY 28 (SEPTEMBER 05) - INDEXES, B-TREE ARCHITECTURE & QUERY PERFORMANCE TUNING
+    28.1 Indexes Fundamentals: Full Table Scan O(N) vs B-Tree Index Seek O(log N)
+    28.2 Clustered Index: Physical page ordering on disk (1 per table, default on PRIMARY KEY)
+    28.3 Non-Clustered Index: Auxiliary B-Tree lookup structure with row/key pointers (Up to 999 per table)
+    28.4 Composite Indexes & Column Ordering: Leading edge column rule for multi-column keys
+    28.5 Covering Indexes & The INCLUDE Clause: Eliminating Key/Bookmark Lookups in execution plans
+    28.6 Query Execution Profiling: Index Seek (Laser pointer) vs Index Scan vs Table Scan
+    28.7 Sargability Best Practices: Why wrapping indexed columns in functions kills index seeks
+    28.8 The Master SQL 7-Pillar Query Stack: Clauses -> Dates -> Joins -> Windows -> CASE -> SPs -> Indexes
+    28.9 The Anti-Subquery Law: Replacing correlated subqueries with Window Functions & Hash Joins
+    28.10 Official SQL Module Graduation: Transition into Module 02 (Python, OOP & Data Cleansing)
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -384,5 +422,35 @@ O. T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING
     • Runtime Datatype Conversions: CAST() vs CONVERT() with Style Codes
     • Dynamic Text Parsing: Splitting Composite Strings & Full Names
     • Interview Query Design Strategy & Upcoming Enterprise Objects (Procedures, Views, Triggers, Indexes)
+
+P. DATABASE PROGRAMMABILITY & STORED PROCEDURES
+    • Stored Procedure Architecture & Execution Plan Caching
+    • Procedural Parameterization (@InputParams, @OutputParams)
+    • Control Flow (IF ... ELSE, WHILE, BEGIN TRAN ... COMMIT / ROLLBACK)
+    • Stored Procedures vs User-Defined Functions (DML vs Read-Only)
+
+Q. DATABASE VIEWS & ABSTRACTION LAYERS
+    • Virtual Query Definitions & Security Masking
+    • DML Modifications on Views & Single Base Table Constraints
+    • WITH SCHEMABINDING & Indexed Materialized Views
+
+R. EVENT-DRIVEN AUTOMATION (DML TRIGGERS)
+    • Trigger Types: AFTER / FOR vs INSTEAD OF Triggers
+    • Magic Virtual Tables: INSERTED vs DELETED in RAM
+    • Automated Auditing & Enterprise Change-Log Tracking Pipelines
+    • INSTEAD OF Triggers for Multi-Table View Mutation
+
+S. DATA TYPES, SCALABILITY & COALESCING
+    • Integer Memory Hierarchy (TINYINT, SMALLINT, INT, BIGINT)
+    • Arithmetic Overflow Avoidance (Msg 8115) via BIGINT Conversions
+    • Multi-Expression Null Coalescing: COALESCE() vs ISNULL()
+    • Row Condensing / Collapsing via Conditional Logic & PIVOT
+
+T. INDEXES, B-TREE STORAGE & QUERY OPTIMIZATION
+    • Clustered B-Tree Physical Sorting vs Non-Clustered Pointer Indexes
+    • Covering Indexes with the INCLUDE Clause
+    • Execution Plan Analysis: Index Seek vs Index Scan vs Table Scan
+    • Sargability Rules & Anti-Subquery Performance Optimization
+    • Final 7-Pillar SQL Master Query Engine Stack
 
 ================================================================================
