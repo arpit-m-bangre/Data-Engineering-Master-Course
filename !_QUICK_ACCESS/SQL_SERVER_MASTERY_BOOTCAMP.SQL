@@ -1,5 +1,5 @@
 /* ====================================================================
-   🚀 10-HOUR SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 28)
+   🚀 SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 28)
    THE DEFINITIVE 28-DAY T-SQL REVISION & 60-QUESTION SPRINT ENGINE
    Database: `DataEngineeringMasterDB` | Target: SSMS Direct Execution
    Author  : Pippo 🐥 | Candidate: Captain Arpit Manoj Bangre (Cap)
@@ -2073,6 +2073,6 @@ GO
 */
 
 -- ====================================================================
--- 🚀 END OF 10-HOUR SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 28)
+-- 🚀 END OF SQL SERVER MASTERY BOOTCAMP (DAYS 01 TO 28)
 -- 🎓 CONGRATULATIONS CAPTAIN ARPIT! READY FOR TIER-1 DE OFFERS! 🐥🔥
 -- ====================================================================
