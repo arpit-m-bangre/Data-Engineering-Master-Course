@@ -232,27 +232,27 @@ Cap's daily operating system is divided into two synchronized, complementary fle
                                            │
              ┌─────────────────────────────┴─────────────────────────────┐
              ▼                                                           ▼
- 🤖 WALL-E : THE 8.5-HR "JOB"                               🐥 PIPPO : THE 4.5-HR "DE COURSE"
- ────────────────────────────                                ────────────────────────────────
- • Block 1: Deep Internals (2.0h)                            • Step 1: SSMS Class Note Re-Write & Re-Do
+ 🤖 WALL-E : THE 9-TO-5 "JOB" (8.5h)                         🐥 PIPPO : POST-JOB "DE COURSE" (3.5h - 5.5h)
+ ───────────────────────────────────                         ─────────────────────────────────────────────
+ • Block 1: Deep Internals (2.0h)                            • Step 1: Active IDE/Studio Note Re-Write & Re-Do
  • Block 2: Hands-On Industrial Building (2.5h)              • Step 2: 7-Step Markdown Revision Read
- • Block 3: Timed Coding Drills (1.0h)                       • Step 3: Solve Faculty Class Tasks
- • Block 4: Sizing & System Architecture (1.0h)              • Step 4: Active Target Milestone (Bootcamp)
- • Block 5: Speaking Aloud & Vocal English (30m)             • Step 5: Live Faculty Class (09:00 PM - 10:15 PM)
+ • Block 3: Timed Coding Drills (1.0h)                       • Step 3: Solve Faculty Class Tasks / Drills
+ • Block 4: Sizing & System Architecture (1.0h)              • Step 4: Smart Target Buffer (Optional / Milestone)
+ • Block 5: Speaking Aloud & Vocal English (30m)             • Step 5: Live Faculty Class (Dynamic Evening Lecture)
  • Block 6: Semantic Git & Tracker Scoreboard (30m)
  • Block 7: LinkedIn & Omni-Channel Branding Engine (1.0h)
 ```
 
-### 1. WALL-E's Operational Territory (8.5 Hours Full-Time Job Simulation)
+### 1. WALL-E's Operational Territory (9:00 AM – 05:00 PM Enterprise Job Simulation)
 - WALL-E owns Deep Internals, Industrial System Building (NexusFin open-source), Timed Coding Drills, Cluster/IOPS Math, Speaking Aloud, Semantic Git Telemetry, and the 60-min LinkedIn/Branding Engine.
 
-### 2. Pippo's Operational Territory (4.5 Hours Pure DE Course Mastery)
-- Pippo is 100% dedicated to **Academic & Database Relational Mastery**:
-  1. **SSMS Manual Re-Write / Re-Do:** Live SQL typing to build syntax muscle memory.
-  2. **7-Step Revision Read:** Fast mental model review & interview trap awareness.
-  3. **Faculty Homework & Class Tasks:** 100% solved `04_CLASS_TASKS/` scripts.
-  4. **Active Target Milestone:** Focused execution on active targets (e.g. `SQL_SERVER_MASTERY_BOOTCAMP.SQL`).
-  5. **Live Faculty Class:** 09:00 PM – 10:15 PM evening lecture.
+### 2. Pippo's Operational Territory (Post-Job Dynamic 3.5h – 5.5h Academy Mastery)
+- Pippo is 100% dedicated to **Multi-Tool Academic & Relational Engineering**:
+  1. **Tool-Agnostic IDE/Studio Manual Re-Write & Re-Do:** Live typing in the active module's native studio (SQL/SSMS, Python/VS Code, Power BI Desktop/DAX, PySpark/Databricks, Snowflake Web UI, Airflow UI).
+  2. **7-Step Revision Read:** Fast mental model review, architectural nuance, and interview trap awareness.
+  3. **Faculty Homework & Class Tasks:** 100% solved challenge scripts in respective module folders.
+  4. **Smart Target Buffer (Optional):** When an active milestone/bootcamp is queued (e.g. `SQL_SERVER_MASTERY_BOOTCAMP.SQL`), remaining daytime/evening buffer hours are smartly routed here. On light days or when no target is active, this sprint is smoothly omitted.
+  5. **Elastic Live Faculty Lecture:** Dynamic evening lecture block (standard 09:00 PM – 10:15 PM, but elastically handles 1.25h to 2.0h+ extensions or lighter sessions without breaking the schedule).
 
 ---
 
@@ -260,11 +260,12 @@ Cap's daily operating system is divided into two synchronized, complementary fle
 
 The Agent MUST ensure the user's daily plans in `TODAYS_TASKS.txt` adhere to these principles:
 
-1. **Daily Class Timing (09:00 PM - 10:15 PM):** Dedicated evening lecture block (Mon-Sat) never compromised. Enter with zero cognitive fatigue by finishing current daily tasks in the afternoon.
-2. **Atomic Sprint Commits (4X-8X Dark Green Law):** Commit and push atomically after completed study milestones (class rewrite, homework task, drills, live class notes, target sprints).
-3. **Pippo Core Pipeline (SSMS Re-Write -> Revision -> Tasks):** Pure, zero-bloat daily execution flow.
-4. **Bio-Paced Health & Cutoffs:** Hard 10:45 PM sleep cutoff to ensure full cognitive recovery.
-5. **No Unrequested Morning Routine Cards:** When Cap specifies a start time (e.g., 10:00 AM or 11:00 AM), start directly at Sprint 1 without injecting filler grooming/chore cards.
+1. **Elastic Live Class Block:** Dynamically adapts to lecture length (09:00 PM – 10:15 PM+). Evening course total flexes between **3.5 Hours (light days)** to **5.5 Hours (heavy days / extended lectures)**.
+2. **Tool-Agnostic Execution:** Automatically formats sprints for the current technology stack (SSMS, VS Code, Power BI, Databricks, Snowflake, Cloud consoles).
+3. **Smart Optional Buffers:** Target sprints (bootcamps/drills) are optional and scale dynamically based on available bandwidth.
+4. **Atomic Sprint Commits (4X-8X Dark Green Law):** Commit and push atomically after completed study milestones (class rewrite, homework task, drills, live class notes, target sprints).
+5. **Bio-Paced Health & Cutoffs:** Hard 10:45 PM sleep cutoff strictly enforced to protect cognitive recovery.
+6. **No Unrequested Morning Routine Cards:** When Cap specifies a start time (e.g., 10:00 AM or 11:00 AM), start directly at Sprint 1 without injecting filler grooming/chore cards.
 
 ---
 

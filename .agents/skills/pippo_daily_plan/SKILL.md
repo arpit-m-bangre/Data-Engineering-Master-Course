@@ -41,29 +41,29 @@ Before generating any plan, execute all 4 physical reads:
 
 ### 1. Mandatory Sprint Execution Order:
 For any class day being worked on, the order MUST be strictly:
-`Class Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Active Target Milestone -> Live Class`
+`IDE/Studio Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Smart Target Buffer (Optional) -> Live Class`
 
 ### 2. Dual-Fleet Operational Scope:
-- **WALL-E (8.5-Hour Job System):** Owns Deep Internals, Industrial Hands-on Building, Timed Coding, Sizing & Architecture, Speaking Aloud / Vocal English, Git Telemetry, and LinkedIn/Omni-Channel Engine.
-- **Pippo 🐥 (4.5-Hour DE Course Engine):** Strictly schedules the pure academic and relational mastery pipeline:
-  * [ ] **Pillar 1:** SSMS Class Note Manual Re-Write & Re-Do (1.0h).
+- **WALL-E (9-to-5 Job System / 8.5h):** Owns Deep Internals, Industrial Hands-on Building, Timed Coding, Sizing & Architecture, Speaking Aloud / Vocal English, Git Telemetry, and LinkedIn/Omni-Channel Engine.
+- **Pippo 🐥 (Post-Job Dynamic 3.5h – 5.5h DE Course Engine):** Pure academic & multi-studio engineering mastery:
+  * [ ] **Pillar 1:** Studio/IDE Note Manual Re-Write & Re-Do (SQL/SSMS, Python/VS Code, Power BI/DAX, PySpark/Databricks, Snowflake UI) (1.0h).
   * [ ] **Pillar 2:** 7-Step Markdown Revision Read (0.5h).
-  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (`04_CLASS_TASKS/` scripts) (1.0h).
-  * [ ] **Pillar 4:** Active Short-Term Target / Bootcamp Sprint (0.75h).
-  * [ ] **Pillar 5:** Live Faculty Class (09:00 PM - 10:15 PM, Mon-Sat, 1.25h).
+  * [ ] **Pillar 3:** Faculty Class Tasks & Challenge Mastery (1.0h).
+  * [ ] **Pillar 4 (Smart Optional Buffer):** Active Milestone / Bootcamp Sprint (0.75h – 1.5h when active; smoothly omitted when bandwidth is tight or on light days).
+  * [ ] **Pillar 5 (Elastic Live Lecture):** Live Faculty Class (Dynamic 09:00 PM – 10:15 PM+; flexes automatically with lecture duration).
 
 ### 3. User Stated Start Time & Zero Personal Assumptions Law:
 - When Cap specifies a start time (e.g. *"Start day from 10:00 AM"* or *"11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.
 - **NEVER inject unrequested morning routine, grooming, bath, or chore cards** prior to Cap's stated start time unless Cap explicitly asks for them.
 
-### 4. Total Study Hours Calculation Protocol:
-- Calculate the exact sum of all active study sprint durations (in hours).
+### 4. Dynamic Duration & Total Hours Protocol:
+- Course total flexes dynamically between **3.5 Hours (light days)** to **5.5 Hours (extended live class / deep milestone days)**.
 - Exclude meal breaks, naps, and non-study windows.
 - State at the top:
   `TOTAL STUDY TIME TODAY: X.X Hours`
 
 ### 5. The Standard Daily Framework (32+ LPA Tier Framework):
-- **Live Class Anchor:** 09:00 PM - 10:15 PM (Batch 15 Lecture)
+- **Live Class Anchor:** 09:00 PM - 10:15 PM+ (Batch 15 Lecture)
 - **Night Sleep Cutoff:** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
 
 ---
