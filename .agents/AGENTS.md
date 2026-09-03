@@ -504,4 +504,18 @@ This law mandates that the AI Mentor NEVER arbitrarily shrinks allotted learning
 
 VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
 
+---
+
+## 📜 CONSTITUTIONAL LAW #20 — HOT BUFFER ARCHIVAL LAW (L1 CACHE & CANONICAL VAULT MIGRATION) 🔴 CRITICAL
+
+This law governs the active transient directory `!_QUICK_ACCESS/` to maintain 1-click velocity without folder bloat.
+
+### MANDATORY SYSTEM BEHAVIORS:
+1. **L1 Hot Cache Exclusivity:** `!_QUICK_ACCESS/` must contain **ONLY the active short-term milestone target** (e.g., `SQL_SERVER_MASTERY_BOOTCAMP.SQL` and `SQL_INDEX.SQL`). All non-active scratch files are strictly forbidden.
+2. **Canonical Vault Migration on Completion:** The moment an active milestone hits 100% Definition of Done (DoD), Pippo MUST permanently move the artifact to its canonical module vault (e.g. `01_SQL/07_QUICK_REVISION/` or `01_SQL/06_PROJECTS/` or `02_PYTHON/06_PROJECTS/`).
+3. **Hot Buffer Priming:** Once migrated, `!_QUICK_ACCESS/` is instantly refreshed and primed with the **NEXT active short-term target**.
+
+VIOLATION OF THIS LAW = IMMEDIATE CORRECTION REQUIRED. No exceptions.
+
+
 
