@@ -1,0 +1,96 @@
+# 📝 DEV.TO ARTICLE #03 (01 SEP 2026)
+
+- **Platform:** [Dev.to](https://dev.to/arpitmbangre)
+- **Author:** Arpit Manoj Bangre
+- **Category:** SQL Internals & Window Functions
+- **Status:** Published ✅
+- **Target Link:** `https://dev.to/new`
+
+---
+
+## 🏷️ METADATA & TAGS
+- **Title:** `Window Functions Demystified: ROW_NUMBER vs RANK vs DENSE_RANK (Execution Internals)`
+- **Tags:** `sql`, `database`, `dataengineering`, `career`
+- **Canonical URL:** `https://github.com/arpit-m-bangre/Data-Engineering-Master-Course`
+
+---
+
+## 📄 FULL READY-TO-COPY MARKDOWN BODY
+
+```markdown
+In high-scale enterprise data engineering, ranking events, deduplicating records, and calculating leaderboards are everyday tasks.
+
+While `ROW_NUMBER()`, `RANK()`, and `DENSE_RANK()` look similar on the surface, choosing the wrong one can corrupt your financial aggregations or deduplication pipelines.
+
+Here is the exact execution breakdown and when to use each.
+
+---
+
+### 🔍 The 3 Ranking Functions at a Glance
+
+| Function | Tie Handling | Gaps in Sequence? | Primary Production Use-Case |
+| :--- | :--- | :---: | :--- |
+| **`ROW_NUMBER()`** | Assigns arbitrary distinct sequence (1, 2, 3, 4) | ❌ **No Gaps** | **Strict Deduplication & Pagination** |
+| **`RANK()`** | Assigns same rank to ties, skips next (1, 2, 2, 4) | ⚠️ **Has Gaps** | **Competition Leaderboards & Percentiles** |
+| **`DENSE_RANK()`** | Assigns same rank to ties, no skips (1, 2, 2, 3) | ❌ **No Gaps** | **Finding N-th Highest Salary / Top Tiers** |
+
+---
+
+### 💻 Visual SQL Execution
+
+Imagine an `Employees` table with salaries: `[100k, 90k, 90k, 80k]`.
+
+```sql
+SELECT 
+    EmployeeID,
+    Salary,
+    ROW_NUMBER() OVER (ORDER BY Salary DESC) AS row_num,
+    RANK()       OVER (ORDER BY Salary DESC) AS rnk,
+    DENSE_RANK() OVER (ORDER BY Salary DESC) AS dense_rnk
+FROM Employees;
+```
+
+#### 📊 Result Set:
+
+```text
+Salary | ROW_NUMBER | RANK | DENSE_RANK
+-------+------------+------+------------
+100k   |     1      |  1   |     1
+90k    |     2      |  2   |     2   <-- Tie!
+90k    |     3      |  2   |     2   <-- Tie!
+80k    |     4      |  4   |     3   <-- Notice RANK jumped to 4, DENSE_RANK went to 3!
+```
+
+---
+
+### ⚠️ The #1 Production Interview Trap: "2nd Highest Salary"
+
+If you use `RANK()` or `LIMIT 1 OFFSET 1` to find the 2nd highest salary, and multiple employees tie for the 1st highest salary (e.g. two people earn 100k):
+- `RANK() = 2` returns **0 rows**!
+- `DENSE_RANK() = 2` **guarantees the correct 2nd highest salary** every single time.
+
+```sql
+WITH RankedSalaries AS (
+    SELECT 
+        EmployeeID,
+        Salary,
+        DENSE_RANK() OVER (ORDER BY Salary DESC) AS rnk
+    FROM Employees
+)
+SELECT Salary 
+FROM RankedSalaries 
+WHERE rnk = 2;
+```
+
+---
+
+### 🏆 Summary Rule for Data Engineers
+- **Need to delete duplicates?** $\rightarrow$ Always use `ROW_NUMBER() = 1`.
+- **Need Top N distinct salary tiers?** $\rightarrow$ Always use `DENSE_RANK()`.
+- **Need competition rankings with point ties?** $\rightarrow$ Always use `RANK()`.
+
+---
+
+💡 *Have you ever run into a tie-ranking bug in production? Drop your thoughts below!*  
+💼 *Let's connect:* [linkedin.com/in/arpitmbangre](https://www.linkedin.com/in/arpitmbangre/)
+```
