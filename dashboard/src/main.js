@@ -423,13 +423,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
   requestAnimationFrame(() => setTimeout(tryLiveUpgrade, 200))
 
-  if (refreshBtn) {
+    if (refreshBtn) {
     refreshBtn.addEventListener('click', async () => {
       refreshBtn.classList.add('spinning')
       refreshBtn.disabled = true
+      const walleWidget = document.getElementById('walle-widget')
+      if (walleWidget) walleWidget.classList.add('scanning')
       await tryLiveUpgrade()
       refreshBtn.classList.remove('spinning')
       refreshBtn.disabled = false
+      if (walleWidget) setTimeout(() => walleWidget.classList.remove('scanning'), 600)
+    })
+  }
+
+  // Interactive WALL-E widget click trigger
+  const walleWidget = document.getElementById('walle-widget')
+  if (walleWidget) {
+    walleWidget.addEventListener('click', () => {
+      walleWidget.classList.add('scanning')
+      const originalText = lastUpdated.textContent
+      setLastUpdated('🤖 WALL-E Solar Telemetry: Dual-Fleet Operational ⚡')
+      setTimeout(() => {
+        walleWidget.classList.remove('scanning')
+        setLastUpdated(originalText.replace(/^Last check:\s*/, ''))
+      }, 2500)
     })
   }
 })
+
