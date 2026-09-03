@@ -353,121 +353,88 @@ body {
   50% { box-shadow: 0 0 14px rgba(16, 185, 129, 0.9); }
 }
 
-/* WALL-E Cyber Visor Companion Widget */
-.walle-companion-widget {
-  width: 58px;
-  height: 58px;
-  background: linear-gradient(135deg, rgba(30, 41, 59, 0.85), rgba(15, 23, 42, 0.95));
-  border: 2px solid rgba(245, 158, 11, 0.4);
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+/* WALL-E Photo Avatar */
+.walle-avatar-wrapper {
   position: relative;
-  box-shadow: 0 0 16px rgba(245, 158, 11, 0.2);
-  transition: all var(--transition);
+  flex-shrink: 0;
   cursor: pointer;
 }
 
-.walle-companion-widget:hover {
-  transform: scale(1.1) translateY(-2px);
-  border-color: rgba(0, 229, 255, 0.8);
-  box-shadow: 0 0 24px rgba(0, 229, 255, 0.4);
+.walle-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 15%;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(135deg, var(--walle-amber), var(--walle-gold), var(--accent-cyan)) border-box;
+  box-shadow:
+    0 0 20px rgba(245, 158, 11, 0.3),
+    0 0 35px rgba(0, 229, 255, 0.15);
+  animation: walleGlow 4s ease-in-out infinite alternate;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.walle-companion-widget.scanning {
+.walle-avatar:hover {
+  transform: scale(1.1) rotate(-4deg);
+  box-shadow:
+    0 0 28px rgba(245, 158, 11, 0.5),
+    0 0 45px rgba(0, 229, 255, 0.3);
+}
+
+@keyframes walleGlow {
+  0%   { box-shadow: 0 0 16px rgba(245, 158, 11, 0.25), 0 0 30px rgba(0, 229, 255, 0.12); }
+  100% { box-shadow: 0 0 26px rgba(245, 158, 11, 0.45), 0 0 45px rgba(0, 229, 255, 0.25); }
+}
+
+.walle-ring {
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: var(--walle-gold);
+  border-right-color: var(--accent-cyan);
+  animation: ringRotateReverse 7s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes ringRotateReverse {
+  to { transform: rotate(-360deg); }
+}
+
+.walle-status {
+  position: absolute;
+  bottom: 3px;
+  right: 1px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--walle-amber);
+  border: 2.5px solid var(--bg);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
+  animation: walleStatusPulse 2s ease-in-out infinite;
+}
+
+@keyframes walleStatusPulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(245, 158, 11, 0.4); }
+  50% { box-shadow: 0 0 14px rgba(245, 158, 11, 0.9); }
+}
+
+.walle-avatar-wrapper.scanning .walle-avatar {
   border-color: var(--accent-cyan);
-  box-shadow: 0 0 28px rgba(0, 229, 255, 0.6), 0 0 12px var(--walle-gold);
+  box-shadow: 0 0 30px rgba(0, 229, 255, 0.7), 0 0 20px var(--walle-gold);
   animation: walleScanPulse 0.6s ease-in-out infinite alternate;
 }
 
-.walle-companion-widget.scanning .eye-pupil {
-  background: radial-gradient(circle, #ffffff 30%, #00e5ff 70%, #0284c7 100%);
-  box-shadow: 0 0 14px #00e5ff;
-}
-
 @keyframes walleScanPulse {
-  0% { transform: scale(1.05); filter: brightness(1.1); }
-  100% { transform: scale(1.12); filter: brightness(1.3); }
+  0% { transform: scale(1.06); filter: brightness(1.1); }
+  100% { transform: scale(1.14); filter: brightness(1.35); }
 }
 
-.walle-visor-head {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
 
-.walle-eye {
-  width: 18px;
-  height: 16px;
-  background: #1e293b;
-  border: 1.5px solid #64748b;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.eye-left {
-  transform: rotate(-5deg);
-}
-
-.eye-right {
-  transform: rotate(5deg);
-}
-
-.eye-pupil {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #ffffff 15%, var(--accent-cyan) 60%, #0284c7 100%);
-  box-shadow: 0 0 8px var(--accent-cyan);
-  animation: eyeBlink 4.5s infinite;
-}
-
-.eye-scanline {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 4px #00e5ff;
-  opacity: 0.6;
-  animation: laserScan 2s linear infinite;
-}
-
-@keyframes eyeBlink {
-  0%, 96%, 100% { transform: scale(1); }
-  98% { transform: scaleY(0.1); }
-}
-
-@keyframes laserScan {
-  0% { top: -2px; }
-  100% { top: 18px; }
-}
-
-.walle-bridge {
-  width: 4px;
-  height: 3px;
-  background: #94a3b8;
-  border-radius: 1px;
-}
-
-.walle-status-indicator {
-  position: absolute;
-  bottom: -3px;
-  right: -3px;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background: var(--walle-gold);
-  border: 2px solid var(--bg);
-  box-shadow: 0 0 6px var(--walle-gold);
-}
+/* Hero Text */
 
 /* Hero Text */
 .hero-text {
