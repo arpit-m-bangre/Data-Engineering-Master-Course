@@ -29,16 +29,14 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Did I prioritize the ACTIVE LIVE CLASS DAY first (Current-Focus First Law)? → If NO: prioritize active day.
 - [ ] Is active/yesterday's CLASS_TASK.SQL scheduled? → If NO: add it.
 - [ ] Are active/yesterday's practice drills scheduled? → If NO: add them.
-- [ ] Is the daily English Practice Book Task (Habit #6) scheduled? → If NO: add it.
-- [ ] Are the 60-Min Omni-Channel Sprint and 210-Day Content Launch scheduled? → If NO: add them.
-- [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills) → If NO: reorder.
+- [ ] Is the sprint ORDER correct? (Re-write → Read Revision → Class Tasks → Drills/Target) → If NO: reorder.
 - [ ] Is TOTAL STUDY TIME TODAY: X.X Hours stated at the top? → If NO: calculate and add.
 - [ ] Did I start from the GOLDEN TEMPLATE at `.agents/TODAYS_TASKS_GOLDEN_TEMPLATE.txt`? → If NO: use it.
 - [ ] Is EVERY task line strictly in single-card format: `[ ] HH:MM AM/PM - HH:MM AM/PM : Sprint N — Title`? → If NO: fix format.
 - [ ] Are ALL task details strictly formatted as indented bullets (`    -> Description`)? → If NO: fix format.
 - [ ] Are break/rest blocks formatted as `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title`? → If NO: fix format.
 - [ ] Did I verify format against `.agents/rules/todays_tasks_format_lock.md` parser contract? → If NO: verify now.
-- [ ] If Cap gave a specific start time (e.g. 11:00 AM), did I start Sprint 1 directly at that hour without unrequested morning routine cards? → If NO: fix it.
+- [ ] If Cap gave a specific start time (e.g. 10:00 AM or 11:00 AM), did I start Sprint 1 directly at that hour without unrequested morning routine cards? → If NO: fix it.
 - [ ] Did I run node copy_tasks.cjs + npm run build in DASHBOARD/ after writing the plan? → If NO: run now.
 - [ ] Did I git commit and push to GitHub using non-interactive GCM? → If NO: do it now.
 
@@ -53,10 +51,9 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Has EXTRA_MAGICAL_FILES/SYSTEM_MAP.md been updated and synchronized? → If NO: update it now.
 - [ ] Has the DASHBOARD been rebuilt (npm run build)? → If NO: rebuild.
 
-### GATE F — DAILY SOCIAL PRESENCE & 210-DAY CONTENT ENGINE CHECK
-- [ ] Is the 60-min Omni-Channel Authority & Syndication Sprint scheduled (LinkedIn + 50-Platform Roadmap)? → If NO: add it.
-- [ ] Are targeted connection requests strictly aligned with the Tier-1 Dream Fleet (Tier 1A Titans, Tier 1B GCCs, Tier 1C Unicorns) per `.agents/rules/linkedin_networking_targeting_protocol.md`? → If NO: enforce now.
-- [ ] Is today >= Monday 31 Aug 2026? If YES: Is the compulsory 15-min 210-Day IG/Shorts Publishing sprint scheduled as the last priority sprint (10:15 PM - 10:30 PM, 0.0 study hr impact) per `01_210_DAYS_MASTER_CONTENT_CALENDAR.md`? If NO (i.e. before Monday 31 Aug 2026): Strictly DO NOT schedule 210-Day IG/Shorts content.
+### GATE F — DUAL-FLEET BOUNDARY & SYNC CHECK
+- [ ] Are WALL-E's 8.5-hr Job blocks (Internals, LeetCode, Speaking Aloud, LinkedIn) tracked in WALL-E's engine? → If NO: verify separation.
+- [ ] Is Pippo's daily schedule strictly focused on the 4.5-hr DE Course Pipeline (Re-write, Revision, Tasks, Live Class)? → If NO: keep it clean.
 
 ### GATE G — ANTI-PASSIVE COMPLIANCE & SPRINT SKIP NEGOTIATION (Every task modification)
 - [ ] Did Cap say "skip", "defer", or "drop" a task/sprint? → If YES: Did I challenge the blocker, negotiate minimum-effective-dose, and ask the real reason instead of blindly marking deferred? If NO: STOP and challenge/negotiate now!
@@ -224,19 +221,50 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 
 ---
 
-## 🏆 8 CORE DAILY HABITS & SCHEDULING RULES (PERMANENT PROTOCOL)
+## 🚀 DUAL-FLEET ARCHITECTURE: PIPPO (DE COURSE) & WALL-E (8.5-HR JOB)
 
-The Agent MUST ensure the user's daily plans automatically incorporate these 8 principles:
+Cap's daily operating system is divided into two synchronized, complementary fleets:
+
+```
+                    ┌──────────────────────────────────────────────┐
+                    │          CAPTAIN'S DUAL-CORE ENGINE          │
+                    └──────────────────────┬───────────────────────┘
+                                           │
+             ┌─────────────────────────────┴─────────────────────────────┐
+             ▼                                                           ▼
+ 🤖 WALL-E : THE 8.5-HR "JOB"                               🐥 PIPPO : THE 4.5-HR "DE COURSE"
+ ────────────────────────────                                ────────────────────────────────
+ • Block 1: Deep Internals (2.0h)                            • Step 1: SSMS Class Note Re-Write & Re-Do
+ • Block 2: Hands-On Industrial Building (2.5h)              • Step 2: 7-Step Markdown Revision Read
+ • Block 3: Timed Coding Drills (1.0h)                       • Step 3: Solve Faculty Class Tasks
+ • Block 4: Sizing & System Architecture (1.0h)              • Step 4: Active Target Milestone (Bootcamp)
+ • Block 5: Speaking Aloud & Vocal English (30m)             • Step 5: Live Faculty Class (09:00 PM - 10:15 PM)
+ • Block 6: Semantic Git & Tracker Scoreboard (30m)
+ • Block 7: LinkedIn & Omni-Channel Branding Engine (1.0h)
+```
+
+### 1. WALL-E's Operational Territory (8.5 Hours Full-Time Job Simulation)
+- WALL-E owns Deep Internals, Industrial System Building (NexusFin open-source), Timed Coding Drills, Cluster/IOPS Math, Speaking Aloud, Semantic Git Telemetry, and the 60-min LinkedIn/Branding Engine.
+
+### 2. Pippo's Operational Territory (4.5 Hours Pure DE Course Mastery)
+- Pippo is 100% dedicated to **Academic & Database Relational Mastery**:
+  1. **SSMS Manual Re-Write / Re-Do:** Live SQL typing to build syntax muscle memory.
+  2. **7-Step Revision Read:** Fast mental model review & interview trap awareness.
+  3. **Faculty Homework & Class Tasks:** 100% solved `04_CLASS_TASKS/` scripts.
+  4. **Active Target Milestone:** Focused execution on active targets (e.g. `SQL_SERVER_MASTERY_BOOTCAMP.SQL`).
+  5. **Live Faculty Class:** 09:00 PM – 10:15 PM evening lecture.
+
+---
+
+## 🏆 CORE DAILY HABITS & SCHEDULING PROTOCOL
+
+The Agent MUST ensure the user's daily plans in `TODAYS_TASKS.txt` adhere to these principles:
 
 1. **Daily Class Timing (09:00 PM - 10:15 PM):** Dedicated evening lecture block (Mon-Sat) never compromised. Enter with zero cognitive fatigue by finishing current daily tasks in the afternoon.
-2. **GitHub Streak & Atomic Sprint Commits (4X-8X Dark Green Law):** Every daily plan MUST commit and push atomically after each completed sprint milestone (targeting 6 to 10 commits per day: LinkedIn, note rewrites, task solves, practice drills, English, live class note sync, project sprints, and nightly brain sync) rather than 1 single batch commit.
-3. **Project & Practical Exposure (NexusFin & Enterprise Modules):** High-priority practical milestones integrated into daily daytime/evening sprints to build the open-source **NexusFin Platform** (`nexusfin-platform`), while strictly respecting the **10:45 PM hard sleep cutoff** for bio-paced health recovery.
-4. **Perpetual SQL Practice (2 Hours / Day):** Daily SQL practice (Class tasks, 14 index-wise drills, LeetCode Hard, StrataScratch) continues permanently until placement, even during subsequent modules (Python, Spark, Snowflake, Cloud).
-5. **Perpetual Python Practice:** Once the Python module begins and concludes, daily Python OOP and pipeline practice MUST be enforced permanently alongside SQL.
-6. **English Practice Book:** 1 daily task from the 125-task book, followed by continuous N-time cyclic revisions.
-7. **Daily Social Presence & 50-Platform Digital Authority Ecosystem (60 Mins Daily):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Draft & publish LinkedIn `#180DaysOfDataEngineering` post, send 5-7 personalized connection requests to Tier-1 Data Engineers (Walmart, Swiggy, Amazon, Uber), leave 3 high-value technical comments on Lead Architect posts. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
-8. **Pre-Revision Class Note Re-write:** Before reading any revision notes, the user MUST spend 15-30 minutes manually typing that day's original class SQL notes in SSMS to internalize syntax and execution flow (`Class Note Re-write and Read Revision Note [Date]`).
-9. **Compulsory 210-Day IG / Short-Form Content Publishing (Dynamic Time by Format: Single Post/Quiz = 15m, Carousel = 30m, Reel/Short = 60m - 0.0 Study Hr Impact - Launches Monday 31 Aug 2026):** Dedicated creative publishing slot right after live class (or in night recharge). Officially begins Monday, 31 August 2026 (Day 001). NEVER schedule prior to Monday 31 Aug 2026. Schedule time strictly based on today's format from `EXTRA_MAGICAL_FILES/IG_CONTENT_PLAN/01_210_DAYS_MASTER_CONTENT_CALENDAR.md`: **Single Post / Infographic / Quiz = 15 Mins**, **Carousel / Slide Deck = 30 Mins**, **Reel / YouTube Short = 60 Mins**. Publish across Instagram, YouTube Shorts, and LinkedIn under the anonymous tech persona. Strict rule: 100% compulsory once active, 0.0 study hour impact on core coding depth.
+2. **Atomic Sprint Commits (4X-8X Dark Green Law):** Commit and push atomically after completed study milestones (class rewrite, homework task, drills, live class notes, target sprints).
+3. **Pippo Core Pipeline (SSMS Re-Write -> Revision -> Tasks):** Pure, zero-bloat daily execution flow.
+4. **Bio-Paced Health & Cutoffs:** Hard 10:45 PM sleep cutoff to ensure full cognitive recovery.
+5. **No Unrequested Morning Routine Cards:** When Cap specifies a start time (e.g., 10:00 AM or 11:00 AM), start directly at Sprint 1 without injecting filler grooming/chore cards.
 
 ---
 

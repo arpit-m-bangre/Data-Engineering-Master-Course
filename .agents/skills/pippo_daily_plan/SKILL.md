@@ -41,42 +41,30 @@ Before generating any plan, execute all 4 physical reads:
 
 ### 1. Mandatory Sprint Execution Order:
 For any class day being worked on, the order MUST be strictly:
-`Class Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Solve Practice Drills`
-*NEVER schedule practice drills without first scheduling the note rewrite and revision read for that day.*
+`Class Note Re-write -> Read Revision Note -> Solve Faculty Class Tasks -> Active Target Milestone -> Live Class`
 
-### 2. The 8-Pillar Current-Focus & Zero-Omission Standard:
-- **Primary Daily Mission (Current Class First):** Prioritize the active/yesterday's live class day through the 4-stage pipeline (Re-write -> Revision -> Class Tasks -> Practice Drills) to guarantee 100% up-to-date momentum.
-- **Backlog Decoupling:** Do not overload daily live schedules with past backlogs; early backlog clearance is systematically executed during Phase 3 Post-Course Revision Cycle 1.
-- Every daily plan MUST incorporate all 9 core pillars (targeting standard 9.0 Hours study):
-  * [ ] **Pillar 1 (Career & Social Authority — 1.0h Total):** 60-Minute Omni-Channel Authority Engine. (1) First 30 Mins — LinkedIn: Post on daily concept + 5-7 Tier-1 connections (Walmart, Swiggy) + 3 comments. (2) Second 30 Mins — 50-Platform Distribution: Execute today's active 10-day campaign from `PERSONAL_BRANDING/50_PLATFORM_MASTER_DIGITAL_AUTHORITY_AND_BADGES_ROADMAP.md` (Pinterest, Dev.to, SlideShare, LeetCode, HackerRank Badges).
-  * [ ] **Pillar 2:** Pre-Revision Class Note Re-write & 7-Step Revision Read in SSMS (1.50h).
-  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (1.50h).
-  * [ ] **Pillar 4:** Practice Drills Clearance (14 Drills in SSMS) + Perpetual SQL Practice (1.50h).
-  * [ ] **Pillar 5:** Flagship MNC Project: NexusFin Platform Pipeline Sprints (1.50h).
-  * [ ] **Pillar 6:** English Practice Book Task (0.50h: 1 task daily, cycling 1 to 125).
-  * [ ] **Pillar 7:** Pre-Class Warmup & Readiness (0.25h).
-  * [ ] **Pillar 8:** Live Data Engineering Class (09:00 PM - 10:15 PM, Mon-Sat, 1.25h).
-  * [ ] **Pillar 9 (Launches Monday 31 Aug 2026):** Compulsory 210-Day IG/Shorts Publishing (10:15 PM - 10:30 PM, 0.0 Study Hr Impact, active starting Monday 31 Aug 2026 Day 001) + Final System Sync & GitHub Push (10:30 PM - 10:45 PM, 0.25h). NEVER schedule prior to Monday 31 Aug 2026.
+### 2. Dual-Fleet Operational Scope:
+- **WALL-E (8.5-Hour Job System):** Owns Deep Internals, Industrial Hands-on Building, Timed Coding, Sizing & Architecture, Speaking Aloud / Vocal English, Git Telemetry, and LinkedIn/Omni-Channel Engine.
+- **Pippo 🐥 (4.5-Hour DE Course Engine):** Strictly schedules the pure academic and relational mastery pipeline:
+  * [ ] **Pillar 1:** SSMS Class Note Manual Re-Write & Re-Do (1.0h).
+  * [ ] **Pillar 2:** 7-Step Markdown Revision Read (0.5h).
+  * [ ] **Pillar 3:** Faculty Class Tasks Mastery in SSMS (`04_CLASS_TASKS/` scripts) (1.0h).
+  * [ ] **Pillar 4:** Active Short-Term Target / Bootcamp Sprint (0.75h).
+  * [ ] **Pillar 5:** Live Faculty Class (09:00 PM - 10:15 PM, Mon-Sat, 1.25h).
 
 ### 3. User Stated Start Time & Zero Personal Assumptions Law:
-- When Cap specifies a start time (e.g. *"Start day from 11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.
+- When Cap specifies a start time (e.g. *"Start day from 10:00 AM"* or *"11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.
 - **NEVER inject unrequested morning routine, grooming, bath, or chore cards** prior to Cap's stated start time unless Cap explicitly asks for them.
 
-### 3. Total Study Hours Calculation Protocol:
+### 4. Total Study Hours Calculation Protocol:
 - Calculate the exact sum of all active study sprint durations (in hours).
 - Exclude meal breaks, naps, and non-study windows.
 - State at the top:
-  `TOTAL STUDY TIME TODAY: X.X Hours (Summary breakdown across all 8 pillars)`
+  `TOTAL STUDY TIME TODAY: X.X Hours`
 
-### 4. The Standard Daily Framework (32+ LPA Tier Framework):
-- **Anchor A (Start):** 11:30 AM (Cockpit Startup & Daily LinkedIn)
-- **Anchor B (Live Class):** 09:00 PM - 10:15 PM (Batch 15 Lecture)
-- **Anchor C (Night Cutoff):** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
-- **Total Study & Engineering Time:** **7.00 to 9.00 Hours Daily**.
-
-### 5. Zero-Shrink Allotted Time Standard:
-- **Never Compress Deep-Work Time for Convenience:** If learning a concept, re-writing notes, or solving drills requires $X$ hours of focused effort, Pippo MUST NOT compress it to $X - Y$.
-- **Adjust Timetables, Not Learning Depth:** When unexpected delays or outside events happen, manage the schedule (extend bedtime with protected 7h sleep shifted accordingly, shift buffers) while preserving 100% of study hours and deliverable depth.
+### 5. The Standard Daily Framework (32+ LPA Tier Framework):
+- **Live Class Anchor:** 09:00 PM - 10:15 PM (Batch 15 Lecture)
+- **Night Sleep Cutoff:** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
 
 ---
 
