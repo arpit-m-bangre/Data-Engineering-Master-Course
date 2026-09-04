@@ -62,13 +62,13 @@
    │     ├─ 🗓️ DAY 22: IF-ELSE in SQL (CASE Statement) & Custom Priority Sorting
    │     └─ 🎯 CHECKPOINT 5: 10 WINDOW FUNCTIONS & CTE QUESTIONS (Q41 – Q50)
    │
-   └─ 📚 MODULE F: ADVANCED STRING PIPELINES, SPs, TRIGGERS & INDEXES (DAYS 23 TO 28)
+   └─ 📚 MODULE F: TCL, SPs, VIEWS, INDEXES & TRIGGERS (DAYS 23 TO 28)
          ├─ 🗓️ DAY 23: Advanced Scenario Analytics & Surprise Test Lab
          ├─ 🗓️ DAY 24: T-SQL Server String Functions & PII Masking Engine
          ├─ 🗓️ DAY 25: String Slicing (LEFT/RIGHT), Casting & Full Name Parsers
-         ├─ 🗓️ DAY 26: Stored Procedures & Database Views
-         ├─ 🗓️ DAY 27: DML Triggers, Storage Scalability (BIGINT) & COALESCE
-         ├─ 🗓️ DAY 28: Indexes, B-Tree Storage Architecture & Execution Plans
+         ├─ 🗓️ DAY 26: Transaction Control (TCL: ROLLBACK/COMMIT), NULLs & Subqueries vs CTEs
+         ├─ 🗓️ DAY 27: Stored Procedures (Deduplication), Views & Clustered/Non-Clustered Indexes
+         ├─ 🗓️ DAY 28: DML Triggers, Event-Driven Auditing & Magic Tables (INSERTED/DELETED)
          └─ 🎯 CHECKPOINT 6: 10 ADVANCED ARCHITECTURE & OPTIMIZATION QUESTIONS (Q51 – Q60)
 
 🧠 SECTION 3: QUICK SYNTAX MEMORY CHEAT SHEET (RULES 1 TO 10)
@@ -1588,66 +1588,146 @@ SELECT
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 26: STORED PROCEDURES & DATABASE VIEWS
+-- 🗓️ DAY 26: TRANSACTION CONTROL (TCL), NULL FUNCTIONS & SUBQUERIES VS CTES
+-- --------------------------------------------------------------------
+/*
+   📖 SIMPLE EXPLANATION:
+   - What is TCL (Transaction Control Language)?
+     A safety net. By default, SQL runs in autocommit. Wrapping code inside
+     `BEGIN TRANSACTION` lets you test changes and `ROLLBACK` (undo) if something goes wrong,
+     or `COMMIT` (save permanently) to disk. In SQL Server, even DROP TABLE and TRUNCATE can be rolled back!
+   - NULL Management (ISNULL vs COALESCE):
+     • `ISNULL(check_col, replacement)` : T-SQL 2-parameter fast replacement.
+     • `COALESCE(v1, v2, ... fallback)` : ANSI standard multi-column cascading fallback.
+   - Subqueries vs Modern CTEs:
+     Subqueries run nested loops and can cause table scan bottlenecks. Modern production
+     replaces scalar subqueries with CTEs + `DENSE_RANK()`.
+*/
+
+-- 1. Explicit Transaction with ROLLBACK Demonstration
+BEGIN TRANSACTION;
+    DELETE FROM Customers WHERE CustomerID = 5;
+    -- Verify in-flight deletion (row temporarily gone in this session)
+    SELECT * FROM Customers WHERE CustomerID = 5;
+ROLLBACK TRANSACTION; -- Undo deletion, restoring customer row 5!
+GO
+
+-- 2. NULL Replacement via ISNULL and COALESCE
+SELECT 
+    CustomerID, CustomerName,
+    ISNULL(Email, 'no-email@domain.com') AS FastEmail,
+    COALESCE(Email, 'contact@company.com') AS CascadingContact
+FROM Customers;
+GO
+
+-- 3. Modern Production Alternative: CTE + DENSE_RANK() instead of Subquery
+WITH CTE_SalaryRanks AS
+(
+    SELECT EmpID, EmpName, DeptID, Salary,
+           DENSE_RANK() OVER (ORDER BY Salary DESC) AS SalaryRank
+    FROM Employees
+)
+SELECT EmpID, EmpName, DeptID, Salary
+FROM CTE_SalaryRanks
+WHERE SalaryRank = 2; -- 2nd Highest Salary cleanly extracted in a single pass!
+GO
+
+-- --------------------------------------------------------------------
+-- 🗓️ DAY 27: STORED PROCEDURES (DEDUPLICATION), VIEWS & INDEXING ARCHITECTURE
 -- --------------------------------------------------------------------
 /*
    📖 SIMPLE EXPLANATION:
    - What is a Stored Procedure?
-     A saved recipe of SQL steps stored inside the database. It compiles once
-     and runs ultra-fast. Can take input and return output parameters.
+     A pre-compiled, reusable recipe of SQL code stored inside the engine.
+     Accepts parameters, supports transaction control, and encapsulates deduplication pipelines.
    - What is a View?
-     A saved virtual query. It does NOT store extra data on disk; it acts as
-     a security window to hide sensitive columns (like passwords or CEO salary).
+     A saved virtual table (saved SELECT query). It stores NO physical rows on disk;
+     it acts as a secure, simplified lens over complex multi-table data.
+   - Clustered vs Non-Clustered Indexes:
+     • Clustered Index: Physically sorts leaf data pages on disk (Dictionary order). Max 1 per table.
+       Automatically created on PRIMARY KEY!
+     • Non-Clustered Index: Auxiliary B-Tree lookup pointers (Index at back of book). Up to 999 per table.
+     • Audit via `EXEC sp_helpindex 'TableName'`.
 */
 
--- 1. Create a Secure View for Reporting (Hides raw internal IDs)
-IF OBJECT_ID('vw_PublicEmployeeDirectory', 'V') IS NOT NULL 
-    DROP VIEW vw_PublicEmployeeDirectory;
+-- 1. Create a Stored Procedure to Find Duplicate Orders via CTE
+IF OBJECT_ID('usp_GetDuplicateOrders', 'P') IS NOT NULL 
+    DROP PROCEDURE usp_GetDuplicateOrders;
 GO
 
-CREATE VIEW vw_PublicEmployeeDirectory AS
-SELECT e.EmpName, d.DeptName, d.Location, e.Email
-FROM Employees e
-JOIN Departments d ON e.DeptID = d.DeptID;
-GO
-
--- 2. Create a Stored Procedure to get Department Payroll
-IF OBJECT_ID('sp_GetDepartmentPayroll', 'P') IS NOT NULL 
-    DROP PROCEDURE sp_GetDepartmentPayroll;
-GO
-
-CREATE PROCEDURE sp_GetDepartmentPayroll
-    @TargetDeptID INT,
-    @TotalPayroll DECIMAL(12,2) OUTPUT
+CREATE PROCEDURE usp_GetDuplicateOrders
 AS
 BEGIN
     SET NOCOUNT ON;
-    SELECT @TotalPayroll = SUM(Salary)
-    FROM Employees
-    WHERE DeptID = @TargetDeptID;
+    WITH CTE_OrderDeduplication AS
+    (
+        SELECT OrderID, CustomerID, OrderDate, TotalAmount,
+               ROW_NUMBER() OVER
+               (
+                   PARTITION BY CustomerID, OrderDate, TotalAmount
+                   ORDER BY OrderID
+               ) AS row_occurrence
+        FROM Orders
+    )
+    SELECT OrderID, CustomerID, OrderDate, TotalAmount, row_occurrence
+    FROM CTE_OrderDeduplication
+    WHERE row_occurrence > 1;
 END;
 GO
 
 -- Execute the Stored Procedure
-DECLARE @ResultBudget DECIMAL(12,2);
-EXEC sp_GetDepartmentPayroll @TargetDeptID = 1, @TotalPayroll = @ResultBudget OUTPUT;
-SELECT @ResultBudget AS [Department 1 Total Budget];
+EXEC usp_GetDuplicateOrders;
+GO
+
+-- 2. Create a Virtual View for Customer Spend Analytics with Searched CASE
+IF OBJECT_ID('vw_CustomerSpendProfile', 'V') IS NOT NULL 
+    DROP VIEW vw_CustomerSpendProfile;
+GO
+
+CREATE VIEW vw_CustomerSpendProfile AS
+SELECT 
+    c.CustomerID, c.CustomerName, c.City,
+    COUNT(o.OrderID) AS TotalOrders,
+    ISNULL(SUM(o.TotalAmount), 0.00) AS LifetimeSpend,
+    CASE 
+        WHEN SUM(o.TotalAmount) >= 30000.00 THEN 'VIP Tier'
+        WHEN SUM(o.TotalAmount) >= 10000.00 THEN 'Gold Tier'
+        ELSE 'Regular Tier'
+    END AS CustomerTier
+FROM Customers c
+LEFT JOIN Orders o ON c.CustomerID = o.CustomerID
+GROUP BY c.CustomerID, c.CustomerName, c.City;
+GO
+
+SELECT * FROM vw_CustomerSpendProfile;
+GO
+
+-- 3. Non-Clustered Index Creation & sp_helpindex Audit
+IF EXISTS (SELECT * FROM sys.indexes WHERE name = 'IX_Customers_City' AND object_id = OBJECT_ID('Customers'))
+    DROP INDEX IX_Customers_City ON Customers;
+GO
+
+CREATE NONCLUSTERED INDEX IX_Customers_City
+ON Customers (City)
+INCLUDE (CustomerName, Email);
+GO
+
+EXEC sp_helpindex 'Customers';
 GO
 
 -- --------------------------------------------------------------------
--- 🗓️ DAY 27: DML TRIGGERS, STORAGE SCALABILITY (BIGINT) & COALESCE
+-- 🗓️ DAY 28: DML TRIGGERS, EVENT-DRIVEN AUDITING & MAGIC TABLES
 -- --------------------------------------------------------------------
 /*
    📖 SIMPLE EXPLANATION:
    - What is a Trigger?
      An automated watchdog that fires automatically when an INSERT, UPDATE, or DELETE occurs.
    - The Magic Tables:
-     • `INSERTED` : Holds incoming new rows.
-     • `DELETED`  : Holds old deleted/overwritten rows.
-   - BIGINT & Overflow (Msg 8115):
-     Standard INT maxes out at 2.14 Billion. For enterprise totals, convert to BIGINT!
-   - COALESCE ("Collapse") vs ISNULL:
-     `COALESCE(Email, 'No Email Provided')` returns the first non-null item in list.
+     • `INSERTED` : Holds incoming new rows in RAM.
+     • `DELETED`  : Holds old deleted or overwritten rows in RAM.
+   - Scalable Math & BIGINT:
+     Standard INT maxes out at 2.14 Billion. For large multi-million row revenue aggregations,
+     cast numeric sums to `BIGINT` to prevent Arithmetic Overflow (Msg 8115).
 */
 
 -- 1. Automated Audit Trigger on Salary Changes
@@ -1671,46 +1751,12 @@ BEGIN
 END;
 GO
 
--- 2. BIGINT Summation & COALESCE Fallback
+-- 2. BIGINT Summation to Prevent Overflow
 SELECT 
     InvoiceCode,
     COALESCE(RawAmount, '0') AS ValidatedAmount,
     CAST(RawAmount AS BIGINT) AS ScaledAmountBigInt
 FROM StagingInvoices;
-GO
-
--- --------------------------------------------------------------------
--- 🗓️ DAY 28: INDEXES, B-TREE STORAGE ARCHITECTURE & EXECUTION PLANS
--- --------------------------------------------------------------------
-/*
-   📖 SIMPLE EXPLANATION:
-   - What is an Index?
-     A telephone directory index that lets SQL Server jump straight to data
-     in 2 milliseconds instead of scanning 10 million rows from start to finish!
-   - The 2 Main Index Types:
-     1. Clustered Index:
-        Physically sorts table rows on disk (Dictionary order). Only 1 per table.
-     2. Non-Clustered Index:
-        Separate pointer B-Tree (Book index at back). Up to 999 per table.
-     3. Covering Index:
-        Add `INCLUDE (col1, col2)` to answer queries with ZERO table lookups!
-   - Sargability: Never wrap indexed columns in functions in WHERE!
-*/
-
--- 1. Create a fast Non-Clustered Index on Customer City
-IF EXISTS (SELECT * FROM sys.indexes WHERE name = 'IX_Customers_City' AND object_id = OBJECT_ID('Customers'))
-    DROP INDEX IX_Customers_City ON Customers;
-GO
-
-CREATE NONCLUSTERED INDEX IX_Customers_City
-ON Customers (City)
-INCLUDE (CustomerName, Email);
-GO
-
--- This query performs a fast laser-pointer Index Seek!
-SELECT CustomerName, Email 
-FROM Customers 
-WHERE City = 'Pune';
 GO
 
 
@@ -1761,37 +1807,55 @@ FROM StagingInvoices;
 -------------------------------- */
 
 
--- [Q54] Sum RawAmount from StagingInvoices safely converted to BIGINT to prevent overflow (Msg 8115).
+-- [Q54] Demonstrate TCL safety: Begin an explicit transaction, delete customer 5, verify deletion, and ROLLBACK.
 -- Write your SQL Query below:
 
 
 
 /* --- [SOLUTION KEY - Q54] ---
-SELECT SUM(CAST(RawAmount AS BIGINT)) AS TotalBigIntRevenue 
-FROM StagingInvoices;
+BEGIN TRANSACTION;
+DELETE FROM Customers WHERE CustomerID = 5;
+SELECT * FROM Customers WHERE CustomerID = 5;
+ROLLBACK TRANSACTION;
 -------------------------------- */
 
 
--- [Q55] Mask customer email addresses by replacing all characters before '@' with '***CONFIDENTIAL***'.
+-- [Q55] Find the 2nd highest salary across Employees using CTE + DENSE_RANK() (modern anti-subquery standard).
 -- Write your SQL Query below:
 
 
 
 /* --- [SOLUTION KEY - Q55] ---
-SELECT CustomerID, CustomerName, Email,
-       CONCAT('***CONFIDENTIAL***', SUBSTRING(Email, CHARINDEX('@', Email), LEN(Email))) AS MaskedEmail 
-FROM Customers 
-WHERE Email IS NOT NULL;
+WITH CTE_RankedSalary AS
+(
+    SELECT EmpID, EmpName, DeptID, Salary,
+           DENSE_RANK() OVER (ORDER BY Salary DESC) AS Rnk
+    FROM Employees
+)
+SELECT EmpID, EmpName, DeptID, Salary
+FROM CTE_RankedSalary
+WHERE Rnk = 2;
 -------------------------------- */
 
 
--- [Q56] Create a view named `vw_HighValueOrders` displaying orders with TotalAmount > 20,000.
+-- [Q56] Create a stored procedure named `sp_GetCustomerOrders` that accepts `@CustID INT` and returns their orders.
 -- Write your SQL Query below:
 
 
 
 /* --- [SOLUTION KEY - Q56] ---
--- Query to create view:
+-- CREATE PROCEDURE sp_GetCustomerOrders @CustID INT AS
+-- BEGIN SET NOCOUNT ON; SELECT * FROM Orders WHERE CustomerID = @CustID; END;
+SELECT * FROM Orders WHERE CustomerID = 1;
+-------------------------------- */
+
+
+-- [Q57] Create a view named `vw_HighValueOrders` displaying orders with TotalAmount > 20,000.
+-- Write your SQL Query below:
+
+
+
+/* --- [SOLUTION KEY - Q57] ---
 -- CREATE VIEW vw_HighValueOrders AS SELECT * FROM Orders WHERE TotalAmount > 20000.00;
 SELECT OrderID, CustomerID, TotalAmount 
 FROM Orders 
@@ -1799,39 +1863,31 @@ WHERE TotalAmount > 20000.00;
 -------------------------------- */
 
 
--- [Q57] Demonstrate COALESCE by projecting Email, falling back to 'No Contact Email' if NULL.
--- Write your SQL Query below:
-
-
-
-/* --- [SOLUTION KEY - Q57] ---
-SELECT CustomerID, CustomerName,
-       COALESCE(Email, 'No Contact Email Available') AS ContactPoint 
-FROM Customers;
--------------------------------- */
-
-
--- [Q58] Create a stored procedure `sp_GetCustomerOrders` that takes `@CustID INT` and returns their orders.
+-- [Q58] Create a non-clustered covering index `IX_Customers_City` on `Customers(City)` including CustomerName and Email.
 -- Write your SQL Query below:
 
 
 
 /* --- [SOLUTION KEY - Q58] ---
--- CREATE PROCEDURE sp_GetCustomerOrders @CustID INT AS
--- BEGIN SELECT * FROM Orders WHERE CustomerID = @CustID; END;
-SELECT * FROM Orders WHERE CustomerID = 1;
+-- CREATE NONCLUSTERED INDEX IX_Customers_City ON Customers (City) INCLUDE (CustomerName, Email);
+SELECT CustomerName, Email FROM Customers WHERE City = 'Pune';
 -------------------------------- */
 
 
--- [Q59] Write a query on Customers filtering by `City = 'Pune'` that leverages index seek on `IX_Customers_City`.
+-- [Q59] Create an automated AFTER UPDATE trigger `trg_AuditSalaryChanges` to log salary changes into SalaryAuditLog.
 -- Write your SQL Query below:
 
 
 
 /* --- [SOLUTION KEY - Q59] ---
-SELECT CustomerName, Email 
-FROM Customers 
-WHERE City = 'Pune';
+-- CREATE TRIGGER trg_AuditSalaryChanges ON Employees AFTER UPDATE AS
+-- BEGIN
+--     IF UPDATE(Salary)
+--         INSERT INTO SalaryAuditLog (EmpID, OldSalary, NewSalary, ChangedAt, ChangedBy)
+--         SELECT d.EmpID, d.Salary, i.Salary, GETDATE(), SYSTEM_USER
+--         FROM deleted d JOIN inserted i ON d.EmpID = i.EmpID;
+-- END;
+SELECT * FROM SalaryAuditLog;
 -------------------------------- */
 
 
