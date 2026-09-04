@@ -383,32 +383,47 @@ document.addEventListener('DOMContentLoaded', () => {
   renderTasks(currentRaw, container)
   setLastUpdated('Loaded from build bundle (instant)')
 
-  // ─── LAYER 2 & 3: Silent background upgrade ───────────────────────────────
-  async function tryLiveUpgrade() {
-    const cb = `?_=${Date.now()}`
+  // ─── LAYER 2 & 3: Real-Time Auto-Upgrade Engine ───────────────────────────
+  async function tryLiveUpgrade(force = false) {
+    const cb = `?t=${Date.now()}`
 
     try {
-      const res = await fetch('/TODAYS_TASKS.txt' + cb, { cache: 'no-store' })
+      const res = await fetch('/TODAYS_TASKS.txt' + cb, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          Pragma: 'no-cache'
+        }
+      })
       if (res.ok) {
         const text = normalise(await res.text())
-        if (text && text !== currentRaw) {
+        if (text && (text !== currentRaw || force)) {
           currentRaw = text
           renderTasks(currentRaw, container)
           setLastUpdated('Live — from Vercel static ✅')
+          return
+        } else if (text) {
+          setLastUpdated('Live — Up to date ✅')
           return
         }
       }
     } catch (_) { /* silent */ }
 
     try {
-      const res = await fetch(GITHUB_RAW_URL + cb, { cache: 'no-store' })
+      const res = await fetch(GITHUB_RAW_URL + cb, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          Pragma: 'no-cache'
+        }
+      })
       if (res.ok) {
         const text = normalise(await res.text())
-        if (text && text !== currentRaw) {
+        if (text && (text !== currentRaw || force)) {
           currentRaw = text
           renderTasks(currentRaw, container)
           setLastUpdated('Live — from GitHub Raw 🌐')
-        } else {
+        } else if (text) {
           setLastUpdated('Up to date ✅')
         }
       }
@@ -421,15 +436,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  requestAnimationFrame(() => setTimeout(tryLiveUpgrade, 200))
+  // 1. Instant fetch on page load
+  tryLiveUpgrade(true)
 
-    if (refreshBtn) {
+  // 2. Auto-sync on window focus & visibility change (when tab reopened)
+  window.addEventListener('focus', () => tryLiveUpgrade(true))
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      tryLiveUpgrade(true)
+    }
+  })
+
+  // 3. Periodic background poll every 20 seconds
+  setInterval(() => tryLiveUpgrade(false), 20000)
+
+  if (refreshBtn) {
     refreshBtn.addEventListener('click', async () => {
       refreshBtn.classList.add('spinning')
       refreshBtn.disabled = true
       const walleWidget = document.getElementById('walle-widget')
       if (walleWidget) walleWidget.classList.add('scanning')
-      await tryLiveUpgrade()
+      await tryLiveUpgrade(true)
       refreshBtn.classList.remove('spinning')
       refreshBtn.disabled = false
       if (walleWidget) setTimeout(() => walleWidget.classList.remove('scanning'), 600)

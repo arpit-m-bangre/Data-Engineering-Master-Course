@@ -3,16 +3,16 @@
    [STATUS: DUAL-FLEET + CHAT SCAN NIGHT SPRINT | STREAK DAY 31 UNLOCKED]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Execute 9-to-5 Job Engineering with WALL-E, power through 4-Hour SQL Server Master Bootcamp & Class Tasks, attend Live Class Day 27, and build Cap's Chat Scan project!
+[!] MISSION OBJECTIVE: Execute 9-to-5 Job Engineering with WALL-E, power through 4-Hour SQL Server Master Bootcamp, attend Live Class Day 27, and build Cap's Chat Scan project!
 
 [🎯 CURRENT TARGET]: Complete SQL_SERVER_MASTERY_BOOTCAMP.SQL till 10:30 AM Sunday (06 Sep 2026) — 28 Days + 60 Checkpoints
 
 [MUST-WIN 1] WALL-E 9-to-5 Industrial Job Simulation: Deep Internals, Industrial Pipeline Building, Timed Coding & Architecture (09:00 AM - 05:00 PM).
-[MUST-WIN 2] Pippo SQL Engine: Solve 04_CLASS_TASKS/ & power through SQL Server Mastery Bootcamp Checkpoints 01-40 (05:00 PM - 09:00 PM).
+[MUST-WIN 2] Pippo SQL Engine: Full 4-Hour Pure SQL Server Mastery Bootcamp Checkpoints 01-60 (05:00 PM - 09:00 PM).
 [MUST-WIN 3] Live Data Engineering Class Day 27 (09:00 PM - 10:15 PM) & Final System Sync (10:15 PM - 10:30 PM).
 [MUST-WIN 4] Cap's Fun Project: Chat Scan Architecture & Build (10:30 PM - 12:30 AM) with clean recovery sleep by 12:30 AM.
 
-TOTAL STUDY & ENGINEERING TIME TODAY: 14.50 Hours (7.0h WALL-E Job + 4.0h Bootcamp/SQL + 1.25h Class + 0.25h Sync + 2.0h Chat Scan)
+TOTAL STUDY & ENGINEERING TIME TODAY: 14.50 Hours (7.0h WALL-E Job + 4.0h SQL Bootcamp + 1.25h Class + 0.25h Sync + 2.0h Chat Scan)
 
 --------------------------------------------------------------------
              🤖 FLEET 1: WALL-E 9-TO-5 "JOB" ENGINE (7.0 HOURS)
@@ -48,27 +48,21 @@ TOTAL STUDY & ENGINEERING TIME TODAY: 14.50 Hours (7.0h WALL-E Job + 4.0h Bootca
 --------------------------------------------------------------------
             🐥 FLEET 2: PIPPO SQL SERVER BOOTCAMP ENGINE (4.0 HOURS)
 --------------------------------------------------------------------
-[ ] 05:00 PM - 06:00 PM : Sprint 1 — Solve Faculty Class Tasks [2026-09-02_CLASS_TASK.SQL] & Re-write ✍️
-    -> Stage 1: Solve 5 Faculty Class Tasks in 01_SQL/04_CLASS_TASKS/2026-09-02_CLASS_TASK.SQL (Full Name Parser, Trim, Cast/Convert).
-    -> Stage 2: Re-write 2026-09-02.sql & 2026-09-03.sql transaction rollback and coalesce syntax in SSMS.
-    -> Stage 3: Clear pending drills in 01_SQL/05_INDEX_WISE_QUESTIONS/2026-09-02_QUESTIONS.SQL.
-    -> [DoD]: All 5 class tasks solved, executed and verified in SSMS against DataEngineeringMasterDB.
-
-[ ] 06:00 PM - 09:00 PM : Sprint 2 — SQL Server Mastery Bootcamp Sprint (3.0 Hours) 🚀
+[ ] 05:00 PM - 09:00 PM : Sprint 1 — SQL Server Mastery Bootcamp (4.0 Hours) 🚀
     -> Open !_QUICK_ACCESS/SQL_SERVER_MASTERY_BOOTCAMP.SQL in SSMS against DataEngineeringMasterDB.
-    -> Advance Checkpoints 01 to 40 (Foundations, Aggregations, Constraints, Joins & Hierarchy).
-    -> Execute 10 Foundation Drills (Q01-Q10), 10 Aggregation Drills (Q11-Q20), and 10 Constraint Drills (Q21-Q30).
-    -> [DoD]: Target checkpoint drills executed and validated toward Sunday 10:30 AM Mock Assessment.
+    -> Complete comprehensive 28-day SQL curriculum revision across all 6 core modules.
+    -> Execute Checkpoints 01 to 60 (Foundations, Aggregations, Constraints, Joins, Window CTEs, Subqueries & Transactions).
+    -> [DoD]: Full 28-day revision and 60 checkpoint drills solved toward Sunday 10:30 AM Mock Assessment.
 
 --------------------------------------------------------------------
                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : Sprint 3 — LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 27) 🎓
+[ ] 09:00 PM - 10:15 PM : Sprint 2 — LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 27) 🎓
     -> 100% active focus and live query typing during faculty session.
     -> Capture raw lecture queries, execution plans, and architectural edge cases.
     -> [DoD]: Live class completed with raw notes captured for instant processing.
 
-[ ] 10:15 PM - 10:30 PM : Sprint 4 — Night System Sync, GitHub Push & Vercel Deploy (Streak Day 31 🔥) 🚀
+[ ] 10:15 PM - 10:30 PM : Sprint 3 — Night System Sync, GitHub Push & Vercel Deploy (Streak Day 31 🔥) 🚀
     -> Update MASTER_LEARNING_TRACKER.txt, MASTER_LEARNING_TRACKER.md, and METRICS_AND_STATISTICS.json.
     -> Run node copy_tasks.cjs and npm run build in DASHBOARD/.
     -> Atomic git commit and push to GitHub to lock Streak Day 31 and trigger Vercel deployment.
@@ -77,7 +71,7 @@ TOTAL STUDY & ENGINEERING TIME TODAY: 14.50 Hours (7.0h WALL-E Job + 4.0h Bootca
 --------------------------------------------------------------------
           🛠️ PERSONAL LAB: CAP'S FUN PROJECT SPRINT (2.0 HOURS)
 --------------------------------------------------------------------
-[ ] 10:30 PM - 12:30 AM : Sprint 5 — Cap's Fun Project: Chat Scan Architecture & Build 🛠️⚡
+[ ] 10:30 PM - 12:30 AM : Sprint 4 — Cap's Fun Project: Chat Scan Architecture & Build 🛠️⚡
     -> Architecture design, feature development, and experimentation on personal Chat Scan project.
     -> Pure creative building, scanner logic testing, and stress-free coding flow.
     -> [DoD]: Chat Scan milestone features developed and tested.
