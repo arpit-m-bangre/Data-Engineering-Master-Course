@@ -3,8 +3,8 @@
                          (ALL TOPICS TILL NOW)
 ================================================================================
 
-Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 27 Class Note Files (2026-08-01 to 2026-09-04)
+Folder: !_QUICK_ACCESS/
+Total Modules / Files: 28 Class Days (2026-08-01 to 2026-09-05)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -282,6 +282,14 @@ SECTION 1: DAILY CLASS BREAKDOWN
     27.14 Heap Tables vs Clustered Tables: Unordered Heap Storage Allocation (p12) vs Physically Sorted Storage (p11)
     27.15 Explicit Clustered Index Creation: CREATE CLUSTERED INDEX on Heap Tables & Storage Reorganization
 
+28. DAY 28 (SEPTEMBER 05) - DML TRIGGERS & EVENT-DRIVEN AUTOMATION
+    28.1 DML Triggers: Automated event execution on INSERT, UPDATE, DELETE
+    28.2 Trigger Types: AFTER / FOR Triggers vs INSTEAD OF Triggers
+    28.3 Magic Memory Tables: INSERTED (new state) & DELETED (old state) in RAM
+    28.4 Enterprise Audit Pipelines: Automated change tracking, mutation timestamps & SYSTEM_USER
+    28.5 INSTEAD OF Triggers on Views: Intercepting DML on multi-table joins safely
+    28.6 Trigger Management: ENABLE TRIGGER, DISABLE TRIGGER, and DROP TRIGGER
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -458,5 +466,12 @@ U. INDEXING ARCHITECTURE & PHYSICAL DATA ORGANIZATION
     • Heap Tables (Unordered IAM Allocation) vs Clustered Index Tables
     • Explicit Clustered Index Creation (CREATE CLUSTERED INDEX) & Page Reorganization
     • System Metadata Inspection via sp_helpindex
+
+V. EVENT-DRIVEN AUTOMATION (DML TRIGGERS)
+    • Trigger Types: AFTER / FOR vs INSTEAD OF Triggers
+    • Magic Virtual Tables: INSERTED vs DELETED in RAM
+    • Automated Auditing & Enterprise Change-Log Tracking Pipelines
+    • INSTEAD OF Triggers for Multi-Table View Mutation
+    • Trigger Lifecycle Management (ENABLE / DISABLE / DROP TRIGGER)
 
 ================================================================================
