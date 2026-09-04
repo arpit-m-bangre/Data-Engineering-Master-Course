@@ -1,13 +1,13 @@
 ====================================================================
                   DAILY MISSION: 05 SEP 2026 (SATURDAY)
-  [STATUS: EXCEPTION DAY | 10.75 HOURS PURE SQL MASTERY BOOTCAMP 🔥]
+  [STATUS: EXCEPTION DAY | 12.00 HOURS TOTAL ENGINEERING & LIVE CLASS 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Execute full 10.5-Hour deep SQL Server Mastery Bootcamp revision across all 28 days and solve all 60 checkpoint questions in SSMS!
+[!] MISSION OBJECTIVE: Execute full 10.5-Hour deep SQL Server Mastery Bootcamp revision across all 28 days, attend Live Class, and lock Day 32 streak!
 
 [🎯 CURRENT TARGET]: Complete SQL_SERVER_MASTERY_BOOTCAMP.SQL till 10:30 AM Sunday (06 Sep 2026) — 28 Days + 60 Checkpoints
 
-TOTAL STUDY TIME TODAY: 10.75 Hours (10.5h Pure SQL Bootcamp Revision + 0.25h System Sync)
+TOTAL STUDY & CLASS TIME TODAY: 12.00 Hours (10.5h Pure SQL Bootcamp + 1.25h Live Class + 0.25h System Sync)
 
 --------------------------------------------------------------------
                         DAY SPRINT EXECUTION
@@ -57,19 +57,21 @@ TOTAL STUDY TIME TODAY: 10.75 Hours (10.5h Pure SQL Bootcamp Revision + 0.25h Sy
     -> [DoD]: All 60 Checkpoint questions solved across all 6 modules.
 
 --------------------------------------------------------------------
-                  POST-STUDY NIGHT SPRINT BLOCK
+                      EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 09:15 PM : Sprint 6 — Night System Sync, GitHub Push & Vercel Deploy (Streak Day 32 🔥) 🚀
+[ ] 09:00 PM - 10:15 PM : Sprint 6 — LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY 28) 🎓
+    -> 100% active focus and live query typing during faculty session.
+    -> Capture raw lecture queries, execution plans, and architectural edge cases.
+    -> [DoD]: Live class completed with raw notes captured for instant processing.
+
+[ ] 10:15 PM - 10:30 PM : Sprint 7 — Night System Sync, GitHub Push & Vercel Deploy (Streak Day 32 🔥) 🚀
     -> Update MASTER_LEARNING_TRACKER.txt, MASTER_LEARNING_TRACKER.md, and METRICS_AND_STATISTICS.json.
     -> Run node copy_tasks.cjs and npm run build in DASHBOARD/.
     -> Atomic git commit and push to GitHub to lock Streak Day 32 and trigger Vercel deployment.
     -> [DoD]: Clean build, verified deployment, Streak Day 32 locked.
 
-[-] 09:15 PM - 10:45 PM : Dinner & Unwind Window 🍲🛋️
-    -> Nutritious dinner, relaxation, family time, post-sprint mental reset.
-
-[-] 10:45 PM - 07:00 AM : Night Sleep & Bio-Paced Recovery (Strict 10:45 PM Cutoff) 💤
-    -> 8.25 hours protected recovery sleep; recharge for Sunday morning Mock Assessment.
+[-] 10:30 PM - 07:00 AM : Night Sleep & Bio-Paced Recovery (Strict Bio-Paced Cutoff) 💤
+    -> 8.5 hours protected recovery sleep; recharge for Sunday morning Mock Assessment.
 
 ====================================================================
 *Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
