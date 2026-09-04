@@ -1,10 +1,10 @@
 ================================================================================
                     MASTER COMBINED SQL COURSE INDEX
-                (COMPLETE 28-DAY SYLLABUS: DAYS 01 TO 28)
+                         (ALL TOPICS TILL NOW)
 ================================================================================
 
-Folder: !_QUICK_ACCESS/ (Direct Student Reference Hub)
-Total Curriculum Scope: Full 28 Class Days (2026-08-01 to 2026-09-05)
+Folder: 01_SQL/01_CLASS_NOTES
+Total Modules / Files: 27 Class Note Files (2026-08-01 to 2026-09-04)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -251,43 +251,36 @@ SECTION 1: DAILY CLASS BREAKDOWN
     25.9 Query Performance Best Practices: Avoiding Correlated Subqueries in Favor of Set-Based Joins
     25.10 Database Objects Roadmap: Stored Procedures, Views, Triggers, Indexes
 
-26. DAY 26 (SEPTEMBER 03) - STORED PROCEDURES & DATABASE VIEWS
-    26.1 Stored Procedures Architecture (Pre-compiled execution batches vs ad-hoc scripts)
-    26.2 Syntax & Lifecycle: CREATE PROCEDURE, ALTER PROCEDURE, EXEC / EXECUTE
-    26.3 Input Parameters: Required parameters (@DeptID INT) & Default values (@City = 'Pune')
-    26.4 Output Parameters: Returning computed scalar metrics via @TotalCount INT OUTPUT
-    26.5 Procedural Control Flow: IF ... ELSE branching, WHILE loops, and error trapping
-    26.6 Explicit Transactions inside SP: BEGIN TRANSACTION, COMMIT TRANSACTION, ROLLBACK
-    26.7 Stored Procedure vs User-Defined Function (UDF): DML permissions & execution plan caching
-    26.8 Database Views: Stored query definitions vs physical storage (Virtual tables)
-    26.9 Security & Data Masking via Views (Restricting column and row access for analytics)
-    26.10 DML Mutations through Views: Single base table rule & non-updatable view limits
-    26.11 Materialized / Indexed Views: WITH SCHEMABINDING & clustered index materialization
+26. DAY 26 (SEPTEMBER 03) - TRANSACTION CONTROL (TCL), NULL HANDLING & SUBQUERIES VS CTES
+    26.1 Transaction Control Language (TCL) Architecture (Autocommit vs Explicit BEGIN TRANSACTION)
+    26.2 ROLLBACK Mechanics: Restoring Uncommitted DML Operations (DELETE, UPDATE, INSERT)
+    26.3 COMMIT Mechanics: Persisting Modifications Permanently to Transaction Log (WAL)
+    26.4 Error Msg 3903 Analysis: ROLLBACK without Active Transaction or after COMMIT Finalization
+    26.5 SQL Server DDL Rollback: Reverting DROP TABLE & TRUNCATE Inside Active Transactions
+    26.6 NULL Management: Filtering & Mutating via WHERE column IS NULL
+    26.7 ISNULL(expr, replacement) 2-Parameter Deterministic Replacement in T-SQL
+    26.8 ANSI-SQL COALESCE(v1, v2, ... vn) Multi-Column Fallback & Type Precedence Rules
+    26.9 Subquery Mechanics: Scalar Subqueries (Finding N-th Highest Marks via WHERE Marks < (SELECT MAX...))
+    26.10 In-Subquery (WHERE ID IN (SELECT ID...)) & Performance Bottlenecks in Production
+    26.11 Production Standard: Refactoring Subqueries to CTEs with DENSE_RANK() & Set-Based INNER JOIN
+    26.12 Dialect Nuances & Interview Playbook: When Subqueries are Required (Salesforce SOQL) vs SQL Server / Snowflake CTEs
 
-27. DAY 27 (SEPTEMBER 04) - TRIGGERS, BIGINT STORAGE & NULL COALESCING ENGINE
-    27.1 DML Triggers: Automated event execution on INSERT, UPDATE, DELETE
-    27.2 Trigger Types: AFTER / FOR Triggers vs INSTEAD OF Triggers
-    27.3 Magic Memory Tables: INSERTED (new state) & DELETED (old state) in RAM
-    27.4 Enterprise Audit Pipelines: Automated change tracking, mutation timestamps & SYSTEM_USER
-    27.5 INSTEAD OF Triggers on Views: Intercepting DML on multi-table joins safely
-    27.6 Integer Hierarchy: TINYINT (1B), SMALLINT (2B), INT (4B, 2.14B), BIGINT (8B, 9 Quintillion)
-    27.7 Arithmetic Overflow Trap (Msg 8115): High-volume SUM aggregations exceeding INT limit
-    27.8 Safe Pipeline Casting: SUM(CAST(Amount AS BIGINT)) & SUM(CONVERT(BIGINT, Amount))
-    27.9 Null Coalescing: COALESCE(val1, val2, ... fallback) multi-parameter left-to-right evaluation
-    27.10 COALESCE vs ISNULL: Data type precedence resolution & ANSI standard portability
-    27.11 Row Condensing / Collapsing: MAX(CASE ...) row collapsing & PIVOT foundations
-
-28. DAY 28 (SEPTEMBER 05) - INDEXES, B-TREE ARCHITECTURE & QUERY PERFORMANCE TUNING
-    28.1 Indexes Fundamentals: Full Table Scan O(N) vs B-Tree Index Seek O(log N)
-    28.2 Clustered Index: Physical page ordering on disk (1 per table, default on PRIMARY KEY)
-    28.3 Non-Clustered Index: Auxiliary B-Tree lookup structure with row/key pointers (Up to 999 per table)
-    28.4 Composite Indexes & Column Ordering: Leading edge column rule for multi-column keys
-    28.5 Covering Indexes & The INCLUDE Clause: Eliminating Key/Bookmark Lookups in execution plans
-    28.6 Query Execution Profiling: Index Seek (Laser pointer) vs Index Scan vs Table Scan
-    28.7 Sargability Best Practices: Why wrapping indexed columns in functions kills index seeks
-    28.8 The Master SQL 7-Pillar Query Stack: Clauses -> Dates -> Joins -> Windows -> CASE -> SPs -> Indexes
-    28.9 The Anti-Subquery Law: Replacing correlated subqueries with Window Functions & Hash Joins
-    28.10 Official SQL Module Graduation: Transition into Module 02 (Python, OOP & Data Cleansing)
+27. DAY 27 (SEPTEMBER 04) - STORED PROCEDURES (DEDUPLICATION), VIEWS & INDEXING ARCHITECTURE
+    27.1 Stored Procedure Architecture: Pre-compiled execution plans, reduced network payload & encapsulation
+    27.2 CREATE PROCEDURE usp_Name AS BEGIN ... END Syntax & SET NOCOUNT ON Best Practice
+    27.3 Automated Deduplication Engine: Encapsulating CTE + ROW_NUMBER() OVER (PARTITION BY ... ORDER BY ...) in SPs
+    27.4 Modifying Procedures: ALTER PROCEDURE vs DROP & CREATE (Preserving Object Permissions)
+    27.5 Executing Stored Procedures: EXEC / EXECUTE mechanics & result set handling
+    27.6 Views as Virtual Tables: Storing SELECT Query Metadata without Row-Level Physical Duplication
+    27.7 CREATE VIEW & ALTER VIEW Syntax with Searched CASE Expressions for Dynamic Row Classification
+    27.8 Views vs Stored Procedures: Table-like Query Composability (JOIN, WHERE, GROUP BY) vs Procedural Execution
+    27.9 Standard (Virtual) Views vs Materialized (Indexed) Views: On-the-fly Query Expansion vs Clustered B-Tree Persistence
+    27.10 Non-Clustered Indexes: Auxiliary B-Tree Index Structure on Specific Columns (StudentInfo.marks)
+    27.11 System Metadata Auditing: EXEC sp_helpindex for Index Inspection
+    27.12 Clustered Index Mechanics: Physical Ordering of Leaf-Level Data Pages (1 Clustered Index per Table)
+    27.13 Primary Key Auto-Clustering: Default Clustered Index Creation on PK Constraint Definition
+    27.14 Heap Tables vs Clustered Tables: Unordered Heap Storage Allocation (p12) vs Physically Sorted Storage (p11)
+    27.15 Explicit Clustered Index Creation: CREATE CLUSTERED INDEX on Heap Tables & Storage Reorganization
 
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
@@ -423,34 +416,47 @@ O. T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING
     • Dynamic Text Parsing: Splitting Composite Strings & Full Names
     • Interview Query Design Strategy & Upcoming Enterprise Objects (Procedures, Views, Triggers, Indexes)
 
-P. DATABASE PROGRAMMABILITY & STORED PROCEDURES
-    • Stored Procedure Architecture & Execution Plan Caching
-    • Procedural Parameterization (@InputParams, @OutputParams)
-    • Control Flow (IF ... ELSE, WHILE, BEGIN TRAN ... COMMIT / ROLLBACK)
-    • Stored Procedures vs User-Defined Functions (DML vs Read-Only)
+P. TRANSACTION CONTROL LANGUAGE (TCL) & DDL ROLLBACK
+    • Autocommit vs Explicit Transaction Architecture (`BEGIN TRANSACTION`)
+    • `ROLLBACK` Mechanics on DML (`DELETE`, `UPDATE`, `INSERT`)
+    • `COMMIT` Finalization & ACID Durability
+    • SQL Server DDL Rollback Capabilities (`DROP TABLE`, `TRUNCATE TABLE` in Transactions)
+    • Error 3903 Troubleshooting & Uncommitted State Protection
 
-Q. DATABASE VIEWS & ABSTRACTION LAYERS
-    • Virtual Query Definitions & Security Masking
-    • DML Modifications on Views & Single Base Table Constraints
-    • WITH SCHEMABINDING & Indexed Materialized Views
+Q. NULL HANDLING & REPLACEMENT FUNCTIONS
+    • `WHERE column IS NULL` vs `IS NOT NULL`
+    • `ISNULL(expression, replacement_value)` (T-SQL 2-Parameter Fast Lookup)
+    • `COALESCE(val1, val2, ... valN)` (ANSI-SQL Multi-Column Fallback)
+    • Data Type Precedence & Deterministic Return Types
 
-R. EVENT-DRIVEN AUTOMATION (DML TRIGGERS)
-    • Trigger Types: AFTER / FOR vs INSTEAD OF Triggers
-    • Magic Virtual Tables: INSERTED vs DELETED in RAM
-    • Automated Auditing & Enterprise Change-Log Tracking Pipelines
-    • INSTEAD OF Triggers for Multi-Table View Mutation
+R. SUBQUERIES VS MODERN CTEs & WINDOW FUNCTIONS
+    • Scalar Subqueries (`WHERE Marks < (SELECT MAX(Marks)...)`)
+    • In-Subqueries (`WHERE ID IN (SELECT ID FROM ...)`) & Performance Penalties
+    • Modern Production Standard: Window Functions (`DENSE_RANK()`) inside CTEs
+    • Set-Based Joins (`INNER JOIN`, `EXISTS`) vs Subqueries
+    • Legacy/Dialect Environments (Salesforce SOQL) vs High-Scale Big Data Standards
 
-S. DATA TYPES, SCALABILITY & COALESCING
-    • Integer Memory Hierarchy (TINYINT, SMALLINT, INT, BIGINT)
-    • Arithmetic Overflow Avoidance (Msg 8115) via BIGINT Conversions
-    • Multi-Expression Null Coalescing: COALESCE() vs ISNULL()
-    • Row Condensing / Collapsing via Conditional Logic & PIVOT
+S. STORED PROCEDURES & REUSABLE LOGIC
+    • Pre-compiled Execution Plans & Cache Optimization
+    • CREATE PROCEDURE & ALTER PROCEDURE Syntax
+    • Procedural Encapsulation of Automated Deduplication Pipelines
+    • EXEC / EXECUTE Invocation Mechanics
+    • Modular Maintenance & Security Isolation (Granting EXEC without Direct Table Access)
 
-T. INDEXES, B-TREE STORAGE & QUERY OPTIMIZATION
-    • Clustered B-Tree Physical Sorting vs Non-Clustered Pointer Indexes
-    • Covering Indexes with the INCLUDE Clause
-    • Execution Plan Analysis: Index Seek vs Index Scan vs Table Scan
-    • Sargability Rules & Anti-Subquery Performance Optimization
-    • Final 7-Pillar SQL Master Query Engine Stack
+T. VIEWS & VIRTUAL LOGICAL ABSTRACTIONS
+    • Virtual Table Architecture & Data Dictionary Metadata Storage
+    • CREATE VIEW & ALTER VIEW Syntax
+    • Dynamic Row Classification via Searched CASE Expressions inside Views
+    • Query Composability (Filtering, Joining & Aggregating Views like Base Tables)
+    • Standard Virtual Views vs Materialized (Indexed) Views (Compute-on-Read vs Physical B-Tree Storage)
+
+U. INDEXING ARCHITECTURE & PHYSICAL DATA ORGANIZATION
+    • B-Tree Index Hierarchy (Root, Intermediate, Leaf Nodes)
+    • Non-Clustered Indexes on Filtering Columns (CREATE NONCLUSTERED INDEX)
+    • Clustered Indexes & Physical Ordering of Table Leaf Data Pages
+    • Primary Key Auto-Clustering Behavior (p11 vs Heap p12)
+    • Heap Tables (Unordered IAM Allocation) vs Clustered Index Tables
+    • Explicit Clustered Index Creation (CREATE CLUSTERED INDEX) & Page Reorganization
+    • System Metadata Inspection via sp_helpindex
 
 ================================================================================
