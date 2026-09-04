@@ -74,7 +74,8 @@
 🧠 SECTION 3: QUICK SYNTAX MEMORY CHEAT SHEET (RULES 1 TO 10)
 🏆 SECTION 4: FINAL BOSS PROJECT (360° Customer & Financial Intelligence View)
 🧠 SECTION 5: TOP 20 INTERVIEW TRAPS & HOW TO FIX THEM
-🏁 SECTION 6: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
+⚡ SECTION 6: 20 SHORT INTERVIEW QUESTIONS & QUICK ANSWERS (RAPID RECALL)
+🏁 SECTION 7: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
 ====================================================================
 */
 
@@ -2101,7 +2102,95 @@ GO
 
 
 -- ====================================================================
--- 🏁 SECTION 6: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
+-- ⚡ SECTION 6: 20 SHORT INTERVIEW QUESTIONS & QUICK ANSWERS (RAPID RECALL)
+-- ====================================================================
+/*
+   Q01: What is the core difference between DELETE, TRUNCATE, and DROP?
+   A01: • DELETE   = DML, row-by-row, WHERE supported, slower, fully logged in WAL.
+        • TRUNCATE = DDL, deallocates entire 8 KB data pages, fast, resets IDENTITY.
+        • DROP     = DDL, destroys table schema, structure, and all data permanently.
+
+   Q02: What is the difference between WHERE and HAVING?
+   A02: • WHERE filters individual rows BEFORE GROUP BY (Row-level filter).
+        • HAVING filters aggregated summary rows AFTER GROUP BY (Group-level filter).
+
+   Q03: What is the difference between PRIMARY KEY and UNIQUE KEY?
+   A03: • PRIMARY KEY : Mandatory NOT NULL, creates Clustered Index (Max 1 per table).
+        • UNIQUE KEY  : Allows 1 NULL (in SQL Server), creates Non-Clustered Index (Multiple allowed).
+
+   Q04: What is the difference between UNION and UNION ALL?
+   A04: • UNION ALL stacks datasets directly (Fast O(1), preserves duplicates).
+        • UNION performs an internal sorting/distinct operation to remove duplicates (Slower).
+
+   Q05: How do ROW_NUMBER(), RANK(), and DENSE_RANK() handle tied values (e.g. 90, 90, 80)?
+   A05: • ROW_NUMBER() : Sequential unique numbers (1, 2, 3).
+        • RANK()       : Tied values share rank, leaves gaps (1, 1, 3).
+        • DENSE_RANK() : Tied values share rank, NO gaps left (1, 1, 2).
+
+   Q06: What is the difference between LEAD() and LAG()?
+   A06: • LAG()  peeks at preceding (previous) rows to calculate period-over-period delta.
+        • LEAD() peeks at succeeding (next) rows to calculate future trends.
+
+   Q07: What is the difference between ISNULL() and COALESCE()?
+   A07: • ISNULL(a, b) : 2 parameters, returns datatype of 1st parameter (T-SQL specific).
+        • COALESCE()   : Multi-parameter, returns 1st non-null value with highest precedence (ANSI standard).
+
+   Q08: Can TRUNCATE be rolled back inside SQL Server transactions?
+   A08: YES! In SQL Server, TRUNCATE logs page deallocations in the transaction log and CAN be rolled back
+        inside an explicit `BEGIN TRANSACTION ... ROLLBACK` block.
+
+   Q09: What is the difference between a Clustered Index and a Non-Clustered Index?
+   A09: • Clustered Index     : Dictates physical disk order of data pages (Max 1 per table, like a Dictionary).
+        • Non-Clustered Index : Separate B-Tree storing key columns + row pointers (Up to 999 per table, like Book Index).
+
+   Q10: What is the logical execution order of SQL query clauses?
+   A10: FROM -> ON -> JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> DISTINCT -> ORDER BY -> TOP / OFFSET.
+
+   Q11: What are the magic tables `inserted` and `deleted` in Triggers?
+   A11: Temporary RAM-resident system tables:
+        • `inserted` holds incoming new rows (INSERT / UPDATE).
+        • `deleted` holds old overwritten or removed rows (DELETE / UPDATE).
+
+   Q12: What is the difference between an AFTER Trigger and an INSTEAD OF Trigger?
+   A12: • AFTER Trigger      : Fires automatically AFTER the base DML mutation successfully commits to table.
+        • INSTEAD OF Trigger : Intercepts the statement and executes custom logic IN PLACE OF the base DML (great for Views).
+
+   Q13: What is the difference between a Standard View and a Materialized (Indexed) View?
+   A13: • Standard View     : Virtual query macro. Stores NO rows on disk; evaluated dynamically on every read.
+        • Materialized View : Has a unique clustered index (`WITH SCHEMABINDING`), physically computing & storing rows on disk.
+
+   Q14: What is the difference between a Stored Procedure and a User-Defined Function (UDF)?
+   A14: • Stored Procedure : Can execute DDL/DML, transaction control (`BEGIN TRAN`), and returns multiple result sets.
+        • Function (UDF)   : Pure computation (Read-only), cannot mutate data, must return a single scalar or table.
+
+   Q15: How do you safely delete duplicate rows keeping only the lowest ID?
+   A15: Using a CTE with ROW_NUMBER():
+        `WITH CTE AS (SELECT *, ROW_NUMBER() OVER (PARTITION BY keys ORDER BY id) AS r FROM Table) DELETE FROM CTE WHERE r > 1;`
+
+   Q16: How do you find the Nth highest salary without using inefficient subqueries?
+   A16: `WITH CTE AS (SELECT Salary, DENSE_RANK() OVER (ORDER BY Salary DESC) AS rnk FROM Employees) SELECT Salary FROM CTE WHERE rnk = N;`
+
+   Q17: What is a Covering Index?
+   A17: A Non-Clustered Index that includes all columns needed by a query (via Index Keys + `INCLUDE` clause),
+        answering the query completely from index leaf pages with ZERO expensive base table Key Lookups.
+
+   Q18: What is Sargability and why is it critical for query performance?
+   A18: Sargability (Search Argument Able) means writing WHERE predicates so the engine can perform B-Tree Index Seeks.
+        Wrapping indexed columns in functions (e.g. `WHERE YEAR(date) = 2026`) destroys sargability and forces full table scans.
+
+   Q19: How do aggregate functions like AVG() and COUNT() handle NULL values?
+   A19: • `COUNT(*)` counts all rows including NULLs.
+        • `COUNT(col)` counts only non-null values.
+        • `AVG(col)`, `SUM(col)`, `MIN(col)`, `MAX(col)` ignore NULL values completely.
+
+   Q20: What error occurs if you execute ROLLBACK after COMMIT in SQL Server?
+   A20: Error Msg 3903: "The ROLLBACK TRANSACTION request has no corresponding BEGIN TRANSACTION" because COMMIT
+        permanently finalized the transaction and closed the active transaction scope.
+*/
+
+
+-- ====================================================================
+-- 🏁 SECTION 7: THE 13-STEP METHOD TO SOLVE ANY SQL PROBLEM
 -- ====================================================================
 /*
    1. Read the business question twice and underline required output columns.
