@@ -13,10 +13,10 @@
  ======================================================================================================== 
                                   📊 SYSTEM-WIDE AUDIT METRICS 
  ======================================================================================================== 
-   • Total Physical Files Audited    : 272 Files (100% Physically Verified, Zero Hallucinations) 
-   • Active Core SQL Modules         : 127 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
+   • Total Physical Files Audited    : 277 Files (100% Physically Verified, Zero Hallucinations) 
+   • Active Core SQL Modules         : 132 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
    • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank) 
-   • Active Class Days Synchronized  : 25 Class Days (Day 1: 2026-08-01 to Day 25: 2026-09-02) 
+   • Active Class Days Synchronized  : 26 Class Days (Day 1: 2026-08-01 to Day 26: 2026-09-03) 
    • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7) 
    • Job Hunt & Placement Hub        : 11 Files (14,500+ HR DB, Outreach Playbook, Referral Engine & Directories) 
    • Personal Branding Hub           : 8 Files (50-Platform Master Blueprint, 50-Platform Showcase & Fleet Strategy) 
@@ -40,12 +40,12 @@ d:\DE COURSE\
 │   ├── SNOWFLAKE_DBT_SYLLABUS.pdf <-- Snowflake & dbt Enterprise PDF
 │   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
 │   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
-├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (123 Files)
-│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (24 Notes + 1 Spreadsheet)
-│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (26 Files)
-│   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (25 Markdown + 1 PDF)
-│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (15 Files)
-│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (25 Files)
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (128 Files)
+│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (25 Notes + 1 Spreadsheet)
+│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (27 Files)
+│   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (26 Markdown + 1 PDF)
+│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (16 Files)
+│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (26 Files)
 │   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
 │   ├── 07_QUICK_REVISION/        <-- 10-Hour SQL Server Mastery Bootcamp Master Guide (10_HOUR_SQL_BOOTCAMP.SQL & .md)
 │   ├── 08_SQL_TESTS/             <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
@@ -171,20 +171,21 @@ d:\DE COURSE\
 | `2026-08-27.sql` | Day 23: Surprise Test — Advanced SQL & Practical Scenario Lab | 145 | 4,280 | ✅ Under 220 | Pure SQL |
 | `2026-09-01.sql` | Day 24: T-SQL Server String Functions & Data Cleansing Engine | 135 | 4,750 | ✅ Under 220 | Pure SQL |
 | `2026-09-02.sql` | Day 25: LEFT, RIGHT, TRIM, CAST/CONVERT, BIGINT & Name Parser | 121 | 6,967 | ✅ Under 220 | Pure SQL |
+| `2026-09-03.sql` | Day 26: TCL (BEGIN TRAN, COMMIT, ROLLBACK), NULLs (ISNULL/COALESCE) & Subqueries | 140 | 4,960 | ✅ Under 220 | Pure SQL |
 | `Join.xlsx` | Relational Join Visualization Spreadsheet | — | 14,207 | Binary Data | Excel Matrix |
 
 ---
 
-### 📍 ZONE 3: `01_SQL/02_DAILY_INDEX/` (TOPIC INDEXES — 26 FILES)
+### 📍 ZONE 3: `01_SQL/02_DAILY_INDEX/` (TOPIC INDEXES — 27 FILES)
 
 | File Name | Lines | Size (Bytes) | Purpose |
 | :--- | :---: | :---: | :--- |
-| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 371 | 23,200 | Master relational topic index across all 25 class days |
-| `2026-08-01_INDEX.SQL` to `2026-09-02_INDEX.SQL` (25 Files) | 14–60 | 699–2,877 | Standalone daily topic lookup indexes |
+| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 425 | 26,500 | Master relational topic index across all 26 class days |
+| `2026-08-01_INDEX.SQL` to `2026-09-03_INDEX.SQL` (26 Files) | 14–60 | 699–2,877 | Standalone daily topic lookup indexes |
 
 ---
 
-### 📍 ZONE 4: `01_SQL/03_REVISION_NOTES/` (7-STEP INTERACTIVE DEEP-DIVES — 26 FILES)
+### 📍 ZONE 4: `01_SQL/03_REVISION_NOTES/` (7-STEP INTERACTIVE DEEP-DIVES — 27 FILES)
 *Enforcing Law #9 (Pure Markdown, Zero HTML) and Law #10 (Clean ASCII Math, Zero LaTeX).*
 
 | File Name | Lines | Size (Bytes) | Key Real-World Analogy & Mental Model | Compliance |
@@ -216,10 +217,11 @@ d:\DE COURSE\
 | `2026-08-27_REVISION.md` | 215 | 10,820 | Airport security terminal passenger flow & collision detection | ✅ 100% Pure MD |
 | `2026-09-01_REVISION.md` | 225 | 10,500 | Stamping press, PII masking & universal adapter mental models | ✅ 100% Pure MD |
 | `2026-09-02_REVISION.md` | 201 | 14,842 | Loaf slicer, lint roller & costume vs surgery mental models | ✅ 100% Pure MD |
+| `2026-09-03_REVISION.md` | 245 | 10,750 | Undo buffer sandbox, travel ATM & assembly line mental models | ✅ 100% Pure MD |
 
 ---
 
-### 📍 ZONE 5: `01_SQL/04_CLASS_TASKS/` (FACULTY HOMEWORK SCRIPTS — 15 FILES)
+### 📍 ZONE 5: `01_SQL/04_CLASS_TASKS/` (FACULTY HOMEWORK SCRIPTS — 16 FILES)
 
 | File Name | Scenarios | Lines | Size (Bytes) | Content & Task Themes |
 | :--- | :---: | :---: | :---: | :--- |
@@ -238,10 +240,11 @@ d:\DE COURSE\
 | `2026-08-27_CLASS_TASK.SQL` | 10 Tasks | 285 | 11,240 | Salary jump >30%, price volatility, calendar active, fraud |
 | `2026-09-01_CLASS_TASK.SQL` | 4 Tasks | 115 | 4,500 | Title casing, mobile PII masking, middle character slicing |
 | `2026-09-02_CLASS_TASK.SQL` | 5 Tasks | 108 | 6,323 | Full name split, whitespace/tab sanitization, date styles, casting |
+| `2026-09-03_CLASS_TASK.SQL` | 7 Tasks | 138 | 5,500 | Transaction rollback, commit finality, DDL drop rollback, ISNULL/COALESCE, CTE ranking |
 
 ---
 
-### 📍 ZONE 6: `01_SQL/05_INDEX_WISE_QUESTIONS/` (PRACTICE DRILLS — 25 FILES)
+### 📍 ZONE 6: `01_SQL/05_INDEX_WISE_QUESTIONS/` (PRACTICE DRILLS — 26 FILES)
 *Enforcing Law #3: Exactly 14 targeted questions with blank query templates.*
 
 | File Name | Lines | Size (Bytes) | Drill Themes & Focus |
@@ -271,6 +274,7 @@ d:\DE COURSE\
 | `2026-08-27_QUESTIONS.SQL` | 275 | 11,480 | LAG salary/price jumps, consecutive orders, multi-city fraud |
 | `2026-09-01_QUESTIONS.SQL` | 225 | 7,850 | Case normalization, SUBSTRING slicing, PII masking |
 | `2026-09-02_QUESTIONS.SQL` | 161 | 10,880 | 14 drills: LEFT, RIGHT, TRIM, CHARINDEX, CAST/CONVERT |
+| `2026-09-03_QUESTIONS.SQL` | 204 | 7,800 | 14 drills: TCL rollback, COMMIT finality, DDL rollback, ISNULL/COALESCE, CTE vs Subqueries |
 
 ---
 

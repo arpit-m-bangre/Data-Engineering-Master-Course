@@ -19,6 +19,12 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **9. Self Joins & Hierarchical Modeling** | 5 | 5 | 0 | 🔴 High |
 | **10. Window Functions & Ranking Engines** | 6 | 6 | 0 | 🔴 High |
 | **11. CTEs & Zero-Loss Deduplication Pipelines** | 5 | 5 | 0 | 🔴 High |
+| **12. Value Window Functions (LEAD/LAG)** | 5 | 5 | 0 | 🔴 High |
+| **13. Conditional Logic & CASE Expressions** | 6 | 6 | 0 | 🔴 High |
+| **14. Surprise Test & Comprehensive Scenarios** | 5 | 4 | 1 | 🔴 High |
+| **15. T-SQL Server String Functions Engine** | 7 | 7 | 0 | 🔴 High |
+| **16. Advanced String Slicing & Name Parser** | 6 | 6 | 0 | 🔴 High |
+| **17. Transaction Control, NULLs & Subqueries** | 5 | 5 | 0 | 🔴 High |
 
 ---
 
@@ -197,6 +203,17 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C16.4** | T-SQL Date Style Formatting (101, 103, 112, 120) | MASTERED | 2-digit year truncation ambiguity (Style 1 vs 101) | 0 | 🔴 High |
 | **C16.5** | Dynamic Name Parsing via `CHARINDEX()` & `LEFT`/`SUBSTRING` | MASTERED | Msg 537 crash on single-word names (0 - 1 = -1 length parameter) | 0 | 🔴 High |
 | **C16.6** | Non-Sargable Predicates via Function Wrapping | MASTERED | `WHERE CONVERT(...)` destroying B-Tree index seeks | 0 | 🔴 High |
+
+---
+
+### SECTION 17: TRANSACTION CONTROL (TCL), NULL HANDLING & SUBQUERIES VS CTES
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C17.1** | `BEGIN TRANSACTION`, `COMMIT` & `ROLLBACK` Lifecycle | MASTERED | Msg 3903 on executing ROLLBACK without active transaction or after COMMIT | 0 | 🔴 High |
+| **C17.2** | SQL Server DDL Rollback (`DROP TABLE`, `TRUNCATE TABLE`) | MASTERED | Assuming DDL causes implicit commit like MySQL/Oracle | 0 | 🔴 High |
+| **C17.3** | `ISNULL()` vs `COALESCE()` Null Substitution | MASTERED | `ISNULL` string truncation due to first argument datatype precedence | 0 | 🔴 High |
+| **C17.4** | Scalar Subqueries vs CTE + `DENSE_RANK()` for Nth Value | MASTERED | Nested subquery table scan bottlenecks vs single-pass window ranking | 0 | 🔴 High |
+| **C17.5** | `IN (Subquery)` vs `INNER JOIN` / `EXISTS` Set Optimization | MASTERED | `NOT IN` failing silently with 0 rows when subquery dataset contains NULL | 0 | 🔴 High |
 
 ---
 

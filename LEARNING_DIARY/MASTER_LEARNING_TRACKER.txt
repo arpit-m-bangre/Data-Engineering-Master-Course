@@ -27,7 +27,7 @@ Last Updated: 04 SEP 2026   | Overall SQL Completion: [████████�
 * SOCIAL ENGINE: LinkedIn (Post 11/180) & Dev.to (Article 3/20) 100% Up to Date | 210-Day Creator Engine: Pivoted to Daily 30-min Multi-Image Posts (Day 001 Launches 02-Sep)
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 25) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 26) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -58,6 +58,7 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 23   | Surprise Test: Advanced SQL Scenario Lab  | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 24   | T-SQL Server String Functions             | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 25   | Advanced String & Dynamic Parsing         | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+26   | Transaction Control, NULLs & Subqueries   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]

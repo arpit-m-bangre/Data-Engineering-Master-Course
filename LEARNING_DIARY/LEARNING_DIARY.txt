@@ -323,6 +323,34 @@ DAY 20 — 02 SEP 2026 (WEDNESDAY) — Streak Day 29 🔥
     - Created `01_SQL/04_CLASS_TASKS/2026-09-02_CLASS_TASK.SQL` (5 faculty scenario tasks: First/Second name separation via SUBSTRING, separation via RIGHT, tab/space sanitization, date styles, and staging aggregation).
     - Created 14 targeted practice drills in `01_SQL/05_INDEX_WISE_QUESTIONS/2026-09-02_QUESTIONS.SQL` (unsolved query blocks, exactly 14 questions).
     - Synchronized dual trackers (`MASTER_LEARNING_TRACKER.txt` & `.md`), `METRICS_AND_STATISTICS.json`, `CONCEPT_MASTERY_HEATMAP.md`, and `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md`.
-  * System brain sync committed and pushed to GitHub (Streak Day 29 officially locked 🔥).
+============================================================
+
+DAY 21 — 03 SEP 2026 (THURSDAY) — Streak Day 30 🔥
+  * Live Data Engineering Class, Batch 15 (09:00 PM - 10:15 PM):
+    - Attended Day 26 Live Lecture — Transaction Control Language (TCL), NULL Functions (ISNULL, COALESCE) & Subqueries vs CTEs.
+    - Transaction Control Language (TCL):
+      • Autocommit mode vs Explicit Transactions (BEGIN TRANSACTION).
+      • ROLLBACK mechanics: Restoring uncommitted DML mutations (DELETE, UPDATE, INSERT).
+      • COMMIT mechanics: Persisting modifications permanently to Transaction Log (WAL); Error Msg 3903 on subsequent ROLLBACK.
+      • SQL Server DDL Rollback: Unique ability to rollback DROP TABLE, TRUNCATE TABLE, and CREATE TABLE inside transactions.
+    - NULL Value Management & Replacement:
+      • WHERE column IS NULL filtering and UPDATE data cleansing.
+      • T-SQL ISNULL(check_expr, replacement): 2-parameter deterministic lookup.
+      • ANSI-SQL COALESCE(val1, val2, ... valN): Multi-column cascading fallback evaluation with highest type precedence.
+    - Subqueries vs Modern Enterprise CTEs & Window Functions:
+      • Scalar Subquery approach for N-th highest values (WHERE marks < (SELECT MAX(marks)...)).
+      • Performance bottlenecks: Correlated subquery table scans vs single-pass set-based execution.
+      • Modern Production Standard: Replacing scalar subqueries with CTEs + DENSE_RANK() OVER (ORDER BY Marks DESC).
+      • Refactoring IN Subqueries (WHERE id IN (SELECT id FROM b)) into set-based INNER JOIN / EXISTS.
+      • Dialect nuances: When subqueries are mandatory (Salesforce SOQL) vs SQL Server / Snowflake CTE standards.
+  * Day 26 Ecosystem Synchronization:
+    - Standardized `01_SQL/01_CLASS_NOTES/2026-09-03.sql` (140 lines, uppercase SQL keywords, pure executable T-SQL adhering to Constitutional Law #12).
+    - Created `01_SQL/02_DAILY_INDEX/2026-09-03_INDEX.SQL` and updated `01_COMBINED_INDEX_ALL_TOPICS.SQL` (26 class notes indexed, Categories P, Q, R added).
+    - Generated `01_SQL/03_REVISION_NOTES/2026-09-03_REVISION.md` (7-step framework, undo buffer & travel ATM analogies, pure markdown, clean ASCII math).
+    - Created `01_SQL/04_CLASS_TASKS/2026-09-03_CLASS_TASK.SQL` (7 faculty scenario tasks with blank query blocks).
+    - Created 14 targeted practice drills in `01_SQL/05_INDEX_WISE_QUESTIONS/2026-09-03_QUESTIONS.SQL` (unsolved query blocks, exactly 14 questions).
+    - Synchronized dual trackers (`MASTER_LEARNING_TRACKER.txt` & `.md`), `METRICS_AND_STATISTICS.json`, `CONCEPT_MASTERY_HEATMAP.md`, `README.md`, and `EXTRA_MAGICAL_FILES/SYSTEM_MAP.md`.
+  * System brain sync committed and pushed to GitHub (Streak Day 30 officially locked 🔥).
 
 ============================================================
+

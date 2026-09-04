@@ -30,7 +30,7 @@
 
 ---
 
-## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 25)
+## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 26)
 
 | Day | Topic Focus Area | Re-Write Note | Revision Note | Practice Drills | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -59,6 +59,7 @@
 | **23** | Surprise Test: Advanced SQL Scenarios | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 | **24** | T-SQL Server String Functions Engine | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 | **25** | Advanced String & Dynamic Parsing | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
+| **26** | Transaction Control, NULLs & Subqueries | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 
 ---
 

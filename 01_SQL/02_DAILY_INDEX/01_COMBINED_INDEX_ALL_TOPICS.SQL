@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 25 Class Note Files (2026-08-01 to 2026-09-02)
+Total Modules / Files: 26 Class Note Files (2026-08-01 to 2026-09-03)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -251,6 +251,20 @@ SECTION 1: DAILY CLASS BREAKDOWN
     25.9 Query Performance Best Practices: Avoiding Correlated Subqueries in Favor of Set-Based Joins
     25.10 Database Objects Roadmap: Stored Procedures, Views, Triggers, Indexes
 
+26. DAY 26 (SEPTEMBER 03) - TRANSACTION CONTROL (TCL), NULL HANDLING & SUBQUERIES VS CTES
+    26.1 Transaction Control Language (TCL) Architecture (Autocommit vs Explicit BEGIN TRANSACTION)
+    26.2 ROLLBACK Mechanics: Restoring Uncommitted DML Operations (DELETE, UPDATE, INSERT)
+    26.3 COMMIT Mechanics: Persisting Modifications Permanently to Transaction Log (WAL)
+    26.4 Error Msg 3903 Analysis: ROLLBACK without Active Transaction or after COMMIT Finalization
+    26.5 SQL Server DDL Rollback: Reverting DROP TABLE & TRUNCATE Inside Active Transactions
+    26.6 NULL Management: Filtering & Mutating via WHERE column IS NULL
+    26.7 ISNULL(expr, replacement) 2-Parameter Deterministic Replacement in T-SQL
+    26.8 ANSI-SQL COALESCE(v1, v2, ... vn) Multi-Column Fallback & Type Precedence Rules
+    26.9 Subquery Mechanics: Scalar Subqueries (Finding N-th Highest Marks via WHERE Marks < (SELECT MAX...))
+    26.10 In-Subquery (WHERE ID IN (SELECT ID...)) & Performance Bottlenecks in Production
+    26.11 Production Standard: Refactoring Subqueries to CTEs with DENSE_RANK() & Set-Based INNER JOIN
+    26.12 Dialect Nuances & Interview Playbook: When Subqueries are Required (Salesforce SOQL) vs SQL Server / Snowflake CTEs
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -384,5 +398,25 @@ O. T-SQL SERVER STRING FUNCTIONS & DATA CLEANSING
     • Runtime Datatype Conversions: CAST() vs CONVERT() with Style Codes
     • Dynamic Text Parsing: Splitting Composite Strings & Full Names
     • Interview Query Design Strategy & Upcoming Enterprise Objects (Procedures, Views, Triggers, Indexes)
+
+P. TRANSACTION CONTROL LANGUAGE (TCL) & DDL ROLLBACK
+    • Autocommit vs Explicit Transaction Architecture (`BEGIN TRANSACTION`)
+    • `ROLLBACK` Mechanics on DML (`DELETE`, `UPDATE`, `INSERT`)
+    • `COMMIT` Finalization & ACID Durability
+    • SQL Server DDL Rollback Capabilities (`DROP TABLE`, `TRUNCATE TABLE` in Transactions)
+    • Error 3903 Troubleshooting & Uncommitted State Protection
+
+Q. NULL HANDLING & REPLACEMENT FUNCTIONS
+    • `WHERE column IS NULL` vs `IS NOT NULL`
+    • `ISNULL(expression, replacement_value)` (T-SQL 2-Parameter Fast Lookup)
+    • `COALESCE(val1, val2, ... valN)` (ANSI-SQL Multi-Column Fallback)
+    • Data Type Precedence & Deterministic Return Types
+
+R. SUBQUERIES VS MODERN CTEs & WINDOW FUNCTIONS
+    • Scalar Subqueries (`WHERE Marks < (SELECT MAX(Marks)...)`)
+    • In-Subqueries (`WHERE ID IN (SELECT ID FROM ...)`) & Performance Penalties
+    • Modern Production Standard: Window Functions (`DENSE_RANK()`) inside CTEs
+    • Set-Based Joins (`INNER JOIN`, `EXISTS`) vs Subqueries
+    • Legacy/Dialect Environments (Salesforce SOQL) vs High-Scale Big Data Standards
 
 ================================================================================
