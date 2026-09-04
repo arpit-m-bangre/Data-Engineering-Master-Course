@@ -40,7 +40,7 @@ DE COURSE/
 │   ├── 03_REVISION_NOTES/        <-- 7-Step interactive deep-dives & interview traps
 │   ├── 04_CLASS_TASKS/           <-- In-class faculty exercises & solutions
 │   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question cumulative practice sets
-│   ├── 06_PROJECTS/              <-- Production-grade enterprise SQL pipelines (PROJECT1 - 7)
+│   ├── 06_PROJECTS/              <-- Production-grade enterprise SQL pipelines (PROJECT1 - 8)
 │   ├── 07_QUICK_REVISION/        <-- Fast-track bootcamp notes & Super 50 challenges
 │   └── 08_SQL_TESTS/             <-- Faculty assessment reports & live test artifacts
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)

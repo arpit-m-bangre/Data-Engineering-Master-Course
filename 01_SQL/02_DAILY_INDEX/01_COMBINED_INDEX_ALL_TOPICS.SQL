@@ -4,7 +4,7 @@
 ================================================================================
 
 Folder: 01_SQL/01_CLASS_NOTES
-Total Modules / Files: 26 Class Note Files (2026-08-01 to 2026-09-03)
+Total Modules / Files: 27 Class Note Files (2026-08-01 to 2026-09-04)
 
 ================================================================================
 SECTION 1: DAILY CLASS BREAKDOWN
@@ -265,6 +265,23 @@ SECTION 1: DAILY CLASS BREAKDOWN
     26.11 Production Standard: Refactoring Subqueries to CTEs with DENSE_RANK() & Set-Based INNER JOIN
     26.12 Dialect Nuances & Interview Playbook: When Subqueries are Required (Salesforce SOQL) vs SQL Server / Snowflake CTEs
 
+27. DAY 27 (SEPTEMBER 04) - STORED PROCEDURES (DEDUPLICATION), VIEWS & INDEXING ARCHITECTURE
+    27.1 Stored Procedure Architecture: Pre-compiled execution plans, reduced network payload & encapsulation
+    27.2 CREATE PROCEDURE usp_Name AS BEGIN ... END Syntax & SET NOCOUNT ON Best Practice
+    27.3 Automated Deduplication Engine: Encapsulating CTE + ROW_NUMBER() OVER (PARTITION BY ... ORDER BY ...) in SPs
+    27.4 Modifying Procedures: ALTER PROCEDURE vs DROP & CREATE (Preserving Object Permissions)
+    27.5 Executing Stored Procedures: EXEC / EXECUTE mechanics & result set handling
+    27.6 Views as Virtual Tables: Storing SELECT Query Metadata without Row-Level Physical Duplication
+    27.7 CREATE VIEW & ALTER VIEW Syntax with Searched CASE Expressions for Dynamic Row Classification
+    27.8 Views vs Stored Procedures: Table-like Query Composability (JOIN, WHERE, GROUP BY) vs Procedural Execution
+    27.9 Standard (Virtual) Views vs Materialized (Indexed) Views: On-the-fly Query Expansion vs Clustered B-Tree Persistence
+    27.10 Non-Clustered Indexes: Auxiliary B-Tree Index Structure on Specific Columns (StudentInfo.marks)
+    27.11 System Metadata Auditing: EXEC sp_helpindex for Index Inspection
+    27.12 Clustered Index Mechanics: Physical Ordering of Leaf-Level Data Pages (1 Clustered Index per Table)
+    27.13 Primary Key Auto-Clustering: Default Clustered Index Creation on PK Constraint Definition
+    27.14 Heap Tables vs Clustered Tables: Unordered Heap Storage Allocation (p12) vs Physically Sorted Storage (p11)
+    27.15 Explicit Clustered Index Creation: CREATE CLUSTERED INDEX on Heap Tables & Storage Reorganization
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -418,5 +435,28 @@ R. SUBQUERIES VS MODERN CTEs & WINDOW FUNCTIONS
     • Modern Production Standard: Window Functions (`DENSE_RANK()`) inside CTEs
     • Set-Based Joins (`INNER JOIN`, `EXISTS`) vs Subqueries
     • Legacy/Dialect Environments (Salesforce SOQL) vs High-Scale Big Data Standards
+
+S. STORED PROCEDURES & REUSABLE LOGIC
+    • Pre-compiled Execution Plans & Cache Optimization
+    • CREATE PROCEDURE & ALTER PROCEDURE Syntax
+    • Procedural Encapsulation of Automated Deduplication Pipelines
+    • EXEC / EXECUTE Invocation Mechanics
+    • Modular Maintenance & Security Isolation (Granting EXEC without Direct Table Access)
+
+T. VIEWS & VIRTUAL LOGICAL ABSTRACTIONS
+    • Virtual Table Architecture & Data Dictionary Metadata Storage
+    • CREATE VIEW & ALTER VIEW Syntax
+    • Dynamic Row Classification via Searched CASE Expressions inside Views
+    • Query Composability (Filtering, Joining & Aggregating Views like Base Tables)
+    • Standard Virtual Views vs Materialized (Indexed) Views (Compute-on-Read vs Physical B-Tree Storage)
+
+U. INDEXING ARCHITECTURE & PHYSICAL DATA ORGANIZATION
+    • B-Tree Index Hierarchy (Root, Intermediate, Leaf Nodes)
+    • Non-Clustered Indexes on Filtering Columns (CREATE NONCLUSTERED INDEX)
+    • Clustered Indexes & Physical Ordering of Table Leaf Data Pages
+    • Primary Key Auto-Clustering Behavior (p11 vs Heap p12)
+    • Heap Tables (Unordered IAM Allocation) vs Clustered Index Tables
+    • Explicit Clustered Index Creation (CREATE CLUSTERED INDEX) & Page Reorganization
+    • System Metadata Inspection via sp_helpindex
 
 ================================================================================

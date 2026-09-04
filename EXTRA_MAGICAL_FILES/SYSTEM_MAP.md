@@ -13,11 +13,11 @@
  ======================================================================================================== 
                                   📊 SYSTEM-WIDE AUDIT METRICS 
  ======================================================================================================== 
-   • Total Physical Files Audited    : 277 Files (100% Physically Verified, Zero Hallucinations) 
-   • Active Core SQL Modules         : 132 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
+   • Total Physical Files Audited    : 283 Files (100% Physically Verified, Zero Hallucinations) 
+   • Active Core SQL Modules         : 138 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
    • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank) 
-   • Active Class Days Synchronized  : 26 Class Days (Day 1: 2026-08-01 to Day 26: 2026-09-03) 
-   • Enterprise Project Pipelines    : 7 Projects (PROJECT1 to PROJECT7) 
+   • Active Class Days Synchronized  : 27 Class Days (Day 1: 2026-08-01 to Day 27: 2026-09-04) 
+   • Enterprise Project Pipelines    : 8 Projects (PROJECT1 to PROJECT8) 
    • Job Hunt & Placement Hub        : 11 Files (14,500+ HR DB, Outreach Playbook, Referral Engine & Directories) 
    • Personal Branding Hub           : 8 Files (50-Platform Master Blueprint, 50-Platform Showcase & Fleet Strategy) 
    • Unbroken GitHub Streak          : 31 Days 🔥 (Locked & Deploying to Live Vercel Production) 
@@ -40,13 +40,13 @@ d:\DE COURSE\
 │   ├── SNOWFLAKE_DBT_SYLLABUS.pdf <-- Snowflake & dbt Enterprise PDF
 │   ├── SYLLABUS_AUDIT_REPORT.md  <-- Verification Audit of Curriculum Coverage
 │   └── TRUE_2027_SYLLABUS.md     <-- True 2027 Product Company DE Syllabus
-├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (128 Files)
-│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (25 Notes + 1 Spreadsheet)
-│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (27 Files)
-│   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (26 Markdown + 1 PDF)
-│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (16 Files)
-│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (26 Files)
-│   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT7.SQL)
+├── 01_SQL/                       <-- Enterprise SQL Engine & Relational Architecture (134 Files)
+│   ├── 01_CLASS_NOTES/           <-- Clean, executable T-SQL notes under 220 lines (26 Notes + 1 Spreadsheet)
+│   ├── 02_DAILY_INDEX/           <-- Daily topic indexes + 01_COMBINED_INDEX_ALL_TOPICS.SQL (28 Files)
+│   ├── 03_REVISION_NOTES/        <-- 7-Step Comprehensive Markdown Notes (27 Markdown + 1 PDF)
+│   ├── 04_CLASS_TASKS/           <-- Faculty homework challenge scripts with blank templates (17 Files)
+│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (27 Files)
+│   ├── 06_PROJECTS/              <-- Enterprise SQL pipeline scripts (PROJECT1.SQL to PROJECT8.SQL)
 │   ├── 07_QUICK_REVISION/        <-- 10-Hour SQL Server Mastery Bootcamp Master Guide (10_HOUR_SQL_BOOTCAMP.SQL & .md)
 │   ├── 08_SQL_TESTS/             <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
@@ -172,20 +172,21 @@ d:\DE COURSE\
 | `2026-09-01.sql` | Day 24: T-SQL Server String Functions & Data Cleansing Engine | 135 | 4,750 | ✅ Under 220 | Pure SQL |
 | `2026-09-02.sql` | Day 25: LEFT, RIGHT, TRIM, CAST/CONVERT, BIGINT & Name Parser | 121 | 6,967 | ✅ Under 220 | Pure SQL |
 | `2026-09-03.sql` | Day 26: TCL (BEGIN TRAN, COMMIT, ROLLBACK), NULLs (ISNULL/COALESCE) & Subqueries | 140 | 4,960 | ✅ Under 220 | Pure SQL |
+| `2026-09-04.sql` | Day 27: Stored Procedures (Deduplication), Views & Indexing Architecture | 149 | 4,680 | ✅ Under 220 | Pure SQL |
 | `Join.xlsx` | Relational Join Visualization Spreadsheet | — | 14,207 | Binary Data | Excel Matrix |
 
 ---
 
-### 📍 ZONE 3: `01_SQL/02_DAILY_INDEX/` (TOPIC INDEXES — 27 FILES)
+### 📍 ZONE 3: `01_SQL/02_DAILY_INDEX/` (TOPIC INDEXES — 28 FILES)
 
 | File Name | Lines | Size (Bytes) | Purpose |
 | :--- | :---: | :---: | :--- |
-| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 425 | 26,500 | Master relational topic index across all 26 class days |
-| `2026-08-01_INDEX.SQL` to `2026-09-03_INDEX.SQL` (26 Files) | 14–60 | 699–2,877 | Standalone daily topic lookup indexes |
+| `01_COMBINED_INDEX_ALL_TOPICS.SQL` | 465 | 28,500 | Master relational topic index across all 27 class days |
+| `2026-08-01_INDEX.SQL` to `2026-09-04_INDEX.SQL` (27 Files) | 14–60 | 699–2,877 | Standalone daily topic lookup indexes |
 
 ---
 
-### 📍 ZONE 4: `01_SQL/03_REVISION_NOTES/` (7-STEP INTERACTIVE DEEP-DIVES — 27 FILES)
+### 📍 ZONE 4: `01_SQL/03_REVISION_NOTES/` (7-STEP INTERACTIVE DEEP-DIVES — 28 FILES)
 *Enforcing Law #9 (Pure Markdown, Zero HTML) and Law #10 (Clean ASCII Math, Zero LaTeX).*
 
 | File Name | Lines | Size (Bytes) | Key Real-World Analogy & Mental Model | Compliance |
@@ -218,10 +219,11 @@ d:\DE COURSE\
 | `2026-09-01_REVISION.md` | 225 | 10,500 | Stamping press, PII masking & universal adapter mental models | ✅ 100% Pure MD |
 | `2026-09-02_REVISION.md` | 201 | 14,842 | Loaf slicer, lint roller & costume vs surgery mental models | ✅ 100% Pure MD |
 | `2026-09-03_REVISION.md` | 245 | 10,750 | Undo buffer sandbox, travel ATM & assembly line mental models | ✅ 100% Pure MD |
+| `2026-09-04_REVISION.md` | 230 | 12,400 | Automated factory robot, aquarium security window & dictionary indexes | ✅ 100% Pure MD |
 
 ---
 
-### 📍 ZONE 5: `01_SQL/04_CLASS_TASKS/` (FACULTY HOMEWORK SCRIPTS — 16 FILES)
+### 📍 ZONE 5: `01_SQL/04_CLASS_TASKS/` (FACULTY HOMEWORK SCRIPTS — 17 FILES)
 
 | File Name | Scenarios | Lines | Size (Bytes) | Content & Task Themes |
 | :--- | :---: | :---: | :---: | :--- |
@@ -241,10 +243,11 @@ d:\DE COURSE\
 | `2026-09-01_CLASS_TASK.SQL` | 4 Tasks | 115 | 4,500 | Title casing, mobile PII masking, middle character slicing |
 | `2026-09-02_CLASS_TASK.SQL` | 5 Tasks | 108 | 6,323 | Full name split, whitespace/tab sanitization, date styles, casting |
 | `2026-09-03_CLASS_TASK.SQL` | 7 Tasks | 138 | 5,500 | Transaction rollback, commit finality, DDL drop rollback, ISNULL/COALESCE, CTE ranking |
+| `2026-09-04_CLASS_TASK.SQL` | 6 Tasks | 120 | 4,800 | Stored procedure deduplication, ALTER PROCEDURE, VIEW CASE logic, sp_helpindex, PK vs Heap clustered index |
 
 ---
 
-### 📍 ZONE 6: `01_SQL/05_INDEX_WISE_QUESTIONS/` (PRACTICE DRILLS — 26 FILES)
+### 📍 ZONE 6: `01_SQL/05_INDEX_WISE_QUESTIONS/` (PRACTICE DRILLS — 27 FILES)
 *Enforcing Law #3: Exactly 14 targeted questions with blank query templates.*
 
 | File Name | Lines | Size (Bytes) | Drill Themes & Focus |
@@ -275,10 +278,11 @@ d:\DE COURSE\
 | `2026-09-01_QUESTIONS.SQL` | 225 | 7,850 | Case normalization, SUBSTRING slicing, PII masking |
 | `2026-09-02_QUESTIONS.SQL` | 161 | 10,880 | 14 drills: LEFT, RIGHT, TRIM, CHARINDEX, CAST/CONVERT |
 | `2026-09-03_QUESTIONS.SQL` | 204 | 7,800 | 14 drills: TCL rollback, COMMIT finality, DDL rollback, ISNULL/COALESCE, CTE vs Subqueries |
+| `2026-09-04_QUESTIONS.SQL` | 220 | 8,900 | 14 drills: Stored procedures, parameterized SPs, Views, Non-Clustered & Clustered indexes |
 
 ---
 
-### 📍 ZONE 7: `01_SQL/06_PROJECTS/` (ENTERPRISE PIPELINE PROJECTS — 7 FILES)
+### 📍 ZONE 7: `01_SQL/06_PROJECTS/` (ENTERPRISE PIPELINE PROJECTS — 8 FILES)
 
 | Project File | Title & Industrial Architecture | Lines | Size (Bytes) |
 | :--- | :--- | :---: | :---: |
@@ -289,6 +293,7 @@ d:\DE COURSE\
 | `PROJECT5.SQL` | Supply Chain Multi-Node Logistics & Fulfillment Architecture | 130 | 6,058 |
 | `PROJECT6.SQL` | Enterprise Financial Analytics & Windowed Leaderboard Engine | 161 | 7,628 |
 | `PROJECT7.SQL` | Customer Loyalty, Order Velocity & Automated Deduplication Pipeline | 157 | 7,059 |
+| `PROJECT8.SQL` | Stored Procedure Deduplication, Analytical Views & High-Performance Indexing Engine | 175 | 7,800 |
 
 ---
 

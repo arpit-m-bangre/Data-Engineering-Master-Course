@@ -27,7 +27,7 @@ Last Updated: 04 SEP 2026   | Overall SQL Completion: [████████�
 * SOCIAL ENGINE: LinkedIn (Post 11/180) & Dev.to (Article 3/20) 100% Up to Date | 210-Day Creator Engine: Pivoted to Daily 30-min Multi-Image Posts (Day 001 Launches 02-Sep)
 
 ====================================================================================================
-                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 26) ]
+                    [ 📕 MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 27) ]
 ====================================================================================================
 *Note: All items set to strictly PENDING due to zero completed practical work.*
 
@@ -59,11 +59,12 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 24   | T-SQL Server String Functions             | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 25   | Advanced String & Dynamic Parsing         | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 26   | Transaction Control, NULLs & Subqueries   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+27   | Stored Procedures, Views & Indexing       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
 ====================================================================================================
-*Pre-Flight Audit Confirmed: 7 Project Files exist physically on disk.*
+*Pre-Flight Audit Confirmed: 8 Project Files exist physically on disk.*
 
 ID  | PROJECT TITLE                                      | TARGET FILE    | STATUS
 ----------------------------------------------------------------------------------------
@@ -74,6 +75,7 @@ P4  | HR Payroll & Data Validation Engine                | PROJECT4.SQL   | [ ] 
 P5  | Retail Supply Chain & FK Architecture              | PROJECT5.SQL   | [ ] PENDING
 P6  | Financial Analytics & Windowed Leaderboard Engine  | PROJECT6.SQL   | [ ] PENDING
 P7  | Customer Loyalty & Automated Deduplication Pipeline| PROJECT7.SQL   | [ ] PENDING
+P8  | SP Deduplication, Analytics Views & Indexes       | PROJECT8.SQL   | [ ] PENDING
 
 ----------------------------------------------------------------------------------------------------
                 [ 🎙️ ENGLISH COMMUNICATION & VERBAL ARTICULATION (125-TASK BOOK) ]

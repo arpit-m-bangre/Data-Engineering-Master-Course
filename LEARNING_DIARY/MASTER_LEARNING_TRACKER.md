@@ -30,7 +30,7 @@
 
 ---
 
-## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 26)
+## 📕 2. MODULE 1: SQL CORE BACKLOG MATRIX (DAYS 1 TO 27)
 
 | Day | Topic Focus Area | Re-Write Note | Revision Note | Practice Drills | Status |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -60,11 +60,12 @@
 | **24** | T-SQL Server String Functions Engine | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 | **25** | Advanced String & Dynamic Parsing | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 | **26** | Transaction Control, NULLs & Subqueries | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
+| **27** | Stored Procedures, Views & Indexing | [ ] PENDING | [ ] PENDING | [ ] PENDING | ⏳ **BACKLOG** |
 
 ---
 
 ## 🚀 3. ENTERPRISE DATA ENGINEERING PROJECTS MATRIX
-*Pre-Flight Audit Confirmed: 7 Project Files exist physically on disk.*
+*Pre-Flight Audit Confirmed: 8 Project Files exist physically on disk.*
 
 | ID | Project Title | Target File | Status |
 | :---: | :--- | :--- | :---: |
@@ -75,6 +76,7 @@
 | **P5** | Retail Supply Chain & FK Architecture | [`PROJECT5.SQL`](../01_SQL/06_PROJECTS/PROJECT5.SQL) | ⏳ **PENDING** |
 | **P6** | Financial Analytics & Windowed Leaderboard Engine | [`PROJECT6.SQL`](../01_SQL/06_PROJECTS/PROJECT6.SQL) | ⏳ **PENDING** |
 | **P7** | Customer Loyalty & Automated Deduplication Pipeline | [`PROJECT7.SQL`](../01_SQL/06_PROJECTS/PROJECT7.SQL) | ⏳ **PENDING** |
+| **P8** | SP Deduplication, Analytics Views & Indexes | [`PROJECT8.SQL`](../01_SQL/06_PROJECTS/PROJECT8.SQL) | ⏳ **PENDING** |
 
 ---
 

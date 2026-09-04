@@ -25,6 +25,7 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **15. T-SQL Server String Functions Engine** | 7 | 7 | 0 | 🔴 High |
 | **16. Advanced String Slicing & Name Parser** | 6 | 6 | 0 | 🔴 High |
 | **17. Transaction Control, NULLs & Subqueries** | 5 | 5 | 0 | 🔴 High |
+| **18. Stored Procedures, Views & Indexing** | 6 | 6 | 0 | 🔴 High |
 
 ---
 
@@ -214,6 +215,18 @@ This document tracks every core SQL & Data Engineering technical concept covered
 | **C17.3** | `ISNULL()` vs `COALESCE()` Null Substitution | MASTERED | `ISNULL` string truncation due to first argument datatype precedence | 0 | 🔴 High |
 | **C17.4** | Scalar Subqueries vs CTE + `DENSE_RANK()` for Nth Value | MASTERED | Nested subquery table scan bottlenecks vs single-pass window ranking | 0 | 🔴 High |
 | **C17.5** | `IN (Subquery)` vs `INNER JOIN` / `EXISTS` Set Optimization | MASTERED | `NOT IN` failing silently with 0 rows when subquery dataset contains NULL | 0 | 🔴 High |
+
+---
+
+### SECTION 18: STORED PROCEDURES, VIEWS & INDEXING ARCHITECTURE
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C18.1** | Stored Procedures (`CREATE`/`ALTER PROCEDURE`) & `SET NOCOUNT ON` | MASTERED | Dropping SP instead of altering, causing permission and dependency loss | 0 | 🔴 High |
+| **C18.2** | Automated Deduplication Pipeline via SP + CTE + `ROW_NUMBER()` | MASTERED | Omitting `WHERE row_occurrence > 1` filter returning valid original rows | 0 | 🔴 High |
+| **C18.3** | Views as Virtual Tables (`CREATE VIEW` / `ALTER VIEW`) | MASTERED | Expecting standard view to physically persist rows and accelerate slow scans | 0 | 🔴 High |
+| **C18.4** | Standard Virtual Views vs Materialized (Indexed) Views | MASTERED | Creating indexed view without `WITH SCHEMABINDING` and unique clustered index | 0 | 🔴 High |
+| **C18.5** | Non-Clustered Indexes (`CREATE NONCLUSTERED INDEX` & `sp_helpindex`) | MASTERED | Over-indexing on high-DML tables slowing down bulk ETL throughput | 0 | 🔴 High |
+| **C18.6** | Clustered Index Mechanics (PK Auto-Clustering vs Heap Table `p12`) | MASTERED | Msg 1902 attempting to create more than one clustered index per table | 0 | 🔴 High |
 
 ---
 
