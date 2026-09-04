@@ -460,8 +460,21 @@ Law #15: Current-Focus Priority Protocol             ✅ PASSED   Active live cl
 Law #16: Dynamic Spaced Revision & RPS Recommender   ✅ PASSED   Mathematical RPS formula & Top 10 Traps active
 Law #17: Continuous System Map & Workspace Audit     ✅ PASSED   SYSTEM_MAP.md updated on every class & commit
 Law #18: Brutal Tough-Love & Anti-Sycophancy Mentor  ✅ PASSED   Simple English, zero sugarcoating, brutal feedback
-========================================================================================================
-```
+---
+
+### 📍 ZONE 11: `JOB_HUNT/` (TIER-1 CAREER PLACEMENT, RECRUITER & COMPANY INTELLIGENCE ENGINE)
+
+| File Name | Purpose / Contents | Size (Bytes) | Verification Status |
+| :--- | :--- | :---: | :---: |
+| `LIST_OF_COMPANIES.md` | Master 18-Sector / 186-Company Target Directory & 4-Tier Escalation Ladder | 58,532 | ✅ Verified & Locked |
+| `MATCHED_COMPANY_HR_CONTACTS_REPORT.md` | 84,325 Contacts Cross-Referenced against 186 Targets (95.3% Verified) | 28,940 | ✅ Verified & Cleaned |
+| `EXTRA_BONUS_COMPANIES_FOUND_IN_DATABASES.md` | Top 100 Curated Bonus Unicorn, AI & GCC Employers in DB | 9,850 | ✅ Verified & Curated |
+| `00_TIER1_HIRING_PLAYBOOK.md` | Tier-1 Hiring Strategy, Recruiter Outreach & Interview Execution Playbook | 14,175 | ✅ Verified |
+| `01_TIER1_HIRING_CALENDAR.xlsx` | 90-Day Campaign Timeline & Application Tracking Matrix | 11,552 | ✅ Binary Matrix |
+| `02_TOP_300_COMPANIES_DIRECTORY.xlsx` | 300 Company Master Directory with Careers Portals | 38,012 | ✅ Binary Matrix |
+| `03_HR_OUTREACH_PLAYBOOK.md` | Cold Outreach Templates, Follow-Up Sequences & Negotiation Playbook | 10,204 | ✅ Verified |
+| `TIER1_HR_AND_TECH_RECRUITER_MASTER_DATABASE.xlsx` | Master Recruiter & Hiring Manager Database | 1,430,943 | ✅ Binary DB |
+| `TIER1_JOB_HUNT_STRATEGY.md` | Overall Switch Strategy & 18–25+ LPA Offer Bidding Formula | 8,677 | ✅ Verified |
 
 ---
 
