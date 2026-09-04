@@ -365,34 +365,45 @@ function escHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-// ─── Boot ─────────────────────────────────────────────────────────────────────
+// ─── Boot & Zero-Stale Multi-Layer Data Pipeline ──────────────────────────────
 
-document.addEventListener('DOMContentLoaded', () => {
+function initDashboard() {
   const dateDisplay  = document.getElementById('date-display')
   const container    = document.getElementById('tasks-container')
   const refreshBtn   = document.getElementById('refresh-btn')
   const lastUpdated  = document.getElementById('last-updated')
 
-  // Set today's date
-  dateDisplay.textContent = new Date().toLocaleDateString('en-US', {
-    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
-  })
+  if (!container) return
 
-  // ─── LAYER 1: Instant render from bundle ──────────────────────────────────
+  // Set today's date
+  if (dateDisplay) {
+    dateDisplay.textContent = new Date().toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    })
+  }
+
+  function setLastUpdated(msg) {
+    if (lastUpdated) {
+      lastUpdated.textContent = `Last check: ${msg} · ${new Date().toLocaleTimeString()}`
+    }
+  }
+
+  // ─── LAYER 1: Immediate Render from Build Bundle ──────────────────────────
   let currentRaw = normalise(BUNDLE_TASKS)
   renderTasks(currentRaw, container)
-  setLastUpdated('Loaded from build bundle (instant)')
+  setLastUpdated('Loaded from bundle')
 
-  // ─── LAYER 2 & 3: Real-Time Auto-Upgrade Engine ───────────────────────────
+  // ─── LAYER 2: Immediate Live Zero-Cache Fetch ─────────────────────────────
   async function tryLiveUpgrade(force = false) {
-    const cb = `?t=${Date.now()}`
+    const cb = `?t=${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
 
     try {
       const res = await fetch('/TODAYS_TASKS.txt' + cb, {
         cache: 'no-store',
         headers: {
           'Cache-Control': 'no-cache, no-store, must-revalidate',
-          Pragma: 'no-cache'
+          'Pragma': 'no-cache',
+          'Expires': '0'
         }
       })
       if (res.ok) {
@@ -400,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (text && (text !== currentRaw || force)) {
           currentRaw = text
           renderTasks(currentRaw, container)
-          setLastUpdated('Live — from Vercel static ✅')
+          setLastUpdated('Live — from server ✅')
           return
         } else if (text) {
           setLastUpdated('Live — Up to date ✅')
@@ -414,7 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cache: 'no-store',
         headers: {
           'Cache-Control': 'no-cache, no-store, must-revalidate',
-          Pragma: 'no-cache'
+          'Pragma': 'no-cache'
         }
       })
       if (res.ok) {
@@ -430,16 +441,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (_) { /* silent */ }
   }
 
-  function setLastUpdated(msg) {
-    if (lastUpdated) {
-      lastUpdated.textContent = `Last check: ${msg} · ${new Date().toLocaleTimeString()}`
-    }
-  }
-
-  // 1. Instant fetch on page load
+  // 1. Instant live fetch on script load
   tryLiveUpgrade(true)
 
-  // 2. Auto-sync on window focus & visibility change (when tab reopened)
+  // 2. Auto-sync on window focus & tab visibility
   window.addEventListener('focus', () => tryLiveUpgrade(true))
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
@@ -447,9 +452,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
-  // 3. Periodic background poll every 20 seconds
-  setInterval(() => tryLiveUpgrade(false), 20000)
+  // 3. Background periodic auto-refresh every 15 seconds
+  setInterval(() => tryLiveUpgrade(false), 15000)
 
+  // 4. Manual Refresh Button Listener
   if (refreshBtn) {
     refreshBtn.addEventListener('click', async () => {
       refreshBtn.classList.add('spinning')
@@ -463,18 +469,26 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
 
-  // Interactive WALL-E widget click trigger
+  // 5. Interactive WALL-E widget click trigger
   const walleWidget = document.getElementById('walle-widget')
   if (walleWidget) {
     walleWidget.addEventListener('click', () => {
       walleWidget.classList.add('scanning')
-      const originalText = lastUpdated.textContent
+      const originalText = lastUpdated ? lastUpdated.textContent : ''
       setLastUpdated('🤖 WALL-E Solar Telemetry: Dual-Fleet Operational ⚡')
       setTimeout(() => {
         walleWidget.classList.remove('scanning')
-        setLastUpdated(originalText.replace(/^Last check:\s*/, ''))
+        if (lastUpdated) setLastUpdated(originalText.replace(/^Last check:\s*/, ''))
       }, 2500)
     })
   }
-})
+}
+
+// Ensure execution across all browser loading stages
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initDashboard)
+} else {
+  initDashboard()
+}
+
 
