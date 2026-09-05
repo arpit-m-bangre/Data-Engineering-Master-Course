@@ -53,18 +53,20 @@ For any class day being worked on, the order MUST be strictly:
   * [ ] **Pillar 5 (Elastic Live Lecture):** Live Faculty Class (Dynamic 09:00 PM – 10:15 PM+; flexes automatically with lecture duration).
 
 ### 3. User Stated Start Time & Zero Personal Assumptions Law:
-- When Cap specifies a start time (e.g. *"Start day from 10:00 AM"* or *"11:00 AM"*), the daily plan MUST start Sprint 1 directly at that exact hour.
+- When Cap specifies ANY start time (e.g. 07:00 AM, 10:00 AM, 01:00 PM, 04:00 PM, etc.), Sprint 1 MUST start directly at that exact hour.
 - **NEVER inject unrequested morning routine, grooming, bath, or chore cards** prior to Cap's stated start time unless Cap explicitly asks for them.
 
-### 4. Dynamic Duration & Total Hours Protocol:
-- Course total flexes dynamically between **3.5 Hours (light days)** to **5.5 Hours (extended live class / deep milestone days)**.
-- Exclude meal breaks, naps, and non-study windows.
-- State at the top:
-  `TOTAL STUDY TIME TODAY: X.X Hours`
+### 4. Dynamic Elastic Duration & Homework Surge Scaling (100x Flexible):
+- Daily hours are **NOT hardcoded to 4.5h**. Hours dynamically and cleanly expand/contract based on actual physical workload:
+  * Light days: ~3.0h – 4.0h
+  * Standard days: ~4.5h – 5.5h
+  * Heavy homework / backlogs / extended class lectures / deep drills: **6.0h – 8.0h+**
+- Always accurately sum all active sprint durations and state at the top:
+  `TOTAL STUDY TIME TODAY: X.X Hours (X.Xh Engineering + X.Xh Class)`
 
-### 5. The Standard Daily Framework (32+ LPA Tier Framework):
-- **Live Class Anchor:** 09:00 PM - 10:15 PM+ (Batch 15 Lecture)
-- **Night Sleep Cutoff:** **10:45 PM** (Lights Out & Bio-Paced Health Recovery Sleep)
+### 5. Elastic Live Class Anchor:
+- Live Lecture Anchor (typically 09:00 PM - 10:15 PM+, or any dynamic scheduled class slot).
+- Night Sleep & System Sync cleanly adjusts right after the lecture concludes.
 
 ---
 

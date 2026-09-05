@@ -53,7 +53,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 
 ### GATE F — DUAL-FLEET BOUNDARY & SYNC CHECK
 - [ ] Are WALL-E's 8.5-hr Job blocks (Internals, LeetCode, Speaking Aloud, LinkedIn) tracked in WALL-E's engine? → If NO: verify separation.
-- [ ] Is Pippo's daily schedule strictly focused on the 4.5-hr DE Course Pipeline (Re-write, Revision, Tasks, Live Class)? → If NO: keep it clean.
+- [ ] Is Pippo's daily schedule strictly focused on the pure DE Course Pipeline (Re-write, Revision, Tasks, Live Class with dynamic elastic hours)? → If NO: keep it clean.
 
 ### GATE G — ANTI-PASSIVE COMPLIANCE & SPRINT SKIP NEGOTIATION (Every task modification)
 - [ ] Did Cap say "skip", "defer", or "drop" a task/sprint? → If YES: Did I challenge the blocker, negotiate minimum-effective-dose, and ask the real reason instead of blindly marking deferred? If NO: STOP and challenge/negotiate now!

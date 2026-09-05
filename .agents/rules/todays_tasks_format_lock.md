@@ -10,11 +10,19 @@ This file defines the strict, non-negotiable format contract for `TODAYS_TASKS.t
    - ONLY schedule Pippo DE Course sprints (Class Notes Re-Write, Revision, Faculty Tasks, 14 Practice Drills, Live Faculty Class, Night Sync).
    - NEVER inject WALL-E job simulation blocks into this file.
 
-2. **Ultra-Lean & Minimal:**
-   - Keep bullet points (`    -> `) punchy, terse, and actionable (under 2 lines each).
-   - Total lines in `TODAYS_TASKS.txt` must strictly remain under 50 lines.
+2. **Elastic Scaling & Dynamic Hours Law:**
+   - Hours are NOT fixed at 4.5h. If class time increases or homework/tasks/backlog expand, the schedule dynamically scales to fit the exact workload (e.g. 3.0h to 8.0h+).
+   - Total study time is always accurately computed as the exact sum of all active sprints: `TOTAL STUDY TIME TODAY: X.X Hours (X.Xh Engineering + X.Xh Class)`.
 
-3. **Vercel Dashboard Parser Compatibility:**
+3. **Flexible Start Time & Zero Personal Assumptions Law:**
+   - If Cap provides any start time (e.g., 08:00 AM, 10:00 AM, 11:30 AM, 02:00 PM, 06:00 PM, etc.), Sprint 1 MUST start directly at that exact hour.
+   - NEVER inject unrequested morning routine, grooming, or chore cards before Cap's stated start time.
+
+4. **Ultra-Lean & Minimal:**
+   - Keep bullet points (`    -> `) punchy, terse, and actionable (under 2 lines each).
+   - Total lines in `TODAYS_TASKS.txt` must strictly remain lean and readable.
+
+5. **Vercel Dashboard Parser Compatibility (100x Tested):**
    - Must follow single-card time format: `[ ] HH:MM AM/PM - HH:MM AM/PM : Sprint N — Title`
    - Sub-bullets strictly indented with 4 spaces: `    -> Sub-bullet`
    - Breaks: `[-] HH:MM AM/PM - HH:MM AM/PM : Break Title 🥗☕`
