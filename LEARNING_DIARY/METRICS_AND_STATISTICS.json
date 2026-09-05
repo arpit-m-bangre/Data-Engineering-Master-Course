@@ -5,14 +5,14 @@
     "batch": "Online Batch 15",
     "start_date": "2026-07-26",
     "target_completion_date": "2026-09-06",
-    "current_streak_days": 32,
-    "last_active_date": "2026-09-05"
+    "current_streak_days": 33,
+    "last_active_date": "2026-09-06"
   },
   "overall_metrics": {
     "total_modules": 7,
     "active_module": "01_SQL & 03_ETL_DATA_PIPELINES",
-    "module_completion_percentage": 88.0,
-    "backlog_debt_percentage": 12.0,
+    "module_completion_percentage": 91.0,
+    "backlog_debt_percentage": 9.0,
     "target_zero_debt_date": "2026-09-06"
   },
   "social_authority_metrics": {
@@ -40,12 +40,14 @@
     "daily_indexes_created": 28,
     "master_combined_index_files": 1,
     "revision_notes_total": 28,
-    "revision_notes_completed": 8,
+    "revision_notes_completed": 28,
+    "bootcamp_completed": true,
+    "bootcamp_questions_solved": 60,
     "practice_question_files": 28,
     "practice_questions_total_drills": 482,
-    "practice_questions_completed_drills": 85,
+    "practice_questions_completed_drills": 145,
     "faculty_class_task_files": 18,
-    "faculty_class_tasks_completed": 8,
+    "faculty_class_tasks_completed": 18,
     "projects_total_scheduled": 8,
     "projects_completed": 1
   },
