@@ -212,12 +212,29 @@ Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point
 
 ---
 
-## 🔮 FUTURE MULTI-MODULE EXPANSION RULES (PYTHON, ETL, SPARK, CLOUD)
+## 🔮 FUTURE MULTI-MODULE EXPANSION RULES (DOMAIN-TAILORED 4-TIER LEAN ARCHITECTURE)
 
-When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
-1. Replicate the same 6-tier directory structure inside each module folder (`02_PYTHON/`, `03_ETL/`, etc.).
-2. Integrate Python scripts, PySpark jobs, and DAGs into `LEARNING_DIARY/MASTER_LEARNING_TRACKER.txt` and `METRICS_AND_STATISTICS.json`.
-3. Create multi-module combined projects (e.g. Python ingestion script --> SQL Warehouse --> Spark aggregation).
+Every upcoming module MUST adopt a **Domain-Tailored 4-Tier Lean Architecture** (max 4 high-yield folders per module, eliminating redundant folder fragmentation). This guarantees that every daily class revision takes **under 75–90 minutes max** with zero debt and zero hunting across disjointed directories.
+
+### Master Multi-Module Matrix:
+| Module Folder | Tier 1: Class & Revision | Tier 2: Hands-On & Drills | Tier 3: Projects | Tier 4: Real-World Case Studies / Internals |
+| :--- | :--- | :--- | :--- | :--- |
+| `01_SQL/` | `01_CLASS_NOTES/` + `03_REVISION_NOTES/` | `04_CLASS_TASKS/` + `05_INDEX_WISE_QUESTIONS/` | `06_PROJECTS/` | `07_QUICK_REVISION/` + `08_SQL_TESTS/` |
+| `02_PYTHON/` | `01_SCRIPTS_AND_REVISION/` | `02_LEETCODE_AND_DRILLS/` | `03_OOP_AND_DATA_PROJECTS/` | `04_PERFORMANCE_AND_SYSTEMS/` |
+| `03_ETL_DATA_PIPELINES/` | `01_CLASS_AND_REVISION/` | `02_HANDS_ON_TASKS/` | `03_PIPELINE_PROJECTS/` | `04_SYSTEM_DESIGN_CASES/` |
+| `04_PYSPARK_BIG_DATA/` | `01_THEORY_AND_INTERNALS/` | `02_NOTEBOOKS_AND_DRILLS/` | `03_LAKEHOUSE_PROJECTS/` | `04_CLUSTER_TUNING_CASES/` |
+| `05_DATA_WAREHOUSING/` | `01_CONCEPTS_AND_REVISION/` | `02_MODELING_AND_DRILLS/` | `03_WAREHOUSE_PROJECTS/` | `04_SCD_AND_GOVERNANCE/` |
+| `06_CLOUD_ENGINEERING/` | `01_ARCH_AND_SERVICES/` | `02_LABS_AND_DRILLS/` | `03_CLOUD_INFRA_PROJECTS/` | `04_FINOPS_AND_SECURITY/` |
+| `07_ORCHESTRATION/` | `01_CONCEPTS_AND_PATTERNS/` | `02_DAGS_AND_DRILLS/` | `03_PRODUCTION_PIPELINES/` | `04_INCIDENT_PLAYBOOKS/` |
+
+### Core Laws for All Modules:
+1. **The 2-File Daily Habit Law:** For any live class day, there are strictly **two working files created**: (1) `Tier 1: Class & Revision File` (theory, mental models, analogies, 10 traps), and (2) `Tier 2: Tasks & Drills File` (faculty challenge tasks + 14 targeted practice drills with blank workspace blocks).
+2. **The 75–90 Minute Velocity Law:** Each class day's study workflow is strictly capped at 75-90 minutes max:
+   - 15 mins Fast Mental Read (Tier 1)
+   - 15 mins Native Code Execution / Typing in IDE/Studio
+   - 20 mins Faculty Challenge Solution (Tier 2 Part 1)
+   - 30 mins 14 Targeted Drills Solution (Tier 2 Part 2)
+3. **Multi-Module Cross-Ingestion Law:** End-to-end multi-module pipelines (e.g. Python scraper -> Kafka -> Spark Lakehouse -> Snowflake Star Schema -> Airflow DAG) link cleanly across Tier 3 project directories without duplicated overhead.
 
 ---
 

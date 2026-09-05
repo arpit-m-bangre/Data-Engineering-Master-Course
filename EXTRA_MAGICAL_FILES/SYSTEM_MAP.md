@@ -52,17 +52,42 @@ d:\DE COURSE\
 │   ├── 08_SQL_TESTS/             <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
-├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
+├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (4 Tiers)
+│   ├── 01_SCRIPTS_AND_REVISION/  <-- Python scripts, memory models, GIL, generators & 7-step revision
+│   ├── 02_LEETCODE_AND_DRILLS/   <-- Data manipulation, algorithms & 14 targeted drills
+│   ├── 03_OOP_AND_DATA_PROJECTS/ <-- Production OOP cleansing engines & ingestion modules
+│   ├── 04_PERFORMANCE_AND_SYSTEMS/ <-- Memory profiling, Polars vs Pandas benchmarks
+│   └── README.md
 ├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging, 4-Layer & Medallion Architecture (5 Files)
 │   ├── 01_CLASS_AND_REVISION/    <-- Structured Class Notes & 7-Step Revision (2026-09-05_ETL_FOUNDATIONS.md)
 │   ├── 02_HANDS_ON_TASKS/        <-- Faculty Homework Challenges & 14 Targeted Drills (2026-09-05_TASKS_AND_DRILLS.md)
 │   ├── 03_PIPELINE_PROJECTS/     <-- Enterprise ETL Pipelines (PROJECT1_AMAZON_ETL_PIPELINE.md)
 │   ├── 04_SYSTEM_DESIGN_CASES/   <-- High-Scale Distributed System Design Case Studies (CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md)
 │   └── README.md                 <-- Module Overview & Progress Matrix
-├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (Upcoming)
-├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (Upcoming)
-├── 06_CLOUD_ENGINEERING/         <-- AWS S3, IAM & Azure Data Services (Upcoming)
-├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (Upcoming)
+├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (4 Tiers)
+│   ├── 01_THEORY_AND_INTERNALS/  <-- Spark architecture, DAG execution, Catalyst & 7-step revision
+│   ├── 02_NOTEBOOKS_AND_DRILLS/  <-- Distributed transformation notebooks & 14 targeted Spark drills
+│   ├── 03_LAKEHOUSE_PROJECTS/    <-- Production Delta Lake ACID Medallion pipelines
+│   ├── 04_CLUSTER_TUNING_CASES/  <-- Skew joins, OOM mitigation, partition sizing & broadcast joins
+│   └── README.md
+├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (4 Tiers)
+│   ├── 01_CONCEPTS_AND_REVISION/ <-- Snowflake micro-partitioning, Time Travel, Clone & 7-step revision
+│   ├── 02_MODELING_AND_DRILLS/   <-- Dimensional modeling labs, SCD design & 14 targeted drills
+│   ├── 03_WAREHOUSE_PROJECTS/    <-- Production dbt + Snowflake enterprise warehouse builds
+│   ├── 04_SCD_AND_GOVERNANCE/    <-- SCD implementations, RBAC security, data masking & FinOps
+│   └── README.md
+├── 06_CLOUD_ENGINEERING/         <-- AWS & Azure Big Data Infrastructure Services (4 Tiers)
+│   ├── 01_ARCH_AND_SERVICES/     <-- S3/ADLS tiers, IAM, Glue/Athena/Synapse & 7-step revision
+│   ├── 02_LABS_AND_DRILLS/       <-- Cloud CLI scripts, IAM policy design & 14 targeted drills
+│   ├── 03_CLOUD_INFRA_PROJECTS/  <-- Serverless event-driven ingestion with Lambda & EventBridge
+│   ├── 04_FINOPS_AND_SECURITY/   <-- Cloud cost optimization, zero-trust boundaries & KMS encryption
+│   └── README.md
+├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (4 Tiers)
+│   ├── 01_CONCEPTS_AND_PATTERNS/ <-- Airflow architecture, Operators/Sensors, XComs & 7-step revision
+│   ├── 02_DAGS_AND_DRILLS/       <-- Hands-on DAG definitions & 14 targeted workflow drills
+│   ├── 03_PRODUCTION_PIPELINES/  <-- Production multi-task failure-tolerant pipelines with Slack alerting
+│   ├── 04_INCIDENT_PLAYBOOKS/    <-- Backfilling strategies, deadlocks, SLA misses & zombie debugging
+│   └── README.md
 ├── INTERVIEW_QUESTION_BANK/      <-- Master 2,500 Question Hub, Mocks & External Banks (4 Files)
 │   ├── 00_MASTER_2500_QUESTIONS.md <-- 2,500 Question Master Blueprint
 │   ├── 01_SQL_MOCK_INTERVIEWS/   <-- Live Faculty Mock Interview Scripts & Notes (1 File)
