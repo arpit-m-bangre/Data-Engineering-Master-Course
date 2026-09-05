@@ -15,7 +15,7 @@
  ======================================================================================================== 
    • Total Physical Files Audited    : 295 Files (100% Physically Verified, Zero Hallucinations) 
    • Active Core SQL Modules         : 144 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
-   • Active Core ETL Modules         : 5 Files across 4 Streamlined Tiers (Class & Revision, Tasks & Drills, Projects, System Design Cases) 
+   • Active Core ETL Modules         : 3 Files across 2 Ultra-Lean Folders (Class & 5-Pillar Revision, Tasks & 14 Drills, README) 
    • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank) 
    • Active Class Days Synchronized  : 28 SQL Class Days + 1 ETL Class Day (05-Sep-2026) 
    • Enterprise Project Pipelines    : 8 SQL Projects + 1 ETL Project 
@@ -52,41 +52,29 @@ d:\DE COURSE\
 │   ├── 08_SQL_TESTS/             <-- Live Faculty Assessment Reports & Scenario Tests (1 File: sql_test_27_aug_arpit_m_bangre_online_15.pdf)
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
-├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (4 Tiers)
-│   ├── 01_SCRIPTS_AND_REVISION/  <-- Python scripts, memory models, GIL, generators & 7-step revision
-│   ├── 02_LEETCODE_AND_DRILLS/   <-- Data manipulation, algorithms & 14 targeted drills
-│   ├── 03_OOP_AND_DATA_PROJECTS/ <-- Production OOP cleansing engines & ingestion modules
-│   ├── 04_PERFORMANCE_AND_SYSTEMS/ <-- Memory profiling, Polars vs Pandas benchmarks
+├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- Python scripts, 5-pillar revision, memory models, GIL & generators
+│   ├── 02_TASKS_AND_DRILLS/      <-- Faculty challenges, algorithm practice & 14 targeted drills
 │   └── README.md
-├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging, 4-Layer & Medallion Architecture (5 Files)
-│   ├── 01_CLASS_AND_REVISION/    <-- Structured Class Notes & 7-Step Revision (2026-09-05_ETL_FOUNDATIONS.md)
-│   ├── 02_HANDS_ON_TASKS/        <-- Faculty Homework Challenges & 14 Targeted Drills (2026-09-05_TASKS_AND_DRILLS.md)
-│   ├── 03_PIPELINE_PROJECTS/     <-- Enterprise ETL Pipelines (PROJECT1_AMAZON_ETL_PIPELINE.md)
-│   ├── 04_SYSTEM_DESIGN_CASES/   <-- High-Scale Distributed System Design Case Studies (CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md)
+├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging, 4-Layer & Medallion Architecture (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- High-yield class notes, 5-pillar revision & code blueprints (2026-09-05_ETL_FOUNDATIONS.md)
+│   ├── 02_TASKS_AND_DRILLS/      <-- Faculty challenges & 14 targeted drills (2026-09-05_TASKS_AND_DRILLS.md)
 │   └── README.md                 <-- Module Overview & Progress Matrix
-├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (4 Tiers)
-│   ├── 01_THEORY_AND_INTERNALS/  <-- Spark architecture, DAG execution, Catalyst & 7-step revision
-│   ├── 02_NOTEBOOKS_AND_DRILLS/  <-- Distributed transformation notebooks & 14 targeted Spark drills
-│   ├── 03_LAKEHOUSE_PROJECTS/    <-- Production Delta Lake ACID Medallion pipelines
-│   ├── 04_CLUSTER_TUNING_CASES/  <-- Skew joins, OOM mitigation, partition sizing & broadcast joins
+├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- Spark architecture, DAG execution, Catalyst & 5-pillar revision
+│   ├── 02_TASKS_AND_DRILLS/      <-- Distributed transform labs, challenges & 14 targeted Spark drills
 │   └── README.md
-├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (4 Tiers)
-│   ├── 01_CONCEPTS_AND_REVISION/ <-- Snowflake micro-partitioning, Time Travel, Clone & 7-step revision
-│   ├── 02_MODELING_AND_DRILLS/   <-- Dimensional modeling labs, SCD design & 14 targeted drills
-│   ├── 03_WAREHOUSE_PROJECTS/    <-- Production dbt + Snowflake enterprise warehouse builds
-│   ├── 04_SCD_AND_GOVERNANCE/    <-- SCD implementations, RBAC security, data masking & FinOps
+├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- Snowflake micro-partitioning, Time Travel, Clone & 5-pillar revision
+│   ├── 02_TASKS_AND_DRILLS/      <-- Dimensional modeling labs, SCD design & 14 targeted drills
 │   └── README.md
-├── 06_CLOUD_ENGINEERING/         <-- AWS & Azure Big Data Infrastructure Services (4 Tiers)
-│   ├── 01_ARCH_AND_SERVICES/     <-- S3/ADLS tiers, IAM, Glue/Athena/Synapse & 7-step revision
-│   ├── 02_LABS_AND_DRILLS/       <-- Cloud CLI scripts, IAM policy design & 14 targeted drills
-│   ├── 03_CLOUD_INFRA_PROJECTS/  <-- Serverless event-driven ingestion with Lambda & EventBridge
-│   ├── 04_FINOPS_AND_SECURITY/   <-- Cloud cost optimization, zero-trust boundaries & KMS encryption
+├── 06_CLOUD_ENGINEERING/         <-- AWS & Azure Big Data Infrastructure Services (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- S3/ADLS tiers, IAM, Glue/Athena/Synapse & 5-pillar revision
+│   ├── 02_TASKS_AND_DRILLS/      <-- Cloud CLI scripts, IAM policy design & 14 targeted drills
 │   └── README.md
-├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (4 Tiers)
-│   ├── 01_CONCEPTS_AND_PATTERNS/ <-- Airflow architecture, Operators/Sensors, XComs & 7-step revision
-│   ├── 02_DAGS_AND_DRILLS/       <-- Hands-on DAG definitions & 14 targeted workflow drills
-│   ├── 03_PRODUCTION_PIPELINES/  <-- Production multi-task failure-tolerant pipelines with Slack alerting
-│   ├── 04_INCIDENT_PLAYBOOKS/    <-- Backfilling strategies, deadlocks, SLA misses & zombie debugging
+├── 07_ORCHESTRATION/             <-- Apache Airflow DAG Scheduling & Automation (2 Folders)
+│   ├── 01_CLASS_AND_REVISION/    <-- Airflow architecture, Operators/Sensors, XComs & 5-pillar revision
+│   ├── 02_TASKS_AND_DRILLS/      <-- Hands-on DAG definitions, incident playbooks & 14 targeted drills
 │   └── README.md
 ├── INTERVIEW_QUESTION_BANK/      <-- Master 2,500 Question Hub, Mocks & External Banks (4 Files)
 │   ├── 00_MASTER_2500_QUESTIONS.md <-- 2,500 Question Master Blueprint

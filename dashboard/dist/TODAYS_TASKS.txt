@@ -16,19 +16,18 @@ TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 
     -> Open 03_ETL_DATA_PIPELINES/01_CLASS_AND_REVISION/2026-09-05_ETL_FOUNDATIONS.md and study complete core concepts.
     -> Master the 3 core pipeline operations: Extract (Read), Transform (Operate/Cleanse), and Load (Write).
     -> Deep dive into 4-Layer Enterprise Architecture (Source Tier -> Staging/Transform Tier -> EDW Tier -> Reporting/BI Marts).
-    -> Review Telecom Postpaid Case Study in 03_ETL_DATA_PIPELINES/04_SYSTEM_DESIGN_CASES/CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md.
-    -> Master 10 Critical ETL Bug Traps & Tier-1 Data Engineer Interview Scenarios.
-    -> [DoD]: ETL Foundations, 4-layer architecture, and revision framework 100% mastered with crystal-clear mental models.
+    -> Master 3 Crystal-Clear Real-Life Analogies (Water Purification Plant, 5-Star Kitchen, Telecom 12 AM Midnight Batch).
+    -> Master 5 Deadly Production Traps & Senior DE Fixes (TRY_CAST, Idempotency, UTC Timezones, CDC).
+    -> [DoD]: ETL Foundations, 4-layer architecture, and 5-pillar revision 100% mastered with crystal-clear mental models.
 
 [ ] 11:00 AM - 01:00 PM : Sprint 2 — Pippo DE Course: Medallion Architecture, Class Tasks & 14 Practice Drills (2.0 Hours) 🚀
     -> Deep dive into Medallion Lakehouse Sub-Layers (Bronze Raw Ingestion, Silver Cleansed/Enriched, Gold Curated Business Marts).
-    -> Solve all architectural design challenges in 03_ETL_DATA_PIPELINES/02_HANDS_ON_TASKS/2026-09-05_TASKS_AND_DRILLS.md:
+    -> Solve all architectural design challenges in 03_ETL_DATA_PIPELINES/02_TASKS_AND_DRILLS/2026-09-05_TASKS_AND_DRILLS.md:
        • Task 1: 4-Layer Amazon E-Commerce Order Flow Mapping.
        • Task 2: Medallion Layer Specifications (Bronze, Silver, Gold).
        • Task 3: Telecom Midnight Batch Mitigation Architecture.
        • Task 4: Pipeline Idempotency & Fault-Tolerant Retry Design.
     -> Solve all 14 targeted architectural practice drills in Section 2 of 2026-09-05_TASKS_AND_DRILLS.md.
-    -> Review Project 1 Amazon ETL Pipeline Blueprint in 03_ETL_DATA_PIPELINES/03_PIPELINE_PROJECTS/PROJECT1_AMAZON_ETL_PIPELINE.md.
     -> [DoD]: Medallion design mastered, all 4 class tasks solved, and all 14 practice drills completed.
 
 [-] 01:00 PM - 02:00 PM : Lunch & Midday Recharge Break 🥗☕

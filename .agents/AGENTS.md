@@ -212,37 +212,36 @@ Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point
 
 ---
 
-## 🔮 FUTURE MULTI-MODULE EXPANSION RULES (DOMAIN-TAILORED 4-TIER LEAN ARCHITECTURE)
+## 🔮 FUTURE MULTI-MODULE EXPANSION RULES (DOMAIN-TAILORED 2-FOLDER ULTRA-LEAN ARCHITECTURE)
 
-Every upcoming module MUST adopt a **Domain-Tailored 4-Tier Lean Architecture** (max 4 high-yield folders per module, eliminating redundant folder fragmentation). This guarantees that every daily class revision takes **under 75–90 minutes max** with zero debt and zero hunting across disjointed directories.
+Every upcoming module (ETL, Python, PySpark, Data Warehousing, Cloud, Orchestration) MUST strictly adopt a **Domain-Tailored 2-Folder Ultra-Lean Architecture** (strictly 2 high-yield folders per module). Industrial building, platform engineering, and heavy enterprise projects are driven by WALL-E in the afternoon fleet, while Pippo maintains pristine, high-velocity academic mastery in the morning.
 
 ### Master Multi-Module Matrix:
-| Module Folder | Tier 1: Class & Revision | Tier 2: Hands-On & Drills | Tier 3: Projects | Tier 4: Real-World Case Studies / Internals |
-| :--- | :--- | :--- | :--- | :--- |
-| `01_SQL/` | `01_CLASS_NOTES/` + `03_REVISION_NOTES/` | `04_CLASS_TASKS/` + `05_INDEX_WISE_QUESTIONS/` | `06_PROJECTS/` | `07_QUICK_REVISION/` + `08_SQL_TESTS/` |
-| `02_PYTHON/` | `01_SCRIPTS_AND_REVISION/` | `02_LEETCODE_AND_DRILLS/` | `03_OOP_AND_DATA_PROJECTS/` | `04_PERFORMANCE_AND_SYSTEMS/` |
-| `03_ETL_DATA_PIPELINES/` | `01_CLASS_AND_REVISION/` | `02_HANDS_ON_TASKS/` | `03_PIPELINE_PROJECTS/` | `04_SYSTEM_DESIGN_CASES/` |
-| `04_PYSPARK_BIG_DATA/` | `01_THEORY_AND_INTERNALS/` | `02_NOTEBOOKS_AND_DRILLS/` | `03_LAKEHOUSE_PROJECTS/` | `04_CLUSTER_TUNING_CASES/` |
-| `05_DATA_WAREHOUSING/` | `01_CONCEPTS_AND_REVISION/` | `02_MODELING_AND_DRILLS/` | `03_WAREHOUSE_PROJECTS/` | `04_SCD_AND_GOVERNANCE/` |
-| `06_CLOUD_ENGINEERING/` | `01_ARCH_AND_SERVICES/` | `02_LABS_AND_DRILLS/` | `03_CLOUD_INFRA_PROJECTS/` | `04_FINOPS_AND_SECURITY/` |
-| `07_ORCHESTRATION/` | `01_CONCEPTS_AND_PATTERNS/` | `02_DAGS_AND_DRILLS/` | `03_PRODUCTION_PIPELINES/` | `04_INCIDENT_PLAYBOOKS/` |
+| Module Folder | Folder 1: Class & 5-Pillar Revision | Folder 2: Tasks, Challenges & 14 Drills |
+| :--- | :--- | :--- |
+| `01_SQL/` *(Classic)* | `01_CLASS_NOTES/` + `03_REVISION_NOTES/` | `04_CLASS_TASKS/` + `05_INDEX_WISE_QUESTIONS/` + `06_PROJECTS/` + `07_QUICK_REVISION/` |
+| `02_PYTHON/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
+| `03_ETL_DATA_PIPELINES/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
+| `04_PYSPARK_BIG_DATA/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
+| `05_DATA_WAREHOUSING/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
+| `06_CLOUD_ENGINEERING/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
+| `07_ORCHESTRATION/` | `01_CLASS_AND_REVISION/` | `02_TASKS_AND_DRILLS/` |
 
 ### Core Laws for All Modules:
-1. **The 2-File Daily Habit Law:** For any live class day, there are strictly **two working files created**: (1) `Tier 1: Class & Revision File` (theory, mental models, analogies, 10 traps), and (2) `Tier 2: Tasks & Drills File` (faculty challenge tasks + 14 targeted practice drills with blank workspace blocks).
+1. **The 2-Folder Ultra-Lean Law:** For Module 03 (ETL) and ALL upcoming modules, there are strictly **two working directories**: (1) `01_CLASS_AND_REVISION/` (Class notes, 5-Pillar revision, mental models, analogies, code blueprints, 5 traps), and (2) `02_TASKS_AND_DRILLS/` (Faculty challenges, architectural design tasks, and 14 targeted practice drills with blank workspace blocks).
 2. **The 5-Pillar High-Yield Precision Framework (ETL & Beyond):**
-   - For Module 03 (ETL) and ALL upcoming modules (Python, PySpark, Data Warehousing, Cloud, Orchestration), all Tier 1 Class & Revision notes MUST strictly follow the **5-Pillar High-Yield Precision Framework**:
+   - All Tier 1 Class & Revision notes MUST strictly follow the **5-Pillar High-Yield Precision Framework**:
      - **Pillar 1: North Star & Real-World Analogies** (Conversational, simple language, vivid daily life pictures, 30-second mental lock).
      - **Pillar 2: Architectural Blueprint & Trade-Off Matrix** (ASCII pipeline flow + side-by-side comparative matrices).
      - **Pillar 3: Production Code Blueprint** (Executable, robust, uppercase T-SQL/Python with error handling & idempotency).
      - **Pillar 4: 5 Deadly Production Failures & Senior DE Fixes** (Concrete failure scenario at scale + senior resolution).
      - **Pillar 5: Tier-1 Interview Knockout Q&A** (Top interview questions asked by Tier-1 product firms + winning model answers).
-   - *(Note: Module 01 SQL retains its classic 7-step format to preserve completed work).*
+   - *(Note: Module 01 SQL retains its classic format to preserve completed historical work).*
 3. **The 75–90 Minute Velocity Law:** Each class day's study workflow is strictly capped at 75-90 minutes max:
    - 10-15 mins Fast Mental Read (5 Pillars)
    - 15 mins Native Code Execution / Typing in IDE/Studio
-   - 20 mins Faculty Challenge Solution (Tier 2 Part 1)
-   - 30 mins 14 Targeted Drills Solution (Tier 2 Part 2)
-4. **Multi-Module Cross-Ingestion Law:** End-to-end multi-module pipelines (e.g. Python scraper -> Kafka -> Spark Lakehouse -> Snowflake Star Schema -> Airflow DAG) link cleanly across Tier 3 project directories without duplicated overhead.
+   - 20 mins Faculty Challenge Solution (Folder 2 Part 1)
+   - 30 mins 14 Targeted Drills Solution (Folder 2 Part 2)
 
 ---
 

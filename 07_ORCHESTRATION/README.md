@@ -4,20 +4,18 @@ Welcome to **Module 07: Data Pipeline Orchestration**. This module covers Apache
 
 ---
 
-## 🏛️ Streamlined 4-Tier Architecture
+## 🏛️ Ultra-Lean 2-Folder Architecture
 
 ```text
 07_ORCHESTRATION/
-├── 01_CONCEPTS_AND_PATTERNS/    <-- Airflow Architecture, Operators/Sensors, XComs & 7-Step Revision
-├── 02_DAGS_AND_DRILLS/          <-- Hands-On DAG Definitions & 14 Targeted Workflow Drills
-├── 03_PRODUCTION_PIPELINES/     <-- Production Multi-Task Failure-Tolerant Pipelines with Slack Alerting
-└── 04_INCIDENT_PLAYBOOKS/       <-- Backfilling Strategies, Deadlocks, SLA Misses & Zombie Debugging
+├── 01_CLASS_AND_REVISION/       <-- Airflow Architecture, Operators/Sensors, XComs & 5-Pillar Revision
+└── 02_TASKS_AND_DRILLS/         <-- Hands-On DAG Definitions, Incident Playbooks & 14 Targeted Drills
 ```
 
 ---
 
-## ⏱️ Daily Study Standard: 75–90 Minutes
-- **15 mins:** Fast DAG Architecture Read (`01_CONCEPTS_AND_PATTERNS/`)
+## ⏱️ Daily Study Habit: 75–90 Minutes
+- **15 mins:** Fast DAG Architecture Read (`01_CLASS_AND_REVISION/`)
 - **15 mins:** Airflow Webserver / Native Python DAG Execution
-- **20 mins:** Production DAG Design Challenge (`02_DAGS_AND_DRILLS/` Part 1)
-- **30 mins:** 14 Targeted Workflow Orchestration Drills (`02_DAGS_AND_DRILLS/` Part 2)
+- **20 mins:** Production DAG Design Challenge (`02_TASKS_AND_DRILLS/` Part 1)
+- **30 mins:** 14 Targeted Workflow Orchestration Drills (`02_TASKS_AND_DRILLS/` Part 2)
