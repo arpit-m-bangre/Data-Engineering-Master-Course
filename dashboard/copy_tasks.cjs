@@ -2,28 +2,43 @@ const fs = require('fs');
 const path = require('path');
 
 try {
-  // Read from the root directory
-  const src = path.join(__dirname, '..', 'TODAYS_TASKS.txt');
-  const destPublic = path.join(__dirname, 'public', 'TODAYS_TASKS.txt');
+  // Check candidate source locations
+  const candidates = [
+    path.join(__dirname, '..', 'TODAYS_TASKS.txt'),
+    path.join(__dirname, 'TODAYS_TASKS.txt'),
+    path.join(process.cwd(), '..', 'TODAYS_TASKS.txt'),
+    path.join(process.cwd(), 'TODAYS_TASKS.txt'),
+    path.join(__dirname, 'public', 'TODAYS_TASKS.txt')
+  ];
+
+  let foundSrc = null;
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      foundSrc = p;
+      break;
+    }
+  }
+
+  const publicDir = path.join(__dirname, 'public');
+  const destPublic = path.join(publicDir, 'TODAYS_TASKS.txt');
   const distDir = path.join(__dirname, 'dist');
   const destDist = path.join(distDir, 'TODAYS_TASKS.txt');
 
-  if (fs.existsSync(src)) {
-    // Ensure public folder exists
-    const publicDir = path.join(__dirname, 'public');
-    if (!fs.existsSync(publicDir)) {
-      fs.mkdirSync(publicDir, { recursive: true });
-    }
-    fs.copyFileSync(src, destPublic);
-    console.log('Successfully copied TODAYS_TASKS.txt to public folder.');
+  if (!fs.existsSync(publicDir)) {
+    fs.mkdirSync(publicDir, { recursive: true });
+  }
 
-    // If dist exists, copy to dist as well
+  if (foundSrc) {
+    if (foundSrc !== destPublic) {
+      fs.copyFileSync(foundSrc, destPublic);
+      console.log(`Successfully copied ${foundSrc} to public folder.`);
+    }
     if (fs.existsSync(distDir)) {
-      fs.copyFileSync(src, destDist);
-      console.log('Successfully copied TODAYS_TASKS.txt to dist folder.');
+      fs.copyFileSync(foundSrc, destDist);
+      console.log(`Successfully copied ${foundSrc} to dist folder.`);
     }
   } else {
-    console.warn('TODAYS_TASKS.txt not found in root. Skipping copy.');
+    console.warn('TODAYS_TASKS.txt not found. Using fallback.');
   }
 } catch (err) {
   console.error('Error copying file:', err);
