@@ -24,6 +24,19 @@ function normalise(text) {
 }
 
 /**
+ * Extract timestamp from DAILY MISSION: DD MMM YYYY line to prevent stale cache downgrades.
+ */
+function extractMissionDate(text) {
+  if (!text) return 0
+  const match = text.match(/DAILY MISSION:\s*(\d{1,2}\s+[A-Za-z]{3}\s+\d{4})/i)
+  if (match) {
+    const d = new Date(match[1])
+    return isNaN(d.getTime()) ? 0 : d.getTime()
+  }
+  return 0
+}
+
+/**
  * Check if a title or description describes a break, recharge, meal, or personal slot.
  */
 function isBreakTitle(title) {
