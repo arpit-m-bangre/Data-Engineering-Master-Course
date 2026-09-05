@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cap & Pippo & WALL-E — Daily Data Engineering & Dual-Fleet Mission Control Dashboard by Arpit Bangre" />
+  <meta name="author" content="Arpit Manoj Bangre (Cap)" />
+  <meta name="theme-color" content="#060813" />
+  <title>DE Mission Control — Cap, Pippo 🐥 & WALL-E 🤖</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ── Google Knowledge Graph & Entity SEO Schema ── -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Arpit Bangre",
+      "alternateName": "Arpit Manoj Bangre",
+      "jobTitle": "Data Engineer",
+      "description": "Enterprise Data Engineer specializing in SQL, Relational Architecture, ETL Data Pipelines, and Distributed Systems.",
+      "url": "https://data-engineering-master-course.vercel.app/",
+      "image": "https://github.com/arpit-m-bangre.png",
+      "sameAs": [
+        "https://arpitbangre.vercel.app",
+        "https://www.linkedin.com/in/arpitmbangre",
+        "https://github.com/arpit-m-bangre",
+        "https://dev.to/arpitmbangre",
+        "https://arpitbangre.hashnode.dev",
+        "https://medium.com/@arpitmbangre",
+        "https://leetcode.com/arpitbangre",
+        "https://www.hackerrank.com/arpitbangre",
+        "https://peerlist.io/arpitbangre"
+      ]
+    }
+  </script>
+  <script type="module" crossorigin src="/assets/index-BSLhDgCL.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bxgx45v1.css">
+</head>
+
+<body>
+  <!-- ── Cyber Ambient Grid & Plasma Mesh Background ──────────── -->
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="background-elements">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-walle"></div>
+  </div>
+
+  <!-- ── Floating Dual-Fleet Particles ────────────────────────── -->
+  <div class="particles" aria-hidden="true">
+    <span class="particle p1"></span>
+    <span class="particle p2"></span>
+    <span class="particle p3"></span>
+    <span class="particle p4"></span>
+    <span class="particle p5"></span>
+    <span class="particle p6"></span>
+    <span class="particle p7"></span>
+    <span class="particle p8"></span>
+  </div>
+
+  <div id="app" class="glass-container">
+    <!-- ── WALL-E Solar Telemetry & Dual-Fleet Top Bar ──────────── -->
+    <div class="walle-solar-bar" title="WALL-E Solar Power & Dual-Fleet Engine Active">
+      <div class="walle-solar-label">
+        <span class="walle-bot-icon">🤖</span>
+        <span class="walle-solar-text">WALL-E 8.5H FLEET</span>
+      </div>
+      <div class="solar-gauge-cells">
+        <span class="solar-cell cell-1"></span>
+        <span class="solar-cell cell-2"></span>
+        <span class="solar-cell cell-3"></span>
+        <span class="solar-cell cell-4"></span>
+        <span class="solar-cell cell-5"></span>
+      </div>
+      <div class="dual-fleet-badge">
+        <span class="fleet-dot"></span>
+        <span>DUAL-FLEET SYNCED</span>
+      </div>
+      <div class="pippo-fleet-label">
+        <span class="pippo-badge-icon">🐥</span>
+        <span class="pippo-fleet-text">PIPPO DE CORE</span>
+      </div>
+    </div>
+
+    <!-- ── Hero Section (Pippo + WALL-E Co-Pilots) ─────────────── -->
+    <div class="hero-section">
+      <div class="hero-avatars-group">
+        <!-- Pippo Avatar -->
+        <div class="pippo-avatar-wrapper" title="Pippo 🐥 — DE Master Course AI Mentor">
+          <img src="/pippo.png" alt="Pippo — AI Co-Pilot" class="pippo-avatar" width="68" height="68" />
+          <span class="avatar-ring pippo-ring"></span>
+          <span class="avatar-status pippo-status" title="Pippo is online 🐥"></span>
+        </div>
+
+        <!-- WALL-E Photo Avatar -->
+        <div class="walle-avatar-wrapper" id="walle-widget" title="WALL-E 🤖 — Enterprise Job Simulation Engine">
+          <img src="/walle.jpg" alt="WALL-E — Enterprise AI Co-Pilot" class="walle-avatar" width="68" height="68" />
+          <span class="avatar-ring walle-ring"></span>
+          <span class="avatar-status walle-status" title="WALL-E is online 🤖"></span>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1><span class="gradient-text">DE Mission Control</span></h1>
+        <p class="hero-subtitle">Cap & Pippo 🐥 · WALL-E 🤖 — Dual-Core Data Engineering</p>
+      </div>
+
+      <button id="refresh-btn" title="Refresh tasks from live source" aria-label="Refresh tasks">
+        <span class="refresh-icon">⟳</span>
+      </button>
+    </div>
+
+    <header>
+      <p id="date-display">Loading...</p>
+      <p id="last-updated" class="last-updated"></p>
+    </header>
+
+    <main>
+      <div id="tasks-container" class="tasks-list">
+        <div class="loading-pulse">Loading mission parameters...</div>
+      </div>
+    </main>
+
+    <footer class="dash-footer">
+      <span>🐥 Pippo & Cap · 🤖 WALL-E Fleet · Data Engineering Master Course</span>
+    </footer>
+  </div>
+
+</body>
+
+</html>
