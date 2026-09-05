@@ -20,6 +20,7 @@ const GITHUB_RAW_URL =
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function normalise(text) {
+  if (!text || typeof text !== 'string') return ''
   return text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim()
 }
 
@@ -178,7 +179,14 @@ function parseTasks(raw) {
 // ─── Renderer ─────────────────────────────────────────────────────────────────
 
 function renderTasks(rawText, container) {
-  const items = parseTasks(rawText)
+  let items = []
+  try {
+    items = parseTasks(rawText)
+  } catch (e) {
+    console.error('[renderTasks] parseTasks failed:', e)
+    container.innerHTML = '<p class="empty-state">Error parsing tasks. Check TODAYS_TASKS.txt format.</p>'
+    return
+  }
   if (items.length === 0) {
     container.innerHTML = '<p class="empty-state">No tasks found for today.</p>'
     return
@@ -276,8 +284,15 @@ function renderTasks(rawText, container) {
 
   // ─── 2. Render Cards in Chronological Flow
   items.forEach(item => {
-    // Skip items that are rendered in top summary widgets or handled elsewhere
+    // Skip items rendered in top widgets or with no visual representation
     if (item.type === 'target' || item.type === 'mustwin' || item.type === 'mission_header') {
+      return
+    }
+
+    // Safety guard — skip any unknown item type to prevent crashes
+    const knownTypes = ['section', 'notice', 'stats', 'note', 'break', 'task']
+    if (!knownTypes.includes(item.type)) {
+      console.warn('[renderTasks] Unknown item type skipped:', item.type, item)
       return
     }
 
@@ -384,9 +399,10 @@ function renderTasks(rawText, container) {
   })
 }
 
-/** Escape HTML special chars to prevent XSS */
+/** Escape HTML special chars to prevent XSS — null-safe */
 function escHtml(str) {
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  if (str === null || str === undefined) return ''
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
 // ─── Boot & Zero-Stale Multi-Layer Data Pipeline ──────────────────────────────
