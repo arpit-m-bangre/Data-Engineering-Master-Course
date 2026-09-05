@@ -26,14 +26,14 @@
     "status": "100% UP TO DATE (ZERO BACKLOG)"
   },
   "active_short_term_target": {
-    "target_title": "Complete SQL_SERVER_MASTERY_BOOTCAMP.SQL (Days 01-28 + 60 Checkpoint Questions)",
-    "target_deadline": "2026-09-06 10:30",
-    "status": "IN_PROGRESS",
-    "progress_summary": "Complete full 28-day curriculum revision and all 60 checkpoint questions across DataEngineeringMasterDB before Sunday 06 Sep 2026 10:30 AM Mock Assessment",
-    "total_phases": 6,
-    "current_phase": 1,
-    "target_resource": "!_QUICK_ACCESS/SQL_SERVER_MASTERY_BOOTCAMP.SQL",
-    "social_content_rollout_date": "2026-09-02 (Wednesday - Day 001 Multi-Image Post Launch)"
+    "target_title": "None",
+    "target_deadline": "None",
+    "status": "IDLE",
+    "progress_summary": "No active short-term target currently queued",
+    "total_phases": 0,
+    "current_phase": 0,
+    "target_resource": "None",
+    "social_content_rollout_date": "None"
   },
   "sql_ecosystem_counters": {
     "class_notes_processed": 28,
