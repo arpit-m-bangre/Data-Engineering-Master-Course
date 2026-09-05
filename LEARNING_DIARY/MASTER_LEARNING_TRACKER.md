@@ -67,9 +67,9 @@
 
 ## ⚡ 2.1 MODULE 3: ETL & DATA PIPELINES MATRIX (DAY 01)
 
-| Day # | Topic Focus Area | Class Notes | Revision Note | Practice Drills | Status |
-| :---: | :--- | :---: | :---: | :---: | :---: |
-| **01** | ETL Architecture & Medallion Design | [ ] PENDING | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
+| Day # | Topic Focus Area | Class & 5-Pillar Revision | Tasks & 14 Drills | Status |
+| :---: | :--- | :---: | :---: | :---: |
+| **01** | ETL Architecture & Medallion Design | [ ] PENDING | [ ] PENDING | 🟡 **IN PROGRESS** |
 
 ---
 

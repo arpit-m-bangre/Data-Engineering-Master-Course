@@ -65,9 +65,9 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 ====================================================================================================
                     [ ⚡ MODULE 3: ETL & DATA PIPELINES MATRIX (DAY 01) ]
 ====================================================================================================
-DAY  | TOPIC FOCUS AREA                          | CLASS NOTES   | REVISION NOTE | PRACTICE DRILLS | STATUS
+DAY  | TOPIC FOCUS AREA                          | CLASS & 5-PILLAR REVISION | TASKS & 14 DRILLS | STATUS
 -------------------------------------------------------------------------------------------------------------
-01   | ETL Architecture & Medallion Design       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
+01   | ETL Architecture & Medallion Design       | [ ] PENDING               | [ ] PENDING       | IN PROGRESS
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]
