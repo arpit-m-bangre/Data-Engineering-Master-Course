@@ -43,6 +43,14 @@ function parseTasks(raw) {
     const line = rawLine.trim()
     if (!line) continue
 
+    // ─── DAILY MISSION HEADER LINE
+    const missionMatch = line.match(/^DAILY MISSION:\s*(.+)$/i)
+    if (missionMatch) {
+      if (currentItem) { items.push(currentItem); currentItem = null }
+      items.push({ type: 'mission_header', text: missionMatch[1].trim() })
+      continue
+    }
+
     // ─── [🎯 CURRENT TARGET] OR [TARGET] LINE
     const targetMatch = line.match(/^\[(?:🎯\s*)?(?:CURRENT\s+)?TARGET\]:\s*(.+)$/i) || line.match(/^CURRENT TARGET:\s*(.+)$/i)
     if (targetMatch) {
@@ -66,7 +74,7 @@ function parseTasks(raw) {
     }
 
     // ─── TOTAL STUDY TIME / STATS LINE
-    const statsMatch = line.match(/^TOTAL STUDY TIME[^:]*:\s*(.+)$/i)
+    const statsMatch = line.match(/^TOTAL (?:STUDY|ENGINEERING)[^:]*:\s*(.+)$/i) || line.match(/^TOTAL [^:]*TIME[^:]*:\s*(.+)$/i)
     if (statsMatch) {
       if (currentItem) { items.push(currentItem); currentItem = null }
       items.push({ type: 'stats', text: statsMatch[1].trim() })
@@ -164,6 +172,13 @@ function renderTasks(rawText, container) {
   }
 
   container.innerHTML = ''
+
+  // ─── Update Date Banner with Parsed Mission Date
+  const missionHeader = items.find(t => t.type === 'mission_header')
+  const dateDisplay = document.getElementById('date-display')
+  if (dateDisplay && missionHeader) {
+    dateDisplay.textContent = `🗓️ ${missionHeader.text}`
+  }
 
   // ─── Filter Categories
   const tasks = items.filter(t => t.type === 'task')

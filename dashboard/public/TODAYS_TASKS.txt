@@ -7,7 +7,7 @@
 
 [🎯 CURRENT TARGET]: Master SQL Triggers & ETL Medallion Architecture + Complete English Book Task 4 + Lock Day 33 Streak
 
-TOTAL STUDY & CLASS TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 0.25h System Sync)
+TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 0.25h System Sync)
 
 --------------------------------------------------------------------
                      MORNING PIPPO FLEET (09:00 AM START)
