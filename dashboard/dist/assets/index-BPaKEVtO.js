@@ -73,7 +73,7 @@ TOTAL STUDY TIME TODAY: 4.5 Hours (3.25h Core Engineering + 1.25h Live Class)
         <span class="progress-remaining">${t.pendingCount===0?`🔥 All Active Sprints Conquered!`:`⚡ ${t.pendingCount} Sprint${t.pendingCount>1?`s`:``} Remaining`}</span>
         <span class="progress-pct">${t.pct}% Complete</span>
       </div>
-    `}function m(){f&&p(f,c())}n.forEach(e=>{if(e.type===`target`||e.type===`mustwin`)return;let n=document.createElement(`div`);if(e.type===`section`)n.className=`section-header-card`,n.innerHTML=`
+    `}function m(){f&&p(f,c())}n.forEach(e=>{if(e.type===`target`||e.type===`mustwin`||e.type===`mission_header`)return;let n=document.createElement(`div`);if(e.type===`section`)n.className=`section-header-card`,n.innerHTML=`
         <div class="section-divider-line"></div>
         <div class="section-title-wrap">
           <span class="section-title-icon">⚡</span>

@@ -276,8 +276,8 @@ function renderTasks(rawText, container) {
 
   // ─── 2. Render Cards in Chronological Flow
   items.forEach(item => {
-    // Skip items that are rendered in top summary widgets
-    if (item.type === 'target' || item.type === 'mustwin') {
+    // Skip items that are rendered in top summary widgets or handled elsewhere
+    if (item.type === 'target' || item.type === 'mustwin' || item.type === 'mission_header') {
       return
     }
 
