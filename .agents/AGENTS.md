@@ -221,9 +221,9 @@ When new modules (Python, PySpark, ETL, Data Warehousing, Cloud, Airflow) begin:
 
 ---
 
-## 🚀 DUAL-FLEET ARCHITECTURE: PIPPO (DE COURSE) & WALL-E (8.5-HR JOB)
+## 🚀 DUAL-FLEET ARCHITECTURE: PIPPO-FIRST ORDER (PIPPO -> WALL-E)
 
-Cap's daily operating system is divided into two synchronized, complementary fleets:
+Cap's daily operating system is divided into two synchronized, complementary fleets in a **strict Pippo-First daily sequence**:
 
 ```
                     ┌──────────────────────────────────────────────┐
@@ -232,27 +232,30 @@ Cap's daily operating system is divided into two synchronized, complementary fle
                                            │
              ┌─────────────────────────────┴─────────────────────────────┐
              ▼                                                           ▼
- 🤖 WALL-E : THE 9-TO-5 "JOB" (8.5h)                         🐥 PIPPO : POST-JOB "DE COURSE" (3.5h - 5.5h)
- ───────────────────────────────────                         ─────────────────────────────────────────────
- • Block 1: Deep Internals (2.0h)                            • Step 1: Active IDE/Studio Note Re-Write & Re-Do
- • Block 2: Hands-On Industrial Building (2.5h)              • Step 2: 7-Step Markdown Revision Read
- • Block 3: Timed Coding Drills (1.0h)                       • Step 3: Solve Faculty Class Tasks / Drills
- • Block 4: Sizing & System Architecture (1.0h)              • Step 4: Smart Target Buffer (Optional / Milestone)
- • Block 5: Speaking Aloud & Vocal English (30m)             • Step 5: Live Faculty Class (Dynamic Evening Lecture)
- • Block 6: Semantic Git & Tracker Scoreboard (30m)
- • Block 7: LinkedIn & Omni-Channel Branding Engine (1.0h)
+ 🐥 PIPPO : MORNING "DE COURSE" (09:00 AM Start)            🤖 WALL-E : POST-PIPPO "JOB" (Afternoon)
+ ─────────────────────────────────────────────              ───────────────────────────────────
+ • Step 1: Active IDE/Studio Note Re-Write & Re-Do           • Block 1: Deep Internals & Sizing
+ • Step 2: 7-Step Markdown Revision Read                     • Block 2: Hands-On Industrial Building (NexusFin)
+ • Step 3: Solve Faculty Class Tasks / Drills                • Block 3: Timed Coding Drills & Sizing Math
+ • Step 4: Active Module Expansion (SQL + ETL)               • Block 4: Speaking Aloud & English Book Task
+ • Step 5: Live Faculty Class (Dynamic Evening Lecture)      • Block 5: LinkedIn & Omni-Channel Authority
 ```
 
-### 1. WALL-E's Operational Territory (9:00 AM – 05:00 PM Enterprise Job Simulation)
-- WALL-E owns Deep Internals, Industrial System Building (NexusFin open-source), Timed Coding Drills, Cluster/IOPS Math, Speaking Aloud, Semantic Git Telemetry, and the 60-min LinkedIn/Branding Engine.
-
-### 2. Pippo's Operational Territory (Post-Job Dynamic 3.5h – 5.5h Academy Mastery)
-- Pippo is 100% dedicated to **Multi-Tool Academic & Relational Engineering**:
-  1. **Tool-Agnostic IDE/Studio Manual Re-Write & Re-Do:** Live typing in the active module's native studio (SQL/SSMS, Python/VS Code, Power BI Desktop/DAX, PySpark/Databricks, Snowflake Web UI, Airflow UI).
+### 1. Pippo's Operational Territory (09:00 AM Morning Priority — DE Course Mastery)
+- Pippo executes **FIRST** every day, establishing foundation academic & relational engineering:
+  1. **Tool-Agnostic IDE/Studio Manual Re-Write & Re-Do:** Live typing in the active module's native studio (SQL/SSMS, Python/VS Code, ETL Pipeline design, Power BI, Databricks, Snowflake).
   2. **7-Step Revision Read:** Fast mental model review, architectural nuance, and interview trap awareness.
   3. **Faculty Homework & Class Tasks:** 100% solved challenge scripts in respective module folders.
-  4. **Smart Target Buffer (Optional):** When an active milestone/bootcamp is queued (e.g. `SQL_SERVER_MASTERY_BOOTCAMP.SQL`), remaining daytime/evening buffer hours are smartly routed here. On light days or when no target is active, this sprint is smoothly omitted.
-  5. **Elastic Live Faculty Lecture:** Dynamic evening lecture block (standard 09:00 PM – 10:15 PM, but elastically handles 1.25h to 2.0h+ extensions or lighter sessions without breaking the schedule).
+  4. **Targeted Practice Drills:** 14-question problem sets solved cleanly in studio.
+  5. **Elastic Live Faculty Lecture:** Dynamic evening lecture block (09:00 PM – 10:15 PM+).
+
+### 2. WALL-E's Operational Territory (Post-Pippo Afternoon — Enterprise Job Simulation)
+- WALL-E executes **AFTER Pippo**, focusing on enterprise-scale delivery:
+  - Deep Internals & Architecture Math (Cluster/IOPS calculations).
+  - Hands-On Industrial Building (NexusFin open-source MNC financial platform).
+  - Timed LeetCode/HackerRank coding drills.
+  - English Vocal articulation (125-task book).
+  - 60-min LinkedIn & Omni-Channel Authority Engine.
 
 ---
 
