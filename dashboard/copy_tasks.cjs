@@ -37,6 +37,12 @@ try {
       fs.copyFileSync(foundSrc, destDist);
       console.log(`Successfully copied ${foundSrc} to dist folder.`);
     }
+    // Always sync dashboard root TODAYS_TASKS.txt so git commit carries updated content
+    const destDashboardRoot = path.join(__dirname, 'TODAYS_TASKS.txt');
+    if (foundSrc !== destDashboardRoot) {
+      fs.copyFileSync(foundSrc, destDashboardRoot);
+      console.log(`Successfully synced ${foundSrc} to dashboard root.`);
+    }
   } else {
     console.warn('TODAYS_TASKS.txt not found. Using fallback.');
   }
