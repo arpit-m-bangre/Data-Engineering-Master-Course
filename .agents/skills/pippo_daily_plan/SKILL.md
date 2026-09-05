@@ -75,41 +75,47 @@ Format every card strictly according to `.agents/rules/todays_tasks_format_lock.
 ```text
 ====================================================================
                   DAILY MISSION: DD MMM YYYY (DAY_OF_WEEK)
-      [REAL-TIME STATUS / TAGLINE / SITUATION HEADER]
+      [STATUS: PIPPO DE COURSE FOCUS | X.X HOURS ACADEMIC & CLASS 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: One-line clear objective!
+[!] MISSION OBJECTIVE: Brief one-line objective!
 
-TOTAL STUDY TIME TODAY: X.X Hours (Breakdown summary)
+[🎯 CURRENT TARGET]: None
+
+TOTAL STUDY TIME TODAY: X.X Hours (X.Xh Engineering + X.Xh Class)
 
 --------------------------------------------------------------------
-                       DAY SPRINT EXECUTION
+                    PIPPO DE COURSE STUDY SPRINTS
 --------------------------------------------------------------------
-[ ] HH:MM AM - HH:MM PM : Sprint N — Sprint Title ✍️
-    -> Specific actionable sub-bullet 1 (Target File / Command)
-    -> Specific actionable sub-bullet 2
+[ ] HH:MM AM - HH:MM AM : Sprint 1 — [Topic] Note Re-Write & Revision (X.X Hours) 🚀
+    -> Open [File Path] and study core concepts.
+    -> Master key mental models, architectural flows, and production traps.
 
-[-] HH:MM AM - HH:MM PM : Break / Recharge Title 🥗💤
-    -> Break details
+[-] HH:MM AM - HH:MM AM : Morning Rest & Recharge ☕🌿
+    -> Screen-off, hydration, and light stretch.
+
+[ ] HH:MM AM - HH:MM PM : Sprint 2 — Faculty Class Tasks & Practice Drills (X.X Hours) 🚀
+    -> Open [File Path] and solve faculty tasks.
+    -> Solve all 14 targeted practice drills.
+
+[-] HH:MM PM - HH:MM PM : Lunch & Midday Recharge Break 🥗🚶
+    -> Nutritious meal, walk, and rest.
 
 --------------------------------------------------------------------
                     EVENING & LIVE CLASS BLOCK
 --------------------------------------------------------------------
-[ ] 09:00 PM - 10:15 PM : LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15 - DAY N) 🎓
-    -> Live lecture focus areas
+[ ] 09:00 PM - 10:15 PM : Sprint 3 — LIVE DATA ENGINEERING CLASS (ONLINE BATCH 15) 🎓
+    -> Active attendance and real-time raw notes capture.
 
---------------------------------------------------------------------
-                 POST-CLASS NIGHT SPRINT BLOCK
---------------------------------------------------------------------
-[ ] HH:MM PM - HH:MM AM : Sprint N — Night Focus 🚀
-    -> Task details
+[ ] 10:15 PM - 10:30 PM : Sprint 4 — System Sync & GitHub Push (Streak Day N 🔥) 🚀
+    -> Update trackers, rebuild dashboard, and push to GitHub.
 
-[ ] HH:MM AM - HH:MM AM : Final System Sync, GitHub Push & Vercel Trigger (Streak Day N 🔥) 🚀
-    -> System sync and deploy confirmation
+[-] 10:30 PM - 07:00 AM : Rest & Bio-Paced Recovery Sleep 💤
+    -> Wind down and 8 hours restorative sleep.
 
 ====================================================================
-*Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
-*Daily Quote: "When consistency meets strategy, every single sprint compounds toward 25+ LPA."*
+*Rules: Pure DE Course Focus | All Drills Solved | Finish Before Sleep*
+*Daily Quote: "Mastery compounds sprint by sprint."*
 ====================================================================
 ```
 
