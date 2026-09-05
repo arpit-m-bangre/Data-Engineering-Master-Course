@@ -1,18 +1,18 @@
 (function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=`====================================================================
                   DAILY MISSION: 07 SEP 2026 (MONDAY)
-  [STATUS: FULL DUAL-FLEET DAY | 11.00 HOURS TOTAL ENGINEERING & CLASS 🔥]
+  [STATUS: FULL DUAL-FLEET DAY | 10.00 HOURS TOTAL ENGINEERING & CLASS 🔥]
 ====================================================================
 
-[!] MISSION OBJECTIVE: Execute Pure ETL Mastery in Pippo's morning fleet (Module 03 Day 01 Architecture + Medallion Layers + Tasks + 14 Drills), followed by WALL-E Industrial Building, English Task 4, LinkedIn Authority, Live Faculty Class, and lock Streak Day 34!
+[!] MISSION OBJECTIVE: Execute Pure ETL Mastery in Pippo's morning fleet (Module 03 Day 01 5-Pillar Architecture + Faculty Challenges + 14 Drills), followed by Midday Relaxation, WALL-E Industrial Building, English Task 4, LinkedIn Authority, Live Faculty Class, and lock Streak Day 34!
 
 [🎯 CURRENT TARGET]: None
 
-TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 0.25h System Sync)
+TOTAL STUDY TIME TODAY: 10.00 Hours (8.5h Core Engineering + 1.25h Live Class + 0.25h System Sync)
 
 --------------------------------------------------------------------
                MORNING PIPPO FLEET — PURE ETL (09:00 AM START)
 --------------------------------------------------------------------
-[ ] 09:00 AM - 11:00 AM : Sprint 1 — Pippo DE Course: Module 03 ETL Foundations & 4-Layer Architecture (2.0 Hours) 🚀
+[ ] 09:00 AM - 10:30 AM : Sprint 1 — Pippo DE Course: Module 03 ETL Foundations & 5-Pillar Architecture (1.5 Hours) 🚀
     -> Open 03_ETL_DATA_PIPELINES/01_CLASS_AND_REVISION/2026-09-05_ETL_FOUNDATIONS.md and study complete core concepts.
     -> Master the 3 core pipeline operations: Extract (Read), Transform (Operate/Cleanse), and Load (Write).
     -> Deep dive into 4-Layer Enterprise Architecture (Source Tier -> Staging/Transform Tier -> EDW Tier -> Reporting/BI Marts).
@@ -20,18 +20,21 @@ TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 
     -> Master 5 Deadly Production Traps & Senior DE Fixes (TRY_CAST, Idempotency, UTC Timezones, CDC).
     -> [DoD]: ETL Foundations, 4-layer architecture, and 5-pillar revision 100% mastered with crystal-clear mental models.
 
-[ ] 11:00 AM - 01:00 PM : Sprint 2 — Pippo DE Course: Medallion Architecture, Class Tasks & 14 Practice Drills (2.0 Hours) 🚀
+[-] 10:30 AM - 11:00 AM : Morning Cognitive Rest & Fresh Air Recharge 🌿☕
+    -> Eye relaxation, hydration, light stretch, outdoor sunshine, screen-off downtime.
+
+[ ] 11:00 AM - 12:30 PM : Sprint 2 — Pippo DE Course: Medallion Architecture, Faculty Challenges & 14 Practice Drills (1.5 Hours) 🚀
     -> Deep dive into Medallion Lakehouse Sub-Layers (Bronze Raw Ingestion, Silver Cleansed/Enriched, Gold Curated Business Marts).
-    -> Solve all architectural design challenges in 03_ETL_DATA_PIPELINES/02_TASKS_AND_DRILLS/2026-09-05_TASKS_AND_DRILLS.md:
+    -> Open 03_ETL_DATA_PIPELINES/02_TASKS_AND_DRILLS/2026-09-05_TASKS_AND_DRILLS.md and solve all practical exercises:
        • Task 1: 4-Layer Amazon E-Commerce Order Flow Mapping.
        • Task 2: Medallion Layer Specifications (Bronze, Silver, Gold).
        • Task 3: Telecom Midnight Batch Mitigation Architecture.
        • Task 4: Pipeline Idempotency & Fault-Tolerant Retry Design.
     -> Solve all 14 targeted architectural practice drills in Section 2 of 2026-09-05_TASKS_AND_DRILLS.md.
-    -> [DoD]: Medallion design mastered, all 4 class tasks solved, and all 14 practice drills completed.
+    -> [DoD]: Medallion design mastered, all 4 class challenges solved, and all 14 practice drills completed.
 
-[-] 01:00 PM - 02:00 PM : Lunch & Midday Recharge Break 🥗☕
-    -> Wholesome meal, hydration, screen-off downtime, physical stretch, cognitive reset.
+[-] 12:30 PM - 02:00 PM : Mindful Lunch, Walk & Deep Relaxation Break (1.5 Hours) 🥗🚶
+    -> Wholesome nutritious meal, leisurely outdoor walk, podcast/music relaxation, physical reset.
 
 --------------------------------------------------------------------
                     AFTERNOON WALL-E INDUSTRIAL FLEET
@@ -42,8 +45,8 @@ TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 
     -> Implement idempotent upsert and transactional delta ingestion patterns for high-frequency trading logs.
     -> [DoD]: NexusFin pipeline module developed and verified with clean architecture tests.
 
-[-] 04:30 PM - 05:00 PM : Afternoon Tea & Quick Physical Reset Break ☕🚶
-    -> Short outdoor walk, hydration, eye relaxation, tea recharge.
+[-] 04:30 PM - 05:00 PM : Afternoon Tea & Physical Relaxation Break ☕🌿
+    -> Fresh tea/beverage, physical mobility stretching, breathing reset.
 
 [ ] 05:00 PM - 06:00 PM : Sprint 4 — WALL-E Fleet: Timed Coding Drills & Data Ingestion Math (1.0 Hour) 💻
     -> Solve 2-3 LeetCode Top SQL / HackerRank 5-Star challenge problems.
@@ -65,7 +68,7 @@ TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 
     -> Engage with substantive architectural comments on 3 top tech industry posts.
     -> [DoD]: Post published, 5+ invites sent, daily authority engine maintained.
 
-[-] 08:00 PM - 09:00 PM : Dinner & Evening Mental Reset 🍲🌿
+[-] 08:00 PM - 09:00 PM : Dinner & Evening Mental Relaxation 🍲🌿
     -> Wholesome dinner, family time, hydration, prepare workstation for live lecture.
 
 --------------------------------------------------------------------
