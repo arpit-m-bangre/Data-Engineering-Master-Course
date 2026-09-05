@@ -13,23 +13,22 @@ TOTAL STUDY TIME TODAY: 11.00 Hours (9.5h Core Engineering + 1.25h Live Class + 
                MORNING PIPPO FLEET — PURE ETL (09:00 AM START)
 --------------------------------------------------------------------
 [ ] 09:00 AM - 11:00 AM : Sprint 1 — Pippo DE Course: Module 03 ETL Foundations & 4-Layer Architecture (2.0 Hours) 🚀
-    -> Open 03_ETL_DATA_PIPELINES/01_CLASS_NOTES/2026-09-05_ETL_FOUNDATIONS.md and study complete core concepts.
+    -> Open 03_ETL_DATA_PIPELINES/01_CLASS_AND_REVISION/2026-09-05_ETL_FOUNDATIONS.md and study complete core concepts.
     -> Master the 3 core pipeline operations: Extract (Read), Transform (Operate/Cleanse), and Load (Write).
-    -> Deep dive into 03_ETL_DATA_PIPELINES/03_REVISION_NOTES/2026-09-05_REVISION.md:
-       • 4-Layer Enterprise Data Architecture (Source Tier -> Staging/Transform Tier -> EDW Tier -> Reporting/BI Marts).
-       • Water purification plant analogy & historical telecom 12:00 AM batch call-drop problem vs modern real-time streaming.
-       • 10 Critical ETL Bug Traps & Tier-1 Data Engineer Interview Scenarios.
+    -> Deep dive into 4-Layer Enterprise Architecture (Source Tier -> Staging/Transform Tier -> EDW Tier -> Reporting/BI Marts).
+    -> Review Telecom Postpaid Case Study in 03_ETL_DATA_PIPELINES/04_SYSTEM_DESIGN_CASES/CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md.
+    -> Master 10 Critical ETL Bug Traps & Tier-1 Data Engineer Interview Scenarios.
     -> [DoD]: ETL Foundations, 4-layer architecture, and revision framework 100% mastered with crystal-clear mental models.
 
 [ ] 11:00 AM - 01:00 PM : Sprint 2 — Pippo DE Course: Medallion Architecture, Class Tasks & 14 Practice Drills (2.0 Hours) 🚀
     -> Deep dive into Medallion Lakehouse Sub-Layers (Bronze Raw Ingestion, Silver Cleansed/Enriched, Gold Curated Business Marts).
-    -> Solve all architectural design challenges in 03_ETL_DATA_PIPELINES/04_CLASS_TASKS/2026-09-05_CLASS_TASK.md:
+    -> Solve all architectural design challenges in 03_ETL_DATA_PIPELINES/02_HANDS_ON_TASKS/2026-09-05_TASKS_AND_DRILLS.md:
        • Task 1: 4-Layer Amazon E-Commerce Order Flow Mapping.
        • Task 2: Medallion Layer Specifications (Bronze, Silver, Gold).
        • Task 3: Telecom Midnight Batch Mitigation Architecture.
        • Task 4: Pipeline Idempotency & Fault-Tolerant Retry Design.
-    -> Solve all 14 targeted architectural practice drills in 03_ETL_DATA_PIPELINES/05_INDEX_WISE_QUESTIONS/2026-09-05_QUESTIONS.md.
-    -> Review Project 1 Amazon ETL Pipeline Blueprint in 03_ETL_DATA_PIPELINES/06_PROJECTS/PROJECT1_AMAZON_ETL_PIPELINE.md.
+    -> Solve all 14 targeted architectural practice drills in Section 2 of 2026-09-05_TASKS_AND_DRILLS.md.
+    -> Review Project 1 Amazon ETL Pipeline Blueprint in 03_ETL_DATA_PIPELINES/03_PIPELINE_PROJECTS/PROJECT1_AMAZON_ETL_PIPELINE.md.
     -> [DoD]: Medallion design mastered, all 4 class tasks solved, and all 14 practice drills completed.
 
 [-] 01:00 PM - 02:00 PM : Lunch & Midday Recharge Break 🥗☕

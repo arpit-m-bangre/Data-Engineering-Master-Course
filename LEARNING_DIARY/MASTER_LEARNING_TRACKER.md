@@ -14,7 +14,7 @@
 | :---: | :--- | :--- | :---: |
 | **01** | **01_SQL** | Enterprise Relational Architecture, Joins & Query Engine | 🟡 **IN PROGRESS (Backlog Heavy)** |
 | **02** | **02_PYTHON** | OOP, Pandas, Polars & Data Wrangling | ⏳ *UPCOMING* |
-| **03** | **03_ETL_DATA_PIPELINES** | Ingestion Pipelines, Transformation & Data Validation | ⏳ *UPCOMING* |
+| **03** | **03_ETL_DATA_PIPELINES** | Ingestion Pipelines, Transformation & Data Validation | 🟡 **IN PROGRESS (Active Live Class)** |
 | **04** | **04_PYSPARK_BIG_DATA** | Distributed Compute, Spark Core & Delta Lake ACID | ⏳ *UPCOMING* |
 | **05** | **05_DATA_WAREHOUSING** | Snowflake, Redshift, Dimensional Modeling & SCD | ⏳ *UPCOMING* |
 | **06** | **06_CLOUD_ENGINEERING** | AWS & Azure Big Data Infrastructure Services | ⏳ *UPCOMING* |

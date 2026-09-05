@@ -1,17 +1,38 @@
-# 🚀 Module 03: ETL & Data Pipelines
-### Data Engineering Master Course Architecture Matrix
+# 🔄 03_ETL_DATA_PIPELINES — Enterprise ETL & Data Ingestion Architecture
 
-This module establishes modern enterprise ETL, ELT, and distributed data pipeline engineering following the **Constitutional 6-Tier Architecture**:
-
-1. **01_CLASS_NOTES/**: Clean, structured class notes, pipeline blueprints & SQL/Python scripts.
-2. **02_DAILY_INDEX/**: Daily topic indexes & `01_COMBINED_INDEX_ALL_ETL_TOPICS.md`.
-3. **03_REVISION_NOTES/**: 7-Step Interactive Markdown revision notes with real-life analogies, vocabulary, and bug traps.
-4. **04_CLASS_TASKS/**: Faculty homework, scenario architectures, and challenge solution scripts.
-5. **05_INDEX_WISE_QUESTIONS/**: 14-Question targeted architectural drill sets.
-6. **06_PROJECTS/**: Enterprise industrial pipelines (`PROJECT1_AMAZON_ETL_PIPELINE.md`).
+Welcome to the **ETL & Data Pipelines Module** of the Data Engineering Master Course. This module covers foundational data transport mechanisms, modern ELT lakehouse patterns, Medallion storage paradigms, high-throughput streaming architectures, and real-world enterprise pipeline engineering.
 
 ---
 
-### Module Progress & Statistics
-- **Class Days Active**: 1 (05-Sep-2026: ETL Foundations, 4-Layer & Medallion Pipeline Architecture)
-- **Status**: IN PROGRESS
+## 🏛️ Streamlined 4-Tier Architecture
+
+```
+03_ETL_DATA_PIPELINES/
+├── 01_CLASS_AND_REVISION/       <-- High-Yield Class Notes, 7-Step Revision & Mental Models
+│   └── 2026-09-05_ETL_FOUNDATIONS.md
+├── 02_HANDS_ON_TASKS/           <-- Faculty Architecture Tasks & 14 Targeted Drills
+│   └── 2026-09-05_TASKS_AND_DRILLS.md
+├── 03_PIPELINE_PROJECTS/        <-- Production Enterprise Pipelines (Amazon Medallion)
+│   └── PROJECT1_AMAZON_ETL_PIPELINE.md
+└── 04_SYSTEM_DESIGN_CASES/      <-- Tier-1 Distributed System Design Case Studies
+    └── CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md
+```
+
+---
+
+## 📊 Module Curriculum Map
+
+| Tier | Focus Area | Technology Stack |
+| :--- | :--- | :--- |
+| **01 Class & Revision** | Core paradigms (ETL vs ELT, OLTP vs OLAP, 4-Layer Architecture, Medallion Tiers) | Markdown, Architecture Blueprints, SQL snippets |
+| **02 Hands-On Tasks** | Faculty system challenges, idempotent recovery algorithms, 14 targeted practice drills | System design specs, pseudo-code, SQL DDLs |
+| **03 Pipeline Projects** | End-to-end multi-tier production projects (Bronze -> Silver -> Gold) | SQL Server / Snowflake / T-SQL, Star Schemas |
+| **04 System Design Cases** | Telecom CDRs, batch vs event streaming, low-latency caches, Kappa/Lambda patterns | Kafka, Flink, Redis, Delta Lake |
+
+---
+
+## 🎯 Active Learning Artifacts
+- **Day 01 (2026-09-05)**: [ETL Foundations & 4-Layer Architecture](01_CLASS_AND_REVISION/2026-09-05_ETL_FOUNDATIONS.md)
+- **Day 01 Tasks & Drills**: [Day 01 Tasks & 14 Practice Drills](02_HANDS_ON_TASKS/2026-09-05_TASKS_AND_DRILLS.md)
+- **Project 01**: [Amazon E-Commerce ETL Pipeline](03_PIPELINE_PROJECTS/PROJECT1_AMAZON_ETL_PIPELINE.md)
+- **System Design Case 01**: [Telecom Postpaid CDR Billing (Batch vs Streaming)](04_SYSTEM_DESIGN_CASES/CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md)

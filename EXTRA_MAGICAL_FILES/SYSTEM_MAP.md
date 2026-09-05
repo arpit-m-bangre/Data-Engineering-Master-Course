@@ -15,7 +15,7 @@
  ======================================================================================================== 
    • Total Physical Files Audited    : 295 Files (100% Physically Verified, Zero Hallucinations) 
    • Active Core SQL Modules         : 144 Files across 7 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects, Quick Revision) 
-   • Active Core ETL Modules         : 7 Files across 6 Tiers (Notes, Indexes, Revisions, Tasks, Drills, Projects) 
+   • Active Core ETL Modules         : 5 Files across 4 Streamlined Tiers (Class & Revision, Tasks & Drills, Projects, System Design Cases) 
    • Master Question Bank Hub        : 4 Files (2,500 Blueprint + Mock Interviews + 800+ External PDF Bank) 
    • Active Class Days Synchronized  : 28 SQL Class Days + 1 ETL Class Day (05-Sep-2026) 
    • Enterprise Project Pipelines    : 8 SQL Projects + 1 ETL Project 
@@ -53,13 +53,11 @@ d:\DE COURSE\
 │   ├── PROMPT.txt                <-- Master SQL Ecosystem Automation System Prompt
 │   └── SQL_LEARNING_FLOW.png     <-- Visual SQL Learning Architecture Map
 ├── 02_PYTHON/                    <-- Data Engineering with Python, OOP & Pandas (Upcoming)
-├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging, 4-Layer & Medallion Architecture (7 Files)
-│   ├── 01_CLASS_NOTES/           <-- Structured class notes & pipeline scripts (2026-09-05_ETL_FOUNDATIONS.md)
-│   ├── 02_DAILY_INDEX/           <-- Daily indexes & 01_COMBINED_INDEX_ALL_ETL_TOPICS.md
-│   ├── 03_REVISION_NOTES/        <-- 7-Step Interactive Markdown revision notes (2026-09-05_REVISION.md)
-│   ├── 04_CLASS_TASKS/           <-- Faculty homework & challenge architectures (2026-09-05_CLASS_TASK.md)
-│   ├── 05_INDEX_WISE_QUESTIONS/  <-- Targeted 14-question practice sets (2026-09-05_QUESTIONS.md)
-│   ├── 06_PROJECTS/              <-- Enterprise ETL pipelines (PROJECT1_AMAZON_ETL_PIPELINE.md)
+├── 03_ETL_DATA_PIPELINES/        <-- Ingestion, Staging, 4-Layer & Medallion Architecture (5 Files)
+│   ├── 01_CLASS_AND_REVISION/    <-- Structured Class Notes & 7-Step Revision (2026-09-05_ETL_FOUNDATIONS.md)
+│   ├── 02_HANDS_ON_TASKS/        <-- Faculty Homework Challenges & 14 Targeted Drills (2026-09-05_TASKS_AND_DRILLS.md)
+│   ├── 03_PIPELINE_PROJECTS/     <-- Enterprise ETL Pipelines (PROJECT1_AMAZON_ETL_PIPELINE.md)
+│   ├── 04_SYSTEM_DESIGN_CASES/   <-- High-Scale Distributed System Design Case Studies (CASE01_TELECOM_POSTPAID_BATCH_VS_STREAMING.md)
 │   └── README.md                 <-- Module Overview & Progress Matrix
 ├── 04_PYSPARK_BIG_DATA/          <-- Distributed Computing & Delta Lake (Upcoming)
 ├── 05_DATA_WAREHOUSING/          <-- Snowflake & dbt Medallion Architecture (Upcoming)

@@ -11,7 +11,7 @@ Last Updated: 05 SEP 2026   | Overall SQL Completion: [████████�
 ----------------------------------------------------------------------------------------------------
 [1] 01_SQL (Enterprise Architecture)                 -> IN PROGRESS (Backlog Heavy)
 [2] 02_PYTHON (Data Cleansing)                       -> UPCOMING
-[3] 03_ETL_DATA_PIPELINES (Data Integration)         -> UPCOMING
+[3] 03_ETL_DATA_PIPELINES (Data Integration)         -> IN PROGRESS (Active Live Class)
 [4] 04_PYSPARK_BIG_DATA (Distributed Computing)      -> UPCOMING
 [5] 05_DATA_WAREHOUSING (Snowflake/Redshift)         -> UPCOMING
 [6] 06_CLOUD_ENGINEERING (AWS/Azure)                 -> UPCOMING
