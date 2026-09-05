@@ -229,12 +229,20 @@ Every upcoming module MUST adopt a **Domain-Tailored 4-Tier Lean Architecture** 
 
 ### Core Laws for All Modules:
 1. **The 2-File Daily Habit Law:** For any live class day, there are strictly **two working files created**: (1) `Tier 1: Class & Revision File` (theory, mental models, analogies, 10 traps), and (2) `Tier 2: Tasks & Drills File` (faculty challenge tasks + 14 targeted practice drills with blank workspace blocks).
-2. **The 75–90 Minute Velocity Law:** Each class day's study workflow is strictly capped at 75-90 minutes max:
-   - 15 mins Fast Mental Read (Tier 1)
+2. **The 5-Pillar High-Yield Precision Framework (ETL & Beyond):**
+   - For Module 03 (ETL) and ALL upcoming modules (Python, PySpark, Data Warehousing, Cloud, Orchestration), all Tier 1 Class & Revision notes MUST strictly follow the **5-Pillar High-Yield Precision Framework**:
+     - **Pillar 1: North Star & Real-World Analogies** (Conversational, simple language, vivid daily life pictures, 30-second mental lock).
+     - **Pillar 2: Architectural Blueprint & Trade-Off Matrix** (ASCII pipeline flow + side-by-side comparative matrices).
+     - **Pillar 3: Production Code Blueprint** (Executable, robust, uppercase T-SQL/Python with error handling & idempotency).
+     - **Pillar 4: 5 Deadly Production Failures & Senior DE Fixes** (Concrete failure scenario at scale + senior resolution).
+     - **Pillar 5: Tier-1 Interview Knockout Q&A** (Top interview questions asked by Tier-1 product firms + winning model answers).
+   - *(Note: Module 01 SQL retains its classic 7-step format to preserve completed work).*
+3. **The 75–90 Minute Velocity Law:** Each class day's study workflow is strictly capped at 75-90 minutes max:
+   - 10-15 mins Fast Mental Read (5 Pillars)
    - 15 mins Native Code Execution / Typing in IDE/Studio
    - 20 mins Faculty Challenge Solution (Tier 2 Part 1)
    - 30 mins 14 Targeted Drills Solution (Tier 2 Part 2)
-3. **Multi-Module Cross-Ingestion Law:** End-to-end multi-module pipelines (e.g. Python scraper -> Kafka -> Spark Lakehouse -> Snowflake Star Schema -> Airflow DAG) link cleanly across Tier 3 project directories without duplicated overhead.
+4. **Multi-Module Cross-Ingestion Law:** End-to-end multi-module pipelines (e.g. Python scraper -> Kafka -> Spark Lakehouse -> Snowflake Star Schema -> Airflow DAG) link cleanly across Tier 3 project directories without duplicated overhead.
 
 ---
 
