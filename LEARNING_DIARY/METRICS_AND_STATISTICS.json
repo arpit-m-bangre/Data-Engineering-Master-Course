@@ -50,18 +50,13 @@
     "projects_completed": 1
   },
   "etl_ecosystem_counters": {
-    "class_notes_processed": 1,
-    "daily_indexes_created": 1,
-    "master_combined_index_files": 1,
-    "revision_notes_total": 1,
-    "revision_notes_completed": 0,
-    "practice_question_files": 1,
-    "practice_questions_total_drills": 14,
-    "practice_questions_completed_drills": 0,
-    "faculty_class_task_files": 1,
-    "faculty_class_tasks_completed": 0,
-    "projects_total_scheduled": 1,
-    "projects_completed": 0
+    "tier1_class_and_revision_files": 1,
+    "tier2_tasks_and_drills_files": 1,
+    "tier2_total_drills": 14,
+    "tier2_completed_drills": 0,
+    "tier3_projects_total": 1,
+    "tier3_projects_completed": 0,
+    "tier4_system_design_cases": 1
   },
   "english_communication_counters": {
     "total_book_tasks": 125,
