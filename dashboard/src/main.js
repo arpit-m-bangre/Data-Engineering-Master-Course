@@ -204,32 +204,28 @@ function renderTasks(rawText, container) {
 
   const initialMetrics = getProgressMetrics()
 
-  // ─── 0. Short-Term Target / Weekly Milestone Widget
+  // ─── 0. Short-Term Target / Weekly Milestone Widget (Render ONLY if active)
   const targetItem = items.find(t => t.type === 'target')
-  const targetText = targetItem ? targetItem.text.trim() : 'No active short-term goal'
-  const isTargetActive = targetItem && !/^no\s+active/i.test(targetText) && !/^none/i.test(targetText) && targetText.length > 0
+  const targetText = targetItem ? targetItem.text.trim() : ''
+  const isTargetActive = targetItem && !/^(?:none|no\s+active|idle|n\/a)$/i.test(targetText) && targetText.length > 0
 
-  const targetCardEl = document.createElement('div')
-  targetCardEl.className = `target-banner-card ${isTargetActive ? 'active' : 'idle'}`
-  targetCardEl.innerHTML = `
-    <div class="target-banner-header">
-      <div class="target-badge-wrap">
-        <span class="target-icon">🎯</span>
-        <span class="target-badge ${isTargetActive ? 'badge-active' : 'badge-idle'}">
-          ${isTargetActive ? 'ACTIVE SHORT-TERM TARGET' : 'SHORT-TERM TARGET'}
-        </span>
+  if (isTargetActive) {
+    const targetCardEl = document.createElement('div')
+    targetCardEl.className = 'target-banner-card active'
+    targetCardEl.innerHTML = `
+      <div class="target-banner-header">
+        <div class="target-badge-wrap">
+          <span class="target-icon">🎯</span>
+          <span class="target-badge badge-active">ACTIVE SHORT-TERM TARGET</span>
+        </div>
+        <span class="target-status-pill status-active">In Focus 🔥</span>
       </div>
-      <span class="target-status-pill ${isTargetActive ? 'status-active' : 'status-idle'}">
-        ${isTargetActive ? 'In Focus 🔥' : 'Idle ⚡'}
-      </span>
-    </div>
-    <div class="target-body">
-      <p class="target-text ${isTargetActive ? 'text-active' : 'text-idle'}">
-        ${escHtml(targetText)}
-      </p>
-    </div>
-  `
-  container.appendChild(targetCardEl)
+      <div class="target-body">
+        <p class="target-text text-active">${escHtml(targetText)}</p>
+      </div>
+    `
+    container.appendChild(targetCardEl)
+  }
 
   // ─── 1. Progress Bar Widget
   let progressBarEl = null
@@ -449,8 +445,26 @@ function initDashboard() {
           currentRaw = text
           renderTasks(currentRaw, container)
           setLastUpdated('Live — from GitHub Raw 🌐')
+          return
         } else if (text) {
           setLastUpdated('Up to date ✅')
+          return
+        }
+      }
+    } catch (_) { /* silent */ }
+
+    // ─── LAYER 3: Direct Zero-Cache GitHub API Fallback ───────────────────────
+    try {
+      const apiRes = await fetch('https://api.github.com/repos/arpit-m-bangre/Data-Engineering-Master-Course/contents/TODAYS_TASKS.txt', {
+        headers: { 'Accept': 'application/vnd.github.v3.raw' }
+      })
+      if (apiRes.ok) {
+        const text = normalise(await apiRes.text())
+        if (text && (text !== currentRaw || force)) {
+          currentRaw = text
+          renderTasks(currentRaw, container)
+          setLastUpdated('Live — from GitHub API ⚡')
+          return
         }
       }
     } catch (_) { /* silent */ }
