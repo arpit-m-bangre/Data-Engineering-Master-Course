@@ -1,0 +1,28 @@
+-- First day 
+-- 6 sept 2026 
+
+-- ETL 
+-- extract transform and load 
+
+-- extract -- read 
+-- transform -- operate 
+-- load -- write 
+
+
+-- example amazon 
+
+
+it has four layer 
+
+source 
+transform 
+warehouse 
+and report 
+
+etl -- pipeline 
+
+sublayers like bronze silver ... just understand it 
+
+old time phone bill problem like postpaid they cut the call at 12 pm 
+
+full theory thing 

@@ -10,9 +10,9 @@
   },
   "overall_metrics": {
     "total_modules": 7,
-    "active_module": "01_SQL",
-    "module_completion_percentage": 85.0,
-    "backlog_debt_percentage": 15.0,
+    "active_module": "01_SQL & 03_ETL_DATA_PIPELINES",
+    "module_completion_percentage": 88.0,
+    "backlog_debt_percentage": 12.0,
     "target_zero_debt_date": "2026-09-06"
   },
   "social_authority_metrics": {
@@ -36,18 +36,32 @@
     "social_content_rollout_date": "2026-09-02 (Wednesday - Day 001 Multi-Image Post Launch)"
   },
   "sql_ecosystem_counters": {
-    "class_notes_processed": 27,
-    "daily_indexes_created": 27,
+    "class_notes_processed": 28,
+    "daily_indexes_created": 28,
     "master_combined_index_files": 1,
-    "revision_notes_total": 27,
+    "revision_notes_total": 28,
     "revision_notes_completed": 8,
-    "practice_question_files": 27,
-    "practice_questions_total_drills": 468,
+    "practice_question_files": 28,
+    "practice_questions_total_drills": 482,
     "practice_questions_completed_drills": 85,
-    "faculty_class_task_files": 17,
+    "faculty_class_task_files": 18,
     "faculty_class_tasks_completed": 8,
     "projects_total_scheduled": 8,
     "projects_completed": 1
+  },
+  "etl_ecosystem_counters": {
+    "class_notes_processed": 1,
+    "daily_indexes_created": 1,
+    "master_combined_index_files": 1,
+    "revision_notes_total": 1,
+    "revision_notes_completed": 0,
+    "practice_question_files": 1,
+    "practice_questions_total_drills": 14,
+    "practice_questions_completed_drills": 0,
+    "faculty_class_task_files": 1,
+    "faculty_class_tasks_completed": 0,
+    "projects_total_scheduled": 1,
+    "projects_completed": 0
   },
   "english_communication_counters": {
     "total_book_tasks": 125,
@@ -93,7 +107,7 @@
   "concept_mastery_heatmap_summary": {
     "mastered_concepts_count": 15,
     "revision_priority_concepts_count": 4,
-    "high_interview_weight_concepts_count": 13
+    "high_interview_weight_concepts_count": 15
   },
   "github_achievements_telemetry": {
     "target_full_fleet_date": "2026-09-15",

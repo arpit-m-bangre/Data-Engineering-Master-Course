@@ -230,6 +230,28 @@ This document tracks every core SQL & Data Engineering technical concept covered
 
 ---
 
+### SECTION 19: DATABASE-LEVEL DDL & TABLE-LEVEL DML TRIGGERS
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C19.1** | DDL Triggers on DATABASE Scope (`CREATE_TABLE`, `ALTER_TABLE`) | MASTERED | Attempting to drop DDL trigger without `ON DATABASE` clause | 0 | 🔴 High |
+| **C19.2** | Schema Immutability & Access Denial via `ROLLBACK TRANSACTION` | MASTERED | Infinite recursive trigger execution without recursion checks | 0 | 🔴 High |
+| **C19.3** | DML Triggers: `AFTER` (FOR) vs `INSTEAD OF` Execution Timing | MASTERED | Assuming triggers execute once per row instead of once per statement | 0 | 🔴 High |
+| **C19.4** | Magic Tables (`INSERTED` vs `DELETED`) Multi-Row Joins | MASTERED | Using scalar subquery on `INSERTED` causing Msg 512 on multi-row batches | 0 | 🔴 High |
+| **C19.5** | Column Change Detection via `IF UPDATE(col)` | MASTERED | Evaluating `UPDATE(col)` to true even when assigned same value | 0 | 🟡 Medium |
+
+---
+
+### SECTION 20: ETL PIPELINES & MEDALLION LAKEHOUSE ARCHITECTURE
+| ID | Topic Name | Status | Error Code / Bug Traps | Spaced Revision Count | Interview Weight |
+| :---: | :--- | :---: | :--- | :---: | :---: |
+| **C20.1** | ETL vs ELT Architecture & Compute Optimization | MASTERED | Running heavy transform queries directly on production OLTP DB | 0 | 🔴 High |
+| **C20.2** | 4-Tier Enterprise Data Architecture (Source -> Staging -> EDW -> BI) | MASTERED | Bypassing staging zone and loading unvalidated dirty data into EDW | 0 | 🔴 High |
+| **C20.3** | Medallion Sub-Layers (Bronze Raw -> Silver Cleansed -> Gold Marts) | MASTERED | Storing raw un-aggregated transactional rows in Gold tier | 0 | 🔴 High |
+| **C20.4** | Pipeline Idempotency & Failure Recovery Strategies | MASTERED | Duplicate row insertion on pipeline retry without MERGE/Upsert | 0 | 🔴 High |
+| **C20.5** | Batch Windows vs Real-Time Streaming & Historical Telecom Paradigm | MASTERED | Hardcoded batch window boundaries causing data loss across timezones | 0 | 🔴 High |
+
+---
+
 ## 🎯 TOP 5 WEAK SPOTS & REVISION TARGETS
 
 1. **`TRUNCATE` Rollback Behavior inside Explicit Transactions**:

@@ -60,6 +60,14 @@ DAY  | TOPIC FOCUS AREA                          | RE-WRITE NOTE | REVISION NOTE
 25   | Advanced String & Dynamic Parsing         | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 26   | Transaction Control, NULLs & Subqueries   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
 27   | Stored Procedures, Views & Indexing       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+28   | Database & DML Triggers                   | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | BACKLOG
+
+====================================================================================================
+                    [ ⚡ MODULE 3: ETL & DATA PIPELINES MATRIX (DAY 01) ]
+====================================================================================================
+DAY  | TOPIC FOCUS AREA                          | CLASS NOTES   | REVISION NOTE | PRACTICE DRILLS | STATUS
+-------------------------------------------------------------------------------------------------------------
+01   | ETL Architecture & Medallion Design       | [ ] PENDING   | [ ] PENDING   | [ ] PENDING     | IN PROGRESS
 
 ====================================================================================================
                     [ 🚀 ENTERPRISE DATA ENGINEERING PROJECTS MATRIX ]

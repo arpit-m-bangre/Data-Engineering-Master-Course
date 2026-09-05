@@ -282,6 +282,15 @@ SECTION 1: DAILY CLASS BREAKDOWN
     27.14 Heap Tables vs Clustered Tables: Unordered Heap Storage Allocation (p12) vs Physically Sorted Storage (p11)
     27.15 Explicit Clustered Index Creation: CREATE CLUSTERED INDEX on Heap Tables & Storage Reorganization
 
+28. DAY 28 (SEPTEMBER 05) - DATABASE-LEVEL DDL & TABLE-LEVEL DML TRIGGERS
+    28.1 DDL Trigger Architecture: Database vs Server Scope Event Monitoring
+    28.2 Intercepting DDL Events: CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+    28.3 Schema Immutability & Access Denial via Explicit ROLLBACK TRANSACTION
+    28.4 DML Trigger Architecture: AFTER (FOR) Triggers vs INSTEAD OF Triggers
+    28.5 Virtual Magic Tables: Structure & Lifecycle of INSERTED and DELETED Tables
+    28.6 Column Mutation Tracking: IF UPDATE(ColumnName) Predicates
+    28.7 Trigger Administration: DISABLE, ENABLE, DROP TRIGGER Syntax & sys.triggers Inspection
+
 ================================================================================
 SECTION 2: MASTER TOPIC INDEX BY CATEGORY
 ================================================================================
@@ -458,5 +467,13 @@ U. INDEXING ARCHITECTURE & PHYSICAL DATA ORGANIZATION
     • Heap Tables (Unordered IAM Allocation) vs Clustered Index Tables
     • Explicit Clustered Index Creation (CREATE CLUSTERED INDEX) & Page Reorganization
     • System Metadata Inspection via sp_helpindex
+
+V. TRIGGERS & EVENT-DRIVEN DATABASE SECURITY
+    • DDL Triggers on DATABASE Scope (Blocking Unsanctioned CREATE/ALTER/DROP)
+    • DML Triggers: AFTER (FOR) Triggers for Auditing & Validation
+    • INSTEAD OF Triggers for Data Interception & Complex View Updatability
+    • Virtual Magic Tables (INSERTED and DELETED In-Memory Row Sets)
+    • Column Change Detection via IF UPDATE(col)
+    • Trigger Status Management (ENABLE, DISABLE, DROP TRIGGER)
 
 ================================================================================
