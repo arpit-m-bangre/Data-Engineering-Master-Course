@@ -11,8 +11,6 @@
 ---
 
 ## 🎯 CURRENT ACTIVE TARGET (HOT BUFFER)
-- **Target File:** [`SQL_SERVER_MASTERY_BOOTCAMP.SQL`](./SQL_SERVER_MASTERY_BOOTCAMP.SQL)
+- **Status:** ⚪ **IDLE** (No active target currently queued)
 - **Support Index:** [`SQL_INDEX.SQL`](./SQL_INDEX.SQL)
-- **Target Deadline:** **Sunday 06 Sep 2026 @ 10:30 AM** (Mock Assessment Ready)
-- **Scope:** Complete 28-Day SQL Curriculum Mastery + 60 Checkpoint Drills in `DataEngineeringMasterDB`.
-- **Destination Upon 100% Completion:** `01_SQL/07_QUICK_REVISION/`
+- **Archived Target:** `SQL_SERVER_MASTERY_BOOTCAMP.SQL` moved to [`01_SQL/07_QUICK_REVISION/SQL_SERVER_MASTERY_BOOTCAMP.SQL`](../01_SQL/07_QUICK_REVISION/SQL_SERVER_MASTERY_BOOTCAMP.SQL)
