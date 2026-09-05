@@ -429,18 +429,17 @@ function initDashboard() {
   // ─── LAYER 2: Immediate Live Zero-Cache Fetch ─────────────────────────────
   async function tryLiveUpgrade(force = false) {
     const cb = `?t=${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
-    const bundleDate = extractMissionDate(BUNDLE_TASKS)
 
-    // Function to safely apply new text without stale downgrade
+    // Apply upgrade if content is newer than what is currently displayed
     function applyUpgrade(newText, sourceLabel) {
       const clean = normalise(newText)
       if (!clean) return false
       const newDate = extractMissionDate(clean)
       const curDate = extractMissionDate(currentRaw)
 
-      // Reject stale payloads that have an older mission date than our bundle or current view
-      if (newDate > 0 && bundleDate > 0 && newDate < bundleDate) {
-        console.warn(`[Anti-Stale] Rejected older payload (${newDate} < ${bundleDate}) from ${sourceLabel}`)
+      // Always accept newer date OR same date with different content OR forced
+      if (newDate > 0 && curDate > 0 && newDate < curDate) {
+        console.warn(`[Anti-Stale] Skipping older payload (${newDate} < ${curDate}) from ${sourceLabel}`)
         return false
       }
 
@@ -453,6 +452,22 @@ function initDashboard() {
       return true
     }
 
+    // ─── LAYER 1: GitHub Raw (public repo — always latest, highest priority) ──
+    try {
+      const res = await fetch(GITHUB_RAW_URL + cb, {
+        cache: 'no-store',
+        headers: {
+          'Cache-Control': 'no-cache, no-store, must-revalidate',
+          'Pragma': 'no-cache'
+        }
+      })
+      if (res.ok) {
+        const text = await res.text()
+        if (applyUpgrade(text, 'GitHub Raw ⚡')) return
+      }
+    } catch (_) { /* silent */ }
+
+    // ─── LAYER 2: Vercel server static file (fallback) ────────────────────────
     try {
       const res = await fetch('/TODAYS_TASKS.txt' + cb, {
         cache: 'no-store',
@@ -468,21 +483,7 @@ function initDashboard() {
       }
     } catch (_) { /* silent */ }
 
-    try {
-      const res = await fetch(GITHUB_RAW_URL + cb, {
-        cache: 'no-store',
-        headers: {
-          'Cache-Control': 'no-cache, no-store, must-revalidate',
-          'Pragma': 'no-cache'
-        }
-      })
-      if (res.ok) {
-        const text = await res.text()
-        if (applyUpgrade(text, 'GitHub Raw')) return
-      }
-    } catch (_) { /* silent */ }
-
-    // ─── LAYER 3: Direct Zero-Cache GitHub API Fallback ───────────────────────
+    // ─── LAYER 3: GitHub API fallback ─────────────────────────────────────────
     try {
       const apiRes = await fetch('https://api.github.com/repos/arpit-m-bangre/Data-Engineering-Master-Course/contents/TODAYS_TASKS.txt', {
         headers: { 'Accept': 'application/vnd.github.v3.raw' }
