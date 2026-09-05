@@ -399,14 +399,46 @@ function initDashboard() {
     }
   }
 
+  function extractMissionDate(raw) {
+    const m = raw.match(/DAILY MISSION:\s*(\d{1,2}\s+[A-Z]{3}\s+\d{4})/i)
+    if (m) {
+      const d = new Date(m[1])
+      if (!isNaN(d.getTime())) return d.getTime()
+    }
+    return 0
+  }
+
   // ─── LAYER 1: Immediate Render from Build Bundle ──────────────────────────
   let currentRaw = normalise(BUNDLE_TASKS)
   renderTasks(currentRaw, container)
-  setLastUpdated('Loaded from bundle')
+  setLastUpdated('Loaded from bundle ✅')
 
   // ─── LAYER 2: Immediate Live Zero-Cache Fetch ─────────────────────────────
   async function tryLiveUpgrade(force = false) {
     const cb = `?t=${Date.now()}_${Math.random().toString(36).substring(2, 7)}`
+    const bundleDate = extractMissionDate(BUNDLE_TASKS)
+
+    // Function to safely apply new text without stale downgrade
+    function applyUpgrade(newText, sourceLabel) {
+      const clean = normalise(newText)
+      if (!clean) return false
+      const newDate = extractMissionDate(clean)
+      const curDate = extractMissionDate(currentRaw)
+
+      // Reject stale payloads that have an older mission date than our bundle or current view
+      if (newDate > 0 && bundleDate > 0 && newDate < bundleDate) {
+        console.warn(`[Anti-Stale] Rejected older payload (${newDate} < ${bundleDate}) from ${sourceLabel}`)
+        return false
+      }
+
+      if (clean !== currentRaw || force) {
+        currentRaw = clean
+        renderTasks(currentRaw, container)
+        setLastUpdated(`Live — from ${sourceLabel} ✅`)
+        return true
+      }
+      return true
+    }
 
     try {
       const res = await fetch('/TODAYS_TASKS.txt' + cb, {
@@ -418,16 +450,8 @@ function initDashboard() {
         }
       })
       if (res.ok) {
-        const text = normalise(await res.text())
-        if (text && (text !== currentRaw || force)) {
-          currentRaw = text
-          renderTasks(currentRaw, container)
-          setLastUpdated('Live — from server ✅')
-          return
-        } else if (text) {
-          setLastUpdated('Live — Up to date ✅')
-          return
-        }
+        const text = await res.text()
+        if (applyUpgrade(text, 'server')) return
       }
     } catch (_) { /* silent */ }
 
@@ -440,16 +464,8 @@ function initDashboard() {
         }
       })
       if (res.ok) {
-        const text = normalise(await res.text())
-        if (text && (text !== currentRaw || force)) {
-          currentRaw = text
-          renderTasks(currentRaw, container)
-          setLastUpdated('Live — from GitHub Raw 🌐')
-          return
-        } else if (text) {
-          setLastUpdated('Up to date ✅')
-          return
-        }
+        const text = await res.text()
+        if (applyUpgrade(text, 'GitHub Raw')) return
       }
     } catch (_) { /* silent */ }
 
@@ -459,13 +475,8 @@ function initDashboard() {
         headers: { 'Accept': 'application/vnd.github.v3.raw' }
       })
       if (apiRes.ok) {
-        const text = normalise(await apiRes.text())
-        if (text && (text !== currentRaw || force)) {
-          currentRaw = text
-          renderTasks(currentRaw, container)
-          setLastUpdated('Live — from GitHub API ⚡')
-          return
-        }
+        const text = await apiRes.text()
+        if (applyUpgrade(text, 'GitHub API ⚡')) return
       }
     } catch (_) { /* silent */ }
   }
