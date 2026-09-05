@@ -70,8 +70,13 @@ TOTAL STUDY & CLASS TIME TODAY: 12.00 Hours (10.5h Pure SQL Bootcamp + 1.25h Liv
     -> Atomic git commit and push to GitHub to lock Streak Day 32 and trigger Vercel deployment.
     -> [DoD]: Clean build, verified deployment, Streak Day 32 locked.
 
-[-] 10:30 PM - 07:00 AM : Night Sleep & Bio-Paced Recovery (Strict Bio-Paced Cutoff) 💤
-    -> 8.5 hours protected recovery sleep; recharge for Sunday morning Mock Assessment.
+[-] 10:30 PM - 01:30 AM : Extra Buffer, Target Catch-Up & Wind Down Block (3.0 Hours) 🛡️🌿
+    -> Flexible buffer window for overflow bootcamp revision, query drills, and relaxed catch-up.
+    -> Wind down, hydration, screen-off transition, and cognitive recovery.
+    -> [DoD]: Zero pending pressure; clean transition into deep recovery sleep.
+
+[-] 01:30 AM - 07:30 AM : Night Sleep & Deep Bio-Paced Recovery (6.0 Hours) 💤
+    -> 6.0 hours uninterrupted deep recovery sleep; wake up refreshed for Sunday morning Mock Assessment.
 
 ====================================================================
 *Rules: Zero Dropped Targets | Strict High-Precision Execution | Finish Before Sleep*
