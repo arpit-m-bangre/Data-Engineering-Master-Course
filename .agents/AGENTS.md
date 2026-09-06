@@ -191,11 +191,10 @@ Before writing ANY daily plan or `TODAYS_TASKS.txt`, Pippo MUST run this 5-point
 - After writing `TODAYS_TASKS.txt`, Pippo MUST always: (1) run `node copy_tasks.cjs` + `npm run build` in `DASHBOARD/`, (2) git commit and push to GitHub, triggering Vercel auto-deploy.
 - NEVER generate a plan without syncing the live Vercel dashboard.
 
-**CHECKLIST ITEM 6 — DAILY ENGLISH & CORE HABITS INTEGRITY:**
-- Check active queued task in `METRICS_AND_STATISTICS.json` -> `english_communication_counters.active_queued_task`.
-- Daily English Practice Book Task (15-30 mins) MUST be scheduled in every daily plan without exception.
-- Ensure 60-min Omni-Channel Authority and (if >= Monday 31 Aug 2026) the compulsory 210-Day Creator Launch are scheduled.
-- NEVER drop, omit, or silently skip any of the 8 Core Daily Habits.
+**CHECKLIST ITEM 6 — STRICT DUAL-FLEET BOUNDARY (PIPPO PURE DE COURSE LAW):**
+- English Communication 125-Task Book, Speaking Aloud, LeetCode/Internals, and Digital Authority (LinkedIn/Dev.to) belong 100% EXCLUSIVELY to WALL-E in `d:\!OPERATION-AXIOM\`.
+- Pippo in `d:\!DE COURSE\` is STRICTLY restricted to the academic DE Course pipeline (Class Notes, 5-Pillar Revision, Faculty Tasks, 14-Question Drills, Milestone Projects & Live Lectures).
+- NEVER track, schedule, count, or include English Book or Social Authority metrics in Pippo's daily plans, scorecards, or DE Course trackers.
 
 ---
 
