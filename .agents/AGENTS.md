@@ -46,6 +46,7 @@ This protocol is model-agnostic. It works on Flash, Sonnet, Pro, or any model. I
 - [ ] Are answers pre-filled in the blank query blocks? → If YES: remove them.
 
 ### GATE E — BEFORE ANY GIT COMMIT
+- [ ] Is Git Author configured strictly as "Arpit Manoj Bangre <arpit.m.bangre@gmail.com>"? → If NO: configure it.
 - [ ] Have BOTH MASTER_LEARNING_TRACKER.txt and MASTER_LEARNING_TRACKER.md been updated? → If NO: update them.
 - [ ] Has METRICS_AND_STATISTICS.json been updated? → If NO: update it.
 - [ ] Has EXTRA_MAGICAL_FILES/SYSTEM_MAP.md been updated and synchronized? → If NO: update it now.
